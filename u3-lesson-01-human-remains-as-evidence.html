@@ -1,0 +1,1649 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U3 L1 · Human remains as evidence: why study the dead?</title>
+<meta name="description" content="Year 11 Ancient History, the treatment and display of human remains: the four ways human bodies survive from the past, what remains can and cannot tell historians, and why the words we use about the dead matter.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#5E2D6F; --bright:#8A4BA0; --tint:#F2E9F5; --statement:#5E2D6F;
+  --solid:#5E2D6F; --soft:#EBD9F2; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#D6B3E3; --bright:#B57CCB; --tint:#2C1934; --statement:#4A2358; --soft:#EBD9F2; } }
+:root[data-theme="dark"]{ --deep:#D6B3E3; --bright:#B57CCB; --tint:#2C1934; --statement:#4A2358; --soft:#EBD9F2; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 3 Lesson 1 only (every class starts u3l01-) */
+
+/* title slide: the note about studying real people */
+.u3l01-care{margin:0; padding:.55em .9em; border-left:5px solid var(--bright); background:var(--tint);
+  border-radius:0 10px 10px 0; font-size:calc(var(--fs-body)*.86); line-height:1.42; max-width:34em;}
+.u3l01-care b{color:var(--deep);}
+
+/* the unit's inquiry question */
+.u3l01-iq{padding:.7em 1.1em; border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:0 10px 10px 0;
+  background:var(--tint); font-family:var(--disp); font-weight:700; font-size:var(--fs-lead); line-height:1.3; color:var(--ink);}
+.u3l01-iq .w{display:block; font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.3em;}
+
+/* goals slide: syllabus line; credits */
+.u3l01-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u3l01-cite a{color:var(--deep);}
+
+/* four ways bodies survive: picture tiles */
+.u3l01-ways{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:clamp(8px,1.2vw,18px);}
+.u3l01-way{margin:0; background:var(--surface); border:1px solid var(--rule); border-top:5px solid var(--bright);
+  border-radius:10px; overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;}
+.u3l01-way img{display:block; width:100%; height:19vh; object-fit:cover; background:var(--surface-2);}
+.u3l01-way img.u3l01-fit{object-fit:contain; background:#fff;}
+.u3l01-way img.u3l01-top{object-position:50% 22%;}
+.u3l01-way figcaption{padding:.45em .7em .6em; display:flex; flex-direction:column; gap:.18em;
+  font-size:calc(var(--fs-body)*.76); line-height:1.32;}
+.u3l01-way b{font-family:var(--disp); font-size:1.16em; color:var(--deep);}
+.u3l01-way i{color:var(--slate);}
+
+/* two short sources side by side, each with a label */
+.u3l01-src2 .src .quote{font-size:calc(var(--fs-body)*.95); line-height:1.45;}
+
+/* can tell / can't tell: two lists */
+.u3l01-list{margin:.2em 0 0; padding-left:1.15em; font-size:calc(var(--fs-body)*.88); line-height:1.38;}
+.u3l01-list li{margin:.15em 0;}
+.u3l01-list b{color:var(--deep);}
+
+/* card sort: six horizontal case cards, three across */
+.u3l01-cards{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1vw,14px);}
+.u3l01-card{position:relative; margin:0; display:grid; grid-template-columns:38% 1fr; background:var(--surface);
+  border:1px solid var(--rule); border-radius:10px; overflow:hidden; box-shadow:var(--shadow); min-height:15vh;}
+.u3l01-card img{display:block; width:100%; height:100%; min-height:15vh; object-fit:cover; background:#fff;}
+.u3l01-card img.u3l01-fit{object-fit:contain;}
+.u3l01-card img.u3l01-top{object-position:50% 20%;}
+.u3l01-card .l{position:absolute; top:6px; left:6px; width:1.6em; height:1.6em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:calc(var(--fs-body)*.72); box-shadow:0 0 0 2px #fff;}
+.u3l01-card figcaption{padding:.45em .65em .5em; font-size:calc(var(--fs-body)*.68); line-height:1.32;}
+.u3l01-card figcaption b{display:block; font-size:1.1em; color:var(--deep); margin-bottom:.1em;}
+.u3l01-card.u3l01-textcard{grid-template-columns:1fr; background:var(--tint);}
+.u3l01-card.u3l01-textcard figcaption{padding:.45em .7em .5em 2.6em;}
+.u3l01-card.u3l01-textcard i{display:block; margin-top:.25em; color:var(--slate);}
+.u3l01-howto{display:flex; flex-wrap:wrap; gap:.4em 1.4em; font-size:calc(var(--fs-body)*.82);}
+.u3l01-howto b{display:inline-grid; place-items:center; width:1.5em; height:1.5em; border-radius:50%; background:var(--solid);
+  color:#fff; font-size:.85em; margin-right:.3em;}
+.u3l01-row{display:grid; grid-template-columns:1.5fr 1fr; gap:clamp(10px,1.4vw,22px); align-items:start;}
+
+/* answer tables */
+.u3l01-key td:first-child{font-weight:700; white-space:nowrap;}
+.u3l01-key td{vertical-align:top;}
+.u3l01-key .no{color:var(--c-counter);}
+
+/* the respect rules: three headed cards */
+.u3l01-rules{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(10px,1.4vw,22px);}
+.u3l01-rule{display:flex; flex-direction:column; gap:.45em;}
+.u3l01-model{margin:0; padding:.4em .85em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 8px 8px 0; font-size:calc(var(--fs-body)*.84); line-height:1.4;}
+.u3l01-model .k{display:block; font-weight:700; color:var(--c-evidence); font-size:.8em; letter-spacing:.06em;
+  text-transform:uppercase; margin-bottom:.15em;}
+
+/* phones (Read mode): fewer columns, natural picture heights */
+@media (max-width:900px){
+  .u3l01-ways{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .u3l01-way img{height:auto; aspect-ratio:4/3;}
+  .u3l01-cards{grid-template-columns:1fr;}
+  .u3l01-card{grid-template-columns:40% 1fr;}
+  .u3l01-card.u3l01-textcard{grid-template-columns:1fr;}
+  .u3l01-row, .u3l01-rules{grid-template-columns:1fr;}
+  .u3l01-key td:first-child{white-space:normal;}
+}
+@media (max-width:420px){
+  .u3l01-ways{grid-template-columns:1fr;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u3l01-dense{gap:10px;}
+  html:not(.read) .u3l01-dense h2{font-size:calc(var(--fs-h2)*.86);}
+  html:not(.read) .u3l01-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.4;}
+  html:not(.read) .u3l01-dense .quote{font-size:calc(var(--fs-body)*.84);}
+  html:not(.read) .u3l01-dense .src{padding:9px 15px;}
+  html:not(.read) .u3l01-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u3l01-dense .note{padding:.42em .8em;}
+  html:not(.read) .u3l01-dense .note .body, html:not(.read) .u3l01-dense .card .body,
+  html:not(.read) .u3l01-dense .qprompt{font-size:calc(var(--fs-body)*.8); line-height:1.34;}
+  html:not(.read) .u3l01-dense .card{padding:9px 15px;}
+  html:not(.read) .u3l01-dense .tbl.compact{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u3l01-dense .tbl.compact td{padding:.28em .5em;}
+  html:not(.read) .u3l01-dense .tbl th{padding:.36em .55em;}
+  html:not(.read) .u3l01-dense .figure img{max-height:30vh;}
+  html:not(.read) .u3l01-dense .keylist{gap:6px;}
+  html:not(.read) .u3l01-dense .keylist li{font-size:calc(var(--fs-body)*.84);}
+  html:not(.read) .u3l01-dense .keylist .d{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u3l01-dense .u3l01-list{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u3l01-dense .u3l01-way img{height:16vh;}
+  html:not(.read) .u3l01-dense .u3l01-way figcaption{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u3l01-dense .u3l01-card figcaption{font-size:calc(var(--fs-body)*.62);}
+  html:not(.read) .u3l01-dense .u3l01-model{font-size:calc(var(--fs-body)*.74); padding:.28em .7em;}
+  html:not(.read) .u3l01-dense .u3l01-howto{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u3l01-dense .bank span{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u3l01-dense .u3l01-iq{font-size:calc(var(--fs-lead)*.9);}
+  html:not(.read) .u3l01-dense .tf li, html:not(.read) .u3l01-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u3l01-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u3l01-dense .prac{gap:6px;}
+  html:not(.read) .u3l01-dense .cornell .cq, html:not(.read) .u3l01-dense .cornell .nts{font-size:calc(var(--fs-body)*.74); padding:.32em .8em;}
+  html:not(.read) .u3l01-dense .u3l01-cite .credits{font-size:calc(var(--fs-chrome)*.88); margin-bottom:.3em;}
+  html:not(.read) .u3l01-dense .u3l01-cite .credits li{margin:.1em 0;}
+  html:not(.read) .u3l01-dense .u3l01-cite .small{font-size:calc(var(--fs-chrome)*.9);}
+  html:not(.read) .u3l01-dense .checks label{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u3l01-dense .u3l01-care{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u3l01-dense .u3l01-voc .tbl.compact{font-size:calc(var(--fs-body)*.64); line-height:1.3;}
+  html:not(.read) .u3l01-dense .u3l01-voc .tbl.compact td{padding:.24em .5em;}
+  html:not(.read) .u3l01-dense .u3l01-voc .tbl th{padding:.3em .5em;}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 1" data-title="Human remains as evidence: why study the dead?" data-kind="intro">
+<div class="wrap u3l01-dense">
+  <div class="split" style="--cols:1.15fr .85fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 3 · Human remains · Lesson 1</p>
+      <h1>Human remains as evidence: why study the dead?</h1>
+      <p class="lead">What can the bodies of people who died long ago tell us about the past, and how should we treat them?</p>
+      <p class="u3l01-care"><b>This unit studies the remains of real people.</b> Its pictures show find-spots, museum displays and objects. Aboriginal Ancestral Remains appear as text only.</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <figure class="figure tall contain"><img src="images/u3l01-tisenjoch-otzi-find-spot.jpg" alt="A stone marker near the Tisenjoch in the Ötztal Alps, on the border of Italy and Austria: Ötzi was found in the ice about 70 m from here in 1991" loading="lazy"><figcaption>A stone marker near the Tisenjoch in the Ötztal Alps, on the border of Italy and Austria: Ötzi was found in the ice about 70 m from here in 1991 — <span class="cr">Photo: Tigerente · CC BY-SA 4.0</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 1" data-title="Connect: a method from Unit 1" data-kind="intro">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow">Connect · 5 minutes · everyone writes for 90 seconds · press K for the timer</p>
+  <h2>A Unit 1 method that studies a body without cutting it</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · 90 seconds</div><p class="body">Name one scientific method from Unit 1 that can study a body without cutting it, and what it can show.</p></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Think of how scientists studied the body of a famous Egyptian king in 2005 without cutting it.</p></div>
+    </div>
+    <div class="stack">
+      <div class="note reveal" data-code="evidence" data-veil="Write yours first — then show a model answer"><div class="k">A model answer</div><p class="body"><b>CT scanning:</b> a scanner takes X-ray ‘slices’ through a body without cutting it. It can show bones, injuries and signs of disease, and what lies under wrappings.</p></div>
+      <div class="note reveal" data-code="counter" data-veil="Show the trap"><div class="k">Not without cutting</div><p class="body">DNA analysis and radiocarbon dating are powerful, but each needs a sample of bone, tooth or tissue: something is taken from the body.</p></div>
+      <div class="note reveal" data-code="judgement" data-veil="Show the link to today"><div class="k">Today’s link</div><p class="body">The bodies scientists study were people. This unit asks what their remains can tell us, and how they should be treated.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 1" data-title="Connect: this unit’s question" data-kind="intro">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow">Connect · the next two weeks</p>
+  <h2>This unit’s question</h2>
+  <div class="u3l01-iq"><span class="w">Our inquiry question</span>What can human remains tell us about the past, and how should the people they once were be treated?</div>
+  <div class="cols c2">
+    <div class="card quiet"><div class="k">The evidence</div><p class="body">How bodies survive and are found · what science can learn from them · what they show about the lives and times of the people</p></div>
+    <div class="card quiet"><div class="k">The people</div><p class="body">How the dead should be studied, displayed and owned, and when they should be returned to their descendants</p></div>
+  </div>
+  <div class="card accent"><div class="k">These were people</div><p class="body">In this unit we use respectful words, choose pictures with care, and show Aboriginal Ancestral Remains as text only. By the end of today, the class will have written its own three respect rules.</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 1" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>understand how human remains can be used as evidence about the past</li>
+        <li>recognise why the remains of the dead must be treated with respect</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>name four ways human bodies survive from the past, with an example of each</li>
+        <li>explain what human remains can and cannot tell historians</li>
+        <li>explain why the words we use about human remains matter</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u3l01-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-08 uses sources to form conclusions about the past · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 1" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the same routine as Units 1 and 2</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U3 L1 · Human remains as evidence</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Name four ways bodies survive.</div><div class="nts">1 skeletons (bones, teeth) → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A new unit, a new page</span><span class="d">The unit’s inquiry question at the top; a cue column about a quarter of the page wide; room for a summary.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences; an example for every point.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: how bodies survive · what six cases can tell us.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 1" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow">Key vocabulary · start the unit word wall</p>
+  <h2>Words you will use all unit</h2>
+  <div class="vocab u3l01-voc">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>How bodies survive</th><th>Meaning</th></tr>
+      <tr><td>Human remains</td><td>The bodies, or parts of the bodies, of people who have died — including bones, preserved tissue and ashes.</td></tr>
+      <tr><td>Cremation</td><td>Burning the body of a person who has died; the burnt bone and ash that are left are cremated remains.</td></tr>
+      <tr><td>Natural preservation</td><td>Preservation by the environment, such as ice, bogs or dry desert sand, without human intervention.</td></tr>
+      <tr><td>Mummification</td><td>Preserving a body’s skin and soft tissue: done deliberately in ancient Egypt, and naturally by ice, bogs or desert.</td></tr>
+      <tr><td>Bog body</td><td>A human body preserved in a peat bog, often with skin and hair intact.</td></tr>
+      <tr><td>Peat</td><td>Partly decayed plant material that builds up in waterlogged, acidic, oxygen-poor bogs.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Evidence and respect</th><th>Meaning</th></tr>
+      <tr><td>CT scan</td><td>Computed tomography: X-ray images taken from many angles to show the inside of a body in 3D without cutting it.</td></tr>
+      <tr><td>Isotope analysis</td><td>Measuring chemical traces in bones and teeth to learn about diet and where a person grew up or travelled.</td></tr>
+      <tr><td>Ancient DNA</td><td>Genetic material recovered from old remains, used to study ancestry, health and appearance.</td></tr>
+      <tr><td>Mummified person</td><td>A person whose body has been preserved, naturally or deliberately; some museums (e.g. National Museums Scotland) now prefer this to ‘mummy’.</td></tr>
+      <tr><td>Ancestral Remains</td><td>A respectful term for the remains of Aboriginal and Torres Strait Islander people; Communities may prefer others, such as ‘Ancestors’ or ‘Old People’.</td></tr>
+      <tr><td>Custodian</td><td>A person or Community with the Cultural responsibility to care for Country, sites, Knowledge and Ancestors.</td></tr>
+      <tr><td>ICIP</td><td>Indigenous Cultural and Intellectual Property — the rights of Aboriginal and Torres Strait Islander Peoples to control their Cultural Knowledge, Practices and Property.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · How bodies survive" data-title="Four ways bodies survive" data-kind="notes">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow">1 · How bodies survive · I do — an illustrated mini-lecture</p>
+  <h2>Four ways human bodies survive from the past</h2>
+  <div class="u3l01-ways">
+    <figure class="u3l01-way reveal"><img class="u3l01-top" src="images/roman-burial-lead-coffin-wels.jpg" alt="A skeleton lying in an opened lead coffin in a museum display case"><figcaption><b>1 · Skeletons</b><span>Only bones and teeth survive; skin and organs have decayed.</span><i>a Roman burial in a lead coffin, Wels, Austria</i></figcaption></figure>
+    <figure class="u3l01-way reveal"><img class="u3l01-fit" src="images/u3l01-roman-glass-cinerary-urn.jpg" alt="A blue-green Roman glass urn with two handles"><figcaption><b>2 · Cremated remains</b><span>The body was burnt; the fragments of burnt bone and ash were often gathered and buried.</span><i>a Roman glass urn made to hold the ashes of the dead</i></figcaption></figure>
+    <figure class="u3l01-way reveal"><img src="images/u3l01-bjaeldskovdal-bog-tollund-man-find-spot.jpg" alt="A path through birch woodland and boggy ground, with a wooden post"><figcaption><b>3 · Preserved naturally</b><span>Ice, a bog or dry desert sand kept skin, hair and organs, with no human help.</span><i>Ötzi (ice) · Tollund Man (bog, found here) · the Tarim Basin (desert)</i></figcaption></figure>
+    <figure class="u3l01-way reveal"><img class="u3l01-fit" src="images/u3l01-canopic-jar-of-maruta.jpg" alt="A pale limestone jar with a lid shaped like a human head and columns of hieroglyphs inlaid in blue"><figcaption><b>4 · Preserved deliberately</b><span>People treated the body to stop it decaying: Egyptian mummification.</span><i>a canopic jar, made to hold organs removed during mummification</i></figcaption></figure>
+  </div>
+  <p class="qprompt reveal">Which way usually keeps the most evidence about a person, and which keeps the least?</p>
+  <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body"><b>Most:</b> bodies preserved naturally or deliberately, because skin and hair can survive, and in a natural mummy even the organs and a last meal (Egyptian embalmers took out most organs and kept them in jars). <b>Least:</b> cremated remains, because the fire destroys soft tissue and breaks up the bone. But even burnt bone can still be evidence: section 2 shows how.</p></div>
+  <p class="small credline">Images: Wolfgang Sauber (CC BY-SA 3.0) · The Met (CC0 1.0) · Nils Jepsen (CC BY-SA 4.0) · The Met (CC0 1.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · How bodies survive" data-title="Natural or deliberate?" data-kind="notes">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow">1 · How bodies survive · I do — think aloud</p>
+  <h2>Natural or deliberate: why does it matter?</h2>
+  <div class="split u3l01-src2" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · The museum that cares for Ötzi</div>
+        <p class="quote">Ötzi is a wet mummy that was mummified naturally in the glacier ice. Due to the length of time it lay in the snow and ice, the body dehydrated, i.e. much of the body fluid was lost.</p>
+        <p class="prov">South Tyrol Museum of Archaeology, Bolzano, ‘The mummy’, iceman.it (museum website, checked 2026) · Ötzi died about 3300 BCE and was found in 1991</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · A museum on Egyptian mummification</div>
+        <p class="quote">The body was then treated with natron (a carbonate salt collected from the edges of desert lakes) which acted as a drying agent, absorbing water from the body so as to prevent further decay.</p>
+        <p class="prov">Australian Museum, Sydney, ‘How were ancient Egyptians mummified?’ (museum website, 2023) · describing the method used for royals and high officials, about 1550–664 BCE</p>
+      </div>
+    </div>
+    <div class="stack veil-parts" data-veil="Think it through first — then show the answers">
+      <p class="qprompt">What do the two ways of preserving a body have in common?</p>
+      <p class="u3l01-model vp reveal">Both dried the body out. Ötzi lost much of his body fluid in the ice; the embalmers used natron to absorb water “so as to prevent further decay”.</p>
+      <p class="qprompt reveal">Why does it matter to a historian whether a body was preserved naturally or deliberately?</p>
+      <p class="u3l01-model vp reveal">A deliberate mummification is itself evidence of what people did for their dead, and, with texts, of what they believed. A natural one is an accident of the environment: it says little about customs, but it can keep a person much as they were when they died, with what they had with them (Ötzi’s clothing and equipment).</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · How bodies survive" data-title="What remains can and can’t tell us" data-kind="notes">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow">1 · How bodies survive · I do — think aloud → cold call</p>
+  <h2>What remains can tell us, and what they can’t</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent reveal"><div class="k">Remains can reveal</div>
+        <ul class="u3l01-list"><li><b>age</b> and <b>sex</b> — teeth, bone growth, the pelvis and skull</li><li><b>health</b> and <b>injuries</b> — marks on bones; CT scans</li><li><b>diet</b> — isotopes in bones and teeth; stomach contents</li><li><b>ancestry</b> — ancient DNA, where it survives</li><li><b>cause of death</b> — sometimes</li><li><b>burial customs</b> — how and where the body was laid</li></ul></div>
+      <div class="card quiet reveal"><div class="k">On their own, they can’t show</div>
+        <ul class="u3l01-list"><li><b>names</b> and <b>feelings</b></li><li><b>beliefs</b> — only with burial context or texts</li></ul></div>
+    </div>
+    <div class="stack">
+      <div class="src reveal">
+        <div class="k">Source · A museum on reading skeletons</div>
+        <p class="quote sm">Although we can tell a lot about a person from their bones, determining how they died can be difficult. It can be tempting to see signs of trauma on a skeleton as evidence of a violent death, but most fractures are not fatal.</p>
+        <p class="prov">Natural History Museum, London, ‘Analysing the bones: what can a skeleton tell you?’ (museum website) · trauma = injury</p>
+      </div>
+      <p class="qprompt reveal">Can a skeleton tell us what the person believed?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">Not on its own: bones show a body, not a belief. With burial context (how and where the body was laid, what was buried with it) or with texts, historians can <i>infer</i> beliefs, and they should say how sure they are.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · How bodies survive" data-title="Why the words we use matter" data-kind="notes">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow">1 · How bodies survive · I do — think aloud → cold call</p>
+  <h2>Why the words we use about the dead matter</h2>
+  <div class="split" style="--cols:1.05fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · A museum’s published statement on human remains</div>
+        <p class="quote sm">Mindful of ethical obligations, the Museum ensures that the human remains held in its care are always treated and displayed with respect and dignity.</p>
+        <p class="prov">British Museum, London, ‘Human remains: Collection and display’ (museum website) · the museum holds over 6,000 human remains</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · Why one museum changed its labels</div>
+        <p class="quote sm">… not an object of curiosity, but a real human who was once alive and had a very specific belief about how her body should be treated after death.</p>
+        <p class="prov">Adam Goldwater, manager of the Great North Museum: Hancock, Newcastle, on Irtyru, a mummified Egyptian woman in its care · statement reported by CNN, 23 January 2023</p>
+      </div>
+    </div>
+    <div class="stack">
+      <ol class="keylist">
+        <li class="reveal"><span class="num">1</span><span class="t">‘Mummy’ or ‘mummified person’?</span><span class="d">Some museums now say ‘mummified person’, or use the person’s name. In 2023 the British Museum said it still uses ‘mummy’ in its galleries.</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">‘Ancestral Remains’ or ‘Ancestors’</span><span class="d">Respectful terms for the remains of Aboriginal and Torres Strait Islander people; Communities may prefer others.</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">No horror-film words, no jokes</span><span class="d">Curses and monsters are films, not history.</span></li>
+      </ol>
+      <p class="qprompt reveal">Why might a museum say ‘mummified person’ instead of ‘mummy’?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">To remind visitors that the remains are a person who once lived, with their own beliefs about their body, not an object or a film monster. Not every museum has changed: in 2023 the British Museum said it still uses ‘mummy’ in its galleries (though its recent displays say ‘mummified remains of …’), and some critics call it elitist to drop a word that is widely understood.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · How bodies survive" data-title="Notes 1 — How bodies survive" data-kind="notes">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>How bodies survive, and what they can tell us</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U3 L1 · Human remains as evidence</b></span><span>1 · How bodies survive</span></div>
+    <div class="row"><div class="cq">Name four ways human bodies survive, with an example of each.</div>
+      <div class="nts reveal">skeletons (bones, teeth): Roman burial, Wels <span class="sep">·</span> cremated remains (burnt bone): a Roman urn of ashes <span class="sep">·</span> preserved naturally: Ötzi (ice), Tollund Man (bog), Tarim Basin (desert) <span class="sep">·</span> preserved deliberately: Egyptian mummification</div></div>
+    <div class="row"><div class="cq">Explain the difference between natural and deliberate preservation.</div>
+      <div class="nts reveal">natural = the environment, no human help (ice, bog, dry sand) <span class="sep">·</span> deliberate = people treated the body (natron, organs in canopic jars) → itself evidence of customs and, with texts, beliefs</div></div>
+    <div class="row"><div class="cq">Explain what remains can and can’t tell historians.</div>
+      <div class="nts reveal">can: age, sex, health, diet, injuries, ancestry, burial customs, sometimes cause of death <span class="sep">·</span> can’t, on their own: names, feelings <span class="sep">·</span> beliefs only with burial context or texts</div></div>
+    <div class="row"><div class="cq">Explain why the words we use matter.</div>
+      <div class="nts reveal">‘mummified person’, ‘Ancestral Remains’ → these were people <span class="sep">·</span> British Museum: “respect and dignity” <span class="sep">·</span> not all agree (in 2023 it still used ‘mummy’)</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Can tell, can’t tell" data-title="Card sort: six cases">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow">2 · Can tell, can’t tell · We do — card sort in pairs · 8 minutes · press K for the timer</p>
+  <h2>Six cases: what can each tell us, and what can’t it?</h2>
+  <div class="u3l01-cards">
+    <figure class="u3l01-card"><span class="l">A</span><img class="u3l01-top" src="images/roman-burial-lead-coffin-wels.jpg" alt="A skeleton in a lead coffin in a museum case"><figcaption><b>A skeleton</b>A Roman burial: a skeleton in a lead coffin, displayed in the city museum at Wels, Austria. Only bones and teeth survive.</figcaption></figure>
+    <figure class="u3l01-card"><span class="l">B</span><img src="images/u3l01-stonehenge-wiltshire.jpg" alt="The standing stones of Stonehenge under a grey sky"><figcaption><b>A cremation</b>Small fragments of burnt bone from dozens of people, buried at Stonehenge, England, about 3200–2400 BCE.</figcaption></figure>
+    <figure class="u3l01-card"><span class="l">C</span><img src="images/u3l01-tisenjoch-otzi-find-spot.jpg" alt="A stone marker on a rocky mountain pass, with a snowy peak behind"><figcaption><b>Ötzi</b>A man naturally mummified in glacier ice; died about 3300 BCE; found in 1991 with his clothing and equipment. Skin, organs, stomach contents and tattoos survive.</figcaption></figure>
+    <figure class="u3l01-card"><span class="l">D</span><img src="images/u3l01-bjaeldskovdal-bog-tollund-man-find-spot.jpg" alt="Birch woodland and boggy ground with a wooden post"><figcaption><b>A bog body: Tollund Man</b>Found in a peat bog near Silkeborg, Denmark, in 1950; died about 400 BCE. When found, his skin, hair and stomach contents were preserved; a leather rope lay around his neck.</figcaption></figure>
+    <figure class="u3l01-card"><span class="l">E</span><img class="u3l01-fit" src="images/u3l01-canopic-jar-of-maruta.jpg" alt="A limestone jar with a human-headed lid and hieroglyphs"><figcaption><b>An Egyptian mummified person</b>Deliberately preserved. In the most elaborate method, the body was dried with natron and wrapped, and most organs were kept in canopic jars like this one, inscribed with the name Maruta (about 1479–1425 BCE).</figcaption></figure>
+    <figure class="u3l01-card u3l01-textcard"><span class="l">F</span><figcaption><b>Mungo Lady · text only</b>Ancestral Remains found at Lake Mungo, NSW, in 1968, on Barkandji/Paakantyi, Mutthi Mutthi and Ngiyampaa Country; identified as female; about 40,000 years old. She had been cremated, her bones crushed, burned again and buried. Returned to Lake Mungo in 1992. <i>No picture: the Custodians decide what is shared, following ICIP protocols.</i></figcaption></figure>
+  </div>
+  <div class="u3l01-row">
+    <p class="u3l01-howto"><span><b>1</b>For each card: what can it tell us?</span><span><b>2</b>What can it not tell us?</span><span><b>3</b>Argued about one? Put it in a ‘tricky’ pile</span></p>
+    <div class="card quiet sm"><div class="k">Support</div><p class="body">First match each card to a way the body survived: skeletal · cremated · preserved · mummified.</p></div>
+  </div>
+  <div class="bank" aria-label="Word bank"><span>age</span><span>sex</span><span>health</span><span>diet</span><span>injuries</span><span>cause of death</span><span>ancestry</span><span>burial customs</span><span>names</span><span>feelings</span><span>beliefs</span></div>
+  <p class="small credline">Images: Wolfgang Sauber (CC BY-SA 3.0) · Diego Delso (CC BY-SA 4.0) · Tigerente (CC BY-SA 4.0) · Nils Jepsen (CC BY-SA 4.0) · The Met (CC0 1.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Can tell, can’t tell" data-title="Check: the clearer cards" data-kind="notes">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow">2 · Can tell, can’t tell · We do — check your sort · cold call a pair before each row</p>
+  <h2>Check your sort: the clearer cards</h2>
+  <div class="tbl-scroll" data-veil="Sort first — then show the answers"><table class="tbl compact u3l01-key">
+    <tr><th>Card</th><th>What it can tell us (examples)</th><th>What it can’t tell us on its own</th></tr>
+    <tr class="reveal"><td>A · skeleton</td><td>age (teeth, bone growth) · sex (pelvis, skull) · health and injuries (marks on bones) · diet and ancestry, if isotopes or DNA survive · a burial custom (a lead coffin)</td><td class="no">name · feelings · beliefs · often the cause of death (“most fractures are not fatal”)</td></tr>
+    <tr class="reveal"><td>C · Ötzi</td><td>age (about 46) · health · his last meal (fat, wild meat, cereals) · where he grew up (minerals in his teeth) · cause of death (an arrowhead in his left shoulder, found by X-ray in 2001) · ancestry (DNA)</td><td class="no">his name · why he was killed · what his tattoos meant to him (the museum thinks they were probably to soothe pain)</td></tr>
+    <tr class="reveal"><td>D · Tollund Man</td><td>age (about 40) · height · his last meal (seeds and grain) · diet (isotopes) · cause of death (hanged) · how he was laid in the bog</td><td class="no">his name · feelings · why he was hanged: “we shall never know”, says his museum (was it a sacrifice? Lesson 5)</td></tr>
+    <tr class="reveal"><td>E · Egyptian mummified person</td><td>age, sex and health (CT scans, without unwrapping) · how the body was mummified · <i>only with texts or burial context</i> (tricky: see the next slide): a name, from the text on a jar or coffin, and beliefs: the Australian Museum says the organs were kept because “they allowed the dead person to breathe and eat in the afterlife”</td><td class="no">feelings · the body alone gives no name and no beliefs: they come from texts and the burial</td></tr>
+  </table></div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Can tell, can’t tell" data-title="The tricky pile: cremations and beliefs" data-kind="notes">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow">2 · Can tell, can’t tell · We do — the tricky pile · gesture vote first: thumbs up, sideways or down</p>
+  <h2>The tricky pile: can a cremation still be good evidence?</h2>
+  <div class="src">
+    <div class="k">Source · A scientific study of burnt bone</div>
+    <p class="quote sm">Cremated human remains from Stonehenge provide direct evidence on the life of those few select individuals buried at this iconic Neolithic monument.</p>
+    <p class="prov">C. Snoeck and nine co-authors, <i>Scientific Reports</i> 8 (2018), abstract · a team of archaeologists and chemists · Neolithic = the New Stone Age</p>
+  </div>
+  <div class="stack" data-veil="Vote first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u3l01-key">
+    <tr><th>Card</th><th>What it can still tell us</th><th>What it can’t tell us</th></tr>
+    <tr class="reveal"><td>B · Stonehenge cremations</td><td>how many people (at least 25, in bone that excavators dug up in the 1920s and reburied together in 1935) · when (radiocarbon dates on the burnt bone) · adult or young person · sometimes sex (“possible” only) · where some lived in their last years (isotopes: at least 10 had not spent all their last ten or so years on the local chalk) · a burial custom</td><td class="no">skin, organs, a last meal · names · feelings · often sex</td></tr>
+    <tr class="reveal"><td>F · Mungo Lady</td><td>identified as female · about 40,000 years old · a careful ritual: cremated, crushed, burned again and buried, among the earliest evidence of cremation anywhere</td><td class="no">her name · her feelings · what the ritual meant: historians can only infer it, and the Custodians decide what is shared, following ICIP protocols</td></tr>
+    <tr class="reveal"><td>Beliefs, on any card</td><td>only with burial context or texts: Egyptian texts and canopic jars; Mungo Lady’s ritual burial; Tollund Man laid in the bog with care</td><td class="no">the body alone shows a body, not a belief: any belief is an inference, so say how sure you are</td></tr>
+  </table></div>
+  <div class="note reveal" data-code="judgement"><p class="body"><b>So:</b> a cremation destroys a lot, but not everything. Burnt bone can still be counted, dated and tested, and the way a cremation was carried out is itself evidence of a burial custom.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · These were people" data-title="You do: Cornell notes from the sort">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow">3 · These were people · You do · 7 minutes · press K for the timer</p>
+  <h2>Your Cornell notes from the sort</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body"><li>In the notes column: the six cases, each with what it can tell us and what it can’t.</li>
+          <li>Group them: which cases kept the most evidence, and why?</li>
+          <li>In the cue column: one question for each case, using an exam verb (explain, analyse, assess).</li></ol></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Use your grid from the sort. Start each row with the way the body survived: skeletal · cremated · preserved · mummified.</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Add the cremation question: why can a cremation, which seems to destroy the body, still be significant evidence? Use Mungo Lady.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">A strong set of notes</div>
+        <ul class="checks">
+          <li><label><input type="checkbox"> names all four ways bodies survive</label></li>
+          <li><label><input type="checkbox"> <span>gives evidence, not just a category (<span class="nq">“an arrowhead in Ötzi’s shoulder”</span>, not just “injuries”)</span></label></li>
+          <li><label><input type="checkbox"> says where names and beliefs come from (texts, burial context)</label></li>
+          <li><label><input type="checkbox"> uses respectful terms: mummified person, Ancestral Remains</label></li>
+        </ul></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · These were people" data-title="Notes 2 — What six cases can tell us" data-kind="notes">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>What six cases can tell us</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U3 L1 · Human remains as evidence</b></span><span>2 · Can tell, can’t tell</span></div>
+    <div class="row"><div class="cq">Explain what a skeleton can reveal.</div>
+      <div class="nts reveal">age (teeth, bone growth) <span class="sep">·</span> sex (pelvis, skull) <span class="sep">·</span> disease, injuries <span class="sep">·</span> diet (isotopes), ancestry (DNA) <span class="sep">·</span> not: name, feelings; cause of death often unclear</div></div>
+    <div class="row"><div class="cq">Explain why Ötzi and Tollund Man reveal more than a skeleton.</div>
+      <div class="nts reveal">natural preservation kept skin, organs, stomach contents → last meals, tattoos, cause of death (arrowhead; rope) <span class="sep">·</span> still not: names, or why they died</div></div>
+    <div class="row"><div class="cq">Explain what a cremation can still reveal.</div>
+      <div class="nts reveal">how many people, when (radiocarbon), adult or young person, where some lived late in life (Stonehenge, 2018) <span class="sep">·</span> the ritual itself (Mungo Lady) <span class="sep">·</span> lost: soft tissue; sex often uncertain</div></div>
+    <div class="row"><div class="cq">Analyse where names and beliefs come from.</div>
+      <div class="nts reveal">not from the body → texts (Maruta’s name on her canopic jar) and burial context (organs kept for the afterlife; Mungo Lady’s ritual) <span class="sep">·</span> beliefs are inferences</div></div>
+    <div class="row"><div class="cq">Explain why Mungo Lady is text only.</div>
+      <div class="nts reveal">Ancestral Remains, returned to Lake Mungo 1992 <span class="sep">·</span> the Custodians decide what is shared, following ICIP protocols → no pictures</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · These were people" data-title="You do: our three respect rules">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow">3 · These were people · You do · 9 minutes · draft in pairs, then agree as a class</p>
+  <h2>Our class respect rules for this unit</h2>
+  <div class="card accent"><div class="k">Everyone</div><p class="body">With a partner, draft one rule under each heading, and give a reason for it (dignity, consent, Cultural Knowledge). Then the class agrees on three rules for the wall.</p></div>
+  <div class="u3l01-rules veil-parts" data-veil="Draft yours first — then show example rules">
+    <div class="u3l01-rule"><div class="card quiet"><div class="k">1 · Language</div><p class="body">What words will we use, and avoid?</p></div>
+      <p class="u3l01-model vp reveal"><span class="k">An example rule</span><span class="nq">We say ‘person’, ‘mummified person’, ‘Ancestral Remains’ or ‘Ancestors’, and we never joke about the dead, because they were people with names and families.</span></p></div>
+    <div class="u3l01-rule"><div class="card quiet"><div class="k">2 · Images</div><p class="body">When should we look at pictures of remains?</p></div>
+      <p class="u3l01-model vp reveal"><span class="k">An example rule</span><span class="nq">We use a picture only when it teaches us something, we prefer find-spots, displays and objects, and we never share one for shock, because the dead cannot give consent.</span></p></div>
+    <div class="u3l01-rule"><div class="card quiet"><div class="k">3 · Aboriginal Ancestral Remains</div><p class="body">How will we learn about them?</p></div>
+      <p class="u3l01-model vp reveal"><span class="k">An example rule</span><span class="nq">We learn about Aboriginal Ancestral Remains in text only, in the Traditional Owners’ own published words, because the Custodians decide what is shared, following ICIP protocols.</span></p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · These were people" data-title="Summary" data-kind="notes">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>How do human bodies survive from the past?</li>
+          <li>What can remains tell historians, and what can’t they?</li>
+          <li>Why do the words and pictures we use for the dead matter?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Human bodies survive from the past as skeletons, as cremated remains, and as bodies preserved naturally by ice, bogs or desert or deliberately by Egyptian mummification. Remains can reveal a person’s age, sex, health, diet and injuries, and sometimes the cause of death, but on their own they cannot show names or feelings, and beliefs only with burial context or texts. Because these were people, historians use respectful words such as ‘mummified person’ and ‘Ancestral Remains’, choose pictures with care, and leave decisions about Aboriginal Ancestral Remains to their Custodians.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> The unit’s inquiry question</label></li>
+        <li><label><input type="checkbox"> Four ways bodies survive, with examples</label></li>
+        <li><label><input type="checkbox"> Natural or deliberate: why it matters</label></li>
+        <li><label><input type="checkbox"> Can tell, can’t tell</label></li>
+        <li><label><input type="checkbox"> Why words matter</label></li>
+        <li><label><input type="checkbox"> Six cases, including the tricky ones</label></li>
+        <li><label><input type="checkbox"> Our three respect rules</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 8 minutes · before you leave</p>
+  <h2>Finish the sentence</h2>
+  <div class="card accent"><p class="lead nq">“Human remains are valuable evidence because … but historians must …”</p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">A precise thing remains can reveal, with an example (Ötzi’s last meal; Tollund Man’s cause of death), and a precise responsibility or limit (respectful words and pictures; the Custodians’ decisions; no names, feelings or beliefs from the body alone).</p></div>
+  <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model sentence · written for this lesson</div>
+    <p class="quote sm model">Human remains are valuable evidence because they can reveal how people lived and died, such as the meal Ötzi ate shortly before he died and the arrowhead in his shoulder, but historians must treat them with respect, because they were people, and must not claim that a body alone shows a name, a feeling or a belief.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> preserved by ice and bog: how Ötzi and the bog bodies were found.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u3l01-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>A cremation destroys every piece of evidence about the person.</span>
+      <span class="sol no reveal">False <span class="why">— burnt bone can still be counted, dated by radiocarbon and tested: at Stonehenge it showed adults and young people, and that some had not spent all their last years on the local chalk.</span></span></li>
+    <li><span class="n">2</span><span>Ötzi’s body was preserved deliberately, like an Egyptian mummified person.</span>
+      <span class="sol no reveal">False <span class="why">— his museum says he was “mummified naturally in the glacier ice”.</span></span></li>
+    <li><span class="n">3</span><span>A skeleton can show whether a person was male or female.</span>
+      <span class="sol reveal">True <span class="why">— mainly from the pelvis and the skull, though it is much harder with burnt bone.</span></span></li>
+    <li><span class="n">4</span><span>A body on its own can show what the person believed.</span>
+      <span class="sol no reveal">False <span class="why">— beliefs need burial context or texts, such as Egyptian canopic jars and the texts that explain them.</span></span></li>
+    <li><span class="n">5</span><span>Every museum has stopped using the word ‘mummy’.</span>
+      <span class="sol no reveal">False <span class="why">— some museums now say ‘mummified person’, but in 2023 the British Museum said it still uses ‘mummy’ in its galleries.</span></span></li>
+    <li><span class="n">6</span><span>This unit shows Mungo Lady’s Ancestral Remains in text only.</span>
+      <span class="sol reveal">True <span class="why">— the Custodians decide what is shared, following ICIP protocols.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — valuable evidence" data-kind="practice">
+<div class="wrap prac u3l01-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Write it as a historian</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · A different case</div><p class="body">You wrote the sentence in class. Now write it for one case card: <span class="nq">“Tollund Man’s body is valuable evidence because …, but …”</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Tollund Man’s body is valuable evidence because the bog preserved his skin, hair and stomach contents, which show his last meal and that he was hanged, but it cannot tell us his name or why he was killed, which his own museum says “we shall never know”.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Exercise 2 · Extension</div><p class="body">Explain why a cremation, which seems to destroy the body, can still be significant evidence. Use Mungo Lady (text only) and the Stonehenge cremations.</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">A cremation seems to destroy the evidence, because the fire burns away skin and organs and breaks the bones into fragments. Yet burnt bone can still answer important questions. At Stonehenge, burnt bone that excavators had dug up in the 1920s and reburied together came from at least 25 people, radiocarbon dates placed them between about 3200 and 2400 BCE, and isotopes suggested that at least 10 had not spent all their last years on the local chalk. The way a cremation was carried out is evidence too: Mungo Lady was cremated, her bones crushed, burned again and buried about 40,000 years ago, among the earliest evidence of cremation anywhere. A cremation can therefore be significant evidence, although the remains cannot tell historians what her burial meant, and the Custodians decide what is shared, following ICIP protocols.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u3l01-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Name four ways human bodies survive from the past, with an example of each.
+      <span class="sol reveal">Skeletons (a Roman burial at Wels); cremated remains (Stonehenge; Mungo Lady); bodies preserved naturally by ice, bogs or desert (Ötzi; Tollund Man); bodies preserved deliberately (Egyptian mummification).</span></li>
+    <li>What is the difference between natural and deliberate preservation?
+      <span class="sol reveal">Natural preservation is done by the environment with no human help; deliberate preservation is people treating the body to stop decay, which is itself evidence of their customs.</span></li>
+    <li>Name four things remains can reveal.
+      <span class="sol reveal">Any four: age, sex, health, diet, injuries, ancestry, burial customs, and sometimes the cause of death.</span></li>
+    <li>What can remains not show on their own?
+      <span class="sol reveal">Names and feelings; beliefs only with burial context or texts.</span></li>
+    <li>What can a cremation still reveal?
+      <span class="sol reveal">How many people, when (radiocarbon on the burnt bone), adult or young person, sometimes sex, where some lived late in life (isotopes), and the burial ritual itself.</span></li>
+    <li>Why do some museums say ‘mummified person’ instead of ‘mummy’?
+      <span class="sol reveal">To remind visitors that the remains were a person who once lived; not all agree (in 2023 the British Museum said it still uses ‘mummy’).</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u3l01-cite"><div class="k">Written sources</div>
+      <p class="small">Museums: South Tyrol Museum of Archaeology, <a href="https://www.iceman.it/en/the-mummy/">‘The mummy’</a> and <a href="https://www.iceman.it/en/the-discovery/">‘The discovery’</a>; Museum Silkeborg, <a href="https://www.museumsilkeborg.dk/tollund-man-and-elling-woman">‘Tollund Man and Elling Woman’</a>; Australian Museum, <a href="https://australian.museum/learn/cultures/international-collection/ancient-egyptian/how-were-ancient-egyptians-mummified/">‘How were ancient Egyptians mummified?’</a> (2023); Natural History Museum, London, <a href="https://www.nhm.ac.uk/discover/analysing-the-bones-what-can-a-skeleton-tell-you.html">‘Analysing the bones: what can a skeleton tell you?’</a>; British Museum, <a href="https://www.britishmuseum.org/our-work/departments/human-remains/human-remains-collection-and-display">‘Human remains: Collection and display’</a>; National Museum of Australia, <a href="https://www.nma.gov.au/defining-moments/resources/mungo-lady">‘Mungo Lady’</a> and <i>A Repatriation Handbook</i>, <a href="https://www.nma.gov.au/about/publications/repatriation-handbook/glossary">glossary</a>; The Metropolitan Museum of Art, records 18.8.5a, b and 91.1.1230. All quoted briefly for teaching.</p>
+      <p class="small">News: Issy Ronald, CNN, <i>Don’t say ‘mummy’: Why museums are rebranding ancient Egyptian remains</i> (23 January 2023), quoted from the ABC7 Chicago reprint (25 January 2023); Museums Association, <i>Debate over use of the term ‘mummy’ in UK museums</i> (24 January 2023).</p>
+      <p class="small">Studies: C. Snoeck et al., <i>Scientific Reports</i> 8 (2018), <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6072783/">open access</a> (CC BY 4.0); N. H. Nielsen et al., <i>Radiocarbon</i> 60 (2018); F. Maixner et al., <i>Current Biology</i> 28 (2018); K. Wang et al., <i>Cell Genomics</i> 3 (2023); F. Zhang et al., <i>Nature</i> 599 (2021), <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8580821/">open access</a> (CC BY 4.0); J. M. Bowler et al., <i>Nature</i> 421 (2003). Aboriginal Advisory Group: NSW Environment, <a href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/world-heritage-area-advisory-committees/willandra-lakes-region-world-heritage-aboriginal-advisory-group">Willandra Lakes Region World Heritage Aboriginal Advisory Group</a>.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet"><div class="k">Teacher resource</div>
+        <p class="small"><i>Human Remains as Historical Evidence</i> (worksheet, class notebook), used for the types of remains and the conditions that preserve them.</p></div>
+    </div>
+  </div>
+  <div class="card quiet u3l01-cite"><div class="k">Images</div>
+    <ul class="small credits"><li><b>Stone marker near Ötzi’s find-spot, Tisenjoch</b> · Photo: Tigerente · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Obelisk_Eismann_Fundstelle_20090908b.jpg">source</a></li><li><b>Skeleton in a Roman lead coffin, Wels</b> · Photo: Wolfgang Sauber · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:SMWM_Gr%C3%A4berstra%C3%9Fe_-_Bleisarg_1.jpg">source</a></li><li><b>Roman glass cinerary urn (Met 91.1.1230)</b> · The Metropolitan Museum of Art (Open Access) · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://www.metmuseum.org/art/collection/search/245624">source</a></li><li><b>Bjældskovdal bog, where Tollund Man was found</b> · Photo: Nils Jepsen · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Bjeldskovdal_Tollundmandens_findested.jpg">source</a></li><li><b>Canopic jar of Maruta (Met 18.8.5a, b)</b> · The Metropolitan Museum of Art (Open Access) · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://www.metmuseum.org/art/collection/search/548638">source</a></li><li><b>Stonehenge, Wiltshire</b> · Photo: Diego Delso · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Stonehenge,_Condado_de_Wiltshire,_Inglaterra,_2014-08-12,_DD_09.JPG">source</a></li></ul>
+    <p class="small">All images are public domain or openly licensed, and were resized for the web (the urn and the Wels burial were also cropped). Each is shared under the licence shown. Out of respect, there are no images of Aboriginal Ancestral Remains or burial places.</p></div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

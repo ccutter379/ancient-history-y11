@@ -1,0 +1,1739 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U3 L7 · Repatriation and Aboriginal Ancestral Remains</title>
+<meta name="description" content="Year 11 Ancient History, the treatment and display of human remains: the return of Mungo Lady and Mungo Man to Country, taught in text only and in the published words of named Traditional Owners, and how Communities, museums and scientists see repatriation.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#5E2D6F; --bright:#8A4BA0; --tint:#F2E9F5; --statement:#5E2D6F;
+  --solid:#5E2D6F; --soft:#EBD9F2; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#D6B3E3; --bright:#B57CCB; --tint:#2C1934; --statement:#4A2358; --soft:#EBD9F2; } }
+:root[data-theme="dark"]{ --deep:#D6B3E3; --bright:#B57CCB; --tint:#2C1934; --statement:#4A2358; --soft:#EBD9F2; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 3 Lesson 7 only (every class starts u3l07-) */
+
+/* title slide: the museum across the lake, and the notice about names */
+.u3l07-cover img{max-height:34vh;}
+.u3l07-warn{border-left:4px solid var(--slate); padding:.35em .8em; background:var(--surface-2); border-radius:0 8px 8px 0;
+  font-size:calc(var(--fs-chrome)*1.02); line-height:1.4; color:var(--ink);}
+
+/* Country and respect notice (text only, on purpose) */
+.u3l07-ack{border-left:6px solid var(--c-evidence); background:var(--w-evidence); border-radius:0 10px 10px 0;
+  padding:.45em .9em; font-size:calc(var(--fs-body)*.84); line-height:1.42;}
+.u3l07-ack b{color:var(--c-evidence);}
+.u3l07-ack a{color:var(--deep);}
+.u3l07-nopic{border:2px dashed var(--slate); border-radius:10px; padding:.5em .9em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.8); line-height:1.4;}
+.u3l07-nopic .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.25em;}
+.u3l07-links{list-style:none; margin:.3em 0 0; padding:0; display:flex; flex-direction:column; gap:.2em;
+  font-size:var(--fs-chrome); line-height:1.35;}
+.u3l07-links a{color:var(--deep); font-weight:600;}
+
+/* the text timeline: year badge + event, read down the left column then the right */
+.u3l07-tl{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; grid-template-rows:repeat(5,auto);
+  grid-auto-flow:column; gap:clamp(5px,.9vh,10px) clamp(14px,1.8vw,28px); align-items:start;}
+.u3l07-tl li{display:grid; grid-template-columns:5.6em 1fr; gap:.6em; align-items:start;
+  font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.u3l07-yr{font-family:var(--mono); font-weight:700; color:#fff; background:var(--solid); border-radius:6px;
+  text-align:center; padding:.12em .3em; font-size:.86em; line-height:1.3;}
+.u3l07-tl li.u3l07-later .u3l07-yr{background:var(--slate);}
+.u3l07-tl .src-ref{color:var(--slate); font-size:.9em;}
+
+/* quick facts list */
+.u3l07-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.25em;
+  font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.u3l07-facts b{color:var(--deep);}
+
+/* voices: one card per named speaker */
+.u3l07-voices{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:clamp(8px,1.2vh,14px) clamp(12px,1.4vw,22px);}
+.u3l07-voices.c3{grid-template-columns:repeat(3,minmax(0,1fr));}
+.u3l07-v{background:var(--surface); border:1px solid var(--rule); border-left:5px solid var(--deep); border-radius:10px;
+  padding:.5em .85em .55em; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:.3em;}
+.u3l07-v .who{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.06em;
+  text-transform:uppercase; color:var(--deep); line-height:1.3;}
+.u3l07-v .quote{margin:0;}
+.u3l07-v .quote.sm{font-size:calc(var(--fs-body)*.84); line-height:1.42;}
+.u3l07-v .prov{font-size:calc(var(--fs-chrome)*.9); color:var(--slate); line-height:1.35; margin:0;}
+.u3l07-v.inst{border-left-color:var(--slate);}
+.u3l07-v.sci{border-left-color:var(--c-analysis);}
+
+/* the report: header with outlet and date */
+.u3l07-report{background:var(--surface); border:1px solid var(--rule); border-top:5px solid var(--deep); border-radius:10px;
+  padding:.5em 1em; box-shadow:var(--shadow);}
+.u3l07-report .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep);}
+.u3l07-report .t{font-family:var(--disp); font-weight:700; font-size:calc(var(--fs-body)*.98); line-height:1.3; margin:.15em 0;}
+.u3l07-report .m{font-size:var(--fs-chrome); color:var(--slate); line-height:1.35;}
+.u3l07-task{font-size:calc(var(--fs-body)*.84); line-height:1.4;}
+.u3l07-task b{color:var(--deep);}
+
+/* perspective and purpose grid */
+.u3l07-grid td:first-child{font-weight:700; color:var(--deep); white-space:nowrap;}
+.u3l07-grid td{vertical-align:top;}
+.u3l07-grid td .g{display:block; font-weight:400; color:var(--slate); font-size:.9em; white-space:normal;}
+
+/* feedback in action: the class checklist, compact, and the before/after examples */
+.u3l07-check{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.3em;}
+.u3l07-check li{display:grid; grid-template-columns:1.6em 1fr; gap:.5em; align-items:start;
+  font-size:calc(var(--fs-body)*.82); line-height:1.32;}
+.u3l07-check .num{display:grid; place-items:center; width:1.5em; height:1.5em; border-radius:50%; background:var(--solid);
+  color:#fff; font-weight:700; font-size:.88em;}
+.u3l07-check .d{display:block; color:var(--slate); font-size:.92em;}
+.u3l07-ba{display:grid; grid-template-columns:4.6em 1fr; gap:.25em .6em; font-size:calc(var(--fs-body)*.8); line-height:1.38;}
+.u3l07-ba .l{font-family:var(--ui); font-weight:700; font-size:.82em; letter-spacing:.04em; text-transform:uppercase;
+  color:var(--slate); padding-top:.2em;}
+.u3l07-ba .l.after{color:var(--c-evidence);}
+.u3l07-ba + .u3l07-ba{margin-top:.55em; padding-top:.55em; border-top:1px dashed var(--rule);}
+.u3l07-steps{margin:0; padding-left:1.3em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.u3l07-steps li{margin:.2em 0;}
+
+/* hinge, legend, goals and credits */
+.u3l07-hingebox{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+.u3l07-hinge li{font-size:calc(var(--fs-body)*.92); line-height:1.36;}
+.u3l07-legend .mq{font-size:calc(var(--fs-body)*.84);}
+.u3l07-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u3l07-cite a{color:var(--deep);}
+.u3l07-cite p + p{margin-top:.45em;}
+.u3l07-iq{font-weight:700; font-size:calc(var(--fs-body)*.92); line-height:1.35;}
+.u3l07-iq span{color:var(--deep);}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u3l07-tl{grid-template-columns:1fr; grid-template-rows:none; grid-auto-flow:row;}
+  .u3l07-voices, .u3l07-voices.c3{grid-template-columns:1fr;}
+  .u3l07-grid td:first-child{white-space:normal;}
+  .u3l07-cover img{max-height:none;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u3l07-dense{gap:8px;}
+  html:not(.read) .u3l07-dense h2{font-size:calc(var(--fs-h2)*.82);}
+  html:not(.read) .u3l07-dense .quote.sm{font-size:calc(var(--fs-body)*.72); line-height:1.38;}
+  html:not(.read) .u3l07-dense .quote{font-size:calc(var(--fs-body)*.86);}
+  html:not(.read) .u3l07-dense .src{padding:9px 15px;}
+  html:not(.read) .u3l07-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u3l07-dense .note{padding:.4em .8em;}
+  html:not(.read) .u3l07-dense .note .body, html:not(.read) .u3l07-dense .card .body,
+  html:not(.read) .u3l07-dense .qprompt{font-size:calc(var(--fs-body)*.76); line-height:1.34;}
+  html:not(.read) .u3l07-dense .card{padding:9px 15px;}
+  html:not(.read) .u3l07-dense .card .k, html:not(.read) .u3l07-dense .src .k{margin-bottom:.25em;}
+  html:not(.read) .u3l07-dense .tbl.compact{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u3l07-dense .tbl.compact td{padding:.26em .5em;}
+  html:not(.read) .u3l07-dense .tbl th{padding:.32em .55em;}
+  html:not(.read) .u3l07-dense .u3l07-tl li{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u3l07-dense .u3l07-ack{font-size:calc(var(--fs-body)*.72); padding:.35em .8em;}
+  html:not(.read) .u3l07-dense .u3l07-nopic{font-size:calc(var(--fs-body)*.7); padding:.35em .75em;}
+  html:not(.read) .u3l07-dense .u3l07-facts{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u3l07-dense .u3l07-v{padding:.35em .7em .4em; gap:.2em;}
+  html:not(.read) .u3l07-dense .u3l07-v .quote.sm{font-size:calc(var(--fs-body)*.7); line-height:1.36;}
+  html:not(.read) .u3l07-dense .u3l07-v .prov{font-size:calc(var(--fs-chrome)*.82);}
+  html:not(.read) .u3l07-dense .u3l07-report{padding:.35em .85em;}
+  html:not(.read) .u3l07-dense .u3l07-report .t{font-size:calc(var(--fs-body)*.86);}
+  html:not(.read) .u3l07-dense .u3l07-task{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u3l07-dense .u3l07-check li{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u3l07-dense .u3l07-ba{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u3l07-dense .u3l07-steps{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u3l07-dense .opts li{padding:.35em .7em;}
+  html:not(.read) .u3l07-dense .u3l07-hinge li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u3l07-dense .u3l07-iq{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u3l07-dense .keylist li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u3l07-dense .keylist .d{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u3l07-dense .tf li, html:not(.read) .u3l07-dense .rq{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u3l07-dense .tf li{padding:.24em .6em;}
+  html:not(.read) .u3l07-dense .prac{gap:6px;}
+  html:not(.read) .u3l07-dense .cornell .cq, html:not(.read) .u3l07-dense .cornell .nts{font-size:calc(var(--fs-body)*.72); padding:.3em .75em;}
+  html:not(.read) .u3l07-dense .checks label{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u3l07-dense .mq{font-size:calc(var(--fs-body)*.76); line-height:1.34;}
+  html:not(.read) .u3l07-dense .small{font-size:calc(var(--fs-chrome)*.9);}
+}
+
+/* feedback in action: keep the examples' heading at body size so both examples fit */
+.u3l07-fia .note .k{font-size:calc(var(--fs-body)*.86); margin-bottom:.3em;}
+@media (max-height:820px){
+  html:not(.read) .u3l07-dense .u3l07-fia .note .k{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u3l07-dense .u3l07-fia .u3l07-ba{font-size:calc(var(--fs-body)*.68); line-height:1.34;}
+  html:not(.read) .u3l07-dense .u3l07-fia .u3l07-ba + .u3l07-ba{margin-top:.4em; padding-top:.4em;}
+  html:not(.read) .u3l07-dense .u3l07-fia .stack{gap:8px;}
+}
+
+/* editorial insertions inside a speaker's words: upright and grey, as in .src */
+.u3l07-v .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+
+/* the timeline split into two lists, the question under the right-hand list */
+.u3l07-tl.one{grid-template-columns:1fr; grid-template-rows:none; grid-auto-flow:row;}
+.u3l07-tlsplit .stack{gap:clamp(6px,1vh,12px);}
+@media (max-height:820px){
+  html:not(.read) .u3l07-dense .u3l07-tlsplit .note .body{font-size:calc(var(--fs-body)*.7); line-height:1.32;}
+  html:not(.read) .u3l07-dense .u3l07-tlsplit .qprompt{font-size:calc(var(--fs-body)*.72);}
+}
+@media (max-height:820px){
+  html:not(.read) .u3l07-dense .u3l07-tlsplit .u3l07-tl li{font-size:calc(var(--fs-body)*.69); line-height:1.32;}
+  html:not(.read) .u3l07-dense .u3l07-tlsplit .u3l07-tl{gap:6px;}
+  html:not(.read) .u3l07-dense .u3l07-tlsplit .note{padding:.35em .75em;}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 7" data-title="Repatriation and Aboriginal Ancestral Remains" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1fr 1.05fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 3 · Human remains · Lesson 7</p>
+      <h1>Repatriation and Aboriginal Ancestral Remains</h1>
+      <p class="lead">Why does bringing Ancestors home matter, and whose voices should we hear when we tell the story?</p>
+      <p class="u3l07-warn">Aboriginal and Torres Strait Islander readers are advised that this lesson contains the names and words of people who have died. It has no images of Ancestral Remains or of the places where they were buried.</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u3l07-cover"><figure class="figure contain"><img src="images/u3l07-national-museum-of-australia.jpg" alt="The National Museum of Australia on Acton Peninsula, Canberra, across Lake Burley Griffin (2019)" loading="lazy"><figcaption>The National Museum of Australia on Acton Peninsula, Canberra, across Lake Burley Griffin (2019) — <span class="cr">Photo: Dietmar Rabich / Wikimedia Commons · CC BY-SA 4.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="Review: Lessons 1–6" data-kind="intro practice">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <h2>Six questions from Lessons 1–6</h2>
+  <ol class="rq" data-answers>
+    <li>Why does this unit say ‘mummified person’ and ‘Ancestral Remains’?
+      <span class="sol reveal">Because these were people. Some museums (for example National Museums Scotland) now say ‘mummified person’ instead of ‘mummy’; ‘Ancestral Remains’ is a respectful term for the remains of Aboriginal and Torres Strait Islander people, and Communities may prefer others, such as ‘Ancestors’ or ‘Old People’.</span></li>
+    <li>Why do some bog bodies keep their skin but have soft or missing bones?
+      <span class="sol reveal">The bog’s acid dissolves the minerals in bone, while the cold, waterlogged, oxygen-poor peat preserves skin and soft tissue.</span></li>
+    <li>Name one non-invasive and one minimally invasive method, each with a result from this unit.
+      <span class="sol reveal">Non-invasive: X-ray or CT scanning, for example the arrowhead in Ötzi’s left shoulder, identified in 2001. Minimally invasive: a small sample for DNA, isotopes, radiocarbon or gut contents, for example Tollund Man’s last meal, a porridge of barley, pale persicaria and flax, and probably some fish (2021 study).</span></li>
+    <li>How is Ötzi preserved and displayed today?
+      <span class="sol reveal">In a cold cell at about −6 °C and very high humidity (99%) at the South Tyrol Museum of Archaeology, Bolzano; visitors see him through a small window.</span></li>
+    <li>What is Tacitus’s <i>Germania</i> 12 most useful as evidence of, and what is one limit?
+      <span class="sol reveal">Roman views of Germanic customs in about 98 CE. It is weaker for bog bodies from other places or centuries: Tollund Man died about 500 years earlier, and Lindow Man lived in Britain, not Germania.</span></li>
+    <li>Name three stakeholders in decisions about human remains, and one interest of each.
+      <span class="sol reveal">Any three, for example: descendants and Communities (family, culture, belief) · scientists (research) · museums (care, display, education) · governments (law and heritage) · the public (learning).</span></li>
+  </ol>
+  <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>understand why the repatriation of Aboriginal Ancestral Remains matters</li>
+        <li>analyse the perspectives of Communities, museums and scientists</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>describe the return of Mungo Lady and Mungo Man to Country</li>
+        <li>explain Community, museum and scientific perspectives on repatriation</li>
+        <li>explain why repatriation is significant, in a paragraph</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u3l07-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-08 uses sources to form conclusions about the past · AH-LS-09 identifies different interpretations of the past.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U3 L7 · Repatriation and Aboriginal Ancestral Remains</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (ANU = Australian National University; AAG = Aboriginal Advisory Group)</span></div></div>
+      <div class="row"><div class="cq">Describe the return of Mungo Man.</div><div class="nts">found 1974 → taken to the ANU → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: the return of Mungo Lady and Mungo Man · perspectives on repatriation. When you note a quotation, write who said it, and where and when it was published.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="Feedback in action" data-kind="notes">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow">Feedback in action · 5 minutes · press K for the timer · your Lesson 6 paragraph comes back</p>
+  <h2>Rewrite the move your feedback names</h2>
+  <div class="split u3l07-fia" style="--cols:.92fr 1.2fr">
+    <div class="card quiet"><div class="k">Our class checklist · a strong argument paragraph …</div>
+      <ol class="u3l07-check">
+        <li><span class="num">1</span><span><b>opens with a judgement of degree</b><span class="d">answers the question with a qualification: to a large extent, only when …</span></span></li>
+        <li><span class="num">2</span><span><b>integrates three types of evidence, with provenance</b><span class="d">for an ethical question: a named case, a named writer and a museum’s choice, each with who, when and where</span></span></li>
+        <li><span class="num">3</span><span><b>analyses what the evidence shows</b><span class="d">explains how it supports the judgement, with a relating verb: suggests, reveals, indicates</span></span></li>
+        <li><span class="num">4</span><span><b>weighs a rival view before resolving</b><span class="d">gives the other side its best evidence, then judges it, with modality</span></span></li>
+        <li><span class="num">5</span><span><b>resolves with a refined judgement</b><span class="d">on balance … and what the evidence cannot settle: not a summary, not a roadmap</span></span></li>
+      </ol></div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="u3l07-steps">
+          <li>Read your strength and your next step.</li>
+          <li>Find the sentence your next step points to and underline it.</li>
+          <li>Rewrite it underneath, in a second colour, using that point on the checklist.</li>
+          <li>Check: is it a real change in thinking or language, not just a neater copy?</li>
+        </ol></div>
+      <div class="note reveal" data-code="evidence" data-veil="Rewrite yours first — then show two examples"><div class="k">Two before-and-after examples · written for this lesson</div>
+        <div class="u3l07-ba"><span class="l">Point 4</span><span>&nbsp;</span>
+          <span class="l">Before</span><span class="nq">Some people think human remains should not be on display.</span>
+          <span class="l after">After</span><span class="nq">Yet the sociologist Tiffany Jenkins, as Maev Kennedy reported in <i>The Guardian</i> in 2010, argues that covering or removing human remains harms learning and research; her point is likely to carry most weight for remains with no known descendants, and much less where descendants object.</span></div>
+        <div class="u3l07-ba"><span class="l">Point 2</span><span>&nbsp;</span>
+          <span class="l">Before</span><span class="nq">There was a head in a school library.</span>
+          <span class="l after">After</span><span class="nq">The head of an Egyptian woman, which its plaque says was donated to Grafton High School around 1915, has been kept in a glass case in the school library for about a century (ABC Radio National, 2023; Live Science, 2024).</span></div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Repatriation" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for returning Ancestors</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Returning the dead</th><th>Meaning</th></tr>
+      <tr><td>Repatriation</td><td>Returning remains or cultural material to the Community or country they came from.</td></tr>
+      <tr><td>Ancestral Remains</td><td>A respectful term for the remains of Aboriginal and Torres Strait Islander people; Communities may prefer others, such as ‘Ancestors’ or ‘Old People’.</td></tr>
+      <tr><td>Human remains</td><td>The bodies, or parts of the bodies, of people who have died — including bones, preserved tissue and ashes.</td></tr>
+      <tr><td>Consent</td><td>Permission given freely; the ancient dead cannot give it, which raises ethical questions.</td></tr>
+      <tr><td>Keeping place</td><td>A place where returned Ancestors are kept and cared for, instead of being reburied; some Traditional Owners wanted one that descendants and researchers could visit.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Whose decision?</th><th>Meaning</th></tr>
+      <tr><td>Custodian</td><td>A person or Community with the Cultural responsibility to care for Country, sites, Knowledge and Ancestors.</td></tr>
+      <tr><td>Country</td><td>The land and waters of an Aboriginal People, to which they are connected physically and spiritually.</td></tr>
+      <tr><td>ICIP</td><td>Indigenous Cultural and Intellectual Property — the rights of Aboriginal and Torres Strait Islander Peoples to control their Cultural Knowledge, Practices and Property.</td></tr>
+      <tr><td>Stakeholder</td><td>A person or group with an interest in a decision.</td></tr>
+      <tr><td>Significance</td><td>The importance of something, judged for a particular purpose.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Repatriation" data-title="Repatriation: bringing Ancestors home" data-kind="notes">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow">1 · Repatriation · I do — think aloud</p>
+  <h2>Repatriation: why Ancestors are coming home</h2>
+  <div class="split" style="--cols:1.05fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · the Australian Government, on its own program</div>
+        <p class="quote sm">For more than 250 years ancestors and objects were removed from their communities and placed in museums, universities and private collections in Australia and overseas. During the 19th and 20th centuries, medical officers, anatomists, ethnologists, anthropologists, and pastoralists collected ancestors for ‘scientific’ research linked to explaining human biological differences.</p>
+        <p class="prov">Australian Government, Office for the Arts, “Indigenous Repatriation” (web page, checked 25 November 2026) · a government department describing the history behind its repatriation program</p>
+      </div>
+      <p class="qprompt">Who removed Ancestors, according to this source, and why?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">Medical officers, anatomists, ethnologists, anthropologists and pastoralists, for ‘scientific’ research on human differences; the page adds that others removed Ancestors to trade or sell, and that many were then put on display as curiosities in collecting institutions. The quotation marks around ‘scientific’ suggest the government now questions that research.</p></div>
+    </div>
+    <div class="stack">
+      <p class="small"><b>Two ways of bringing Ancestors home</b></p>
+      <div class="src">
+        <div class="k">Australia · a government policy (since 2011)</div>
+        <p class="quote sm">The Australian Government seeks the voluntary and unconditional return of Aboriginal and Torres Strait Islander ancestral remains (ancestors) held in overseas collecting institutions and with private holders.</p>
+        <p class="prov">Office for the Arts, “Indigenous Repatriation” · it also supports returns from eight major Australian museums</p>
+      </div>
+      <div class="src">
+        <div class="k">United States · a law (1990)</div>
+        <p class="quote sm">The Native American Graves Protection and Repatriation Act is a Federal law passed in 1990.</p>
+        <p class="prov">U.S. National Park Service, “Native American Graves Protection and Repatriation Act”, Frequently Asked Questions · NAGPRA applies to federal agencies and to museums that receive federal funds</p>
+      </div>
+      <p class="cue reveal">Repatriation returns Ancestors to the Peoples they were taken from. It is the reverse of a long history of removal.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Repatriation" data-title="The return: a timeline to 2022 and after" data-kind="notes">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow">1 · Repatriation · I do — the timeline · text only, on purpose</p>
+  <h2>Mungo Lady and Mungo Man: removal, return and reburial</h2>
+  <p class="u3l07-ack"><b>Lake Mungo, in the Willandra Lakes Region of south-western NSW, is on the Country of the Barkandji/Paakantyi, Mutthi Mutthi and Ngiyampaa peoples, the Three Traditional Tribal Groups.</b> Out of respect, this lesson has no images of the Ancestors or of the places where they were buried and reburied. Read more on official pages: the <a href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/world-heritage-area-advisory-committees/willandra-lakes-region-world-heritage-aboriginal-advisory-group">Aboriginal Advisory Group</a> and <a href="https://www.nationalparks.nsw.gov.au/conservation-programs/mungo-national-park-joint-management-program">Mungo National Park’s joint management program</a>.</p>
+  <div class="split u3l07-tlsplit" style="--cols:1fr 1fr">
+    <ol class="u3l07-tl one">
+      <li class="reveal"><span class="u3l07-yr">1968</span><span>Geologist Jim Bowler found Mungo Lady’s remains at Lake Mungo. She had been cremated, then buried. An Australian National University (ANU) team took her to Canberra.</span></li>
+      <li class="reveal"><span class="u3l07-yr">1974</span><span>Bowler found Mungo Man, buried covered in ochre; he too was taken to the ANU. Both lived about 40,000 years ago (Unit 1, Lesson 3).</span></li>
+      <li class="reveal"><span class="u3l07-yr">1960s–80s</span><span>They and 106 other Ancestors were removed from the Willandra Lakes between the late 1960s and the 1980s <span class="src-ref">(NIT, 2022)</span>, “without permission from the three Traditional Owner groups” <span class="src-ref">(SBS NITV, 2025)</span>.</span></li>
+      <li class="reveal"><span class="u3l07-yr">1992</span><span>Mungo Lady was returned to Lake Mungo, “after decades of campaigning by local communities” <span class="src-ref">(SBS News, 2017)</span>.</span></li>
+      <li class="reveal"><span class="u3l07-yr">2015</span><span>The ANU agreed to hand back Mungo Man and the other Ancestors, and apologised. They waited at the National Museum of Australia.</span></li>
+    </ol>
+    <div class="stack">
+      <ol class="u3l07-tl one">
+        <li class="reveal"><span class="u3l07-yr">Nov 2017</span><span>Mungo Man and about 100 other Ancestors travelled home from Canberra in an Aboriginal hearse; a ceremony at Lake Mungo welcomed them on 17 November.</span></li>
+        <li class="reveal"><span class="u3l07-yr">2022</span><span>The Australian Government approved a plan from NSW and the Aboriginal Advisory Group to rebury 108 Ancestors at 26 sites. Some Traditional Owners wanted a keeping place instead.</span></li>
+        <li class="reveal"><span class="u3l07-yr">24 May 2022</span><span>Mungo Lady and Mungo Man were reburied on Country while some Elders’ heritage application was still open. A Heritage NSW official said the state government “did not approve or conduct the burials” <span class="src-ref">(NIT, 2022)</span>.</span></li>
+        <li class="reveal"><span class="u3l07-yr">Mar 2025</span><span>The reburial of the other 106 Ancestors began. On 28 March the Federal Court dismissed a Mutthi Mutthi man’s challenge to the federal minister’s refusal to use her heritage-protection powers to stop it.</span></li>
+      </ol>
+      <p class="qprompt">Between 1974 and 2017, what changed about who decided what happened to Mungo Man?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">In 1974 scientists removed him without the Traditional Owners’ permission. By 2017 the university had apologised and the Traditional Owners took him home. What should happen next was still debated among the Traditional Owners themselves, as it had been before, with governments approving a reburial plan and a court reviewing a minister’s decision about it.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Repatriation" data-title="Why return matters, in their own words" data-kind="notes">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow">1 · Repatriation · I do — in the Traditional Owners’ published words</p>
+  <h2>Why return matters: three Traditional Owners, November 2017</h2>
+  <div class="u3l07-voices c3">
+    <div class="u3l07-v"><div class="who">Mary Pappin · Mutthi Mutthi Elder</div>
+      <p class="quote sm">It’s been a long road for our people, a lot of our old people have passed on now that started this same fight that we’ve had. They’ve left us this legacy.</p>
+      <p class="prov">SBS NITV (NITV News), 15 November 2017, as Mungo Man’s journey home began</p></div>
+    <div class="u3l07-v"><div class="who">Michael Young · Paakantyi man, Aboriginal Advisory Group member</div>
+      <p class="quote sm">We know as Aboriginal people that we need to bring our ancestors home, and take care of them. We should be the custodians.</p>
+      <p class="prov">ABC News (Isabella Higgins), 17 November 2017, at Lake Mungo</p></div>
+    <div class="u3l07-v"><div class="who">Joan Slade · Ngiyampaa Elder</div>
+      <p class="quote sm"><span class="ed">[It is]</span> so good to have him back after all those years he has been taken away, and we’ve been waiting all those years to get him back and I’m so glad he is back, to put him in his resting place.</p>
+      <p class="prov">ABC News (Isabella Higgins), 17 November 2017, at Lake Mungo</p></div>
+  </div>
+  <div class="split" style="--cols:1fr 1.35fr">
+    <p class="qprompt">What reason for bringing the Ancestors home does each speaker give?</p>
+    <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body"><b>Pappin:</b> the return comes from a long fight begun by old people who have since passed on: it is their “legacy”. <b>Young:</b> Aboriginal people have a responsibility to bring their Ancestors home and care for them, as their custodians. <b>Slade:</b> relief that he is back after being taken, so that he can be put to rest. Three people, three emphases: each speaks for themselves.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Repatriation" data-title="Notes 1 — The return of Mungo Lady and Mungo Man" data-kind="notes">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>The return of Mungo Lady and Mungo Man</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U3 L7 · Repatriation and Aboriginal Ancestral Remains</b></span><span>1 · Repatriation</span></div>
+    <div class="row"><div class="cq">Explain what repatriation is and why it happens.</div>
+      <div class="nts reveal">returning remains or cultural material to the Community they came from <span class="sep">·</span> Ancestors removed for 250+ years to museums, universities, private collections, for ‘scientific’ research or sale <span class="sep">·</span> Australia: a policy (2011) seeking voluntary return <span class="sep">·</span> USA: NAGPRA, a law (1990)</div></div>
+    <div class="row"><div class="cq">Describe how Mungo Lady and Mungo Man were removed and returned.</div>
+      <div class="nts reveal">found at Lake Mungo 1968 (Mungo Lady) and 1974 (Mungo Man), c. 40,000 years old → taken to the ANU without the Traditional Owners’ permission <span class="sep">·</span> returned 1992 and Nov 2017 (with about 100 other Ancestors) after decades of campaigning</div></div>
+    <div class="row"><div class="cq">Outline what happened after 2017.</div>
+      <div class="nts reveal">2022: govt approved reburial of 108 Ancestors (26 sites); some Traditional Owners wanted a keeping place <span class="sep">·</span> 24 May 2022: Mungo Lady and Mungo Man reburied on Country; Heritage NSW: state govt did not approve or conduct it <span class="sep">·</span> Mar 2025: reburial of the other 106 began; court challenge dismissed</div></div>
+    <div class="row"><div class="cq">Explain why return matters, in the Traditional Owners’ published words.</div>
+      <div class="nts reveal">Mary Pappin (SBS NITV, 2017): a fight begun by old people who have passed on → “legacy” <span class="sep">·</span> Michael Young (ABC, 2017): “We should be the custodians” → duty of care <span class="sep">·</span> Joan Slade (ABC, 2017): home, “to put him in his resting place”</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Perspectives" data-title="We do: a dated news report" data-kind="notes">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow">2 · Perspectives · We do — supported reading · annotate as we read</p>
+  <h2>One report, six voices: the day the journey home began</h2>
+  <div class="u3l07-report"><div class="k">Source · a dated news report</div>
+    <p class="t">“Mungo Man: Australia’s oldest human begins his final journey home”</p>
+    <p class="m">NITV News (SBS NITV), published 15 November 2017, as the Ancestors left Canberra · six extracts, in the order they appear · the reporter chose which words to print</p></div>
+  <div class="u3l07-voices">
+    <div class="u3l07-v"><div class="who">Mutti Mutti Elder Mary Pappin</div>
+      <p class="quote sm">We’re relieved at the moment, but at the same time it’s sad because we know we’re going through country, through other people’s country, and I know they’re all excited for us.</p></div>
+    <div class="u3l07-v sci"><div class="who">Dr Jim Bowler · the geologist who found Mungo Man in 1974</div>
+      <p class="quote sm">It gives me great satisfaction to see this occasion in the hands of the traditional people.</p></div>
+    <div class="u3l07-v"><div class="who">Paakantyi Elder Warren Clarke</div>
+      <p class="quote sm">It’s been an endless struggle, a very emotional one for me. We’ve been working together with the Ngyampaa mob and the Mutti Mutti mob, we do have our disagreements, but coming together for something like this is very, very important to all of us.</p></div>
+    <div class="u3l07-v inst"><div class="who">Professor Richard Baker · Pro-Vice-Chancellor, ANU</div>
+      <p class="quote sm">I renew that apology today and look forward to the healing of our relationships this returning to country will bring.</p></div>
+    <div class="u3l07-v inst"><div class="who">Dr Mathew Trinca · Director, National Museum of Australia</div>
+      <p class="quote sm">… this sense of a moment of closure, but also an opening up on a way <span class="ed">[to work]</span> together in the future.</p></div>
+    <div class="u3l07-v"><div class="who">Ngiyampaa Elder Joan Slade</div>
+      <p class="quote sm">It’s so good to see so many people here to say goodbye to them. I hope we have a good journey home and thank you for looking after them.</p></div>
+  </div>
+  <p class="u3l07-task"><b>Annotate each voice:</b> who is speaking, and for whom? · <b>perspective:</b> what do they think about the return? · <b>purpose:</b> why say this, here, on this day?</p>
+  <p class="small">Reports spell the Peoples’ names differently (Mutti Mutti, Ngyampaa); this sheet keeps the report’s spelling, and the lesson’s own words use Mutthi Mutthi and Ngiyampaa.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Perspectives" data-title="We do: perspective and purpose" data-kind="notes">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow">2 · Perspectives · We do — cold call a pair before each row</p>
+  <h2>Perspective and purpose: who says what, and why?</h2>
+  <div class="tbl-scroll" data-veil="Annotate first — then show one class’s answers"><table class="tbl compact u3l07-grid">
+    <tr><th>Speaker</th><th>Perspective: what they think about the return</th><th>Purpose: why say it, here (our inference)</th></tr>
+    <tr class="reveal"><td>Mary Pappin<span class="g">Mutthi Mutthi Elder</span></td><td>relief that the Ancestors are going home, and sadness; aware the convoy passes through other Peoples’ Country</td><td>to mark a long-awaited day for her People, and to acknowledge the Peoples whose Country they cross</td></tr>
+    <tr class="reveal"><td>Warren Clarke<span class="g">Paakantyi Elder</span></td><td>an “endless struggle”; the three groups “do have our disagreements”, but stood together for this</td><td>to show unity between the three groups for the return, while being honest that they differ</td></tr>
+    <tr class="reveal"><td>Joan Slade<span class="g">Ngiyampaa Elder</span></td><td>glad to see so many people farewell them; thanks those who looked after them</td><td>to farewell the Ancestors and thank the people who cared for them</td></tr>
+    <tr class="reveal"><td>Richard Baker<span class="g">the university (ANU)</span></td><td>the removal caused harm; the university renews its apology and hopes for “healing”</td><td>to repair the university’s relationship with the Traditional Owners, in public</td></tr>
+    <tr class="reveal"><td>Mathew Trinca<span class="g">the museum (NMA)</span></td><td>a “moment of closure”, and the start of working together</td><td>to present the museum as a respectful partner in the return</td></tr>
+    <tr class="reveal"><td>Jim Bowler<span class="g">a scientist</span></td><td>satisfied that the occasion is now “in the hands of the traditional people”</td><td>as the man who found Mungo Man, to support his return publicly</td></tr>
+  </table></div>
+  <p class="cue reveal" data-veil="Show the rule for quoting a report">The reporter chose these words, so attribute each quotation to its speaker, and say where and when it was published: Paakantyi Elder Warren Clarke told SBS NITV on 15 November 2017 …</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Perspectives" data-title="We do: one decision, different views" data-kind="notes">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow">2 · Perspectives · We do — five years later · discuss in pairs, then cold call</p>
+  <h2>After the return: reburial or a keeping place?</h2>
+  <div class="u3l07-report"><div class="k">Source · a dated news report</div>
+    <p class="t">“Ancient remains to be reburied at Lake Mungo, ending decades-long campaign”</p>
+    <p class="m">NITV <i>The Point</i> (SBS NITV), published 11 April 2022, after the federal government announced its approval of the reburial plan</p></div>
+  <div class="u3l07-voices">
+    <div class="u3l07-v"><div class="who">Patricia Winch · Mutthi Mutthi woman, chair of the Aboriginal Advisory Group</div>
+      <p class="quote sm">We’re going to be taking them out of that room and letting their spirits go.</p></div>
+    <div class="u3l07-v"><div class="who">Michael Young · Paakintyi man</div>
+      <p class="quote sm">We’ve been talking about a keeping place for over 25 years. … The keeping place would then be for the custodians to link up the education and jobs for the community here and continue the stories …</p></div>
+  </div>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="src">
+      <div class="k">Source · SBS NITV, 28 March 2025, after the court case</div>
+      <p class="quote sm">Some Traditional Owners wanted a “keeping place” for the remains for scientific study and public access, while others believed they should be returned to where they’d come from and reburied.</p>
+    </div>
+    <div class="stack">
+      <p class="qprompt">So what did ‘the Traditional Owners’ want?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Discuss first — then show a model answer"><p class="body">There is no single answer. Traditional Owners, within and across the three Traditional Tribal Groups, disagreed: Patricia Winch welcomed reburial; Michael Young wanted a keeping place. Name each speaker and the report; never write what ‘the Community’ felt.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Perspectives" data-title="Notes 2 — Perspectives on repatriation" data-kind="notes">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>Perspectives on repatriation</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U3 L7 · Repatriation and Aboriginal Ancestral Remains</b></span><span>2 · Perspectives</span></div>
+    <div class="row"><div class="cq">Analyse the Traditional Owners’ perspectives in the 2017 report.</div>
+      <div class="nts reveal">Pappin, Clarke, Slade (SBS NITV, 15 Nov 2017): relief + sadness, a long struggle, thanks <span class="sep">·</span> the three groups worked together but “do have our disagreements” (Clarke)</div></div>
+    <div class="row"><div class="cq">Explain the university’s, museum’s and scientist’s perspectives.</div>
+      <div class="nts reveal">ANU (Baker): renews apology, hopes for “healing” <span class="sep">·</span> NMA (Trinca): closure + working together <span class="sep">·</span> Bowler: glad it is “in the hands of the traditional people” → once removed for study, now returned</div></div>
+    <div class="row"><div class="cq">Explain why we cannot say what ‘the Community’ wanted.</div>
+      <div class="nts reveal">three Traditional Tribal Groups, many voices <span class="sep">·</span> 2022: Patricia Winch (AAG chair) welcomed reburial; Michael Young wanted a keeping place → attribute each view: name, People, report, date</div></div>
+    <div class="row"><div class="cq">Assess how reliable a news report is for these perspectives.</div>
+      <div class="nts reveal">reliable for what named people said on that day <span class="sep">·</span> but the reporter chose and trimmed the words; one day, a few voices → check against other reports and dates</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: a significance paragraph">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow">3 · You do · 12 minutes · press K for the timer · check first, then write</p>
+  <h2>Your paragraph: why is repatriation significant?</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <p class="u3l07-iq"><span>Question:</span> Explain why the repatriation of Aboriginal Ancestral Remains is significant.</p>
+        <ul class="body">
+          <li>Open with your judgement: <span class="nq">Repatriation remains significant for … because …</span></li>
+          <li>Use the return of Mungo Lady and Mungo Man: at least one date, and one Traditional Owner’s published words, attributed (name, People, report, date).</li>
+          <li>Add one other perspective: the university, the museum or the scientist.</li>
+          <li>Show that Traditional Owners have disagreed about what should happen next.</li>
+        </ul></div>
+      <div class="card quiet sm"><div class="k">Support</div>
+        <p class="body">Use the printed timeline and your highlighted report. Frame: <span class="nq">Repatriation is significant because … In [year], … As [name], a [People] Elder, told [report] on [date], “…” This reveals … However, …</span></p></div>
+      <div class="card quiet sm"><div class="k">Extension</div>
+        <p class="body">Compare Australia’s approach to repatriation with NAGPRA in the United States (Colwell, Lesson 6, and the two extracts on repatriation): what do the two show about whose voice decides?</p></div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Check first: how will you attribute a view? Finish the sentence for one speaker.</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show two examples"><p class="body nq">As Mutthi Mutthi Elder Mary Pappin told SBS NITV on 15 November 2017, … · Paakantyi man Michael Young told ABC News in 2017 that …</p></div>
+      <div class="card quiet"><div class="k">Check your paragraph against the success criteria</div>
+        <ul class="checks">
+          <li><label><input type="checkbox"> A judgement of significance opens it</label></li>
+          <li><label><input type="checkbox"> The return of Mungo Lady and Mungo Man, with a date</label></li>
+          <li><label><input type="checkbox"> A Traditional Owner’s words, attributed exactly</label></li>
+          <li><label><input type="checkbox"> One institution’s or scientist’s perspective</label></li>
+          <li><label><input type="checkbox"> The disagreement about reburial or a keeping place, without speaking for anyone</label></li>
+          <li><label><input type="checkbox"> Significance language: reveals, resulted in, remains significant for</label></li>
+        </ul></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Compare: a model paragraph" data-kind="notes">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow">3 · You do · 3 minutes · two students read theirs aloud, then compare</p>
+  <h2>Compare: a model significance paragraph</h2>
+  <div class="src reveal" data-veil="Write yours first — then show the model paragraph">
+    <div class="k">A model · written for this lesson</div>
+    <p class="quote sm model"><span class="match" data-step="m1">The repatriation of Aboriginal Ancestral Remains remains significant for</span> the Peoples they were taken from, because it returns Ancestors to those with the Cultural responsibility to care for them, after removals made without their permission. Mungo Lady and Mungo Man, found at Lake Mungo in 1968 and 1974 and about 40,000 years old, were taken to the Australian National University, and their return in 1992 and 2017 <span class="match" data-step="m1">resulted from</span> a campaign that lasted generations: <span class="match" data-step="m2">as Mutthi Mutthi Elder Mary Pappin told SBS NITV on 15 November 2017,</span> “… a lot of our old people have passed on now that started this same fight …”. For the Traditional Owners quoted, return restores a duty of care; <span class="match" data-step="m2">Paakantyi man Michael Young told ABC News on 17 November 2017,</span> “We should be the custodians.” Repatriation also <span class="match" data-step="m1">reveals</span> a change in at least one institution that held them, since <span class="match" data-step="m2">the university’s Professor Richard Baker</span> renewed its apology and hoped for “the healing of our relationships”. <span class="match" data-step="m3">Yet it did not settle the debate: Traditional Owners disagreed about reburial or a keeping place, both in 2017 and in the years that followed.</span> Its significance therefore lies less in one outcome than in returning the Ancestors, and the decisions about their care, to their own Peoples rather than to the institutions that removed them.</p>
+  </div>
+  <div class="cols c3 u3l07-legend">
+    <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Significance language</b> · remains significant for, resulted from, reveals</span></p>
+    <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Attribution</b> · name, role or People, report and date</span></p>
+    <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>Contestability</b> · the disagreement, without speaking for anyone</span></p>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Summary" data-kind="notes">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What happened to Mungo Lady and Mungo Man between 1968 and 2022?</li>
+          <li>Why does their return matter, according to Traditional Owners quoted in the reports?</li>
+          <li>Who decides what Cultural Knowledge is shared, and why can’t we say what ‘the Community’ wanted?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Mungo Lady and Mungo Man, about 40,000 years old, were removed from Lake Mungo in 1968 and 1974 without the Traditional Owners’ permission, returned in 1992 and 2017, and reburied on Country on 24 May 2022. Traditional Owners quoted in the reports describe the return as the result of a long fight begun by Elders who have since died, and as a duty to care for their Ancestors as their custodians. The Custodians decide what is shared, following ICIP protocols, and because Traditional Owners, within and across the three Traditional Tribal Groups, disagreed about reburial or a keeping place, each view must be attributed to the person who said it.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Your rewritten Lesson 6 sentence</label></li>
+        <li><label><input type="checkbox"> What repatriation is, and why</label></li>
+        <li><label><input type="checkbox"> The timeline, 1968 to 2025</label></li>
+        <li><label><input type="checkbox"> Three Traditional Owners’ words, attributed</label></li>
+        <li><label><input type="checkbox"> Perspective and purpose: six voices</label></li>
+        <li><label><input type="checkbox"> Reburial or a keeping place?</label></li>
+        <li><label><input type="checkbox"> Your significance paragraph</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: hinge question" data-kind="intro">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow">Check · hinge question · 3 minutes · hold up A, B, C or D</p>
+  <h2>Who decides what Cultural Knowledge about Ancestral Remains is shared?</h2>
+  <div class="u3l07-hingebox veil-parts" data-veil="Vote first — then show the answer">
+  <ol class="opts u3l07-hinge">
+    <li><span class="n">A</span><span>The museum that holds them, under its policy</span></li>
+    <li id="u3l07-hb"><span class="n">B</span><span>The Custodians, following ICIP protocols</span></li>
+    <li><span class="n">C</span><span>The scientists who study them, for research</span></li>
+    <li><span class="n">D</span><span>The government, under heritage law</span></li>
+  </ol>
+  <i class="reveal" data-mark="#u3l07-hb" hidden></i>
+  <div class="note vp reveal" data-code="evidence"><p class="body"><b>B.</b> Cultural Knowledge belongs to its Custodians: they decide what is shared, following ICIP protocols. A: a museum may hold Ancestors, but holding them does not give it the Knowledge. C: scientists can study remains, but they cannot decide what Cultural Knowledge is shared. D: governments make heritage laws and approved the Willandra reburial plan, but Cultural Knowledge is not theirs to share.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 5 minutes · before you leave</p>
+  <h2>Two sentences</h2>
+  <div class="cols c2">
+    <div class="card accent"><div class="k">1 · Significance</div><p class="lead">The return of Mungo Man was significant because … (name whose words you use)</p></div>
+    <div class="card accent"><div class="k">2 · Attribution</div><p class="lead">We should not write what ‘the Community’ wanted, because …</p></div>
+  </div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">1 · a reason tied to a named speaker and report, for example Michael Young’s “We should be the custodians” (ABC News, 2017), or the long campaign Mary Pappin described (SBS NITV, 2017). &nbsp;2 · Traditional Owners, within and across the three Traditional Tribal Groups, have different views (reburial or a keeping place), so each view belongs to the person who said it.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> bringing it together: a checkpoint on the whole unit, and a timed argument on two unseen sources.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u3l07-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Mungo Lady and Mungo Man were returned to Lake Mungo at the same time.</span>
+      <span class="sol no reveal">False <span class="why">— Mungo Lady was returned in 1992; Mungo Man in November 2017, with about 100 other Ancestors.</span></span></li>
+    <li><span class="n">2</span><span>The Ancestors were taken to the ANU with the Traditional Owners’ permission.</span>
+      <span class="sol no reveal">False <span class="why">— SBS NITV (2025) reports they were removed without permission from the three Traditional Owner groups.</span></span></li>
+    <li><span class="n">3</span><span>All Traditional Owners agreed that the Ancestors should be reburied.</span>
+      <span class="sol no reveal">False <span class="why">— some welcomed reburial (Patricia Winch, 2022); others wanted a keeping place (Michael Young, 2022).</span></span></li>
+    <li><span class="n">4</span><span>In the United States, a federal law passed in 1990 sets out how federal agencies and federally funded museums return Native American remains.</span>
+      <span class="sol reveal">True <span class="why">— NAGPRA: returns go to lineal descendants, Indian tribes and Native Hawaiian organisations.</span></span></li>
+    <li><span class="n">5</span><span>A museum that holds Ancestral Remains decides what Cultural Knowledge about them is shared.</span>
+      <span class="sol no reveal">False <span class="why">— the Custodians decide what is shared, following ICIP protocols.</span></span></li>
+    <li><span class="n">6</span><span>A quotation in a news report is reliable evidence of what its speaker said, but the reporter chose which words to print.</span>
+      <span class="sol reveal">True <span class="why">— so attribute the words to the speaker, and name the report and its date.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — writing" data-kind="practice">
+<div class="wrap prac u3l07-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Attribute it, then judge it</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · Attribute it</div><p class="body">Rewrite so that it is accurate and attributed: <span class="nq">The Community wanted Mungo Man reburied.</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Some Traditional Owners, such as Patricia Winch, chair of the Aboriginal Advisory Group, welcomed the reburial of the Ancestors, while others, such as Michael Young, wanted a keeping place (SBS NITV, 11 April 2022).</p></div>
+      <div class="card accent"><div class="k">2 · Significance in one sentence</div><p class="body">Finish: <span class="nq">The return of Mungo Man in 2017 remains significant for … because …</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">The return of Mungo Man in 2017 remains significant for the institutions that held him, because the ANU renewed its apology for the distress the removal caused, which suggests that the university now treats collecting Ancestors without permission as a wrong to be repaired.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Compare Australia’s approach to repatriation with NAGPRA in the United States: what do the two show about whose voice decides?</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">Both approaches accept that Ancestors removed for study belong with their descendants, but they give those descendants different kinds of power. In the United States, NAGPRA is “a Federal law passed in 1990”: federal agencies, and museums that receive federal funds, must follow its processes for returning remains to lineal descendants and tribes, so a descendant’s claim is backed by law. Australia’s national approach is a government policy, set up in 2011: the Australian Government “seeks the voluntary and unconditional return” of Ancestors held overseas and supports returns from eight major Australian museums, so a return rests on cooperation as well as on the Custodians’ request. Yet the Willandra case shows that even when Ancestors come home, the question of whose voice decides is not settled by law or policy alone: the Traditional Owners themselves disagreed about reburial or a keeping place, and a court case followed. Whose voice decides is therefore answered first by descendants, and only then by the laws and policies that support them.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u3l07-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Explain what repatriation is and why it happens.
+      <span class="sol reveal">Returning remains or cultural material to the Community they came from. For more than 250 years Ancestors were removed to museums, universities and private collections, for ‘scientific’ research or for sale; repatriation reverses that removal.</span></li>
+    <li>Describe how Mungo Lady and Mungo Man were removed and returned.
+      <span class="sol reveal">Found at Lake Mungo in 1968 and 1974 (about 40,000 years old) and taken to the ANU without the Traditional Owners’ permission; returned in 1992 and November 2017, after decades of campaigning.</span></li>
+    <li>Outline what happened after 2017.
+      <span class="sol reveal">In 2022 the Australian Government approved a plan to rebury 108 Ancestors; on 24 May 2022 Mungo Lady and Mungo Man were reburied on Country while some Elders’ application was still open, and a Heritage NSW official said the state government did not approve or conduct it. The other Ancestors’ reburial began in March 2025, and a court challenge was dismissed.</span></li>
+    <li>Explain why return matters, in the Traditional Owners’ published words.
+      <span class="sol reveal">Mary Pappin (SBS NITV, 2017): the return comes from a long fight begun by old people who have since passed on, their “legacy”. Michael Young (ABC News, 2017): “We should be the custodians.” Joan Slade (ABC News, 2017): he is home, “to put him in his resting place”.</span></li>
+    <li>Explain the university’s and the scientist’s perspectives in 2017.
+      <span class="sol reveal">The ANU renewed its apology and hoped for healing; Jim Bowler, who found Mungo Man, was glad the occasion was “in the hands of the traditional people”.</span></li>
+    <li>Explain why we cannot say what ‘the Community’ wanted.
+      <span class="sol reveal">Traditional Owners, within and across the three Traditional Tribal Groups, disagreed: some welcomed reburial, others wanted a keeping place. Each view must be attributed to the person who said it.</span></li>
+    <li>Who decides what Cultural Knowledge about Ancestral Remains is shared?
+      <span class="sol reveal">The Custodians, following ICIP protocols.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u3l07-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u3l07-cite"><div class="k">Written sources</div>
+      <p class="small">News reports, quoted briefly with each speaker named (not linked, because their pages show photographs; wording checked 25 November 2026): NITV News (SBS NITV), “Mungo Man: Australia’s oldest human begins his final journey home”, 15 November 2017 · SBS News (AAP), “Mungo Man home to original resting place”, 17 November 2017 · Isabella Higgins, “Mungo Man returned to ancestral home where he died 40,000 years ago”, ABC News, 17 November 2017 · SBS NITV, “Mungo Man finally home with his ancestors”, 18 November 2017 · NITV <i>The Point</i> (SBS NITV), “Ancient remains to be reburied at Lake Mungo, ending decades-long campaign”, 11 April 2022 · National Indigenous Times (AAP), “Elders reveal distress at sudden, secret Mungo Man burials”, 1 June 2022 · SBS NITV (AAP), “Burial of Mungo Man and Mungo Lady can continue, court rules”, 28 March 2025 · Sam McKeith (AAP), “Court tosses last-ditch bid to block Mungo Man reburial”, National Indigenous Times, 29 March 2025. © the publishers.</p>
+      <p class="small">Official pages: NSW Environment and Heritage, <a href="https://www.environment.nsw.gov.au/topics/heritage/aboriginal-cultural-heritage/repatriation-program/willandra-lakes-ancestral-remains-reburial">“Willandra Lakes ancestral remains reburial”</a> and <a href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/protected-areas/world-heritage-listed-areas/world-heritage-area-advisory-committees/willandra-lakes-region-world-heritage-aboriginal-advisory-group">“Willandra Lakes Region World Heritage Aboriginal Advisory Group”</a>; NSW National Parks, <a href="https://www.nationalparks.nsw.gov.au/conservation-programs/mungo-national-park-joint-management-program">“Mungo National Park joint management program”</a>; Australian Government, Office for the Arts, <a href="https://www.arts.gov.au/what-we-do/cultural-heritage/indigenous-repatriation">“Indigenous Repatriation”</a>; U.S. National Park Service, <a href="https://www.nps.gov/subjects/nagpra/frequently-asked-questions.htm">“Native American Graves Protection and Repatriation Act”</a>, Frequently Asked Questions (public domain).</p>
+      <p class="small">Court decision: <i>Kelly v Minister for the Environment and Water</i> [2025] FCA 264 (Federal Court of Australia, 28 March 2025), as reported above. Dating of Mungo Lady and Mungo Man: J. M. Bowler et al., <i>Nature</i> 421 (2003), as in Unit 1, Lesson 3.</p>
+      <p class="small">Review answers: Lessons 1–6 of this unit and their sources, including the South Tyrol Museum of Archaeology (iceman.it); N. H. Nielsen et al., <i>Antiquity</i> 95 (2021) and <i>Radiocarbon</i> 60 (2018); Tacitus, <i>Germania</i> 12, trans. A. J. Church and W. J. Brodribb (1868, revised 1877).</p>
+      <p class="small">Teacher resource: <i>Lake Mungo and Australia’s Ancient Past</i> (class notebook), checked against the sources above. The model paragraph, model notes, examples and summary were written for this lesson.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus, respect and ICIP</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p>
+        <p class="small">This lesson contains the names and words of Aboriginal people who have died. It shows no images of Aboriginal Ancestral Remains or of the places where they were buried or reburied. The Custodians decide what is shared, following ICIP protocols.</p></div>
+      <div class="card quiet u3l07-cite"><div class="k">Image</div>
+        <ul class="small credits"><li><b>The National Museum of Australia, Canberra (2019)</b> · Photo: Dietmar Rabich / Wikimedia Commons · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Canberra_(AU),_National_Museum_of_Australia_--_2019_--_1709.jpg">source</a></li></ul>
+        <p class="small">Openly licensed, resized and cropped for the web; shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

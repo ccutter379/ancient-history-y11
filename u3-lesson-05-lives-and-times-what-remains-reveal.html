@@ -1,0 +1,1772 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U3 L5 · Lives and Times: What Human Remains Reveal</title>
+<meta name="description" content="Year 11 Ancient History, the treatment and display of human remains: reading Tacitus’s Germania 12 closely and judging it as evidence for the bog bodies, sorting the evidence for ritual sacrifice or punishment, and writing a significance paragraph on what bog bodies, Egyptian mummified people and the Tarim Basin mummified people reveal.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#5E2D6F; --bright:#8A4BA0; --tint:#F2E9F5; --statement:#5E2D6F;
+  --solid:#5E2D6F; --soft:#EBD9F2; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#D6B3E3; --bright:#B57CCB; --tint:#2C1934; --statement:#4A2358; --soft:#EBD9F2; } }
+:root[data-theme="dark"]{ --deep:#D6B3E3; --bright:#B57CCB; --tint:#2C1934; --statement:#4A2358; --soft:#EBD9F2; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 3 Lesson 5 only (every class starts u3l05-) */
+
+/* title picture */
+.u3l05-cover img{max-height:58vh;}
+
+/* goals slide: outcome line; credits links */
+.u3l05-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u3l05-cite a{color:var(--deep);}
+
+/* quick facts list */
+.u3l05-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.25em;
+  font-size:calc(var(--fs-body)*.86); line-height:1.36;}
+.u3l05-facts b{color:var(--deep);}
+
+/* the printed Germania page: a narrow portrait picture */
+.u3l05-page img{max-height:60vh; object-fit:contain; background:var(--surface);}
+
+/* supported reading: the extract, a glossary, and the question rows in two columns */
+.u3l05-gloss{display:flex; flex-wrap:wrap; gap:.3em .5em; margin:.2em 0 0; padding:0; list-style:none;
+  font-size:calc(var(--fs-body)*.74); line-height:1.3;}
+.u3l05-gloss li{border:1px solid var(--rule); border-radius:999px; padding:.12em .7em; background:var(--surface);}
+.u3l05-gloss b{color:var(--deep);}
+.u3l05-mqgrid{display:grid; grid-template-columns:1fr 1fr; gap:.5em 1.6em;}
+.u3l05-mqgrid .mq{font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.u3l05-mqgrid .vp{display:block; color:var(--slate); font-weight:400;}
+
+/* OVPRL rows: letter badge + question + model */
+.u3l05-ov{display:grid; grid-template-columns:2.4em 1fr; gap:.65em; align-items:start;}
+.u3l05-ovl{display:grid; place-items:center; min-height:2.1em; border-radius:8px; background:var(--solid); color:#fff;
+  font-weight:700; font-family:var(--mono); font-size:calc(var(--fs-body)*.95); text-align:center; line-height:1.1; padding:.2em;}
+.u3l05-ov .qprompt::before{content:none;}
+.u3l05-model{margin-top:.3em; padding:.35em .8em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 8px 8px 0; font-size:calc(var(--fs-body)*.84); line-height:1.4;}
+
+/* Reliability and Limitations side by side under the time line; the judgement spans both */
+.u3l05-rl{display:grid; grid-template-columns:1fr 1fr; gap:clamp(8px,1.2vh,14px) clamp(14px,2vw,28px); align-items:start;}
+.u3l05-span2{grid-column:1 / -1;}
+.u3l05-diagram{margin:0;}
+
+/* time line (inline SVG) */
+.u3l05-svg{display:block; width:100%; height:auto;}
+.u3l05-svg text{fill:var(--ink); font-family:var(--ui); font-size:21px;}
+.u3l05-svg .u3l05-tb{font-weight:700;}
+.u3l05-svg .u3l05-tname{font-weight:700; fill:var(--deep);}
+.u3l05-svg .u3l05-tsm{font-size:18px;}
+.u3l05-svg .u3l05-tmute{fill:var(--slate);}
+.u3l05-svg .u3l05-tgap{fill:var(--c-judgement);}
+.u3l05-svg .u3l05-ttac{fill:var(--c-judgement);}
+.u3l05-bar.dk{fill:var(--deep);}
+.u3l05-bar.lt{fill:var(--soft); stroke:var(--deep); stroke-width:2;}
+.u3l05-dot{fill:var(--deep);}
+.u3l05-tac{stroke:var(--c-judgement); stroke-width:3; stroke-dasharray:7 5;}
+.u3l05-tacdot{fill:var(--c-judgement);}
+.u3l05-gaparrow{stroke:var(--c-judgement); stroke-width:2.5;}
+.u3l05-ahp{fill:var(--c-judgement);}
+.u3l05-axis{stroke:var(--slate); stroke-width:2;}
+.u3l05-tick{stroke:var(--slate); stroke-width:2;}
+
+/* card sort: eight text cards, four across, with the three piles above */
+.u3l05-piles{display:flex; flex-wrap:wrap; gap:.4em .8em; align-items:center; font-size:calc(var(--fs-body)*.84);}
+.u3l05-piles span{border-radius:999px; padding:.15em .85em; font-weight:700; border:2px solid currentColor;}
+.u3l05-piles .r, .u3l05-key .r{color:var(--c-evidence);}
+.u3l05-piles .p, .u3l05-key .p{color:var(--c-counter);}
+.u3l05-piles .b, .u3l05-key .b{color:var(--c-judgement);}
+.u3l05-piles .lead-in{border:0; padding:0; font-weight:600; color:var(--slate);}
+.u3l05-cards{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:clamp(8px,1vw,14px);}
+.u3l05-card{position:relative; margin:0; background:var(--surface); border:1px solid var(--rule);
+  border-top:5px solid var(--bright); border-radius:10px; box-shadow:var(--shadow); padding:.5em .75em .6em 2.6em;
+  font-size:calc(var(--fs-body)*.72); line-height:1.38;}
+.u3l05-card .l{position:absolute; top:.5em; left:.55em; width:1.6em; height:1.6em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.95em;}
+.u3l05-card b{display:block; color:var(--deep); font-size:1.06em; margin-bottom:.15em;}
+.u3l05-card .q{font-family:var(--serif); font-style:italic;}
+.u3l05-card .w{display:block; margin-top:.25em; color:var(--slate); font-size:.92em;}
+
+/* answer key tables */
+.u3l05-key td:first-child{font-weight:700; white-space:nowrap;}
+.u3l05-key td.u3l05-pile{white-space:nowrap; font-weight:700;}
+
+/* significance: three question cards */
+.u3l05-crit{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1.1vw,16px);}
+.u3l05-crit .card{padding:.55em .85em;}
+.u3l05-crit .card .body{font-size:calc(var(--fs-body)*.8); line-height:1.38;}
+.u3l05-crit .u3l05-word{font-family:var(--mono); font-weight:700; color:var(--deep);}
+.u3l05-ms{display:flex; flex-direction:column; gap:.4em;}
+.u3l05-ms p{margin:0; padding:.32em .8em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 8px 8px 0; font-size:calc(var(--fs-body)*.8); line-height:1.4;}
+.u3l05-ms p.lim{border-left-color:var(--c-counter); background:var(--w-counter);}
+.u3l05-ms .tag{font-family:var(--mono); font-weight:700; color:var(--deep); margin-right:.35em;}
+
+/* hinge options a little smaller */
+.u3l05-hinge li{font-size:calc(var(--fs-body)*.88); line-height:1.36;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u3l05-cards{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .u3l05-crit, .u3l05-mqgrid, .u3l05-rl{grid-template-columns:1fr;}
+  .u3l05-page img{max-height:50vh;}
+}
+@media (max-width:520px){
+  .u3l05-cards{grid-template-columns:1fr;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u3l05-dense{gap:10px;}
+  html:not(.read) .u3l05-dense h2{font-size:calc(var(--fs-h2)*.86);}
+  html:not(.read) .u3l05-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.4;}
+  html:not(.read) .u3l05-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u3l05-dense .src{padding:10px 16px;}
+  html:not(.read) .u3l05-dense .src .prov{margin-top:.4em;}
+  html:not(.read) .u3l05-dense .note{padding:.45em .85em;}
+  html:not(.read) .u3l05-dense .note .body, html:not(.read) .u3l05-dense .card .body,
+  html:not(.read) .u3l05-dense .qprompt{font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+  html:not(.read) .u3l05-dense .card{padding:10px 16px;}
+  html:not(.read) .u3l05-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u3l05-dense .tbl.compact td{padding:.32em .55em;}
+  html:not(.read) .u3l05-dense .tbl th{padding:.4em .6em;}
+  html:not(.read) .u3l05-dense .figure img{max-height:30vh;}
+  html:not(.read) .u3l05-dense .u3l05-page img{max-height:52vh;}
+  html:not(.read) .u3l05-dense .u3l05-model{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u3l05-dense .mq{font-size:calc(var(--fs-body)*.76); line-height:1.33;}
+  html:not(.read) .u3l05-dense .u3l05-facts{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u3l05-dense .u3l05-card{font-size:calc(var(--fs-body)*.64); line-height:1.33; padding:.4em .6em .45em 2.4em;}
+  html:not(.read) .u3l05-dense .u3l05-crit .card .body{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u3l05-dense .u3l05-ms p{font-size:calc(var(--fs-body)*.72); padding:.26em .7em;}
+  html:not(.read) .u3l05-dense .u3l05-gloss{font-size:calc(var(--fs-body)*.66);}
+  html:not(.read) .u3l05-dense .u3l05-hinge li{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u3l05-dense .tf li, html:not(.read) .u3l05-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u3l05-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u3l05-dense .prac{gap:6px;}
+  html:not(.read) .u3l05-dense .cornell .cq, html:not(.read) .u3l05-dense .cornell .nts{font-size:calc(var(--fs-body)*.76); padding:.35em .8em;}
+  html:not(.read) .u3l05-dense .u3l05-svg{max-height:31vh;}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 5" data-title="Lives and times: what human remains reveal" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1fr 1.15fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 3 · Human remains · Lesson 5</p>
+      <h1>Lives and times: what human remains reveal</h1>
+      <p class="lead">What can the bodies of people from the past tell us about the worlds they lived in, and how far can a Roman writer explain how some of them died?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u3l05-cover"><figure class="figure contain"><img src="images/u3l05-bjaeldskovdal-bog.jpg" alt="Bjældskovdal, the bog about 10 km west of Silkeborg, Denmark, where peat cutters found Tollund Man in 1950; Elling Woman had been found about 50 m away in 1938 (photo 2018)" loading="lazy"><figcaption>Bjældskovdal, the bog about 10 km west of Silkeborg, Denmark, where peat cutters found Tollund Man in 1950; Elling Woman had been found about 50 m away in 1938 (photo 2018) — <span class="cr">Photo: Nils Jepsen · CC BY-SA 4.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Review: Lessons 1–4 and Unit 2" data-kind="intro practice">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <h2>Six questions from Lessons 1–4 and Unit 2</h2>
+  <ol class="rq" data-answers>
+    <li>Give two respectful terms this unit uses for the dead, and say why we use them.
+      <span class="sol reveal">Mummified person (some museums, such as National Museums Scotland, prefer it to mummy) and Ancestral Remains, or a Community’s preferred term such as Ancestors, for Aboriginal and Torres Strait Islander people: these were people, not objects.</span></li>
+    <li>Name two environments that preserve bodies naturally, and what each does to a body.
+      <span class="sol reveal">Ice (Ötzi: below freezing, his body slowly dried out in the glacier, a “wet mummy” in the museum’s words) and peat bogs (cold, waterlogged, acidic and low in oxygen: skin and soft tissue survive, but bone can soften or dissolve); also dry desert sand.</span></li>
+    <li>Name one scientific method and one thing it revealed about Ötzi.
+      <span class="sol reveal">X-ray: an arrowhead in his left shoulder (identified in 2001); or analysis of his stomach contents: a last meal high in fat, with wild meat (ibex and red deer) and cereals (2018 study); or DNA: mostly early-farmer ancestry (2023 study).</span></li>
+    <li>How is Ötzi kept today?
+      <span class="sol reveal">In a cold cell at about −6 °C and very high humidity (99%) at the South Tyrol Museum of Archaeology, Bolzano; visitors see him through a small window.</span></li>
+    <li>Name one choice a museum has made in displaying a bog body, and what it does.
+      <span class="sol reveal">Museum Silkeborg shows Tollund Man’s conserved head on a replica body, so visitors see a whole person while only the head is original; or the British Museum shows Lindow Man, freeze-dried, in a case.</span></li>
+    <li>In OVPRL, what does R ask? Give an example from Persepolis.
+      <span class="sol reveal">Reliability: how far can we trust the source, and for what question? The Apadana reliefs, for example, are reliable for how the king wanted his empire to be seen, but not for how the subject peoples felt.</span></li>
+  </ol>
+  <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>Understand what human remains reveal about the life and times of the people</li>
+        <li>Judge the significance of human remains for different purposes</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>explain what two kinds of remains reveal about their societies</li>
+        <li>evaluate Tacitus as evidence for the bog bodies</li>
+        <li>write a significance paragraph using two examples</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u3l05-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-08 uses sources to form conclusions about the past · AH-LS-09 identifies different interpretations of the past.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U3 L5 · Lives and times</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = Before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Assess Tacitus as evidence for the bog bodies.</div><div class="nts">reliable for … but not for … because …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: Tacitus as evidence · ritual or punishment? Your paragraph today is prose, not notes.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for reading remains and judging their significance</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Remains and science</th><th>Meaning</th></tr>
+      <tr><td>Bog body</td><td>A human body preserved in a peat bog, often with skin and hair intact.</td></tr>
+      <tr><td>Peat</td><td>Partly decayed plant material that builds up in waterlogged, acidic, oxygen-poor bogs.</td></tr>
+      <tr><td>Mummified person</td><td>A person whose body has been preserved, naturally or deliberately; some museums (e.g. National Museums Scotland) now prefer this to ‘mummy’.</td></tr>
+      <tr><td>Mummification</td><td>Preserving a body’s skin and soft tissue: done deliberately in ancient Egypt, and naturally by ice, bogs or desert.</td></tr>
+      <tr><td>CT scan</td><td>Computed tomography: X-ray images taken from many angles to show the inside of a body in 3D without cutting it.</td></tr>
+      <tr><td>Ancient DNA</td><td>Genetic material recovered from old remains, used to study ancestry, health and appearance.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Judging the evidence</th><th>Meaning</th></tr>
+      <tr><td>Significance</td><td>The importance of something, judged for a particular purpose.</td></tr>
+      <tr><td>Ethnography</td><td>A description of a people and their customs, usually written by an outsider.</td></tr>
+      <tr><td>Ritual sacrifice</td><td>Killing a person or an animal as an offering to a god or gods.</td></tr>
+      <tr><td>Execution</td><td>Killing a person deliberately, usually as a punishment; Moesgaard Museum also uses it for a killing it thinks was a sacrifice.</td></tr>
+      <tr><td>Contestability</td><td>Recognising that interpretations and representations of the past are debated and can change with new evidence.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Tacitus and the bog bodies" data-title="Who was Tacitus?" data-kind="notes">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">1 · Tacitus and the bog bodies · supported reading — who wrote it, when, and how did he know?</p>
+  <h2>Tacitus: a Roman senator writing about the peoples beyond the frontier</h2>
+  <div class="split" style="--cols:.5fr 1.5fr">
+    <div class="u3l05-page"><figure class="figure contain"><img src="images/u3l05-germania-printed-page.jpg" alt="The opening of Tacitus’s Germania in Latin, in one of the first printed editions of his works (Venice: Vindelinus de Spira, about 1471–72), Bavarian State Library" loading="lazy"><figcaption>The opening of Tacitus’s Germania in Latin, in one of the first printed editions of his works (Venice: Vindelinus de Spira, about 1471–72), Bavarian State Library — <span class="cr">Printed by Vindelinus de Spira; scan: Bayerische Staatsbibliothek · Public domain</span></figcaption></figure></div>
+    <div class="stack">
+      <ul class="u3l05-facts">
+        <li><b>Who:</b> Tacitus (about 55–120 CE), a Roman senator and historian, consul in 97 CE</li>
+        <li><b>What:</b> the <i>Germania</i>, a short Latin ethnography of the lands and peoples beyond Rome’s Rhine and Danube frontier</li>
+        <li><b>When:</b> about 98 CE, early in the reign of the emperor Trajan (he counts the years “to the second consulship of the Emperor Trajan”, chapter 37)</li>
+        <li><b>What we read:</b> his Latin, copied by hand for centuries, then printed; here in A. J. Church and W. J. Brodribb’s English translation (1868, revised 1877)</li>
+      </ul>
+      <div class="src">
+        <div class="k">Tacitus on his own information · <i>Germania</i> 27</div>
+        <p class="quote sm">Such on the whole is the account which I have received of the origin and manners of the entire German people.</p>
+        <p class="prov">Tacitus, <i>Germania</i> 27 (the end of his general description), about 98 CE · trans. A. J. Church and W. J. Brodribb (1877)</p>
+      </div>
+      <p class="qprompt">What does “the account which I have received” suggest about how Tacitus knew?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">He is passing on what others told him or wrote, not saying that he saw it himself. He never says he went to Germania, and he does not name his informants, so we cannot check them.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Tacitus and the bog bodies" data-title="Germania 12: read and annotate" data-kind="notes">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">1 · Tacitus and the bog bodies · supported reading — read together, then annotate</p>
+  <h2>Tacitus on Germanic punishments</h2>
+  <div class="stack veil-parts" data-veil="Annotate first — then show the answers">
+  <div class="src">
+    <div class="k">Source · Tacitus, <i>Germania</i> 12</div>
+    <p class="quote sm"><span class="match" data-step="m1">In their councils an accusation may be preferred or a capital crime prosecuted.</span> Penalties are distinguished according to the offence. <span class="match" data-step="m2">Traitors and deserters are hanged on trees;</span> <span class="match" data-step="m3">the coward, the unwarlike, the man stained with abominable vices, is plunged into the mire of the morass with a hurdle put over him.</span> <span class="match" data-step="m4">This distinction in punishment means that crime, they think, ought, in being punished, to be exposed, while infamy ought to be buried out of sight</span> …</p>
+    <p class="prov">Tacitus, a Roman senator, writing about 98 CE about the peoples beyond the Rhine · trans. A. J. Church and W. J. Brodribb (1877) · the first four sentences of the chapter</p>
+    <ul class="u3l05-gloss" aria-label="Glossary">
+      <li><b>preferred</b> brought</li><li><b>capital crime</b> a crime punished by death</li><li><b>unwarlike</b> unfit or unwilling to fight</li>
+      <li><b>abominable vices</b> conduct thought shameful (translations differ)</li><li><b>mire of the morass</b> the mud of a bog</li>
+      <li><b>hurdle</b> a frame of woven branches</li><li><b>infamy</b> disgrace</li>
+    </ul>
+  </div>
+  <div class="u3l05-mqgrid">
+    <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Who decided the punishments?</b> <span class="vp">The councils, where accusations were brought and capital crimes tried.</span></span></p>
+    <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>What happened to traitors and deserters?</b> <span class="vp">They were hanged on trees: in the open, not in a bog.</span></span></p>
+    <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>Who was put in the bog, and how?</b> <span class="vp">The coward, the unwarlike and the man of shameful conduct: pushed into the mud with a hurdle over him.</span></span></p>
+    <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>Why the difference, according to Tacitus?</b> <span class="vp">Crimes were punished in public, but disgrace was hidden: buried out of sight.</span></span></p>
+  </div>
+  </div>
+  <p class="cue reveal" data-veil="Show one question the passage raises">One question it raises: Tacitus names no person, no place and no date. Can a general description like this explain how any one bog body died?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Tacitus and the bog bodies" data-title="I do: Origin, Value, Purpose" data-kind="notes">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">1 · Tacitus and the bog bodies · I do — think aloud · use the OVPRL routine on page 2 of your booklet</p>
+  <h2>OVPRL on <i>Germania</i> 12: Origin, Value, Purpose</h2>
+  <div class="split" style="--cols:1.25fr 1fr">
+    <div class="stack veil-parts" data-veil="Try it first — then show the worked example">
+      <div class="u3l05-ov"><span class="u3l05-ovl">O</span><div><p class="qprompt">Origin: who made it, when and where?</p>
+        <p class="u3l05-model vp reveal">Tacitus, a Roman senator and historian (consul in 97 CE) · about 98 CE · in Latin, for Roman readers · an account he says he “received”, not one he saw · we read a copy of a copy, in an 1877 translation</p></div></div>
+      <div class="u3l05-ov"><span class="u3l05-ovl">V</span><div><p class="qprompt">Value: what can it tell us, and for which inquiry?</p>
+        <p class="u3l05-model vp reveal">For an inquiry into how Romans understood Germanic peoples: Romans believed that some offenders were hanged and others pushed into bogs under a hurdle · it links bogs with the killing of offenders</p></div></div>
+      <div class="u3l05-ov"><span class="u3l05-ovl">P</span><div><p class="qprompt">Purpose: why was it written, and for whom?</p>
+        <p class="u3l05-model vp reveal">To describe the peoples beyond Rome’s frontier for Roman readers, and probably also to hold up a mirror to Rome: he seems to praise the Germans’ morals to shame his own society (see the extract)</p></div></div>
+    </div>
+    <div class="stack">
+      <div class="src">
+        <div class="k">Tacitus on German morals · <i>Germania</i> 19</div>
+        <p class="quote sm">No one in Germany laughs at vice, nor do they call it the fashion to corrupt and to be corrupted. … good habits are here more effectual than good laws elsewhere.</p>
+        <p class="prov">Tacitus, <i>Germania</i> 19, about 98 CE · trans. A. J. Church and W. J. Brodribb (1877) · “elsewhere”: where might he mean?</p>
+      </div>
+      <div class="src">
+        <div class="k">A modern historian on the <i>Germania</i></div>
+        <p class="quote sm">… the customs of all nations on the edge of the earth are, according to Greek and Roman ethnographers, exchangeable. As sources for anthropological knowledge, the <i>Agricola</i> and <i>Germania</i> must be read with great caution.</p>
+        <p class="prov">Jona Lendering, “Tacitus”, Livius.org (2008, revised 2020) · a secondary source</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Tacitus and the bog bodies" data-title="I do: Reliability and Limitations" data-kind="notes">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">1 · Tacitus and the bog bodies · I do — think aloud · reliable for what?</p>
+  <h2>OVPRL on <i>Germania</i> 12: Reliability and Limitations</h2>
+  <figure class="diagram u3l05-diagram"><svg class="u3l05-svg u3l05-gap" viewBox="0 0 1000 330" role="img" aria-label="Time line from 500 BCE to 150 CE. Tollund Man, in Denmark, died between 405 and 380 BCE; Elling Woman died at about the same time. Grauballe Man, in Denmark, lived between 400 and 200 BCE, most likely about 390 BCE. Lindow Man, in Britain, died between 2 BCE and 119 CE. Tacitus wrote the Germania in about 98 CE, about 500 years after Tollund Man died.">
+<defs><marker id="u3l05-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="u3l05-ahp"/></marker></defs>
+<line class="u3l05-tac" x1="886.4" y1="34" x2="886.4" y2="292"/>
+<text class="u3l05-t u3l05-tb u3l05-ttac" x="894.4" y="24" text-anchor="end">Tacitus writes the Germania · about 98 CE</text>
+<rect class="u3l05-bar dk" x="174.5" y="70" width="35.30000000000001" height="18" rx="4"/>
+<text class="u3l05-t" x="174.5" y="58"><tspan class="u3l05-tname">Tollund Man</tspan><tspan class="u3l05-tsm"> · Denmark · died 405–380 BCE</tspan></text>
+<text class="u3l05-t u3l05-tsm u3l05-tmute" x="174.5" y="112">Elling Woman: about the same time</text>
+<line class="u3l05-gaparrow" x1="219.8" y1="79" x2="876.4" y2="79" marker-start="url(#u3l05-ah)" marker-end="url(#u3l05-ah)"/>
+<text class="u3l05-t u3l05-tb u3l05-tgap" x="608.1" y="108" text-anchor="middle">about 500 years</text>
+<rect class="u3l05-bar lt" x="181.5" y="158" width="283.1" height="18" rx="4"/>
+<circle class="u3l05-dot" cx="195.7" cy="167" r="7"/>
+<text class="u3l05-t" x="181.5" y="146"><tspan class="u3l05-tname">Grauballe Man</tspan><tspan class="u3l05-tsm"> · Denmark · lived 400–200 BCE</tspan></text>
+<text class="u3l05-t u3l05-tsm u3l05-tmute" x="181.5" y="200">most likely about 390 BCE (dot)</text>
+<rect class="u3l05-bar lt" x="744.9" y="236" width="171.20000000000005" height="18" rx="4"/>
+<text class="u3l05-t" x="732.9" y="251" text-anchor="end"><tspan class="u3l05-tname">Lindow Man</tspan><tspan class="u3l05-tsm"> · Britain, not Germania · died 2 BCE – 119 CE</tspan></text>
+<line class="u3l05-axis" x1="40" y1="292" x2="960" y2="292"/>
+<line class="u3l05-tick" x1="40.0" y1="285" x2="40.0" y2="299"/>
+<text class="u3l05-t u3l05-tsm u3l05-tmute" x="36.0" y="322" text-anchor="start">500 BCE</text>
+<line class="u3l05-tick" x1="181.5" y1="285" x2="181.5" y2="299"/>
+<text class="u3l05-t u3l05-tsm u3l05-tmute" x="181.5" y="322" text-anchor="middle">400 BCE</text>
+<line class="u3l05-tick" x1="323.1" y1="285" x2="323.1" y2="299"/>
+<text class="u3l05-t u3l05-tsm u3l05-tmute" x="323.1" y="322" text-anchor="middle">300 BCE</text>
+<line class="u3l05-tick" x1="464.6" y1="285" x2="464.6" y2="299"/>
+<text class="u3l05-t u3l05-tsm u3l05-tmute" x="464.6" y="322" text-anchor="middle">200 BCE</text>
+<line class="u3l05-tick" x1="606.2" y1="285" x2="606.2" y2="299"/>
+<text class="u3l05-t u3l05-tsm u3l05-tmute" x="606.2" y="322" text-anchor="middle">100 BCE</text>
+<line class="u3l05-tick" x1="747.7" y1="285" x2="747.7" y2="299"/>
+<text class="u3l05-t u3l05-tsm u3l05-tmute" x="747.7" y="322" text-anchor="middle">BCE | CE</text>
+<line class="u3l05-tick" x1="889.2" y1="285" x2="889.2" y2="299"/>
+<text class="u3l05-t u3l05-tsm u3l05-tmute" x="889.2" y="322" text-anchor="middle">100 CE</text>
+<circle class="u3l05-tacdot" cx="886.4" cy="292" r="8"/>
+</svg></figure>
+  <div class="u3l05-rl veil-parts" data-veil="Try it first — then show the worked example">
+    <div class="u3l05-ov"><span class="u3l05-ovl">R</span><div><p class="qprompt">Reliability: how far can we trust it, and for what?</p>
+      <p class="u3l05-model vp reveal">Reliable for Roman views of Germanic customs in about 98 CE · but second-hand and, Lendering argues, built from stock descriptions, so not on its own reliable for how or why any particular bog body died</p></div></div>
+    <div class="u3l05-ov"><span class="u3l05-ovl">L</span><div><p class="qprompt">Limitations: what can it not tell us?</p>
+      <p class="u3l05-model vp reveal">Bog bodies from other centuries or places: Tollund Man died about 500 years earlier; Lindow Man lived in Britain, not Germania · it names no person, place or bog</p></div></div>
+    <div class="note vp reveal u3l05-span2" data-code="judgement"><div class="k">Reliable for what? One sentence</div><p class="body nq"><i>Germania</i> 12 is reliable for Roman views of Germanic punishments in about 98 CE, but not for why Tollund Man died, because it was written about 500 years after his death by a Roman passing on an account he had received.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Tacitus and the bog bodies" data-title="Notes 1 — Tacitus as evidence" data-kind="notes">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>Tacitus as evidence for the bog bodies</h2>
+  <p class="cue">Write your own notes first. Then compare, row by row, and add what you missed in a second colour.</p>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U3 L5 · Lives and times</b></span><span>1 · Tacitus</span></div>
+    <div class="row"><div class="cq">Who wrote the <i>Germania</i>, when, and how did he know?</div>
+      <div class="nts reveal">Tacitus, Roman senator and historian (c. 55–120 CE; consul 97) <span class="sep">·</span> c. 98 CE <span class="sep">·</span> an account he “received” (ch. 27) → second-hand, informants unnamed</div></div>
+    <div class="row"><div class="cq">Explain what <i>Germania</i> 12 says about bogs.</div>
+      <div class="nts reveal">traitors, deserters → hanged on trees <span class="sep">·</span> coward, unwarlike, disgraced → into the bog under a hurdle <span class="sep">·</span> crime exposed, disgrace “buried out of sight”</div></div>
+    <div class="row"><div class="cq">Explain its purpose.</div>
+      <div class="nts reveal">describing peoples beyond the frontier for Romans <span class="sep">·</span> probably a mirror to Rome: German morals praised (ch. 19) <span class="sep">·</span> stock ethnography (Lendering)</div></div>
+    <div class="row"><div class="cq">Assess <i>Germania</i> 12 as evidence for the bog bodies.</div>
+      <div class="nts reveal">reliable for Roman views of Germanic customs c. 98 CE <span class="sep">·</span> not, on its own, for any one body: Tollund Man c. 500 yrs earlier; Lindow Man in Britain <span class="sep">·</span> names no one</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Ritual or punishment?" data-title="We do: ritual or punishment? Card sort">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">2 · Ritual or punishment? · We do — card sort in pairs · 5 minutes · press K for the timer</p>
+  <h2>Sort the eight cards: ritual sacrifice, punishment, or both or can’t tell?</h2>
+  <p class="u3l05-piles"><span class="lead-in">Three piles:</span><span class="r">Ritual sacrifice</span><span class="p">Punishment</span><span class="b">Both or can’t tell</span></p>
+  <div class="u3l05-cards">
+    <div class="u3l05-card"><span class="l">A</span><b>Tacitus, <i>Germania</i> 12</b><span class="q">“… the coward, the unwarlike, the man stained with abominable vices, is plunged into the mire of the morass with a hurdle put over him.”</span><span class="w">a Roman, about 98 CE</span></div>
+    <div class="u3l05-card"><span class="l">B</span><b>Tacitus, <i>Germania</i> 40</b>After a goddess’s chariot is washed in a secret lake: <span class="q">“Slaves perform the rite, who are instantly swallowed up by its waters.”</span><span class="w">a Roman, about 98 CE</span></div>
+    <div class="u3l05-card"><span class="l">C</span><b>Moesgaard Museum on Grauballe Man</b><span class="q">“The Grauballe Man was 34 years old when he died – but it was not a natural death. He was executed.”</span><span class="w">the museum’s website</span></div>
+    <div class="u3l05-card"><span class="l">D</span><b>Museum Silkeborg on Elling Woman</b><span class="q">“Elling Woman had also been hanged, and we presume that she was also sacrificed to the god or gods.”</span><span class="w">the museum’s website</span></div>
+    <div class="u3l05-card"><span class="l">E</span><b>Tollund Man: how he died</b>Hanged with a braided leather rope; afterwards his eyes and mouth were closed and he was <span class="q">“laid to rest with care”</span>.<span class="w">Museum Silkeborg</span></div>
+    <div class="u3l05-card"><span class="l">F</span><b>Tollund Man: his last meal</b>A porridge of barley, pale persicaria and flax. <span class="q">“Although the meal may reflect ordinary Iron Age fare, the inclusion of threshing waste could possibly relate to ritual practices.”</span><span class="w">Nielsen et al., 2021</span></div>
+    <div class="u3l05-card"><span class="l">G</span><b>Grauballe Man: his injuries</b>His right shin was broken shortly before his throat was cut; then his body was laid in the bog.<span class="w">Moesgaard Museum</span></div>
+    <div class="u3l05-card"><span class="l">H</span><b>Lindow Man: how he died</b>Struck twice on the head; a cord around his neck; his throat cut; placed face down in a pool. He died between 2 BCE and 119 CE, in Britain.<span class="w">British Museum</span></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Ritual or punishment?" data-title="Check the sort: the texts and the museums" data-kind="notes">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">2 · Ritual or punishment? · We do — check your sort · cold call a pair before each row</p>
+  <h2>Check your sort: what the texts and the museums say</h2>
+  <div class="stack" data-veil="Sort first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u3l05-key">
+    <tr><th>Card</th><th>Pile</th><th>Why</th></tr>
+    <tr class="reveal"><td>A · <i>Germania</i> 12</td><td class="u3l05-pile p">punishment</td><td>offenders put into a bog under a hurdle; but it is a Roman’s report of Germanic custom in about 98 CE, and it names no one</td></tr>
+    <tr class="reveal"><td>B · <i>Germania</i> 40</td><td class="u3l05-pile r">ritual sacrifice</td><td>slaves who served a goddess’s rite were drowned; but in a lake, not a bog, and again a Roman report</td></tr>
+    <tr class="reveal"><td>C · Moesgaard</td><td class="u3l05-pile b">both or can’t tell</td><td>“executed” says <i>how</i> he died (a deliberate killing), not <i>why</i>; the same page calls punishment one theory and sacrifice “more likely”</td></tr>
+    <tr class="reveal"><td>D · Silkeborg</td><td class="u3l05-pile r">ritual sacrifice</td><td>but “we presume”: the museum’s interpretation, stated with care, not proof</td></tr>
+  </table></div>
+  <div class="src reveal">
+    <div class="k">Moesgaard Museum, on the same page, under “Why did he have to die?”</div>
+    <p class="quote sm">Perhaps it was punishment for a crime – but there is also another, more likely explanation.</p>
+    <p class="prov">Moesgaard Museum, “The Grauballe Man” (museum website) · the page goes on to suggest that his final meal points to a sacrifice to a goddess of fertility</p>
+  </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Ritual or punishment?" data-title="Check the sort: the bodies, then weigh it" data-kind="notes">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">2 · Ritual or punishment? · We do — check your sort · then weigh the evidence</p>
+  <h2>Check your sort: what the bodies show</h2>
+  <div class="stack" data-veil="Sort first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u3l05-key">
+    <tr><th>Card</th><th>Pile</th><th>Why</th></tr>
+    <tr class="reveal"><td>E · Tollund Man’s death</td><td class="u3l05-pile b">both or can’t tell</td><td>hanging fits Tacitus’s punishment (though he says on trees); the careful burial leads Museum Silkeborg to see a sacrifice: “his fellow men did not treat him like a criminal”</td></tr>
+    <tr class="reveal"><td>F · Tollund Man’s meal</td><td class="u3l05-pile b">both or can’t tell</td><td>“may” and “could possibly”: the scientists leave it open; it may have been an ordinary meal</td></tr>
+    <tr class="reveal"><td>G · Grauballe Man’s injuries</td><td class="u3l05-pile b">both or can’t tell</td><td>a deliberate, violent killing; the injuries show how he died, not why</td></tr>
+    <tr class="reveal"><td>H · Lindow Man’s death</td><td class="u3l05-pile b">both or can’t tell</td><td>like G, the injuries show how he died, not why; the British Museum reads the “elaborate sequence of events” as a sign that “his death may have been ritual killing”, and calls sacrifice only what “Some people have argued”. He lived in Britain, so <i>Germania</i> 12 does not describe his people</td></tr>
+  </table></div>
+  <div class="note reveal" data-code="judgement"><div class="k">Weigh it: why can’t historians settle this?</div><p class="body">The bodies show <b>how</b> people died, rarely <b>why</b>. The ancient texts pull both ways (<i>Germania</i> 12 punishment, <i>Germania</i> 40 a rite), and they are Roman, written centuries later or about other places. The museums lean towards ritual, but they hedge (“we presume”, “more likely”, “may have been”), and Moesgaard keeps punishment open. The answer may differ from body to body: that is contestability.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Ritual or punishment?" data-title="Notes 2 — Ritual or punishment?" data-kind="notes">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>Ritual sacrifice or punishment?</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U3 L5 · Lives and times</b></span><span>2 · Ritual or punishment?</span></div>
+    <div class="row"><div class="cq">What evidence suggests ritual sacrifice?</div>
+      <div class="nts reveal"><i>Germania</i> 40: slaves drowned after a goddess’s rite <span class="sep">·</span> Tollund Man laid to rest with care (Silkeborg) <span class="sep">·</span> Lindow Man’s “elaborate sequence” (British Museum: “may have been”) <span class="sep">·</span> Silkeborg “presume[s]” Elling Woman sacrificed</div></div>
+    <div class="row"><div class="cq">What evidence suggests punishment?</div>
+      <div class="nts reveal"><i>Germania</i> 12: coward, unwarlike, disgraced → bog under a hurdle <span class="sep">·</span> hanging (but Tacitus: on trees) <span class="sep">·</span> Moesgaard “executed” (yet it thinks sacrifice more likely)</div></div>
+    <div class="row"><div class="cq">Explain why the question is contested.</div>
+      <div class="nts reveal">bodies show how, not why <span class="sep">·</span> Roman texts pull both ways (ch. 12 punishment, ch. 40 a rite), later or elsewhere <span class="sep">·</span> museums lean to ritual but hedge (“presume”, “more likely”, “may”) <span class="sep">·</span> may differ body by body</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · What remains reveal" data-title="Significant for what?" data-kind="notes">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">3 · What remains reveal · You do — three questions to judge significance, modelled on Tollund Man</p>
+  <h2>Significant for what? Three questions to ask of any remains</h2>
+  <div class="u3l05-crit">
+    <div class="card quiet"><div class="k">1 · What does it reveal?</div><p class="body">About the person’s life and times: diet, health, violence, beliefs, status, ancestry. <span class="u3l05-word">reveals</span></p></div>
+    <div class="card quiet"><div class="k">2 · What did it result in?</div><p class="body">What did its discovery or study change: new knowledge, new dates, old ideas overturned? <span class="u3l05-word">resulted in</span></p></div>
+    <div class="card quiet"><div class="k">3 · For whom does it matter now?</div><p class="body">Scientists, museums and visitors, descendants, nations: for what purpose? <span class="u3l05-word">remains significant for</span></p></div>
+  </div>
+  <div class="u3l05-ms veil-parts" data-veil="Try one first — then show the model sentences">
+    <p class="vp reveal nq"><span class="tag">reveals</span>Tollund Man’s gut contents reveal that, a day or less before he was killed, he ate a porridge of barley, pale persicaria and flax, and probably some fish.</p>
+    <p class="vp reveal nq"><span class="tag">resulted in</span>New analyses in 2018 and 2021 resulted in a narrower date for his death, 405–380 BCE, and a fuller picture of his last meal.</p>
+    <p class="vp reveal nq"><span class="tag">remains significant for</span>He remains significant for Museum Silkeborg, which built its Iron Age exhibition around him and Elling Woman, and for the debate about ritual or punishment.</p>
+    <p class="vp reveal nq lim"><span class="tag">but</span>One man’s meal cannot show what everyone in Iron Age Denmark ate, and his body shows how he died, not why.</p>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · What remains reveal" data-title="Evidence card: Egyptian mummified people" data-kind="notes">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">3 · What remains reveal · You do — evidence card · Egyptian mummified people</p>
+  <h2>A king studied without unwrapping: Amenhotep I</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <figure class="figure contain"><img src="images/u3l05-amenhotep-i-coffin-1912.jpg" alt="The coffin and wrapped body of King Amenhotep I, as published in G. Elliot Smith’s catalogue The Royal Mummies (Cairo, 1912); the body has never been unwrapped in modern times" loading="lazy"><figcaption>The coffin and wrapped body of King Amenhotep I, as published in G. Elliot Smith’s catalogue The Royal Mummies (Cairo, 1912); the body has never been unwrapped in modern times — <span class="cr">Photo: probably Émile Brugsch, in G. Elliot Smith, The Royal Mummies (1912) · Public domain</span></figcaption></figure>
+      <ul class="u3l05-facts">
+        <li><b>Who:</b> King Amenhotep I of Egypt’s 18th Dynasty, who reigned about 1525–1504 BCE</li>
+        <li><b>Found:</b> 1881, in a hidden group burial of royal mummified people at Deir el-Bahari, where priests of the 21st Dynasty had reburied them</li>
+        <li><b>Method:</b> CT scanning, which is non-invasive (Sahar Saleem and Zahi Hawass, 2021)</li>
+      </ul>
+    </div>
+    <div class="stack">
+      <ul class="u3l05-facts">
+        <li><b>Health:</b> died at about 35; teeth only a little worn; no sign of disease or of what killed him</li>
+        <li><b>Status and beliefs:</b> 30 amulets and pieces of jewellery, including a beaded, probably gold, girdle; his heart left in his body, with an amulet over it</li>
+        <li><b>After death:</b> damage, probably by tomb robbers, which embalmers of the 21st Dynasty probably repaired</li>
+      </ul>
+      <div class="src">
+        <div class="k">Source · the CT study (2021)</div>
+        <p class="quote sm">There was no CT evidence of pathological changes or cause of death.</p>
+        <p class="prov">Sahar N. Saleem and Zahi Hawass, “Digital Unwrapping of the Mummy of King Amenhotep I … Using CT”, <i>Frontiers in Medicine</i> 8 (2021), abstract · pathological changes = signs of disease</p>
+      </div>
+      <p class="qprompt">What does this body reveal, and what can it not tell us?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">It reveals a king’s status and his people’s care for the dead: amulets, a probably gold girdle, and probably a later repair. It cannot show what killed him, and one royal body tells us little about how ordinary Egyptians lived.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · What remains reveal" data-title="Evidence card: the Tarim Basin" data-kind="notes">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">3 · What remains reveal · You do — evidence card · the Tarim Basin mummified people</p>
+  <h2>The Tarim Basin: what DNA and tooth tartar revealed</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+    <figure class="figure contain"><img src="images/u3l05-xiaohe-cemetery.jpg" alt="The Xiaohe cemetery in the Tarim Basin (Xinjiang, China): wooden grave markers and fencing on the burial mound, from the 2021 DNA study" loading="lazy"><figcaption>The Xiaohe cemetery in the Tarim Basin (Xinjiang, China): wooden grave markers and fencing on the burial mound, from the 2021 DNA study — <span class="cr">Zhang, Ning, Scott et al., Nature 599 (2021), Extended Data Fig. 1 (cropped) · CC BY 4.0</span></figcaption></figure>
+    <ul class="u3l05-facts">
+      <li><b>Where and when:</b> cemeteries such as Xiaohe in the Tarim Basin, Xinjiang, western China; hundreds of people naturally mummified in the dry desert, from about 2000 BCE</li>
+      <li><b>Burials:</b> boat-shaped coffins, woollen and felt clothing</li>
+      <li><b>2021 study:</b> ancient DNA from 13 of the earliest people (about 2100–1700 BCE); milk proteins in the tartar on their teeth show dairy farming from the cemetery’s start</li>
+      <li><b>Today:</b> the remains are drawn into arguments about identity: National Geographic reports that Uyghur nationalists claim them as ancestors, and the Chinese government rejects this</li>
+    </ul>
+    </div>
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · the DNA study (2021)</div>
+        <p class="quote sm">… the earliest Tarim Basin cultures appear to have arisen from a genetically isolated local population that adopted neighbouring pastoralist and agriculturalist practices …</p>
+        <p class="prov">Fan Zhang, Chao Ning, Ashley Scott and others, “The genomic origins of the Bronze Age Tarim Basin mummies”, <i>Nature</i> 599 (2021), abstract · pastoralist = herding animals</p>
+      </div>
+      <p class="qprompt">What do these remains reveal, and why do people argue over what they mean?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">They appear to come from a genetically isolated local population that herded, farmed and made dairy foods, borrowing practices from neighbours. Because they lie in Xinjiang, groups give them different significance today: as ancestors, as evidence, or as a claim to reject.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · What remains reveal" data-title="You do: write your significance paragraph">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">3 · What remains reveal · You do · 14 minutes of writing · the 20-minute timer is running · paragraphs may be read aloud</p>
+  <h2>Assess the significance of human remains for understanding the life and times in which the people lived.</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body"><li>One paragraph using <b>two</b> of: bog bodies · Egyptian mummified people · the Tarim Basin.</li>
+          <li>Use the language of significance: <i>reveals</i> · <i>resulted in</i> · <i>remains significant for</i>.</li>
+          <li>Judge: what are remains most and least significant for? Name one thing one body cannot tell us.</li></ol></div>
+      <div class="card quiet sm"><div class="k">Support · paragraph frame</div><p class="body nq">Human remains are significant for understanding … but less so for … · For example, … reveals that … · The study of … resulted in … · However, … cannot show … · … remains significant for … because … · Overall, …</p></div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Check first: what turns a fact about a body into a claim about significance?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">Saying what the remains are significant <b>for</b>, and why, with evidence: not <span class="nq">“Tollund Man ate porridge”</span>, but how his meal helps us understand Iron Age life.</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Why have the Tarim mummified people become politically sensitive? Explain how the same remains can be given significance for different purposes.</p></div>
+
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · What remains reveal" data-title="A model significance paragraph" data-kind="notes">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">3 · What remains reveal · after you write · compare yours with a model</p>
+  <h2>A model significance paragraph</h2>
+  <div class="split" style="--cols:1.65fr 1fr">
+    <div class="src reveal" data-veil="Write yours first — then show a model paragraph">
+      <div class="k">A model paragraph · written for this lesson</div>
+      <p class="quote sm model">Human remains are highly significant for understanding how individuals lived and died, but less significant, on their own, for understanding beliefs or whole societies. Tollund Man’s gut contents reveal that, shortly before he was killed in about 400 BCE, he ate ‘a porridge containing barley, pale persicaria and flax, and probably some fish’, a meal that may reflect ordinary Iron Age fare. Similarly, milk proteins on the teeth of people buried at Xiaohe in the Tarim Basin reveal dairy farming there from the cemetery’s start, and the 2021 DNA study resulted in a new view of their origins: the earliest Tarim Basin cultures ‘appear to have arisen from a genetically isolated local population that adopted neighbouring pastoralist and agriculturalist practices’. Yet the remains reveal much less about belief. Tollund Man’s body shows that he was hanged, but not why, and Tacitus’s <i>Germania</i>, the Roman text that links bogs with killing, was written about 500 years later. Moreover, the Tarim mummified people remain significant for modern purposes as well: according to National Geographic, Uyghur nationalists claim them as ancestors, while the Chinese government rejects this. Ultimately, human remains are most significant as evidence of individual lives; what those lives meant to their own societies, or mean to ours, depends on other evidence and on who is asking.</p>
+    </div>
+    <div class="card quiet"><div class="k">Check yours: does it …</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> <span>judge what remains are most and least significant for?</span></label></li>
+        <li><label><input type="checkbox"> <span>use two examples, each with precise evidence?</span></label></li>
+        <li><label><input type="checkbox"> <span>use reveals, resulted in and remains significant for?</span></label></li>
+        <li><label><input type="checkbox"> <span>name one thing one body cannot tell us?</span></label></li>
+        <li><label><input type="checkbox"> <span>name the people who hold each view?</span></label></li>
+      </ul></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · What remains reveal" data-title="Summary" data-kind="notes">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What can human remains reveal about the life and times of the people?</li>
+          <li>How useful is Tacitus as evidence for the bog bodies?</li>
+          <li>Why can the same remains be significant for different purposes?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Human remains can reveal how individuals lived and died, such as Tollund Man’s last meal, Amenhotep I’s status and the care later priests took of his body, and the local ancestry and dairy farming of the Tarim Basin people, but one body cannot show why a person died or how a whole society lived. Tacitus’s <i>Germania</i> is reliable for Roman views of Germanic punishment and religion in about 98 CE, but it is a second-hand account written about 500 years after Tollund Man died, and it does not describe Britain. The same remains can be significant for different purposes: as evidence for scientists, as exhibits for museums and, in the Tarim Basin, as the subject of rival claims about identity.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Tacitus: who, when, how he knew</label></li>
+        <li><label><input type="checkbox"> <span><i>Germania</i> 12: who went into the bog</span></label></li>
+        <li><label><input type="checkbox"> OVPRL: reliable for what?</label></li>
+        <li><label><input type="checkbox"> The time line: 500 years apart</label></li>
+        <li><label><input type="checkbox"> Ritual or punishment: the evidence</label></li>
+        <li><label><input type="checkbox"> Three significance questions</label></li>
+        <li><label><input type="checkbox"> Your paragraph</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Hinge: what is Tacitus most useful for?" data-kind="practice">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">Check · hinge question · hold up A, B, C or D on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2>Tacitus’s <i>Germania</i> is most useful as evidence of …</h2>
+  <div class="stack veil-parts" data-veil="Vote first — then show the answer">
+  <ol class="opts u3l05-hinge">
+    <li><span class="n">A</span><span>the causes of death of every bog body, in about 400 BCE–100 CE</span></li>
+    <li id="u3l05-hB"><span class="n">B</span><span>the views of Romans about Germanic customs, in about 98 CE</span></li>
+    <li><span class="n">C</span><span>the religious beliefs of people in Denmark, in about 400 BCE</span></li>
+    <li><span class="n">D</span><span>the punishments used by people in Britain, in about 100 CE</span></li>
+  </ol>
+  <i class="reveal" data-mark="#u3l05-hB" hidden></i>
+  <div class="note vp reveal" data-code="evidence"><div class="k">B: a Roman’s view of Germanic customs in his own time</div><p class="body"><b>A</b> overgeneralises: the bodies died in different places and centuries, and Tacitus names no one. <b>C</b> is about 500 years too early: Tollund Man died 405–380 BCE. <b>D</b> is the best wrong answer: the right time for Lindow Man, but the <i>Germania</i> describes the peoples beyond the Rhine and Danube, not Britain.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 5 minutes · before you leave</p>
+  <h2>Two sentences</h2>
+  <div class="cols c2">
+    <div class="card accent"><div class="k">1</div><p class="lead">One thing a bog body reveals about life in the Iron Age is … because …</p></div>
+    <div class="card accent"><div class="k">2</div><p class="lead">Historians disagree about why the bog bodies died because …</p></div>
+  </div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">1 · a specific finding and the evidence for it (for example, Tollund Man’s last meal, from his gut contents). &nbsp;2 · the bodies show how people died, not why; the Roman texts point both ways and come from other times or places; and even the museums, which lean towards ritual, only presume it or think it “more likely”.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> whose remains? The ethics of study, display and ownership.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u3l05-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Tacitus says he saw the Germanic punishments himself.</span>
+      <span class="sol no reveal">False <span class="why">— he calls his description an account he “received” (chapter 27), and never says he saw it.</span></span></li>
+    <li><span class="n">2</span><span>According to <i>Germania</i> 12, traitors and deserters were drowned in bogs.</span>
+      <span class="sol no reveal">False <span class="why">— they were hanged on trees; the coward, the unwarlike and the disgraced went into the bog.</span></span></li>
+    <li><span class="n">3</span><span>Tollund Man died about 500 years before Tacitus wrote the <i>Germania</i>.</span>
+      <span class="sol reveal">True <span class="why">— he died 405–380 BCE (radiocarbon, 2018); the <i>Germania</i> dates from about 98 CE.</span></span></li>
+    <li><span class="n">4</span><span>Moesgaard Museum’s word “executed” proves that Grauballe Man was punished for a crime.</span>
+      <span class="sol no reveal">False <span class="why">— it says how he died; the same page calls sacrifice the more likely explanation.</span></span></li>
+    <li><span class="n">5</span><span>The 2021 study found that the earliest Tarim Basin people were migrants from the West.</span>
+      <span class="sol no reveal">False <span class="why">— they appear to have come from a genetically isolated local population that borrowed farming and herding from neighbours.</span></span></li>
+    <li><span class="n">6</span><span>CT scanning showed what killed Amenhotep I.</span>
+      <span class="sol no reveal">False <span class="why">— the study found no sign of disease or cause of death.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — write it as a historian" data-kind="practice">
+<div class="wrap prac u3l05-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Write it as a historian</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · Remains significant for</div><p class="body">Write one sentence about Amenhotep I using <i>remains significant for</i> … because …</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Amenhotep I’s body remains significant for historians of Egyptian burial, because CT revealed how embalmers of the 21st Dynasty probably repaired the damage that tomb robbers had probably done to it.</p></div>
+      <div class="card accent"><div class="k">2 · Reliable for what?</div><p class="body">Finish for <i>Germania</i> 40: It is reliable for … but not for … because …</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model"><i>Germania</i> 40 is reliable for what a Roman believed about the worship of an earth goddess among some Germanic peoples in about 98 CE, but not for why any bog body died, because it describes slaves drowned in a lake after a rite and names no one.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Why have the Tarim mummified people become politically sensitive? Explain how the same remains can be given significance for different purposes.</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">The Tarim mummified people have become politically sensitive because they lie in Xinjiang, a region whose identity is disputed today. National Geographic reports that ‘Uyghur nationalists claim the mummies are their forbears, but the Chinese government refutes this’, and that in 2011 China withdrew some from a travelling exhibition, ‘claiming they were too fragile to transport’. For geneticists, by contrast, the same remains are significant as evidence of origins: Zhang and colleagues conclude that the earliest Tarim Basin cultures ‘appear to have arisen from a genetically isolated local population’. The remains therefore carry different significance for different purposes: evidence of Bronze Age life for researchers, a claim of ancestry for Uyghur nationalists, and a claim that the Chinese government rejects. A historian should attribute each claim to the people who make it, rather than treat any one purpose as the remains’ true meaning.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u3l05-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Who wrote the <i>Germania</i>, when, and how did he know about Germanic customs?
+      <span class="sol reveal">Tacitus, a Roman senator and historian, in about 98 CE; from an account he had “received”: he never says he saw these customs himself.</span></li>
+    <li>What does <i>Germania</i> 12 say about bogs?
+      <span class="sol reveal">Traitors and deserters were hanged on trees, but the coward, the unwarlike and the disgraced were pushed into a bog under a hurdle, so that their disgrace was buried out of sight.</span></li>
+    <li>Assess <i>Germania</i> 12 as evidence for the bog bodies.
+      <span class="sol reveal">Reliable for Roman views of Germanic customs in about 98 CE; on its own, not for any particular body: Tollund Man died about 500 years earlier, Lindow Man lived in Britain, and Tacitus names no one.</span></li>
+    <li>Give one piece of evidence for ritual sacrifice and one for punishment.
+      <span class="sol reveal">Ritual: Tollund Man’s careful burial (Museum Silkeborg), or <i>Germania</i> 40. Punishment: <i>Germania</i> 12, or the hanging of Tollund Man and Elling Woman (though Tacitus says traitors were hanged on trees).</span></li>
+    <li>What did CT reveal about Amenhotep I, and what could it not show?
+      <span class="sol reveal">His age (about 35), 30 amulets and pieces of jewellery, including a probably gold girdle, and probable later repairs by embalmers; it found no sign of disease or of what killed him.</span></li>
+    <li>Explain how the Tarim mummified people are significant for different purposes.
+      <span class="sol reveal">For geneticists, evidence that the earliest people appear to have come from an isolated local population that adopted herding and farming; according to National Geographic, Uyghur nationalists claim them as ancestors, and the Chinese government rejects this.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u3l05-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u3l05-cite"><div class="k">Written sources</div>
+      <p class="small">Tacitus, <i>Germania</i> 12, 19 and 27, trans. A. J. Church and W. J. Brodribb (1868; revised edition, London: Macmillan, 1877; public domain), from the <a href="https://sourcebooks.fordham.edu/halsall/source/tacitus1.html">Fordham Internet History Sourcebooks</a>; chapters 1, 28, 37 and 40 in the same translation from the <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0083:chapter=40">Perseus Digital Library</a> (CC BY-SA 3.0 US). Jona Lendering, <a href="https://www.livius.org/sources/content/tacitus/">“Tacitus”</a>, Livius.org. The Morgan Library &amp; Museum, catalogue record PML 302 (the date of the printed <i>Germania</i>).</p>
+      <p class="small">Museum texts: Moesgaard Museum, <a href="https://www.moesgaardmuseum.dk/en/exhibitions/current-exhibitions/iron-age-exhibition/grauballe-man">“The Grauballe Man”</a>; Museum Silkeborg, <a href="https://www.museumsilkeborg.dk/Default.aspx?ID=593">“Tollund Man and Elling Woman”</a>; British Museum, <a href="https://artsandculture.google.com/asset/lindow-man/1wFCgHxf0Hldvw">“Lindow Man”</a> (1984,1002.1), on Google Arts &amp; Culture.</p>
+      <p class="small">Studies: N. H. Nielsen and others, “The last meal of Tollund Man”, <i>Antiquity</i> 95 (2021), and “Diet and Radiocarbon Dating of Tollund Man”, <i>Radiocarbon</i> 60 (2018), abstracts on Cambridge Core; F. Zhang and others, <a href="https://www.nature.com/articles/s41586-021-04052-7">“The genomic origins of the Bronze Age Tarim Basin mummies”</a>, <i>Nature</i> 599 (2021, CC BY 4.0); Max Planck Society, <a href="https://www.mpg.de/17737592/the-surprising-origins-of-the-tarim-basin-mummies">“The surprising origins of the Tarim Basin mummies”</a> (2021); E. Blakemore, <a href="https://www.nationalgeographic.com/history/article/tarim-basin-mummies-dna-archaeology">“Who were the Tarim Basin mummies? Even scientists were surprised.”</a>, <i>National Geographic</i> (15 September 2023); S. N. Saleem and Z. Hawass, <a href="https://www.frontiersin.org/articles/10.3389/fmed.2021.778498/full">“Digital Unwrapping of the Mummy of King Amenhotep I … Using CT”</a>, <i>Frontiers in Medicine</i> 8 (2021, CC BY); G. Elliot Smith, <i>The Royal Mummies</i> (Cairo, 1912), no. 61058 and preface (public domain). Review answers (Lessons 3–4): F. Maixner et al., <i>Current Biology</i> 28 (2018); K. Wang et al., <i>Cell Genomics</i> 3 (2023); South Tyrol Museum of Archaeology (iceman.it); Museum Silkeborg.</p>
+      <p class="small">The model sentences, paragraphs and summary were written for this lesson.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus and program</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p>
+        <p class="small">Teacher resource: <i>Bog Bodies of Northern Europe</i> worksheet (class notebook).</p></div>
+      <div class="card quiet u3l05-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>Bjældskovdal bog near Silkeborg, Denmark, where Tollund Man was found</b> · Photo: Nils Jepsen · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Bjeldskovdal_Tollundmandens_findested.jpg">source</a></li><li><b>The opening of Tacitus’s Germania in an early printed edition (Venice, about 1471–72)</b> · Printed by Vindelinus de Spira; scan: Bayerische Staatsbibliothek · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:Tacitus_Germania,_Editio_princips_1472.jpg">source</a></li><li><b>The coffin and wrapped body of Amenhotep I (photograph published 1912)</b> · Photo: probably Émile Brugsch, in G. Elliot Smith, The Royal Mummies (1912) · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:Amenhotep_I_coffin_mummy.png">source</a></li><li><b>The Xiaohe cemetery in the Tarim Basin, Xinjiang, China</b> · Zhang, Ning, Scott et al., Nature 599 (2021), Extended Data Fig. 1 (cropped) · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://www.nature.com/articles/s41586-021-04052-7">source</a></li></ul>
+        <p class="small">All images are public domain or openly licensed, and were resized for the web (the Xiaohe photograph was also cropped). Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

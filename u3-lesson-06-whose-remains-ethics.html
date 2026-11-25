@@ -1,0 +1,1746 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U3 L6 · Whose remains? The ethics of study, display and ownership</title>
+<meta name="description" content="Year 11 Ancient History, the treatment and display of human remains: the ethical questions raised by a mummified head kept in a NSW school library, two writers who disagree about museum display, and a model argument paragraph taken apart before students write their own.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#5E2D6F; --bright:#8A4BA0; --tint:#F2E9F5; --statement:#5E2D6F;
+  --solid:#5E2D6F; --soft:#EBD9F2; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#D6B3E3; --bright:#B57CCB; --tint:#2C1934; --statement:#4A2358; --soft:#EBD9F2; } }
+:root[data-theme="dark"]{ --deep:#D6B3E3; --bright:#B57CCB; --tint:#2C1934; --statement:#4A2358; --soft:#EBD9F2; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 3 Lesson 6 only (every class starts u3l06-) */
+
+/* goals and credits */
+.u3l06-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u3l06-cite a{color:var(--deep);}
+.u3l06-cite p + p{margin-top:.4em;}
+
+/* title slide picture */
+.u3l06-cover{min-width:0;}
+.u3l06-cover .figure img{max-height:60vh;}
+
+/* Connect: one line to write, examples underneath */
+.u3l06-eg{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1.1vw,16px);}
+.u3l06-eg .note .body{font-size:calc(var(--fs-body)*.84); line-height:1.4;}
+
+/* the case: quick facts list and the listening grid */
+.u3l06-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.3em;
+  font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.u3l06-facts b{color:var(--deep);}
+.u3l06-listen{width:100%; border-collapse:collapse; font-size:calc(var(--fs-body)*.8);}
+.u3l06-listen th{background:var(--deep); color:#fff; text-align:left; padding:.35em .6em; font-weight:700;}
+.u3l06-listen td{border:1px solid var(--rule); height:2.3em; padding:.3em .6em; color:var(--slate); font-style:italic;
+  background:var(--surface);}
+.u3l06-respect{padding:.45em .8em; border-left:5px solid var(--c-scope); background:var(--w-scope); border-radius:0 8px 8px 0;
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+
+/* six ethical issues: small cards, three across */
+.u3l06-issues{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1.1vw,16px);}
+.u3l06-iss{background:var(--surface); border:1px solid var(--rule); border-top:5px solid var(--bright); border-radius:10px;
+  padding:.5em .8em .6em; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:.3em;
+  font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+.u3l06-iss .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.07em;
+  text-transform:uppercase; color:var(--deep);}
+.u3l06-iss .q{font-weight:700;}
+.u3l06-iss .a{padding:.3em .55em; border-left:4px solid var(--c-evidence); background:var(--w-evidence); border-radius:0 6px 6px 0;}
+
+/* stakeholder map: the remains in the centre, six stakeholders around */
+.u3l06-map{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.78fr) minmax(0,1fr);
+  grid-template-rows:auto auto auto; gap:clamp(8px,1vw,14px); align-items:stretch;}
+.u3l06-node{background:var(--surface); border:1px solid var(--rule); border-left:5px solid var(--bright); border-radius:10px;
+  padding:.45em .75em .5em; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:.25em;
+  font-size:calc(var(--fs-body)*.78); line-height:1.34;}
+.u3l06-node .who{font-family:var(--disp); font-weight:700; color:var(--deep); font-size:1.08em; line-height:1.2;}
+.u3l06-node .claim{color:var(--ink);}
+.u3l06-node .gr{display:inline-block; align-self:flex-start; margin-top:auto; padding:.05em .55em; border-radius:999px;
+  border:1px solid var(--c-evidence); color:var(--c-evidence); font-weight:700; font-size:.86em;}
+.u3l06-centre{grid-column:2; grid-row:1 / span 3; display:flex; flex-direction:column; justify-content:center; align-items:center;
+  text-align:center; gap:.4em; border-radius:14px; border:2px dashed var(--deep); background:var(--tint); padding:.8em;}
+.u3l06-centre .t{font-family:var(--disp); font-weight:700; font-size:calc(var(--fs-body)*1.02); color:var(--deep); line-height:1.25;}
+.u3l06-centre .s{font-size:calc(var(--fs-body)*.74); color:var(--slate); line-height:1.35;}
+.u3l06-map .c1{grid-column:1;} .u3l06-map .c3{grid-column:3;}
+.u3l06-conflict{padding:.4em .8em; border:1px dashed var(--c-judgement); border-radius:8px; background:var(--w-judgement);
+  font-size:calc(var(--fs-body)*.8); line-height:1.38;}
+
+/* jigsaw: steps, grid and the two article cards */
+.u3l06-steps .d{font-size:calc(var(--fs-body)*.78);}
+.u3l06-grid{font-size:calc(var(--fs-body)*.74);}
+.u3l06-grid td{padding:.36em .55em; vertical-align:top;}
+.u3l06-grid th{white-space:normal;}
+.u3l06-grid td:first-child{font-weight:700; color:var(--deep);}
+.u3l06-grid tr.u3l06-blank td{height:6em;}
+.u3l06-para{font-size:calc(var(--fs-body)*.86); line-height:1.45;}
+.u3l06-case{display:flex; flex-direction:column; gap:.45em; min-width:0;}
+.u3l06-blk{display:grid; grid-template-columns:7.2em minmax(0,1fr); gap:.7em; align-items:start;
+  font-size:calc(var(--fs-body)*.8); line-height:1.4; padding-bottom:.4em; border-bottom:1px solid var(--paper-rule);}
+.u3l06-blk:last-child{border-bottom:0; padding-bottom:0;}
+.u3l06-lab{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--deep); padding-top:.2em;}
+.u3l06-case b{color:var(--ink); background:var(--w-scope); box-shadow:inset 0 -2px 0 var(--c-scope); border-radius:2px;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.u3l06-cardtag{display:inline-grid; place-items:center; width:1.7em; height:1.7em; border-radius:50%; background:var(--solid);
+  color:#fff; font-weight:700; margin-right:.35em; font-size:.85em; vertical-align:.08em;}
+.u3l06-side{display:flex; flex-direction:column; gap:clamp(8px,1.2vh,14px); min-width:0;}
+.u3l06-side .figure img{max-height:30vh;}
+.u3l06-recall{padding:.4em .75em; border:1px dashed var(--slate); border-radius:8px; font-size:calc(var(--fs-body)*.76);
+  line-height:1.36; color:var(--ink);}
+.u3l06-recall b{color:var(--deep);}
+
+/* the two articles side by side (where they disagree) */
+.u3l06-two{display:grid; grid-template-columns:1fr 1fr; gap:clamp(10px,1.4vw,22px); align-items:start;}
+
+/* opinion continuum */
+.u3l06-line{position:relative; display:flex; justify-content:space-between; align-items:center; gap:1em; margin:.4em 0;
+  padding:.55em 1em; border-radius:999px; background:linear-gradient(90deg, var(--w-judgement), var(--surface-2), var(--w-evidence));
+  border:1px solid var(--rule); font-weight:700; font-size:calc(var(--fs-body)*.86);}
+.u3l06-line span:nth-child(2){font-weight:400; color:var(--slate); font-size:.9em;}
+.u3l06-stmt{font-family:var(--disp); font-weight:700; font-size:calc(var(--fs-body)*1.15); line-height:1.3; color:var(--deep);}
+
+/* the annotated model paragraph: five moves, five colours */
+.u3l06-wagoll .annot{grid-template-columns:1.55fr 1fr;}
+.u3l06-wagoll .ans{font-size:calc(var(--fs-body)*.8); line-height:1.58;}
+.u3l06-head{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep);}
+.u3l06-meta{display:block; margin-top:.6em; font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome); color:var(--slate);}
+.anote.u3l06-m1{border-color:var(--c-scope); background:var(--w-scope);}
+.anote.u3l06-m2{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.anote.u3l06-m3{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote.u3l06-m4{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote.u3l06-m5{border-color:var(--c-directive); background:var(--w-directive);}
+.mk.u3l06-m1, .u3l06-m1 .mk{background:var(--c-scope);}
+.mk.u3l06-m2, .u3l06-m2 .mk{background:var(--c-keyterm);}
+.mk.u3l06-m3, .u3l06-m3 .mk{background:var(--c-evidence);}
+.mk.u3l06-m4, .u3l06-m4 .mk{background:var(--c-judgement);}
+.mk.u3l06-m5, .u3l06-m5 .mk{background:var(--c-directive);}
+:root[data-theme="dark"] .mk[class*="u3l06-m"], :root[data-theme="dark"] [class*="u3l06-m"] .mk{color:var(--ground);}
+.u3l06-verdict{padding:.4em .75em; border:1px dashed var(--slate); border-radius:8px;
+  font-size:calc(var(--fs-body)*.78); line-height:1.36;}
+
+/* hinge options and the You do cards */
+.u3l06-hinge li{font-size:calc(var(--fs-body)*.86); line-height:1.36;}
+.u3l06-ck{list-style:none; margin:.2em 0 0; padding:0; display:flex; flex-direction:column; gap:.15em;}
+.u3l06-ck li{margin:0;}
+.u3l06-iq{font-weight:700; font-size:calc(var(--fs-body)*.92); line-height:1.35;}
+.u3l06-iq span{color:var(--deep);}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u3l06-eg, .u3l06-issues, .u3l06-two{grid-template-columns:1fr;}
+  .u3l06-map{grid-template-columns:1fr; grid-template-rows:none;}
+  .u3l06-centre, .u3l06-map .c1, .u3l06-map .c3{grid-column:auto; grid-row:auto;}
+  .u3l06-centre{order:-1;}
+  .u3l06-blk{grid-template-columns:1fr; gap:.2em;}
+  .u3l06-wagoll .annot{grid-template-columns:1fr;}
+  .u3l06-side .figure img{max-height:none;}
+  .u3l06-cover .figure img{max-height:50vh;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u3l06-dense{gap:9px;}
+  html:not(.read) .u3l06-dense h2{font-size:calc(var(--fs-h2)*.84);}
+  html:not(.read) .u3l06-dense .quote.sm{font-size:calc(var(--fs-body)*.72); line-height:1.4;}
+  html:not(.read) .u3l06-dense .quote{font-size:calc(var(--fs-body)*.86);}
+  html:not(.read) .u3l06-dense .src{padding:9px 15px;}
+  html:not(.read) .u3l06-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u3l06-dense .note{padding:.4em .8em;}
+  html:not(.read) .u3l06-dense .note .body, html:not(.read) .u3l06-dense .card .body,
+  html:not(.read) .u3l06-dense .qprompt{font-size:calc(var(--fs-body)*.78); line-height:1.34;}
+  html:not(.read) .u3l06-dense .card{padding:9px 15px;}
+  html:not(.read) .u3l06-dense .card .k, html:not(.read) .u3l06-dense .src .k{margin-bottom:.25em;}
+  html:not(.read) .u3l06-dense .card.sm .body{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u3l06-dense .tbl.compact{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u3l06-dense .tbl.compact td{padding:.28em .5em;}
+  html:not(.read) .u3l06-dense .tbl th{padding:.35em .55em;}
+  html:not(.read) .u3l06-dense .figure img{max-height:28vh;}
+  html:not(.read) .u3l06-dense .figure figcaption{font-size:calc(var(--fs-chrome)*.85); margin-top:.3em;}
+  html:not(.read) .u3l06-dense .u3l06-facts{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u3l06-dense .u3l06-listen{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u3l06-dense .u3l06-listen td{height:1.8em;}
+  html:not(.read) .u3l06-dense .u3l06-respect{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u3l06-dense .keylist li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u3l06-dense .keylist .d{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u3l06-dense .u3l06-iss{font-size:calc(var(--fs-body)*.7); padding:.35em .65em .45em; gap:.2em;}
+  html:not(.read) .u3l06-dense .u3l06-node{font-size:calc(var(--fs-body)*.68); padding:.32em .6em .38em; gap:.18em;}
+  html:not(.read) .u3l06-dense .u3l06-centre .t{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u3l06-dense .u3l06-centre .s{font-size:calc(var(--fs-body)*.66);}
+  html:not(.read) .u3l06-dense .u3l06-conflict{font-size:calc(var(--fs-body)*.7); padding:.3em .7em;}
+  html:not(.read) .u3l06-dense .u3l06-grid{font-size:calc(var(--fs-body)*.64);}
+  html:not(.read) .u3l06-dense .u3l06-grid td{padding:.24em .45em;}
+  html:not(.read) .u3l06-dense .u3l06-grid tr.u3l06-blank td{height:5em;}
+  html:not(.read) .u3l06-dense .u3l06-para{font-size:calc(var(--fs-body)*.74); line-height:1.4;}
+  html:not(.read) .u3l06-dense .card .u3l06-ev{font-size:calc(var(--fs-body)*.74); line-height:1.36;}
+  html:not(.read) .u3l06-dense .u3l06-youdo .quote.sm{font-size:calc(var(--fs-body)*.68); line-height:1.38;}
+  html:not(.read) .u3l06-dense .u3l06-blk{font-size:calc(var(--fs-body)*.68); line-height:1.33; padding-bottom:.28em;}
+  html:not(.read) .u3l06-dense .u3l06-case{gap:.28em;}
+  html:not(.read) .u3l06-dense .u3l06-side .figure img{max-height:24vh;}
+  html:not(.read) .u3l06-dense .u3l06-recall{font-size:calc(var(--fs-body)*.66);}
+  html:not(.read) .u3l06-dense .u3l06-stmt{font-size:calc(var(--fs-body)*1);}
+  html:not(.read) .u3l06-dense .u3l06-line{font-size:calc(var(--fs-body)*.76); padding:.4em .9em;}
+  html:not(.read) .u3l06-dense.u3l06-wagoll .annot{grid-template-columns:1.9fr 1fr;}
+  html:not(.read) .u3l06-dense.u3l06-wagoll .ans, html:not(.read) .u3l06-dense .u3l06-wagoll .ans{font-size:calc(var(--fs-body)*.66);
+    line-height:1.44; padding:10px 16px;}
+  html:not(.read) .u3l06-dense.u3l06-wagoll .u3l06-meta{margin-top:.35em;}
+  html:not(.read) .u3l06-dense .anote{font-size:calc(var(--fs-body)*.66); padding:.28em .6em;}
+  html:not(.read) .u3l06-dense .u3l06-verdict{font-size:calc(var(--fs-body)*.66);}
+  html:not(.read) .u3l06-dense .opts li{padding:.32em .7em;}
+  html:not(.read) .u3l06-dense .u3l06-hinge li{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u3l06-dense .u3l06-iq{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u3l06-dense .tf li, html:not(.read) .u3l06-dense .rq{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u3l06-dense .tf li{padding:.24em .6em;}
+  html:not(.read) .u3l06-dense .prac{gap:6px;}
+  html:not(.read) .u3l06-dense .cornell .cq, html:not(.read) .u3l06-dense .cornell .nts{font-size:calc(var(--fs-body)*.72); padding:.32em .75em;}
+  html:not(.read) .u3l06-dense .checks label{font-size:calc(var(--fs-body)*.74);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 6" data-title="Whose remains? The ethics of study, display and ownership" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.35fr .65fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 3 · Human remains · Lesson 6</p>
+      <h1>Whose remains? The ethics of study, display and ownership</h1>
+      <p class="lead">A head in a glass case in a country-town school library. Who has a claim to her, and should she be on show at all?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u3l06-cover"><figure class="figure tall contain"><img src="images/u3l06-grafton-rooftops-2021.jpg" alt="Rooftops of Grafton, a regional city in northern New South Wales, in 2021" loading="lazy"><figcaption>Rooftops of Grafton, a regional city in northern New South Wales, in 2021 — <span class="cr">Photo: Kgbo · CC BY-SA 4.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 6" data-title="Connect: a display choice" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Connect · 3 minutes · everyone writes one line · press K for the timer</p>
+  <h2>Name one display choice from Lesson 4, and what it communicates</h2>
+  <div class="card accent"><div class="k">One line</div><p class="lead nq">“The museum chose to … , which communicates …”</p></div>
+  <div class="u3l06-eg" data-veil="Write yours first — then show three examples">
+    <div class="note reveal" data-code="evidence"><div class="k">Ötzi</div><p class="body">Kept in a cold cell (−6 °C, 99% humidity) and seen only through a small window → preservation comes first; visitors look in at a fragile original.</p></div>
+    <div class="note reveal" data-code="evidence"><div class="k">Tollund Man</div><p class="body">His conserved head is shown with a replica body → visitors meet a whole person, not just a head, so a label must say what is a copy.</p></div>
+    <div class="note reveal" data-code="evidence"><div class="k">The 2021 parade</div><p class="body">22 royal mummified people carried through Cairo in nitrogen-filled capsules, with ceremony → royal dignity and national pride.</p></div>
+  </div>
+  <p class="cue">Today: <b>who</b> should make those choices, and should some remains be on show at all?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 6" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>Analyse the ethical issues in studying, displaying and owning human remains</li>
+        <li>Write an argument paragraph on an ethical question</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>explain three ethical issues, with an example of each</li>
+        <li>explain the claims of three stakeholders</li>
+        <li>write a paragraph that judges, uses evidence, weighs a rival view and resolves</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u3l06-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-09 identifies different interpretations of the past · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 6" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U3 L6 · Whose remains?</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = Before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Explain three ethical issues.</div><div class="nts">consent → the dead cannot agree …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Checkpoints today: the head in the library · two views on display (if time, or at home). Your stakeholder map and jigsaw grid count as notes too.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 6" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for today’s argument</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Remains and how we study them</th><th>Meaning</th></tr>
+      <tr><td>Human remains</td><td>The bodies, or parts of the bodies, of people who have died — including bones, preserved tissue and ashes.</td></tr>
+      <tr><td>Mummified person</td><td>A person whose body has been preserved, naturally or deliberately; some museums (e.g. National Museums Scotland) now prefer this to ‘mummy’.</td></tr>
+      <tr><td>Invasive analysis</td><td>Study that damages or removes part of the remains, such as cutting or taking samples.</td></tr>
+      <tr><td>Non-invasive analysis</td><td>Study that leaves the remains intact, such as X-ray or CT scanning.</td></tr>
+      <tr><td>CT scan</td><td>Computed tomography: X-ray images taken from many angles to show the inside of a body in 3D without cutting it.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Ethics and argument</th><th>Meaning</th></tr>
+      <tr><td>ethical issue</td><td>A question about what is right or fair to do — here, how the dead should be treated, and who decides.</td></tr>
+      <tr><td>Stakeholder</td><td>A person or group with an interest in a decision.</td></tr>
+      <tr><td>Consent</td><td>Permission given freely; the ancient dead cannot give it, which raises ethical questions.</td></tr>
+      <tr><td>provenance</td><td>Where an object was found and its history of ownership since; without it, an object loses its context and may be a fake.</td></tr>
+      <tr><td>Repatriation</td><td>Returning remains or cultural material to the Community or country they came from.</td></tr>
+      <tr><td>evaluative modality</td><td>Words that show how certain the writer is: may, probably, is likely to, on balance.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The head in the library" data-title="A head in a school library" data-kind="notes">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow">1 · The head in the library · I do — listen · 3 minutes</p>
+  <h2>A head in a school library</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · the ABC’s episode page, 2023</div>
+        <p class="quote sm">Inside that glass case is a mummified head and according to its plaque, it was donated to Grafton High School around 1915. Now, over 100 years later, questions are being raised about where it really came from and whether it really belongs there.</p>
+        <p class="prov">ABC Radio National, <i>Stuff the British Stole</i>, ‘The Head in the Library’, presented by Marc Fennell, 28 June 2023 (audio, 41 minutes) · a podcast made with CBC Podcasts</p>
+      </div>
+      <ul class="u3l06-facts">
+        <li><b>Who:</b> an Egyptian woman, thought to have been 50–60 when she died</li>
+        <li><b>When:</b> probably Egypt’s Greco-Roman period (332 BCE – 395 CE), judging by flecks of gold leaf on her head</li>
+        <li><b>How she reached Grafton:</b> uncertain; accounts point to a local doctor or a famous Egyptologist, and neither is proven</li>
+        <li><b>Since then:</b> the school’s attempts to return her to Egypt or give her to a Sydney museum reportedly failed; by 2024, CT scans and a 3D-printed copy of her skull had let a forensic sculptor rebuild her face</li>
+      </ul>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">While you listen · a 2-minute extract</div>
+        <table class="u3l06-listen" aria-label="Listening grid"><tr><th>Who speaks?</th><th>What should happen to her?</th><th>Why?</th></tr>
+          <tr><td>1</td><td></td><td></td></tr><tr><td>2</td><td></td><td></td></tr><tr><td>3</td><td></td><td></td></tr></table></div>
+      <p class="u3l06-respect"><b>She was a person.</b> Use respectful words, such as ‘mummified person’. This page shows no photograph of her: we do not need one to think about what should happen to her.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The head in the library" data-title="Six ethical issues, one case" data-kind="notes">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow">1 · The head in the library · I do — six ethical issues · one press per issue</p>
+  <h2>Six ethical issues, one case</h2>
+  <div class="u3l06-issues">
+    <div class="u3l06-iss reveal"><span class="k">Consent</span><span class="q">Can the dead agree?</span><span class="a">She could not agree to being taken from Egypt, given away or put on show.</span></div>
+    <div class="u3l06-iss reveal"><span class="k">Dignity</span><span class="q">Is she treated as a person?</span><span class="a">Her head, separated from her body, has been kept at a school for about a century, and shown in a glass case in its library.</span></div>
+    <div class="u3l06-iss reveal"><span class="k">Invasive analysis</span><span class="q">Should we cut or sample remains to learn more?</span><span class="a">Her face was rebuilt from CT scans and a 3D-printed copy of her skull: a non-invasive method.</span></div>
+    <div class="u3l06-iss reveal"><span class="k">Public display</span><span class="q">Should she be on show, and how?</span><span class="a">A glass case and a plaque. In 2024 the plan was to show her beside sculptures of how her face was rebuilt, which, says the sculptor, “takes the emphasis off the human remains”.</span></div>
+    <div class="u3l06-iss reveal"><span class="k">Ownership</span><span class="q">Who owns her: the school, Egypt, or no one?</span><span class="a">Given to the school about 1915, but who gave her, and how she left Egypt, are uncertain.</span></div>
+    <div class="u3l06-iss reveal"><span class="k">Storage and sale</span><span class="q">Where should she be kept? Could she ever be bought or sold?</span><span class="a">One account says a local doctor may have bought her as a medical student in Scotland; a Sydney museum reportedly would not take her.</span></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The head in the library" data-title="Stakeholder map" data-kind="notes">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow">1 · The head in the library · I do — stakeholder map · think aloud · draw yours as I go</p>
+  <h2>Who has a claim to her, and on what grounds?</h2>
+  <div class="stack veil-parts" data-veil="Draw your own map first — then show the model map">
+  <div class="u3l06-map">
+    <div class="u3l06-node c1"><span class="who">The woman herself</span><span class="claim vp reveal">To be treated as a person, not an object. She cannot speak, so others speak for her.</span><span class="gr vp">moral: consent, dignity</span></div>
+    <div class="u3l06-centre"><span class="t">The head in the library</span><span class="s">an Egyptian woman, 50–60 at death · at Grafton High School since about 1915 · how she left Egypt is unknown</span></div>
+    <div class="u3l06-node c3"><span class="who">Egyptian communities, and Egypt</span><span class="claim vp reveal">A say in how an Egyptian ancestor is treated, perhaps her return. The school’s attempt to return her reportedly failed.</span><span class="gr vp">cultural · national</span></div>
+    <div class="u3l06-node c1"><span class="who">Grafton High School</span><span class="claim vp reveal">Has kept her for about a century and used her to teach. But a gift with no clear provenance.</span><span class="gr vp">legal (a gift) · educational</span></div>
+    <div class="u3l06-node c3"><span class="who">Scientists</span><span class="claim vp reveal">To learn who she was: her age, her period, her face. CT scanning does this without cutting.</span><span class="gr vp">scientific</span></div>
+    <div class="u3l06-node c1"><span class="who">Museums</span><span class="claim vp reveal">Could store and care for her. Some now limit display: the Chau Chak Wing Museum removed unwrapped Egyptian body parts from show in 2024.</span><span class="gr vp">professional care</span></div>
+    <div class="u3l06-node c3"><span class="who">The public</span><span class="claim vp reveal">To learn from the remains of the past. But interest is not the same as consent.</span><span class="gr vp">educational</span></div>
+  </div>
+  <p class="u3l06-conflict vp reveal"><b>Where claims conflict:</b> learning and science ↔ her consent and dignity · the school’s possession ↔ a return to Egypt.</p>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The head in the library" data-title="Notes 1 — The head in the library" data-kind="notes">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>The head in the library: issues and stakeholders</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U3 L6 · Whose remains?</b></span><span>1 · The head in the library</span></div>
+    <div class="row"><div class="cq">What is known, and unknown, about the head?</div>
+      <div class="nts reveal">Egyptian woman, 50–60 at death <span class="sep">·</span> probably Greco-Roman period (gold leaf) <span class="sep">·</span> Grafton High School, given c. 1915 <span class="sep">·</span> unknown: who gave her, how she left Egypt</div></div>
+    <div class="row"><div class="cq">Explain three ethical issues, with an example of each.</div>
+      <div class="nts reveal">consent → she could not agree to removal or display <span class="sep">·</span> dignity → a head kept at a school for c. 100 years, shown in a library case <span class="sep">·</span> ownership → school (a gift) or Egypt? provenance unknown <span class="sep">·</span> invasive analysis → avoided: CT scans, not cutting</div></div>
+    <div class="row"><div class="cq">Explain the claims of three stakeholders.</div>
+      <div class="nts reveal">Egyptian communities / Egypt: a say, perhaps return (cultural, national) <span class="sep">·</span> the school: a gift, used to teach (legal, educational) <span class="sep">·</span> scientists: who she was (scientific) <span class="sep">·</span> museums: care; some now limit display (Chau Chak Wing Museum, 2024)</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Two views on display" data-title="Jigsaw: how it works" data-kind="notes">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow">2 · Two views on display · We do — jigsaw · 12 minutes · press K for the timer</p>
+  <h2>Jigsaw: two writers, one grid</h2>
+  <div class="split" style="--cols:.82fr 1.4fr">
+    <div class="stack">
+      <ol class="keylist u3l06-steps">
+        <li><span class="num">1</span><span class="t">Expert groups · 5 min</span><span class="d">A: Chip Colwell. B: Tiffany Jenkins, as reported by Maev Kennedy. Read your card aloud. Fill in your row. Decide: how certain is the evidence, and why?</span></li>
+        <li><span class="num">2</span><span class="t">Home groups · 5 min</span><span class="d">One A expert and one B expert (pairs or fours). Teach your article; everyone fills in both rows.</span></li>
+        <li><span class="num">3</span><span class="t">Whole class · 1½ min</span><span class="d">Where do Colwell and Jenkins disagree about Britain’s bog bodies?</span></li>
+      </ol>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">The key sentences on your card are in bold. Start with the Main argument column.</p></div>
+    </div>
+    <div class="tbl-scroll"><table class="tbl compact u3l06-grid">
+      <tr><th>Article</th><th>Main argument</th><th>Ethical principles</th><th>Strongest evidence</th><th>One limitation as a source</th><th>How certain?</th></tr>
+      <tr class="u3l06-blank"><td>A · Colwell (2017)</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr class="u3l06-blank"><td>B · Jenkins, reported by Kennedy (2010)</td><td></td><td></td><td></td><td></td><td></td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Two views on display" data-title="Card A: Chip Colwell" data-kind="notes">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow">2 · Two views on display · article card A · expert group A</p>
+  <h2><span class="u3l06-cardtag">A</span>Chip Colwell, ‘The Long Ethical Arc of Displaying Human Remains’</h2>
+  <div class="split" style="--cols:1.55fr .75fr">
+    <div class="u3l06-case">
+      <div class="u3l06-blk"><span class="u3l06-lab">Who</span><p>Chip Colwell, <b>senior curator of anthropology</b> at the Denver Museum of Nature &amp; Science (USA), writing for the online magazine <i>Atlas Obscura</i>, 16 November 2017. The article’s subtitle: “A look at why museums exhibit Egyptian mummies, but not Native American bones.”</p></div>
+      <div class="u3l06-blk"><span class="u3l06-lab">His evidence</span><p>In 2017, he writes, US museums still held the remains of <b>more than 100,000 Native American people</b> in storage; his own museum took its last Native American skeleton off display in 1970. Of Native American protests, he writes: <b>“Their objections boiled down to spirituality, racism, and consent.”</b> A US law of 1990, the Native American Graves Protection and Repatriation Act, let tribes claim their ancestors: by 2017, museums had returned more than 50,000 for reburial.</p></div>
+      <div class="u3l06-blk"><span class="u3l06-lab">His answer</span><p><b>“The answer lies in how remains were collected and their connection to living people today.”</b> Vikings, bodies from England’s bogs and China’s first farmers, he says, were excavated “… with either the permission of descendants or from governments if no descendants are known.” Egyptian mummified people were also collected under colonialism, but in his view “… the Islamic communities of Egypt do not claim continuity with the people who built the pyramids.”</p></div>
+      <div class="u3l06-blk"><span class="u3l06-lab">Britain</span><p>“In contrast, a repatriation movement for Britain’s bog bodies, Vikings, or Neolithic Chinese skeletons has not really happened.”</p></div>
+    </div>
+    <div class="u3l06-side">
+      <figure class="figure"><img src="images/u3l06-denver-museum-2017.jpg" alt="The Denver Museum of Nature &amp; Science, Colorado, USA, in 2017: Chip Colwell was its senior curator of anthropology" loading="lazy"><figcaption>The Denver Museum of Nature & Science, Colorado, USA, in 2017: Chip Colwell was its senior curator of anthropology — <span class="cr">Photo: Avrand6 · CC BY-SA 4.0</span></figcaption></figure>
+      <p class="u3l06-recall"><b>Recall Unit 1:</b> Ralph Glidden dug up hundreds of burials on Santa Catalina Island, California, mainly 1919–1928: the kind of collecting Colwell describes.</p>
+      <div class="card accent sm"><div class="k">Expert question</div><p class="body">How certain is his evidence, and for which remains?</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Two views on display" data-title="Card B: Tiffany Jenkins, as reported by Maev Kennedy" data-kind="notes">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow">2 · Two views on display · article card B · expert group B</p>
+  <h2><span class="u3l06-cardtag">B</span>Tiffany Jenkins, as reported by Maev Kennedy</h2>
+  <div class="split" style="--cols:1.55fr .75fr">
+    <div class="u3l06-case">
+      <div class="u3l06-blk"><span class="u3l06-lab">Who</span><p>Maev Kennedy, a journalist, in <i>The Guardian</i> (London), 25 October 2010: a <b>news report</b> on a new book by <b>Tiffany Jenkins</b>, a sociologist and visiting fellow at the London School of Economics. The argument is Jenkins’s; Kennedy reports it.</p></div>
+      <div class="u3l06-blk"><span class="u3l06-lab">What changed</span><p>Jenkins found museums covering mummified people with linen, showing them in dark cases lit by a button, adding warning notices, or taking remains off display. Manchester Museum covered its mummified people with sheets, then <b>partly uncovered them after public protest</b>.</p></div>
+      <div class="u3l06-blk"><span class="u3l06-lab">Her argument</span><p>Museums have become <b>“over-sensitive”</b> to demands from minority groups, and sometimes their own staff. Pagan and druid groups were asking for ancient British remains to be reburied: Manchester consulted one, Honouring the Ancient Dead, before removing the head of a bog body from Roman Britain, <b>Worsley Man</b>.</p></div>
+      <div class="u3l06-blk"><span class="u3l06-lab">Her words</span><p><b>“This is not driven by public demand, but professional insecurity.”</b> “Unfortunately it will penalise the millions of people who enjoy learning from the display of human remains.” She adds that it will harm research too.</p></div>
+      <div class="u3l06-blk"><span class="u3l06-lab">The public</span><p>Kennedy reports a survey for English Heritage: only <b>9%</b> of people were absolutely opposed to museums displaying human bones.</p></div>
+    </div>
+    <div class="u3l06-side">
+      <figure class="figure"><img src="images/u3l06-manchester-museum-2010.jpg" alt="Manchester Museum, the University of Manchester’s museum, England, in July 2010" loading="lazy"><figcaption>Manchester Museum, the University of Manchester’s museum, England, in July 2010 — <span class="cr">Photo: David Dixon (Geograph) · CC BY-SA 2.0</span></figcaption></figure>
+      <div class="card accent sm"><div class="k">Expert question</div><p class="body">How certain is her evidence? Whose voices does this report leave out?</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Two views on display" data-title="Home groups: the completed grid" data-kind="notes">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow">2 · Two views on display · We do — home groups · 5 minutes · each expert teaches their article</p>
+  <h2>Home groups: complete the grid for both articles</h2>
+  <div class="tbl-scroll" data-veil="Share first — then show one completed grid"><table class="tbl compact u3l06-grid">
+    <tr><th>Article</th><th>Main argument</th><th>Ethical principles</th><th>Strongest evidence</th><th>One limitation as a source</th><th>How certain?</th></tr>
+    <tr class="reveal"><td>A · Colwell (2017)</td><td>Display is acceptable only when remains were collected properly and with respect for living descendants: Native American remains differ from Egyptian ones</td><td>consent · freedom to care for the dead (spirituality) · no racism</td><td>more than 100,000 Native American people’s remains held; objections of “spirituality, racism, and consent”; more than 50,000 returned after the 1990 law</td><td>one curator’s article for a general magazine; one sentence speaks for whole communities in Egypt</td><td>strong for Native American remains (numbers, a law); less certain for Egypt and Britain</td></tr>
+    <tr class="reveal"><td>B · Jenkins, reported by Kennedy (2010)</td><td>Museums have become “over-sensitive”: covering or removing remains harms learning and research</td><td>public education · research · museums’ own professional judgement</td><td>named British examples (Manchester’s sheets, Worsley Man’s head); a survey: only 9% absolutely opposed to display</td><td>a news report of one critic’s book: little room for descendants’ or curators’ reasons; British cases only</td><td>certain that displays changed; “professional insecurity” is her interpretation, not proven</td></tr>
+  </table></div>
+  <p class="cue reveal">Check your row: does your “How certain?” column give a reason?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Two views on display" data-title="Whole class: where do they disagree?" data-kind="notes">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow">2 · Two views on display · whole class · 1½ minutes · cold call</p>
+  <h2>Where do Colwell and Jenkins disagree about Britain’s bog bodies?</h2>
+  <div class="u3l06-two">
+    <div class="src"><div class="k">Colwell · <i>Atlas Obscura</i>, 2017</div>
+      <p class="quote sm">In contrast, a repatriation movement for Britain’s bog bodies, Vikings, or Neolithic Chinese skeletons has not really happened.</p>
+      <p class="prov">compared with the United States, where museums have returned more than 50,000 Native American people’s remains</p></div>
+    <div class="src"><div class="k">Jenkins, as reported by Kennedy · <i>The Guardian</i>, 2010</div>
+      <p class="u3l06-para">Pagan and druid groups were asking for ancient British remains to be reburied. Manchester Museum consulted Honouring the Ancient Dead before removing the head of a bog body from Roman Britain, Worsley Man.</p>
+      <p class="prov">Kennedy’s report, in our words</p></div>
+  </div>
+  <p class="qprompt">Which is better supported? Could both be partly right?</p>
+  <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><div class="k">A model answer</div><p class="body">They disagree less than it first seems. Colwell says a repatriation movement for Britain’s bog bodies ‘has not really happened’, and Jenkins, as Kennedy reports, also treats the reburial demands as coming from minority groups, such as pagans and druids. Where they differ is over what museums have done: Colwell presents bog bodies as remains excavated with permission, and so acceptable to show, while Kennedy reports that Manchester Museum consulted Honouring the Ancient Dead and then removed Worsley Man’s head from display. So both can be partly right: there were requests, and one museum acted on them, but these articles show no movement like the American one.</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Two views on display" data-title="Opinion continuum">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow">2 · Two views on display · We do — opinion continuum · 3 minutes · stand on the line</p>
+  <h2>Where do you stand?</h2>
+  <div class="split" style="--cols:1.3fr .8fr">
+    <div class="stack">
+      <p class="u3l06-stmt nq">Ancient human remains should not be displayed in museums.</p>
+      <p class="u3l06-line"><span>Strongly agree</span><span>somewhere in between</span><span>Strongly disagree</span></p>
+      <div class="card accent sm"><div class="k">Be ready to say</div><p class="body">two pieces of evidence for where you stand (the head in the library, Colwell, Jenkins, this museum) · and what would make you move.</p></div>
+      <div class="src"><div class="k">One more voice · a museum curator, 2024</div>
+        <p class="quote sm">For hundreds of years body parts in museum collections have been treated as objects … We have become so accustomed to seeing them on show that we often forget they once belonged to living people.</p>
+        <p class="prov">Dr Melanie Pitkin, Senior Curator of the Nicholson Collection, Chau Chak Wing Museum, University of Sydney, 4 April 2024, when the museum removed unwrapped Egyptian body parts from display · a guest in the Grafton episode</p></div>
+      <div class="note reveal" data-code="evidence" data-veil="Take your place first — then show what a strong position includes"><div class="k">A strong position includes</div><p class="body">a named piece of evidence (Colwell’s test; Jenkins’s point about learning; the Grafton head’s missing provenance) · whose view it is · and a condition that would change your mind (<span class="nq">“if the descendants agreed …”</span>).</p></div>
+    </div>
+    <div class="u3l06-side"><figure class="figure contain"><img src="images/u3l06-chau-chak-wing-museum-2021.jpg" alt="The Chau Chak Wing Museum, University of Sydney, in 2021" loading="lazy"><figcaption>The Chau Chak Wing Museum, University of Sydney, in 2021 — <span class="cr">Photo: Nick-D · CC BY-SA 4.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Two views on display" data-title="Notes 2 — Two views on display" data-kind="notes">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2 <span class="optional">If time · or at home</span></p>
+  <h2>Two views on display</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U3 L6 · Whose remains?</b></span><span>2 · Two views on display</span></div>
+    <div class="row"><div class="cq">Explain Colwell’s argument (2017).</div>
+      <div class="nts reveal">curator, Denver <span class="sep">·</span> display depends on how remains were collected + living people’s connection <span class="sep">·</span> Native American remains: no consent, racism, spirituality → NAGPRA 1990, 50,000+ returned <span class="sep">·</span> Egypt, Britain: different (his view)</div></div>
+    <div class="row"><div class="cq">Explain Jenkins’s argument, and who reported it.</div>
+      <div class="nts reveal">sociologist, LSE; reported by Maev Kennedy, <i>Guardian</i> 2010 <span class="sep">·</span> museums “over-sensitive” → covering, removing remains (Manchester, Worsley Man) <span class="sep">·</span> harms learning + research <span class="sep">·</span> survey: 9% opposed</div></div>
+    <div class="row"><div class="cq">Where do they disagree?</div>
+      <div class="nts reveal">British bog bodies: both see only small demands (Colwell: no repatriation movement; Jenkins: minority groups) <span class="sep">·</span> they differ on what museums did: Colwell → excavated with permission, fine to show; Kennedy → Manchester removed Worsley Man’s head <span class="sep">·</span> requests, not reburials</div></div>
+    <div class="row"><div class="cq">Assess which view fits the head in the library.</div>
+      <div class="nts reveal">Colwell’s test: unknown provenance → hard to justify display <span class="sep">·</span> but Colwell: Egyptian remains a weaker case (his view) <span class="sep">·</span> Jenkins: students learn from her <span class="sep">·</span> a reconstruction may teach without showing her</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · A model paragraph" data-title="Deconstruction: the model and its five moves" data-kind="notes">
+<div class="wrap u3l06-dense u3l06-wagoll">
+  <p class="eyebrow">3 · Deconstruction · 5 minutes · colour-code your copy · one press per move</p>
+  <h2>Should ancient human remains be displayed in museums?</h2>
+  <div class="annot" data-veil="Show the model paragraph and its five moves">
+    <div class="ans long">
+      <span class="match" data-step="m1">Ancient human remains should be displayed in museums only when the way they were collected, and the wishes of the people connected to them, can justify it; their age alone does not make display acceptable.</span><span class="mk u3l06-m1">J</span>
+      <span class="match" data-step="m2">Chip Colwell, a senior curator of anthropology writing in <i>Atlas Obscura</i> in 2017, argues that the answer ‘lies in how remains were collected and their connection to living people today’, and shows that Native Americans’ objections to the collecting and display of their ancestors ‘boiled down to spirituality, racism, and consent’.</span><span class="mk u3l06-m2">E</span>
+      <span class="match" data-step="m3">This suggests that consent and provenance, not scientific value, should decide whether a display is respectful. The head of an Egyptian woman, given to Grafton High School around 1915 and shown in a glass case in its library, cannot meet the first half of that test: her donor and her route out of Egypt are still uncertain. Colwell himself treats Egyptian remains as a weaker case, since in his view Egypt’s Islamic communities do not claim continuity with the ancient dead, but that is his generalisation, and it cannot show how she was collected.</span><span class="mk u3l06-m3">A</span>
+      <span class="match" data-step="m4">However, the sociologist Tiffany Jenkins, as reported by Maev Kennedy in <i>The Guardian</i> in 2010, argues that restricting display is ‘not driven by public demand, but professional insecurity’ and will ‘penalise the millions of people who enjoy learning from the display of human remains’. Her concern for learning is real, yet her evidence measures what the public wants rather than what the dead or their descendants might have wanted, and learning need not depend on the remains themselves: the forensic sculptor who rebuilt the Grafton woman’s face from CT scans says the reconstruction ‘takes the emphasis off the human remains’.</span><span class="mk u3l06-m4">E</span>
+      <span class="match" data-step="m5">On balance, museums are most likely to be justified in displaying ancient remains when these were collected with the permission of descendants or governments and are shown in ways those communities accept; where, as at Grafton, that history is unknown, a reconstruction may teach as much as the remains while asking far less of the person they belonged to.</span><span class="mk u3l06-m5">R</span>
+      <span class="u3l06-meta">A model written for this lesson · about 340 words · quotations from Colwell (2017), Jenkins (2010) and Jennifer Mann (Live Science, 2024)</span>
+    </div>
+    <div class="margin fold">
+      <p class="u3l06-head">The five moves</p>
+      <div class="anote reveal u3l06-m1" data-hl="[data-step=m1]"><span class="mk">J</span><b>Judge</b><span class="tx">A qualified answer, not yes or no: <i>only when</i> …, <i>alone does not</i> ….</span></div>
+      <div class="anote reveal u3l06-m2" data-hl="[data-step=m2]"><span class="mk">E</span><b>Evidence</b><span class="tx">Who, where and when (a curator, <i>Atlas Obscura</i>, 2017), with short quotations woven in. Precise attribution: <i>Colwell argues</i>.</span></div>
+      <div class="anote reveal u3l06-m3" data-hl="[data-step=m3]"><span class="mk">A</span><b>Analyse</b><span class="tx">What the evidence shows, applied to a case, including the limit of the writer’s own source: <i>this suggests</i> …, <i>cannot meet the first half of that test</i>, <i>in his view</i>.</span></div>
+      <div class="anote reveal u3l06-m4" data-hl="[data-step=m4]"><span class="mk">E</span><b>Evaluate</b><span class="tx">The rival view at its strongest, then its limits: <i>however</i> …, <i>as reported by</i> …, <i>is real, yet</i> ….</span></div>
+      <div class="anote reveal u3l06-m5" data-hl="[data-step=m5]"><span class="mk">R</span><b>Resolve</b><span class="tx">A refined judgement with modality: <i>on balance</i>, <i>most likely</i>, <i>may</i>. Not a summary.</span></div>
+      <p class="u3l06-verdict reveal"><b>Attribute views precisely:</b> Colwell argues · Jenkins, as reported by Kennedy · the sculptor says. Never ‘Kennedy argues’.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · You do" data-title="Check before you write: hinge question">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow">4 · You do · check first · hinge question · hold up A, B, C or D on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2>Which sentence attributes the view most precisely?</h2>
+  <div class="stack veil-parts" data-veil="Vote first — then show the answer">
+  <ol class="opts u3l06-hinge">
+    <li><span class="n">A</span><span>Maev Kennedy, writing in The Guardian (2010), argues that museums are over-sensitive about human remains.</span></li>
+    <li id="u3l06-hB"><span class="n">B</span><span>Tiffany Jenkins, as reported in The Guardian (2010), argues that museums are over-sensitive about human remains.</span></li>
+    <li><span class="n">C</span><span>The Guardian, in a news report (2010), argues that museums are over-sensitive about human remains.</span></li>
+    <li><span class="n">D</span><span>Most experts, as reported in The Guardian (2010), argue that museums are over-sensitive about human remains.</span></li>
+  </ol>
+  <i class="reveal" data-mark="#u3l06-hB" hidden></i>
+  <div class="note vp reveal" data-code="evidence"><div class="k">B: the argument is Jenkins’s, and the sentence says where it was reported</div><p class="body"><b>A</b> is the best wrong answer: Kennedy is the reporter, not the arguer. <b>C</b> makes a newspaper the arguer: a news report passes on someone else’s view. <b>D</b> turns one critic into “most experts”: one book is one view, not everyone.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · You do" data-title="You do: write your paragraph">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow">4 · You do · 16 minutes of writing · the 20-minute timer is running · your paragraph will be collected</p>
+  <h2>To what extent should museums display ancient human remains?</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body u3l06-ev"><li>One paragraph: Judge → Evidence → Analyse → Evaluate → Resolve.</li>
+          <li>Use at least two pieces of evidence from today, each with its provenance.</li>
+          <li>Attribute every view precisely: <span class="nq">Colwell argues … · Jenkins, as reported by Kennedy, … · the museum states …</span></li>
+          <li>Check it against our class checklist from Unit 2.</li></ol></div>
+      <div class="cols c2">
+        <div class="card quiet sm"><div class="k">Support · paragraph frame</div><p class="body nq">J: To a large / limited extent, museums should … · E: Chip Colwell, a museum curator, argues … · A: This suggests … · E: However, Tiffany Jenkins, as reported by …, argues …; yet … · R: On balance, … because …</p></div>
+        <div class="card quiet sm"><div class="k">Extension</div><p class="body">Compare the head in the library with the display of Egypt’s royal mummified people in Cairo: does it matter who displays the dead, and where?</p></div>
+      </div>
+    </div>
+    <div class="src reveal u3l06-youdo" data-veil="Write yours first — then show a model paragraph">
+      <div class="k">A model paragraph · written for this lesson</div>
+      <p class="quote sm model">Museums should display ancient human remains only to a limited extent: where the remains were collected with permission and can be shown with respect, not simply because visitors find them fascinating. Public interest is real. Tiffany Jenkins, a sociologist whose book Maev Kennedy reported in <i>The Guardian</i> in 2010, argues that restricting display will ‘penalise the millions of people who enjoy learning from the display of human remains’, and Kennedy reports a survey for English Heritage in which only 9% of people were absolutely opposed to museums displaying human bones. Yet interest is not consent. Chip Colwell (<i>Atlas Obscura</i>, 2017) shows that Native Americans’ objections ‘boiled down to spirituality, racism, and consent’, while Vikings, bodies from England’s bogs and China’s first farmers were excavated ‘with either the permission of descendants or from governments if no descendants are known’. The head in the Grafton library shows where this test leaves a museum: her donor and her route out of Egypt are uncertain, and the school’s attempts to return her reportedly failed, so neither kind of permission can be shown. Colwell would see Egyptian remains as a weaker case for return, since in his view Egypt’s Islamic communities do not claim continuity with the ancient dead, but that judgement cannot show how she was collected. Jenkins’s examples are British, and her evidence concerns the public rather than descendants, so it cannot outweigh that gap. On balance, museums should show ancient remains only where provenance and permission are documented, and should otherwise teach through scans and reconstructions, such as the Grafton woman’s rebuilt face.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · You do" data-title="Summary" data-kind="notes">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What ethical issues does the head in the library raise?</li>
+          <li>How do Colwell and Jenkins differ on displaying human remains?</li>
+          <li>What is your judgement, and what is its weakest point?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">The head of an Egyptian woman, given to Grafton High School around 1915, raises issues of consent, dignity, ownership and display, because no one knows for certain who gave her or how she left Egypt. Chip Colwell argues that display depends on how remains were collected and on living people’s connection to them, while Tiffany Jenkins, as reported by Maev Kennedy, argues that museums have become over-sensitive and that hiding remains harms learning and research. My judgement is that display is justified only with documented provenance and permission, although its weakest point is that Jenkins is right that many people learn from seeing the remains themselves.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> The head in the library: known and unknown</label></li>
+        <li><label><input type="checkbox"> Six ethical issues</label></li>
+        <li><label><input type="checkbox"> Your stakeholder map</label></li>
+        <li><label><input type="checkbox"> The jigsaw grid: Colwell and Jenkins</label></li>
+        <li><label><input type="checkbox"> Where they disagree</label></li>
+        <li><label><input type="checkbox"> The colour-coded model</label></li>
+        <li><label><input type="checkbox"> Your paragraph</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: the other side" data-kind="intro">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow">Check · 10 minutes · exit ticket · then hand in your paragraph and your ticket</p>
+  <h2>The strongest argument on the other side</h2>
+  <div class="split" style="--cols:1.2fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exit ticket</div><p class="lead nq">“The strongest argument on the other side is … because …”</p></div>
+      <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">whose argument it is, named precisely (Colwell; Jenkins, as reported by Kennedy; a stakeholder such as the school or Egyptian communities) · the evidence it rests on · why it is strong, or what would make you change your mind.</p></div>
+      <p class="small"><b>Next lesson:</b> repatriation and Aboriginal Ancestral Remains, and your paragraph back with one strength and one next step.</p>
+    </div>
+    <div class="card quiet sm"><div class="k">First, check your paragraph against our checklist · circle one move to improve</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> 1 · a judgement of degree</label></li>
+        <li><label><input type="checkbox"> 2 · evidence with provenance</label></li>
+        <li><label><input type="checkbox"> 3 · analysis of what the evidence shows</label></li>
+        <li><label><input type="checkbox"> 4 · a rival view, weighed</label></li>
+        <li><label><input type="checkbox"> 5 · a refined final judgement</label></li>
+        <li><label><input type="checkbox"> every view attributed precisely</label></li>
+      </ul></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u3l06-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Maev Kennedy argues that museums have become over-sensitive about human remains.</span>
+      <span class="sol no reveal">False <span class="why">— Kennedy reports it; the argument is Tiffany Jenkins’s.</span></span></li>
+    <li><span class="n">2</span><span>It is known for certain who gave the mummified head to Grafton High School.</span>
+      <span class="sol no reveal">False <span class="why">— accounts point to a local doctor or a famous Egyptologist, and neither is proven.</span></span></li>
+    <li><span class="n">3</span><span>A CT scan is a non-invasive method of analysis.</span>
+      <span class="sol reveal">True <span class="why">— it uses X-ray images from many angles and leaves the remains intact.</span></span></li>
+    <li><span class="n">4</span><span>Colwell argues that no human remains should ever be displayed in museums.</span>
+      <span class="sol no reveal">False <span class="why">— he says it depends on how the remains were collected and their connection to living people today.</span></span></li>
+    <li><span class="n">5</span><span>Colwell and Kennedy’s report give the same picture of how British museums treat bog bodies.</span>
+      <span class="sol no reveal">False <span class="why">— Colwell presents bog bodies as excavated with permission and acceptable to show; Kennedy reports that Manchester removed Worsley Man’s head from display after consulting a pagan group.</span></span></li>
+    <li><span class="n">6</span><span>In the Resolve move, the writer refines the judgement in the light of the rival view.</span>
+      <span class="sol reveal">True <span class="why">— it is not a summary: it says on balance what is most likely, and what is still unknown.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — writing" data-kind="practice">
+<div class="wrap prac u3l06-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Practise the hardest moves</h2>
+  <div class="split" style="--cols:1fr 1.25fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · Attribute it precisely</div><p class="body">Rewrite: <span class="nq">The Guardian says museums are too sensitive.</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Tiffany Jenkins, a sociologist whose book was reported by Maev Kennedy in <i>The Guardian</i> in 2010, argues that museums have become “over-sensitive” about displaying human remains.</p></div>
+      <div class="card accent"><div class="k">2 · Make the Evaluate stronger</div><p class="body">Rewrite: <span class="nq">But some people think remains should be shown.</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">However, Jenkins argues that restricting display is ‘not driven by public demand, but professional insecurity’; yet her evidence measures the public’s wishes rather than descendants’, so it cannot settle whose wishes should count.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Compare the head in the library with the display of Egypt’s royal mummified people in Cairo: does it matter who displays the dead, and where?</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">It matters who displays the dead, and where, because a display carries the authority of whoever chose it. On 3 April 2021 Egypt’s own government moved 22 royal mummified people through Cairo in nitrogen-filled capsules to the National Museum of Egyptian Civilization, showing them in their country of origin as national heritage, with ceremony. The Grafton woman’s head, by contrast, was given to a school in New South Wales around 1915 by a donor who is still uncertain, and the school’s attempts to return her to Egypt reportedly failed. Colwell’s test, how remains were collected and ‘their connection to living people today’, therefore gives different answers: the Cairo display is chosen by a government that claims the royal dead as its own, while no one connected to the Grafton woman has ever been shown to have agreed to her display. Even so, a national display serves a state’s purposes, which are not the same as the wishes of the dead, so neither display fully settles the question of consent.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u3l06-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Explain three ethical issues raised by human remains in collections, with an example of each.
+      <span class="sol reveal">Consent: the Grafton woman could not agree to being taken, given away or shown. Dignity: her head was kept in a library case for about a century. Ownership: the school holds her as a gift, but her provenance is unknown. (Also: invasive analysis, public display, storage and sale.)</span></li>
+    <li>Who has a claim to the head in the library, and on what grounds?
+      <span class="sol reveal">The woman herself (moral: consent, dignity); Egyptian communities and Egypt (cultural, national); the school (a gift; teaching); scientists (knowledge, by non-invasive CT); museums (care); the public (learning).</span></li>
+    <li>What is Colwell’s test for when displaying human remains is acceptable?
+      <span class="sol reveal">How the remains were collected and their connection to living people today: display is acceptable when they were collected with the permission of descendants, or of governments if no descendants are known.</span></li>
+    <li>Explain Jenkins’s argument, and who reported it.
+      <span class="sol reveal">Museums have become over-sensitive to demands from minority groups; covering or removing remains is driven by professional insecurity, not public demand, and harms learning and research. Reported by Maev Kennedy in The Guardian (2010).</span></li>
+    <li>Where do Colwell and Kennedy’s report differ over Britain’s bog bodies, and can both be partly right?
+      <span class="sol reveal">On Britain’s bog bodies: Colwell says a repatriation movement has not really happened and treats them as acceptable to show; Kennedy reports reburial requests from minority groups and the removal of Worsley Man’s head from display. Both partly: the demand is small (Jenkins says so too), but one museum acted on it; there are no returns on the United States scale.</span></li>
+    <li>Name the five moves of an argument paragraph, and what the Evaluate move must do.
+      <span class="sol reveal">Judge, Evidence, Analyse, Evaluate, Resolve. The Evaluate gives the rival view at its strongest, then weighs its limits with modality.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u3l06-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u3l06-cite"><div class="k">Written sources</div>
+      <p class="small"><b>The case:</b> ABC Radio National, <i>Stuff the British Stole</i>, <a href="https://www.abc.net.au/listen/programs/stuff-the-british-stole/the-head-in-the-library/102505376">‘The Head in the Library’</a> (Marc Fennell, 28 June 2023; with CBC Podcasts), episode page and audio, © ABC, quoted briefly. T. Metcalfe, <a href="https://www.livescience.com/archaeology/ancient-egyptians/see-stunning-reconstruction-of-ancient-egyptian-mummy-that-languished-at-an-australian-high-school-for-a-century">Live Science</a>, 9 May 2024, © Future US, quoted briefly.</p>
+      <p class="small"><b>The two articles:</b> Chip Colwell, <a href="https://www.atlasobscura.com/articles/displaying-native-american-remains"><i>The Long Ethical Arc of Displaying Human Remains</i></a>, <i>Atlas Obscura</i>, 16 November 2017, checked against the <a href="http://web.archive.org/web/20171119044144/https://www.atlasobscura.com/articles/displaying-native-american-remains">Internet Archive copy</a>, © Atlas Obscura, quoted briefly. Maev Kennedy, <i class="nq">Museums avoid displaying human remains ‘out of respect’</i>, <i>The Guardian</i>, 25 October 2010 (paraphrased); Tiffany Jenkins’s words as also printed in <a href="https://www.timeshighereducation.com/node/76038"><i>Times Higher Education</i></a>, 4 November 2010, quoted briefly. The English Heritage survey figure as reported by Kennedy and by <a href="https://blogs.ucl.ac.uk/researchers-in-museums/2017/03/28/should-human-remains-be-displayed-in-museums">UCL’s museum blog</a> (2017).</p>
+      <p class="small"><b>The museum:</b> The University of Sydney, <a href="https://www.sydney.edu.au/news-opinion/news/2024/04/04/museum-removes-ancient-body-parts-from-display.html">‘Museum removes Egyptian body parts from galleries’</a>, 4 April 2024, and the Chau Chak Wing Museum’s <a href="https://www.sydney.edu.au/museum/our-research/human-remains.html">human remains research page</a>, © The University of Sydney, quoted briefly. Colwell’s post: Publishers Weekly (2017); The Colorado Sun (2019).</p>
+      <p class="small">The stakeholder map, grids, model paragraphs and summaries were written for this lesson.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet"><div class="k">Teacher resources</div>
+        <p class="small"><i>Stuff the British Stole – The Head in the Library</i> (presentation) and <i>The Ethics of Displaying Human Remains – Jigsaw Activity</i>, with the class copies of the two articles (class notebook <i class="nq">Investigating Ancient History – The Nature of Ancient History</i>), used as leads; every fact re-checked.</p></div>
+      <div class="card quiet u3l06-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>Rooftops of Grafton, New South Wales, 2021</b> · Photo: Kgbo · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Skylines_of_Grafton,_New_South_Wales,_2021.jpg">source</a></li><li><b>Denver Museum of Nature & Science, 2017</b> · Photo: Avrand6 · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Denver_Museum_of_Nature_%26_Science,_July_2017.jpg">source</a></li><li><b>Manchester Museum, England, 2010</b> · Photo: David Dixon (Geograph) · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Manchester_Museum_-_geograph.org.uk_-_1963535.jpg">source</a></li><li><b>Chau Chak Wing Museum, University of Sydney, 2021</b> · Photo: Nick-D · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Chau_Chak_Wing_Museum_April_2021.jpg">source</a></li></ul>
+        <p class="small">All images are openly licensed, and were resized for the web (three were cropped). Each is shared under the licence shown. No photograph of the Grafton head or of any human remains is used.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>
