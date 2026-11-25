@@ -1,0 +1,1794 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U2 L13 · Deliberate or Drunken? The Debate and the Archaeology</title>
+<meta name="description" content="Year 11 Ancient History, case study Persepolis: what the excavators found in the burnt buildings and the emptied Treasury, five modern interpretations of why Persepolis burned, and how to write a Judge → Evidence → Analyse → Evaluate → Resolve paragraph on the debate.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#0F5E5A; --bright:#1A8A84; --tint:#E1F2F0; --statement:#0F5E5A;
+  --solid:#0F5E5A; --soft:#CBEDE9; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; } }
+:root[data-theme="dark"]{ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 2 Lesson 13 only (every class starts u2l13-) */
+
+/* goals and credits */
+.u2l13-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u2l13-cite a{color:var(--deep);}
+.u2l13-cite p + p{margin-top:.4em;}
+
+/* title slide picture */
+.u2l13-cover img{max-height:56vh;}
+
+/* the terrace plan: where the fire burned (inline SVG from make_u2l13_diagrams.py; colours from the page) */
+.u2l13-planfig{margin:0;}
+.u2l13-planfig svg{display:block; width:100%; height:auto; max-height:calc(100vh - 250px);}
+.u2l13-planfig figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.35em; line-height:1.3;}
+.u2l13-plan text{font-family:var(--ui); fill:var(--ink);}
+.u2l13-plan .u2l13-plain{fill:var(--surface-2);}
+.u2l13-plan .u2l13-mtn{fill:var(--w-keyterm); stroke:none; opacity:.85;}
+.u2l13-plan .u2l13-terrace{fill:var(--surface); stroke:var(--slate); stroke-width:4; stroke-linejoin:round;}
+.u2l13-plan .u2l13-b{fill:var(--surface-2); stroke:var(--ink); stroke-width:3; stroke-linejoin:round;}
+.u2l13-plan .u2l13-b.minor{fill:none; stroke:var(--slate); stroke-width:2; stroke-dasharray:7 6;}
+.u2l13-plan .u2l13-wall{fill:none; stroke:var(--ink); stroke-width:8; stroke-linejoin:round;}
+.u2l13-plan .u2l13-ctx{fill:var(--slate); font-size:28px; font-style:italic; text-anchor:middle;}
+.u2l13-plan .u2l13-ctx.sm{font-size:22px;}
+.u2l13-plan .u2l13-ctx.u2l13-start{text-anchor:start;}
+.u2l13-plan .u2l13-q{fill:var(--slate); font-size:26px; text-anchor:middle;}
+.u2l13-plan .u2l13-north path{fill:var(--ink);}
+.u2l13-plan .u2l13-north text{font-size:30px; font-weight:700; text-anchor:middle;}
+.u2l13-plan .u2l13-burnt .u2l13-hl{fill:var(--w-judgement); stroke:var(--c-judgement); stroke-width:7;}
+.u2l13-plan .u2l13-wrecked .u2l13-hl{fill:url(#u2l13-hatch); stroke:var(--c-judgement); stroke-width:5; stroke-dasharray:12 7;}
+.u2l13-plan .u2l13-spared .u2l13-hl{fill:var(--w-evidence); stroke:var(--c-evidence); stroke-width:5; stroke-dasharray:12 7;}
+.u2l13-plan .u2l13-hatch-a{fill:var(--w-judgement);} .u2l13-plan .u2l13-hatch-b{fill:var(--surface);}
+.u2l13-plan .u2l13-name{font-size:34px; font-weight:700; text-anchor:middle; paint-order:stroke; stroke:var(--surface);
+  stroke-width:7px; stroke-linejoin:round;}
+.u2l13-plan .u2l13-name.sm{font-size:26px;}
+.u2l13-plan .u2l13-legbox{fill:var(--surface); stroke:var(--rule); stroke-width:2;}
+.u2l13-plan .u2l13-legend text{font-size:26px;}
+.u2l13-plan .u2l13-key.burnt{fill:var(--w-judgement); stroke:var(--c-judgement); stroke-width:5;}
+.u2l13-plan .u2l13-key.wrecked{fill:url(#u2l13-hatch); stroke:var(--c-judgement); stroke-width:4; stroke-dasharray:8 5;}
+.u2l13-plan .u2l13-key.spared{fill:var(--w-evidence); stroke:var(--c-evidence); stroke-width:4; stroke-dasharray:8 5;}
+
+/* the list beside the plan: one press per building */
+.u2l13-fire li{grid-template-columns:2.1em 1fr; font-size:calc(var(--fs-body)*.9);}
+.u2l13-fire .d{font-size:calc(var(--fs-body)*.8);}
+.u2l13-fire .num{font-size:.78em;}
+.u2l13-fire .num.b{background:var(--c-judgement);} .u2l13-fire .num.w{background:var(--slate);}
+.u2l13-fire .num.s{background:var(--c-evidence);}
+
+/* quick facts list */
+.u2l13-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.25em;
+  font-size:calc(var(--fs-body)*.84); line-height:1.35;}
+.u2l13-facts b{color:var(--deep);}
+
+/* five modern views: cards in a grid, each with a hidden 'what kind of view' tag */
+.u2l13-views{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1.1vw,16px);}
+.u2l13-view{background:var(--surface); border:1px solid var(--rule); border-top:5px solid var(--deep); border-radius:10px;
+  padding:.55em .8em .6em; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:.3em;}
+.u2l13-view .who{font-family:var(--disp); font-weight:700; color:var(--deep); font-size:calc(var(--fs-body)*.92); line-height:1.2;}
+.u2l13-view .wh{font-size:calc(var(--fs-body)*.7); color:var(--slate); line-height:1.3;}
+.u2l13-view .quote{font-size:calc(var(--fs-body)*.78); line-height:1.4;}
+.u2l13-view .tag{margin-top:auto; padding:.3em .6em; border-radius:0 6px 6px 0; font-size:calc(var(--fs-body)*.74); line-height:1.35;
+  border-left:4px solid var(--c-evidence); background:var(--w-evidence);}
+.u2l13-view .tag.dr{border-color:var(--c-judgement); background:var(--w-judgement);}
+.u2l13-view .tag.op{border-color:var(--slate); background:var(--surface-2);}
+.u2l13-view.task{border-top-color:var(--bright); background:var(--tint);}
+
+/* weighing the evidence: a think-aloud table */
+.u2l13-weigh td:first-child{font-weight:700; color:var(--deep);}
+.u2l13-weigh td{vertical-align:top;}
+.u2l13-weigh .pt{white-space:nowrap; font-weight:700;}
+.u2l13-weigh .pt.d{color:var(--c-evidence);} .u2l13-weigh .pt.k{color:var(--c-judgement);}
+
+/* the annotated model paragraph: five moves, five colours */
+.u2l13-wagoll .annot{grid-template-columns:1.5fr 1fr;}
+.u2l13-wagoll .ans{font-size:calc(var(--fs-body)*.8); line-height:1.58;}
+.u2l13-head{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep);}
+.u2l13-meta{display:block; margin-top:.6em; font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome); color:var(--slate);}
+.anote.u2l13-m1{border-color:var(--c-scope); background:var(--w-scope);}
+.anote.u2l13-m2{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.anote.u2l13-m3{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote.u2l13-m4{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote.u2l13-m5{border-color:var(--c-directive); background:var(--w-directive);}
+.mk.u2l13-m1, .u2l13-m1 .mk{background:var(--c-scope);}
+.mk.u2l13-m2, .u2l13-m2 .mk{background:var(--c-keyterm);}
+.mk.u2l13-m3, .u2l13-m3 .mk{background:var(--c-evidence);}
+.mk.u2l13-m4, .u2l13-m4 .mk{background:var(--c-judgement);}
+.mk.u2l13-m5, .u2l13-m5 .mk{background:var(--c-directive);}
+:root[data-theme="dark"] .mk[class*="u2l13-m"], :root[data-theme="dark"] [class*="u2l13-m"] .mk{color:var(--ground);}
+.u2l13-verdict{padding:.4em .75em; border:1px dashed var(--slate); border-radius:8px;
+  font-size:calc(var(--fs-body)*.78); line-height:1.36;}
+
+/* language bank */
+.u2l13-bank td:first-child{font-weight:700; white-space:nowrap;}
+.u2l13-bank td:last-child{font-style:italic;}
+.u2l13-bank tr.j td:first-child{color:var(--c-scope);} .u2l13-bank tr.e td:first-child{color:var(--c-keyterm);}
+.u2l13-bank tr.a td:first-child{color:var(--c-evidence);} .u2l13-bank tr.v td:first-child{color:var(--c-judgement);}
+.u2l13-bank tr.r td:first-child{color:var(--c-directive);}
+
+/* joint construction rows (letter badge + prompt + word choice + the class sentence) */
+.u2l13-iq{font-weight:700; font-size:calc(var(--fs-body)*.9); line-height:1.35;}
+.u2l13-iq span{color:var(--deep);}
+.u2l13-jc{display:grid; grid-template-columns:2.4em 1fr; gap:.7em; align-items:start;}
+.u2l13-jcl{display:grid; place-items:center; min-height:2.1em; border-radius:8px; background:var(--solid); color:#fff;
+  font-weight:700; font-family:var(--mono); font-size:calc(var(--fs-body)*.9); line-height:1.1;}
+.u2l13-jc .qprompt{font-size:calc(var(--fs-body)*.86);}
+.u2l13-jc .qprompt::before{content:none;}
+.u2l13-jc .alt{font-size:calc(var(--fs-body)*.8); color:var(--slate); margin-top:.1em; line-height:1.35;}
+.u2l13-sent{margin-top:.3em; padding:.35em .8em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 8px 8px 0; font-size:calc(var(--fs-body)*.82); line-height:1.42;}
+
+/* hinge options */
+.u2l13-hinge li{font-size:calc(var(--fs-body)*.86); line-height:1.36;}
+
+/* evidence cards for the You do */
+.u2l13-ev{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1.1vw,16px);}
+.u2l13-ev .card{padding:.55em .85em;}
+.u2l13-ev ul{margin:.25em 0 0; padding-left:1.05em;}
+.u2l13-ev li{font-size:calc(var(--fs-body)*.74); line-height:1.36; margin:.28em 0;}
+.u2l13-ev li b{color:var(--deep);}
+
+/* the check: a picture beside the vote */
+.u2l13-vote{display:flex; flex-wrap:wrap; gap:.5em 1.2em; font-size:calc(var(--fs-body)*.9);}
+.u2l13-vote span{border:1px solid var(--rule); border-radius:999px; padding:.15em .8em; background:var(--surface);}
+.u2l13-side img{max-height:46vh;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u2l13-views, .u2l13-ev{grid-template-columns:1fr;}
+  .u2l13-wagoll .annot{grid-template-columns:1fr;}
+  .u2l13-bank td:first-child, .u2l13-weigh .pt{white-space:normal;}
+  .u2l13-planfig svg{max-height:none;}
+  .u2l13-side img{max-height:none;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u2l13-dense{gap:9px;}
+  html:not(.read) .u2l13-dense h2{font-size:calc(var(--fs-h2)*.84);}
+  html:not(.read) .u2l13-dense .quote.sm{font-size:calc(var(--fs-body)*.72); line-height:1.4;}
+  html:not(.read) .u2l13-dense .quote{font-size:calc(var(--fs-body)*.88);}
+  html:not(.read) .u2l13-dense .src{padding:9px 15px;}
+  html:not(.read) .u2l13-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u2l13-dense .note{padding:.4em .8em;}
+  html:not(.read) .u2l13-dense .note .body, html:not(.read) .u2l13-dense .card .body,
+  html:not(.read) .u2l13-dense .qprompt{font-size:calc(var(--fs-body)*.78); line-height:1.34;}
+  html:not(.read) .u2l13-dense .card{padding:9px 15px;}
+  html:not(.read) .u2l13-dense .card .k, html:not(.read) .u2l13-dense .src .k{margin-bottom:.25em;}
+  html:not(.read) .u2l13-dense .tbl.compact{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u2l13-dense .tbl.compact td{padding:.28em .5em;}
+  html:not(.read) .u2l13-dense .tbl th{padding:.35em .55em;}
+  html:not(.read) .u2l13-dense .figure img{max-height:28vh;}
+  html:not(.read) .u2l13-dense .figure figcaption{font-size:calc(var(--fs-chrome)*.85); margin-top:.3em;}
+  html:not(.read) .u2l13-dense .u2l13-planfig svg{max-height:calc(100vh - 220px);}
+  html:not(.read) .u2l13-dense .u2l13-facts{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l13-dense .keylist li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u2l13-dense .keylist .d{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l13-dense .u2l13-fire li{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u2l13-dense .u2l13-fire .d{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u2l13-dense .u2l13-views{gap:8px;}
+  html:not(.read) .u2l13-dense .u2l13-view{padding:.35em .6em .4em; gap:.2em;}
+  html:not(.read) .u2l13-dense .u2l13-view .who{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u2l13-dense .u2l13-view .wh{font-size:calc(var(--fs-body)*.6); line-height:1.25;}
+  html:not(.read) .u2l13-dense .u2l13-view .quote{font-size:calc(var(--fs-body)*.64); line-height:1.32;}
+  html:not(.read) .u2l13-dense .u2l13-view .tag{font-size:calc(var(--fs-body)*.62); line-height:1.3; padding:.22em .5em;}
+  html:not(.read) .u2l13-dense .u2l13-view.task .body{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l13-dense .u2l13-big .figure img{max-height:40vh;}
+  html:not(.read) .u2l13-dense .u2l13-wagoll .ans, html:not(.read) .u2l13-dense.u2l13-wagoll .ans{font-size:calc(var(--fs-body)*.69); line-height:1.5;
+    padding:12px 18px;}
+  html:not(.read) .u2l13-dense .anote{font-size:calc(var(--fs-body)*.68); padding:.3em .6em;}
+  html:not(.read) .u2l13-dense .u2l13-verdict{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u2l13-dense .u2l13-jc .qprompt{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u2l13-dense .u2l13-jc .alt{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u2l13-dense .u2l13-sent{font-size:calc(var(--fs-body)*.71); padding:.26em .7em;}
+  html:not(.read) .u2l13-dense .u2l13-iq{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u2l13-dense .opts li{padding:.32em .7em;}
+  html:not(.read) .u2l13-dense .u2l13-hinge li{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u2l13-dense .u2l13-ev li{font-size:calc(var(--fs-body)*.66); margin:.2em 0;}
+  html:not(.read) .u2l13-dense .tf li, html:not(.read) .u2l13-dense .rq{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l13-dense .tf li{padding:.24em .6em;}
+  html:not(.read) .u2l13-dense .prac{gap:6px;}
+  html:not(.read) .u2l13-dense .cornell .cq, html:not(.read) .u2l13-dense .cornell .nts{font-size:calc(var(--fs-body)*.72); padding:.32em .75em;}
+  html:not(.read) .u2l13-dense .checks label{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u2l13-dense .u2l13-side img{max-height:40vh;}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 13" data-title="Deliberate or drunken? The debate and the archaeology" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1fr 1.15fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 2 · Persepolis · Lesson 13</p>
+      <h1>Deliberate or drunken? The debate and the archaeology</h1>
+      <p class="lead">Did Alexander plan the burning of Persepolis, or did it begin at a drinking party? What can the ruins themselves tell us?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u2l13-cover"><figure class="figure contain"><img src="images/u2l13-hadish-ruins.jpg" alt="The ruins of the Hadish, the palace built by Xerxes on the terrace of Persepolis: its stone door frames still stand, but its halls are gone" loading="lazy"><figcaption>The ruins of the Hadish, the palace built by Xerxes on the terrace of Persepolis: its stone door frames still stand, but its halls are gone — <span class="cr">Photo: Carole Raddato · CC BY-SA 2.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 13" data-title="Review: Lessons 1–12" data-kind="intro practice">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <h2>Six questions from Lessons 1–12</h2>
+  <ol class="rq" data-answers>
+    <li>According to the Behistun inscription, how did Darius I become king, and why do historians question it?
+      <span class="sol reveal">Darius says that in 522 BCE, by the grace of Ahuramazda, he killed Gaumata, a Magian who was pretending to be Bardiya, son of Cyrus. It is his own account, the winner’s: historians cannot rule out that the man he killed was the real Bardiya.</span></li>
+    <li>What do the Apadana stairway reliefs show, and what are they reliable for?
+      <span class="sol reveal">23 delegations from across the empire bringing gifts (some identifications are debated). Reliable for how the king wanted his empire to be seen, orderly and willing; not for how the subject peoples felt.</span></li>
+    <li>What are the Fortification Tablets? Give their dates, where they were found and their main language.
+      <span class="sol reveal">Tens of thousands of clay tablets (509–493 BCE) recording rations, workers and travel, found in 1933 in the fortification wall; mostly Elamite, some Aramaic.</span></li>
+    <li>What is Arrian’s version of the burning?
+      <span class="sol reveal">Deliberate: Alexander burned the palace although Parmenio advised him to preserve it, saying he wanted vengeance for the Persian invasion of Greece. Arrian adds that he does not think Alexander acted with prudence: it was not “any retributive penalty at all on the ancient Persians”.</span></li>
+    <li>What is Diodorus’s version of the burning?
+      <span class="sol reveal">At a drunken feast the Athenian courtesan Thaïs urged Alexander to set fire to the palaces; he led a revel (the comus) and threw the first torch, and she threw the second.</span></li>
+    <li>When was the battle of Gaugamela, and why does it matter here?
+      <span class="sol reveal">331 BCE (1 October 331, Livius): Alexander defeated Darius III, opening the way to Babylon, Susa and Persepolis.</span></li>
+  </ol>
+  <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 13" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>Evaluate interpretations of Alexander’s role in the destruction of Persepolis</li>
+        <li>Write an interpretation paragraph using Judge → Evidence → Analyse → Evaluate → Resolve</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>explain two modern interpretations of the burning and the evidence for each</li>
+        <li>use archaeological evidence to test the ancient accounts</li>
+        <li>write a paragraph that judges, uses three types of evidence, weighs a rival view and resolves</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u2l13-syl"><b>Syllabus outcomes:</b> AH-11-02 proposes ideas about the varying causes and effects of events and developments · AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-04 recognises causes and effects of events or developments · AH-LS-09 identifies different interpretations of the past.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 13" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U2 L13 · Deliberate or drunken?</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = Before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Explain what the Treasury finds suggest.</div><div class="nts">emptied, then burned → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: the evidence and the views · the five moves. Your colour-coded model paragraph goes beside your notes.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 13" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for the debate</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>The event</th><th>Meaning</th></tr>
+      <tr><td>Gaugamela</td><td>The battle (331 BCE) in which Alexander defeated Darius III, opening the way to Persepolis.</td></tr>
+      <tr><td>Thaïs</td><td>An Athenian woman who, according to Diodorus, Curtius and Plutarch, urged the burning of the palace at a feast.</td></tr>
+      <tr><td>Vulgate tradition</td><td>The group of ancient Alexander histories (Diodorus, Curtius and others) thought to share a lost source, often identified as Cleitarchus.</td></tr>
+      <tr><td>conflagration</td><td>A large, destructive fire (the excavators’ word for what destroyed the buildings).</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>The debate</th><th>Meaning</th></tr>
+      <tr><td>Premeditated</td><td>Planned in advance.</td></tr>
+      <tr><td>Interpretation</td><td>A historian’s explanation or judgement about the past, based on evidence.</td></tr>
+      <tr><td>evaluative modality</td><td>Words that show how certain the writer is: may, probably, is likely to, on balance.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The archaeology" data-title="Where the fire burned" data-kind="notes">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">1 · The archaeology · I do — what the excavators found · one press per building</p>
+  <h2>Where the fire burned</h2>
+  <div class="split" style="--cols:1.05fr 1fr">
+    <figure class="u2l13-planfig"><svg class="u2l13-plan" viewBox="0 0 1180 1030" role="img" aria-label="A simplified plan of the Persepolis terrace. Lit one at a time: the Apadana, the Hall of a Hundred Columns and the Treasury, which the excavators found destroyed by fire; the Hadish, badly destroyed; and the Tripylon and the Tachara, with little or no trace of burning.">
+<defs><pattern id="u2l13-hatch" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect class="u2l13-hatch-a" width="16" height="16"/><rect class="u2l13-hatch-b" width="7" height="16"/></pattern></defs>
+<rect class="u2l13-plain" x="0" y="0" width="1180" height="1030"/>
+<path class="u2l13-mtn" d="M840,0 L1180,0 L1180,1030 L1040,1030 L1030,830 L1020,745 L976,560 L918,418 L876,248 L840,80 Z"/>
+<text class="u2l13-ctx" x="1100.0" y="144.4"><tspan x="1100.0" dy="0.0">Kuh-e</tspan><tspan x="1100.0" dy="30.8">Rahmat</tspan></text>
+<text class="u2l13-ctx" x="90.0" y="619.8"><tspan x="90.0" dy="0.0">the plain</tspan><tspan x="90.0" dy="29.7">(the lower</tspan><tspan x="90.0" dy="29.7">city)</tspan></text>
+<polygon class="u2l13-terrace" points="190.0,100.0 280.0,62.0 495.0,48.0 710.0,40.0 830.0,78.0 872.0,250.0 915.0,420.0 972.0,565.0 1018.0,750.0 1028.0,832.0 812.0,958.0 495.0,1004.0 390.0,800.0 316.0,700.0 262.0,470.0 282.0,418.0 254.0,238.0"/>
+<g class="u2l13-north"><path d="M55,92 l-16,38 l16,-10 l16,10 Z"/><text x="55" y="76">N</text></g>
+<text class="u2l13-ctx sm u2l13-start" x="16" y="1016">simplified · not to scale · after Schmidt (1939), fig. 5</text>
+<polygon class="u2l13-b minor" points="478.4,679.7 574.6,652.1 601.6,746.3 505.4,773.9"/>
+<polygon class="u2l13-b minor" points="448.7,861.2 531.4,837.5 551.3,906.8 468.6,930.5"/>
+<polygon class="u2l13-b minor" points="642.2,255.0 680.6,244.0 687.8,269.0 649.4,280.0"/>
+<polygon class="u2l13-b" points="200.2,249.7 244.4,237.0 291.8,402.3 247.6,415.0"/>
+<polygon class="u2l13-b" points="293.5,273.3 362.7,253.5 382.5,322.7 313.3,342.5"/>
+<polygon class="u2l13-b" points="320.3,449.0 556.7,381.2 615.7,587.0 379.3,654.8"/>
+<polygon class="u2l13-b" points="649.9,439.2 830.7,387.4 878.1,552.8 697.3,604.6"/>
+<polygon class="u2l13-b" points="614.5,603.6 678.0,585.4 699.5,660.4 636.0,678.6"/>
+<polygon class="u2l13-b" points="391.6,684.8 474.3,661.1 502.4,759.2 419.7,782.9"/>
+<polygon class="u2l13-b" points="517.1,816.4 644.0,780.0 674.9,887.6 548.0,924.0"/>
+<polygon class="u2l13-b" points="776.0,624.2 974.0,567.4 1028.0,755.8 830.0,812.6"/>
+<polygon class="u2l13-b" points="722.0,612.0 800.0,600.0 818.0,845.0 810.0,938.0 670.0,950.0 662.0,862.0 738.0,852.0"/>
+<polyline class="u2l13-wall" points="710.0,60.0 830.0,92.0 866.0,252.0 907.0,420.0 962.0,562.0 1006.0,742.0"/>
+<text class="u2l13-q" x="338.0" y="237.1"><tspan x="338.0" dy="0.0">Gate</tspan></text>
+<text class="u2l13-q" x="750.0" y="768.4"><tspan x="750.0" dy="0.0">‘Harem’</tspan></text>
+<g class="linked u2l13-burnt" id="u2l13-f1"><polygon class="u2l13-hl" points="320.3,449.0 556.7,381.2 615.7,587.0 379.3,654.8"/><text class="u2l13-name" x="468.0" y="529.9"><tspan x="468.0" dy="0.0">Apadana</tspan></text></g>
+<g class="linked u2l13-burnt" id="u2l13-f2"><polygon class="u2l13-hl" points="649.9,439.2 830.7,387.4 878.1,552.8 697.3,604.6"/><text class="u2l13-name" x="764.0" y="489.2"><tspan x="764.0" dy="0.0">Hall of a</tspan><tspan x="764.0" dy="37.4">Hundred Columns</tspan></text></g>
+<g class="linked u2l13-burnt" id="u2l13-f3"><polygon class="u2l13-hl" points="776.0,624.2 974.0,567.4 1028.0,755.8 830.0,812.6"/><text class="u2l13-name" x="902.0" y="701.9"><tspan x="902.0" dy="0.0">Treasury</tspan></text></g>
+<g class="linked u2l13-wrecked" id="u2l13-f4"><polygon class="u2l13-hl" points="517.1,816.4 644.0,780.0 674.9,887.6 548.0,924.0"/><text class="u2l13-name" x="596.0" y="863.9"><tspan x="596.0" dy="0.0">Hadish</tspan></text></g>
+<g class="linked u2l13-spared" id="u2l13-f5"><polygon class="u2l13-hl" points="614.5,603.6 678.0,585.4 699.5,660.4 636.0,678.6"/><polygon class="u2l13-hl" points="391.6,684.8 474.3,661.1 502.4,759.2 419.7,782.9"/><text class="u2l13-name sm" x="447.0" y="731.1"><tspan x="447.0" dy="0.0">Tachara</tspan></text><text class="u2l13-name sm" x="655.0" y="717.1"><tspan x="655.0" dy="0.0">Tripylon</tspan></text></g>
+<g class="u2l13-legend"><rect class="u2l13-legbox" x="20" y="805" width="300" height="168" rx="10"/><rect class="u2l13-key burnt" x="36" y="823" width="34" height="26"/><text x="82" y="845">burnt</text><rect class="u2l13-key wrecked" x="36" y="871" width="34" height="26"/><text x="82" y="893">badly destroyed</text><rect class="u2l13-key spared" x="36" y="919" width="34" height="26"/><text x="82" y="941">little or no burning</text></g>
+</svg>
+      <figcaption>Drawn for this lesson, simplified, after the excavators’ plan (Schmidt 1939, fig. 5). The ‘Harem’ (left plain) was partly burnt, room by room.</figcaption></figure>
+    <ol class="keylist u2l13-fire">
+      <li class="reveal" data-also="#u2l13-f1"><span class="num b">1</span><span class="t">Apadana: burnt</span><span class="d">Schmidt found it “destroyed by a violent conflagration”: the heat baked the mud-brick walls light red, and the floor was “burned and blackened”; the roof beams were probably cedar.</span></li>
+      <li class="reveal" data-also="#u2l13-f2"><span class="num b">2</span><span class="t">Hall of a Hundred Columns: burnt</span><span class="d">Its floor lay under ashes and charcoal of cedar roof beams; “there is no doubt that the collapse of the Throne Hall and its portico was caused by a conflagration”.</span></li>
+      <li class="reveal" data-also="#u2l13-f3"><span class="num b">3</span><span class="t">Treasury: emptied, then burned</span><span class="d">Hall 41, one of its two great halls, was “totally destroyed by a violent conflagration”; the other was only scorched by burning debris from next door (more on the Treasury next).</span></li>
+      <li class="reveal" data-also="#u2l13-f4"><span class="num w">4</span><span class="t">Hadish: badly destroyed</span><span class="d">Hardly anything of its stone columns was left on its platform: their pieces lay in the Harem below, where they “fell or were hurled down”. Schmidt suggested it “may” have been “destroyed with particularly vindictive thoroughness”, though later stone-robbing may explain some loss. He reports no burnt layer.</span></li>
+      <li class="reveal" data-also="#u2l13-f5"><span class="num s">5</span><span class="t">But not everywhere</span><span class="d">Parts of the Tripylon show no traces of burning; Livius describes the Tachara, Darius’s palace, as far less damaged.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The archaeology" data-title="The Treasury: emptied, then burned" data-kind="notes">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">1 · The archaeology · I do → cold call</p>
+  <h2>The Treasury: emptied, then burned</h2>
+  <div class="split" style="--cols:.95fr 1.15fr">
+    <div class="stack u2l13-big">
+      <figure class="figure contain"><img src="images/u2l13-treasury-today.jpg" alt="The excavated Treasury today, in the south-east of the terrace: low walls and rows of column bases mark its storerooms and halls" loading="lazy"><figcaption>The excavated Treasury today, in the south-east of the terrace: low walls and rows of column bases mark its storerooms and halls — <span class="cr">Photo: Carole Raddato · CC BY-SA 2.0</span></figcaption></figure>
+      <ul class="u2l13-facts">
+        <li><b>Who dug it:</b> Erich Schmidt’s expedition from the Oriental Institute, Chicago, 1935–39</li>
+        <li><b>What it was:</b> the king’s storehouse and armoury, in the south-east of the terrace</li>
+      </ul>
+    </div>
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · the excavator’s report, 1939</div>
+        <p class="quote sm">… might also be headed “Crumbs that Alexander left.” The Macedonians were thorough in cleaning out the treasure house of Persepolis. <span class="ed">[On Hall 41, one of two treasure halls:]</span> … Hall 41 had been totally destroyed by a violent conflagration. <span class="ed">[On the archive rooms:]</span> … destroyed by a violent fire, which baked all tablets and clay labels once here deposited.</p>
+        <p class="prov">Erich F. Schmidt, <i>The Treasury of Persepolis</i> (Oriental Institute Communications 21, Chicago, 1939), pp. 71, 53, 37 · Schmidt directed the excavation: a primary source for the dig, secondary for 330 BCE</p>
+      </div>
+      <p class="qprompt">What does an emptied, then burned Treasury suggest, and what can it not tell us?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">It suggests the treasure was carried away <b>before</b> the fire (Diodorus and Plutarch both describe the mules and camels), so the destruction came after an orderly looting. But it cannot tell us who lit the fire, whether anyone was drunk, or whether the fire was planned or only allowed to happen.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Modern interpretations" data-title="Five modern views" data-kind="notes">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">2 · Modern interpretations · I do — read each view · then thumbs up = deliberate · down = drunken · sideways = open</p>
+  <h2>Five modern views: what do they argue, and why?</h2>
+  <div class="u2l13-views veil-parts" data-veil="Vote first — then show each view’s position and evidence">
+    <div class="u2l13-view"><div class="who">Pierre Briant</div><div class="wh">French historian of the Persian Empire · <i>Alexander the Great and His Empire</i> (2010)</div>
+      <p class="quote">“The burning of the palaces was a signal to the Persians that their days of imperial glory were over, unless they came over to the side of the conqueror.”</p>
+      <p class="tag vp reveal"><b>Deliberate:</b> a political message to the Persians: submit, or lose everything · rests on the timing: if the fire came soon after his visit to Cyrus’s tomb, the Persians were still hostile</p></div>
+    <div class="u2l13-view"><div class="who">George Woodcock</div><div class="wh">writer · <i>History Today</i>, May 1967</div>
+      <p class="quote">“It is therefore conceivable that the plunder and massacre of the city below the great platform were acts of deterrent terror, and that the destruction of Persepolis itself was intended to remove a royal centre around which Persian feeling might rise again …”</p>
+      <p class="tag vp reveal"><b>Deliberate:</b> the sack of the lower city as terror; the burning to remove a royal rallying point · rests on Arrian, the harshness of the sack, and Fars as the Persian heartland</p></div>
+    <div class="u2l13-view"><div class="who">Joshua J. Mark</div><div class="wh">World History Encyclopedia (2019) · in the NSW DoE resource</div>
+      <p class="quote">“… this may have motivated Alexander to treat Persepolis as poorly as he did.”</p>
+      <p class="tag op vp reveal"><b>Open:</b> anger at the Greek captives, about 800 of them and mutilated, whom Diodorus says met the army (17.69), may explain the harshness · contrasts Susa, which Alexander spared</p></div>
+    <div class="u2l13-view"><div class="who">Edward Farr</div><div class="wh"><i>History of the Persians</i> (1850) · in the NSW DoE resource</div>
+      <p class="quote">“Instigated by a courtezan, he issued from a banquet, and accompanied by a band of other bacchanals, as cruel and as mad as himself … they fired the palace of the Persian monarch …”</p>
+      <p class="tag dr vp reveal"><b>Drunken:</b> follows the Thaïs story of Diodorus, Plutarch and Curtius · bacchanals = drunken revellers</p></div>
+    <div class="u2l13-view"><div class="who">Ali Ansari</div><div class="wh">historian of Iran, Institute of Iranian Studies, University of St Andrews · BBC News Magazine, July 2012</div>
+      <p class="quote">“He razed Persepolis to the ground following a night of drunken excess at the goading of a Greek courtesan, ostensibly in revenge for the burning of the Acropolis by the Persian ruler Xerxes.”</p>
+      <p class="tag dr vp reveal"><b>Drunken:</b> follows the Thaïs story, and stresses the loss to Persian culture, seen “through Persian eyes”</p></div>
+    <div class="u2l13-view task"><div class="who">Your job</div>
+      <p class="body">For two views, note: <b>what</b> they argue · the <b>evidence</b> it rests on · whether it is <b>deliberate, drunken or open</b>.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Modern interpretations" data-title="Weighing it: think aloud" data-kind="notes">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">2 · Modern interpretations · I do — think aloud · one press per piece of evidence</p>
+  <h2>Weighing it: what points which way, and why be careful?</h2>
+  <div class="stack veil-parts" data-veil="Think first — then show which way each points">
+  <div class="tbl-scroll"><table class="tbl compact u2l13-weigh">
+    <tr><th>Evidence</th><th>Points to</th><th>But be careful …</th></tr>
+    <tr class="reveal"><td>The Treasury emptied, then burned (Schmidt; Diodorus 17.71; Plutarch 37.4)</td><td class="pt d"><span class="vp">planning</span></td><td><span class="vp">Any conqueror takes the treasure; it does not show that the fire itself was planned.</span></td></tr>
+    <tr class="reveal"><td>Alexander stayed about four months (Plutarch 37.6: “he spent four months in that place”)</td><td class="pt d"><span class="vp">time to decide</span></td><td><span class="vp">A long stay can still end in a sudden decision.</span></td></tr>
+    <tr class="reveal"><td>Some buildings burned, others did not (Schmidt 1953). Lendering: “It is highly unlikely that a fire created randomly by drunken arsonists would destroy exactly these three buildings <span class="ed">[the palace of Xerxes (the Hadish), the Apadana and the Treasury]</span>. The fire was planned.”</td><td class="pt d"><span class="vp">chosen targets</span></td><td><span class="vp">Fire spreads through wooden roofs, and Schmidt could not tell whether one fire or several destroyed the great halls: “conflagration (or conflagrations)”.</span></td></tr>
+    <tr class="reveal"><td>The feast with Thaïs (Diodorus, Curtius, Plutarch)</td><td class="pt k"><span class="vp">a drunken impulse</span></td><td><span class="vp">Diodorus and Curtius probably go back to Cleitarchus, and Plutarch, who used several sources, tells the same story. But Arrian’s main source, Ptolemy, had reason to leave her out: Plutarch calls Thaïs “the mistress of Ptolemy”.</span></td></tr>
+    <tr class="reveal"><td>Curtius: the ashamed Macedonians “forced themselves to believe that it was right that it should be wiped out in exactly that manner” (5.7.10)</td><td class="pt k"><span class="vp">the ‘policy’ story as a later excuse</span></td><td><span class="vp">Curtius’s own source loved a dramatic story too.</span></td></tr>
+  </table></div>
+  <p class="cue vp reveal">Or both? Lendering again: “Preparations for the fire-raising must have taken some time and it is possible that they were not completely finished when an intoxicated king decided …” to burn it.</p>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Modern interpretations" data-title="Notes 1 — The evidence and the views" data-kind="notes">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>The evidence and the views</h2>
+  <p class="cue">Write your own notes first. Then compare, row by row, and add what you missed in a second colour.</p>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L13 · Deliberate or drunken?</b></span><span>1 · The evidence and the views</span></div>
+    <div class="row"><div class="cq">What did the excavators find?</div>
+      <div class="nts reveal">Apadana, Hall of a Hundred Columns, Treasury destroyed by fire (Schmidt 1939, 1953) <span class="sep">·</span> scorched walls and floors, burnt roof timbers <span class="sep">·</span> Treasury emptied first (“crumbs”) <span class="sep">·</span> Hadish badly destroyed <span class="sep">·</span> parts of the Tripylon unburnt</div></div>
+    <div class="row"><div class="cq">Explain what archaeology can and cannot show about the burning.</div>
+      <div class="nts reveal">can: which buildings burned, treasure removed first, a selective pattern, separate fires in the Harem <span class="sep">·</span> cannot: who lit it, why, drunk or sober, one fire or several in the great halls</div></div>
+    <div class="row"><div class="cq">Explain two modern interpretations and their evidence.</div>
+      <div class="nts reveal">Briant (2010): deliberate, a signal to the Persians <span class="sep">·</span> Woodcock (1967): sack = deterrent terror; burning to remove a royal centre <span class="sep">·</span> Farr (1850), Ansari (2012): drunken (Thaïs story); Ansari stresses the cultural loss <span class="sep">·</span> Mark (2019): open; anger at mutilated Greeks?</div></div>
+    <div class="row"><div class="cq">Assess the ancient accounts against the archaeology.</div>
+      <div class="nts reveal">fits Arrian’s planned burning better (treasure out first, selective fire) <span class="sep">·</span> cannot rule out the feast <span class="sep">·</span> Diodorus and Curtius probably share Cleitarchus; Plutarch knew both versions → weaker corroboration</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · I do: a model paragraph" data-title="I do: the model and its five moves" data-kind="notes">
+<div class="wrap u2l13-dense u2l13-wagoll">
+  <p class="eyebrow">3 · I do — a model paragraph and its five moves · colour-code your copy · one press per move</p>
+  <h2>Was the burning of Persepolis deliberate?</h2>
+  <div class="annot" data-veil="Show the model paragraph and its five moves">
+    <div class="ans long">
+      <span class="match" data-step="m1">The burning of Persepolis in about May 330 BCE was most probably a deliberate act of policy, even if the night itself began as a drinking party.</span><span class="mk u2l13-m1">J</span>
+      <span class="match" data-step="m2">Arrian, who based his history mainly on Ptolemy and Aristobulus, two men who served with Alexander, records that the king burned the palace ‘though Parmenio advised him to preserve it’, saying that he ‘wished to take vengeance on the Persians’; and Erich Schmidt’s excavations of the 1930s showed that the Apadana, the Hall of a Hundred Columns and the Treasury were destroyed by fire, and that before the Treasury burned the Macedonians ‘were thorough in cleaning out the treasure house’.</span><span class="mk u2l13-m2">E</span>
+      <span class="match" data-step="m3">This combination suggests calculation rather than impulse: an army that, by Plutarch’s account, stayed about four months and removed the treasure first had time to choose what to destroy, and Arrian presents the fire as a decision of state taken against advice, which supports Pierre Briant’s reading of it as ‘a signal to the Persians that their days of imperial glory were over’.</span><span class="mk u2l13-m3">A</span>
+      <span class="match" data-step="m4">However, the drunken version cannot simply be dismissed: Diodorus, Curtius and Plutarch all describe Thaïs urging the king on at a feast, and Plutarch reports both versions. Yet Diodorus and Curtius probably drew on the same lost history by Cleitarchus, and Plutarch himself notes that ‘others say it was premeditated’, so their agreement is weaker corroboration than it first appears, while Arrian’s silence about Thaïs may be just as partial, since she was ‘the mistress of Ptolemy’.</span><span class="mk u2l13-m4">E</span>
+      <span class="match" data-step="m5">On balance, it is more likely that the destruction was planned, because an emptied Treasury and a selective fire are hard to explain as an accident; the archaeology cannot show who gave the order or when, however, so the feast may record the moment a decision was carried out rather than its cause.</span><span class="mk u2l13-m5">R</span>
+      <span class="u2l13-meta">A model written for this lesson · about 300 words · quotations from Chinnock’s Arrian, Schmidt (1939), Briant (2010) and Perrin’s Plutarch</span>
+    </div>
+    <div class="margin fold">
+      <p class="u2l13-head">The five moves</p>
+      <div class="anote reveal u2l13-m1" data-hl="[data-step=m1]"><span class="mk">J</span><b>Judge</b><span class="tx">A qualified answer, not yes or no: <i>most probably</i>, <i>even if</i>.</span></div>
+      <div class="anote reveal u2l13-m2" data-hl="[data-step=m2]"><span class="mk">E</span><b>Evidence</b><span class="tx">Woven in with provenance: who wrote it and from what sources; who dug, and when. Short quotations inside the sentence.</span></div>
+      <div class="anote reveal u2l13-m3" data-hl="[data-step=m3]"><span class="mk">A</span><b>Analyse</b><span class="tx">What the evidence shows and how: <i>this combination suggests</i>, <i>presents … as</i>; then a modern historian who agrees.</span></div>
+      <div class="anote reveal u2l13-m4" data-hl="[data-step=m4]"><span class="mk">E</span><b>Evaluate</b><span class="tx">Weighs the rival view and the reliability of both sides: <i>however</i>, <i>yet</i>, <i>weaker than it first appears</i>, <i>may be</i>.</span></div>
+      <div class="anote reveal u2l13-m5" data-hl="[data-step=m5]"><span class="mk">R</span><b>Resolve</b><span class="tx">A refined judgement, not a summary: <i>on balance, it is more likely that</i> … plus what the evidence cannot show.</span></div>
+      <p class="u2l13-verdict reveal"><b>Three types of evidence:</b> an ancient account (Arrian), archaeology (Schmidt) and a modern historian (Briant).</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · We do" data-title="Language bank" data-kind="notes">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">4 · We do — your language bank · keep it open for the We do and the You do</p>
+  <h2>Language bank: words that make each move work</h2>
+  <div class="tbl-scroll"><table class="tbl compact u2l13-bank">
+    <tr><th>Move</th><th>Use it to</th><th>Try</th></tr>
+    <tr class="j"><td>J · Judge</td><td>answer the question, with a degree</td><td>It is likely that … · To a large extent, … · was most probably … · was more probably … than …</td></tr>
+    <tr class="e"><td>E · Evidence</td><td>bring in each source with its provenance</td><td>Arrian, who drew on … · Writing about 270 years later, Diodorus … · Schmidt’s excavations (1935–39) showed … · Briant argues that …</td></tr>
+    <tr class="a"><td>A · Analyse</td><td>say what the evidence shows, and how</td><td>This suggests that … · … presents the fire as … · which indicates … · This combination …</td></tr>
+    <tr class="v"><td>E · Evaluate</td><td>weigh a rival view or the limits of the evidence</td><td>However, … · Yet … · cannot show … · is weaker corroboration than it first appears · may be partial, since …</td></tr>
+    <tr class="r"><td>R · Resolve</td><td>finish with a refined judgement</td><td>On balance, … · it is more likely that … · Ultimately, … · rather than …</td></tr>
+  </table></div>
+  <p class="cue">Colour key for your copy: <b>J</b> Judge · <b>E</b> Evidence · <b>A</b> Analyse · <b>E</b> Evaluate · <b>R</b> Resolve, the same five colours as the model.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · We do" data-title="Co-construct the class checklist" data-kind="notes">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">4 · We do — co-construct the checklist · what did the model’s writer do that we should do?</p>
+  <h2>A strong interpretation paragraph …</h2>
+  <div class="split" style="--cols:1.3fr 1fr">
+    <ol class="keylist" data-veil="Build yours first — then show one class checklist">
+      <li class="reveal"><span class="num">1</span><span class="t">opens with a judgement of degree</span><span class="d">answers the question with a qualification: most probably, to a large extent, even if …</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">integrates three types of evidence, with provenance</span><span class="d">an ancient account, archaeology and a modern historian, each introduced by who, when and how they knew</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">analyses what the evidence shows</span><span class="d">explains how it supports the judgement, with a relating verb: suggests, presents … as, indicates</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">weighs a rival view before resolving</span><span class="d">gives the other side its best evidence, then judges its reliability (shared sources, distance, purpose) with modality</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">resolves with a refined judgement</span><span class="d">on balance … and what the evidence cannot show: not a summary, not a roadmap</span></li>
+    </ol>
+    <div class="stack">
+      <div class="card quiet sm"><div class="k">How</div><p class="body">Pairs: one point each for 60 seconds. Then the class agrees on five, in our own words, on the board.</p></div>
+      <div class="card quiet sm"><div class="k">A good criterion</div><p class="body">describes a move the writer makes (weighs a rival view), not a surface feature (uses five sentences).</p></div>
+      <div class="card accent sm"><div class="k">Keep it</div><p class="body">You will use this checklist to check your own paragraph today, and again in the next two lessons.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · We do" data-title="We do: the other side, part 1">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">4 · We do — joint construction · I scribe, you supply each move · vote 1 or 2 fingers on each choice</p>
+  <h2>Our paragraph, part 1: arguing the opposite judgement</h2>
+  <p class="u2l13-iq"><span>Our judgement:</span> the burning was more probably a sudden act at a drinking party than a planned policy.</p>
+  <div class="stack veil-parts" data-veil="Build it together first — then show one version">
+    <div class="u2l13-jc"><span class="u2l13-jcl">J</span><div><p class="qprompt">Judge: which opening is stronger?</p>
+      <p class="alt">1 · <span class="nq">The burning was an accident.</span> · 2 · <span class="nq">The burning was more probably a sudden act than a planned policy.</span></p>
+      <p class="u2l13-sent vp reveal">The burning of Persepolis was more probably a sudden act at a drinking party than a carefully planned policy.</p></div></div>
+    <div class="u2l13-jc"><span class="u2l13-jcl">E</span><div><p class="qprompt">Evidence: an ancient account and a modern historian, with provenance</p>
+      <p class="alt">1 · <span class="nq">Curtius says they were drunk.</span> · 2 · <span class="nq">Curtius, a Roman writing in the first century CE, describes …</span></p>
+      <p class="u2l13-sent vp reveal">Curtius, a Roman writing in the first century CE, describes the king throwing the first firebrand at a feast and the army running to help, ‘thinking it accidental’, while Plutarch records that Alexander ‘speedily repented and gave orders to put out the fire’; in 2012 the historian Ali Ansari likewise accepted that the burning followed ‘a night of drunken excess’.</p></div></div>
+    <div class="u2l13-jc"><span class="u2l13-jcl">A</span><div><p class="qprompt">Analyse: archaeology, and what it all suggests</p>
+      <p class="alt">1 · <span class="nq">This proves it was not planned.</span> · 2 · <span class="nq">This suggests …</span></p>
+      <p class="u2l13-sent vp reveal">This suggests an impulse that even Alexander’s own soldiers did not expect, and the archaeology does not rule it out: Schmidt could not tell whether one ‘conflagration (or conflagrations)’ destroyed the great halls, and Curtius says the cedar palace ‘quickly took fire and spread the conflagration widely’.</p></div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · We do" data-title="We do: the other side, part 2">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">4 · We do — joint construction · keep going</p>
+  <h2>Our paragraph, part 2: weigh the rival view, then resolve</h2>
+  <p class="u2l13-iq"><span>Our judgement:</span> the burning was more probably a sudden act at a drinking party than a planned policy.</p>
+  <div class="stack veil-parts" data-veil="Build it together first — then show one version">
+    <div class="u2l13-jc"><span class="u2l13-jcl">E</span><div><p class="qprompt">Evaluate: give the rival view its best evidence, then weigh it</p>
+      <p class="alt">1 · <span class="nq">But Arrian disagrees.</span> · 2 · <span class="nq">However, the strongest case against this view is …</span></p>
+      <p class="u2l13-sent vp reveal">However, the strongest case against this view is the emptied Treasury and Arrian’s account of a decision taken against Parmenio’s advice. Yet Arrian’s version may itself be a later justification: Curtius says that the ashamed Macedonians ‘forced themselves to believe that it was right’, and Arrian’s main source, Ptolemy, had reason to leave out Thaïs.</p></div></div>
+    <div class="u2l13-jc"><span class="u2l13-jcl">R</span><div><p class="qprompt">Resolve: refine the judgement</p>
+      <p class="alt">1 · <span class="nq">So it was an accident.</span> · 2 · <span class="nq">On balance, … although …</span></p>
+      <p class="u2l13-sent vp reveal">On balance, the fire itself may well have been sudden, although the emptied Treasury shows that Alexander had already decided to strip Persepolis; the drunken case is therefore strongest on how the fire started, and weakest on why the city was destroyed.</p></div></div>
+    <div class="u2l13-jc"><span class="u2l13-jcl">✓</span><div><p class="qprompt">Check against our class checklist: which point is missing or weakest?</p>
+      <p class="u2l13-sent vp reveal">All five moves are there. Its weakest evidence is the archaeology: the excavators found some buildings spared and, in the Harem, separate fires, which a spreading accident does not easily explain.</p></div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · We do" data-title="Notes 2 — The five moves" data-kind="notes">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>The five moves of an interpretation paragraph</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L13 · Deliberate or drunken?</b></span><span>2 · The five moves</span></div>
+    <div class="row"><div class="cq">Name the five moves, in order.</div>
+      <div class="nts reveal">Judge → Evidence → Analyse → Evaluate → Resolve</div></div>
+    <div class="row"><div class="cq">Explain what makes a strong Judge and Resolve.</div>
+      <div class="nts reveal">qualified, a judgement of degree (most probably, even if) <span class="sep">·</span> Resolve refines the Judge: on balance … + what the evidence cannot show <span class="sep">·</span> not a summary</div></div>
+    <div class="row"><div class="cq">What makes Evidence strong?</div>
+      <div class="nts reveal">three types, woven in with provenance: ancient account (Arrian ← Ptolemy, Aristobulus) <span class="sep">·</span> archaeology (Schmidt, 1930s) <span class="sep">·</span> modern historian (Briant 2010)</div></div>
+    <div class="row"><div class="cq">Distinguish Analyse from Evaluate.</div>
+      <div class="nts reveal">Analyse = what the evidence shows, and how (this suggests …) <span class="sep">·</span> Evaluate = weigh the rival view and the limits (shared sources, distance, silence) with modality</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="5 · You do" data-title="Check before you write: hinge question">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">5 · You do · check first · hinge question · hold up A, B, C or D on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2>Which sentence is the strongest Evaluate move?</h2>
+  <div class="stack veil-parts" data-veil="Vote first — then show the answer">
+  <ol class="opts u2l13-hinge">
+    <li><span class="n">A</span><span>However, Diodorus describes a drunken feast, which proves that the fire was an accident and that Arrian is simply wrong.</span></li>
+    <li id="u2l13-hB"><span class="n">B</span><span>However, Diodorus describes a drunken feast, but he probably followed Cleitarchus, so this rival version is weaker than it seems.</span></li>
+    <li><span class="n">C</span><span>However, Diodorus describes a drunken feast, but he wrote about 270 years later, so his account is biased and useless.</span></li>
+    <li><span class="n">D</span><span>However, Diodorus describes a drunken feast, and Curtius and Plutarch agree, so three independent writers confirm it.</span></li>
+  </ol>
+  <i class="reveal" data-mark="#u2l13-hB" hidden></i>
+  <div class="note vp reveal" data-code="evidence"><div class="k">B: it weighs the rival view and judges its reliability, with modality</div><p class="body"><b>A</b> does not weigh anything: one account cannot <i>prove</i> it. <b>C</b> turns distance into “useless”: a late source can still preserve earlier evidence. <b>D</b> is the best wrong answer: Diodorus and Curtius probably share one source, Cleitarchus, and Plutarch himself reports that “others say it was premeditated”, so this is not three independent confirmations.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="5 · You do" data-title="Evidence cards" data-kind="notes">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">5 · You do — your evidence cards · choose one from each column</p>
+  <h2>Evidence cards: three types of evidence</h2>
+  <div class="u2l13-ev">
+    <div class="card quiet"><div class="k">Ancient accounts</div><ul>
+      <li><b>Arrian</b> (2nd century CE, from Ptolemy and Aristobulus), 3.18: burned the palace “though Parmenio advised him to preserve it”; revenge for the invasion of Greece.</li>
+      <li><b>Diodorus</b> (1st century BCE, probably from Cleitarchus), 17.72: at a feast Thaïs urges the burning; she throws the second torch, after the king.</li>
+      <li><b>Plutarch</b> (about 100 CE), 38.8: “This is the way the deed was done, according to some writers; but others say it was premeditated.”</li>
+      <li><b>Curtius</b> (1st century CE, probably from Cleitarchus), 5.7: a drunken king; the army thought the fire “accidental”; he regretted it.</li></ul></div>
+    <div class="card quiet"><div class="k">Archaeology</div><ul>
+      <li><b>Burnt:</b> the Apadana, the Hall of a Hundred Columns and the Treasury (Schmidt, 1939, 1953).</li>
+      <li><b>Emptied first:</b> “The Macedonians were thorough in cleaning out the treasure house of Persepolis.” (Schmidt, 1939)</li>
+      <li><b>Selective:</b> parts of the Tripylon show no traces of burning (Schmidt, 1953); the Hadish badly destroyed.</li>
+      <li><b>Limit:</b> it cannot show who lit the fire or why, or whether the great halls burned in one fire or several.</li></ul></div>
+    <div class="card quiet"><div class="k">Modern interpretations</div><ul>
+      <li><b>Briant</b> (2010): deliberate, “a signal to the Persians that their days of imperial glory were over”.</li>
+      <li><b>Woodcock</b> (1967): the sack as “deterrent terror”; the burning to remove a royal centre.</li>
+      <li><b>Lendering</b> (Livius): “The fire was planned.”</li>
+      <li><b>Farr</b> (1850) and <b>Ansari</b> (2012): the drunken Thaïs story; Ansari stresses the loss to Persian culture.</li>
+      <li><b>Mark</b> (2019): open; perhaps anger at the mutilated Greek captives.</li></ul></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="5 · You do" data-title="You do: write your paragraph">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">5 · You do · 16 minutes of writing · the 20-minute timer is running · your paragraph may be read aloud</p>
+  <h2>To what extent was the burning of Persepolis a deliberate act?</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body"><li>One paragraph: Judge → Evidence → Analyse → Evaluate → Resolve.</li>
+          <li>Use one ancient account, one piece of archaeological evidence and one modern interpretation, each with its provenance.</li>
+          <li>Weigh a rival view, then resolve with <span class="nq">on balance …</span></li></ol></div>
+      <div class="card quiet sm"><div class="k">Support · paragraph frame</div><p class="body nq">J: The burning of Persepolis was, to a large extent / only partly, … · E: According to …, who … · The excavations of … showed that … · A: This suggests that … · E: However, … ; yet … · R: On balance, it is more likely that … because …</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Why have interpretations changed over time? What do Farr (1850), Woodcock (1967) and Iranian historians today, such as Ansari (2012), reveal about their own times?</p></div>
+    </div>
+    <div class="src reveal" data-veil="Write yours first — then show a model paragraph">
+      <div class="k">A model paragraph · written for this lesson</div>
+      <p class="quote sm model">To a large extent the burning of Persepolis was deliberate, although its timing may have owed something to a night of drinking. The strongest evidence is archaeological: Erich Schmidt, who directed the Persepolis excavations of 1935–39, found that the Macedonians ‘were thorough in cleaning out the treasure house’ before fire destroyed it, and that the Tripylon was at least partly untouched while the Apadana and the Hall of a Hundred Columns burned. Such a pattern suggests a destruction prepared in advance rather than a blaze that spread at random, which fits Arrian’s account, drawn from officers who served with Alexander, of a king who burned the palace ‘though Parmenio advised him to preserve it’. George Woodcock (1967) likewise thought it ‘conceivable’ that the destruction was meant to remove a royal centre around which Persian resistance might gather. Yet Diodorus, Curtius and Plutarch all place the fire at a feast urged on by Thaïs, and Curtius even suggests that the Macedonians later ‘forced themselves to believe that it was right’, so the language of policy may partly be a later justification. Since Diodorus and Curtius probably depend on Cleitarchus, however, and Plutarch knew that ‘others say it was premeditated’, their agreement adds less weight than it seems. On balance, the decision to destroy the royal buildings was most likely deliberate, while the feast may explain only the night on which it was carried out.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="5 · You do" data-title="Summary" data-kind="notes">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What does the archaeology show about the burning of Persepolis?</li>
+          <li>How do modern historians interpret the burning?</li>
+          <li>What is your judgement, and what is its weakest point?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">The excavations of the 1930s showed that the Apadana, the Hall of a Hundred Columns and the Treasury were destroyed by fire after the Treasury had been emptied, while parts of the Tripylon escaped, but they cannot show who lit the fire or why. Modern historians are divided: Briant and Woodcock see a deliberate act of policy aimed at the Persians, while Farr and Ansari follow the ancient story of a drunken feast urged on by Thaïs. On balance the destruction was probably planned, although the archaeology cannot rule out that a feast decided the night it happened.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Where the fire burned</label></li>
+        <li><label><input type="checkbox"> The emptied Treasury</label></li>
+        <li><label><input type="checkbox"> Five modern views and their evidence</label></li>
+        <li><label><input type="checkbox"> Weighing the evidence both ways</label></li>
+        <li><label><input type="checkbox"> The colour-coded model</label></li>
+        <li><label><input type="checkbox"> The class checklist</label></li>
+        <li><label><input type="checkbox"> Your paragraph</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: deliberate, drunken or both?" data-kind="intro">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">Check · 8 minutes · gesture vote · then check your own paragraph</p>
+  <h2>Deliberate, drunken or both?</h2>
+  <div class="split" style="--cols:.7fr 1.3fr">
+    <div class="u2l13-side"><figure class="figure contain"><img src="images/u2l13-carracci-alexander-and-thais.jpg" alt="Lodovico Carracci, Alexander and Thaïs Setting Fire to Persepolis, pen and ink, probably about 1592 (National Gallery of Art, Washington): the feast story, imagined more than 1,900 years later" loading="lazy"><figcaption>Lodovico Carracci, Alexander and Thaïs Setting Fire to Persepolis, pen and ink, probably about 1592 (National Gallery of Art, Washington): the feast story, imagined more than 1,900 years later — <span class="cr">Lodovico Carracci; National Gallery of Art, Washington · CC0 1.0</span></figcaption></figure></div>
+    <div class="stack">
+      <p class="u2l13-vote"><span>👍 deliberate</span><span>👎 drunken</span><span>👉 both</span></p>
+      <p class="qprompt">What is the strongest piece of evidence for your vote, and why?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">a named piece of evidence with its provenance (for example, Schmidt’s emptied Treasury, or Plutarch’s “others say it was premeditated”) · what it suggests · why it outweighs the other side, or what it cannot show.</p></div>
+      <div class="card quiet sm"><div class="k">Check your paragraph against our checklist · circle one move to improve</div>
+        <ul class="checks">
+          <li><label><input type="checkbox"> 1 · a judgement of degree</label></li>
+          <li><label><input type="checkbox"> 2 · three types of evidence, with provenance</label></li>
+          <li><label><input type="checkbox"> 3 · analysis of what the evidence shows</label></li>
+          <li><label><input type="checkbox"> 4 · a rival view, weighed</label></li>
+          <li><label><input type="checkbox"> 5 · a refined final judgement</label></li>
+        </ul></div>
+      <p class="small"><b>Next lesson:</b> interpretations and representations: how Persepolis was used by the Pahlavi shahs.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u2l13-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Schmidt’s excavations found that the Apadana, the Hall of a Hundred Columns and the Treasury were destroyed by fire.</span>
+      <span class="sol reveal">True <span class="why">— his reports (1939, 1953) describe each as destroyed by a conflagration.</span></span></li>
+    <li><span class="n">2</span><span>When Schmidt dug the Treasury, it was still full of gold and silver.</span>
+      <span class="sol no reveal">False <span class="why">— the Macedonians had emptied it of gold and silver (“Crumbs that Alexander left”); he found what they rejected or lost: small gold objects, hundreds of smashed stone vessels, weapons, the clay tablets and the Audience reliefs.</span></span></li>
+    <li><span class="n">3</span><span>The archaeology proves that Alexander was drunk when the fire was started.</span>
+      <span class="sol no reveal">False <span class="why">— it shows which buildings burned and that the treasure went first, not who lit the fire or in what state.</span></span></li>
+    <li><span class="n">4</span><span>Because Diodorus, Curtius and Plutarch all tell the Thaïs story, it must be true.</span>
+      <span class="sol no reveal">False <span class="why">— Diodorus and Curtius probably share one source, Cleitarchus, and Plutarch reports that “others say it was premeditated”, so their agreement is weak corroboration.</span></span></li>
+    <li><span class="n">5</span><span>Briant interprets the burning as a message to the Persians.</span>
+      <span class="sol reveal">True <span class="why">— “a signal to the Persians that their days of imperial glory were over”, unless they came over to Alexander.</span></span></li>
+    <li><span class="n">6</span><span>In a Judge → Evidence → Analyse → Evaluate → Resolve paragraph, the Resolve simply repeats the Judge.</span>
+      <span class="sol no reveal">False <span class="why">— it refines the judgement in the light of the Evaluate, and can say what the evidence cannot show.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — writing" data-kind="practice">
+<div class="wrap prac u2l13-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Practise the hardest moves</h2>
+  <div class="split" style="--cols:1fr 1.25fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · Make the Evaluate stronger</div><p class="body">Rewrite: <span class="nq">But Diodorus says Alexander was drunk.</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">However, Diodorus places the fire at a drunken feast, a version that cannot simply be dismissed; yet because he probably followed Cleitarchus, as Curtius did, the agreement of the two is weaker corroboration than it first appears.</p></div>
+      <div class="card accent"><div class="k">2 · Make the Resolve refined</div><p class="body">Rewrite: <span class="nq">In conclusion, it was deliberate.</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">On balance, the emptied Treasury makes it more likely that the destruction was planned, although the archaeology cannot show whether the order was given in cold blood or at a feast.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Why have interpretations of the burning changed over time? What do Farr (1850), Woodcock (1967) and Iranian historians today, such as Ansari (2012), reveal about their own times?</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">Each interpretation reveals the questions of its own time as much as the events of 330 BCE. Edward Farr, writing in 1850, retold the ancient drunken story as a moral tale, condemning ‘the maddened rage of the conqueror’ and his ‘bacchanals’. George Woodcock, writing in 1967, read Arrian for a political purpose instead, suggesting that the sack of the city was ‘deterrent terror’ and the burning a way to remove a centre of Persian resistance. Ali Ansari, a historian of Iran writing for the BBC in 2012, accepted the drunken version but used it for a different purpose: to show Alexander ‘through Persian eyes’ and to stress what Persian culture lost. Interpretations have therefore changed less because new evidence appeared than because each writer asked new questions of the same ancient story: a moral one in 1850, a political one in 1967 and, in 2012, how Iranians themselves remember Alexander.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u2l13-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>What did the excavators find in the burnt buildings of Persepolis?
+      <span class="sol reveal">The Apadana, the Hall of a Hundred Columns and the Treasury destroyed by fire (scorched walls and floors, burnt roof timbers, cracked column bases); the Treasury emptied first; the Hadish badly destroyed; parts of the Tripylon unburnt.</span></li>
+    <li>Explain what the archaeology cannot tell us about the burning.
+      <span class="sol reveal">Who lit the fire, why, and whether anyone was drunk; for the great halls, it cannot settle whether there was one fire or several (though in the Harem Schmidt found rooms “methodically destroyed by separate fires”).</span></li>
+    <li>Explain Briant’s interpretation and the evidence it rests on.
+      <span class="sol reveal">A deliberate signal to the Persians that their imperial glory was over unless they submitted; it rests on the timing: if the decision came soon after Alexander’s visit to Cyrus’s tomb, his respect for Cyrus had not won over the hostile Persians.</span></li>
+    <li>Explain Woodcock’s interpretation.
+      <span class="sol reveal">The sack of the lower city was deterrent terror; the burning was meant to remove a royal centre around which Persian resistance might rise again (he says this is “conceivable”).</span></li>
+    <li>Why is the agreement of Diodorus, Curtius and Plutarch weak corroboration?
+      <span class="sol reveal">Diodorus and Curtius probably go back to one lost source, Cleitarchus, so they are not independent witnesses; Plutarch used several sources and reports that others say it was premeditated.</span></li>
+    <li>Name the five moves of an interpretation paragraph, and what the last one must do.
+      <span class="sol reveal">Judge, Evidence, Analyse, Evaluate, Resolve; the Resolve gives a refined judgement, not a summary.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u2l13-cite"><div class="k">Written sources</div>
+      <p class="small"><b>Ancient:</b> Arrian, <i>Anabasis</i> 3.18, 6.30.1 and Preface, trans. E. J. Chinnock (1884, public domain), <a href="https://archive.org/details/theanabasisofale46976gut">Project Gutenberg #46976</a>. Diodorus 17.69–72, trans. C. B. Welles (Loeb, 1963), and Plutarch, <i>Alexander</i> 37–38, trans. B. Perrin (Loeb, 1919), both from <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/home.html">LacusCurtius</a> (public domain). Curtius 5.7, trans. J. C. Rolfe (Loeb, 1946), checked against <a href="https://archive.org/details/in.ernet.dli.2015.532642">the 1946 volume</a>, quoted briefly.</p>
+      <p class="small"><b>Archaeology:</b> E. F. Schmidt, <i>The Treasury of Persepolis</i> (OIC 21, 1939), pp. 16–17, 37, 46, 52–55, 71; <i>Persepolis I</i> (OIP 68, 1953), pp. 30, 78–79, 122, 131–32, 157, 238–41, 262–63; and <i>Persepolis II</i> (OIP 69, 1957), pp. 1, 81; free from ISAC, University of Chicago (<a href="https://isac-assets.s3.amazonaws.com/isac-publications/oic21.pdf">OIC 21</a>; <a href="https://isac-assets.s3.amazonaws.com/isac-publications/oip68.pdf">OIP 68</a>; <a href="https://isac-assets.s3.amazonaws.com/isac-publications/oip69.pdf">OIP 69</a>), © University of Chicago, quoted briefly. Livius.org (J. Lendering): <a href="https://www.livius.org/articles/place/persepolis/persepolis-photos/persepolis-apadana/">Apadana</a>, Palace of Xerxes, Palace of Darius, Treasury, <a href="https://www.livius.org/articles/person/alexander-the-great/alexander-2.9/">“Alexander 2.9”</a> and <a href="https://www.livius.org/articles/person/alexander-the-great/alexander-2.10/">“Alexander 2.10”</a>, © Livius.org, quoted briefly.</p>
+      <p class="small"><b>Modern:</b> P. Briant, <i>Alexander the Great and His Empire</i>, trans. A. Kuhrt (Princeton, 2010), p. 111, as quoted in C. San José Campos, <a href="https://ddd.uab.cat/pub/karanos/karanos_a2021v4/karanos_a2021v4p13.pdf">“Alexander the Great in Persepolis”, <i>Karanos</i> 4 (2021)</a>, p. 25. G. Woodcock, “Persia and Persepolis, part II”, <i>History Today</i> 17.5 (May 1967). E. Farr, <a href="https://archive.org/details/historypersians00farrgoog"><i>History of the Persians</i> (1850)</a>, public domain. J. J. Mark, <a href="https://www.worldhistory.org/article/214/alexander-the-great--the-burning-of-persepolis/">World History Encyclopedia</a> (2019, CC BY-NC-SA, quoted briefly). A. Ansari, <a href="https://www.bbc.co.uk/news/magazine-18803290">BBC News Magazine</a> (July 2012), © BBC, quoted briefly.</p>
+      <p class="small">The plan was drawn for this lesson after Schmidt (1939), fig. 5. The model paragraphs, the class paragraph and the summaries were written for this lesson.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet"><div class="k">Teacher resources</div>
+        <p class="small"><i>Persepolis.pdf</i> (Woodcock extract), the NSW DoE <i>Persepolis teaching support resource</i> (Farr and Mark extracts), <i>The Destruction of Persepolis</i> and <i>Decline and Alexander</i> (class notebook ‘Persepolis’), used as leads; every fact re-checked.</p></div>
+      <div class="card quiet u2l13-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>The ruins of the Hadish, Persepolis</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Palace_of_Xerxes,_Persepolis.jpg">source</a></li><li><b>The Treasury of Persepolis today</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:The_Treasury,_Persepolis,_Iran_(47779493071).jpg">source</a></li><li><b>Lodovico Carracci, Alexander and Thaïs Setting Fire to Persepolis (probably about 1592)</b> · Lodovico Carracci; National Gallery of Art, Washington · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Lodovico_Carracci,_Alexander_and_Tha%C3%AFs_Setting_Fire_to_Persepolis,_probably_c._1592,_NGA_55424.jpg">source</a></li></ul>
+        <p class="small">All images are public domain or openly licensed, and were resized for the web. Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

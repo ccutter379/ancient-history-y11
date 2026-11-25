@@ -1,0 +1,1748 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U2 L15 · Bringing it together: unit checkpoint and timed practice</title>
+<meta name="description" content="Year 11 Ancient History, case study Persepolis: a ten-question checkpoint across all nine dot points, then timed practice: an OVPRL on an unseen palace relief and a short judgement on the burning of Persepolis from two ancient accounts, checked against annotated exemplars.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#0F5E5A; --bright:#1A8A84; --tint:#E1F2F0; --statement:#0F5E5A;
+  --solid:#0F5E5A; --soft:#CBEDE9; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; } }
+:root[data-theme="dark"]{ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 2 Lesson 15 only (every class starts u2l15-) */
+
+/* title slide picture */
+.u2l15-cover img{max-height:50vh;}
+
+/* quick facts list (what / where / when / who) */
+.u2l15-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.25em;
+  font-size:calc(var(--fs-body)*.84); line-height:1.35;}
+.u2l15-facts b{color:var(--deep);}
+
+/* dot-point tags: one colour per group of dot points (context, sources, historical issues), used on the checkpoint */
+.u2l15-dp{display:inline-block; padding:.05em .55em; border-radius:6px; font-family:var(--ui); font-weight:700;
+  font-size:.74em; letter-spacing:.02em; line-height:1.35; color:var(--ink); border:1.5px solid var(--rule);
+  background:var(--surface); vertical-align:.08em; white-space:nowrap;}
+.u2l15-dp.g-ctx{border-color:var(--c-scope); background:var(--w-scope);}
+.u2l15-dp.g-sou{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.u2l15-dp.g-his{border-color:var(--c-evidence); background:var(--w-evidence);}
+.u2l15-legend{margin:0; font-size:calc(var(--fs-body)*.74); line-height:1.45; color:var(--slate);}
+.u2l15-legend b{color:var(--ink);}
+
+/* re-teach cards */
+.u2l15-rt{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1.1vw,16px);}
+.u2l15-rt .card{padding:clamp(8px,1.3vh,16px) clamp(12px,1.2vw,18px);}
+.u2l15-rt .q{font-weight:700; font-size:calc(var(--fs-body)*.84); line-height:1.32;}
+.u2l15-rt .vp{display:block; margin-top:.35em; font-size:calc(var(--fs-body)*.8); line-height:1.38; color:var(--ink);}
+
+/* the ten checkpoint questions, two columns */
+.u2l15-quiz{margin:0; padding-left:1.7em; columns:2 24em; column-gap:2.2em; font-size:calc(var(--fs-body)*.92);
+  line-height:1.36;}
+.u2l15-quiz li{break-inside:avoid; margin:0 0 .5em;}
+.u2l15-quiz .u2l15-dp{margin-right:.35em;}
+
+/* marking and tally tables */
+.u2l15-key td:first-child{font-weight:700; white-space:nowrap; width:2.2em; text-align:center;}
+.u2l15-key td:nth-child(2){width:27%;}
+.u2l15-tally td:nth-child(2), .u2l15-tally td:nth-child(3){white-space:nowrap;}
+.u2l15-tally .box{display:inline-block; width:2.4em; height:1.15em; border:2px solid var(--slate); border-radius:4px;
+  vertical-align:middle;}
+
+/* goals, credits */
+.u2l15-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u2l15-iq{font-weight:700; font-size:calc(var(--fs-body)*.96); line-height:1.35;}
+.u2l15-cite a{color:var(--deep);}
+.u2l15-cite p + p{margin-top:.45em;}
+
+/* feedback in action: before and after */
+.u2l15-ba .lab{display:inline-block; margin-right:.45em; font-family:var(--ui); font-weight:700; font-size:.8em;
+  letter-spacing:.05em; text-transform:uppercase; color:var(--deep);}
+.u2l15-ba .body + .body{margin-top:.45em;}
+
+/* the paper: two parts side by side */
+.u2l15-part .k{display:flex; justify-content:space-between; gap:.6em; flex-wrap:wrap;}
+.u2l15-part .body + .body{margin-top:.35em;}
+
+/* the writing plan (countdown times) */
+.u2l15-plan{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.u2l15-plan li{display:grid; grid-template-columns:7.4em 1fr; gap:.7em; align-items:start;
+  font-size:calc(var(--fs-body)*.86); line-height:1.36;}
+.u2l15-plan .t{font-family:var(--mono); font-weight:700; color:var(--deep); text-align:right;}
+
+/* source sheets: an editor's label before each extract */
+.u2l15-ex .quote.sm .ed{display:inline-block; margin-right:.25em; font-weight:700; color:var(--deep);}
+.u2l15-ex .quote.sm .gap{display:block; height:.3em;}
+.u2l15-relief img{max-height:56vh;}
+.u2l15-stair img{max-height:24vh;}
+
+/* planning grids */
+.u2l15-grid td:first-child{font-family:var(--mono); font-weight:700; color:var(--deep); width:1.8em; text-align:center;}
+.u2l15-grid td:last-child{width:30%;}
+
+/* annotated exemplars: five points, five colours */
+.u2l15-wagoll .ans{font-size:calc(var(--fs-body)*.8); line-height:1.6;}
+.u2l15-wagoll .annot{grid-template-columns:1.6fr 1fr;}
+.u2l15-head{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep);}
+.u2l15-meta{display:block; margin-top:.6em; font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome); color:var(--slate);}
+.anote.u2l15-m1{border-color:var(--c-scope); background:var(--w-scope);}
+.anote.u2l15-m2{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.anote.u2l15-m3{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote.u2l15-m4{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote.u2l15-m5{border-color:var(--c-directive); background:var(--w-directive);}
+.mk.u2l15-m1, .u2l15-m1 .mk{background:var(--c-scope);}
+.mk.u2l15-m2, .u2l15-m2 .mk{background:var(--c-keyterm);}
+.mk.u2l15-m3, .u2l15-m3 .mk{background:var(--c-evidence);}
+.mk.u2l15-m4, .u2l15-m4 .mk{background:var(--c-judgement);}
+.mk.u2l15-m5, .u2l15-m5 .mk{background:var(--c-directive);}
+:root[data-theme="dark"] .mk[class*="u2l15-m"], :root[data-theme="dark"] [class*="u2l15-m"] .mk{color:var(--ground);}
+.u2l15-verdict{padding:.45em .8em; border:1px dashed var(--slate); border-radius:8px;
+  font-size:calc(var(--fs-body)*.8); line-height:1.38;}
+
+/* warm and cool */
+.u2l15-wc .card .body + .body{margin-top:.3em;}
+
+/* long photo credits may wrap */
+.u2l15-dense .figure figcaption .cr, .u2l15-cover .figure figcaption .cr{white-space:normal;}
+.u2l15-dense .split > *, .u2l15-dense .stack > *{min-width:0;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u2l15-rt{grid-template-columns:1fr;}
+  .u2l15-quiz{columns:1;}
+  .u2l15-wagoll .annot{grid-template-columns:1fr;}
+  .u2l15-key td:nth-child(2){width:auto;}
+  .u2l15-plan li{grid-template-columns:6.2em 1fr;}
+  .u2l15-tally td:nth-child(2), .u2l15-tally td:nth-child(3){white-space:normal;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u2l15-dense{gap:9px;}
+  html:not(.read) .u2l15-dense h2{font-size:calc(var(--fs-h2)*.84);}
+  html:not(.read) .u2l15-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.4;}
+  html:not(.read) .u2l15-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u2l15-dense .src{padding:9px 15px;}
+  html:not(.read) .u2l15-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u2l15-dense .note{padding:.4em .8em;}
+  html:not(.read) .u2l15-dense .note .body, html:not(.read) .u2l15-dense .card .body,
+  html:not(.read) .u2l15-dense .qprompt{font-size:calc(var(--fs-body)*.78); line-height:1.34;}
+  html:not(.read) .u2l15-dense .card{padding:9px 15px;}
+  html:not(.read) .u2l15-dense .card .k, html:not(.read) .u2l15-dense .src .k{margin-bottom:.25em;}
+  html:not(.read) .u2l15-dense .tbl.compact{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u2l15-dense .tbl.compact td{padding:.28em .5em;}
+  html:not(.read) .u2l15-dense .tbl th{padding:.35em .55em;}
+  html:not(.read) .u2l15-dense .figure img{max-height:28vh;}
+  html:not(.read) .u2l15-dense .figure figcaption{font-size:calc(var(--fs-chrome)*.85); margin-top:.3em;}
+  html:not(.read) .u2l15-dense .u2l15-facts{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l15-dense .u2l15-quiz{font-size:calc(var(--fs-body)*.84);}
+  html:not(.read) .u2l15-dense .u2l15-quiz li{margin-bottom:.6em;}
+  html:not(.read) .u2l15-dense .u2l15-rt .q{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l15-dense .u2l15-rt .vp{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u2l15-dense .u2l15-rt .card{padding:7px 12px;}
+  html:not(.read) .u2l15-dense .u2l15-iq{font-size:calc(var(--fs-body)*.82);}
+  html:not(.read) .u2l15-dense .u2l15-plan li{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u2l15-dense .u2l15-legend{font-size:calc(var(--fs-body)*.66);}
+  html:not(.read) .u2l15-dense .keylist li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u2l15-dense .keylist .d{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l15-dense.u2l15-wagoll .ans{font-size:calc(var(--fs-body)*.72); line-height:1.5; padding:10px 16px;}
+  html:not(.read) .u2l15-dense .anote{font-size:calc(var(--fs-body)*.68); padding:.3em .6em;}
+  html:not(.read) .u2l15-dense.u2l15-wagoll .annot{grid-template-columns:1.9fr 1fr;}
+  html:not(.read) .u2l15-dense .u2l15-verdict{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u2l15-dense .tf li, html:not(.read) .u2l15-dense .rq{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l15-dense .tf li{padding:.24em .6em;}
+  html:not(.read) .u2l15-dense .prac{gap:6px;}
+  html:not(.read) .u2l15-dense .cornell .cq, html:not(.read) .u2l15-dense .cornell .nts{font-size:calc(var(--fs-body)*.72); padding:.32em .75em;}
+  html:not(.read) .u2l15-dense .checks label{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u2l15-dense .u2l15-relief img{max-height:52vh;}
+  html:not(.read) .u2l15-dense .u2l15-stair img{max-height:22vh;}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 15" data-title="Bringing it together: unit checkpoint and timed practice" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1fr 1.05fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 2 · Persepolis · Lesson 15</p>
+      <h1>Bringing it together: unit checkpoint and timed practice</h1>
+      <p class="lead">What do you know across the whole case study, and can you use it on sources you have never seen, against the clock?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u2l15-cover"><figure class="figure contain"><img src="images/u1l08-persepolis-terrace.jpg" alt="Standing columns on the terrace at Persepolis, south-western Iran: the terrace was begun about 518 BCE under Darius I" loading="lazy"><figcaption>Standing columns on the terrace at Persepolis, south-western Iran: the terrace was begun about 518 BCE under Darius I — <span class="cr">Photo: Forough.Parhoudeh · CC BY-SA 4.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 15" data-title="Checkpoint: re-teach first" data-kind="intro">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow">Checkpoint · 2 minutes · the review item the class found hardest</p>
+  <h2>First, one thing to fix from the last review</h2>
+  <div class="u2l15-rt veil-parts" data-veil="Recall it first — then show the re-teach notes">
+    <div class="card quiet"><div class="k">1 · Darius becomes king</div><p class="q">How did Darius I say he became king in 522 BCE, and why do historians doubt it?</p>
+      <p class="vp">At Behistun he says a Magian, Gaumata, posed as Cyrus’s son Bardiya and seized the throne, and that he killed him with Ahuramazda’s help. It is the winner’s own account: some historians think Darius overthrew the real Bardiya.</p></div>
+    <div class="card quiet"><div class="k">2 · The Apadana delegations</div><p class="q">What do the Apadana stairway reliefs show, and why are some delegations debated?</p>
+      <p class="vp">23 delegations bring gifts, each led in by an usher. None is labelled: historians identify them by their dress and gifts, so some identifications are still debated.</p></div>
+    <div class="card quiet"><div class="k">3 · The Fortification Tablets</div><p class="q">What are the Fortification Tablets, and what do they record?</p>
+      <p class="vp">Tens of thousands of clay tablets and fragments (509–493 BCE), mostly in Elamite, some in Aramaic, found in 1933 in the fortification wall: records of rations for workers, officials and travellers.</p></div>
+    <div class="card quiet"><div class="k">4 · Arrian’s version</div><p class="q">How does Arrian explain the burning of the palace?</p>
+      <p class="vp">As a deliberate act, done against the advice of Alexander’s general Parmenio: Alexander said he wished to take vengeance for the Persian invasion of Greece. Arrian himself thinks it was not wise.</p></div>
+    <div class="card quiet"><div class="k">5 · Diodorus’s version</div><p class="q">How does Diodorus explain the burning?</p>
+      <p class="vp">At a feast after victory games, with the drinking far advanced, the Athenian Thaïs urged Alexander to set fire to the palaces; he led a torch procession (a comus) and threw the first torch.</p></div>
+    <div class="card quiet"><div class="k">6 · Gaugamela</div><p class="q">Where and when did Alexander defeat Darius III, and what followed?</p>
+      <p class="vp">At Gaugamela, in 331 BCE. Alexander then took Babylon and Susa, forced the Persian Gates and reached Persepolis early in 330 BCE.</p></div>
+  </div>
+  <p class="cue">Then books closed: ten questions across the whole case study.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 15" data-title="Checkpoint: ten questions" data-kind="intro practice">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow">Checkpoint · books closed · 5 minutes · press K, click 5, then Start · answer in full sentences</p>
+  <h2>Ten questions across the whole case study</h2>
+  <p class="u2l15-legend"><b>Dot points:</b> 1 the empire and its early capitals · 2 location · 3 discovery and excavation · 4 archaeological sources · 5 layout and features · 6 design and ornamentation · 7 a centre of power · 8 the burning debate · 9 interpretations and representations</p>
+  <ol class="u2l15-quiz">
+    <li><span class="u2l15-dp g-ctx">dot point 1</span>What did Darius I change about the satrapies, and what does Herodotus say the Persians called him?</li>
+    <li><span class="u2l15-dp g-ctx">dot point 1</span>Give one continuity and one change from Pasargadae to Persepolis.</li>
+    <li><span class="u2l15-dp g-ctx">dot point 2</span>Where was Persepolis built, and why did that location matter to the kings?</li>
+    <li><span class="u2l15-dp g-sou">dot point 3</span>Name one gain and one loss from the excavations of the 1930s.</li>
+    <li><span class="u2l15-dp g-sou">dot point 4</span>What survives of glazed brick at Persepolis, and what does that mean for colour reconstructions of the site?</li>
+    <li><span class="u2l15-dp g-his">dot point 5</span>Name three zones of the terrace, with one building in each.</li>
+    <li><span class="u2l15-dp g-his">dot point 6</span>Name one feature of Achaemenid design and the tradition it came from. Why did the kings combine traditions?</li>
+    <li><span class="u2l15-dp g-his">dot point 7</span>Distinguish power displayed from power exercised, with one source for each.</li>
+    <li><span class="u2l15-dp g-his">dot point 8</span>What did the excavators find that shows how the palaces were destroyed, and what can it not tell us?</li>
+    <li><span class="u2l15-dp g-his">dot point 9</span>How did Mohammad Reza Shah use Persepolis in 1971, and how did critics see it?</li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 15" data-title="Mark your checkpoint: questions 1–5" data-kind="intro practice">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow">Checkpoint · mark in a different colour · 1 mark each · both parts needed for the mark</p>
+  <h2>Mark your answers: questions 1–5</h2>
+  <div class="tbl-scroll" data-veil="Answer first — then show the answers"><table class="tbl compact u2l15-key">
+    <tr><th>Q</th><th>Question</th><th>A strong answer</th></tr>
+    <tr class="reveal"><td>1</td><td><span class="u2l15-dp g-ctx">dot point 1</span> Darius I and the satrapies</td><td>He <b>reorganised</b> the satrapies (provinces under governors, which already existed under Cyrus): Herodotus says into twenty, each with a <b>fixed tribute</b>. So, Herodotus reports, the Persians called Darius ‘the merchant’ (Cambyses ‘the master’, Cyrus ‘the father’).</td></tr>
+    <tr class="reveal"><td>2</td><td><span class="u2l15-dp g-ctx">dot point 1</span> Pasargadae to Persepolis</td><td><b>Continuity:</b> columned halls (Palaces S and P → the Apadana, the Hall of a Hundred Columns), or guardian figures at a gate (Gate R → the Gate of All Nations). <b>Change:</b> one terrace holding all the main buildings (Pasargadae’s own platform, Tall-e Takht, was left unfinished), greater scale, or a more uniform court style.</td></tr>
+    <tr class="reveal"><td>3</td><td><span class="u2l15-dp g-ctx">dot point 2</span> location</td><td>In Fars (Pārsa), the Persian homeland in south-west Iran, at the foot of Kuh-e Rahmat above the Marv Dasht plain, about 40 km from Cyrus’s Pasargadae. It mattered most, probably, for royal identity: it tied the king’s power to his own people’s land. (Accept display, water and food, roads or defence, with a reason.)</td></tr>
+    <tr class="reveal"><td>4</td><td><span class="u2l15-dp g-sou">dot point 3</span> the 1930s excavations</td><td><b>Gain:</b> buried reliefs, the gold and silver foundation tablets and the Fortification Tablets were found and recorded (Herzfeld 1931–34, Schmidt 1935–39). <b>Loss:</b> the layers were cleared away and survive only in the records, paint traces faded once uncovered, and finds went abroad.</td></tr>
+    <tr class="reveal"><td>5</td><td><span class="u2l15-dp g-sou">dot point 4</span> glazed brick</td><td>Only <b>fragments</b> at Persepolis (a frieze of palmettes and two bricks with circular bands); the best-preserved Achaemenid glazed-brick panels, such as the archers, come from <b>Susa</b> (now in the Louvre). So a colour reconstruction of Persepolis fills the gaps from paint traces on the reliefs, from other sites and from guesswork: it is evidence of what its makers imagined, not direct evidence.</td></tr>
+  </table></div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 15" data-title="Mark your checkpoint: questions 6–10" data-kind="intro practice">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow">Checkpoint · mark in a different colour · 1 mark each · both parts needed for the mark</p>
+  <h2>Mark your answers: questions 6–10</h2>
+  <div class="tbl-scroll" data-veil="Answer first — then show the answers"><table class="tbl compact u2l15-key">
+    <tr><th>Q</th><th>Question</th><th>A strong answer</th></tr>
+    <tr class="reveal"><td>6</td><td><span class="u2l15-dp g-his">dot point 5</span> zones of the terrace</td><td>Any three: <b>ceremonial and audience</b> (north): the Apadana, the Hall of a Hundred Columns, the Gate of All Nations · <b>royal residences</b> (south): the Tachara, the Hadish · <b>storage and administration</b> (south-east): the Treasury · <b>defence</b>: the walls and towers on the east.</td></tr>
+    <tr class="reveal"><td>7</td><td><span class="u2l15-dp g-his">dot point 6</span> design</td><td>For example: human-headed winged bulls (lamassu) on the east side of the Gate of All Nations, an <b>Assyrian</b> tradition · fluted columns and fine stone-working, by <b>Ionian</b> (Greek) and Lydian craftsmen · <b>Egyptian</b>-style cornices over doors and windows. Why: probably to present one empire, built by and ruling over many peoples, in a single deliberate court style.</td></tr>
+    <tr class="reveal"><td>8</td><td><span class="u2l15-dp g-his">dot point 7</span> displayed or exercised</td><td><b>Displayed:</b> how the king wanted his power to be seen, e.g. the throne-bearer reliefs, the Apadana delegations, or Darius’s inscriptions (DPd asks Ahuramazda to protect the land from invaders, famine and the Lie). <b>Exercised:</b> how it actually worked, e.g. the Fortification Tablets (rations for workers, officials and travellers) or the Treasury Tablets (payments, partly in silver).</td></tr>
+    <tr class="reveal"><td>9</td><td><span class="u2l15-dp g-his">dot point 8</span> the archaeology of the fire</td><td><b>Found:</b> scorched walls and floors and charred roof timbers in the Apadana, the Hall of a Hundred Columns and the Treasury, which had been emptied first (the excavators found mainly objects the looters had rejected or lost); the Hadish was badly destroyed, though no burnt layer is reported there, while parts of the Tripylon escaped the fire. <b>Cannot tell us:</b> who lit the fire, why, or whether anyone was drunk. The selective pattern is used to argue that it was planned, but that is an inference.</td></tr>
+    <tr class="reveal"><td>10</td><td><span class="u2l15-dp g-his">dot point 9</span> 1971</td><td>In October 1971 he held a celebration of <b>2,500 years of Persian monarchy</b> at Persepolis, with a tent city for foreign guests, presenting his reign as the culmination of the kingship begun by Cyrus the Great. Critics attacked its huge <b>cost</b> (contemporary press estimates put it at over US$100 million, though estimates differ) and its message.</td></tr>
+  </table></div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 15" data-title="Checkpoint: tally by dot point" data-kind="intro practice">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow">Checkpoint · 2 minutes · your score, dot point by dot point</p>
+  <h2>Tally your score by dot point</h2>
+  <div class="split" style="--cols:1.45fr 1fr">
+    <div class="tbl-scroll"><table class="tbl compact u2l15-tally">
+      <tr><th>Dot point</th><th>Questions</th><th>My score</th><th>If it is low, revise</th></tr>
+      <tr><td><span class="u2l15-dp g-ctx">1</span> the empire and its early capitals</td><td>1–2</td><td><span class="box"></span> / 2</td><td>Lessons 1–2</td></tr>
+      <tr><td><span class="u2l15-dp g-ctx">2</span> location</td><td>3</td><td><span class="box"></span> / 1</td><td>Lesson 3</td></tr>
+      <tr><td><span class="u2l15-dp g-sou">3</span> discovery and excavation</td><td>4</td><td><span class="box"></span> / 1</td><td>Lesson 4</td></tr>
+      <tr><td><span class="u2l15-dp g-sou">4</span> archaeological sources</td><td>5</td><td><span class="box"></span> / 1</td><td>Lessons 6–8</td></tr>
+      <tr><td><span class="u2l15-dp g-his">5</span> layout and features</td><td>6</td><td><span class="box"></span> / 1</td><td>Lesson 5</td></tr>
+      <tr><td><span class="u2l15-dp g-his">6</span> design and ornamentation</td><td>7</td><td><span class="box"></span> / 1</td><td>Lesson 9</td></tr>
+      <tr><td><span class="u2l15-dp g-his">7</span> a centre of Persian power</td><td>8</td><td><span class="box"></span> / 1</td><td>Lessons 10–11</td></tr>
+      <tr><td><span class="u2l15-dp g-his">8</span> the burning: Alexander’s role</td><td>9</td><td><span class="box"></span> / 1</td><td>Lessons 12–13</td></tr>
+      <tr><td><span class="u2l15-dp g-his">9</span> interpretations and representations</td><td>10</td><td><span class="box"></span> / 1</td><td>Lesson 14</td></tr>
+    </table></div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Class count</div><p class="body">When each dot point is called, hands up if you got full marks on it. Your teacher notes which dot points need revision before you move on.</p></div>
+      <div class="card quiet sm"><div class="k">Your revision list</div><p class="body">Circle every dot point where you lost a mark. Revise them first, using the quick checks at the end of those lessons in Read mode.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 15" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>bring together what we have learned about Persepolis</li>
+        <li>practise source analysis and interpretation under time conditions</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>answer retrieval questions on every dot point</li>
+        <li>write a timed OVPRL and a short interpretation response</li>
+        <li>name one thing to keep doing and one to fix in my timed writing</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u2l15-syl"><b>Syllabus outcomes:</b> AH-11-01 explains continuity and change in the ancient world · AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-08 uses sources to form conclusions about the past · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 15" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U2 L15 · Bringing it together</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = Before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Assess the servants relief as evidence of royal power.</div><div class="nts">reliable for … → not for …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">One checkpoint today, if time or at home: the timed practice. Today’s main writing is on lined paper, not notes.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 15" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow">Key vocabulary · the unit word wall · keep it beside you if you use the vocabulary list</p>
+  <h2>Words for today’s timed practice</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>For Part A · the relief</th><th>Meaning</th></tr>
+      <tr><td>Achaemenid</td><td>The royal family (and empire) descended, they claimed, from an ancestor called Achaemenes; it ruled Persia from Cyrus the Great to Darius III.</td></tr>
+      <tr><td>Relief</td><td>A carving that stands out from a flat stone background.</td></tr>
+      <tr><td>Court style</td><td>The deliberate royal style of Achaemenid art, combining traditions from across the empire into a single look.</td></tr>
+      <tr><td>Ideology</td><td>A set of ideas used to explain and justify power.</td></tr>
+      <tr><td>Polychromy</td><td>The use of many colours, as on the originally painted reliefs.</td></tr>
+      <tr><td>Ration</td><td>A fixed amount of food or drink given as payment or support.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>For Part B · the burning</th><th>Meaning</th></tr>
+      <tr><td>Gaugamela</td><td>The battle (331 BCE) in which Alexander defeated Darius III, opening the way to Persepolis.</td></tr>
+      <tr><td>Thaïs</td><td>An Athenian woman who, according to Diodorus, Curtius and Plutarch, urged the burning of the palace at a feast.</td></tr>
+      <tr><td>Premeditated</td><td>Planned in advance.</td></tr>
+      <tr><td>Vulgate tradition</td><td>The group of ancient Alexander histories (Diodorus, Curtius and others) thought to share a lost source, often identified as Cleitarchus.</td></tr>
+      <tr><td>Interpretation</td><td>A historian’s explanation or judgement about the past, based on evidence.</td></tr>
+      <tr><td>Representation</td><td>A depiction of the past (in art, writing, ceremony or buildings) shaped by its maker’s time and purpose.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Feedback in action" data-title="Feedback in action: rewrite one move" data-kind="practice">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow">1 · Feedback in action · 8 minutes · your Lesson 14 paragraph · use a second colour</p>
+  <h2>Rewrite the move your next step names</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">How</div>
+        <ol class="body">
+          <li>Read the strength and the next step on your paragraph.</li>
+          <li>Find the sentence the next step is about, and the matching point on the class checklist from Lesson 13.</li>
+          <li>Rewrite that sentence underneath, in a second colour.</li>
+          <li>In the margin, say what you changed: your thinking, your evidence or your language?</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">The test</div><p class="body">A rewrite is not a neater copy. It must change what the sentence does.</p></div>
+    </div>
+    <div class="card quiet u2l15-ba veil-parts" data-veil="Rewrite yours first — then show an example">
+      <div class="k">An example · written for this lesson</div>
+      <p class="body"><span class="lab">Next step</span>Evaluate: weigh a rival view instead of adding another example.</p>
+      <p class="body"><span class="lab">Before</span><span class="nq">The 1971 celebration also shows that Persepolis was important to the Shah.</span></p>
+      <p class="body vp reveal"><span class="lab">After</span><span class="nq">Yet the 1971 celebration, which presented the Shah’s reign as the culmination of Cyrus’s kingship, reveals more about its maker than about Persepolis, and its critics, who attacked its cost and its message, show that the same representation could be read against the man who made it.</span></p>
+      <p class="body vp reveal"><span class="lab">What changed</span>The sentence now weighs the Shah’s representation against his critics’ view (Evaluate), and a relating verb, <i>reveals</i>, says what the source does.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · You do: timed practice" data-title="You do: the paper and the reading time" data-kind="notes">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow">2 · You do · timed practice · reading time · 3 minutes · press K, click 3, then Start</p>
+  <h2>Your practice paper: two parts, 25 minutes</h2>
+  <div class="split" style="--cols:1fr 1.08fr">
+    <div class="stack">
+      <div class="card accent u2l15-part"><div class="k"><span>Part A · an unseen source</span><span>about 11 minutes</span></div>
+        <p class="u2l15-iq">How useful is the relief of servants from the Tachara for understanding Persepolis as a centre of Persian power?</p>
+        <p class="body">One OVPRL paragraph, in connected prose.</p></div>
+      <div class="card accent u2l15-part"><div class="k"><span>Part B · two ancient accounts</span><span>about 11 minutes</span></div>
+        <p class="u2l15-iq">To what extent do the accounts of Arrian and Plutarch suggest that the burning of Persepolis was a deliberate act?</p>
+        <p class="body">A short response: Judge → Evidence → Analyse → Evaluate → Resolve.</p></div>
+      <div class="card quiet sm"><div class="k">Conditions</div><p class="body">No notes: the paper only. Reading time: read, annotate and plan in the margin, but no sentences yet. Then 22 minutes of writing. Afterwards you mark both answers yourself, then with a partner.</p></div>
+    </div>
+    <div class="card quiet sm"><div class="k">Support · planning grids (fill them in during the reading time)</div>
+      <div class="tbl-scroll"><table class="tbl compact u2l15-grid">
+        <tr><th></th><th>Part A · ask</th><th>My evidence</th></tr>
+        <tr><td>O</td><td>Who made it, when, where, and for whom?</td><td></td></tr>
+        <tr><td>V</td><td>What does it show about royal power?</td><td></td></tr>
+        <tr><td>P</td><td>Why was it made, and who would see it?</td><td></td></tr>
+        <tr><td>R</td><td>Reliable for … but not for … because …</td><td></td></tr>
+        <tr><td>L</td><td>What can it not show?</td><td></td></tr>
+      </table></div>
+      <div class="tbl-scroll"><table class="tbl compact u2l15-grid">
+        <tr><th></th><th>Part B · ask</th><th>My evidence</th></tr>
+        <tr><td>J</td><td>My answer: how far was it deliberate?</td><td></td></tr>
+        <tr><td>E</td><td>One short quotation from Arrian, one from Plutarch</td><td></td></tr>
+        <tr><td>A</td><td>What does each show, and why does each writer tell it that way?</td><td></td></tr>
+        <tr><td>E</td><td>Which is more trustworthy? What can neither tell us?</td><td></td></tr>
+        <tr><td>R</td><td>My final, refined judgement</td><td></td></tr>
+      </table></div>
+      <p class="body">Use the vocabulary list and the OVPRL routine on page 2 of your booklet.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · You do: timed practice" data-title="You do: the unseen relief" data-kind="notes">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow">2 · You do · timed practice · Part A · the unseen source</p>
+  <h2>The unseen source: a relief from Persepolis</h2>
+  <div class="split" style="--cols:1.25fr 1fr">
+    <div class="u2l15-relief"><figure class="figure contain"><img src="images/u2l15-tachara-south-stair-servants.jpg" alt="Relief of servants carrying food and young animals up the south stairway of the Tachara, the palace of Darius I at Persepolis (5th century BCE)" loading="lazy"><figcaption>Relief of servants carrying food and young animals up the south stairway of the Tachara, the palace of Darius I at Persepolis (5th century BCE) — <span class="cr">Photo: Carole Raddato · CC BY-SA 2.0</span></figcaption></figure></div>
+    <div class="stack">
+      <ul class="u2l15-facts">
+        <li><b>What:</b> a stone relief of servants climbing a stairway, carrying food in bowls and covered dishes, and young animals</li>
+        <li><b>Where:</b> carved on the south stairway of the Tachara, the palace of Darius I, just south of the Apadana on the terrace at Persepolis; still in place</li>
+        <li><b>When:</b> 5th century BCE. The Tachara was begun by Darius I (r. 522–486 BCE) and completed after his death by his son Xerxes, whose inscription is carved on this stairway’s façade</li>
+        <li><b>Who made it:</b> sculptors working for the king; their names are not known</li>
+      </ul>
+      <div class="u2l15-stair"><figure class="figure contain"><img src="images/u2l15-tachara-south-stairway.jpg" alt="The south stairway of the Tachara: servants climb the stair wing (left); guards and a royal inscription line the façade (right)" loading="lazy"><figcaption>The south stairway of the Tachara: servants climb the stair wing (left); guards and a royal inscription line the façade (right) — <span class="cr">Photo: Carole Raddato · CC BY-SA 2.0</span></figcaption></figure></div>
+      <div class="card accent sm"><div class="k">Part A</div><p class="body">How useful is the relief of servants from the Tachara for understanding Persepolis as a centre of Persian power?</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · You do: timed practice" data-title="You do: Arrian and Plutarch" data-kind="notes">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow">2 · You do · timed practice · Part B · two ancient accounts</p>
+  <h2>Two ancient accounts of the burning: Arrian and Plutarch</h2>
+  <div class="cols c2">
+    <div class="src u2l15-ex">
+      <div class="k">Source · Arrian, <i>Anabasis of Alexander</i> 3.18</div>
+      <p class="quote sm">He burnt down the Persian palace, though Parmenio advised him to preserve it, for many reasons, and especially because it was not well to destroy what was now his own property, and because the men of Asia would not by this course of action be induced to come over to him, thinking that he himself had decided not to retain the rule of Asia, but only to conquer it and depart. But Alexander said that he wished to take vengeance on the Persians, in retaliation for their deeds in the invasion of Greece, when they razed Athens to the ground and burnt down the temples. … But Alexander does not seem to me to have acted on this occasion with prudence; nor do I think that this was any retributive penalty at all on the ancient Persians.</p>
+      <p class="prov">Arrian, <i>Anabasis of Alexander</i> 3.18 · written in the 2nd century CE, more than 450 years after the burning (330 BCE) · Arrian names Ptolemy and Aristobulus, who both served on Alexander’s expedition, as his main sources · trans. E. J. Chinnock (1884) · Parmenio = one of Alexander’s generals</p>
+    </div>
+    <div class="src u2l15-ex">
+      <div class="k">Source · Plutarch, <i>Life of Alexander</i> 38</div>
+      <p class="quote sm"><span class="ed">[38.1, after four months at Persepolis]</span> … he consented to take part in a merry drinking bout of his companions, at which women also came to meet their lovers and shared in their wine and revelry. The most famous among these women was Thaïs, an Athenian, the mistress of Ptolemy, who was afterwards king. … <span class="ed">[She said that]</span> it would be a still greater pleasure to go in revel rout and set fire to the house of the Xerxes who burned Athens, … in order that a tradition might prevail among men that the women in the train of Alexander inflicted a greater punishment upon the Persians in behalf of Hellas … As soon as she had thus spoken, tumultuous applause arose, and the companions of the king eagerly urged him on, so that he yielded to their desires, and leaping to his feet, with a garland on his head and a torch in his hand, led them the way. … This is the way the deed was done, according to some writers; but others say it was premeditated. However, it is agreed that Alexander speedily repented and gave orders to put out the fire.</p>
+      <p class="prov">Plutarch, <i>Life of Alexander</i> 38 · written about 100 CE, about 430 years after the burning · Plutarch was a biographer: “it is not Histories that I am writing, but Lives” (1.2) · trans. B. Perrin (Loeb, 1919) · [ ] = our words, not Plutarch’s</p>
+    </div>
+  </div>
+  <div class="card accent sm"><div class="k">Part B</div><p class="body">To what extent do the accounts of Arrian and Plutarch suggest that the burning of Persepolis was a deliberate act?</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · You do: timed practice" data-title="You do: write">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow">2 · You do · timed practice · writing · 22 minutes · press K, click 20, then Start · no notes</p>
+  <h2>Write: Part A, then Part B</h2>
+  <div class="split" style="--cols:1fr 1.05fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body">
+          <li><b>Part A:</b> How useful is the relief of servants from the Tachara for understanding Persepolis as a centre of Persian power? One OVPRL paragraph: Origin → Value → Purpose → Reliability → Limitations.</li>
+          <li><b>Part B:</b> To what extent do the accounts of Arrian and Plutarch suggest that the burning of Persepolis was a deliberate act? Judge → Evidence → Analyse → Evaluate → Resolve.</li>
+          <li>Short quotations or details as evidence; reliable for what?; end each answer with a decisive judgement.</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Extension</div>
+        <p class="body">In Part B, weigh one modern interpretation against Arrian and Plutarch. Use the extension sheet.</p></div>
+    </div>
+    <div class="card quiet"><div class="k">Your 22 minutes · watch the timer</div>
+      <ol class="u2l15-plan">
+        <li><span class="t">20:00 → 9:00</span><span><b>Part A.</b> Provenance phrase first; then value, purpose, reliable for … but not for …, a limitation.</span></li>
+        <li><span class="t">9:00 → 0:00</span><span><b>Part B.</b> Your judgement first; one short quotation from each source; weigh them.</span></li>
+        <li><span class="t">0:00 → −2:00</span><span><b>Two more minutes</b> (the timer flashes red and counts on past zero): finish Part B, then check that each last sentence answers its question.</span></li>
+      </ol></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · We do: check it against the exemplars" data-title="We do: the Part A exemplar" data-kind="notes">
+<div class="wrap u2l15-dense u2l15-wagoll">
+  <p class="eyebrow">3 · We do · Part A · the teacher’s exemplar · one press per checklist point · 3 minutes</p>
+  <h2>Part A: an exemplar, annotated against the OVPRL checklist</h2>
+  <div class="annot" data-veil="Write and check your own first — then show the exemplar and its notes">
+    <div class="ans long">
+      <span class="match" data-step="a1">Carved in stone during the 5th century BCE for the south stairway of the Tachara, the palace begun by Darius I and completed by his son Xerxes,</span><span class="mk u2l15-m1">1</span> this relief was the work of royal sculptors for the king’s own residence. Its value for understanding Persepolis as a centre of power lies in what it shows the king commanding: <span class="match" data-step="a2">a file of servants climbs the steps with bowls, covered dishes and young animals, probably carried up for the royal table</span><span class="mk u2l15-m2">2</span>. The relief <span class="match" data-step="a3">presents</span> the king’s household <span class="match" data-step="a3">as</span> a place of endless, orderly plenty; <span class="match" data-step="a3">this display of abundance, repeated figure after figure in the calm court style, was probably meant to impress the courtiers and guests who climbed these steps</span><span class="mk u2l15-m3">3</span>. <span class="match" data-step="a4">It is therefore reliable evidence of how the kings wished their power to be seen, but far less reliable for how that power worked, because</span><span class="mk u2l15-m4">4</span> it is an idealised image, with no names, quantities or events. <span class="match" data-step="a5">The Fortification Tablets, by contrast, record the rations paid to the workers, officials and travellers who kept the royal economy running.</span><span class="mk u2l15-m5">5</span> <span class="match" data-step="a5">The relief is most useful, then, as evidence of power displayed, not of power exercised.</span>
+      <span class="u2l15-meta">Written for this lesson · about 190 words · evidence from the relief and the unit’s lessons</span>
+    </div>
+    <div class="margin fold">
+      <p class="u2l15-head">The OVPRL checklist, point by point</p>
+      <div class="anote reveal u2l15-m1" data-hl="[data-step=a1]"><span class="mk">1</span><b>Provenance phrase</b><span class="tx">What, where and when in the opening clause, then who made it and for whom: the building and both kings, with no invented single date.</span></div>
+      <div class="anote reveal u2l15-m2" data-hl="[data-step=a2]"><span class="mk">2</span><b>Precise evidence for its value</b><span class="tx">Details you can point to in the photograph, tied to the question; ‘probably’ marks the part that is an inference.</span></div>
+      <div class="anote reveal u2l15-m3" data-hl="[data-step=a3]"><span class="mk">3</span><b>Purpose and perspective</b><span class="tx">‘Presents … as’ says what the relief does; the noun group <span class="nq">‘this display of abundance’</span> turns it into a judgement; then who would see it, hedged.</span></div>
+      <div class="anote reveal u2l15-m4" data-hl="[data-step=a4]"><span class="mk">4</span><b>Reliability for this question</b><span class="tx">Reliable for one thing, not another, with the reason: question-relative reliability, with modality (‘far less reliable’).</span></div>
+      <div class="anote reveal u2l15-m5" data-hl="[data-step=a5]"><span class="mk">5</span><b>A limitation, and a decisive end</b><span class="tx">Own knowledge from Lesson 11 shows what the relief leaves out; the last sentence answers the question, with no summary.</span></div>
+      <p class="u2l15-verdict reveal"><b>Now yours:</b> mark one place where your Part A does what the exemplar does, and one gap. Write its checklist number beside each.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · We do: check it against the exemplars" data-title="We do: the Part B exemplar" data-kind="notes">
+<div class="wrap u2l15-dense u2l15-wagoll">
+  <p class="eyebrow">3 · We do · Part B · the teacher’s exemplar · one press per move · 3 minutes</p>
+  <h2>Part B: an exemplar, annotated move by move</h2>
+  <div class="annot" data-veil="Write and check your own first — then show the exemplar and its notes">
+    <div class="ans long">
+      <span class="match" data-step="b1">Read together, the accounts of Arrian and Plutarch suggest that the burning of Persepolis was more probably a planned act than a sudden drunken impulse, even if it was carried out at a feast.</span><span class="mk u2l15-m1">1</span> <span class="match" data-step="b2">Arrian states plainly that Alexander “burnt down the Persian palace, though Parmenio advised him to preserve it”, and that Alexander “said that he wished to take vengeance on the Persians”</span><span class="mk u2l15-m2">2</span> for their invasion of Greece. <span class="match" data-step="b3">Since Arrian names Ptolemy and Aristobulus, who both served on the expedition, as his main sources, and since he criticises the act rather than excusing it, his account suggests a reasoned decision with a political message.</span><span class="mk u2l15-m3">3</span> <span class="match" data-step="b4">Plutarch, by contrast, sets the fire at “a merry drinking bout” where Thaïs stirs the companions; yet he writes biography, with an eye for character, and he reports that “others say it was premeditated”, without choosing between the versions. Neither writer was an eyewitness: both wrote more than four centuries later.</span><span class="mk u2l15-m4">4</span> <span class="match" data-step="b5">On balance, the two accounts point to a planned act of revenge, perhaps staged as a celebration, rather than a sudden drunken whim.</span><span class="mk u2l15-m5">5</span>
+      <span class="u2l15-meta">Written for this lesson · about 180 words · quotations from Arrian and Plutarch</span>
+    </div>
+    <div class="margin fold">
+      <p class="u2l15-head">The class checklist from Lesson 13, move by move</p>
+      <div class="anote reveal u2l15-m1" data-hl="[data-step=b1]"><span class="mk">1</span><b>Judge</b><span class="tx">A qualified answer to ‘to what extent’ in the first sentence: ‘more probably … even if …’.</span></div>
+      <div class="anote reveal u2l15-m2" data-hl="[data-step=b2]"><span class="mk">2</span><b>Evidence</b><span class="tx">Two short quotations, built into the sentence, with the writer named.</span></div>
+      <div class="anote reveal u2l15-m3" data-hl="[data-step=b3]"><span class="mk">3</span><b>Analyse</b><span class="tx">What the evidence shows, and why it deserves weight: Arrian’s sources and his own attitude.</span></div>
+      <div class="anote reveal u2l15-m4" data-hl="[data-step=b4]"><span class="mk">4</span><b>Evaluate</b><span class="tx">The rival version weighed, not just retold: Plutarch’s purpose and the other version he reports; then a limit both sources share.</span></div>
+      <div class="anote reveal u2l15-m5" data-hl="[data-step=b5]"><span class="mk">5</span><b>Resolve</b><span class="tx">A refined judgement with controlled modality (‘on balance’, ‘perhaps’): it answers the question and keeps the hedge.</span></div>
+      <p class="u2l15-verdict reveal"><b>Now yours:</b> mark one place where your Part B does what the exemplar does, and one gap. Name the move beside each.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · We do: check it against the exemplars" data-title="We do: warm and cool">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow">3 · We do · swap with a partner · 2 minutes</p>
+  <h2>One warm comment, one cool comment</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack u2l15-wc">
+      <div class="card accent"><div class="k">Warm: a strength, with its checklist number or move</div>
+        <p class="body nq">“Point … works because your sentence …”</p></div>
+      <div class="card quiet"><div class="k">Cool: a next step, as a suggestion</div>
+        <p class="body nq">“Next time, try … so that …”</p></div>
+      <p class="small">Write one of each in the margin of your partner’s answers, on either part, and sign your name. Comment on the analysis, not the handwriting.</p>
+    </div>
+    <div class="stack" data-veil="Write yours first — then show two examples">
+      <div class="note reveal" data-code="evidence"><div class="k">A warm comment · an example</div><p class="body nq">Point 4 works because you say the relief is reliable for how the king wanted his household to be seen, not for what the servants’ lives were like.</p></div>
+      <div class="note reveal" data-code="counter"><div class="k">A cool comment · an example</div><p class="body nq">Next time, try starting Part B with your judgement instead of retelling Plutarch’s story, so that your first sentence answers the question.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · We do: check it against the exemplars" data-title="Extension sheet: modern interpretations" data-kind="notes">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow">Extension sheet · for Part B · print it · two modern interpretations of the burning</p>
+  <h2>Weigh a modern interpretation against Arrian and Plutarch</h2>
+  <div class="cols c2">
+    <div class="src">
+      <div class="k">Interpretation 1 · Pierre Briant</div>
+      <p class="quote sm">The burning of the palaces was a signal to the Persians that their days of imperial glory were over, unless they came over to the side of the conqueror</p>
+      <p class="prov">Pierre Briant, a French historian of the Persian Empire, <i>Alexander the Great and His Empire</i> (2010), trans. A. Kuhrt, p. 111, as quoted by C. San José Campos, <i>Karanos</i> 4 (2021)</p>
+    </div>
+    <div class="src">
+      <div class="k">Interpretation 2 · Ali Ansari</div>
+      <p class="quote sm">But seen through Persian eyes, Alexander is far from “Great”. He razed Persepolis to the ground following a night of drunken excess at the goading of a Greek courtesan, ostensibly in revenge for the burning of the Acropolis by the Persian ruler Xerxes.</p>
+      <p class="prov">Ali Ansari, Institute of Iranian Studies, University of St Andrews, “Alexander the not so Great: History through Persian eyes”, <i>BBC News</i>, 15 July 2012 · written for a general audience</p>
+    </div>
+  </div>
+  <div class="card accent"><div class="k">The extension</div>
+    <p class="body">In Part B’s Evaluate move, weigh one of these interpretations. Which of the two ancient accounts does it follow? Does it support or challenge your judgement? How far can you trust it, given who wrote it, for whom and why?</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · We do: check it against the exemplars" data-title="Extension: a model Evaluate move" data-kind="notes">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow">Extension · HPGE · a model Evaluate move with a modern interpretation · after the writing, or at home</p>
+  <h2>Weighing a modern interpretation</h2>
+  <div class="card accent"><div class="k">The extension</div><p class="body">In Part B, weigh one modern interpretation against the accounts of Arrian and Plutarch: does it support or challenge your judgement?</p></div>
+  <div class="src reveal" data-veil="Write yours first — then show a model"><div class="k">A model · written for this lesson</div>
+    <p class="quote sm model">Modern historians divide along the same line as the ancient writers. Pierre Briant reads the fire as “a signal to the Persians that their days of imperial glory were over, unless they came over to the side of the conqueror”: a deliberate message that fits Arrian, although it reverses Parmenio’s warning that the act would not bring “the men of Asia” over to Alexander. Ali Ansari, writing for a general BBC audience in 2012, instead follows the tradition that Persepolis was razed “following a night of drunken excess at the goading of a Greek courtesan”, the version Plutarch tells, and treats revenge as only a pretext (“ostensibly in revenge”). Ansari’s purpose, to show Alexander through Persian eyes, explains his stress on what was lost, but it does not make the drunken version more reliable. On balance, Briant’s reading fits the stronger ancient evidence, Arrian’s, and so strengthens the judgement that the burning was deliberate, while Ansari is a reminder of why the loss still matters to many Iranians.</p></div>
+  <p class="small">The moves to look for: each interpretation’s author, audience and purpose · tested against Arrian and Plutarch, quotation by quotation · where they disagree · a judgement that keeps the hedge.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · We do: check it against the exemplars" data-title="Notes — the timed practice" data-kind="notes">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint <span class="optional">If time · or at home</span></p>
+  <h2>The timed practice: what to remember</h2>
+  <p class="cue">Write your own notes first. Then compare, row by row, and add what you missed in a second colour.</p>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L15 · Bringing it together</b></span><span>timed practice</span></div>
+    <div class="row"><div class="cq">Assess the servants relief as evidence of royal power.</div>
+      <div class="nts reveal">south stairway of the Tachara, 5th c. BCE (begun by Darius I, completed by Xerxes) <span class="sep">·</span> servants with food + young animals, probably for the king’s table <span class="sep">·</span> power displayed: order + plenty <span class="sep">·</span> reliable for the royal image → not for how power worked (no names, amounts) <span class="sep">·</span> compare Fortification Tablets</div></div>
+    <div class="row"><div class="cq">Explain how Arrian and Plutarch differ on the burning.</div>
+      <div class="nts reveal">Arrian: deliberate, against Parmenio’s advice; Alexander said vengeance for the invasion of Greece; Arrian criticises it <span class="sep">·</span> Plutarch: drinking bout, Thaïs, companions urge him on <span class="sep">·</span> but “others say it was premeditated”; Alexander soon repented</div></div>
+    <div class="row"><div class="cq">Evaluate how far the two accounts can be trusted.</div>
+      <div class="nts reveal">both 400+ years later, from earlier accounts <span class="sep">·</span> Arrian names Ptolemy + Aristobulus (on the expedition) as main sources <span class="sep">·</span> Plutarch: biography → character <span class="sep">·</span> neither an eyewitness → weigh with archaeology (ash; Treasury emptied first)</div></div>
+    <div class="row"><div class="cq">My next steps in timed writing.</div>
+      <div class="nts reveal">one to keep + one to fix, from the checklists and my partner’s cool comment <span class="sep">·</span> e.g. keep: provenance phrase first <span class="sep">·</span> fix: judge in Part B’s first sentence</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · We do: check it against the exemplars" data-title="Summary" data-kind="notes">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What is the servants relief reliable for, and what is it not reliable for?</li>
+          <li>How do Arrian and Plutarch differ about the burning, and which is more convincing?</li>
+          <li>What will you keep doing, and what will you fix, in timed writing?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">The servant relief from the Tachara’s south stairway is reliable evidence of how the Achaemenid kings wished their household and power to be seen, but not of how that power actually worked, which the Fortification Tablets reveal far better. Arrian presents the burning as deliberate revenge against Parmenio’s advice, while Plutarch tells of a drunken feast but also reports that others thought it premeditated, so Arrian’s version, which probably draws on two men who served on the expedition, is the more convincing. In timed writing I will keep opening with a provenance phrase, and fix my Part B by stating my judgement in the first sentence.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Checkpoint: my tally by dot point</label></li>
+        <li><label><input type="checkbox"> My revision list, circled</label></li>
+        <li><label><input type="checkbox"> My rewritten Lesson 14 sentence</label></li>
+        <li><label><input type="checkbox"> Part A and Part B, timed</label></li>
+        <li><label><input type="checkbox"> One match and one gap for each part</label></li>
+        <li><label><input type="checkbox"> My partner’s warm and cool comments</label></li>
+        <li><label><input type="checkbox"> My plan for timed writing</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 3 minutes · before you leave</p>
+  <h2>Your plan for timed writing</h2>
+  <div class="card accent"><div class="k">Finish it</div><p class="lead nq">“My plan for timed writing: one thing to keep doing is … and one thing to fix is …, because …”</p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">A point from one of the two checklists for each (not ‘write better’) · the evidence for it, from today’s exemplars, your self-assessment or your partner’s cool comment · and why it matters for answering the question. For example: <span class="nq">I will keep opening Part A with a provenance phrase, and fix Part B by giving my judgement in the first sentence, because today I only answered the question in my last line.</span></p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements, and ask any questions you have about upcoming assessment.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u2l15-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>The relief of servants in today’s practice was carved on the staircase that Artaxerxes III added to the Tachara.</span>
+      <span class="sol no reveal">False <span class="why">— Artaxerxes III added a western staircase in the 4th century BCE; the relief is on the south stairway, from the 5th century BCE.</span></span></li>
+    <li><span class="n">2</span><span>According to Arrian, Parmenio advised Alexander to burn the palace.</span>
+      <span class="sol no reveal">False <span class="why">— Parmenio advised him to preserve it: it was now Alexander’s own property, and burning it would not win over the people of Asia.</span></span></li>
+    <li><span class="n">3</span><span>Plutarch says it is certain that the palace was burned during a drinking party.</span>
+      <span class="sol no reveal">False <span class="why">— he tells that story, but adds that “others say it was premeditated”.</span></span></li>
+    <li><span class="n">4</span><span>Arrian and Plutarch both saw the burning for themselves.</span>
+      <span class="sol no reveal">False <span class="why">— both wrote more than four centuries later, using earlier accounts.</span></span></li>
+    <li><span class="n">5</span><span>A royal relief can be reliable evidence even though it shows an ideal.</span>
+      <span class="sol reveal">True <span class="why">— reliable for how the king wanted his power to be seen, though not for how that power worked.</span></span></li>
+    <li><span class="n">6</span><span>Only fragments of glazed brick have been found at Persepolis.</span>
+      <span class="sol reveal">True <span class="why">— a frieze of palmettes and two bricks with circular bands; the best-preserved panels come from Susa.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — sharpen the analysis" data-kind="practice">
+<div class="wrap prac u2l15-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Sharpen the analysis</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · Rewrite a weak sentence</div><p class="body">Improve: <span class="nq">“Arrian is biased because he likes Alexander.”</span> Say what Arrian’s account is reliable for.</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Arrian does not simply praise Alexander: he openly criticises the burning, and he names two men who served on the expedition as his main sources, so his account is reliable for the tradition that Alexander chose to burn the palace, though not for what Alexander privately intended.</p></div>
+      <div class="card accent"><div class="k">Exercise 2 · Reliable for a different question</div><p class="body">How useful is the relief of servants from the Tachara for understanding the daily lives of servants at Persepolis?</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">For the servants’ daily lives the relief is of limited use: it shows what they carried and how they dressed, but as an idealised royal image it names no one and says nothing of their pay or rations, which the Fortification Tablets record for workers far better.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Exercise 3 · Extension</div><p class="body">Compare the relief of servants with the Apadana delegation reliefs as evidence of how the kings presented their power.</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">Both reliefs show people climbing towards the king with something to give, but on very different scales. On the Apadana, 23 delegations bring gifts from across the empire, while on the Tachara’s south stairway servants carry food, probably for the royal table. Read together, they suggest that the kings presented their power as order and plenty flowing towards them, from the whole empire and from their own palace; neither, however, can show how willingly anything was given, because both were made for the king.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u2l15-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>What is the practice relief, and where and when was it carved?
+      <span class="sol reveal">A relief of servants carrying food and young animals, on the south stairway of the Tachara (the palace begun by Darius I and completed by Xerxes) at Persepolis, in the 5th century BCE.</span></li>
+    <li>Assess the relief’s reliability as evidence of Persepolis as a centre of power.
+      <span class="sol reveal">Reliable for how the kings wanted their household and power to be seen (order and plenty); not for how that power worked: no names, amounts or events (the Fortification Tablets show that).</span></li>
+    <li>How does Arrian explain the burning?
+      <span class="sol reveal">As a deliberate act, carried out against Parmenio’s advice; Alexander said he wished to take vengeance for the Persian invasion of Greece, and Arrian himself thinks it was unwise.</span></li>
+    <li>How does Plutarch tell it, and what other version does he report?
+      <span class="sol reveal">At a drinking bout, the Athenian Thaïs urges the burning and the companions urge Alexander on; but Plutarch adds that others say it was premeditated, and that Alexander soon repented.</span></li>
+    <li>Why must both accounts be used with care?
+      <span class="sol reveal">Both were written more than four centuries later, from earlier accounts; Plutarch wrote biography, focused on character; Arrian names two men who served on the expedition as his main sources.</span></li>
+    <li>Name the five moves of the interpretation paragraph.
+      <span class="sol reveal">Judge (a qualified answer) · Evidence (precise, built into the sentence) · Analyse (what it shows, and how) · Evaluate (reliability, limits or a rival view) · Resolve (a refined judgement).</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u2l15-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u2l15-cite"><div class="k">Written sources</div>
+      <p class="small">Arrian, <i>Anabasis of Alexander</i>, Preface and 3.18, trans. E. J. Chinnock (London, 1884; public domain), checked at <a href="https://archive.org/details/theanabasisofale46976gut">Project Gutenberg #46976</a> (archive.org). Plutarch, <i>Life of Alexander</i> 1.2, 37.6 and 38, trans. B. Perrin, Loeb Classical Library, Vol. VII (1919; public domain), checked at LacusCurtius (<a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Alexander*/3.html">ch. 1</a>; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Alexander*/5.html">chs. 37–38</a>).</p>
+      <p class="small">P. Briant, <i>Alexander the Great and His Empire: A Short Introduction</i>, trans. A. Kuhrt (Princeton, 2010), p. 111, as quoted by C. San José Campos, “Alexander the Great in Persepolis”, <a href="https://ddd.uab.cat/pub/karanos/karanos_a2021v4/karanos_a2021v4p13.pdf"><i>Karanos</i> 4 (2021)</a>, p. 25. A. Ansari, “<a href="https://www.bbc.co.uk/news/magazine-18803290">Alexander the not so Great: History through Persian eyes</a>”, <i>BBC News</i>, 15 July 2012.</p>
+      <p class="small">Facts: ISAC (University of Chicago), Photographic Archives, “<a href="https://web.archive.org/web/20241202182519/https://isac.uchicago.edu/collections/photographic-archives/persepolis/palace-darius">The Palace of Darius</a>” and “<a href="https://web.archive.org/web/20231011161414/https://isac.uchicago.edu/collections/photographic-archives/persepolis/contents-treasury-and-other-discoveries">Contents of the Treasury</a>” (Internet Archive copies); Livius.org, “<a href="https://www.livius.org/articles/place/persepolis/persepolis-photos/persepolis-palace-of-darius/">Persepolis, Palace of Darius</a>”; <i>Encyclopaedia Iranica</i>: P. Calmeyer, “<a href="https://www.iranicaonline.org/articles/art-in-iran-iii-achemenian/">Art in Iran iii</a>”, and O. W. Muscarella, “<a href="https://www.iranicaonline.org/articles/achaemenid-glazed-brick-decoration/">Achaemenid glazed brick decoration</a>”; A. T. Samuel, “<a href="https://origins.osu.edu/read/party-persepolis">The Party at Persepolis</a>”, <i>Origins</i> (Ohio State University, 2026). Checkpoint answers: Lessons 1–14 of this unit and their sources, including Herodotus 3.89 in A. D. Godley’s translation as revised by the Perseus Digital Library (CC BY-SA 3.0 US). These short extracts (Briant, Ansari, ISAC, Livius.org, <i>Encyclopaedia Iranica</i> and <i>Origins</i>) are quoted briefly, with citations, for teaching and criticism.</p>
+      <p class="small">The exemplars, the models, the extension paragraph and the summary were written for this lesson.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus and program</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p>
+        <p class="small">Teacher resources: <i>Decline and Alexander</i> and <i>The Destruction of Persepolis: Accident or Intent?</i> presentations (class notebook).</p></div>
+      <div class="card quiet u2l15-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>Columns on the terrace at Persepolis</b> · Photo: Forough.Parhoudeh · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis_2_-_FP.jpg">source</a></li><li><b>Servants on the south stairway of the Tachara, Persepolis</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Relief_on_the_southern_staircase_of_the_Palace_of_Darius_depicting_servants_bearing_food,_Persepolis,_Iran_(46947461275).jpg">source</a></li><li><b>The south stairway of the Tachara, Persepolis</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:The_southern_staircase_of_the_Palace_of_Darius_with_reliefs_depicting_servants_coming_up_the_steps_carrying_animals_and_food_in_covered_dishes_to_be_served_at_the_king%E2%80%99s_tables,_Persepolis,_Iran_(47863635901).jpg">source</a></li></ul>
+        <p class="small">All images are openly licensed, and were resized for the web (the relief was also cropped). Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

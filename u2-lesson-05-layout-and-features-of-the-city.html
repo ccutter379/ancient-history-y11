@@ -1,0 +1,1949 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U2 L5 · The layout and features of the city</title>
+<meta name="description" content="Year 11 Ancient History, case study Persepolis: a visitor’s walk across the terrace from the great double stairway and the Gate of All Nations to the audience halls, palaces and Treasury, the zones of the plan, and what a name like ‘Harem’ or a modern reconstruction can and cannot tell us.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#0F5E5A; --bright:#1A8A84; --tint:#E1F2F0; --statement:#0F5E5A;
+  --solid:#0F5E5A; --soft:#CBEDE9; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; } }
+:root[data-theme="dark"]{ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 2 Lesson 5 only (every class starts u2l05-) */
+
+/* the terrace plans (inline SVG from make_u2l05_diagrams.py; colours from the page, so they follow the theme) */
+.u2l05-planfig{margin:0;}
+.u2l05-planfig svg{display:block; width:100%; height:auto; max-height:calc(100vh - 250px);}
+.u2l05-planfig figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.35em; line-height:1.3;}
+.u2l05-plan text{font-family:var(--ui); fill:var(--ink);}
+.u2l05-plan .u2l05-plain{fill:var(--surface-2);}
+.u2l05-plan .u2l05-mtn{fill:var(--w-keyterm); stroke:none; opacity:.85;}
+.u2l05-plan .u2l05-terrace{fill:var(--surface); stroke:var(--slate); stroke-width:4; stroke-linejoin:round;}
+.u2l05-plan .u2l05-b{fill:var(--surface-2); stroke:var(--ink); stroke-width:3; stroke-linejoin:round;}
+.u2l05-plan .u2l05-b.minor{fill:none; stroke:var(--slate); stroke-width:2; stroke-dasharray:7 6;}
+.u2l05-plan .u2l05-steps{fill:none; stroke:var(--slate); stroke-width:3; stroke-dasharray:3 5;}
+.u2l05-plan .u2l05-wall{fill:none; stroke:var(--ink); stroke-width:8; stroke-linejoin:round;}
+.u2l05-plan .u2l05-tower{fill:var(--ink);}
+.u2l05-plan .u2l05-outer{fill:none; stroke:var(--slate); stroke-width:4; stroke-dasharray:14 9;}
+.u2l05-plan .u2l05-tomb{fill:var(--slate);}
+.u2l05-plan .u2l05-ctx{fill:var(--slate); font-size:28px; font-style:italic; text-anchor:middle;}
+.u2l05-plan .u2l05-ctx.sm{font-size:22px;}
+.u2l05-plan .u2l05-ctx.u2l05-start{text-anchor:start;}
+.u2l05-plan .u2l05-north path{fill:var(--ink);}
+.u2l05-plan .u2l05-north text{font-size:30px; font-weight:700; text-anchor:middle;}
+.u2l05-plan .u2l05-badge circle{fill:var(--solid); stroke:var(--surface); stroke-width:3;}
+.u2l05-plan .u2l05-badge text{fill:#fff; font-size:26px; font-weight:700; text-anchor:middle;}
+.u2l05-plan .u2l05-badge.sm circle{opacity:.92;}
+/* the walk */
+.u2l05-plan .u2l05-hl{fill:var(--w-judgement); stroke:var(--c-judgement); stroke-width:6;}
+.u2l05-plan .u2l05-hl.old{fill:var(--surface-2); stroke:var(--slate); stroke-width:3;}
+.u2l05-plan .u2l05-route{fill:none; stroke:var(--c-judgement); stroke-width:8; stroke-linecap:round; stroke-linejoin:round;}
+.u2l05-plan .u2l05-route.old{stroke:var(--slate); stroke-width:5; stroke-dasharray:4 9;}
+.u2l05-plan .u2l05-arrowhead{fill:var(--c-judgement);}
+.u2l05-plan .u2l05-arrowhead.old{fill:var(--slate);}
+.u2l05-plan .u2l05-stop{font-size:36px; font-weight:700; text-anchor:middle; paint-order:stroke; stroke:var(--surface);
+  stroke-width:8px; stroke-linejoin:round;}
+.u2l05-plan .u2l05-stop.old{fill:var(--slate); font-weight:600;}
+/* zones (colours match the zone key) */
+.u2l05-plan .z-cer{fill:var(--w-directive); stroke:var(--c-directive); stroke-width:5;}
+.u2l05-plan .z-res{fill:var(--w-counter); stroke:var(--c-counter); stroke-width:5;}
+.u2l05-plan .z-sto{fill:var(--w-keyterm); stroke:var(--c-keyterm); stroke-width:5;}
+.u2l05-plan .z-harem{fill:url(#u2l05-hatch); stroke:var(--slate); stroke-width:4; stroke-dasharray:10 6;}
+.u2l05-plan .u2l05-hatch-a{fill:var(--w-counter);} .u2l05-plan .u2l05-hatch-b{fill:var(--w-keyterm);}
+.u2l05-plan .u2l05-wall.z-def, .u2l05-plan .u2l05-outer.z-def{stroke:var(--c-judgement);}
+.u2l05-plan .u2l05-tower.z-def{fill:var(--c-judgement);}
+
+/* zone key */
+.u2l05-key{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.45em;}
+.u2l05-key li{display:grid; grid-template-columns:1.5em 1fr; gap:.6em; align-items:start;
+  font-size:calc(var(--fs-body)*.86); line-height:1.35;}
+.u2l05-sw{width:1.3em; height:1.3em; border-radius:4px; margin-top:.1em; border:3px solid;}
+.u2l05-sw.cer{background:var(--w-directive); border-color:var(--c-directive);}
+.u2l05-sw.res{background:var(--w-counter); border-color:var(--c-counter);}
+.u2l05-sw.sto{background:var(--w-keyterm); border-color:var(--c-keyterm);}
+.u2l05-sw.def{background:var(--surface); border-color:var(--c-judgement);}
+.u2l05-sw.har{background:repeating-linear-gradient(45deg,var(--w-counter) 0 5px,var(--w-keyterm) 5px 10px);
+  border-color:var(--slate); border-style:dashed;}
+.u2l05-key b{color:var(--ink);}
+.u2l05-key .u2l05-which{display:block; color:var(--slate); font-size:.95em;}
+
+/* the walk: two stop cards beside the plan */
+.u2l05-stops{display:flex; flex-direction:column; gap:clamp(8px,1.4vh,16px);}
+.u2l05-stopcard{display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.25fr); gap:.9em; align-items:start;
+  background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--c-judgement);
+  border-radius:10px; padding:.6em .8em; box-shadow:var(--shadow);}
+.u2l05-stopcard figure{margin:0;}
+.u2l05-stopcard img{display:block; width:100%; height:19vh; object-fit:cover; border-radius:8px;}
+.u2l05-stopcard .t{font-family:var(--disp); font-weight:700; font-size:calc(var(--fs-body)*1.02); color:var(--deep);
+  margin:0 0 .2em;}
+.u2l05-stopcard p{margin:.15em 0; font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+.u2l05-stopcard .lab{font-weight:700; color:var(--c-judgement);}
+.u2l05-stopcard .lab.saw{color:var(--deep);}
+
+/* facts list */
+.u2l05-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.35em;
+  font-size:calc(var(--fs-body)*.88); line-height:1.38;}
+.u2l05-facts b{color:var(--deep);}
+
+/* two pictures side by side with captions */
+.u2l05-pair{display:grid; grid-template-columns:1fr 1fr; gap:clamp(10px,1.4vw,22px);}
+.u2l05-pair .figure img{height:30vh; max-height:none; object-fit:cover;}
+.u2l05-pair .figure figcaption{font-size:calc(var(--fs-chrome)*.92);}
+
+/* the label table beside the blank plan */
+.u2l05-labels td:first-child{font-weight:700; width:2.2em; text-align:center; color:var(--deep);}
+.u2l05-labels td:nth-child(2){font-weight:700; white-space:nowrap;}
+
+/* the labelling slide: a smaller word bank and a tight answer table */
+.bank.u2l05-sm span{font-size:calc(var(--fs-body)*.72); padding:.08em .6em;}
+html:not(.read) .u2l05-dense .u2l05-labels{font-size:calc(var(--fs-body)*.7);}
+html:not(.read) .u2l05-dense .u2l05-labels td{padding:.18em .5em;}
+html:not(.read) .u2l05-dense .u2l05-labels th{padding:.26em .5em;}
+
+/* spatial language bank and sentence pair */
+.u2l05-bank span{font-style:italic;}
+.u2l05-sent{display:grid; grid-template-columns:2.2em 1fr; gap:.6em; align-items:start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface); font-size:calc(var(--fs-body)*.88);
+  line-height:1.42;}
+.u2l05-sent .l{display:grid; place-items:center; width:1.8em; height:1.8em; border-radius:50%; background:var(--solid);
+  color:#fff; font-weight:700;}
+.u2l05-model .sp{text-decoration:underline; text-decoration-color:var(--c-directive); text-decoration-thickness:2px;
+  text-underline-offset:3px;}
+
+/* credits */
+.u2l05-cite a{color:var(--deep);}
+.u2l05-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+
+/* phones (Read mode): one column, natural picture heights, plans can scroll sideways */
+@media (max-width:900px){
+  .u2l05-stopcard{grid-template-columns:1fr;}
+  .u2l05-stopcard img{height:auto; aspect-ratio:4/3;}
+  .u2l05-pair{grid-template-columns:1fr;}
+  .u2l05-pair .figure img{height:auto; aspect-ratio:3/2;}
+  .u2l05-planfig svg{max-height:none;}
+  .u2l05-labels td:nth-child(2){white-space:normal;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u2l05-dense{gap:10px;}
+  html:not(.read) .u2l05-dense h2{font-size:calc(var(--fs-h2)*.86);}
+  html:not(.read) .u2l05-dense .quote.sm{font-size:calc(var(--fs-body)*.76); line-height:1.4;}
+  html:not(.read) .u2l05-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u2l05-dense .src{padding:10px 16px;}
+  html:not(.read) .u2l05-dense .src .prov{margin-top:.4em;}
+  html:not(.read) .u2l05-dense .note{padding:.45em .85em;}
+  html:not(.read) .u2l05-dense .note .body, html:not(.read) .u2l05-dense .card .body,
+  html:not(.read) .u2l05-dense .qprompt{font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+  html:not(.read) .u2l05-dense .card{padding:10px 16px;}
+  html:not(.read) .u2l05-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l05-dense .tbl.compact td{padding:.28em .55em;}
+  html:not(.read) .u2l05-dense .tbl th{padding:.36em .6em;}
+  html:not(.read) .u2l05-dense .figure img{max-height:30vh;}
+  html:not(.read) .u2l05-dense .u2l05-bigfig .figure img{max-height:50vh;}
+  html:not(.read) .u2l05-dense .u2l05-planfig svg{max-height:calc(100vh - 230px);}
+  html:not(.read) .u2l05-dense .u2l05-stopcard img{height:17vh;}
+  html:not(.read) .u2l05-dense .u2l05-stopcard p{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l05-dense .u2l05-tight .u2l05-stopcard{grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr); padding:.45em .7em;}
+  html:not(.read) .u2l05-dense .u2l05-tight .u2l05-stopcard img{height:14vh;}
+  html:not(.read) .u2l05-dense .u2l05-tight .u2l05-stopcard p{font-size:calc(var(--fs-body)*.7); line-height:1.3;}
+  html:not(.read) .u2l05-dense .u2l05-facts{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u2l05-dense .u2l05-key li{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u2l05-dense .u2l05-pair .figure img{height:26vh;}
+  html:not(.read) .u2l05-dense .u2l05-sent{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u2l05-dense .mq{font-size:calc(var(--fs-body)*.78); line-height:1.35;}
+  html:not(.read) .u2l05-dense .tf li, html:not(.read) .u2l05-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l05-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u2l05-dense .prac{gap:6px;}
+  html:not(.read) .u2l05-dense .opts li{padding:.4em .8em; font-size:calc(var(--fs-body)*.86);}
+  html:not(.read) .u2l05-credpage h2{font-size:calc(var(--fs-h2)*.72);}
+  html:not(.read) .u2l05-credpage .card{padding:8px 14px;}
+  html:not(.read) .u2l05-credpage .small{font-size:calc(var(--fs-chrome)*.8); line-height:1.3; margin:.15em 0;}
+  html:not(.read) .u2l05-credpage .card .k{margin-bottom:.25em;}
+  html:not(.read) .u2l05-credpage .credits li{margin:.04em 0;}
+  html:not(.read) .u2l05-dense .cornell .cq, html:not(.read) .u2l05-dense .cornell .nts{font-size:calc(var(--fs-body)*.74); padding:.32em .8em;}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 5" data-title="The layout and features of the city" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1fr 1.2fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 2 · Persepolis · Lesson 5</p>
+      <h1>The layout and features of the city</h1>
+      <p class="lead">How did the plan of the terrace put the power of the Persian king on show?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <figure class="figure contain"><img src="images/u2l05-persepolis-terrace-from-kuh-e-rahmat.jpg" alt="The terrace of Persepolis from the slopes of Kuh-e Rahmat, looking out over the Marv Dasht plain. The long roofed building is part of the so-called ‘Harem’, rebuilt in the 1930s and now the site museum" loading="lazy"><figcaption>The terrace of Persepolis from the slopes of Kuh-e Rahmat, looking out over the Marv Dasht plain. The long roofed building is part of the so-called ‘Harem’, rebuilt in the 1930s and now the site museum — <span class="cr">Photo: Carole Raddato · CC BY-SA 2.0</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Review: Lessons 1–4" data-kind="intro practice">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <h2>Five questions from Lessons 1–4</h2>
+  <ol class="rq" data-answers>
+    <li>Why does it matter that Persepolis was built in Fars (Pārsa)?
+      <span class="sol reveal">Fars was the homeland of the Persians and of the Achaemenid royal family, so the new capital tied the king’s power to his own people’s land (Cyrus’s capital, Pasargadae, was nearby too).</span></li>
+    <li>In his inscription on the terrace wall (DPf), what does Darius claim?
+      <span class="sol reveal">That by the grace of Ahuramazda he built a palace on this terrace, “on a place where no palace had been built before” (DPf, Livius translation). It is the king’s own claim about his own work.</span></li>
+    <li>Cornelis de Bruijn’s drawings of the ruins: when were they made, and what are they reliable for?
+      <span class="sol reveal">Drawn on his visit in 1704–05 and published in 1711. Reliable for what the ruins looked like about 1704; less reliable for details he could not see or chose to restore.</span></li>
+    <li>Name one thing found or done by Herzfeld’s expedition and one by Schmidt’s.
+      <span class="sol reveal">Herzfeld (1931–34): uncovered the Apadana’s eastern stairway; his team found the gold and silver foundation tablets (found by his architect Krefter) and the Fortification Tablets, both in 1933. Schmidt (1935–39): excavated the Treasury; took aerial photographs; published <i>Persepolis</i> I–III.</span></li>
+    <li>Give one continuity from Pasargadae to Persepolis.
+      <span class="sol reveal">Columned halls; or guardian figures at a gateway (Gate R at Pasargadae; the great bulls of the Gate of All Nations at Persepolis, which you meet today).</span></li>
+  </ol>
+  <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>Understand the layout and main features of Persepolis</li>
+        <li>Analyse how the layout expressed royal power</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>label the main buildings and zones of the terrace</li>
+        <li>explain the purpose of three features</li>
+        <li>use three features as evidence in a paragraph about royal power</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u2l05-syl"><b>Syllabus outcomes:</b> AH-11-03 explains the role and significance of forces, features, events, individuals and groups in shaping the past · AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-05 describes features of places or societies in the ancient world · AH-LS-06 investigates people, events or developments of the ancient world.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U2 L5 · The layout and features of the city</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = Before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Explain how the stairway shaped a visit.</div><div class="nts">very low steps → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: the terrace and the walk · zones and interpretations. Your labelled plan goes beside your notes.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for reading a site plan</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>The site</th><th>Meaning</th></tr>
+      <tr><td>Terrace</td><td>The huge raised platform on which the buildings of Persepolis stand.</td></tr>
+      <tr><td>Takht-e Jamshid</td><td>‘Throne of Jamshid’ — the local Persian name for the ruins, after a legendary king.</td></tr>
+      <tr><td>Apadana</td><td>The great columned audience hall of Persepolis, begun by Darius I.</td></tr>
+      <tr><td>Hypostyle hall</td><td>A hall whose roof is held up by many columns.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Reading the site</th><th>Meaning</th></tr>
+      <tr><td>lamassu</td><td>A guardian figure from Assyria and Babylonia: a winged bull with a bearded man’s head, placed at gateways.</td></tr>
+      <tr><td>geophysical survey</td><td>Mapping what lies under the ground with instruments (for example, by measuring the soil’s magnetism), without digging.</td></tr>
+      <tr><td>Reconstruction</td><td>A modern rebuilding or picture of how something looked — evidence of what its maker imagined, not direct evidence of the past.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The terrace" data-title="The terrace at a glance" data-kind="notes">
+<div class="wrap">
+  <p class="eyebrow">1 · The terrace · I do</p>
+  <h2>A city built on a platform</h2>
+  <div class="split" style="--cols:1.05fr 1fr">
+    <figure class="figure"><img src="images/u2l05-approach-to-the-terrace.jpg" alt="Approaching from the plain: the great double stairway climbs the terrace wall; the ruins of the Gate of All Nations stand at the top, with Kuh-e Rahmat behind" loading="lazy"><figcaption>Approaching from the plain: the great double stairway climbs the terrace wall; the ruins of the Gate of All Nations stand at the top, with Kuh-e Rahmat behind — <span class="cr">Photo: A. Davey · CC BY 2.0</span></figcaption></figure>
+    <div class="stack">
+      <ul class="u2l05-facts">
+        <li class="reveal"><b>What:</b> an artificial terrace about 450 × 300 metres, partly cut from the rock of the mountain behind it (Kuh-e Rahmat) and partly built up with huge stone blocks; its walls rise high above the plain (published heights vary with the slope of the ground, from about 4 to 18 metres)</li>
+        <li class="reveal"><b>When:</b> begun about 518 BCE by Darius I; later kings kept adding buildings until the 330s BCE</li>
+        <li class="reveal"><b>Under it:</b> a network of channels and tunnels cut into the rock to carry away rainwater</li>
+        <li class="reveal"><b>Around it:</b> walls and towers, especially on the east, facing the mountain</li>
+      </ul>
+      <div class="note reveal" data-code="analysis"><div class="k">Our walk</div><p class="body">We will follow the entrance built under Xerxes, up the stairway in the north-west. Before that, the main way in was probably from the south.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The terrace" data-title="The walk: arriving" data-kind="notes">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow">1 · The terrace · I do — walk the plan as a visiting delegation · stops 1–2</p>
+  <h2>Arriving: the stairway and the Gate</h2>
+  <div class="split" style="--cols:.95fr 1.15fr">
+    <figure class="u2l05-planfig"><svg class="u2l05-plan u2l05-routeplan" viewBox="0 0 1180 1030" role="img" aria-label="A simplified plan of the Persepolis terrace showing a visitor's walk, stop by stop: up the great double stairway on the west edge, through the Gate of All Nations, to the Apadana and the Hall of a Hundred Columns, then the Tripylon leading south to the palaces, and the Treasury in the south-east.">
+<rect class="u2l05-plain" x="0" y="0" width="1180" height="1030"/>
+<path class="u2l05-mtn" d="M840,0 L1180,0 L1180,1030 L1040,1030 L1030,830 L1020,745 L976,560 L918,418 L876,248 L840,80 Z"/>
+<text class="u2l05-ctx" x="1100.0" y="144.6"><tspan x="1100.0" dy="0.0">Kuh-e</tspan><tspan x="1100.0" dy="30.8">Rahmat</tspan></text>
+<text class="u2l05-ctx sm" x="1100.0" y="236.0"><tspan x="1100.0" dy="0.0">(mountain)</tspan></text>
+<text class="u2l05-ctx" x="90.0" y="555.5"><tspan x="90.0" dy="0.0">the plain:</tspan><tspan x="90.0" dy="29.7">the city,</tspan><tspan x="90.0" dy="29.7">mostly</tspan><tspan x="90.0" dy="29.7">unexcavated</tspan></text>
+<polygon class="u2l05-terrace" points="190.0,100.0 280.0,62.0 495.0,48.0 710.0,40.0 830.0,78.0 872.0,250.0 915.0,420.0 972.0,565.0 1018.0,750.0 1028.0,832.0 812.0,958.0 495.0,1004.0 390.0,800.0 316.0,700.0 262.0,470.0 282.0,418.0 254.0,238.0"/>
+<g class="u2l05-north"><path d="M55,92 l-16,38 l16,-10 l16,10 Z"/><text x="55" y="76">N</text></g>
+<text class="u2l05-ctx sm u2l05-start" x="16" y="1016">simplified · not to scale · terrace about 450 × 300 m</text>
+<defs><marker id="u2l05-arrow1" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path class="u2l05-arrowhead" d="M0,0 L10,5 L0,10 Z"/></marker><marker id="u2l05-arrowold1" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path class="u2l05-arrowhead old" d="M0,0 L10,5 L0,10 Z"/></marker></defs>
+<polygon class="u2l05-b minor" points="478.4,679.7 574.6,652.1 601.6,746.3 505.4,773.9"/>
+<polygon class="u2l05-b minor" points="448.7,861.2 531.4,837.5 551.3,906.8 468.6,930.5"/>
+<polygon class="u2l05-b minor" points="642.2,255.0 680.6,244.0 687.8,269.0 649.4,280.0"/>
+<polygon class="u2l05-b" points="200.2,249.7 244.4,237.0 291.8,402.3 247.6,415.0"/>
+<polygon class="u2l05-b" points="293.5,273.3 362.7,253.5 382.5,322.7 313.3,342.5"/>
+<polygon class="u2l05-b" points="320.3,449.0 556.7,381.2 615.7,587.0 379.3,654.8"/>
+<polygon class="u2l05-b" points="649.9,439.2 830.7,387.4 878.1,552.8 697.3,604.6"/>
+<polygon class="u2l05-b" points="614.5,603.6 678.0,585.4 699.5,660.4 636.0,678.6"/>
+<polygon class="u2l05-b" points="391.6,684.8 474.3,661.1 502.4,759.2 419.7,782.9"/>
+<polygon class="u2l05-b" points="517.1,816.4 644.0,780.0 674.9,887.6 548.0,924.0"/>
+<polygon class="u2l05-b" points="776.0,624.2 974.0,567.4 1028.0,755.8 830.0,812.6"/>
+<polygon class="u2l05-b" points="722.0,612.0 800.0,600.0 818.0,845.0 810.0,938.0 670.0,950.0 662.0,862.0 738.0,852.0"/>
+<polyline class="u2l05-steps" points="213.4,254.2 256.4,404.1"/>
+<polyline class="u2l05-steps" points="235.6,247.9 278.6,397.8"/>
+<polyline class="u2l05-wall" points="710.0,60.0 830.0,92.0 866.0,252.0 907.0,420.0 962.0,562.0 1006.0,742.0"/>
+<polygon class="u2l05-tower" points="738.9,63.8 756.2,58.9 761.1,76.2 743.8,81.1"/>
+<polygon class="u2l05-tower" points="828.9,153.8 846.2,148.9 851.1,166.2 833.8,171.1"/>
+<polygon class="u2l05-tower" points="844.9,223.8 862.2,218.9 867.1,236.2 849.8,241.1"/>
+<polygon class="u2l05-tower" points="874.9,323.8 892.2,318.9 897.1,336.2 879.8,341.1"/>
+<polygon class="u2l05-tower" points="900.9,423.8 918.2,418.9 923.1,436.2 905.8,441.1"/>
+<polygon class="u2l05-tower" points="928.9,493.8 946.2,488.9 951.1,506.2 933.8,511.1"/>
+<polygon class="u2l05-tower" points="956.9,573.8 974.2,568.9 979.1,586.2 961.8,591.1"/>
+<polygon class="u2l05-tower" points="976.9,653.8 994.2,648.9 999.1,666.2 981.8,671.1"/>
+<polygon class="u2l05-tower" points="990.9,723.8 1008.2,718.9 1013.1,736.2 995.8,741.1"/>
+<polyline class="u2l05-outer" points="970.0,120.0 1055.0,260.0 1110.0,420.0 1140.0,600.0 1150.0,780.0"/>
+<rect class="u2l05-tomb" x="1033.0" y="329.0" width="44" height="32" rx="3"/>
+<g class="linked" id="u2l05-w1"><polygon class="u2l05-hl" points="200.2,249.7 244.4,237.0 291.8,402.3 247.6,415.0"/><polyline class="u2l05-route" marker-end="url(#u2l05-arrow1)" points="170.0,430.0 212.0,418.0 238.0,368.0 246.0,300.0"/><text class="u2l05-stop" x="102.0" y="442.0"><tspan x="102.0" dy="0.0">1 · Stairway</tspan></text></g>
+<g class="linked" id="u2l05-w2"><polygon class="u2l05-hl" points="293.5,273.3 362.7,253.5 382.5,322.7 313.3,342.5"/><polyline class="u2l05-route" marker-end="url(#u2l05-arrow1)" points="268.0,300.0 300.0,298.0"/><text class="u2l05-stop" x="338.0" y="212.0"><tspan x="338.0" dy="0.0">2 · Gate</tspan></text></g>
+</svg><figcaption>Simplified plan drawn for this lesson (not to scale)</figcaption></figure>
+    <div class="u2l05-stops">
+      <div class="u2l05-stopcard reveal" data-also="#u2l05-w1">
+        <figure><img src="images/u2l05-great-double-stairway.jpg" alt="One flight of a broad stone stairway with very low steps, climbing a high wall of huge stone blocks" loading="lazy"></figure>
+        <div><p class="t">1 · The great double stairway</p>
+          <p><span class="lab saw">They saw:</span> two broad flights of very low steps climbing the terrace wall in the north-west (built under Xerxes).</p>
+          <p><span class="lab">Designed to:</span> slow every visitor down. Livius thinks the low steps meant “… a visitor was automatically forced to proceed in a dignified way”.</p></div>
+      </div>
+      <div class="u2l05-stopcard reveal" data-also="#u2l05-w2">
+        <figure><img src="images/u2l05-gate-of-all-nations.jpg" alt="Two huge stone gateway figures of winged bulls with bearded human heads, with tall columns between them" loading="lazy"></figure>
+        <div><p class="t">2 · The Gate of All Nations</p>
+          <p><span class="lab saw">They saw:</span> a square hall at the top of the stairs, also built under Xerxes: giant bulls at the west doorway, human-headed winged bulls (lamassu) at the east; a third door led south.</p>
+          <p><span class="lab">Designed to:</span> make every visitor pass between guardian figures before reaching the king’s halls.</p></div>
+      </div>
+      <p class="small credline">Images: A. Davey (CC BY 2.0) · 4009dayton (CC BY-SA 4.0). Full details on the last slide.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The terrace" data-title="The walk: the audience halls" data-kind="notes">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow">1 · The terrace · I do — walk the plan as a visiting delegation · stops 3–4</p>
+  <h2>The audience halls</h2>
+  <div class="split" style="--cols:.95fr 1.15fr">
+    <figure class="u2l05-planfig"><svg class="u2l05-plan u2l05-routeplan" viewBox="0 0 1180 1030" role="img" aria-label="A simplified plan of the Persepolis terrace showing a visitor's walk, stop by stop: up the great double stairway on the west edge, through the Gate of All Nations, to the Apadana and the Hall of a Hundred Columns, then the Tripylon leading south to the palaces, and the Treasury in the south-east.">
+<rect class="u2l05-plain" x="0" y="0" width="1180" height="1030"/>
+<path class="u2l05-mtn" d="M840,0 L1180,0 L1180,1030 L1040,1030 L1030,830 L1020,745 L976,560 L918,418 L876,248 L840,80 Z"/>
+<text class="u2l05-ctx" x="1100.0" y="144.6"><tspan x="1100.0" dy="0.0">Kuh-e</tspan><tspan x="1100.0" dy="30.8">Rahmat</tspan></text>
+<text class="u2l05-ctx sm" x="1100.0" y="236.0"><tspan x="1100.0" dy="0.0">(mountain)</tspan></text>
+<text class="u2l05-ctx" x="90.0" y="555.5"><tspan x="90.0" dy="0.0">the plain:</tspan><tspan x="90.0" dy="29.7">the city,</tspan><tspan x="90.0" dy="29.7">mostly</tspan><tspan x="90.0" dy="29.7">unexcavated</tspan></text>
+<polygon class="u2l05-terrace" points="190.0,100.0 280.0,62.0 495.0,48.0 710.0,40.0 830.0,78.0 872.0,250.0 915.0,420.0 972.0,565.0 1018.0,750.0 1028.0,832.0 812.0,958.0 495.0,1004.0 390.0,800.0 316.0,700.0 262.0,470.0 282.0,418.0 254.0,238.0"/>
+<g class="u2l05-north"><path d="M55,92 l-16,38 l16,-10 l16,10 Z"/><text x="55" y="76">N</text></g>
+<text class="u2l05-ctx sm u2l05-start" x="16" y="1016">simplified · not to scale · terrace about 450 × 300 m</text>
+<defs><marker id="u2l05-arrow2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path class="u2l05-arrowhead" d="M0,0 L10,5 L0,10 Z"/></marker><marker id="u2l05-arrowold2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path class="u2l05-arrowhead old" d="M0,0 L10,5 L0,10 Z"/></marker></defs>
+<polygon class="u2l05-b minor" points="478.4,679.7 574.6,652.1 601.6,746.3 505.4,773.9"/>
+<polygon class="u2l05-b minor" points="448.7,861.2 531.4,837.5 551.3,906.8 468.6,930.5"/>
+<polygon class="u2l05-b minor" points="642.2,255.0 680.6,244.0 687.8,269.0 649.4,280.0"/>
+<polygon class="u2l05-b" points="200.2,249.7 244.4,237.0 291.8,402.3 247.6,415.0"/>
+<polygon class="u2l05-b" points="293.5,273.3 362.7,253.5 382.5,322.7 313.3,342.5"/>
+<polygon class="u2l05-b" points="320.3,449.0 556.7,381.2 615.7,587.0 379.3,654.8"/>
+<polygon class="u2l05-b" points="649.9,439.2 830.7,387.4 878.1,552.8 697.3,604.6"/>
+<polygon class="u2l05-b" points="614.5,603.6 678.0,585.4 699.5,660.4 636.0,678.6"/>
+<polygon class="u2l05-b" points="391.6,684.8 474.3,661.1 502.4,759.2 419.7,782.9"/>
+<polygon class="u2l05-b" points="517.1,816.4 644.0,780.0 674.9,887.6 548.0,924.0"/>
+<polygon class="u2l05-b" points="776.0,624.2 974.0,567.4 1028.0,755.8 830.0,812.6"/>
+<polygon class="u2l05-b" points="722.0,612.0 800.0,600.0 818.0,845.0 810.0,938.0 670.0,950.0 662.0,862.0 738.0,852.0"/>
+<polyline class="u2l05-steps" points="213.4,254.2 256.4,404.1"/>
+<polyline class="u2l05-steps" points="235.6,247.9 278.6,397.8"/>
+<polyline class="u2l05-wall" points="710.0,60.0 830.0,92.0 866.0,252.0 907.0,420.0 962.0,562.0 1006.0,742.0"/>
+<polygon class="u2l05-tower" points="738.9,63.8 756.2,58.9 761.1,76.2 743.8,81.1"/>
+<polygon class="u2l05-tower" points="828.9,153.8 846.2,148.9 851.1,166.2 833.8,171.1"/>
+<polygon class="u2l05-tower" points="844.9,223.8 862.2,218.9 867.1,236.2 849.8,241.1"/>
+<polygon class="u2l05-tower" points="874.9,323.8 892.2,318.9 897.1,336.2 879.8,341.1"/>
+<polygon class="u2l05-tower" points="900.9,423.8 918.2,418.9 923.1,436.2 905.8,441.1"/>
+<polygon class="u2l05-tower" points="928.9,493.8 946.2,488.9 951.1,506.2 933.8,511.1"/>
+<polygon class="u2l05-tower" points="956.9,573.8 974.2,568.9 979.1,586.2 961.8,591.1"/>
+<polygon class="u2l05-tower" points="976.9,653.8 994.2,648.9 999.1,666.2 981.8,671.1"/>
+<polygon class="u2l05-tower" points="990.9,723.8 1008.2,718.9 1013.1,736.2 995.8,741.1"/>
+<polyline class="u2l05-outer" points="970.0,120.0 1055.0,260.0 1110.0,420.0 1140.0,600.0 1150.0,780.0"/>
+<rect class="u2l05-tomb" x="1033.0" y="329.0" width="44" height="32" rx="3"/>
+<g class="u2l05-done"><polygon class="u2l05-hl old" points="200.2,249.7 244.4,237.0 291.8,402.3 247.6,415.0"/><polyline class="u2l05-route old" marker-end="url(#u2l05-arrowold2)" points="170.0,430.0 212.0,418.0 238.0,368.0 246.0,300.0"/><text class="u2l05-stop old" x="102.0" y="442.0"><tspan x="102.0" dy="0.0">1 · Stairway</tspan></text></g>
+<g class="u2l05-done"><polygon class="u2l05-hl old" points="293.5,273.3 362.7,253.5 382.5,322.7 313.3,342.5"/><polyline class="u2l05-route old" marker-end="url(#u2l05-arrowold2)" points="268.0,300.0 300.0,298.0"/><text class="u2l05-stop old" x="338.0" y="212.0"><tspan x="338.0" dy="0.0">2 · Gate</tspan></text></g>
+<g class="linked" id="u2l05-w3"><polygon class="u2l05-hl" points="320.3,449.0 556.7,381.2 615.7,587.0 379.3,654.8"/><polyline class="u2l05-route" marker-end="url(#u2l05-arrow2)" points="355.0,340.0 378.0,368.0 412.0,396.0"/><text class="u2l05-stop" x="468.0" y="530.0"><tspan x="468.0" dy="0.0">3 · Apadana</tspan></text></g>
+<g class="linked" id="u2l05-w4"><polygon class="u2l05-hl" points="649.9,439.2 830.7,387.4 878.1,552.8 697.3,604.6"/><polyline class="u2l05-route" marker-end="url(#u2l05-arrow2)" points="378.0,292.0 570.0,296.0 710.0,326.0 740.0,395.0"/><text class="u2l05-stop" x="764.0" y="486.2"><tspan x="764.0" dy="0.0">4 · Hall of a</tspan><tspan x="764.0" dy="39.6">Hundred Columns</tspan></text></g>
+</svg><figcaption>Simplified plan drawn for this lesson (not to scale)</figcaption></figure>
+    <div class="u2l05-stops">
+      <div class="u2l05-stopcard reveal" data-also="#u2l05-w3">
+        <figure><img src="images/u2l05-apadana-columns.jpg" alt="A very tall stone column of the Apadana with a carved top; in the distance, two columns and the stone doorways of the Gate of All Nations" loading="lazy"></figure>
+        <div><p class="t">3 · The Apadana</p>
+          <p><span class="lab saw">They saw:</span> a square hall at the heart of the terrace, begun by Darius I: 72 columns about 20–24 metres high, on a platform with carved stairways (Lesson 6).</p>
+          <p><span class="lab">Designed to:</span> receive the empire’s representatives in a space big enough for hundreds of people, under columns that dwarfed them.</p></div>
+      </div>
+      <div class="u2l05-stopcard reveal" data-also="#u2l05-w4">
+        <figure><img src="images/u2l05-hall-of-a-hundred-columns.jpg" alt="Rows of broken stone column bases and tall carved stone doorways, with a rocky mountain behind" loading="lazy"></figure>
+        <div><p class="t">4 · The Hall of a Hundred Columns</p>
+          <p><span class="lab saw">They saw:</span> the Throne Hall, begun under Xerxes and finished under Artaxerxes I: about 68.5 metres square, entered from the north through a porch guarded by two great stone bulls.</p>
+          <p><span class="lab">Designed to:</span> give the king a second great hall for audiences; its carved doorways show the king on his throne (Lesson 7).</p></div>
+      </div>
+      <p class="small credline">Images: Bernard Gagnon (CC BY-SA 4.0) · Bernard Gagnon (CC BY-SA 4.0). Full details on the last slide.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The terrace" data-title="The walk: behind the halls" data-kind="notes">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow">1 · The terrace · I do — walk the plan as a visiting delegation · stops 5–6</p>
+  <h2>Behind the halls: palaces and the Treasury</h2>
+  <div class="split" style="--cols:.8fr 1.3fr">
+    <figure class="u2l05-planfig"><svg class="u2l05-plan u2l05-routeplan" viewBox="0 0 1180 1030" role="img" aria-label="A simplified plan of the Persepolis terrace showing a visitor's walk, stop by stop: up the great double stairway on the west edge, through the Gate of All Nations, to the Apadana and the Hall of a Hundred Columns, then the Tripylon leading south to the palaces, and the Treasury in the south-east.">
+<rect class="u2l05-plain" x="0" y="0" width="1180" height="1030"/>
+<path class="u2l05-mtn" d="M840,0 L1180,0 L1180,1030 L1040,1030 L1030,830 L1020,745 L976,560 L918,418 L876,248 L840,80 Z"/>
+<text class="u2l05-ctx" x="1100.0" y="144.6"><tspan x="1100.0" dy="0.0">Kuh-e</tspan><tspan x="1100.0" dy="30.8">Rahmat</tspan></text>
+<text class="u2l05-ctx sm" x="1100.0" y="236.0"><tspan x="1100.0" dy="0.0">(mountain)</tspan></text>
+<text class="u2l05-ctx" x="90.0" y="555.5"><tspan x="90.0" dy="0.0">the plain:</tspan><tspan x="90.0" dy="29.7">the city,</tspan><tspan x="90.0" dy="29.7">mostly</tspan><tspan x="90.0" dy="29.7">unexcavated</tspan></text>
+<polygon class="u2l05-terrace" points="190.0,100.0 280.0,62.0 495.0,48.0 710.0,40.0 830.0,78.0 872.0,250.0 915.0,420.0 972.0,565.0 1018.0,750.0 1028.0,832.0 812.0,958.0 495.0,1004.0 390.0,800.0 316.0,700.0 262.0,470.0 282.0,418.0 254.0,238.0"/>
+<g class="u2l05-north"><path d="M55,92 l-16,38 l16,-10 l16,10 Z"/><text x="55" y="76">N</text></g>
+<text class="u2l05-ctx sm u2l05-start" x="16" y="1016">simplified · not to scale · terrace about 450 × 300 m</text>
+<defs><marker id="u2l05-arrow3" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path class="u2l05-arrowhead" d="M0,0 L10,5 L0,10 Z"/></marker><marker id="u2l05-arrowold3" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse"><path class="u2l05-arrowhead old" d="M0,0 L10,5 L0,10 Z"/></marker></defs>
+<polygon class="u2l05-b minor" points="478.4,679.7 574.6,652.1 601.6,746.3 505.4,773.9"/>
+<polygon class="u2l05-b minor" points="448.7,861.2 531.4,837.5 551.3,906.8 468.6,930.5"/>
+<polygon class="u2l05-b minor" points="642.2,255.0 680.6,244.0 687.8,269.0 649.4,280.0"/>
+<polygon class="u2l05-b" points="200.2,249.7 244.4,237.0 291.8,402.3 247.6,415.0"/>
+<polygon class="u2l05-b" points="293.5,273.3 362.7,253.5 382.5,322.7 313.3,342.5"/>
+<polygon class="u2l05-b" points="320.3,449.0 556.7,381.2 615.7,587.0 379.3,654.8"/>
+<polygon class="u2l05-b" points="649.9,439.2 830.7,387.4 878.1,552.8 697.3,604.6"/>
+<polygon class="u2l05-b" points="614.5,603.6 678.0,585.4 699.5,660.4 636.0,678.6"/>
+<polygon class="u2l05-b" points="391.6,684.8 474.3,661.1 502.4,759.2 419.7,782.9"/>
+<polygon class="u2l05-b" points="517.1,816.4 644.0,780.0 674.9,887.6 548.0,924.0"/>
+<polygon class="u2l05-b" points="776.0,624.2 974.0,567.4 1028.0,755.8 830.0,812.6"/>
+<polygon class="u2l05-b" points="722.0,612.0 800.0,600.0 818.0,845.0 810.0,938.0 670.0,950.0 662.0,862.0 738.0,852.0"/>
+<polyline class="u2l05-steps" points="213.4,254.2 256.4,404.1"/>
+<polyline class="u2l05-steps" points="235.6,247.9 278.6,397.8"/>
+<polyline class="u2l05-wall" points="710.0,60.0 830.0,92.0 866.0,252.0 907.0,420.0 962.0,562.0 1006.0,742.0"/>
+<polygon class="u2l05-tower" points="738.9,63.8 756.2,58.9 761.1,76.2 743.8,81.1"/>
+<polygon class="u2l05-tower" points="828.9,153.8 846.2,148.9 851.1,166.2 833.8,171.1"/>
+<polygon class="u2l05-tower" points="844.9,223.8 862.2,218.9 867.1,236.2 849.8,241.1"/>
+<polygon class="u2l05-tower" points="874.9,323.8 892.2,318.9 897.1,336.2 879.8,341.1"/>
+<polygon class="u2l05-tower" points="900.9,423.8 918.2,418.9 923.1,436.2 905.8,441.1"/>
+<polygon class="u2l05-tower" points="928.9,493.8 946.2,488.9 951.1,506.2 933.8,511.1"/>
+<polygon class="u2l05-tower" points="956.9,573.8 974.2,568.9 979.1,586.2 961.8,591.1"/>
+<polygon class="u2l05-tower" points="976.9,653.8 994.2,648.9 999.1,666.2 981.8,671.1"/>
+<polygon class="u2l05-tower" points="990.9,723.8 1008.2,718.9 1013.1,736.2 995.8,741.1"/>
+<polyline class="u2l05-outer" points="970.0,120.0 1055.0,260.0 1110.0,420.0 1140.0,600.0 1150.0,780.0"/>
+<rect class="u2l05-tomb" x="1033.0" y="329.0" width="44" height="32" rx="3"/>
+<g class="u2l05-done"><polygon class="u2l05-hl old" points="200.2,249.7 244.4,237.0 291.8,402.3 247.6,415.0"/><polyline class="u2l05-route old" marker-end="url(#u2l05-arrowold3)" points="170.0,430.0 212.0,418.0 238.0,368.0 246.0,300.0"/><text class="u2l05-stop old" x="102.0" y="442.0"><tspan x="102.0" dy="0.0">1 · Stairway</tspan></text></g>
+<g class="u2l05-done"><polygon class="u2l05-hl old" points="293.5,273.3 362.7,253.5 382.5,322.7 313.3,342.5"/><polyline class="u2l05-route old" marker-end="url(#u2l05-arrowold3)" points="268.0,300.0 300.0,298.0"/><text class="u2l05-stop old" x="338.0" y="212.0"><tspan x="338.0" dy="0.0">2 · Gate</tspan></text></g>
+<g class="u2l05-done"><polygon class="u2l05-hl old" points="320.3,449.0 556.7,381.2 615.7,587.0 379.3,654.8"/><polyline class="u2l05-route old" marker-end="url(#u2l05-arrowold3)" points="355.0,340.0 378.0,368.0 412.0,396.0"/><text class="u2l05-stop old" x="468.0" y="530.0"><tspan x="468.0" dy="0.0">3 · Apadana</tspan></text></g>
+<g class="u2l05-done"><polygon class="u2l05-hl old" points="649.9,439.2 830.7,387.4 878.1,552.8 697.3,604.6"/><polyline class="u2l05-route old" marker-end="url(#u2l05-arrowold3)" points="378.0,292.0 570.0,296.0 710.0,326.0 740.0,395.0"/><text class="u2l05-stop old" x="764.0" y="486.2"><tspan x="764.0" dy="0.0">4 · Hall of a</tspan><tspan x="764.0" dy="39.6">Hundred Columns</tspan></text></g>
+<g class="linked" id="u2l05-w5"><polygon class="u2l05-hl" points="614.5,603.6 678.0,585.4 699.5,660.4 636.0,678.6"/><polyline class="u2l05-route" marker-end="url(#u2l05-arrow3)" points="620.0,560.0 647.0,590.0"/><text class="u2l05-stop" x="542.0" y="632.2"><tspan x="542.0" dy="0.0">5 · Tripylon</tspan><tspan x="542.0" dy="39.6">→ palaces</tspan></text></g>
+<g class="linked" id="u2l05-w6"><polygon class="u2l05-hl" points="776.0,624.2 974.0,567.4 1028.0,755.8 830.0,812.6"/><text class="u2l05-stop" x="902.0" y="702.0"><tspan x="902.0" dy="0.0">6 · Treasury</tspan></text></g>
+</svg><figcaption>Simplified plan drawn for this lesson (not to scale)</figcaption></figure>
+    <div class="u2l05-stops u2l05-tight">
+      <div class="u2l05-stopcard reveal" data-also="#u2l05-w5">
+        <figure><img src="images/u2l05-tachara-palace-of-darius.jpg" alt="The stone doorways and window frames of a palace, standing on a platform above a carved stairway" loading="lazy"></figure>
+        <div><p class="t">5 · The Tripylon and the palaces</p>
+          <p><span class="lab saw">They saw:</span> the Tripylon (“triple gate”) between the two halls, with doors north, east and south; beyond it, to the south, the palaces: the Tachara of Darius I (pictured) and the larger Hadish, built under Xerxes on higher ground.</p>
+          <p><span class="lab">Probably meant to:</span> keep the king’s own palaces apart from the public halls (an inference from the plan). Was the Tripylon a council hall or just a grand corridor? Scholars disagree.</p></div>
+      </div>
+      <div class="u2l05-stopcard reveal" data-also="#u2l05-w6">
+        <figure><img src="images/u2l05-treasury-and-harem-from-south-east.jpg" alt="The low excavated stone foundations of a very large building, seen from a hillside, with a long modern building behind" loading="lazy"></figure>
+        <div><p class="t">6 · The Treasury</p>
+          <p><span class="lab saw">Most visitors probably never saw:</span> the Treasury, one of Darius I’s first buildings, in the south-east corner beside what Schmidt called the garrison quarters and the towered wall; storerooms along the south, out of sight of the palaces.</p>
+          <p><span class="lab">Its place:</span> behind walls, away from the halls. Once Xerxes moved the entrance to the north-west, it lay at the back of the terrace.</p></div>
+      </div>
+      <p class="small credline">Images: Bernard Gagnon (CC BY-SA 4.0) · Bernard Gagnon (CC BY-SA 4.0). Full details on the last slide.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The terrace" data-title="Beyond the terrace" data-kind="notes">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow">1 · The terrace · I do — above and below the terrace</p>
+  <h2>Beyond the terrace: tombs above, a city below</h2>
+  <div class="u2l05-pair">
+    <figure class="figure"><img src="images/u2l05-royal-tomb-kuh-e-rahmat.jpg" alt="A royal tomb cut into Kuh-e Rahmat above the terrace, usually attributed to Artaxerxes III (r. 358–338 BCE); which later king lies in which tomb is not certain" loading="lazy"><figcaption>A royal tomb cut into Kuh-e Rahmat above the terrace, usually attributed to Artaxerxes III (r. 358–338 BCE); which later king lies in which tomb is not certain — <span class="cr">Photo: Bernard Gagnon · CC BY-SA 4.0</span></figcaption></figure>
+    <figure class="figure"><img src="images/u2l05-naqsh-e-rustam-royal-tombs.jpg" alt="Naqsh-e Rustam, about 6 km north of Persepolis: four royal tombs cut high in the cliff, Darius I’s and (probably) three of his successors’; most of the large reliefs lower down are much later (Sasanian, after about 260 CE)" loading="lazy"><figcaption>Naqsh-e Rustam, about 6 km north of Persepolis: four royal tombs cut high in the cliff, Darius I’s and (probably) three of his successors’; most of the large reliefs lower down are much later (Sasanian, after about 260 CE) — <span class="cr">Photo: Bernard Gagnon · CC BY-SA 4.0</span></figcaption></figure>
+  </div>
+  <div class="cols c2">
+    <div class="card quiet reveal"><div class="k">Above: the royal tombs</div><p class="body">Two finished royal tombs (and an unfinished one) are cut into Kuh-e Rahmat, looking down on the terrace; they belong to later kings. Darius I and, probably, three of his successors lie at Naqsh-e Rustam, about 6 km to the north.</p></div>
+    <div class="src reveal"><div class="k">Below: the city on the plain</div>
+      <p class="body">Livius: of the city around the terrace, “… hardly anything has been excavated”. The SELOPERSE team started from this idea, and their surveys (including geophysical survey) supported it:</p>
+      <p class="quote sm">The city was probably not structured as a densely built-up and populated centre …</p>
+      <p class="prov">SELOPERSE project (University of Bologna, 2012–14), final report summary, European Commission CORDIS</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The terrace" data-title="Notes 1 — The terrace and the walk" data-kind="notes">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>The terrace and the visitor’s walk</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L5 · The layout and features of the city</b></span><span>1 · The terrace</span></div>
+    <div class="row"><div class="cq">Describe the terrace and its setting.</div>
+      <div class="nts reveal">artificial platform c. 450 × 300 m, partly cut from the rock of Kuh-e Rahmat, partly built up <span class="sep">·</span> begun c. 518 BCE (Darius I), added to until the 330s BCE <span class="sep">·</span> rock-cut drains under it <span class="sep">·</span> walls + towers, esp. on the east</div></div>
+    <div class="row"><div class="cq">Explain how the stairway and the Gate prepared a visitor.</div>
+      <div class="nts reveal">stairway (NW, built under Xerxes): very low steps → slow, dignified climb <span class="sep">·</span> Gate of All Nations: bulls (W) + lamassu (E) → visitors pass between guardians before the halls</div></div>
+    <div class="row"><div class="cq">Identify the two great audience halls.</div>
+      <div class="nts reveal">Apadana: at the heart, begun by Darius I, 72 columns c. 20–24 m <span class="sep">·</span> Hall of a Hundred Columns (Throne Hall): begun under Xerxes, finished under Artaxerxes I; bull porch on the north</div></div>
+    <div class="row"><div class="cq">Outline what lay behind and beyond the halls.</div>
+      <div class="nts reveal">Tripylon → palaces to the south (Tachara, Hadish), set apart <span class="sep">·</span> Treasury SE, by walls + garrison quarters <span class="sep">·</span> tombs in Kuh-e Rahmat (later kings) + Naqsh-e Rustam, c. 6 km N <span class="sep">·</span> city on the plain: mostly unexcavated; surveys → spread out, probably among gardens + fields</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The plan" data-title="We do: label the plan" data-kind="notes">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow">2 · The plan · We do — label it together · 5 minutes · press K for the timer</p>
+  <h2>Label the plan: eleven features</h2>
+  <div class="split" style="--cols:.82fr 1.18fr">
+    <figure class="u2l05-planfig"><svg class="u2l05-plan u2l05-blankplan" viewBox="0 0 1180 1030" role="img" aria-label="A simplified plan of the Persepolis terrace with eleven numbered features and no names: a stairway on the west edge, a gate, two large square halls, smaller buildings to the south, a large building in the south-east, a wall along the east edge and a tomb on the mountain to the east.">
+<rect class="u2l05-plain" x="0" y="0" width="1180" height="1030"/>
+<path class="u2l05-mtn" d="M840,0 L1180,0 L1180,1030 L1040,1030 L1030,830 L1020,745 L976,560 L918,418 L876,248 L840,80 Z"/>
+<text class="u2l05-ctx" x="1100.0" y="144.6"><tspan x="1100.0" dy="0.0">Kuh-e</tspan><tspan x="1100.0" dy="30.8">Rahmat</tspan></text>
+<text class="u2l05-ctx sm" x="1100.0" y="236.0"><tspan x="1100.0" dy="0.0">(mountain)</tspan></text>
+<text class="u2l05-ctx" x="90.0" y="555.5"><tspan x="90.0" dy="0.0">the plain:</tspan><tspan x="90.0" dy="29.7">the city,</tspan><tspan x="90.0" dy="29.7">mostly</tspan><tspan x="90.0" dy="29.7">unexcavated</tspan></text>
+<polygon class="u2l05-terrace" points="190.0,100.0 280.0,62.0 495.0,48.0 710.0,40.0 830.0,78.0 872.0,250.0 915.0,420.0 972.0,565.0 1018.0,750.0 1028.0,832.0 812.0,958.0 495.0,1004.0 390.0,800.0 316.0,700.0 262.0,470.0 282.0,418.0 254.0,238.0"/>
+<g class="u2l05-north"><path d="M55,92 l-16,38 l16,-10 l16,10 Z"/><text x="55" y="76">N</text></g>
+<text class="u2l05-ctx sm u2l05-start" x="16" y="1016">simplified · not to scale · terrace about 450 × 300 m</text>
+<polygon class="u2l05-b minor" points="478.4,679.7 574.6,652.1 601.6,746.3 505.4,773.9"/>
+<polygon class="u2l05-b minor" points="448.7,861.2 531.4,837.5 551.3,906.8 468.6,930.5"/>
+<polygon class="u2l05-b minor" points="642.2,255.0 680.6,244.0 687.8,269.0 649.4,280.0"/>
+<polygon class="u2l05-b" points="200.2,249.7 244.4,237.0 291.8,402.3 247.6,415.0"/>
+<polygon class="u2l05-b" points="293.5,273.3 362.7,253.5 382.5,322.7 313.3,342.5"/>
+<polygon class="u2l05-b" points="320.3,449.0 556.7,381.2 615.7,587.0 379.3,654.8"/>
+<polygon class="u2l05-b" points="649.9,439.2 830.7,387.4 878.1,552.8 697.3,604.6"/>
+<polygon class="u2l05-b" points="614.5,603.6 678.0,585.4 699.5,660.4 636.0,678.6"/>
+<polygon class="u2l05-b" points="391.6,684.8 474.3,661.1 502.4,759.2 419.7,782.9"/>
+<polygon class="u2l05-b" points="517.1,816.4 644.0,780.0 674.9,887.6 548.0,924.0"/>
+<polygon class="u2l05-b" points="776.0,624.2 974.0,567.4 1028.0,755.8 830.0,812.6"/>
+<polygon class="u2l05-b" points="722.0,612.0 800.0,600.0 818.0,845.0 810.0,938.0 670.0,950.0 662.0,862.0 738.0,852.0"/>
+<polyline class="u2l05-steps" points="213.4,254.2 256.4,404.1"/>
+<polyline class="u2l05-steps" points="235.6,247.9 278.6,397.8"/>
+<polyline class="u2l05-wall" points="710.0,60.0 830.0,92.0 866.0,252.0 907.0,420.0 962.0,562.0 1006.0,742.0"/>
+<polygon class="u2l05-tower" points="738.9,63.8 756.2,58.9 761.1,76.2 743.8,81.1"/>
+<polygon class="u2l05-tower" points="828.9,153.8 846.2,148.9 851.1,166.2 833.8,171.1"/>
+<polygon class="u2l05-tower" points="844.9,223.8 862.2,218.9 867.1,236.2 849.8,241.1"/>
+<polygon class="u2l05-tower" points="874.9,323.8 892.2,318.9 897.1,336.2 879.8,341.1"/>
+<polygon class="u2l05-tower" points="900.9,423.8 918.2,418.9 923.1,436.2 905.8,441.1"/>
+<polygon class="u2l05-tower" points="928.9,493.8 946.2,488.9 951.1,506.2 933.8,511.1"/>
+<polygon class="u2l05-tower" points="956.9,573.8 974.2,568.9 979.1,586.2 961.8,591.1"/>
+<polygon class="u2l05-tower" points="976.9,653.8 994.2,648.9 999.1,666.2 981.8,671.1"/>
+<polygon class="u2l05-tower" points="990.9,723.8 1008.2,718.9 1013.1,736.2 995.8,741.1"/>
+<polyline class="u2l05-outer" points="970.0,120.0 1055.0,260.0 1110.0,420.0 1140.0,600.0 1150.0,780.0"/>
+<rect class="u2l05-tomb" x="1033.0" y="329.0" width="44" height="32" rx="3"/>
+<g class="u2l05-badge"><circle cx="246.0" cy="326.0" r="21"/><text x="246.0" y="335.0">1</text></g>
+<g class="u2l05-badge"><circle cx="338.0" cy="298.0" r="21"/><text x="338.0" y="307.0">2</text></g>
+<g class="u2l05-badge"><circle cx="468.0" cy="518.0" r="21"/><text x="468.0" y="527.0">3</text></g>
+<g class="u2l05-badge"><circle cx="764.0" cy="496.0" r="21"/><text x="764.0" y="505.0">4</text></g>
+<g class="u2l05-badge"><circle cx="657.0" cy="632.0" r="21"/><text x="657.0" y="641.0">5</text></g>
+<g class="u2l05-badge"><circle cx="447.0" cy="722.0" r="21"/><text x="447.0" y="731.0">6</text></g>
+<g class="u2l05-badge"><circle cx="596.0" cy="852.0" r="21"/><text x="596.0" y="861.0">7</text></g>
+<g class="u2l05-badge"><circle cx="750.0" cy="760.0" r="21"/><text x="750.0" y="769.0">8</text></g>
+<g class="u2l05-badge"><circle cx="902.0" cy="690.0" r="21"/><text x="902.0" y="699.0">9</text></g>
+<g class="u2l05-badge"><circle cx="898.0" cy="380.0" r="21"/><text x="898.0" y="389.0">10</text></g>
+<g class="u2l05-badge"><circle cx="1055.0" cy="345.0" r="21"/><text x="1055.0" y="354.0">11</text></g>
+</svg><figcaption>Simplified plan drawn for this lesson (not to scale), after the excavators’ plan of the terrace (Schmidt 1939, fig. 5)</figcaption></figure>
+    <div class="stack">
+      <div class="bank u2l05-sm" aria-label="Word bank"><span>Apadana</span><span>fortification wall and towers</span><span>Gate of All Nations</span><span>great double stairway</span><span>Hadish</span><span>Hall of a Hundred Columns</span><span>the so-called ‘Harem’</span><span>royal tomb</span><span>Tachara</span><span>Treasury</span><span>Tripylon</span></div>
+      <div class="tbl-scroll" data-veil="Label yours first — then show the answers"><table class="tbl compact u2l05-labels">
+        <tr><th>No.</th><th>Feature</th><th>In a few words</th></tr>
+        <tr class="reveal"><td>1</td><td>great double stairway</td><td>the way up, in the north-west</td></tr>
+        <tr class="reveal"><td>2</td><td>Gate of All Nations</td><td>the guarded entrance hall</td></tr>
+        <tr class="reveal"><td>3</td><td>Apadana</td><td>the great audience hall</td></tr>
+        <tr class="reveal"><td>4</td><td>Hall of a Hundred Columns</td><td>the Throne Hall</td></tr>
+        <tr class="reveal"><td>5</td><td>Tripylon</td><td>“triple gate” to the palaces</td></tr>
+        <tr class="reveal"><td>6</td><td>Tachara</td><td>palace of Darius I</td></tr>
+        <tr class="reveal"><td>7</td><td>Hadish</td><td>larger palace, built under Xerxes</td></tr>
+        <tr class="reveal"><td>8</td><td>the so-called ‘Harem’</td><td>rooms around courts; use debated</td></tr>
+        <tr class="reveal"><td>9</td><td>Treasury</td><td>the king’s storehouse</td></tr>
+        <tr class="reveal"><td>10</td><td>fortification wall and towers</td><td>defence on the east</td></tr>
+        <tr class="reveal"><td>11</td><td>royal tomb</td><td>cut into Kuh-e Rahmat</td></tr>
+      </table></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The plan" data-title="We do: colour the zones" data-kind="notes">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow">2 · The plan · We do — colour the zones · 2 minutes</p>
+  <h2>Colour the zones: what was each part of the terrace for?</h2>
+  <div class="split veil-parts" style="--cols:1fr 1fr" data-veil="Colour yours first — then show the zones">
+    <figure class="u2l05-planfig vp reveal"><svg class="u2l05-plan u2l05-zoneplan" viewBox="0 0 1180 1030" role="img" aria-label="The same plan coloured by zone: ceremonial and audience buildings in the north (stairway, Gate, Apadana, Hall of a Hundred Columns, Tripylon); royal residences in the south (Tachara, Hadish); storage and administration in the south-east (Treasury); the so-called Harem striped because its use is an interpretation; defence along the east edge and on the mountain.">
+<rect class="u2l05-plain" x="0" y="0" width="1180" height="1030"/>
+<path class="u2l05-mtn" d="M840,0 L1180,0 L1180,1030 L1040,1030 L1030,830 L1020,745 L976,560 L918,418 L876,248 L840,80 Z"/>
+<text class="u2l05-ctx" x="1100.0" y="144.6"><tspan x="1100.0" dy="0.0">Kuh-e</tspan><tspan x="1100.0" dy="30.8">Rahmat</tspan></text>
+<text class="u2l05-ctx sm" x="1100.0" y="236.0"><tspan x="1100.0" dy="0.0">(mountain)</tspan></text>
+<text class="u2l05-ctx" x="90.0" y="555.5"><tspan x="90.0" dy="0.0">the plain:</tspan><tspan x="90.0" dy="29.7">the city,</tspan><tspan x="90.0" dy="29.7">mostly</tspan><tspan x="90.0" dy="29.7">unexcavated</tspan></text>
+<polygon class="u2l05-terrace" points="190.0,100.0 280.0,62.0 495.0,48.0 710.0,40.0 830.0,78.0 872.0,250.0 915.0,420.0 972.0,565.0 1018.0,750.0 1028.0,832.0 812.0,958.0 495.0,1004.0 390.0,800.0 316.0,700.0 262.0,470.0 282.0,418.0 254.0,238.0"/>
+<g class="u2l05-north"><path d="M55,92 l-16,38 l16,-10 l16,10 Z"/><text x="55" y="76">N</text></g>
+<text class="u2l05-ctx sm u2l05-start" x="16" y="1016">simplified · not to scale · terrace about 450 × 300 m</text>
+<defs><pattern id="u2l05-hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect class="u2l05-hatch-a" width="14" height="14"/><rect class="u2l05-hatch-b" width="7" height="14"/></pattern></defs>
+<polygon class="u2l05-b minor" points="478.4,679.7 574.6,652.1 601.6,746.3 505.4,773.9"/>
+<polygon class="u2l05-b minor" points="448.7,861.2 531.4,837.5 551.3,906.8 468.6,930.5"/>
+<polygon class="u2l05-b minor" points="642.2,255.0 680.6,244.0 687.8,269.0 649.4,280.0"/>
+<polygon class="u2l05-b z-cer" points="200.2,249.7 244.4,237.0 291.8,402.3 247.6,415.0"/>
+<polygon class="u2l05-b z-cer" points="293.5,273.3 362.7,253.5 382.5,322.7 313.3,342.5"/>
+<polygon class="u2l05-b z-cer" points="320.3,449.0 556.7,381.2 615.7,587.0 379.3,654.8"/>
+<polygon class="u2l05-b z-cer" points="649.9,439.2 830.7,387.4 878.1,552.8 697.3,604.6"/>
+<polygon class="u2l05-b z-cer" points="614.5,603.6 678.0,585.4 699.5,660.4 636.0,678.6"/>
+<polygon class="u2l05-b z-res" points="391.6,684.8 474.3,661.1 502.4,759.2 419.7,782.9"/>
+<polygon class="u2l05-b z-res" points="517.1,816.4 644.0,780.0 674.9,887.6 548.0,924.0"/>
+<polygon class="u2l05-b z-sto" points="776.0,624.2 974.0,567.4 1028.0,755.8 830.0,812.6"/>
+<polygon class="u2l05-b z-harem" points="722.0,612.0 800.0,600.0 818.0,845.0 810.0,938.0 670.0,950.0 662.0,862.0 738.0,852.0"/>
+<polyline class="u2l05-steps" points="213.4,254.2 256.4,404.1"/>
+<polyline class="u2l05-steps" points="235.6,247.9 278.6,397.8"/>
+<polyline class="u2l05-wall z-def" points="710.0,60.0 830.0,92.0 866.0,252.0 907.0,420.0 962.0,562.0 1006.0,742.0"/>
+<polygon class="u2l05-tower z-def" points="738.9,63.8 756.2,58.9 761.1,76.2 743.8,81.1"/>
+<polygon class="u2l05-tower z-def" points="828.9,153.8 846.2,148.9 851.1,166.2 833.8,171.1"/>
+<polygon class="u2l05-tower z-def" points="844.9,223.8 862.2,218.9 867.1,236.2 849.8,241.1"/>
+<polygon class="u2l05-tower z-def" points="874.9,323.8 892.2,318.9 897.1,336.2 879.8,341.1"/>
+<polygon class="u2l05-tower z-def" points="900.9,423.8 918.2,418.9 923.1,436.2 905.8,441.1"/>
+<polygon class="u2l05-tower z-def" points="928.9,493.8 946.2,488.9 951.1,506.2 933.8,511.1"/>
+<polygon class="u2l05-tower z-def" points="956.9,573.8 974.2,568.9 979.1,586.2 961.8,591.1"/>
+<polygon class="u2l05-tower z-def" points="976.9,653.8 994.2,648.9 999.1,666.2 981.8,671.1"/>
+<polygon class="u2l05-tower z-def" points="990.9,723.8 1008.2,718.9 1013.1,736.2 995.8,741.1"/>
+<polyline class="u2l05-outer z-def" points="970.0,120.0 1055.0,260.0 1110.0,420.0 1140.0,600.0 1150.0,780.0"/>
+<rect class="u2l05-tomb" x="1033.0" y="329.0" width="44" height="32" rx="3"/>
+<g class="u2l05-badge sm"><circle cx="246.0" cy="326.0" r="21"/><text x="246.0" y="335.0">1</text></g>
+<g class="u2l05-badge sm"><circle cx="338.0" cy="298.0" r="21"/><text x="338.0" y="307.0">2</text></g>
+<g class="u2l05-badge sm"><circle cx="468.0" cy="518.0" r="21"/><text x="468.0" y="527.0">3</text></g>
+<g class="u2l05-badge sm"><circle cx="764.0" cy="496.0" r="21"/><text x="764.0" y="505.0">4</text></g>
+<g class="u2l05-badge sm"><circle cx="657.0" cy="632.0" r="21"/><text x="657.0" y="641.0">5</text></g>
+<g class="u2l05-badge sm"><circle cx="447.0" cy="722.0" r="21"/><text x="447.0" y="731.0">6</text></g>
+<g class="u2l05-badge sm"><circle cx="596.0" cy="852.0" r="21"/><text x="596.0" y="861.0">7</text></g>
+<g class="u2l05-badge sm"><circle cx="750.0" cy="760.0" r="21"/><text x="750.0" y="769.0">8</text></g>
+<g class="u2l05-badge sm"><circle cx="902.0" cy="690.0" r="21"/><text x="902.0" y="699.0">9</text></g>
+<g class="u2l05-badge sm"><circle cx="898.0" cy="380.0" r="21"/><text x="898.0" y="389.0">10</text></g>
+<g class="u2l05-badge sm"><circle cx="1055.0" cy="345.0" r="21"/><text x="1055.0" y="354.0">11</text></g>
+</svg><figcaption>The plan coloured by zone (simplified, not to scale)</figcaption></figure>
+    <div class="stack">
+      <ol class="u2l05-key">
+        <li><span class="u2l05-sw cer"></span><span><b>Ceremonial and audience (blue)</b><span class="u2l05-which vp reveal">north: 1 stairway, 2 Gate, 3 Apadana, 4 Hall of a Hundred Columns, 5 Tripylon</span></span></li>
+        <li><span class="u2l05-sw res"></span><span><b>Royal residences (purple)</b><span class="u2l05-which vp reveal">south: 6 Tachara, 7 Hadish (and later, smaller palaces)</span></span></li>
+        <li><span class="u2l05-sw sto"></span><span><b>Storage and administration (orange)</b><span class="u2l05-which vp reveal">south-east: 9 Treasury (and storerooms along the south)</span></span></li>
+        <li><span class="u2l05-sw def"></span><span><b>Defence (red outline)</b><span class="u2l05-which vp reveal">10 walls and towers on the east and north; a line of towers on the mountain crest; the mountain itself behind</span></span></li>
+        <li><span class="u2l05-sw har"></span><span><b>Striped: depends on the interpretation</b><span class="u2l05-which vp reveal">8 the so-called ‘Harem’: residence? storage? (more on it next)</span></span></li>
+      </ol>
+      <div class="note vp reveal" data-code="judgement"><div class="k">What the zones suggest</div><p class="body">Once Xerxes moved the entrance to the north-west, the further a visitor went from the stairway, the more private the space: public halls first, the king’s palaces behind them, and his wealth at the back, beside the walls.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The plan" data-title="The ‘Harem’: a name, not a fact" data-kind="notes">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow">2 · The plan · We do — stop at the ‘Harem’ · cold call</p>
+  <h2>The ‘Harem’: a name, not a fact</h2>
+  <div class="split u2l05-bigfig" style="--cols:1fr 1.15fr">
+    <figure class="figure contain"><img src="images/u2l05-rebuilt-harem-portico-museum.jpg" alt="The portico of the so-called ‘Harem’, rebuilt by Herzfeld’s expedition in the 1930s as its headquarters and now the entrance to the site museum: a modern reconstruction" loading="lazy"><figcaption>The portico of the so-called ‘Harem’, rebuilt by Herzfeld’s expedition in the 1930s as its headquarters and now the entrance to the site museum: a modern reconstruction — <span class="cr">Photo: Davide Mauro · CC BY-SA 4.0</span></figcaption></figure>
+    <div class="stack">
+      <div class="src">
+        <div class="k">The excavators, in their own words</div>
+        <p class="quote sm"><span class="ed">[Herzfeld]</span> excavated the site of the harems of Darius and Xerxes, formerly called the Southeast Building, and restored for the quarters of the Expedition and of a future museum a large part of the Harem of Xerxes.</p>
+        <p class="prov">Erich F. Schmidt, Foreword to <i>The Treasury of Persepolis</i> (Oriental Institute Communications 21, Chicago, 1939), p. vii · Schmidt led the Chicago excavation after Herzfeld</p>
+      </div>
+      <p class="qprompt">Why is ‘Harem’ an interpretation, not a fact?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">No ancient text gives the building that name: the 1930s excavators chose it (earlier it was called the ‘Southeast Building’). Livius.org now says ‘the name “harem” is better avoided’, arguing that European scholars “projected their own ideas on the ancient Near East”. Like Woolley’s ‘Standard’ of Ur, the label then shaped later readings: Schmidt called nearby rooms “quarters … presumably once occupied by the eunuch guardians of the royal ladies”. And the building you can visit is largely a 1930s rebuilding.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The plan" data-title="Two reconstructions" data-kind="notes">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow">2 · The plan · We do — gesture vote: thumbs up = agree · sideways = not sure · down = disagree</p>
+  <h2>Two reconstructions, more than a century apart</h2>
+  <div class="split u2l05-bigfig" style="--cols:1.1fr 1fr">
+    <figure class="figure contain"><img src="images/u2l05-chipiez-reconstruction.jpg" alt="A bird’s-eye reconstruction of the terrace by the French architect Charles Chipiez (1835–1901): his idea of how it once looked" loading="lazy"><figcaption>A bird’s-eye reconstruction of the terrace by the French architect Charles Chipiez (1835–1901): his idea of how it once looked — <span class="cr">Charles Chipiez (1835–1901) · Public domain</span></figcaption></figure>
+    <div class="stack">
+      <div class="card quiet u2l05-cite"><div class="k">The Getty’s digital reconstruction (2022)</div>
+        <p class="body"><a href="https://persepolis.getty.edu/">Persepolis Reimagined</a> lets you walk the terrace online, starting at the Gate of All Nations. The Getty calls it “the most accurate recreation of Persepolis to date”.</p></div>
+      <div class="card accent"><div class="k">Vote</div><p class="lead nq">“The Getty’s reconstruction shows what Persepolis really looked like.”</p></div>
+      <div class="note reveal" data-code="judgement" data-veil="Vote first — then show the answer"><p class="body"><b>Disagree, mostly.</b> A reconstruction is evidence of what its makers imagined, not direct evidence of the past (Unit 1, Lesson 7). It is useful for scale and setting, but roofs, colours and furnishings are rebuilt from fragments and guesses. Chipiez’s drawing and the Getty’s model show the same ruins differently.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The plan" data-title="Notes 2 — Zones and interpretations" data-kind="notes">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>Zones and interpretations</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L5 · The layout and features of the city</b></span><span>2 · Zones and interpretations</span></div>
+    <div class="row"><div class="cq">Identify the zones of the terrace, with one building in each.</div>
+      <div class="nts reveal">ceremonial + audience (N): Gate, Apadana, Hall of a Hundred Columns <span class="sep">·</span> royal residences (S): Tachara, Hadish <span class="sep">·</span> storage + administration (SE): Treasury, storerooms <span class="sep">·</span> defence: walls, towers, the mountain</div></div>
+    <div class="row"><div class="cq">Explain how the layout separated public and private space.</div>
+      <div class="nts reveal">public halls near the entrance → palaces behind the Tripylon, to the south → Treasury at the back, out of sight, by the walls <span class="sep">·</span> an inference from the plan: no text describes a visit <span class="sep">·</span> true of the NW entrance (Xerxes); earlier the way in was probably from the south</div></div>
+    <div class="row"><div class="cq">Explain why the ‘Harem’ is an interpretation.</div>
+      <div class="nts reveal">name chosen by 1930s excavators (earlier: ‘Southeast Building’) <span class="sep">·</span> no ancient text names it <span class="sep">·</span> rebuilt in the 1930s, now the museum <span class="sep">·</span> cf. Woolley’s ‘Standard’</div></div>
+    <div class="row"><div class="cq">Assess what a reconstruction can show.</div>
+      <div class="nts reveal">evidence of what its makers imagined (Chipiez; Getty 2022), not direct evidence → good for scale + setting; roofs, colours, furnishings = interpretations</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: check first" data-kind="notes">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow">3 · You do · check first · gesture vote: one finger = A · two fingers = B</p>
+  <h2>Which sentence uses a feature as evidence?</h2>
+  <div class="stack veil-parts" data-veil="Vote first — then show the answer">
+    <div class="u2l05-sent"><span class="l">A</span><span class="nq">At the top of the great double stairway, the Gate of All Nations had giant stone bulls at its western doorway, human-headed winged bulls at its eastern doorway and tall columns in the hall between them.</span></div>
+    <div class="u2l05-sent"><span class="l">B</span><span class="nq">At the top of the stairway, the Gate of All Nations made every visitor pass between colossal guardian bulls, which suggests that the king wanted his power to be felt before he was even seen.</span></div>
+    <div class="note vp reveal" data-code="evidence"><div class="k">B: it uses the feature as evidence</div><p class="body">Both sentences place the Gate (<i>at the top of the stairway</i>). Only B says what it did to a visitor and links it to royal power (<i>which suggests that</i>), with a hedge (<i>suggests</i>). A only describes: it would fit a guidebook, not an argument.</p></div>
+  </div>
+  <div class="bank u2l05-bank" aria-label="Spatial language"><span>at the threshold</span><span>at the top of</span><span>beyond</span><span>adjoining</span><span>at the heart of</span><span>behind</span><span>set apart from</span><span>above</span><span>overlooking</span><span>at the back of</span></div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: your paragraph">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow">3 · You do · 12 minutes · press K for the timer</p>
+  <h2>How did the layout of the terrace express royal power?</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body">
+          <li>Choose three features from your labelled plan.</li>
+          <li>For each: where it is (spatial language), what a visitor met there, and what that suggests about the king.</li>
+          <li>Open with your answer to the question; finish with what the plan alone cannot tell us.</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Success check</div><p class="body">three features · at least three spatial phrases · “which suggests that …” at least twice · one hedge (probably, suggests, may) · one limit of the evidence</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet sm"><div class="k">Support · paragraph frame</div><p class="body nq">The layout of the terrace expressed royal power by … · At the top of the great double stairway, … which suggests that … · At the heart of the terrace, … · Behind the public halls, … · However, the plan alone cannot show …</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Using the geophysical surveys of the plain, assess how far the terrace alone can tell us what the ‘city’ of Persepolis was like.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Compare: a model paragraph" data-kind="notes">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow">3 · You do · compare with a model · two students read theirs first</p>
+  <h2>A model paragraph</h2>
+  <div class="split" style="--cols:1.45fr 1fr">
+    <div class="src reveal" data-veil="Write yours first — then show the model">
+      <div class="k">A model · written for this lesson · spatial language underlined</div>
+      <p class="quote sm model u2l05-model">The layout of the terrace presented the king’s power as something every visitor had to approach slowly and in order. <span class="sp">At the threshold</span>, the very low steps of the great double stairway made visitors climb in a slow and dignified way, and <span class="sp">at the top</span> the Gate of All Nations forced them to pass between colossal guardian bulls before they reached anything else. <span class="sp">At the heart of the terrace</span> stood the Apadana, where the king probably received the representatives of his empire beneath 72 columns about 20–24 metres high, which suggests that the hall was designed to make visitors feel small before him. <span class="sp">Behind</span> these public halls, and <span class="sp">set apart from</span> them, lay the royal palaces, while the Treasury stood <span class="sp">at the back of</span> the terrace, beside the walls and towers that faced the mountain, which suggests that the king’s person and his wealth were kept well away from his visitors. This order, from public stairway to private palace and guarded wealth, suggests that the finished layout presented a king who received his whole empire yet stood far above it. However, the plan alone cannot show how visitors really moved through it: no ancient writer describes a visit, and the terrace grew in stages (the north-west stairway itself was added under Xerxes).</p>
+    </div>
+    <div class="card quiet"><div class="k">Check yours</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> An answer to the question in the first sentence</label></li>
+        <li><label><input type="checkbox"> Three features, each placed with spatial language</label></li>
+        <li><label><input type="checkbox"> What each did to a visitor</label></li>
+        <li><label><input type="checkbox"> “which suggests that …” linking features to royal power</label></li>
+        <li><label><input type="checkbox"> A hedge where the evidence is an inference</label></li>
+        <li><label><input type="checkbox"> One limit of the evidence</label></li>
+      </ul></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Summary" data-kind="notes">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>How was the terrace of Persepolis laid out?</li>
+          <li>How did the layout guide and impress a visitor?</li>
+          <li>What can the terrace not tell us, and why?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Persepolis was built on a terrace about 450 by 300 metres, with ceremonial and audience halls in the north, royal palaces in the south, the Treasury and storerooms in the south-east, and walls and towers facing the mountain. A visitor climbed the low steps of the great double stairway, passed the guardian bulls of the Gate of All Nations and reached the great columned halls, while the palaces and the king’s wealth lay behind them, which suggests that, once the entrance moved to the north-west, the layout showed the king’s power step by step. The terrace cannot tell us much about the city on the plain, which is mostly unexcavated, and some of its names, like the ‘Harem’, are modern interpretations.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> The terrace: size, setting, date</label></li>
+        <li><label><input type="checkbox"> The walk: six stops</label></li>
+        <li><label><input type="checkbox"> Your labelled plan</label></li>
+        <li><label><input type="checkbox"> The zones, coloured</label></li>
+        <li><label><input type="checkbox"> Tombs and the city on the plain</label></li>
+        <li><label><input type="checkbox"> The ‘Harem’ and reconstructions</label></li>
+        <li><label><input type="checkbox"> Your paragraph on royal power</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: hinge question" data-kind="intro">
+<div class="wrap u2l05-dense">
+  <p class="eyebrow">Check for understanding · hinge question · hold up your A, B, C or D card on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2>The Treasury and storerooms on the terrace suggest Persepolis was …</h2>
+  <div class="stack veil-parts" data-veil="Vote first — then show the answer">
+  <ol class="opts">
+    <li><span class="n">A</span><span>only a ceremonial stage, where the king received his visitors</span></li>
+    <li id="u2l05-hqB"><span class="n">B</span><span>also a working centre, where goods were stored and managed</span></li>
+    <li><span class="n">C</span><span>mainly a military fortress, where the royal army was based</span></li>
+    <li><span class="n">D</span><span>mainly a sacred temple, where offerings to the gods were kept</span></li>
+  </ol>
+  <i class="reveal" data-mark="#u2l05-hqB" hidden></i>
+  <div class="note vp reveal" data-code="evidence"><div class="k">B: also a working centre (storage and administration)</div><p class="body"><b>A</b> ignores the Treasury and storerooms: whatever ceremonies took place, the terrace was never only a stage. <b>C</b> mistakes the walls, towers and garrison quarters for the whole purpose; they protected the palaces and the Treasury. <b>D</b> confuses the king’s Treasury with a temple treasury: it held the king’s wealth, not offerings to the gods.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 5 minutes · before you leave</p>
+  <h2>Two sentences</h2>
+  <div class="cols c2">
+    <div class="card accent"><div class="k">1</div><p class="lead">One feature of the terrace: where it stands, and how it was designed to affect a visitor.</p></div>
+    <div class="card accent"><div class="k">2</div><p class="lead">One thing the terrace alone cannot tell us about the city of Persepolis, and why.</p></div>
+  </div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">1 · a named feature, a spatial phrase (at the top of, at the heart of, behind …) and its effect on a visitor, hedged if it is an inference. &nbsp;2 · something about the city on the plain (how people lived, how big it was), and the reason: it is mostly unexcavated, known mainly from surveys.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> the Apadana: its stairway reliefs, the delegations and the foundation tablets.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u2l05-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>The Apadana stood in the south-east corner of the terrace.</span>
+      <span class="sol no reveal">False <span class="why">— it stood at the heart of the terrace; the Treasury was in the south-east.</span></span></li>
+    <li><span class="n">2</span><span>The steps of the great double stairway are very low.</span>
+      <span class="sol reveal">True <span class="why">— probably so that visitors climbed slowly and with dignity (Livius’s reading).</span></span></li>
+    <li><span class="n">3</span><span>The name ‘Harem’ comes from an ancient inscription naming the building.</span>
+      <span class="sol no reveal">False <span class="why">— the 1930s excavators chose it; earlier it was called the Southeast Building.</span></span></li>
+    <li><span class="n">4</span><span>Most of the city on the plain below the terrace has been excavated.</span>
+      <span class="sol no reveal">False <span class="why">— hardly any of it has; it is studied mainly by survey, including geophysical survey.</span></span></li>
+    <li><span class="n">5</span><span>The Treasury and storerooms show that Persepolis was also a place of storage and administration.</span>
+      <span class="sol reveal">True <span class="why">— the king’s wealth was kept there (and Lesson 11 adds the tablets).</span></span></li>
+    <li><span class="n">6</span><span>The Getty’s digital reconstruction shows exactly what Persepolis looked like.</span>
+      <span class="sol no reveal">False <span class="why">— it is evidence of what its makers imagined, not direct evidence of the past.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — writing" data-kind="practice">
+<div class="wrap prac u2l05-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Write it as a historian</h2>
+  <div class="split" style="--cols:1fr 1.2fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · One more feature</div><p class="body">Write one sentence about the Hall of a Hundred Columns or the Treasury, using a spatial phrase and <span class="nq">“which suggests that …”</span>.</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">In the south-east corner of the terrace, against the mountain and beside the walls and what Schmidt called the garrison quarters, the Treasury probably kept the king’s wealth out of most visitors’ sight once the entrance moved to the north-west, which suggests that the king’s riches were guarded as carefully as his person.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">2 · Extension</div><p class="body">Using the geophysical surveys of the plain, assess how far the terrace alone can tell us what the ‘city’ of Persepolis was like.</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">The terrace can tell us a great deal about the royal heart of Persepolis, but very little about the city as a whole. Its stone halls, palaces and Treasury show how the king received visitors and kept his wealth, yet of the city around the terrace “… hardly anything has been excavated”, according to Livius. Surveys of the plain, including geophysical surveys that map what lies underground without digging, have begun to fill the gap: the SELOPERSE project found “at least three urban sectors” and concluded that the city was probably spread out among gardens and fields rather than densely built. Some of this work is still being analysed, so on balance the terrace alone shows the ‘city’ of the king, not the city of the people who fed, served and built it.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u2l05-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Name the zones of the terrace and one building in each.
+      <span class="sol reveal">Ceremonial and audience (north): Apadana or Hall of a Hundred Columns · royal residences (south): Tachara or Hadish · storage and administration (south-east): Treasury · defence: the walls and towers on the east.</span></li>
+    <li>How did the great double stairway shape a visit?
+      <span class="sol reveal">Its very low steps made visitors climb slowly, probably so that they arrived in a dignified procession.</span></li>
+    <li>What did a visitor pass through at the top of the stairway?
+      <span class="sol reveal">The Gate of All Nations, between giant bulls at the west doorway and human-headed winged bulls (lamassu) at the east.</span></li>
+    <li>Why is the ‘Harem’ an interpretation, not a fact?
+      <span class="sol reveal">No ancient text gives it that name: the 1930s excavators chose it, and the building you can visit was largely rebuilt by them.</span></li>
+    <li>Where were the royal tombs?
+      <span class="sol reveal">Later kings’ tombs are cut into Kuh-e Rahmat above the terrace; Darius I and probably three successors lie at Naqsh-e Rustam, about 6 km north.</span></li>
+    <li>What is a geophysical survey, and what has it suggested about the city on the plain?
+      <span class="sol reveal">Mapping what lies underground with instruments, without digging; surveys suggest the city was spread out in separate sectors, probably among gardens and fields.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u2l05-dense u2l05-credpage">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u2l05-cite"><div class="k">Written sources</div>
+      <p class="small">Livius.org (Jona Lendering): <a href="https://www.livius.org/articles/place/persepolis/">Persepolis</a> and its building pages (terrace, stairs, Gate of All Nations, Apadana, Hall of a Hundred Columns, Tripylon, palaces, Queen’s Quarters, Treasury, storerooms, lower city, tombs); <a href="https://www.livius.org/articles/place/naqs-e-rustam/">Naqš-e Rustam</a>; Darius’s inscription <a href="https://www.livius.org/sources/content/achaemenid-royal-inscriptions/dpf-g/">DPf</a> in Livius’s translation. © Livius.org, quoted briefly.</p>
+      <p class="small">Erich F. Schmidt, <i>The Treasury of Persepolis and Other Discoveries in the Homeland of the Achaemenians</i> (Oriental Institute Communications 21, University of Chicago Press, 1939): Foreword and pp. 1–15, 97; fig. 5, the plan surveyed and drawn by John S. Bolles, with additions by Eliot F. Noyes and R. Carl Haines. <a href="https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/oic21.pdf">Free from ISAC</a>, University of Chicago; © University of Chicago (ISAC), quoted briefly.</p>
+      <p class="small">SELOPERSE (Settlement and Landscape Organisation of the Persepolis Region), <a href="https://cordis.europa.eu/project/id/299665/reporting">final report summary</a>, European Commission CORDIS (© European Union, reuse with acknowledgement).</p>
+      <p class="small">J. Paul Getty Museum, <a href="https://www.getty.edu/news/take-a-journey-to-ancient-persia-with-persepolis-reimagined/">“Take a Journey to Ancient Persia with Persepolis Reimagined”</a> (25 April 2022), © J. Paul Getty Trust, quoted briefly; and <a href="https://persepolis.getty.edu/">Persepolis Reimagined</a> (linked, not reproduced).</p>
+      <p class="small">Plans: drawn for this lesson, simplified and not to scale, after Schmidt (1939), fig. 5.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet"><div class="k">Teacher resources</div>
+        <p class="small">Teacher resources: <i>Architectural Marvels: The Terrace and Gateway</i>, <i>Palaces and Private Spheres</i>, <i>The Treasury and the Hall of a Hundred Columns</i>, <i>Why Darius Built Persepolis</i> (class notebook ‘Persepolis’), used as leads; every fact re-checked.</p></div>
+    </div>
+  </div>
+  <div class="card quiet u2l05-cite"><div class="k">Images</div>
+    <ul class="small credits"><li><b>The terrace of Persepolis from the slopes of Kuh-e Rahmat</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:General_view_of_Persepolis,_Iran_(4).jpg">source</a></li><li><b>Approaching the terrace: the stairway and the Gate of All Nations</b> · Photo: A. Davey · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Approach_to_Persepolis_The_Great_Double_Staircase_(4670082050).jpg">source</a></li><li><b>The great double stairway</b> · Photo: A. Davey · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Detail-The_Great_Double_Staircase_at_Persepolis_(4669487623).jpg">source</a></li><li><b>The Gate of All Nations, eastern doorway</b> · Photo: 4009dayton · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Gate_of_All_Nations,_Persepolis,_Iran.jpg">source</a></li><li><b>An Apadana column, looking north to the Gate of All Nations</b> · Photo: Bernard Gagnon · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis_-_Apadana_01.jpg">source</a></li><li><b>The Hall of a Hundred Columns</b> · Photo: Bernard Gagnon · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis,_Iran_09.jpg">source</a></li><li><b>The Tachara, palace of Darius I</b> · Photo: Bernard Gagnon · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis_-_Tachara_01.jpg">source</a></li><li><b>The Treasury and the rebuilt ‘Harem’ from the south-east</b> · Photo: Bernard Gagnon · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis,_Iran_15.jpg">source</a></li><li><b>A royal tomb in Kuh-e Rahmat</b> · Photo: Bernard Gagnon · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis_-_Tomb_of_Artaxerxes_III_01.jpg">source</a></li><li><b>Naqsh-e Rustam</b> · Photo: Bernard Gagnon · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Naqsh-e_Rustam_01.jpg">source</a></li><li><b>The rebuilt portico of the so-called ‘Harem’ (site museum)</b> · Photo: Davide Mauro · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Entrance_Museum_of_Persepolis.jpg">source</a></li><li><b>Bird’s-eye reconstruction of Persepolis by Charles Chipiez</b> · Charles Chipiez (1835–1901) · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis_vue_d%27oiseau_Chipiez.jpg">source</a></li></ul>
+    <p class="small">All images are public domain or openly licensed, and were resized for the web. Each is shared under the licence shown.</p></div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1699 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U2 L4 · Discovering Persepolis: from travellers’ sketches to scientific excavation</title>
+<meta name="description" content="Year 11 Ancient History, case study Persepolis: how the site was known, drawn, read, plundered, excavated and studied from 1602 to today, and what each method added to the evidence and what it destroyed.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#0F5E5A; --bright:#1A8A84; --tint:#E1F2F0; --statement:#0F5E5A;
+  --solid:#0F5E5A; --soft:#CBEDE9; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; } }
+:root[data-theme="dark"]{ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 2 Lesson 4 only (every class starts u2l04-) */
+
+/* stage strip on the four I do slides: where we are on the timeline */
+.u2l04-strip{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px; margin:-.1em 0 .1em;}
+.u2l04-strip span{padding:.22em .6em; border-radius:999px; border:1px solid var(--rule); background:var(--surface);
+  color:var(--slate); font-size:calc(var(--fs-chrome)*.92); line-height:1.25; text-align:center; white-space:nowrap;
+  overflow:hidden; text-overflow:ellipsis;}
+.u2l04-strip span.on{background:var(--solid); border-color:var(--solid); color:#fff; font-weight:700;}
+
+/* added / damaged: two notes side by side */
+.u2l04-ad{display:grid; grid-template-columns:1fr 1fr; gap:clamp(8px,1vw,14px);}
+.u2l04-ad .note{margin:0;}
+
+/* figures: keep pictures inside the slide */
+.u2l04-dense .figure.tall img{max-height:56vh;}
+
+/* then and now: three pictures in a row, each with a label */
+.u2l04-pair{display:grid; grid-template-columns:1.45fr 1fr 1fr; gap:clamp(8px,1vw,16px); align-items:start;}
+.u2l04-shot{position:relative; margin:0;}
+.u2l04-shot img{display:block; width:100%; height:25vh; object-fit:cover; border-radius:10px; box-shadow:var(--shadow);
+  background:var(--surface-2);}
+.u2l04-shot figcaption{font-size:calc(var(--fs-chrome)*.92); color:var(--slate); margin-top:.3em; line-height:1.3;}
+.u2l04-tag{position:absolute; top:6px; left:6px; padding:.1em .55em; border-radius:999px; background:var(--solid);
+  color:#fff; font-weight:700; font-size:calc(var(--fs-chrome)*.88); box-shadow:0 0 0 2px #fff;}
+.u2l04-small img{height:22vh; object-fit:contain; background:var(--surface);}
+.u2l04-link{margin:0;} .u2l04-link a{color:var(--deep);}
+.u2l04-sw{background:var(--deep);}
+.u2l04-sw.u2l04-vote{background:var(--c-judgement);}
+
+/* OVPRL rows: letter badge + question + model */
+.u2l04-ov{display:grid; grid-template-columns:2.4em 1fr; gap:.6em; align-items:start;}
+.u2l04-ovl{display:grid; place-items:center; min-height:2em; border-radius:8px; background:var(--solid); color:#fff;
+  font-weight:700; font-family:var(--mono); font-size:calc(var(--fs-body)*.92);}
+.u2l04-ov .qprompt::before{content:none;}
+.u2l04-model{margin-top:.25em; padding:.3em .75em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 8px 8px 0; font-size:calc(var(--fs-body)*.84); line-height:1.38;}
+
+/* eight timeline cards (no dates on screen; Foundation cards have them printed) */
+.u2l04-tl{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:clamp(6px,.8vw,12px);}
+.u2l04-tlc{position:relative; background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:.5em .75em .55em 2.6em; box-shadow:var(--shadow); font-size:calc(var(--fs-body)*.78); line-height:1.3;}
+.u2l04-tlc b{display:block; color:var(--deep);}
+.u2l04-tlc .l{position:absolute; top:.5em; left:.55em; width:1.55em; height:1.55em; border-radius:50%;
+  background:var(--solid); color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em;}
+.u2l04-key td:first-child{font-weight:700; white-space:nowrap;}
+.u2l04-key td.u2l04-when{white-space:nowrap; font-family:var(--mono); font-size:.9em;}
+
+/* quick facts list (Check slide) */
+.u2l04-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.25em;
+  font-size:calc(var(--fs-body)*.88); line-height:1.35;}
+.u2l04-facts b{color:var(--deep);}
+
+/* goals slide: syllabus line; credits */
+.u2l04-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u2l04-cite a{color:var(--deep);}
+
+/* phones (Read mode): one column, natural picture heights */
+@media (max-width:900px){
+  .u2l04-strip{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .u2l04-strip span{white-space:normal;}
+  .u2l04-ad, .u2l04-pair{grid-template-columns:1fr;}
+  .u2l04-shot img, .u2l04-small img{height:auto; max-height:45vh; object-fit:contain;}
+  .u2l04-tl{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width:480px){
+  .u2l04-tl{grid-template-columns:1fr;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u2l04-dense{gap:9px;}
+  html:not(.read) .u2l04-dense h2{font-size:calc(var(--fs-h2)*.84);}
+  html:not(.read) .u2l04-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.38;}
+  html:not(.read) .u2l04-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u2l04-dense .src{padding:8px 14px;}
+  html:not(.read) .u2l04-dense .src .k{margin-bottom:.25em;}
+  html:not(.read) .u2l04-dense .src .prov{margin-top:.3em; font-size:calc(var(--fs-chrome)*.9);}
+  html:not(.read) .u2l04-dense .note{padding:.38em .75em;}
+  html:not(.read) .u2l04-dense .note .k{margin-bottom:.15em;}
+  html:not(.read) .u2l04-dense .note .body, html:not(.read) .u2l04-dense .card .body,
+  html:not(.read) .u2l04-dense .qprompt{font-size:calc(var(--fs-body)*.78); line-height:1.32;}
+  html:not(.read) .u2l04-dense .card{padding:8px 14px;}
+  html:not(.read) .u2l04-dense .stack{gap:8px;}
+  html:not(.read) .u2l04-dense .tbl.compact{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u2l04-dense .tbl.compact td{padding:.26em .5em;}
+  html:not(.read) .u2l04-dense .tbl th{padding:.34em .55em;}
+  html:not(.read) .u2l04-dense .figure img{max-height:30vh;}
+  html:not(.read) .u2l04-dense .figure.short img{height:22vh;}
+  html:not(.read) .u2l04-dense .figure.tall img{max-height:52vh;}
+  html:not(.read) .u2l04-dense .figure figcaption{font-size:calc(var(--fs-chrome)*.86); margin-top:.3em;}
+  html:not(.read) .u2l04-dense .keylist{gap:5px;}
+  html:not(.read) .u2l04-dense .keylist li{font-size:calc(var(--fs-body)*.8); line-height:1.26;}
+  html:not(.read) .u2l04-dense .keylist .d{font-size:calc(var(--fs-body)*.72); line-height:1.3;}
+  html:not(.read) .u2l04-dense .mq{font-size:calc(var(--fs-body)*.76); line-height:1.32;}
+  html:not(.read) .u2l04-dense .u2l04-model{font-size:calc(var(--fs-body)*.72); padding:.22em .65em;}
+  html:not(.read) .u2l04-dense .u2l04-ov .qprompt{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u2l04-dense .u2l04-shot img{height:22vh;}
+  html:not(.read) .u2l04-dense .u2l04-small img{height:19vh;}
+  html:not(.read) .u2l04-dense .u2l04-tlc{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u2l04-dense .u2l04-facts{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u2l04-dense .tf li, html:not(.read) .u2l04-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l04-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u2l04-dense.prac{gap:6px;}
+  html:not(.read) .u2l04-dense .cornell .cq, html:not(.read) .u2l04-dense .cornell .nts{font-size:calc(var(--fs-body)*.74); padding:.3em .8em;}
+  html:not(.read) .u2l04-dense .u2l04-cite .credits{font-size:calc(var(--fs-chrome)*.86); margin-bottom:.3em;}
+  html:not(.read) .u2l04-dense .u2l04-cite .credits li{margin:.1em 0;}
+  html:not(.read) .u2l04-dense .u2l04-cite p.small{font-size:calc(var(--fs-chrome)*.88); margin:.2em 0;}
+}
+
+/* slide 7: the tall engraving stays inside the slide */
+.u2l04-s7 .figure img{max-height:40vh;}
+@media (max-height:820px){ html:not(.read) .u2l04-dense .u2l04-s7 .figure img{max-height:36vh;} }
+
+/* slide 11: bigger pictures; slide 14: one-line answer rows */
+.u2l04-pair .u2l04-shot img{height:30vh;}
+@media (max-height:820px){
+  html:not(.read) .u2l04-dense .u2l04-pair .u2l04-shot img{height:28vh;}
+  html:not(.read) .u2l04-dense .u2l04-key td{padding:.2em .5em; line-height:1.25;}
+  html:not(.read) .u2l04-dense .u2l04-tlc{padding:.35em .6em .4em 2.4em;}
+}
+@media (max-width:900px){ .u2l04-pair .u2l04-shot img{height:auto;} }
+
+/* slide 12: the picture and the source sit on the left (they come after the OVPRL rows in the page, so
+   phones read the rows second); tighter rows so the one-sentence judgement fits */
+.u2l04-s12 > .u2l04-left{order:-1;}
+@media (max-height:820px){
+  html:not(.read) .u2l04-dense .u2l04-s12 .stack{gap:6px;}
+  html:not(.read) .u2l04-dense .u2l04-s12 .u2l04-model{font-size:calc(var(--fs-body)*.68); line-height:1.32;}
+  html:not(.read) .u2l04-dense .u2l04-s12 .u2l04-ov .qprompt{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l04-dense .u2l04-s12 .note .body{font-size:calc(var(--fs-body)*.72); max-width:none;}
+  html:not(.read) .u2l04-dense .u2l04-s12 .note .k{font-size:calc(var(--fs-body)*.8); margin-bottom:.1em;}
+  html:not(.read) .u2l04-dense .u2l04-s12 .note{padding:.3em .75em;}
+}
+
+/* slide 14: the eight answer rows fit under the cards */
+@media (max-height:820px){
+  html:not(.read) .u2l04-dense .tbl.compact.u2l04-key{font-size:calc(var(--fs-body)*.64);}
+  html:not(.read) .u2l04-dense .u2l04-key td{padding:.16em .5em;}
+  html:not(.read) .u2l04-dense .u2l04-key th{padding:.26em .5em;}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 4" data-title="Discovering Persepolis" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:.9fr 1.3fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 2 · Persepolis · Lesson 4</p>
+      <h1>Discovering Persepolis: from travellers’ sketches to scientific excavation</h1>
+      <p class="lead">How did the investigation of Persepolis change between 1602 and today, and what did each change do to the evidence?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <figure class="figure contain"><img src="images/u2l04-de-bruijn-third-view-of-persepolis-1711.jpg" alt="Cornelis de Bruijn’s ‘third view of Persepolis’, looking across the terrace from the hillside, a plate in his Reizen over Moskovie, door Persie en Indie (first published 1711), made from the drawings of his stay in 1704–05 (this copy printed in Amsterdam in 1714)" loading="lazy"><figcaption>Cornelis de Bruijn’s ‘third view of Persepolis’, looking across the terrace from the hillside, a plate in his Reizen over Moskovie, door Persie en Indie (first published 1711), made from the drawings of his stay in 1704–05 (this copy printed in Amsterdam in 1714) — <span class="cr">Cornelis de Bruijn (1711), scan: Internet Archive · Public domain</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 4" data-title="Connect: Schliemann’s trench" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Connect · 3 minutes · everyone writes one line · press K for the timer</p>
+  <h2>What did Schliemann’s trench at Troy destroy, and why did recording become so important?</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <figure class="figure short"><img src="images/u1l02-troy-schliemann-trench.jpg" alt="Schliemann’s great trench, cut through the mound of Troy (Hisarlik, in today’s Türkiye) in the 1870s, photographed in 2014" loading="lazy"><figcaption>Schliemann’s great trench, cut through the mound of Troy (Hisarlik, in today’s Türkiye) in the 1870s, photographed in 2014 — <span class="cr">Photo: Dosseman · CC BY-SA 4.0</span></figcaption></figure>
+    <div class="stack">
+      <div class="card accent"><div class="k">One line, from Unit 1 Lesson 2</div><p class="body">Name what the trench destroyed, then say why that made careful recording so important. Use the word <b>destroys</b>.</p></div>
+      <div class="note reveal" data-code="evidence" data-veil="Write yours first — then show a model answer"><div class="k">A model answer</div><p class="body">The trench cut through and destroyed the later layers of the mound above the level Schliemann wanted. Excavation destroys each layer as it is dug, so unless it is recorded, its evidence is lost for ever: the record is all that remains.</p></div>
+      <p class="small">Today: who dug Persepolis, how, and what did they record?</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 4" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>understand how Persepolis was rediscovered and excavated</li>
+        <li>analyse how the methods used changed the evidence we have</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>sequence the main stages from travellers to scientific excavation</li>
+        <li>explain two changes in method and their effect on the evidence</li>
+        <li>judge what an early drawing is reliable for</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u2l04-syl"><b>Syllabus outcomes:</b> AH-11-01 explains continuity and change in the ancient world · AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-03 identifies continuity and change in the ancient world · AH-LS-08 uses sources to form conclusions about the past.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 4" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U2 L4 · Discovering Persepolis</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, dates, arrows (→ leads to), abbreviations (c. = about; OI = Oriental Institute)</span></div></div>
+      <div class="row"><div class="cq">Explain how the Oriental Institute changed the investigation.</div><div class="nts">1931–39 · Herzfeld, then Schmidt → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases and dates, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: from travellers to excavators · OVPRL on De Bruijn’s drawing.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 4" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u2l04-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words you will use today</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>The site and its texts</th><th>Meaning</th></tr>
+      <tr><td>Takht-e Jamshid</td><td>‘Throne of Jamshid’ — the local Persian name for the ruins, after a legendary king.</td></tr>
+      <tr><td>terrace</td><td>The huge raised platform on which the buildings of Persepolis stand.</td></tr>
+      <tr><td>cuneiform</td><td>Wedge-shaped writing pressed into clay or carved in stone, used for Old Persian, Elamite and Babylonian.</td></tr>
+      <tr><td>trilingual inscription</td><td>An inscription written in three languages (at Persepolis usually Old Persian, Elamite and Babylonian).</td></tr>
+      <tr><td>foundation tablet</td><td>An inscribed tablet buried in a building’s foundations, addressed to the gods and to future kings, not to visitors.</td></tr>
+      <tr><td>Fortification Tablets</td><td>Tens of thousands of clay tablets (509–493 BCE) recording rations, workers and travel, found in 1933 in the fortification wall.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Investigating the site</th><th>Meaning</th></tr>
+      <tr><td>decipherment</td><td>Working out how to read a lost script or language.</td></tr>
+      <tr><td>context (archaeological)</td><td>The exact place and layer an object was found in, and what was found with it.</td></tr>
+      <tr><td>stratigraphy</td><td>The study of the layers (strata) built up on a site over time.</td></tr>
+      <tr><td>provenance</td><td>Where an object was found and its history of ownership since; without it, an object loses its context and may be a fake.</td></tr>
+      <tr><td>reconstruction</td><td>A modern rebuilding or picture of how something looked — evidence of what its maker imagined, not direct evidence of the past.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · From travellers to excavators" data-title="Stage 1: never lost, then the travellers" data-kind="notes">
+<div class="wrap u2l04-dense">
+  <p class="eyebrow">1 · From travellers to excavators · I do — think aloud · stage 1 of 4</p>
+  <div class="u2l04-strip" aria-label="Stages of the timeline"><span class="on">1602–1765 · travellers</span><span>1765–1930 · reading and removing</span><span>1931–39 · scientific excavation</span><span>1939 → today</span></div>
+  <h2>Never lost: travellers’ sketches, 1602–1765</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <ol class="keylist">
+        <li class="reveal"><span class="num">0</span><span class="t">Never lost</span><span class="d">Local people called the ruins Takht-e Jamshid, ‘Throne of Jamshid’, after a legendary king; medieval Muslim geographers described them, and European travellers mentioned them from the 1300s.</span></li>
+        <li class="reveal"><span class="num">1</span><span class="t">1602 · Antonio de Gouvea</span><span class="d">A Portuguese missionary notices the cuneiform inscriptions.</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">1618 · García de Silva y Figueroa</span><span class="d">The Spanish ambassador visits with Diodorus’ history in his hand and compares the ruins with its description of Persepolis.</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">1704–05 · Cornelis de Bruijn</span><span class="d">A Dutch artist stays about three months, drawing and measuring; his drawings are published in 1711. He carves his name on the Gate of All Nations, and takes several small pieces home.</span></li>
+      </ol>
+      <p class="qprompt reveal">What did this stage add to our evidence, and what did it damage?</p>
+      <div class="u2l04-ad veil-parts" data-veil="Think first — then show what this stage added and damaged">
+        <div class="note vp reveal" data-code="evidence"><div class="k">Added</div><p class="body">Fuller European descriptions, and careful drawings of what stood above ground about 1704.</p></div>
+        <div class="note vp reveal" data-code="counter"><div class="k">Damaged</div><p class="body">Names carved into the stone; the first recorded removal of small pieces to Europe, away from their place on the buildings.</p></div>
+      </div>
+    </div>
+    <div class="stack">
+      <figure class="figure short"><img src="images/u2l04-names-carved-gate-of-all-nations.jpg" alt="Names carved into the Gate of All Nations: ‘A·BACKER 1704’ and ‘C·D·BRUIJN 1704’ (Adriaan de Backer and Cornelis de Bruijn), among later visitors’ names, one of them dated 1898; photographed in 2012" loading="lazy"><figcaption>Names carved into the Gate of All Nations: ‘A·BACKER 1704’ and ‘C·D·BRUIJN 1704’ (Adriaan de Backer and Cornelis de Bruijn), among later visitors’ names, one of them dated 1898; photographed in 2012 — <span class="cr">Photo: Hardscarf · CC BY-SA 3.0</span></figcaption></figure>
+      <div class="src">
+        <div class="k">A later visitor at the same gateway</div>
+        <p class="quote sm">… I found a cloud of initials, and names, and dates, of former visitants to the spot, to the no small injury of the fine surface of the stone.</p>
+        <p class="prov">Robert Ker Porter, a British artist who visited in June 1818, <i>Travels in Georgia, Persia, Armenia, Ancient Babylonia</i>, vol. 1 (London, 1821), p. 587</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · From travellers to excavators" data-title="Stage 2: reading and removing" data-kind="notes">
+<div class="wrap u2l04-dense">
+  <p class="eyebrow">1 · From travellers to excavators · I do — think aloud · stage 2 of 4</p>
+  <div class="u2l04-strip" aria-label="Stages of the timeline"><span>1602–1765 · travellers</span><span class="on">1765–1930 · reading and removing</span><span>1931–39 · scientific excavation</span><span>1939 → today</span></div>
+  <h2>Reading the stones and carrying them away, 1765–1930</h2>
+  <div class="split u2l04-s7" style="--cols:1.2fr .8fr">
+    <div class="stack">
+      <ol class="keylist">
+        <li class="reveal"><span class="num">1</span><span class="t">1765 → 1802 · Carsten Niebuhr, then Georg Grotefend</span><span class="d">Niebuhr spends three weeks copying the inscriptions carefully, and notices that they always come in three different scripts. Working from his copies, Grotefend begins to decipher Old Persian in 1802.</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">1811–1818 · collectors</span><span class="d">British diplomats take reliefs: James Morier takes fallen sculptures for England, splitting one block so mules can carry it. The first Persepolis reliefs go on show in the British Museum in 1818.</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">1858–1891 · photographs and the first digs</span><span class="d">Early photographs (1858); small digs in 1874, 1878 (organised by the governor of the region) and 1891.</span></li>
+        <li class="reveal"><span class="num">4</span><span class="t">1930 · Iran’s antiquities law</span><span class="d">The first precise rules for registering and conserving monuments and historical sites.</span></li>
+      </ol>
+      <p class="qprompt reveal">What did this stage add to our evidence, and what did it damage?</p>
+      <div class="u2l04-ad veil-parts" data-veil="Think first — then show what this stage added and damaged">
+        <div class="note vp reveal" data-code="evidence"><div class="k">Added</div><p class="body">The inscriptions began to be read, so the builders could speak in their own words; the first photographs.</p></div>
+        <div class="note vp reveal" data-code="counter"><div class="k">Damaged</div><p class="body">Reliefs broken up and scattered to museums, losing their context on the buildings.</p></div>
+      </div>
+    </div>
+    <div class="stack">
+      <figure class="figure contain"><img src="images/u2l04-morier-fragment-1818.jpg" alt="‘Fragment of Persepolitan sculpture, in the possession of James Morier’: an engraving of one of the fragments Morier took from the ruins in 1811 to send to England, the frontispiece of his A Second Journey through Persia (London, 1818)" loading="lazy"><figcaption>‘Fragment of Persepolitan sculpture, in the possession of James Morier’: an engraving of one of the fragments Morier took from the ruins in 1811 to send to England, the frontispiece of his A Second Journey through Persia (London, 1818) — <span class="cr">J. Morier, A Second Journey through Persia (1818), frontispiece; scan: Internet Archive · Public domain</span></figcaption></figure>
+      <div class="src">
+        <div class="k">A collector in his own words, 1811</div>
+        <p class="quote sm">… I did not hesitate to appropriate such parts of them as seemed the most fitting to be sent to England.</p>
+        <p class="prov">James Morier, a British diplomat, on the fallen sculptures at Persepolis · <i>A Second Journey through Persia</i> (London, 1818), p. 75</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · From travellers to excavators" data-title="Stage 3: scientific excavation" data-kind="notes">
+<div class="wrap u2l04-dense">
+  <p class="eyebrow">1 · From travellers to excavators · I do — think aloud · stage 3 of 4</p>
+  <div class="u2l04-strip" aria-label="Stages of the timeline"><span>1602–1765 · travellers</span><span>1765–1930 · reading and removing</span><span class="on">1931–39 · scientific excavation</span><span>1939 → today</span></div>
+  <h2>Scientific excavation: the Oriental Institute of Chicago, 1931–39</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <ol class="keylist">
+        <li class="reveal"><span class="num">1</span><span class="t">1931–34 · Ernst Herzfeld, with the architect Friedrich Krefter</span><span class="d">Planned clearing, plans and photographs. In 1932 the Apadana’s east stairway is uncovered: buried under debris, it is well preserved, with traces of paint that soon vanished.</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">1933 · two great finds</span><span class="d">Krefter finds the Apadana’s gold and silver foundation tablets; the team finds tens of thousands of Fortification Tablets and fragments in the fortification wall.</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">1935–39 · Erich Schmidt</span><span class="d">Excavates the Treasury; photographs the site from the air (1935–37); publishes the results as <i>Persepolis</i> I–III (1953–70).</span></li>
+      </ol>
+      <p class="qprompt reveal">What did this stage add to our evidence, and what did it damage?</p>
+      <div class="u2l04-ad veil-parts" data-veil="Think first — then show what this stage added and damaged">
+        <div class="note vp reveal" data-code="evidence"><div class="k">Added</div><p class="body">Buried reliefs, inscriptions and archives found and recorded with plans, photographs and published reports.</p></div>
+        <div class="note vp reveal" data-code="counter"><div class="k">Damaged</div><p class="body">Clearing removed the layers, which survive only in the records; paint traces lost; finds taken to Chicago.</p></div>
+      </div>
+    </div>
+    <div class="stack">
+      <figure class="figure short"><img src="images/u2l04-fortification-tablets-chicago.jpg" alt="Fortification Tablets and fragments from Persepolis in study boxes, with their catalogue labels, at the Oriental Institute (now ISAC), University of Chicago, in 2017" loading="lazy"><figcaption>Fortification Tablets and fragments from Persepolis in study boxes, with their catalogue labels, at the Oriental Institute (now ISAC), University of Chicago, in 2017 — <span class="cr">Photo: Pfa16 · CC BY-SA 4.0</span></figcaption></figure>
+      <div class="src">
+        <div class="k">Schmidt on his aerial survey</div>
+        <p class="quote sm">In thirteen hours of flying we succeeded in mapping more than four hundred ancient sites in the plain of Persepolis, a task of years if carried through on the ground.</p>
+        <p class="prov">Erich Schmidt, <i>Flights over Ancient Cities of Iran</i> (Chicago: University of Chicago Press, 1940), p. 7</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · From travellers to excavators" data-title="Stage 4: since 1939" data-kind="notes">
+<div class="wrap u2l04-dense">
+  <p class="eyebrow">1 · From travellers to excavators · I do — think aloud · stage 4 of 4</p>
+  <div class="u2l04-strip" aria-label="Stages of the timeline"><span>1602–1765 · travellers</span><span>1765–1930 · reading and removing</span><span>1931–39 · scientific excavation</span><span class="on">1939 → today</span></div>
+  <h2>Since 1939: Iranian, Italian and digital</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <ol class="keylist">
+        <li class="reveal"><span class="num">1</span><span class="t">Iran’s Archaeological Service</span><span class="d">André Godard, Mohammad-Taqi Mostafavi and Ali Sami go on excavating parts of the terrace and the plain below it.</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">From 1964 · Italian restorers</span><span class="d">Giuseppe and Ann Britt Tilia and their team conserve and restore the stairways, the Apadana and the Hall of a Hundred Columns.</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">1979 · World Heritage Site</span><span class="d">UNESCO lists Persepolis.</span></li>
+        <li class="reveal"><span class="num">4</span><span class="t">Recent decades · new methods</span><span class="d">An Iranian–Italian team maps the city around the terrace mainly by field walking and geophysical survey, digging only in a few places; the tablets are photographed in fine detail and shared online.</span></li>
+      </ol>
+      <p class="qprompt reveal">What did this stage add to our evidence, and what did it change?</p>
+      <div class="u2l04-ad veil-parts" data-veil="Think first — then show what this stage added and changed">
+        <div class="note vp reveal" data-code="evidence"><div class="k">Added</div><p class="body">Conservation of what survives; buried remains mapped without destroying them; digital records anyone can study.</p></div>
+        <div class="note vp reveal" data-code="counter"><div class="k">Changed</div><p class="body">Restoration adds modern repairs, so visitors see some rebuilt stone; geophysical survey on its own can locate buried walls but not date them.</p></div>
+      </div>
+    </div>
+    <figure class="figure contain"><img src="images/u2l04-hall-of-a-hundred-columns-2009.jpg" alt="The ruins of the Hall of a Hundred Columns in 2009: the floor cleared to its ancient level, column bases and drums laid out, doorframes, and scaffolding on one of them (part of a panorama)" loading="lazy"><figcaption>The ruins of the Hall of a Hundred Columns in 2009: the floor cleared to its ancient level, column bases and drums laid out, doorframes, and scaffolding on one of them (part of a panorama) — <span class="cr">Photo: Hansueli Krapf · CC BY-SA 3.0</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · From travellers to excavators" data-title="Notes 1 — From travellers to excavators" data-kind="notes">
+<div class="wrap u2l04-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>From travellers to excavators</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L4 · Discovering Persepolis</b></span><span>1 · From travellers to excavators</span></div>
+    <div class="row"><div class="cq">Explain why “rediscovered” is a European word.</div>
+      <div class="nts reveal">never lost: locals’ name Takht-e Jamshid; Europeans mention it from the 1300s <span class="sep">·</span> closer study: Gouvea 1602 <span class="sep">·</span> Silva y Figueroa 1618 (Diodorus in hand) <span class="sep">·</span> De Bruijn 1704–05, drawings pub. 1711, carved name, took small pieces</div></div>
+    <div class="row"><div class="cq">Explain how the inscriptions came to be read.</div>
+      <div class="nts reveal">Niebuhr’s careful copies (1765) → Grotefend begins to decipher Old Persian (1802) → the builders speak in their own words</div></div>
+    <div class="row"><div class="cq">Analyse what the collectors damaged.</div>
+      <div class="nts reveal">Morier 1811: fallen reliefs taken (one block split), sent to England <span class="sep">·</span> British Museum display 1818 → reliefs lose their context <span class="sep">·</span> 1930: Iran’s antiquities law</div></div>
+    <div class="row"><div class="cq">Assess the Oriental Institute’s methods.</div>
+      <div class="nts reveal">Herzfeld 1931–34 (+ Krefter), Schmidt 1935–39 <span class="sep">·</span> found east stairway 1932, foundation + Fortification Tablets 1933, aerial photos <span class="sep">·</span> but layers cleared, paint lost, finds to Chicago</div></div>
+    <div class="row"><div class="cq">Identify how Persepolis is studied today.</div>
+      <div class="nts reveal">Iranian service (Godard, Sami) went on digging <span class="sep">·</span> Italian restorers from 1964 <span class="sep">·</span> UNESCO 1979 <span class="sep">·</span> geophysical survey, digital images → study with less digging</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Reliable for what?" data-title="We do: then and now" data-kind="notes">
+<div class="wrap u2l04-dense">
+  <p class="eyebrow">2 · Reliable for what? · We do — compare · then gesture vote</p>
+  <h2>Then and now: a drawing of 1711 and two photographs</h2>
+  <div class="u2l04-pair">
+    <figure class="u2l04-shot"><span class="u2l04-tag">1711 · drawing</span><img src="images/u2l04-de-bruijn-third-view-of-persepolis-1711.jpg" alt="An engraving of the ruined terrace seen from the hillside: standing columns, doorframes and broken walls on a rough, earth-covered surface, with travellers and a donkey in the foreground"><figcaption>Cornelis de Bruijn, ‘Derde gesigt van Persepolis’ (third view), from his visit of 1704–05</figcaption></figure>
+    <figure class="u2l04-shot"><span class="u2l04-tag">1858 · photograph</span><img src="images/u2l04-pesce-persepolis-from-the-mountain-1858.jpg" alt="A faded early photograph of the terrace from the hillside: doorframes and a few pillars rising from an earth-covered surface, the plain beyond"><figcaption>Luigi Pesce, ‘General view of Persepolis taken from the mountain’</figcaption></figure>
+    <figure class="u2l04-shot"><span class="u2l04-tag">2009 · photograph</span><img src="images/u2l04-hall-of-a-hundred-columns-2009.jpg" alt="The ruins in 2009: a cleared floor with column bases and drums laid out, stone doorframes, and scaffolding on one doorway, below a rocky hillside"><figcaption>The Hall of a Hundred Columns, cleared in the 1930s</figcaption></figure>
+  </div>
+  <p class="small u2l04-link">Schmidt’s aerial photographs of 1935–37 are not free to copy: see them in ISAC’s free catalogue, <a href="https://isac.uchicago.edu/publications/persepolis-and-ancient-iran"><i>Persepolis and Ancient Iran</i></a> (1976).</p>
+  <div class="split veil-parts" style="--cols:1fr 1fr" data-veil="Compare first — then show some answers">
+    <div class="stack">
+      <p class="mq reveal"><span class="sw u2l04-sw"></span><span><b>What has stayed the same?</b> <span class="vp">Doorframes and columns still stand; the terrace still sits against the hillside above the flat plain.</span></span></p>
+      <p class="mq reveal"><span class="sw u2l04-sw"></span><span><b>What has changed?</b> <span class="vp">In 1704 and 1858 the buildings rise from earth and rubble; by 2009 the floor is cleared, the column bases laid out, and repairs are under way.</span></span></p>
+    </div>
+    <div class="stack">
+      <p class="mq reveal"><span class="sw u2l04-sw"></span><span><b>What can a photograph show that a drawing cannot?</b> <span class="vp">Everything in front of the camera at one moment, with no artist choosing what to put in; but the photographer still chooses the view, and old prints fade.</span></span></p>
+      <p class="mq reveal"><span class="sw u2l04-sw u2l04-vote"></span><span><b>Gesture vote: <span class="nq">“The drawing shows exactly what the terrace looked like in 1704.”</span></b> <span class="vp">Only partly. It fits the photographs in outline: standing columns and doorframes on a half-buried terrace. But it is not exact: the artist chose to include and place people and a donkey, and nothing under the ground is shown.</span></span></p>
+    </div>
+  </div>
+  <p class="small credline">Images: De Bruijn 1711 (Public domain) · Luigi Pesce / The Met (CC0 1.0) · Hansueli Krapf (CC BY-SA 3.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Reliable for what?" data-title="We do: OVPRL on De Bruijn’s drawing" data-kind="notes">
+<div class="wrap u2l04-dense">
+  <p class="eyebrow">2 · Reliable for what? · We do — cold call · use the OVPRL routine on page 2 of your booklet</p>
+  <h2>Class OVPRL: what is De Bruijn’s drawing reliable for?</h2>
+  <div class="split veil-parts u2l04-s12" style="--cols:.72fr 1.38fr" data-veil="Answer first — then show the models">
+    <div class="stack">
+      <div class="u2l04-ov"><span class="u2l04-ovl">O</span><div><p class="qprompt">Origin: who made it, when and where?</p>
+        <p class="u2l04-model vp reveal">Published in 1711 by the Dutch artist Cornelis de Bruijn in his travel book · an engraving based on drawings he made at the site during a stay of about three months (November 1704 – January 1705)</p></div></div>
+      <div class="u2l04-ov"><span class="u2l04-ovl">V</span><div><p class="qprompt">Value: what can it tell us, for which inquiry?</p>
+        <p class="u2l04-model vp reveal">For an inquiry into how the site has changed: what stood above ground about 1704, before any digging · also how a European artist presented the ruins</p></div></div>
+      <div class="u2l04-ov"><span class="u2l04-ovl">P</span><div><p class="qprompt">Purpose: why was it made, and for whom?</p>
+        <p class="u2l04-model vp reveal">To illustrate his book for European readers: letters on the plate point to his description of each building</p></div></div>
+      <div class="u2l04-ov"><span class="u2l04-ovl">R</span><div><p class="qprompt">Reliability: how far can we trust it, and for what?</p>
+        <p class="u2l04-model vp reveal">Reliable for the general layout above ground: drawn on the spot over months, and it matches Pesce’s 1858 photograph in outline · less so for small details (Morier found his drawings of the sculptures “in general correct in outline” but “imperfect in the details”), buried parts, and what he added or tidied</p></div></div>
+      <div class="u2l04-ov"><span class="u2l04-ovl">L</span><div><p class="qprompt">Limitations: what can it not tell us?</p>
+        <p class="u2l04-model vp reveal">What lay buried (a second row of figures, dug up by Morier in 1811; the east stairway, uncovered in 1932), colour, what the buildings were for</p></div></div>
+      <div class="note vp reveal" data-code="judgement"><div class="k">Reliable for what? One sentence</div><p class="body nq">De Bruijn’s drawing is reliable for the general layout of the ruins standing in 1704–05, but not for small details or for anything buried, because he could draw only what he saw above ground; his view matches later photographs in outline, and a later visitor found his drawings of the sculptures correct in outline but imperfect in detail.</p></div>
+    </div>
+    <div class="stack u2l04-left">
+      <figure class="u2l04-shot u2l04-small"><img src="images/u2l04-de-bruijn-third-view-of-persepolis-1711.jpg" alt="De Bruijn’s engraving of the ruined terrace seen from the hillside"><figcaption>De Bruijn, ‘third view of Persepolis’ (1711) · Public domain</figcaption></figure>
+      <div class="src">
+        <div class="k">A later visitor checks the drawings of the sculptures, 1811</div>
+        <p class="quote sm">On comparing Le Bruyn’s, Chardin’s, and Niehbuhr’s drawings with the sculptures, I found them in general correct in outline, but imperfect in the details of dress, arms, &amp;c.</p>
+        <p class="prov">James Morier, <i>A Second Journey through Persia</i> (London, 1818), p. 76 <span class="ed">[Le Bruyn = De Bruijn; Chardin = Jean Chardin, a French traveller of the 17th century]</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Reliable for what?" data-title="Notes 2 — OVPRL on De Bruijn’s drawing" data-kind="notes">
+<div class="wrap u2l04-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>OVPRL on De Bruijn’s drawing (1711)</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L4 · Discovering Persepolis</b></span><span>2 · Reliable for what?</span></div>
+    <div class="row"><div class="cq">Origin: who, when, where?</div>
+      <div class="nts reveal">Cornelis de Bruijn, Dutch artist <span class="sep">·</span> drawn at the site Nov 1704 – Jan 1705 (c. 3 months) <span class="sep">·</span> engraving pub. 1711 in his travel book</div></div>
+    <div class="row"><div class="cq">Value: for which inquiry?</div>
+      <div class="nts reveal">change over time → what stood above ground before any digging <span class="sep">·</span> how a European artist saw the ruins</div></div>
+    <div class="row"><div class="cq">Purpose: why, for whom?</div>
+      <div class="nts reveal">illustrate his book for European readers <span class="sep">·</span> letters key buildings to his text</div></div>
+    <div class="row"><div class="cq">Reliability: how far, for what?</div>
+      <div class="nts reveal">reliable for the layout above ground (drawn on the spot; fits the 1858 photograph) <span class="sep">·</span> not for details (Morier on his sculpture drawings: “correct in outline”, “imperfect in the details”), buried parts, his additions</div></div>
+    <div class="row"><div class="cq">Limitations?</div>
+      <div class="nts reveal">nothing buried (2nd row of figures 1811; east stairway 1932) <span class="sep">·</span> no colour <span class="sep">·</span> one viewpoint</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · What changed?" data-title="You do: the timeline cards">
+<div class="wrap u2l04-dense">
+  <p class="eyebrow">3 · What changed? · You do · 8 minutes · press K for the timer</p>
+  <h2>Put the eight cards in order. What changed, and what stayed the same?</h2>
+  <div class="u2l04-tl">
+    <div class="u2l04-tlc"><span class="l">A</span><b>The Oriental Institute digs</b>the terrace cleared; tablets found; aerial photographs</div>
+    <div class="u2l04-tlc"><span class="l">B</span><b>Antonio de Gouvea</b>a missionary notices wedge-shaped writing</div>
+    <div class="u2l04-tlc"><span class="l">C</span><b>Restorers and new methods</b>conservation; survey; digital images</div>
+    <div class="u2l04-tlc"><span class="l">D</span><b>Cornelis de Bruijn</b>months of drawing; his name carved on the gate</div>
+    <div class="u2l04-tlc"><span class="l">E</span><b>Takht-e Jamshid</b>the ruins explained by the story of a legendary king</div>
+    <div class="u2l04-tlc"><span class="l">F</span><b>James Morier and the collectors</b>fallen sculptures shipped to England</div>
+    <div class="u2l04-tlc"><span class="l">G</span><b>García de Silva y Figueroa</b>the ruins compared with Diodorus</div>
+    <div class="u2l04-tlc"><span class="l">H</span><b>Niebuhr and Grotefend</b>inscriptions copied; decipherment begins</div>
+  </div>
+  <div class="split" style="--cols:1.6fr 1fr">
+    <div class="card accent sm"><div class="k">Everyone</div><p class="body">1 · Put the cards in order, oldest first. 2 · For three stages, one sentence each: <span class="nq">“What changed was … ; what stayed the same was …”</span></p></div>
+    <div class="card quiet sm"><div class="k">Support</div><p class="body">Your Notes 1 rows give the dates.</p></div>
+  </div>
+  <div class="stack" data-veil="Order the cards first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u2l04-key">
+    <tr><th>Card</th><th>When</th><th>What changed / what stayed the same (examples)</th></tr>
+    <tr class="reveal"><td>E · Takht-e Jamshid</td><td class="u2l04-when">long before 1600</td><td>known, and explained by legend, but not studied</td></tr>
+    <tr class="reveal"><td>B · Gouvea</td><td class="u2l04-when">1602</td><td>changed: a European notices the wedge-shaped writing · same: no digging</td></tr>
+    <tr class="reveal"><td>G · Silva y Figueroa</td><td class="u2l04-when">1618</td><td>changed: compared with an ancient Greek account · same: no digging</td></tr>
+    <tr class="reveal"><td>D · De Bruijn</td><td class="u2l04-when">1704–05 (pub. 1711)</td><td>changed: drawings published; first recorded pieces taken · same: no digging; names carved (since 1638)</td></tr>
+    <tr class="reveal"><td>H · Niebuhr, Grotefend</td><td class="u2l04-when">1765, 1802</td><td>changed: the inscriptions begin to be read · same: only what is above ground</td></tr>
+    <tr class="reveal"><td>F · Morier</td><td class="u2l04-when">1811 (BM 1818)</td><td>changed: reliefs removed to museums · same: no systematic recording</td></tr>
+    <tr class="reveal"><td>A · Oriental Institute</td><td class="u2l04-when">1931–39</td><td>changed: clearing, records, aerial photos · same: finds go abroad (tablets lent; others Chicago’s share)</td></tr>
+    <tr class="reveal"><td>C · Restorers, survey</td><td class="u2l04-when">1964 → today</td><td>changed: conservation, survey, digital images · same: methods decide what is recorded</td></tr>
+  </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · What changed?" data-title="You do: the short answer">
+<div class="wrap u2l04-dense">
+  <p class="eyebrow">3 · What changed? · You do · 10 minutes · press K for the timer</p>
+  <h2>Short answer: explain how the investigation of Persepolis changed between 1602 and today</h2>
+  <div class="split" style="--cols:1fr 1.2fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · 5–6 sentences</div>
+        <p class="body"><b>Explain how the investigation of Persepolis changed between 1602 and today.</b></p>
+        <ul class="body"><li>cover at least three stages, with named people</li><li>use time connectives: in 1618, by 1802, from 1931, since then</li><li>use one provenance phrase: <span class="nq">“Published in 1711 by the Dutch artist Cornelis de Bruijn, …”</span></li><li>say one thing that stayed the same</li></ul></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Start: <span class="nq">“Early visitors …, whereas the Oriental Institute …”</span> Use your timeline sentences and Notes 1.</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Research the 2018 United States court case over the Fortification Tablets lent to Chicago (<i>Rubin v. Islamic Republic of Iran</i>). What does it show about who owns and controls archaeological evidence?</p></div>
+    </div>
+    <div class="src reveal" data-veil="Write yours first — then show a model answer">
+      <div class="k">A model answer · written for this lesson</div>
+      <p class="quote sm model">In the seventeenth and eighteenth centuries, European travellers recorded only what they could see: in 1618 García de Silva y Figueroa compared the ruins with Diodorus’ account. Published in 1711 by the Dutch artist Cornelis de Bruijn after a stay of about three months in 1704–05, a set of engraved views showed what still stood above ground. By 1802, careful copies of the inscriptions made by Carsten Niebuhr in 1765 allowed Georg Grotefend to begin deciphering Old Persian, so the builders could speak in their own words. In the early nineteenth century, however, collectors such as James Morier took fallen reliefs, breaking up blocks to carry them, and sent them to England, removing them from their context. From 1931 to 1939 the Oriental Institute of Chicago, under Ernst Herzfeld and then Erich Schmidt, cleared most of the terrace and recorded it with plans and aerial photographs, finding the Fortification Tablets, although the layers it removed now survive only in its records. Since then, Iranian archaeologists have gone on excavating, while Italian restorers from 1964 and teams using geophysical survey and digital imaging have turned more to conserving the site and studying it with as little digging as possible. What has stayed the same is that each generation could study only what had survived, and its methods decided what was recorded and what was lost.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · What changed?" data-title="Summary" data-kind="notes">
+<div class="wrap u2l04-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>How did Europeans first record Persepolis?</li>
+          <li>How did the Oriental Institute’s excavations change the evidence?</li>
+          <li>What is De Bruijn’s drawing reliable for?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Persepolis was never lost, and Europeans mentioned it from the 1300s, but from 1602 European travellers studied, described and drew its ruins more closely, and copies of its inscriptions let Grotefend begin to decipher Old Persian in 1802. From 1931 to 1939 the Oriental Institute of Chicago cleared most of the terrace and recorded its finds, uncovering buried reliefs and the Fortification Tablets but removing the layers and taking finds abroad. De Bruijn’s drawing, published in 1711, is reliable for the general layout of the ruins standing in 1704–05, but not for small details or for anything that lay buried.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Takht-e Jamshid: never lost</label></li>
+        <li><label><input type="checkbox"> Travellers: Gouvea, Silva y Figueroa, De Bruijn</label></li>
+        <li><label><input type="checkbox"> Niebuhr and Grotefend</label></li>
+        <li><label><input type="checkbox"> Collectors: Morier, the British Museum</label></li>
+        <li><label><input type="checkbox"> Herzfeld, Krefter and Schmidt</label></li>
+        <li><label><input type="checkbox"> Since 1939: restorers, survey, digital images</label></li>
+        <li><label><input type="checkbox"> OVPRL on De Bruijn’s drawing</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: finds taken abroad" data-kind="intro">
+<div class="wrap u2l04-dense">
+  <p class="eyebrow">Check · 5 minutes · cold call</p>
+  <h2>Early excavators often took finds abroad. Was that acceptable in the 1930s? Is it now?</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <ul class="u2l04-facts">
+        <li><b>1933:</b> the Oriental Institute team finds the Fortification Tablets in the fortification wall</li>
+        <li><b>1936–37:</b> most go to Chicago on loan, for study and translation</li>
+        <li><b>2018:</b> a United States court rules that the tablets cannot be seized to pay a court judgment against Iran</li>
+        <li><b>Today:</b> the tablets are photographed in fine detail and shared online</li>
+      </ul>
+      <div class="card accent"><div class="k">Cold call</div><p class="lead">Acceptable then? Acceptable now? Give one reason for each, and say acceptable to whom.</p></div>
+      <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">A judgement for each time, with a reason. <b>Then:</b> Iran lent the tablets for study, and study in Chicago led to published translations. <b>Now:</b> many argue finds belong in their own country; a long loan left the tablets caught in another country’s court case; digital images allow study without moving them. It asks: acceptable to whom?</p></div>
+    </div>
+    <figure class="figure"><img src="images/u2l04-fortification-tablets-chicago.jpg" alt="Fortification Tablets and fragments from Persepolis in study boxes, with their catalogue labels, at the Oriental Institute (now ISAC), University of Chicago, in 2017" loading="lazy"><figcaption>Fortification Tablets and fragments from Persepolis in study boxes, with their catalogue labels, at the Oriental Institute (now ISAC), University of Chicago, in 2017 — <span class="cr">Photo: Pfa16 · CC BY-SA 4.0</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 5 minutes · before you leave</p>
+  <h2>One change in method, and its effect on the evidence</h2>
+  <div class="card accent"><div class="k">Finish the sentence</div><p class="lead nq">“In …, the investigation of Persepolis changed from … to …, which meant that …”</p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">A named time and method, the change, and its effect on the evidence, with an example: for instance, from drawing what stood above ground to clearing the terrace in the 1930s, which uncovered the Fortification Tablets and the east stairway but removed the layers, so they survive only in the excavators’ records.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> the layout and features of the city.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u2l04-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Persepolis was lost and forgotten until Europeans found it.</span>
+      <span class="sol no reveal">False <span class="why">— local people knew the ruins as Takht-e Jamshid, and medieval Muslim geographers described them.</span></span></li>
+    <li><span class="n">2</span><span>De Bruijn’s drawing is a primary source for how the ruins looked in 1704–05.</span>
+      <span class="sol reveal">True <span class="why">— he drew them at the site at the time, although it was printed as an engraving in 1711.</span></span></li>
+    <li><span class="n">3</span><span>Grotefend began to decipher Old Persian from copies of inscriptions at Persepolis.</span>
+      <span class="sol reveal">True <span class="why">— he worked from Carsten Niebuhr’s copies, made in 1765, and presented his work in 1802.</span></span></li>
+    <li><span class="n">4</span><span>The Oriental Institute’s excavations of the 1930s destroyed no evidence.</span>
+      <span class="sol no reveal">False <span class="why">— clearing removed the layers, which survive only in the records, and paint traces on the east stairway faded soon after it was uncovered.</span></span></li>
+    <li><span class="n">5</span><span>An aerial photograph shows everything that lies under the ground.</span>
+      <span class="sol no reveal">False <span class="why">— it shows the surface; buried walls show only as faint marks or shadows, which must be checked on the ground.</span></span></li>
+    <li><span class="n">6</span><span>Geophysical survey lets archaeologists study the lower city without digging it up.</span>
+      <span class="sol reveal">True <span class="why">— it maps buried remains from the surface, so they are not destroyed.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — write it as a historian" data-kind="practice">
+<div class="wrap prac u2l04-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Write it as a historian</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · A provenance phrase</div><p class="body">Write a provenance phrase for the engraving of Morier’s fragment (in the ‘reading and removing’ stage), like <span class="nq">“Published in 1711 by the Dutch artist Cornelis de Bruijn, …”</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Published in London in 1818 by the British diplomat James Morier, this engraving shows one of the relief fragments he took from Persepolis in 1811 to send to England.</p></div>
+      <div class="card accent"><div class="k">2 · Reliable for what?</div><p class="body nq">Finish for Morier’s account: “This source is reliable for … but not for … because …”</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Morier’s account is reliable for how one collector removed sculpture from Persepolis in 1811, because he describes his own actions, but it is limited evidence for how the sculptures were arranged on the buildings, because his main aim was choosing pieces to take away, not making a full record of the site.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Using the 2018 court case over the Fortification Tablets (<i>Rubin v. Islamic Republic of Iran</i>), explain who owns and controls archaeological evidence, and why it matters for historians.</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">The Fortification Tablets show that archaeological evidence can be owned by one country but held by another. Found by the Oriental Institute team in 1933, the tablets were lent by Iran to the Oriental Institute in Chicago for study in the 1930s. In 2018 the United States Supreme Court ruled that people holding a court judgment against Iran could not seize them, so the tablets remained protected as Iran’s property. The case matters for historians because whoever controls evidence decides who can study it, where, and for how long; digital images now allow scholars anywhere to read the tablets without moving them.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u2l04-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Why is “rediscovered” a European word for Persepolis?
+      <span class="sol reveal">Local people never lost the ruins: they called them Takht-e Jamshid, and medieval Muslim geographers described them.</span></li>
+    <li>Name three European visitors before 1800, with dates.
+      <span class="sol reveal">Antonio de Gouvea (1602), García de Silva y Figueroa (1618), Cornelis de Bruijn (1704–05), Carsten Niebuhr (1765).</span></li>
+    <li>How did the inscriptions come to be read?
+      <span class="sol reveal">Niebuhr copied them exactly in 1765; working from his copies, Grotefend began to decipher Old Persian in 1802.</span></li>
+    <li>What did collectors such as Morier damage?
+      <span class="sol reveal">They took reliefs, sometimes breaking up blocks, and sent them to Europe, so the pieces lost their context on the buildings.</span></li>
+    <li>Explain one gain and one loss from the Oriental Institute’s excavations (1931–39).
+      <span class="sol reveal">Gain: buried reliefs, the foundation tablets and the Fortification Tablets were found and recorded. Loss: the layers were cleared away, paint traces faded, and finds went abroad.</span></li>
+    <li>What is De Bruijn’s drawing reliable for?
+      <span class="sol reveal">The general layout of the ruins standing above ground in 1704–05; not small details or anything buried.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u2l04-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u2l04-cite"><div class="k">Written sources</div>
+      <p class="small">James Morier, <i>A Second Journey through Persia, Armenia, and Asia Minor</i> (London, 1818), pp. 75–76 and frontispiece; Robert Ker Porter, <i>Travels in Georgia, Persia, Armenia, Ancient Babylonia</i>, vol. 1 (London, 1821), p. 587; A. J. Booth, <i>The Discovery and Decipherment of the Trilingual Cuneiform Inscriptions</i> (London, 1902): all public domain, checked on the Internet Archive scans (Morier: <a href="https://archive.org/details/secondjourneythr00mori">archive.org/details/secondjourneythr00mori</a>; Ker Porter: <a href="https://archive.org/details/travelsingeorgia11821port">archive.org/details/travelsingeorgia11821port</a>; Booth: <a href="https://archive.org/details/discoverydeciphe00boot">archive.org/details/discoverydeciphe00boot</a>).</p>
+      <p class="small">Erich Schmidt, <i>Flights over Ancient Cities of Iran</i> (Chicago: University of Chicago Press, 1940), p. 7, quoted briefly from ISAC’s free PDF (<a href="https://archive.org/details/flights_over_iran">archive.org/details/flights_over_iran</a>); ISAC, “Aerial Survey Flights”, “Persepolis Fortification Archive”, “Highlights from the Collection: Iran” and <a href="https://isac.uchicago.edu/publications/persepolis-and-ancient-iran"><i>Persepolis and Ancient Iran</i></a> (1976).</p>
+      <p class="small">Facts: <a href="https://www.livius.org/articles/place/persepolis/">Livius.org, “Persepolis”</a>; <i>Encyclopaedia Iranica</i>, “Persepolis”, “Herzfeld, Ernst iii”, “Persepolis graffiti: foreign visitors” (St John Simpson) and “Conservation and restoration of Persian monuments”; L. Allen, “From Silence: A Persepolis Relief in the Victoria and Albert Museum”, V&amp;A Research Journal 5; D. Szostak, “Ernst Emil Herzfeld (1879–1948) in Persepolis”, The Met (2017); <i>Rubin v. Islamic Republic of Iran</i>, US Supreme Court (2018); European Commission CORDIS, “Reconstructing Persepolis” (SELOPERSE).</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet"><div class="k">Teacher resources</div>
+        <p class="small">Class notebook ‘Persepolis’: ‘Unearthing Persepolis’ (presentation) and the Timetoast timeline, used for leads only; every fact here was checked against the sources listed.</p></div>
+    </div>
+  </div>
+  <div class="card quiet u2l04-cite"><div class="k">Images</div>
+    <ul class="small credits"><li><b>Cornelis de Bruijn, ‘Derde gesigt van Persepolis’ (third view), first published 1711 (1714 Amsterdam printing)</b> · Cornelis de Bruijn (1711), scan: Internet Archive · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://archive.org/details/bruincdereizenovermoskoviedoorpersie78/page/n401/mode/2up">source</a></li><li><b>Schliemann’s trench at Troy (Hisarlik)</b> · Photo: Dosseman · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Troy_Schliemann_trench_7752.jpg">source</a></li><li><b>Names carved on the Gate of All Nations, including ‘C·D·BRUIJN 1704’ (cropped)</b> · Photo: Hardscarf · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Cornelis_de_Bruijn_graffity_1704.jpg">source</a></li><li><b>‘Fragment of Persepolitan sculpture’, frontispiece of Morier’s Second Journey (1818)</b> · J. Morier, A Second Journey through Persia (1818), frontispiece; scan: Internet Archive · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://archive.org/details/secondjourneythr00mori/page/n11/mode/1up">source</a></li><li><b>Persepolis Fortification Archive tablets being studied in Chicago, 2017</b> · Photo: Pfa16 · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis_Fortification_Archive_Tablets.jpg">source</a></li><li><b>The Hall of a Hundred Columns area in 2009 (part of a panorama)</b> · Photo: Hansueli Krapf · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:2009-11-24_Persepolis_01.jpg">source</a></li><li><b>Luigi Pesce, General view of Persepolis taken from the mountain, 1858 (The Met 67.606.22)</b> · Photo: Luigi Pesce, 1858 (The Met, open access) · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://www.metmuseum.org/art/collection/search/271276">source</a></li></ul>
+    <p class="small">All images are public domain or openly licensed, and were resized for the web (the Morier and 2009 pictures were also cropped; De Bruijn’s double-page plate was joined from its two page scans, and the dark line down the middle is the book’s centre fold). Each is shared under the licence shown.</p></div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

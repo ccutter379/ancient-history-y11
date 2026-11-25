@@ -1,0 +1,1860 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U1 L2 · Digging the Past I: From Treasure Hunting to Scientific Excavation</title>
+<meta name="description" content="Year 11 Ancient History, the investigation of ancient sites and sources: how excavation changed from Schliemann’s trench at Troy to scientific recording, and how to read the layers of a site and date them with stratigraphy and terminus post quem.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#1D4E89; --bright:#2E6FBF; --tint:#E7EEF8; --statement:#1D4E89;
+  --solid:#1D4E89; --soft:#D3E2F6; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#A9C8F2; --bright:#5E9BE6; --tint:#142538; --statement:#173C66; --soft:#D3E2F6; } }
+:root[data-theme="dark"]{ --deep:#A9C8F2; --bright:#5E9BE6; --tint:#142538; --statement:#173C66; --soft:#D3E2F6; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+
+/* ---- Unit 1 Lesson 2 only (every class starts u1l02-) */
+
+/* soil colours for the section drawings (light theme, then dark) */
+:root{ --u1l02-s1:#7E8F55; --u1l02-s2:#C8B394; --u1l02-s3:#4B423A; --u1l02-s4:#DDBE8C; --u1l02-s5:#8E6B4E;
+  --u1l02-s6:#E8CFA4; --u1l02-edge:#5A4636; --u1l02-stone:#9C9286; --u1l02-tile:#B4553A; --u1l02-coin:#C99A1E;
+  --u1l02-wall:#A59C90; --u1l02-pit:#6E5A48; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --u1l02-s1:#5E6B40; --u1l02-s2:#8F7F69; --u1l02-s3:#2E2823; --u1l02-s4:#A88D63;
+    --u1l02-s5:#6A4F3A; --u1l02-s6:#B49E7B; --u1l02-edge:#D8C8B4; --u1l02-stone:#706960; --u1l02-tile:#97452F;
+    --u1l02-coin:#E2B43A; --u1l02-wall:#7D766C; --u1l02-pit:#4E4034; }
+}
+:root[data-theme="dark"]{ --u1l02-s1:#5E6B40; --u1l02-s2:#8F7F69; --u1l02-s3:#2E2823; --u1l02-s4:#A88D63;
+  --u1l02-s5:#6A4F3A; --u1l02-s6:#B49E7B; --u1l02-edge:#D8C8B4; --u1l02-stone:#706960; --u1l02-tile:#97452F;
+  --u1l02-coin:#E2B43A; --u1l02-wall:#7D766C; --u1l02-pit:#4E4034; }
+
+/* section drawings (layer cake, terminus post quem, Harris matrix) */
+.u1l02-lc text, .u1l02-hm text, .u1l02-grid text{font-family:var(--ui); fill:var(--ink);}
+.u1l02-s1{fill:var(--u1l02-s1);} .u1l02-s2{fill:var(--u1l02-s2);} .u1l02-s3{fill:var(--u1l02-s3);}
+.u1l02-s4{fill:var(--u1l02-s4);} .u1l02-s5{fill:var(--u1l02-s5);} .u1l02-s6{fill:var(--u1l02-s6);}
+.u1l02-lc path, .u1l02-lc rect.u1l02-s1{stroke:var(--u1l02-edge); stroke-width:1.5;}
+.u1l02-stone{fill:var(--u1l02-stone); stroke:var(--u1l02-edge); stroke-width:1.5;}
+.u1l02-tile{fill:var(--u1l02-tile);}
+.u1l02-ember{fill:#1E1A17; opacity:.75;}
+.u1l02-coin{fill:var(--u1l02-coin); stroke:#6B4E00; stroke-width:3;}
+.u1l02-coin-in{fill:none; stroke:#6B4E00; stroke-width:2;}
+.u1l02-sherd{fill:#B86B45; stroke:#5A3220; stroke-width:2;}
+.u1l02-frame{fill:none; stroke:var(--u1l02-edge); stroke-width:3;}
+.u1l02-badge{fill:var(--surface); stroke:var(--ink); stroke-width:2.5;}
+.u1l02-badgetx{font-size:22px; font-weight:700; text-anchor:middle;}
+.u1l02-lead{stroke:var(--slate); stroke-width:2;}
+.u1l02-lab{font-size:27px;} .u1l02-labn{font-weight:700;}
+.u1l02-glab{font-size:32px; font-weight:700;} .u1l02-gsub{font-size:27px; fill:var(--slate) !important;}
+.u1l02-sub{font-size:22px; fill:var(--slate) !important;}
+.u1l02-arr{stroke:var(--deep); stroke-width:5;} .u1l02-ah{fill:var(--deep);}
+.u1l02-arrtx{font-size:21px; font-weight:700; fill:var(--deep) !important; text-anchor:middle;}
+.u1l02-rank{fill:var(--solid);} .u1l02-ranktx{font-size:21px; font-weight:700; fill:#fff !important; text-anchor:middle;}
+.u1l02-tag{fill:var(--surface); stroke:#6B4E00; stroke-width:2;}
+.u1l02-tagtx{font-size:22px; font-weight:700; text-anchor:middle;}
+.u1l02-br{fill:none; stroke-width:4;}
+.u1l02-brtx{font-size:27px; font-weight:700; text-anchor:start;}
+.u1l02-br.u1l02-yes{stroke:var(--c-evidence);} .u1l02-brtx.u1l02-yes{fill:var(--c-evidence) !important;}
+.u1l02-br.u1l02-no{stroke:var(--c-judgement);} .u1l02-brtx.u1l02-no{fill:var(--c-judgement) !important;}
+.u1l02-brtx{paint-order:stroke; stroke:var(--surface); stroke-width:6px; stroke-linejoin:round;}
+.u1l02-cap{font-size:22px; font-weight:700; fill:var(--deep) !important; text-anchor:middle;}
+.u1l02-wall{fill:var(--u1l02-wall); stroke:var(--u1l02-edge); stroke-width:1.5;}
+.u1l02-pitfill{fill:var(--u1l02-pit);}
+.u1l02-cut{fill:none; stroke:var(--u1l02-edge); stroke-width:3; stroke-dasharray:9 6;}
+.u1l02-mline{stroke:var(--ink); stroke-width:2.5;}
+.u1l02-mbox{fill:var(--surface); stroke:var(--deep); stroke-width:2.5;}
+.u1l02-mtx{font-size:20px; font-weight:700; text-anchor:middle;}
+.u1l02-mid{text-anchor:middle; font-style:italic;}
+/* Wheeler's box grid */
+.u1l02-balk{fill:var(--u1l02-s4); stroke:var(--u1l02-edge); stroke-width:2;}
+.u1l02-sq{fill:var(--u1l02-s5); stroke:var(--u1l02-edge); stroke-width:2;}
+.u1l02-sq2{fill:var(--u1l02-s3); opacity:.55;}
+.u1l02-sqtx{font-size:30px; font-weight:700; fill:#fff !important; text-anchor:middle;}
+
+.u1l02-diag{margin:0;}
+.u1l02-diag svg{display:block; width:100%; height:auto; max-height:calc(100vh - 330px);}
+.u1l02-diag figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.35em;}
+.u1l02-hinge{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+/* in Read mode, answer layers in a diagram stay hidden until the veil is opened */
+html.read .veil-parts[data-veil]:not(.unveiled) .u1l02-ans{display:none;}
+
+/* answers in the We do and I do questions (veiled in Read mode) */
+.u1l02-model{margin:0; padding:.35em .8em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 8px 8px 0; font-size:calc(var(--fs-body)*.84); line-height:1.38;}
+.u1l02-model b{color:var(--c-evidence);}
+
+/* quick facts list */
+.u1l02-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.25em;
+  font-size:calc(var(--fs-body)*.86); line-height:1.35;}
+.u1l02-facts b{color:var(--deep);}
+
+/* two pioneers side by side, each with a small picture */
+.u1l02-pair{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.8vw,30px); align-items:start;}
+.u1l02-who{display:grid; grid-template-columns:auto 1fr; gap:.8em; align-items:start;}
+.u1l02-who img{display:block; width:clamp(70px,8vw,120px); height:auto; border-radius:8px; box-shadow:var(--shadow);}
+.u1l02-wide img{display:block; width:100%; height:auto; max-height:21vh; object-fit:contain; background:#fff;
+  border-radius:8px; box-shadow:var(--shadow);}
+.u1l02-pair .src{padding:10px 16px;}
+.u1l02-pair .src .quote.sm{font-size:calc(var(--fs-body)*.8); line-height:1.42;}
+.u1l02-hed{font-family:var(--disp); font-weight:700; font-size:calc(var(--fs-body)*1.05); color:var(--deep); margin:0 0 .15em;}
+
+/* recording today: three picture tiles */
+.u1l02-tiles{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1.2vw,18px);}
+.u1l02-tile-c{margin:0; background:var(--surface); border:1px solid var(--rule); border-top:5px solid var(--bright);
+  border-radius:10px; overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;}
+.u1l02-tile-c img{display:block; width:100%; height:20vh; object-fit:cover; background:#fff;}
+.u1l02-tile-c img.fit{object-fit:contain;}
+.u1l02-tile-c img.u1l02-top{object-position:50% 8%;}
+.u1l02-tile-c figcaption{padding:.45em .75em .6em; display:flex; flex-direction:column; gap:.15em;
+  font-size:calc(var(--fs-body)*.76); line-height:1.32;}
+.u1l02-tile-c b{font-family:var(--disp); font-size:1.15em; color:var(--deep);}
+
+/* six timeline cards (no dates on screen; Foundation cards have them printed) */
+.u1l02-tl{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1vw,14px);}
+.u1l02-tlc{position:relative; background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:.55em .8em .6em 2.8em; box-shadow:var(--shadow); font-size:calc(var(--fs-body)*.8); line-height:1.32;}
+.u1l02-tlc b{display:block; color:var(--deep);}
+.u1l02-tlc .l{position:absolute; top:.55em; left:.6em; width:1.6em; height:1.6em; border-radius:50%;
+  background:var(--solid); color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em;}
+.u1l02-key td:first-child{font-weight:700; white-space:nowrap;}
+.u1l02-key td.u1l02-when{white-space:nowrap; font-family:var(--mono); font-size:.92em;}
+
+/* goals slide: syllabus line */
+.u1l02-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u1l02-cite a{color:var(--deep);}
+.u1l02-vsm{font-size:calc(var(--fs-chrome)*.92);}
+
+/* the Connect: the tablet from Lesson 1, small */
+.u1l02-tab img{display:block; width:100%; height:22vh; object-fit:contain; background:var(--surface-2);
+  border-radius:10px; box-shadow:var(--shadow);}
+
+/* phones (Read mode): fewer columns, natural picture heights */
+@media (max-width:900px){
+  .u1l02-pair, .u1l02-tiles{grid-template-columns:1fr;}
+  .u1l02-tl{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .u1l02-tile-c img{height:auto; max-height:40vh; aspect-ratio:auto;}
+  .u1l02-wide img{max-height:none;}
+  .u1l02-tab img{height:auto; max-height:30vh;}
+  .u1l02-diag svg{max-height:none;}
+}
+@media (max-width:480px){
+  .u1l02-tl{grid-template-columns:1fr;}
+  .u1l02-who{grid-template-columns:1fr;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u1l02-dense{gap:10px;}
+  html:not(.read) .u1l02-dense h2{font-size:calc(var(--fs-h2)*.86);}
+  html:not(.read) .u1l02-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.4;}
+  html:not(.read) .u1l02-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u1l02-dense .src{padding:9px 15px;}
+  html:not(.read) .u1l02-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u1l02-dense .note{padding:.42em .8em;}
+  html:not(.read) .u1l02-dense .note .body, html:not(.read) .u1l02-dense .card .body,
+  html:not(.read) .u1l02-dense .qprompt{font-size:calc(var(--fs-body)*.8); line-height:1.34;}
+  html:not(.read) .u1l02-dense .card{padding:9px 15px;}
+  html:not(.read) .u1l02-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l02-dense .tbl.compact td{padding:.3em .55em;}
+  html:not(.read) .u1l02-dense .tbl th{padding:.4em .6em;}
+  html:not(.read) .u1l02-dense .figure img{max-height:30vh;}
+  html:not(.read) .u1l02-dense .mq{font-size:calc(var(--fs-body)*.78); line-height:1.35;}
+  html:not(.read) .u1l02-dense .u1l02-facts{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u1l02-dense .u1l02-model{font-size:calc(var(--fs-body)*.74); padding:.28em .7em;}
+  html:not(.read) .u1l02-dense .keylist li{font-size:calc(var(--fs-body)*.84);}
+  html:not(.read) .u1l02-dense .keylist .d{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u1l02-dense .tf li, html:not(.read) .u1l02-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u1l02-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u1l02-dense .prac{gap:6px;}
+  html:not(.read) .u1l02-dense .cornell .cq, html:not(.read) .u1l02-dense .cornell .nts{font-size:calc(var(--fs-body)*.74); padding:.32em .8em;}
+  html:not(.read) .u1l02-dense .u1l02-tile-c img{height:17vh;}
+  html:not(.read) .u1l02-dense .u1l02-tile-c figcaption{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u1l02-dense .u1l02-tlc{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l02-dense .u1l02-diag svg{max-height:calc(100vh - 300px);}
+  html:not(.read) .u1l02-dense .opts li{padding:.4em .8em; font-size:calc(var(--fs-body)*.86);}
+  html:not(.read) .u1l02-dense .u1l02-cite .credits{font-size:calc(var(--fs-chrome)*.88); margin-bottom:.3em;}
+  html:not(.read) .u1l02-dense .u1l02-cite .credits li{margin:.1em 0;}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 2" data-title="Digging the past I" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.05fr .95fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 1 · The investigation of ancient sites and sources · Lesson 2</p>
+      <h1>Digging the past I: from treasure hunting to scientific excavation</h1>
+      <p class="lead">How and why did digging up the past change from a hunt for treasure into a careful science?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <figure class="figure"><img src="images/u1l02-troy-schliemann-trench.jpg" alt="Schliemann’s great trench, cut through the mound of Troy (Hisarlik, in today’s Türkiye) in the 1870s, photographed in 2014" loading="lazy"><figcaption>Schliemann’s great trench, cut through the mound of Troy (Hisarlik, in today’s Türkiye) in the 1870s, photographed in 2014 — <span class="cr">Photo: Dosseman · CC BY-SA 4.0</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 2" data-title="Connect: source or evidence?" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Connect · 3 minutes · everyone writes one line in 60 seconds · press K for the timer</p>
+  <h2>What turns a source into evidence?</h2>
+  <div class="split" style="--cols:.8fr 1.2fr; align-items:start">
+    <figure class="u1l02-tab" style="margin:0"><img src="images/u1l01-mystery-object.jpg" alt="Vindolanda Tablet 291, the birthday invitation from Lesson 1: two thin pieces of wood with ink writing"></figure>
+    <div class="stack">
+      <div class="card accent"><div class="k">One line, 60 seconds</div><p class="lead nq">‘What turns a source into evidence? Use the Vindolanda tablet.’</p></div>
+      <div class="note reveal" data-code="evidence" data-veil="Write yours first — then show a model answer"><div class="k">A model answer</div><p class="body nq">A source becomes evidence when a historian uses it to answer a particular question: for “What does the tablet suggest about whether women on the frontier could write?”, the last lines, in Claudia Severa’s own hand, are the evidence.</p></div>
+      <p class="cue reveal">Today: how do sources come out of the ground — and what is lost for ever if they are dug up badly?</p>
+    </div>
+  </div>
+  <p class="small credline">Images: Fæ (CC BY-SA 3.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 2" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>understand how and why archaeological excavation and recording have changed</li>
+        <li>use stratigraphy to work out the order of layers and date finds</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>explain two ways excavation changed between the 1870s and today</li>
+        <li>use the law of superposition to put layers in order</li>
+        <li>explain why recording matters when excavation destroys a site</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u1l02-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-08 uses sources to form conclusions about the past · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 2" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U1 L2 · Digging the past I</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; CE = Common Era)</span></div></div>
+      <div class="row"><div class="cq">Explain how Schliemann dug Hisarlik.</div><div class="nts">1870s · huge trench → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: how excavation changed · reading the layers.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 2" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u1l02-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for digging and dating</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Reading a site</th><th>Meaning</th></tr>
+      <tr><td>context (archaeological)</td><td>The exact place and layer an object was found in, and what was found with it.</td></tr>
+      <tr><td>stratigraphy</td><td>The study of the layers (strata) built up on a site over time.</td></tr>
+      <tr><td>law of superposition</td><td>In undisturbed layers, the lower layers are older than the layers above them.</td></tr>
+      <tr><td>terminus post quem</td><td><span class="nq">‘The date after which’</span>: a coin or object gives the earliest possible date for the layer it is found in.</td></tr>
+      <tr><td>section</td><td>A drawing or photograph of the side of a trench, showing the layers.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Digging and recording</th><th>Meaning</th></tr>
+      <tr><td>baulk</td><td>A strip of earth left standing between excavated squares, so that its sides show the layers.</td></tr>
+      <tr><td>Harris matrix</td><td>A diagram showing the order of every layer and feature on a site, latest at the top.</td></tr>
+      <tr><td>context sheet</td><td>A standard form filled in for every context (each layer or feature) as it is dug.</td></tr>
+      <tr><td>total station</td><td>An electronic surveying instrument that records the exact position and height of finds and features.</td></tr>
+      <tr><td>photogrammetry</td><td>Measuring from photographs: many overlapping photos are combined into an accurate 3D model.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Treasure hunting" data-title="Schliemann at Hisarlik" data-kind="notes">
+<div class="wrap u1l02-dense">
+  <p class="eyebrow">1 · Treasure hunting · I do — illustrated mini-lecture</p>
+  <h2>Schliemann at Hisarlik, 1871–1873: dig straight to the bottom</h2>
+  <div class="split" style="--cols:1fr 1.05fr">
+    <div class="stack">
+      <figure class="figure short"><img src="images/u1l02-troy-schliemann-trench.jpg" alt="Schliemann’s great trench, cut through the mound of Troy (Hisarlik, in today’s Türkiye) in the 1870s, photographed in 2014" loading="lazy"><figcaption>Schliemann’s great trench, cut through the mound of Troy (Hisarlik, in today’s Türkiye) in the 1870s, photographed in 2014 — <span class="cr">Photo: Dosseman · CC BY-SA 4.0</span></figcaption></figure>
+      <ul class="u1l02-facts">
+        <li><b>Who:</b> Heinrich Schliemann, a rich German businessman who paid for his own digs</li>
+        <li><b>Where:</b> Hisarlik, a mound in north-west Türkiye that he believed was Homer’s Troy</li>
+        <li><b>How:</b> his workers cut a huge trench right through the mound to reach the bottom</li>
+      </ul>
+    </div>
+    <div class="stack">
+      <div class="src">
+        <div class="k">Schliemann in his own words</div>
+        <p class="quote sm">It is above all things necessary for me to reach the primary soil, in order to make accurate investigations.</p>
+        <p class="prov">Report of 5 April 1872 · Heinrich Schliemann, <i>Troy and its Remains</i>, trans. L. Dora Schmitz (London: John Murray, 1875), p. 99</p>
+        <p class="quote sm reveal">… I see this very ancient building (which may have been erected 1000 years before Christ) standing as it were in mid air. To my regret, however, it must in any case be pulled down, to allow us to dig still deeper.</p>
+        <p class="prov reveal">Report of 23 May 1872 · the same book, p. 133 · “primary soil” = the natural ground at the bottom</p>
+      </div>
+      <p class="qprompt reveal">What did the trench destroy, and why does that matter?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">The layers above the city he wanted: houses and walls of later settlements. Dug away without a full record, their order and contents are lost for ever, so no one can check his conclusions or ask them new questions.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Treasure hunting" data-title="‘Priam’s Treasure’: think aloud" data-kind="notes">
+<div class="wrap u1l02-dense">
+  <p class="eyebrow">1 · Treasure hunting · I do — think aloud · use the R question from the OVPRL routine on page 2 of your booklet</p>
+  <h2>‘Priam’s Treasure’, 1873: what he found, what he lost</h2>
+  <div class="split" style="--cols:.62fr 1.38fr">
+    <figure class="figure contain"><img src="images/u1l02-sophia-schliemann-jewellery.jpg" alt="Sophia Schliemann wearing gold jewellery from ‘Priam’s Treasure’, photographed in the 1870s" loading="lazy"><figcaption>Sophia Schliemann wearing gold jewellery from ‘Priam’s Treasure’, photographed in the 1870s — <span class="cr">Photographer unknown · Public domain</span></figcaption></figure>
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Schliemann’s report, 17 June 1873</div>
+        <p class="quote sm">While the men were eating and resting, I cut out the Treasure with a large knife … It would, however, have been impossible for me to have removed the Treasure without the help of my dear wife, who stood by me ready to pack the things which I cut out in her shawl and to carry them away.</p>
+        <p class="prov">Heinrich Schliemann, <i>Troy and its Remains</i>, trans. L. Dora Schmitz (London: John Murray, 1875), pp. 323–324</p>
+      </div>
+      <ol class="keylist">
+        <li class="reveal"><span class="num">1</span><span class="t">What he found</span><span class="d">Gold, silver and copper objects (jewellery, vessels and a copper shield), which he named after Priam, Homer’s king of Troy.</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">What his method lost</span><span class="d">He cut the objects out in a hurry, with no exact record of how they lay. Some historians later argued they were put together from several finds; others disagree. Without a record, no one can be sure.</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">Why it was too old for Homer’s Troy</span><span class="d">It came from a deep, early layer (Troy II, about 2550–2300 BCE). The treasures date to about 2400 BCE: more than 1,000 years before the supposed Trojan War.</span></li>
+      </ol>
+      <div class="note reveal" data-code="counter" data-veil="Think first — then show the answer"><div class="k">Reliable for what?</div><p class="body">Schliemann later admitted that Sophia was not there: she was in Athens for her father’s funeral. His report is good evidence of what he wanted readers to believe, but weaker evidence of exactly how the find was made.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Towards scientific method" data-title="Pitt Rivers and Petrie" data-kind="notes">
+<div class="wrap u1l02-dense">
+  <p class="eyebrow">2 · Towards scientific method · I do</p>
+  <h2>By the 1880s: record everything, and where it came from</h2>
+  <div class="u1l02-pair">
+    <div class="stack">
+      <div class="u1l02-who"><img src="images/u1l02-pitt-rivers.jpg" alt="Photograph of Augustus Pitt Rivers, an elderly bearded man in a tweed suit">
+        <div><p class="u1l02-hed">Augustus Pitt Rivers</p>
+        <ul class="u1l02-facts"><li><b>Where:</b> Cranborne Chase, southern England, 1880s–1890s</li>
+          <li><b>What changed:</b> recorded every find and exactly where it lay, with plans, sections and models, and published it all</li></ul></div></div>
+      <div class="src">
+        <div class="k">Pitt Rivers on recording, 1887</div>
+        <p class="quote sm">Excavators, as a rule, record only those things which appear to them important at the time, but fresh problems in Archæology and Anthropology are constantly arising … Every detail should, therefore, be recorded …</p>
+        <p class="prov">A. Pitt Rivers, <i>Excavations in Cranborne Chase</i>, vol. I (1887), Preface, p. xvii</p>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="u1l02-wide"><img src="images/u1l02-petrie-tell-hesy-section-1890.jpg" alt="Petrie’s drawing of the eastern face of the mound of Tell el-Hesy, showing walls and layers at measured heights"></div>
+      <p class="u1l02-hed">Flinders Petrie</p>
+      <ul class="u1l02-facts"><li><b>Where:</b> Egypt, and in 1890 Tell el-Hesy, a mound in southern Palestine</li>
+        <li><b>What changed:</b> kept and studied even broken pottery, drew the mound’s layers (above) and used the pottery in each layer to date it</li></ul>
+      <div class="src">
+        <div class="k">Petrie on pottery, 1904</div>
+        <p class="quote sm">With the brief view of Palestinian pottery gained in a few weeks, on one site at Tell Hesy (Lachish), I found it possible to ride over mounds of ruins and see the age of them without even dismounting.</p>
+        <p class="prov">W. M. Flinders Petrie, <i>Methods and Aims in Archaeology</i> (London, 1904), p. 17 · “Lachish” was Petrie’s identification of the site, no longer accepted</p>
+      </div>
+    </div>
+  </div>
+  <p class="cue reveal">But pioneers are judged differently. Wheeler (1954) praised Pitt Rivers, but wrote of Petrie: “The almost complete absence of measured sections from Petrie’s reports is the inevitable corollary of his ‘method’.” The Tell el-Hesy section above is one of the few exceptions.</p>
+  <p class="small credline">Images: unknown photographer (Public domain) · Petrie 1891 (Public domain). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Towards scientific method" data-title="Wheeler’s box grid" data-kind="notes">
+<div class="wrap u1l02-dense">
+  <p class="eyebrow">2 · Towards scientific method · I do</p>
+  <h2>Mortimer Wheeler’s box grid: squares and baulks</h2>
+  <div class="split veil-parts" style="--cols:1.25fr 1fr" data-veil="Think first — then show the answer">
+    <figure class="u1l02-diag"><svg class="u1l02-grid" viewBox="0 0 1000 450" role="img" aria-label="Plan of a box-grid excavation seen from above: six square trenches in two rows of three, separated by strips of unexcavated earth called baulks. Each square has a section on all four sides.">
+<rect class="u1l02-balk" x="20" y="20" width="586" height="402" rx="4"/>
+<rect class="u1l02-sq" x="54" y="54" width="150" height="150"/><rect class="u1l02-sq2" x="76" y="76" width="106" height="106"/><text class="u1l02-sqtx" x="129.0" y="138.0">A</text>
+<rect class="u1l02-sq" x="238" y="54" width="150" height="150"/><rect class="u1l02-sq2" x="260" y="76" width="106" height="106"/><text class="u1l02-sqtx" x="313.0" y="138.0">B</text>
+<rect class="u1l02-sq" x="422" y="54" width="150" height="150"/><rect class="u1l02-sq2" x="444" y="76" width="106" height="106"/><text class="u1l02-sqtx" x="497.0" y="138.0">C</text>
+<rect class="u1l02-sq" x="54" y="238" width="150" height="150"/><rect class="u1l02-sq2" x="76" y="260" width="106" height="106"/><text class="u1l02-sqtx" x="129.0" y="322.0">D</text>
+<rect class="u1l02-sq" x="238" y="238" width="150" height="150"/><rect class="u1l02-sq2" x="260" y="260" width="106" height="106"/><text class="u1l02-sqtx" x="313.0" y="322.0">E</text>
+<rect class="u1l02-sq" x="422" y="238" width="150" height="150"/><rect class="u1l02-sq2" x="444" y="260" width="106" height="106"/><text class="u1l02-sqtx" x="497.0" y="322.0">F</text>
+<line class="u1l02-lead" x1="542" y1="94" x2="638" y2="82"/><text class="u1l02-glab" x="646" y="80">Square</text><text class="u1l02-gsub" x="646" y="114">dug down layer by layer;</text><text class="u1l02-gsub" x="646" y="146">its own unit of record</text>
+<line class="u1l02-lead" x1="546" y1="221.0" x2="638" y2="216"/><text class="u1l02-glab" x="646" y="214">Baulk</text><text class="u1l02-gsub" x="646" y="248">a strip of earth left</text><text class="u1l02-gsub" x="646" y="280">standing between squares</text>
+<text class="u1l02-gsub" x="646" y="350">Its sides show the layers</text><text class="u1l02-gsub" x="646" y="382">on all four sides of</text><text class="u1l02-gsub" x="646" y="414">every square.</text>
+</svg><figcaption>A box grid seen from above · diagram drawn for this lesson, after Wheeler’s description</figcaption></figure>
+    <div class="stack">
+      <div class="src">
+        <div class="k">Wheeler describes his grid, 1954</div>
+        <p class="quote sm">A series of squares, a grid, dug so that a balk is left between each pair of adjacent squares until the extreme end of the work … the supervisor retains in each square (until the end of the work) a complete section on all four sides of him …</p>
+        <p class="prov">Mortimer Wheeler, <i>Archaeology from the Earth</i> (Oxford: Clarendon Press, 1954), p. 64 · he first dug this way at Maiden Castle, England, in 1936, and later on his digs in India (for example at Arikamedu, 1945)</p>
+      </div>
+      <p class="qprompt">Why leave the baulks standing?</p>
+      <p class="u1l02-model vp reveal"><b>Answer:</b> so the layers can be seen and drawn on all four sides of every square, and every find can be tied to its square and its layer.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Towards scientific method" data-title="The Harris matrix (1973)" data-kind="notes">
+<div class="wrap u1l02-dense">
+  <p class="eyebrow">2 · Towards scientific method · I do</p>
+  <h2>1973: the Harris matrix puts every layer in order</h2>
+  <div class="split veil-parts" style="--cols:1.4fr 1fr" data-veil="Think first — then show the matrix and the answer">
+    <figure class="u1l02-diag"><svg class="u1l02-hm" viewBox="0 0 1000 470" role="img" aria-label="Left: a section with six numbered contexts. 1 is topsoil across the top. Below it, on the left, 2 is a stone wall standing on layer 5; on the right, 4 is a pit dug down into layer 5 and 3 is the soil that filled the pit. 6 is natural clay at the bottom. Right: the Harris matrix, latest at the top: 1; below it two branches, 2 and 3 then 4; both join at 5; then 6.">
+<defs><marker id="hm-ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path class="u1l02-ah" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<text class="u1l02-cap" x="250.0" y="26">Section</text>
+<rect class="u1l02-s1" x="30" y="40" width="440" height="110"/>
+<rect class="u1l02-s5" x="30" y="150" width="440" height="140"/>
+<rect class="u1l02-s6" x="30" y="290" width="440" height="120"/>
+<rect class="u1l02-wall" x="80" y="118" width="38" height="28" rx="3"/>
+<rect class="u1l02-wall" x="120" y="118" width="38" height="28" rx="3"/>
+<rect class="u1l02-wall" x="160" y="118" width="38" height="28" rx="3"/>
+<rect class="u1l02-wall" x="100" y="88" width="38" height="28" rx="3"/>
+<rect class="u1l02-wall" x="140" y="88" width="38" height="28" rx="3"/>
+<rect class="u1l02-wall" x="180" y="88" width="38" height="28" rx="3"/>
+<rect class="u1l02-wall" x="80" y="58" width="38" height="28" rx="3"/>
+<rect class="u1l02-wall" x="120" y="58" width="38" height="28" rx="3"/>
+<rect class="u1l02-wall" x="160" y="58" width="38" height="28" rx="3"/>
+<path class="u1l02-pitfill" d="M280,150 C292,280 408,280 422,150 z"/>
+<path class="u1l02-cut" d="M280,150 C292,280 408,280 422,150"/>
+<rect class="u1l02-frame" x="30" y="40" width="440" height="370"/>
+<circle class="u1l02-badge" cx="245" cy="80" r="17"/><text class="u1l02-badgetx" x="245" y="87">1</text>
+<circle class="u1l02-badge" cx="140" cy="102" r="17"/><text class="u1l02-badgetx" x="140" y="109">2</text>
+<circle class="u1l02-badge" cx="351" cy="195" r="17"/><text class="u1l02-badgetx" x="351" y="202">3</text>
+<circle class="u1l02-badge" cx="442" cy="222" r="17"/><text class="u1l02-badgetx" x="442" y="229">4</text>
+<circle class="u1l02-badge" cx="245" cy="245" r="17"/><text class="u1l02-badgetx" x="245" y="252">5</text>
+<circle class="u1l02-badge" cx="230" cy="360" r="17"/><text class="u1l02-badgetx" x="230" y="367">6</text>
+<line class="u1l02-lead" x1="435" y1="206" x2="414" y2="180"/>
+<g class="linked u1l02-ans" id="hm-matrix"><text class="u1l02-cap" x="760" y="26">Harris matrix · latest at the top</text><line class="u1l02-mline" x1="760" y1="90" x2="650" y2="155"/><line class="u1l02-mline" x1="760" y1="90" x2="870" y2="130"/><line class="u1l02-mline" x1="870" y1="170" x2="870" y2="205"/><line class="u1l02-mline" x1="650" y1="195" x2="760" y2="300"/><line class="u1l02-mline" x1="870" y1="245" x2="760" y2="300"/><line class="u1l02-mline" x1="760" y1="340" x2="760" y2="390"/><rect class="u1l02-mbox" x="690" y="50" width="140" height="40" rx="6"/><text class="u1l02-mtx" x="760" y="78">1 topsoil</text><rect class="u1l02-mbox" x="580" y="155" width="140" height="40" rx="6"/><text class="u1l02-mtx" x="650" y="183">2 wall</text><rect class="u1l02-mbox" x="800" y="130" width="140" height="40" rx="6"/><text class="u1l02-mtx" x="870" y="158">3 pit fill</text><rect class="u1l02-mbox" x="800" y="205" width="140" height="40" rx="6"/><text class="u1l02-mtx" x="870" y="233">4 pit (cut)</text><rect class="u1l02-mbox" x="690" y="300" width="140" height="40" rx="6"/><text class="u1l02-mtx" x="760" y="328">5 layer</text><rect class="u1l02-mbox" x="690" y="390" width="140" height="40" rx="6"/><text class="u1l02-mtx" x="760" y="418">6 natural</text></g>
+</svg><figcaption>An invented example, drawn for this lesson · 1 to 6 are contexts</figcaption></figure>
+    <div class="stack">
+      <ul class="u1l02-facts">
+        <li><b>Who and when:</b> the archaeologist Edward Harris invented it in 1973</li>
+        <li><b>What:</b> a diagram of the order of every layer and feature on a site, latest at the top</li>
+        <li><b>Why:</b> real sites are not a neat layer cake. Pits are dug down into older layers and walls are built on them, so “lower = older” is not enough on its own.</li>
+      </ul>
+      <p class="qprompt reveal" data-also="#hm-matrix">Which came first: the wall (2) or the pit (3 and 4)?</p>
+      <p class="u1l02-model vp reveal"><b>Answer:</b> we can’t tell — they never touch. The matrix shows them as two branches: it records what we know, and what we don’t.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Towards scientific method" data-title="Recording today" data-kind="notes">
+<div class="wrap u1l02-dense">
+  <p class="eyebrow">2 · Towards scientific method · I do</p>
+  <h2>Today: a record of every layer, in three dimensions</h2>
+  <div class="u1l02-tiles">
+    <figure class="u1l02-tile-c reveal"><img class="fit" src="images/u1l02-context-sheets.jpg" alt="Several filled-in context sheets, printed forms with handwriting and small sketches"><figcaption><b>Context sheets, drawings, photos</b><span>one form for every layer or feature (its soil, what it touches, its finds), with scaled drawings and photographs</span></figcaption></figure>
+    <figure class="u1l02-tile-c reveal"><img class="u1l02-top" src="images/u1l02-total-station-boxgrove.jpg" alt="An archaeologist standing beside a total station on a red tripod at a dig"><figcaption><b>Total station</b><span>an electronic instrument that measures the exact position and height of finds and features</span></figcaption></figure>
+    <figure class="u1l02-tile-c reveal"><img class="fit" src="images/u1l02-aramus-photomapping.jpg" alt="A corrected photograph of an animal skeleton in the ground beside the line drawing made from it"><figcaption><b>Photogrammetry and 3D models</b><span>measuring from photos: one corrected photo (here), or many overlapping photos combined into a 3D model</span></figcaption></figure>
+  </div>
+  <div class="src reveal">
+    <div class="k">Why the record matters</div>
+    <p class="quote sm">‘A discovery dates only from the time of the record of it, and not from the time of its being found in the soil.’ This classic sentence of Pitt Rivers proclaims fairly and squarely the ultimate moral and scientific duty of the field-archaeologist.</p>
+    <p class="prov">Mortimer Wheeler, <i>Archaeology from the Earth</i> (1954), p. 182, quoting Pitt Rivers</p>
+  </div>
+  <p class="small credline">Images: Mididoctors (Public domain) · Midnightblueowl (CC BY-SA 3.0) · Luca Bezzi (CC BY 4.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Towards scientific method" data-title="Notes 1 — How excavation changed" data-kind="notes">
+<div class="wrap u1l02-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>How excavation changed</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U1 L2 · Digging the past I</b></span><span>1–2 · How excavation changed</span></div>
+    <div class="row"><div class="cq">Explain how Schliemann dug Hisarlik, and what it cost.</div>
+      <div class="nts reveal">1870s · huge trench to reach the bottom (his “primary soil”) → later layers destroyed <span class="sep">·</span> ‘Priam’s Treasure’ cut out in a hurry: findspot marked, but no record of how the pieces lay</div></div>
+    <div class="row"><div class="cq">Explain why ‘Priam’s Treasure’ was too old for Homer’s Troy.</div>
+      <div class="nts reveal">from Troy II (c. 2550–2300 BCE) → c. 2400 BCE = 1,000+ years before the supposed Trojan War <span class="sep">·</span> his account weak on how it was found (Sophia not there)</div></div>
+    <div class="row"><div class="cq">Analyse how Pitt Rivers and Petrie changed excavation.</div>
+      <div class="nts reveal">Pitt Rivers (1880s–90s): record every detail + where it lay <span class="sep">·</span> Petrie (Tell el-Hesy, 1890): layers drawn, pottery dates them <span class="sep">·</span> Wheeler later criticised the lack of measured sections in Petrie’s reports</div></div>
+    <div class="row"><div class="cq">Explain how Wheeler and Harris improved the recording of layers.</div>
+      <div class="nts reveal">Wheeler: box grid, baulks → section on four sides of every square <span class="sep">·</span> Harris (1973): matrix = order of every layer and feature, latest at top</div></div>
+    <div class="row"><div class="cq">Explain what archaeologists record today, and why.</div>
+      <div class="nts reveal">context sheets <span class="sep">·</span> total station (exact position) <span class="sep">·</span> scaled drawings, photos, photogrammetry → 3D models <span class="sep">·</span> because excavation destroys: the record is all that remains</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Reading the layers" data-title="We do: the layer cake" data-kind="notes">
+<div class="wrap u1l02-dense">
+  <p class="eyebrow">3 · Reading the layers · We do — the ‘layer cake’ · cold call</p>
+  <h2>Put the layers in order: the law of superposition</h2>
+  <div class="split veil-parts" style="--cols:1.35fr 1fr" data-veil="Try it first — then show the answers">
+    <figure class="u1l02-diag"><svg class="u1l02-lc" viewBox="0 0 840 590" role="img" aria-label="Section drawing of an invented site, drawn for this lesson. Six layers from the top: Layer 1, topsoil; Layer 2, rubble of stones and broken roof tiles; Layer 3, a burnt layer of ash and charcoal; Layer 4, an earth floor with a coin in it; Layer 5, dark soil with broken pottery; Layer 6, natural clay with no human finds.">
+<defs><marker id="lc-ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path class="u1l02-ah" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="u1l02-s1" x="30" y="30" width="400" height="72"/>
+<path class="u1l02-s2" d="M30,102 C170,95 330,109 430,100 L430,202 L30,202 z"/>
+<path class="u1l02-s3" d="M30,202 C170,195 330,209 430,200 L430,264 L30,264 z"/>
+<path class="u1l02-s4" d="M30,264 C170,257 330,271 430,262 L430,332 L30,332 z"/>
+<path class="u1l02-s5" d="M30,332 C170,325 330,339 430,330 L430,440 L30,440 z"/>
+<path class="u1l02-s6" d="M30,440 C170,433 330,447 430,438 L430,540 L30,540 z"/>
+<ellipse class="u1l02-stone" cx="80" cy="122" rx="22" ry="13"/>
+<ellipse class="u1l02-stone" cx="150" cy="158" rx="28" ry="15"/>
+<ellipse class="u1l02-stone" cx="215" cy="128" rx="19" ry="12"/>
+<ellipse class="u1l02-stone" cx="280" cy="166" rx="24" ry="14"/>
+<ellipse class="u1l02-stone" cx="340" cy="128" rx="26" ry="14"/>
+<ellipse class="u1l02-stone" cx="400" cy="162" rx="20" ry="12"/>
+<ellipse class="u1l02-stone" cx="110" cy="184" rx="16" ry="9"/>
+<ellipse class="u1l02-stone" cx="370" cy="188" rx="18" ry="9"/>
+<rect class="u1l02-tile" x="170" y="134" width="40" height="9" rx="2" transform="rotate(-12 190 138)"/>
+<rect class="u1l02-tile" x="300" y="142" width="40" height="9" rx="2" transform="rotate(-12 320 146)"/>
+<rect class="u1l02-tile" x="230" y="180" width="40" height="9" rx="2" transform="rotate(-12 250 184)"/>
+<circle class="u1l02-ember" cx="64" cy="232" r="4"/>
+<circle class="u1l02-ember" cx="110" cy="218" r="4"/>
+<circle class="u1l02-ember" cx="156" cy="228" r="4"/>
+<circle class="u1l02-ember" cx="202" cy="238" r="4"/>
+<circle class="u1l02-ember" cx="248" cy="224" r="4"/>
+<circle class="u1l02-ember" cx="294" cy="234" r="4"/>
+<circle class="u1l02-ember" cx="340" cy="220" r="4"/>
+<circle class="u1l02-ember" cx="386" cy="230" r="4"/>
+<g id="lc-coin"><circle class="u1l02-coin" cx="120" cy="298" r="16"/><circle class="u1l02-coin-in" cx="120" cy="298" r="9"/></g>
+<path class="u1l02-sherd" transform="translate(110 372) rotate(-10)" d="M-24,0 Q0,-16 24,0 L18,8 Q0,-4 -18,8 z"/>
+<path class="u1l02-sherd" transform="translate(200 402) rotate(15)" d="M-24,0 Q0,-16 24,0 L18,8 Q0,-4 -18,8 z"/>
+<path class="u1l02-sherd" transform="translate(280 364) rotate(-25)" d="M-24,0 Q0,-16 24,0 L18,8 Q0,-4 -18,8 z"/>
+<path class="u1l02-sherd" transform="translate(380 394) rotate(8)" d="M-24,0 Q0,-16 24,0 L18,8 Q0,-4 -18,8 z"/>
+<rect class="u1l02-frame" x="30" y="30" width="400" height="510"/>
+<circle class="u1l02-badge" cx="56" cy="66.0" r="19"/><text class="u1l02-badgetx" x="56" y="74.0">1</text>
+<line class="u1l02-lead" x1="434" y1="66.0" x2="458" y2="66.0"/>
+<text class="u1l02-lab" x="466" y="62.0"><tspan class="u1l02-labn">Layer 1 · Topsoil</tspan></text><text class="u1l02-sub" x="466" y="90.0">modern soil and grass</text>
+<circle class="u1l02-badge" cx="56" cy="152.0" r="19"/><text class="u1l02-badgetx" x="56" y="160.0">2</text>
+<line class="u1l02-lead" x1="434" y1="152.0" x2="458" y2="152.0"/>
+<text class="u1l02-lab" x="466" y="148.0"><tspan class="u1l02-labn">Layer 2 · Rubble</tspan></text><text class="u1l02-sub" x="466" y="176.0">stones and roof tiles</text>
+<circle class="u1l02-badge" cx="56" cy="233.0" r="19"/><text class="u1l02-badgetx" x="56" y="241.0">3</text>
+<line class="u1l02-lead" x1="434" y1="233.0" x2="458" y2="233.0"/>
+<text class="u1l02-lab" x="466" y="229.0"><tspan class="u1l02-labn">Layer 3 · Burnt layer</tspan></text><text class="u1l02-sub" x="466" y="257.0">ash and charcoal</text>
+<circle class="u1l02-badge" cx="56" cy="298.0" r="19"/><text class="u1l02-badgetx" x="56" y="306.0">4</text>
+<line class="u1l02-lead" x1="434" y1="298.0" x2="458" y2="298.0"/>
+<text class="u1l02-lab" x="466" y="294.0"><tspan class="u1l02-labn">Layer 4 · Earth floor</tspan></text><text class="u1l02-sub" x="466" y="322.0">a coin</text>
+<circle class="u1l02-badge" cx="56" cy="386.0" r="19"/><text class="u1l02-badgetx" x="56" y="394.0">5</text>
+<line class="u1l02-lead" x1="434" y1="386.0" x2="458" y2="386.0"/>
+<text class="u1l02-lab" x="466" y="382.0"><tspan class="u1l02-labn">Layer 5 · Dark soil</tspan></text><text class="u1l02-sub" x="466" y="410.0">broken pottery</text>
+<circle class="u1l02-badge" cx="56" cy="490.0" r="19"/><text class="u1l02-badgetx" x="56" y="498.0">6</text>
+<line class="u1l02-lead" x1="434" y1="490.0" x2="458" y2="490.0"/>
+<text class="u1l02-lab" x="466" y="486.0"><tspan class="u1l02-labn">Layer 6 · Natural clay</tspan></text><text class="u1l02-sub" x="466" y="514.0">no human finds</text>
+<g class="linked u1l02-ans" id="lc-arrow"><line class="u1l02-arr" x1="810" y1="40" x2="810" y2="524" marker-end="url(#lc-ah)"/><text class="u1l02-arrtx" x="796" y="285.0" transform="rotate(90 796 285.0)">deeper = older</text></g>
+<g class="linked u1l02-ans" id="lc-order"><rect class="u1l02-rank" x="334" y="472.0" width="84" height="36" rx="18"/><text class="u1l02-ranktx" x="376" y="498.0">1st</text><rect class="u1l02-rank" x="334" y="368.0" width="84" height="36" rx="18"/><text class="u1l02-ranktx" x="376" y="394.0">2nd</text><rect class="u1l02-rank" x="334" y="280.0" width="84" height="36" rx="18"/><text class="u1l02-ranktx" x="376" y="306.0">3rd</text><rect class="u1l02-rank" x="334" y="215.0" width="84" height="36" rx="18"/><text class="u1l02-ranktx" x="376" y="241.0">4th</text><rect class="u1l02-rank" x="334" y="134.0" width="84" height="36" rx="18"/><text class="u1l02-ranktx" x="376" y="160.0">5th</text><rect class="u1l02-rank" x="334" y="48.0" width="84" height="36" rx="18"/><text class="u1l02-ranktx" x="376" y="74.0">6th</text></g>
+</svg><figcaption>An invented site, drawn for this lesson (not to scale)</figcaption></figure>
+    <div class="stack">
+      <div class="card accent"><div class="k">Law of superposition</div><p class="body">In undisturbed layers, the lower layers are older than the layers above them.</p></div>
+      <p class="qprompt">Which layer is oldest? Which is youngest?</p>
+      <p class="u1l02-model vp reveal" data-also="#lc-arrow"><b>Answer:</b> Layer 6 is the oldest, Layer 1 the youngest: deeper means older.</p>
+      <p class="qprompt">Put all six in order, oldest first.</p>
+      <p class="u1l02-model vp reveal" data-also="#lc-order"><b>Answer:</b> 6 → 5 → 4 → 3 → 2 → 1</p>
+      <p class="qprompt">Tell the site’s story, oldest first. What do the layers suggest?</p>
+      <p class="u1l02-model vp reveal"><b>Suggests:</b> people left broken pottery (5) → an earth floor was laid (4) → there was a fire (3) → a building probably fell down (2) → soil and grass grew over it (1).</p>
+      <p class="u1l02-model vp reveal"><b>Extension:</b> an ‘unstratified’ site has no clear, undisturbed layers, so its finds cannot be put in order or dated by the layer they came from.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Reading the layers" data-title="We do: terminus post quem" data-kind="notes">
+<div class="wrap u1l02-dense">
+  <p class="eyebrow">3 · Reading the layers · We do — dating with a coin · cold call</p>
+  <h2>A coin dates a layer: terminus post quem</h2>
+  <div class="split veil-parts" style="--cols:1.35fr 1fr" data-veil="Try it first — then show the answers">
+    <figure class="u1l02-diag"><svg class="u1l02-lc" viewBox="0 0 840 590" role="img" aria-label="The same invented section, layers numbered 1 to 6 from the top. A coin minted in 120 CE lies in Layer 4, the earth floor. Layers 1 to 3 lie above it; Layers 5 and 6 lie below it.">
+<defs><marker id="tq-ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path class="u1l02-ah" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="u1l02-s1" x="30" y="30" width="400" height="72"/>
+<path class="u1l02-s2" d="M30,102 C170,95 330,109 430,100 L430,202 L30,202 z"/>
+<path class="u1l02-s3" d="M30,202 C170,195 330,209 430,200 L430,264 L30,264 z"/>
+<path class="u1l02-s4" d="M30,264 C170,257 330,271 430,262 L430,332 L30,332 z"/>
+<path class="u1l02-s5" d="M30,332 C170,325 330,339 430,330 L430,440 L30,440 z"/>
+<path class="u1l02-s6" d="M30,440 C170,433 330,447 430,438 L430,540 L30,540 z"/>
+<ellipse class="u1l02-stone" cx="80" cy="122" rx="22" ry="13"/>
+<ellipse class="u1l02-stone" cx="150" cy="158" rx="28" ry="15"/>
+<ellipse class="u1l02-stone" cx="215" cy="128" rx="19" ry="12"/>
+<ellipse class="u1l02-stone" cx="280" cy="166" rx="24" ry="14"/>
+<ellipse class="u1l02-stone" cx="340" cy="128" rx="26" ry="14"/>
+<ellipse class="u1l02-stone" cx="400" cy="162" rx="20" ry="12"/>
+<ellipse class="u1l02-stone" cx="110" cy="184" rx="16" ry="9"/>
+<ellipse class="u1l02-stone" cx="370" cy="188" rx="18" ry="9"/>
+<rect class="u1l02-tile" x="170" y="134" width="40" height="9" rx="2" transform="rotate(-12 190 138)"/>
+<rect class="u1l02-tile" x="300" y="142" width="40" height="9" rx="2" transform="rotate(-12 320 146)"/>
+<rect class="u1l02-tile" x="230" y="180" width="40" height="9" rx="2" transform="rotate(-12 250 184)"/>
+<circle class="u1l02-ember" cx="64" cy="232" r="4"/>
+<circle class="u1l02-ember" cx="110" cy="218" r="4"/>
+<circle class="u1l02-ember" cx="156" cy="228" r="4"/>
+<circle class="u1l02-ember" cx="202" cy="238" r="4"/>
+<circle class="u1l02-ember" cx="248" cy="224" r="4"/>
+<circle class="u1l02-ember" cx="294" cy="234" r="4"/>
+<circle class="u1l02-ember" cx="340" cy="220" r="4"/>
+<circle class="u1l02-ember" cx="386" cy="230" r="4"/>
+<g id="tq-coin"><circle class="u1l02-coin" cx="120" cy="298" r="16"/><circle class="u1l02-coin-in" cx="120" cy="298" r="9"/></g>
+<path class="u1l02-sherd" transform="translate(110 372) rotate(-10)" d="M-24,0 Q0,-16 24,0 L18,8 Q0,-4 -18,8 z"/>
+<path class="u1l02-sherd" transform="translate(200 402) rotate(15)" d="M-24,0 Q0,-16 24,0 L18,8 Q0,-4 -18,8 z"/>
+<path class="u1l02-sherd" transform="translate(280 364) rotate(-25)" d="M-24,0 Q0,-16 24,0 L18,8 Q0,-4 -18,8 z"/>
+<path class="u1l02-sherd" transform="translate(380 394) rotate(8)" d="M-24,0 Q0,-16 24,0 L18,8 Q0,-4 -18,8 z"/>
+<rect class="u1l02-frame" x="30" y="30" width="400" height="510"/>
+<circle class="u1l02-badge" cx="56" cy="66.0" r="19"/><text class="u1l02-badgetx" x="56" y="74.0">1</text>
+<circle class="u1l02-badge" cx="56" cy="152.0" r="19"/><text class="u1l02-badgetx" x="56" y="160.0">2</text>
+<circle class="u1l02-badge" cx="56" cy="233.0" r="19"/><text class="u1l02-badgetx" x="56" y="241.0">3</text>
+<circle class="u1l02-badge" cx="56" cy="298.0" r="19"/><text class="u1l02-badgetx" x="56" y="306.0">4</text>
+<circle class="u1l02-badge" cx="56" cy="386.0" r="19"/><text class="u1l02-badgetx" x="56" y="394.0">5</text>
+<circle class="u1l02-badge" cx="56" cy="490.0" r="19"/><text class="u1l02-badgetx" x="56" y="498.0">6</text>
+<g class="u1l02-coinlab"><rect class="u1l02-tag" x="146" y="280" width="160" height="36" rx="6"/><text class="u1l02-tagtx" x="226" y="305">minted 120 CE</text></g>
+<g class="linked u1l02-ans" id="tq-4"><path class="u1l02-br u1l02-yes" d="M458,268 h12 V328 h-12"/><text class="u1l02-brtx u1l02-yes" x="486" y="306.0">in or after 120 CE</text></g>
+<g class="linked u1l02-ans" id="tq-up"><path class="u1l02-br u1l02-yes" d="M458,34 h12 V260 h-12"/><text class="u1l02-brtx u1l02-yes" x="486" y="141.0">later than Layer 4:</text><text class="u1l02-brtx u1l02-yes" x="486" y="169.0">so also in or after 120 CE</text></g>
+<g class="linked u1l02-ans" id="tq-down"><path class="u1l02-br u1l02-no" d="M458,336 h12 V536 h-12"/><text class="u1l02-brtx u1l02-no" x="486" y="430.0">older than Layer 4:</text><text class="u1l02-brtx u1l02-no" x="486" y="458.0">the coin can’t date them</text></g>
+</svg><figcaption>The same invented site (undisturbed layers): a coin minted in 120 CE lies in Layer 4</figcaption></figure>
+    <div class="stack">
+      <div class="card accent"><div class="k">Terminus post quem</div><p class="body"><span class="nq">‘The date after which’</span>: a coin or object gives the earliest possible date for the layer it is found in.</p></div>
+      <p class="qprompt">When was Layer 4 formed?</p>
+      <p class="u1l02-model vp reveal" data-also="#tq-4"><b>Answer:</b> in or after 120 CE. The coin had to exist before it was dropped, and it may have been lost years later.</p>
+      <p class="qprompt">What does the coin tell us about Layer 3, the burnt layer above it?</p>
+      <p class="u1l02-model vp reveal" data-also="#tq-up"><b>Answer:</b> Layer 3 formed after Layer 4, so the fire happened in or after 120 CE too (and so did Layers 2 and 1).</p>
+      <p class="qprompt">What does it tell us about Layers 5 and 6, below it?</p>
+      <p class="u1l02-model vp reveal" data-also="#tq-down"><b>Answer:</b> nothing about their date. They are older than Layer 4, but the coin cannot tell us how much older.</p>
+    </div>
+  </div>
+  <p class="cue reveal">The broken pottery in Layer 5 can date it only if we know when that style was made: that is typology, next lesson.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Reading the layers" data-title="Notes 2 — Reading the layers" data-kind="notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>Reading the layers</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U1 L2 · Digging the past I</b></span><span>3 · Reading the layers</span></div>
+    <div class="row"><div class="cq">Explain the law of superposition.</div>
+      <div class="nts reveal">undisturbed layers: lower = older → oldest at the bottom <span class="sep">·</span> layer cake: 6 → 5 → 4 → 3 → 2 → 1</div></div>
+    <div class="row"><div class="cq">Explain terminus post quem, with an example.</div>
+      <div class="nts reveal"><span class="nq">‘the date after which’</span> <span class="sep">·</span> coin minted 120 CE in undisturbed Layer 4 → Layer 4 formed in or after 120 CE → layers above also later <span class="sep">·</span> layers below: the coin can’t date them</div></div>
+    <div class="row"><div class="cq">Explain why the law of superposition needs undisturbed layers.</div>
+      <div class="nts reveal">pits, burrows and building work move things up or down → read the cuts too → Harris matrix records the order of every context</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Reading the layers" data-title="Hinge: a coin in Layer 3" data-kind="practice">
+<div class="wrap u1l02-dense">
+  <p class="eyebrow">Check for understanding · hinge question · hold up your A, B, C or D card on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2>A new site. A coin minted in 64 CE is found in undisturbed Layer 3. What can we say about Layer 3?</h2>
+  <div class="u1l02-hinge veil-parts" data-veil="Vote first — then show the answer">
+  <ol class="opts">
+    <li><span class="n">A</span><span>It was formed in 64 CE</span></li>
+    <li id="u1l02-hqB"><span class="n">B</span><span>It was formed in or after 64 CE</span></li>
+    <li><span class="n">C</span><span>It was formed before 64 CE</span></li>
+    <li><span class="n">D</span><span>It dates from the reign of the emperor on the coin</span></li>
+  </ol>
+  <i class="reveal" data-mark="#u1l02-hqB" hidden></i>
+  <div class="note vp reveal" data-code="evidence"><div class="k">B: in or after 64 CE (terminus post quem)</div><p class="body"><b>A</b> confuses when the coin was made with when it was dropped. <b>C</b> is backwards: in an undisturbed layer, the coin had to exist before it could be buried. <b>D</b> forgets that a coin can stay in use, or be kept, long after it was made.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · What changed?" data-title="You do: the timeline cards">
+<div class="wrap u1l02-dense">
+  <p class="eyebrow">4 · What changed? · You do · 8 minutes · press K for the timer</p>
+  <h2>Put the six methods in order. What changed, and what stayed the same?</h2>
+  <div class="u1l02-tl">
+    <div class="u1l02-tlc"><span class="l">A</span><b>Digital recording</b>context sheets, total stations, photogrammetry and 3D models</div>
+    <div class="u1l02-tlc"><span class="l">B</span><b>Schliemann at Hisarlik</b>a great trench dug to reach the bottom of the mound</div>
+    <div class="u1l02-tlc"><span class="l">C</span><b>The Harris matrix</b>a diagram of the order of every layer and feature</div>
+    <div class="u1l02-tlc"><span class="l">D</span><b>Petrie at Tell el-Hesy</b>the mound’s layers drawn; the pottery in each layer dates it</div>
+    <div class="u1l02-tlc"><span class="l">E</span><b>Pitt Rivers at Cranborne Chase</b>every detail recorded, with where each find lay</div>
+    <div class="u1l02-tlc"><span class="l">F</span><b>Wheeler’s box grid</b>squares and baulks: a section on four sides of every square</div>
+  </div>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="card accent sm"><div class="k">Everyone</div><p class="body">1 · Put the cards in order, oldest first. 2 · For each step, one sentence: <span class="nq">“What changed was … ; what stayed the same was …”</span></p></div>
+    <div class="card quiet sm"><div class="k">Support</div><p class="body">Use your Notes 1 rows. Foundation cards have the dates printed.</p></div>
+  </div>
+  <div class="stack" data-veil="Order the cards first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u1l02-key">
+    <tr><th>Card</th><th>When</th><th>What changed / what stayed the same (examples)</th></tr>
+    <tr class="reveal"><td>B · Schliemann</td><td class="u1l02-when">1871–1873 (trial dig 1870)</td><td>treasure hunting: dig to the target, later layers destroyed</td></tr>
+    <tr class="reveal"><td>E · Pitt Rivers</td><td class="u1l02-when">1880s–1890s</td><td>changed: every detail and find position recorded · same: digging by hand</td></tr>
+    <tr class="reveal"><td>D · Petrie</td><td class="u1l02-when">1890</td><td>changed: layers drawn and dated by pottery · same: paid gangs of diggers and (Wheeler complained) few measured sections</td></tr>
+    <tr class="reveal"><td>F · Wheeler</td><td class="u1l02-when">1930s–1950s</td><td>changed: a grid, sections on four sides · same: superposition, careful recording</td></tr>
+    <tr class="reveal"><td>C · Harris</td><td class="u1l02-when">1973</td><td>changed: the order of every context in one diagram · same: superposition underneath it</td></tr>
+    <tr class="reveal"><td>A · Digital</td><td class="u1l02-when">today</td><td>changed: exact positions and 3D models · same: excavation still destroys, so the record is all that remains</td></tr>
+  </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · What changed?" data-title="You do: the short answer">
+<div class="wrap u1l02-dense">
+  <p class="eyebrow">4 · What changed? · You do · 12 minutes · press K for the timer</p>
+  <h2>Short answer: explain how excavation has changed since the 1870s</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · 5–6 sentences</div>
+        <p class="body"><b>Explain how archaeological excavation has changed since the 1870s.</b></p>
+        <ul class="body"><li>use two named examples</li><li>use time connectives: initially, by the 1880s, today</li><li>say one thing that has stayed the same</li></ul></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Start: <span class="nq">“Before …, archaeologists … ; today, …”</span> Use your timeline sentences and Notes 1.</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Was Schliemann a pioneer or a destroyer? Write a two-sided judgement that shows the interpretation is contested.</p></div>
+    </div>
+    <div class="src reveal" data-veil="Write yours first — then show a model answer">
+      <div class="k">A model answer · written for this lesson</div>
+      <p class="quote sm model">Initially, excavation was often a hunt for treasure: in the 1870s Heinrich Schliemann cut a huge trench through the mound at Hisarlik to reach the city he believed was Homer’s Troy, destroying the later layers above it. He also misread his layers: ‘Priam’s Treasure’, which he linked to Homer’s king, came from a settlement more than 1,000 years older than the supposed Trojan War. By the 1880s, Augustus Pitt Rivers was recording every detail of his excavations at Cranborne Chase, including where each find lay, because new questions in archaeology keep arising. In the twentieth century, Mortimer Wheeler’s box grid and, from 1973, the Harris matrix gave archaeologists ways to record the order of every layer. Today, context sheets record every layer, while total stations and photogrammetry record positions and shapes in three dimensions. What has stayed the same is the principle of stratigraphy and the fact that excavation destroys what it uncovers, so the record is all that remains.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Check: why does recording matter?" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Check · 7 minutes · cold call, then your short answers</p>
+  <h2>Why does recording matter when excavation destroys a site?</h2>
+  <div class="cols c2">
+    <div class="card accent"><div class="k">1 · Cold call</div><p class="lead">Why does recording matter? Use the word “destroys” and one example from today.</p></div>
+    <div class="card accent"><div class="k">2 · Your short answer</div><p class="lead">Be ready to read your best sentence aloud. Which time connective did you use?</p></div>
+  </div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">Excavation removes each layer as it is dug, so a site can be dug only once. Unless every layer, find and position is recorded, that evidence is lost for ever and no one can check or reinterpret it — as at Schliemann’s Hisarlik. The record is all that remains.</p></div>
+  <div class="src reveal"><p class="quote sm">… the archaeologist is digging up, not <i>things</i>, but <i>people</i>.</p><p class="prov">Mortimer Wheeler, <i>Archaeology from the Earth</i> (1954), Preface · Lesson 1’s key quotation, revisited: the record of where things lay is how we find the people</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> surveying, dating and scientific analysis.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Summary" data-kind="notes">
+<div class="wrap u1l02-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>How has excavation changed since Schliemann?</li>
+          <li>How does stratigraphy help archaeologists date layers and finds?</li>
+          <li>Why does recording matter?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Excavation has changed from treasure hunting, such as Schliemann’s trench at Hisarlik in the 1870s, to a careful science in which every layer and find is recorded, from Pitt Rivers in the 1880s to the digital tools used today. Stratigraphy lets archaeologists put layers in order, because in undisturbed layers the lower ones are older, and a coin or other datable object gives the earliest possible date for its layer and the layers above. Recording matters because excavation destroys what it uncovers, so the record is all that remains of a site, and it is what lets archaeologists find “not <i>things</i>, but <i>people</i>”.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Schliemann: the trench and what it destroyed</label></li>
+        <li><label><input type="checkbox"> ‘Priam’s Treasure’: too old, and how it was found</label></li>
+        <li><label><input type="checkbox"> Pitt Rivers and Petrie</label></li>
+        <li><label><input type="checkbox"> Wheeler’s box grid and the Harris matrix</label></li>
+        <li><label><input type="checkbox"> Recording today</label></li>
+        <li><label><input type="checkbox"> Law of superposition</label></li>
+        <li><label><input type="checkbox"> Terminus post quem</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u1l02-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Schliemann’s trench destroyed many of the later layers at Hisarlik.</span>
+      <span class="sol reveal">True <span class="why">— he dug through them to reach the city he was looking for, and they cannot be dug again.</span></span></li>
+    <li><span class="n">2</span><span>‘Priam’s Treasure’ came from the city of the Trojan War.</span>
+      <span class="sol no reveal">False <span class="why">— it came from Troy II; the treasures date to about 2400 BCE, more than 1,000 years before the supposed war.</span></span></li>
+    <li><span class="n">3</span><span>In undisturbed layers, a lower layer is older than the layers above it.</span>
+      <span class="sol reveal">True <span class="why">— the law of superposition.</span></span></li>
+    <li><span class="n">4</span><span>A coin minted in 120 CE proves that the undisturbed layer it lies in was formed in 120 CE.</span>
+      <span class="sol no reveal">False <span class="why">— it shows only that the layer formed in or after 120 CE (terminus post quem).</span></span></li>
+    <li><span class="n">5</span><span>Wheeler left baulks between his squares so that the layers could be seen in section.</span>
+      <span class="sol reveal">True <span class="why">— each square kept a section on all four sides.</span></span></li>
+    <li><span class="n">6</span><span>Digital recording means excavation no longer destroys a site.</span>
+      <span class="sol no reveal">False <span class="why">— digging still removes the layers; the record, paper or digital, is all that remains.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — explain and judge" data-kind="practice">
+<div class="wrap prac u1l02-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Write it as a historian</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · In your own words</div><p class="body">Explain terminus post quem, using a different example from the one in class.</p></div>
+      <div class="src reveal" data-veil="Show a model answer"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Terminus post quem means <span class="nq">“the date after which”</span>: if a pot of a type first made in 200 CE is found in a pit that no later digging has disturbed, the pit cannot have been filled before 200 CE, although it could have been filled much later.</p></div>
+      <div class="card accent"><div class="k">2 · Superposition</div><p class="body">Draw your own section of four layers with one find in each, and explain which find is oldest and why.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Was Schliemann a pioneer or a destroyer? Write a two-sided judgement that shows the interpretation is contested.</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">Schliemann can be seen as a pioneer, because his digging at Hisarlik in the 1870s showed that the mound held the ruins of several cities built one on top of another. However, he can also be seen as a destroyer: his workers cut a huge trench that destroyed much of the evidence for Troy’s later settlements, and he cut out ‘Priam’s Treasure’ without recording exactly how it lay, so historians still argue about whether it was a single find. His own reports are not reliable on this, since he later admitted that his wife was not there. On balance, he is best judged a pioneer whose methods destroyed much of what he found: he published his results within a year, but by the later standard that Pitt Rivers set out in 1887, that every detail should be recorded, he fell short. Historians who stress his discoveries call him a pioneer, and those who stress what his trench destroyed call him a destroyer, so the interpretation remains contested.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u1l02-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Explain how Schliemann dug Hisarlik, and what it cost.
+      <span class="sol reveal">He cut a huge trench through the mound to reach the bottom, destroying the later layers; he cut out ‘Priam’s Treasure’ with no record of how the pieces lay.</span></li>
+    <li>Why was ‘Priam’s Treasure’ too old for Homer’s Troy?
+      <span class="sol reveal">It came from Troy II; the treasures date to about 2400 BCE, more than 1,000 years before the supposed Trojan War.</span></li>
+    <li>What did Pitt Rivers change?
+      <span class="sol reveal">He recorded every detail, including exactly where each find lay, because new questions in archaeology keep arising.</span></li>
+    <li>Why did Wheeler leave baulks?
+      <span class="sol reveal">So every square kept a section on all four sides, showing the layers, and each find could be tied to its square and layer.</span></li>
+    <li>What is the law of superposition?
+      <span class="sol reveal">In undisturbed layers, the lower layers are older than the layers above them.</span></li>
+    <li>A coin minted in 64 CE is found in an undisturbed layer. What can we say?
+      <span class="sol reveal">The layer was formed in or after 64 CE (terminus post quem), and so were the layers above it.</span></li>
+    <li>Why does recording matter?
+      <span class="sol reveal">Excavation destroys what it uncovers, so the record is all that remains of a site.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u1l02-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u1l02-cite"><div class="k">Written sources</div>
+      <p class="small u1l02-vsm">Heinrich Schliemann, <i>Troy and its Remains</i>, ed. Philip Smith, trans. L. Dora Schmitz (London: John Murray, 1875), pp. 99, 133, 323–324 (public domain); checked against <a href="https://archive.org/details/troyitsremainsna00schl">the 1875 edition</a> and the <a href="https://archive.org/details/troyanditsremain45190gut">Project Gutenberg text</a>.</p>
+      <p class="small u1l02-vsm">A. Pitt Rivers, <i>Excavations in Cranborne Chase</i>, vol. I (1887), Preface, p. xvii (public domain); checked against <a href="https://archive.org/details/excavationsincra01pitt">the 1887 edition</a>.</p>
+      <p class="small u1l02-vsm">W. M. Flinders Petrie, <i>Methods and Aims in Archaeology</i> (London, 1904), p. 17 (public domain); checked against <a href="https://archive.org/details/in.ernet.dli.2015.70301">the 1904 edition</a>.</p>
+      <p class="small u1l02-vsm">Mortimer Wheeler, <i>Archaeology from the Earth</i> (Oxford: Clarendon Press, 1954), pp. 15, 63, 64, 182, and the Preface; checked against <a href="https://archive.org/details/in.gov.ignca.1711">the 1954 edition</a>.</p>
+      <p class="small u1l02-vsm">Facts: <a href="https://archaeology.org/travel/interactivemap-troy/troy-2.html">Archaeology magazine, “Troy II”</a> · <a href="https://www.smb.museum/en/whats-new/detail/150-years-since-heinrich-schliemann-uncovered-the-treasure-of-priamos-in-troy/">Staatliche Museen zu Berlin</a> · <a href="https://www.schliemann-museum.de/raum-5/sophia-die-wegbegleiterin/">Heinrich-Schliemann-Museum Ankershagen</a> · D. A. Traill, <i>Antiquity</i> 57 (1983) · D. F. Easton, ‘Priam’s Treasure’, <i>Anatolian Studies</i> 34 (1984) · <a href="https://www.harrismatrix.com/">harrismatrix.com</a> · <a href="https://heritageportal.buckinghamshire.gov.uk/theme/tbc588">Buckinghamshire Council Heritage Portal</a> · ARIADNE, <i>Photogrammetry: A Guide to Good Practice</i> (2023).</p>
+      <p class="small u1l02-vsm">Teacher resources (class notebook): <i>Introduction to Archaeology</i>; Time Team <i>‘Llygadwy’</i> worksheet.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet"><div class="k">Diagrams</div>
+        <p class="small">The layer cake, the box grid and the Harris matrix are invented examples, drawn for this lesson.</p></div>
+    </div>
+  </div>
+  <div class="card quiet u1l02-cite"><div class="k">Images</div>
+    <ul class="small credits"><li><b>Schliemann’s trench at Troy (Hisarlik)</b> · Photo: Dosseman · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Troy_Schliemann_trench_7752.jpg">source</a></li><li><b>Vindolanda Tablet 291</b> · Photo: Fæ · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Vindolanda_tablet_291.jpg">source</a></li><li><b>Sophia Schliemann wearing ‘Priam’s Treasure’ jewellery (original: American School of Classical Studies at Athens, Schliemann Papers)</b> · Photographer unknown · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:Sophia_Schliemann_wearing_gold_jewelry.jpg">source</a></li><li><b>Augustus Pitt Rivers</b> · Photographer unknown · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:A-H-Pitt-Rivers.jpg">source</a></li><li><b>Petrie’s section through Tell el-Hesy (1890)</b> · W. M. Flinders Petrie, Tell el Hesy (Lachish) (Palestine Exploration Fund, 1891) · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:Flinders_Petrie_-_Tell_Hesy_-_Cross_section_through_the_mound.jpg">source</a></li><li><b>Context sheets</b> · Mididoctors (Wikimedia Commons) · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:Context_sheets.jpg">source</a></li><li><b>A total station in use at Boxgrove</b> · Photo: Midnightblueowl · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Mark_B._Roberts_at_Boxgrove_(2).jpg">source</a></li><li><b>Photomapping at Aramus, Armenia</b> · Luca Bezzi (Arc-Team) · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Aramus_drawing_photomapping.jpg">source</a></li></ul>
+    <p class="small">All images are public domain or openly licensed, and were resized for the web (some were cropped). Each is shared under the licence shown.</p></div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1808 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U2 L9 · The design and ornamentation of the Achaemenid period</title>
+<meta name="description" content="Year 11 Ancient History, case study Persepolis: the columns, guardian bulls, reliefs and motifs of Persepolis, where each idea came from, and why the Persian kings’ builders combined the traditions of many peoples in one court style, with his Susa charter (DSf) as evidence.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#0F5E5A; --bright:#1A8A84; --tint:#E1F2F0; --statement:#0F5E5A;
+  --solid:#0F5E5A; --soft:#CBEDE9; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; } }
+:root[data-theme="dark"]{ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+
+/* ---- Unit 2 Lesson 9 only (every class starts u2l09-) */
+
+/* a column from the bottom up: four picture tiles */
+.u2l09-parts{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:clamp(8px,1.1vw,16px);}
+.u2l09-part{margin:0; background:var(--surface); border:1px solid var(--rule); border-top:5px solid var(--bright);
+  border-radius:10px; overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;}
+.u2l09-part img{display:block; width:100%; height:24vh; object-fit:cover; background:var(--surface-2);}
+.u2l09-part img.u2l09-top, .u2l09-card img.u2l09-top{object-position:50% 12%;}
+.u2l09-part img.u2l09-low{object-position:50% 88%;}
+.u2l09-part figcaption{padding:.45em .7em .55em; display:flex; flex-direction:column; gap:.12em;
+  font-size:calc(var(--fs-body)*.76); line-height:1.3;}
+.u2l09-part b{font-family:var(--disp); font-size:1.15em; color:var(--deep);}
+
+/* two pictures side by side */
+.u2l09-pair{display:grid; grid-template-columns:1fr 1fr; gap:clamp(10px,1.2vw,18px); align-items:start;}
+.u2l09-pair .figure img{height:40vh; max-height:none; object-fit:cover;}
+.u2l09-pair.wide .figure img{height:30vh;}
+.u2l09-pair .figure figcaption{font-size:calc(var(--fs-chrome)*.9);}
+.u2l09-pair .figure figcaption b{color:var(--deep);}
+
+/* short facts lists under the relief pair */
+.u2l09-facts{margin:0; padding-left:1.2em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.u2l09-facts li{margin:.12em 0;}
+
+/* three motifs */
+.u2l09-trio{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(10px,1.2vw,18px);}
+.u2l09-motif{margin:0; background:var(--surface); border:1px solid var(--rule); border-radius:10px; overflow:hidden;
+  box-shadow:var(--shadow); display:flex; flex-direction:column;}
+.u2l09-motif img{display:block; width:100%; height:27vh; object-fit:cover;}
+.u2l09-motif figcaption{padding:.5em .8em .6em; display:flex; flex-direction:column; gap:.2em;
+  font-size:calc(var(--fs-body)*.78); line-height:1.34;}
+.u2l09-motif b{font-family:var(--disp); font-size:1.12em; color:var(--deep);}
+
+/* DSf extract: a long source in a small card */
+.u2l09-dsf .quote.sm{font-size:calc(var(--fs-body)*.84); line-height:1.45;}
+
+/* answer tables */
+.u2l09-key td:first-child{font-weight:700;}
+.u2l09-key tr.u2l09-tricky td:first-child i{font-style:normal; font-weight:600; font-size:.82em; color:var(--c-counter);
+  margin-left:.35em; text-transform:uppercase; letter-spacing:.05em;}
+
+/* influence map (inline SVG from make_u2l09_diagrams.py; colours from the page, so they follow the theme) */
+.u2l09-figsvg{margin:0;}
+.u2l09-figsvg svg{display:block; width:100%; height:auto; max-height:calc(100vh - 250px);}
+.u2l09-figsvg figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.35em; line-height:1.3;}
+.u2l09-influence .u2l09-node{fill:var(--surface); stroke:var(--slate); stroke-width:2.5;}
+.u2l09-influence .u2l09-home{fill:var(--tint); stroke:var(--deep); stroke-width:4;}
+.u2l09-influence .u2l09-arrow{fill:none; stroke:var(--bright); stroke-width:4; stroke-linecap:round;}
+.u2l09-influence .u2l09-ahp{fill:var(--bright);}
+.u2l09-influence .u2l09-t{font-family:var(--ui); font-size:23px; fill:var(--ink);}
+.u2l09-influence .u2l09-tb{font-weight:700; font-size:24px; fill:var(--deep);}
+.u2l09-influence .u2l09-tbig{font-weight:700; font-size:26px; fill:var(--deep);}
+.u2l09-influence .u2l09-tmute{fill:var(--slate); font-size:18px; font-style:italic;}
+
+/* card sort: eight cards, four across */
+.u2l09-cards{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:clamp(8px,1vw,14px);}
+.u2l09-card{position:relative; margin:0; background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;}
+.u2l09-card img{display:block; width:100%; height:15vh; object-fit:cover; background:var(--surface-2);}
+.u2l09-card .l{position:absolute; top:6px; left:6px; width:1.6em; height:1.6em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:calc(var(--fs-body)*.72);
+  box-shadow:0 0 0 2px #fff;}
+.u2l09-card figcaption{padding:.35em .6em .45em; font-size:calc(var(--fs-body)*.68); line-height:1.28;}
+.u2l09-card figcaption b{display:block; font-size:1.08em; color:var(--deep);}
+.u2l09-howto{display:flex; flex-wrap:wrap; gap:.35em 1.4em; font-size:calc(var(--fs-body)*.8); margin:0;}
+.u2l09-howto b{display:inline-grid; place-items:center; width:1.5em; height:1.5em; border-radius:50%; background:var(--solid);
+  color:#fff; font-size:.85em; margin-right:.3em;}
+
+/* feedback in action: the class checklist and before/after pairs (as Unit 1, Lesson 5) */
+.u2l09-check{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.3em;}
+.u2l09-check li{display:grid; grid-template-columns:1.6em 1fr; gap:.5em; align-items:start;
+  font-size:calc(var(--fs-body)*.84); line-height:1.32;}
+.u2l09-check .num{display:grid; place-items:center; width:1.5em; height:1.5em; border-radius:50%; background:var(--solid);
+  color:#fff; font-weight:700; font-size:.88em;}
+.u2l09-check .d{display:block; color:var(--slate); font-size:.92em;}
+.u2l09-ba{display:grid; grid-template-columns:4.6em 1fr; gap:.25em .6em; font-size:calc(var(--fs-body)*.8); line-height:1.38;}
+.u2l09-ba .l{font-family:var(--ui); font-weight:700; font-size:.82em; letter-spacing:.04em; text-transform:uppercase;
+  color:var(--slate); padding-top:.2em;}
+.u2l09-ba .l.after{color:var(--c-evidence);}
+.u2l09-ba + .u2l09-ba{margin-top:.55em; padding-top:.55em; border-top:1px dashed var(--rule);}
+.u2l09-steps{margin:0; padding-left:1.3em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.u2l09-steps li{margin:.2em 0;}
+
+/* check first: two sentences, and the language bank */
+.u2l09-sent{display:grid; grid-template-columns:2.2em 1fr; gap:.6em; align-items:start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface); font-size:calc(var(--fs-body)*.88);
+  line-height:1.42;}
+.u2l09-sent .l{display:grid; place-items:center; width:1.8em; height:1.8em; border-radius:50%; background:var(--solid);
+  color:#fff; font-weight:700;}
+.u2l09-bank span{font-style:italic;}
+
+/* credits and the syllabus line */
+.u2l09-cite a{color:var(--deep);}
+.u2l09-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+
+/* phones (Read mode): fewer columns, natural picture heights, the map can scroll sideways */
+@media (max-width:900px){
+  .u2l09-parts, .u2l09-cards{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .u2l09-part img, .u2l09-card img{height:auto; aspect-ratio:4/3;}
+  .u2l09-pair, .u2l09-trio{grid-template-columns:1fr;}
+  .u2l09-pair .figure img, .u2l09-pair.wide .figure img{height:auto; max-height:60vh; aspect-ratio:auto;}
+  .u2l09-motif img{height:auto; aspect-ratio:3/2;}
+  .u2l09-figsvg svg{max-height:none; min-width:560px;}
+  .u2l09-figsvg{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+}
+@media (max-width:340px){
+  .u2l09-parts, .u2l09-cards{grid-template-columns:1fr;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u2l09-dense{gap:10px;}
+  html:not(.read) .u2l09-dense h2{font-size:calc(var(--fs-h2)*.86);}
+  html:not(.read) .u2l09-dense .quote.sm{font-size:calc(var(--fs-body)*.76); line-height:1.4;}
+  html:not(.read) .u2l09-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u2l09-dense .src{padding:10px 16px;}
+  html:not(.read) .u2l09-dense .src .prov{margin-top:.4em;}
+  html:not(.read) .u2l09-dense .note{padding:.45em .85em;}
+  html:not(.read) .u2l09-dense .note .body, html:not(.read) .u2l09-dense .card .body,
+  html:not(.read) .u2l09-dense .qprompt{font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+  html:not(.read) .u2l09-dense .card{padding:10px 16px;}
+  html:not(.read) .u2l09-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l09-dense .tbl.compact td{padding:.28em .55em;}
+  html:not(.read) .u2l09-dense .tbl th{padding:.36em .6em;}
+  html:not(.read) .u2l09-dense .figure img{max-height:30vh;}
+  html:not(.read) .u2l09-dense .mq{font-size:calc(var(--fs-body)*.78); line-height:1.35;}
+  html:not(.read) .u2l09-dense .tf li, html:not(.read) .u2l09-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l09-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u2l09-dense .prac{gap:6px;}
+  html:not(.read) .u2l09-dense .opts li{padding:.4em .8em; font-size:calc(var(--fs-body)*.86);}
+  html:not(.read) .u2l09-dense .cornell .cq, html:not(.read) .u2l09-dense .cornell .nts{font-size:calc(var(--fs-body)*.76); padding:.35em .8em;}
+  html:not(.read) .u2l09-dense .u2l09-part img{height:21vh;}
+  html:not(.read) .u2l09-dense .u2l09-part figcaption{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u2l09-dense .u2l09-pair .figure img{height:36vh; max-height:none;}
+  html:not(.read) .u2l09-dense .u2l09-pair.wide .figure img{height:30vh;}
+  html:not(.read) .u2l09-dense .u2l09-facts{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l09-dense .u2l09-motif img{height:27vh;}
+  html:not(.read) .u2l09-dense .u2l09-motif figcaption{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u2l09-dense .u2l09-dsf .quote.sm{font-size:calc(var(--fs-body)*.7); line-height:1.36;}
+  html:not(.read) .u2l09-dense .u2l09-card img{height:16vh;}
+  html:not(.read) .u2l09-dense .u2l09-card figcaption{font-size:calc(var(--fs-body)*.62);}
+  html:not(.read) .u2l09-dense .u2l09-check li{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l09-dense .u2l09-ba{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l09-dense .u2l09-steps{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u2l09-dense .u2l09-sent{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u2l09-dense .u2l09-figsvg svg{max-height:calc(100vh - 230px);}
+  html:not(.read) .u2l09-dense .u2l09-mapcol .u2l09-figsvg svg{max-height:42vh;}
+  html:not(.read) .u2l09-credpage h2{font-size:calc(var(--fs-h2)*.72);}
+  html:not(.read) .u2l09-credpage .card{padding:8px 14px;}
+  html:not(.read) .u2l09-credpage .small{font-size:calc(var(--fs-chrome)*.8); line-height:1.3; margin:.15em 0;}
+  html:not(.read) .u2l09-credpage .card .k{margin-bottom:.25em;}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 9" data-title="The design and ornamentation of the Achaemenid period" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.35fr .65fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 2 · Persepolis · Lesson 9</p>
+      <h1>The design and ornamentation of the Achaemenid period</h1>
+      <p class="lead">Whose ideas built Persepolis, and why did the king want them all in one place?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <figure class="figure tall contain"><img src="images/u2l09-gate-of-all-nations-column.jpg" alt="A column of the Gate of All Nations, Persepolis: a fluted shaft, carved floral and scroll (volute) sections, and the broken remains of its capital" loading="lazy"><figcaption>A column of the Gate of All Nations, Persepolis: a fluted shaft, carved floral and scroll (volute) sections, and the broken remains of its capital — <span class="cr">Photo: Bernard Gagnon · CC BY-SA 4.0</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 9" data-title="Review: Lessons 1–8" data-kind="intro practice">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <h2>Six questions from Lessons 1–8</h2>
+  <ol class="rq" data-answers>
+    <li>Name three kingdoms Cyrus II conquered, with a date for each.
+      <span class="sol reveal">Media (about 550 BCE), Lydia (about 546 BCE; the exact year is debated) and Babylon (539 BCE).</span></li>
+    <li>What does the winged figure on Gate R at Pasargadae combine?
+      <span class="sol reveal">Four wings like the winged figures of Assyrian palaces, an Elamite-style robe and an Egyptian-style crown: already under Cyrus, one carving mixed the traditions of different lands. Today asks how far Persepolis did the same.</span></li>
+    <li>Name two finds made at Persepolis in 1933 and what each is evidence for.
+      <span class="sol reveal">The gold and silver foundation tablets of the Apadana (DPh), found by Herzfeld’s architect Krefter: Darius’s own claim about the size of his kingdom. The Fortification Tablets, found in the fortification wall: records of rations for workers, officials and travellers in the region run from Persepolis (Lesson 11).</span></li>
+    <li>Name three zones of the terrace, with one building in each.
+      <span class="sol reveal">Ceremonial and audience (north): the Apadana · royal residences (south): the Tachara · storage and administration (south-east): the Treasury · defence: the walls and towers.</span></li>
+    <li>What do the Apadana stairway reliefs show, and what are they reliable evidence for?
+      <span class="sol reveal">Twenty-three delegations bringing gifts, led by Persian and Median ushers. Reliable for how the king wanted his empire to be seen; less reliable for a real ceremony on a particular day, and some delegations’ identities are debated.</span></li>
+    <li>What survives of glazed brick at Persepolis, and where are the best-preserved panels?
+      <span class="sol reveal">Only fragments: Muscarella lists “a frieze of cloisonné palmettes” and two bricks with circular bands. The best-preserved panels (archers, lions, griffins) come from Susa and are in the Louvre.</span></li>
+  </ol>
+  <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 9" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>Understand the main features of Achaemenid design and ornamentation</li>
+        <li>Analyse how and why the design combined traditions from across the empire</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>identify and describe four design features at Persepolis</li>
+        <li>trace at least three features to earlier or regional traditions</li>
+        <li>explain why the design combined many traditions, using DSf as evidence</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u2l09-syl"><b>Syllabus outcomes:</b> AH-11-01 explains continuity and change in the ancient world · AH-11-03 explains the role and significance of forces, features, events, individuals and groups in shaping the past · AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-03 identifies continuity and change in the ancient world · AH-LS-05 describes features of places or societies in the ancient world.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 9" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U2 L9 · The design and ornamentation of the Achaemenid period</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = Before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Explain where the Gate’s guardian bulls came from.</div><div class="nts">Assyrian lamassu → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: the features and where they came from · Darius’s Susa charter and the court style. Your short answer is prose, not notes.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 9" data-title="Feedback in action" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">Feedback in action · 6 minutes · press K for the timer · your Lesson 8 paragraph comes back</p>
+  <h2>Rewrite the move your feedback names</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="card quiet"><div class="k">Our class checklist · a strong OVPRL paragraph …</div>
+      <ol class="u2l09-check">
+        <li><span class="num">1</span><span><b>opens with a provenance phrase</b><span class="d">who made the source, when, where, and from what position</span></span></li>
+        <li><span class="num">2</span><span><b>uses precise evidence for its value</b><span class="d">a short quotation or detail from the source, tied to the inquiry question</span></span></li>
+        <li><span class="num">3</span><span><b>explains purpose and perspective</b><span class="d">with a relating verb: presents … as, portrays, reveals</span></span></li>
+        <li><span class="num">4</span><span><b>judges reliability for this question</b><span class="d">reliable for … but not for … because …, with modality and a precise evaluative verb</span></span></li>
+        <li><span class="num">5</span><span><b>names a limitation and ends decisively</b><span class="d">links ideas with nominalisation; the last sentence answers the question, with no roadmap or summary</span></span></li>
+      </ol></div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="u2l09-steps">
+          <li>Read your strength and your next step.</li>
+          <li>Find the sentence your next step points to and underline it.</li>
+          <li>Rewrite it underneath, using that point on the checklist.</li>
+          <li>Check: is it a real change in thinking or language, not just a neater copy?</li>
+        </ol></div>
+      <div class="note reveal" data-code="evidence" data-veil="Rewrite yours first — then show two examples"><div class="k">Two before-and-after examples · written for this lesson · the Throne Hall relief</div>
+        <div class="u2l09-ba"><span class="l">Point 4</span><span>&nbsp;</span>
+          <span class="l">Before</span><span class="nq">The relief is reliable because it was carved at the time.</span>
+          <span class="l after">After</span><span class="nq">The relief is reliable evidence of how the court wanted Persian kingship to be seen, as a king raised up by all his peoples, but it cannot show whether those peoples supported him willingly, because it was carved for the king’s own hall.</span></div>
+        <div class="u2l09-ba"><span class="l">Point 1</span><span>&nbsp;</span>
+          <span class="l">Before</span><span class="nq">This relief comes from Persepolis.</span>
+          <span class="l after">After</span><span class="nq">Carved on a doorway of the Hall of a Hundred Columns, the throne hall begun under Xerxes and finished under Artaxerxes I in the fifth century BCE, the relief shows the king enthroned above figures who represent his subject peoples.</span></div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 9" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for describing a court style</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Ideas</th><th>Meaning</th></tr>
+      <tr><td>Court style</td><td>The deliberate royal style of Achaemenid art, combining traditions from across the empire into a single look.</td></tr>
+      <tr><td>Lamassu</td><td>A guardian figure with a human head, a bull’s or lion’s body and wings — an Assyrian tradition, used at the Gate of All Nations.</td></tr>
+      <tr><td>Winged disc</td><td>A winged symbol carved above the king, often linked with the god Ahuramazda (its exact meaning is debated).</td></tr>
+      <tr><td>Ahuramazda</td><td>The great god of the Achaemenid kings, who claimed to rule by his favour.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Parts and patterns</th><th>Meaning</th></tr>
+      <tr><td>capital</td><td>The carved top of a column, on which the roof beams rest.</td></tr>
+      <tr><td>fluting</td><td>Shallow vertical grooves cut down the shaft of a column.</td></tr>
+      <tr><td>Egyptian-style cornice</td><td>A hollow, outward-curving band along the top of a doorway or window, in the Egyptian manner.</td></tr>
+      <tr><td>motif</td><td>An image or pattern used again and again, such as the lion attacking the bull.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The features" data-title="Columns and capitals" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">1 · The features · I do — think aloud · a column from the bottom up</p>
+  <h2>A column from the bottom up</h2>
+  <div class="u2l09-parts">
+    <figure class="u2l09-part reveal"><img src="images/u2l09-bell-shaped-column-base.jpg" alt="A round stone column base, wider at the bottom like a bell, carved with long hanging leaves" loading="lazy"><figcaption><b>Base</b><span>bell-shaped, carved with hanging leaves</span></figcaption></figure>
+    <figure class="u2l09-part reveal"><img class="u2l09-low" src="images/u2l09-gate-of-all-nations-column.jpg" alt="A tall stone column with vertical grooves, carved floral sections and scrolls near the top" loading="lazy"><figcaption><b>Shaft</b><span>fluted (grooved), with carved floral and scroll sections near the top</span></figcaption></figure>
+    <figure class="u2l09-part reveal"><img class="u2l09-top" src="images/u2l09-double-bull-capital.jpg" alt="A dark stone capital of two bulls kneeling back to back above carved scrolls" loading="lazy"><figcaption><b>Capital</b><span>two bulls back to back; the roof beams rested between them</span></figcaption></figure>
+    <figure class="u2l09-part reveal"><img src="images/u2l09-griffin-capital.jpg" alt="A stone capital of two creatures with birds’ heads and crests, back to back" loading="lazy"><figcaption><b>Other capitals</b><span>lions, human-headed bulls, and one griffin-like pair (‘homa birds’)</span></figcaption></figure>
+  </div>
+  <div class="split veil-parts" style="--cols:1fr 1.25fr" data-veil="Think first — then show the answer">
+    <p class="qprompt">Which parts are borrowed, and which are Persian?</p>
+    <div class="note vp reveal" data-code="analysis"><p class="body"><b>Borrowed:</b> the fluted shaft and its rounded mouldings, which Boucharlat calls “… the contribution of Ionia to the positive eclecticism of Achaemenian art …”. <b>Iranian:</b> columned halls (already at Median sites and at Cyrus’s Pasargadae), and capitals of animals, already used at Pasargadae. <b>New:</b> putting them together, at a huge scale: the Apadana’s columns were about 20–24 metres high.</p></div>
+  </div>
+  <p class="small credline">Images: A. Davey (CC BY 2.0) · Bernard Gagnon (CC BY-SA 4.0) · A. Davey (CC BY 2.0) · Carole Raddato (CC BY-SA 2.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The features" data-title="The Gate guardians" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">1 · The features · I do — think aloud · the guardians of the Gate of All Nations</p>
+  <h2>Borrowed from Assyria, then changed</h2>
+  <div class="split" style="--cols:1.25fr 1fr">
+    <div class="u2l09-pair">
+      <figure class="figure contain"><img src="images/u2l09-assyrian-lamassu-nimrud.jpg" alt="An Assyrian human-headed winged bull (lamassu) from Nimrud (ancient Kalhu), about 883–859 BCE (Metropolitan Museum of Art, New York)" loading="lazy"><figcaption>An Assyrian human-headed winged bull (lamassu) from Nimrud (ancient Kalhu), about 883–859 BCE (Metropolitan Museum of Art, New York) — <span class="cr">The Metropolitan Museum of Art, Open Access · CC0 1.0</span></figcaption></figure>
+      <figure class="figure contain"><img src="images/u2l05-gate-of-all-nations.jpg" alt="The Gate of All Nations: human-headed winged bulls (lamassu) guard its eastern doorway; beyond it stand columns of the Gate’s hall" loading="lazy"><figcaption>The Gate of All Nations: human-headed winged bulls (lamassu) guard its eastern doorway; beyond it stand columns of the Gate’s hall — <span class="cr">Photo: 4009dayton · CC BY-SA 4.0</span></figcaption></figure>
+    </div>
+    <div class="stack veil-parts" data-veil="Look first — then show the answer">
+      <div class="card quiet sm"><div class="k">Assyria · Nimrud</div><p class="body">Nimrud (ancient Kalhu), about 883–859 BCE: about 350 years before Persepolis was begun</p></div>
+      <div class="card quiet sm"><div class="k">Persepolis · the Gate of All Nations</div><p class="body">the eastern doorway of the Gate of All Nations, the entrance hall to the terrace (built under Xerxes)</p></div>
+      <p class="qprompt">Count the legs on the Assyrian bull. Shahbazi says the Persepolis bulls have four: what did the Persian sculptors keep, and what did they change?</p>
+      <div class="note vp reveal" data-code="analysis"><p class="body"><b>Kept:</b> human-headed winged bulls guarding a doorway, “well known from Assyrian art” (Shahbazi, Iranica). <b>Changed:</b> “… while the Assyrian prototypes had five legs, here the bulls are naturalistically four-legged …”. And they stand in a free-standing gatehouse that visitors passed through on their way into the terrace.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The features" data-title="Relief style" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">1 · The features · I do — compare two palace reliefs</p>
+  <h2>Calm processions, not battles</h2>
+  <div class="u2l09-pair wide">
+    <figure class="figure"><img src="images/u2l09-apadana-gift-bearers.jpg" alt="A stone relief of men in profile walking in a line, one leading a horse, the leader held by the hand by an attendant" loading="lazy"><figcaption><b>Persepolis</b> · gift-bearers on the Apadana’s east stairway</figcaption></figure>
+    <figure class="figure"><img src="images/u2l09-assyrian-siege-of-lachish.jpg" alt="A crowded stone relief of soldiers with shields and a wheeled siege machine attacking a city wall" loading="lazy"><figcaption><b>Assyria</b> · the attack on Lachish, from King Sennacherib’s palace at Nineveh</figcaption></figure>
+  </div>
+  <div class="cols c2">
+    <ul class="u2l09-facts reveal"><li>figures in profile, calm and evenly spaced</li><li>the same kinds of figure repeated, row after row</li><li>gifts, not captives; an usher leads each group by the hand</li></ul>
+    <ul class="u2l09-facts reveal"><li>a city under attack: soldiers, shields, a siege engine</li><li>crowded, full of movement</li><li>a real campaign: Lachish was captured in 701 BCE</li></ul>
+  </div>
+  <div class="split veil-parts" style="--cols:1fr 1.3fr" data-veil="Think first — then show the answer">
+    <p class="qprompt">What did Persepolis take from Assyrian palace reliefs, and what did it leave out?</p>
+    <div class="note vp reveal" data-code="analysis"><p class="body">Calmeyer (Iranica), on the Apadana stairways: “Only the topic of a foreign delegation bringing gifts to the king was adopted from the Assyrians.” The wars were left out: none of the surviving stone reliefs on the terrace shows a battle or a siege. Soldiers stand on guard, and the only fights are the royal hero against beasts and the lion attacking the bull.</p></div>
+  </div>
+  <p class="small credline">Images: Carole Raddato (CC BY-SA 2.0) · Osama Shukir Muhammed Amin (CC BY-SA 4.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The features" data-title="Motifs" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">1 · The features · I do — three motifs you will see everywhere</p>
+  <h2>The winged disc, the lion and the bull, rosettes and lotus flowers</h2>
+  <div class="u2l09-trio">
+    <figure class="u2l09-motif"><img src="images/u2l09-winged-figure-tripylon.jpg" alt="A carved figure of a man’s upper body inside a ring, with long outspread feathered wings" loading="lazy">
+      <figcaption><b>The winged disc</b><span>a figure in a winged ring, often above the king. Its meaning is debated: the god Ahuramazda, or the king’s divine glory? It has “a long pre-Achaemenid history in Mesopotamia and ultimately in Egypt” (Ehrenberg).</span></figcaption></figure>
+    <figure class="u2l09-motif"><img src="images/u2l09-lion-attacking-bull.jpg" alt="A stone relief of a lion leaping onto the back of a bull and biting it, with a band of round flowers above" loading="lazy">
+      <figcaption><b>The lion attacking the bull</b><span>on the stairways, beside the gift-bearers: “a very ancient Iranian motif” (Livius), older than the Medes and Persians, and also on Lydian coins (Shahbazi). What it meant is unknown: Livius suggests eternity, “in a way we do not really understand”.</span></figcaption></figure>
+    <figure class="u2l09-motif"><img src="images/u2l09-lotus-and-rosettes.jpg" alt="A carved band of round flowers with flower stems and buds below it" loading="lazy">
+      <figcaption><b>Rosettes and lotus flowers</b><span>bands of rosettes frame the reliefs; nobles and the king hold lotus flowers. The ISAC Museum calls rosette borders common features of Achaemenid imperial architecture.</span></figcaption></figure>
+  </div>
+  <div class="split veil-parts" style="--cols:1fr 1.3fr" data-veil="Think first — then show the answer">
+    <p class="qprompt">Why do we say the winged disc is ‘often linked with’ Ahuramazda?</p>
+    <div class="note vp reveal" data-code="analysis"><p class="body">Because no label says who or what it is. Scholars read it as the god Ahuramazda or as the king’s divine glory (khvarnah), and some think it is both, depending on whether a figure is shown in the disc. “Often linked with” keeps the doubt.</p></div>
+  </div>
+  <p class="small credline">Images: Carole Raddato (CC BY-SA 2.0) · Yong Woo Park (CC BY 4.0) · Davide Mauro (CC BY-SA 4.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The features" data-title="Borrowed or new?" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">1 · The features · I do — what is borrowed, what is new</p>
+  <h2>Borrowed parts, a new whole</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <figure class="figure contain"><img src="images/u2l05-tachara-palace-of-darius.jpg" alt="The Tachara, the palace of Darius I, just south of the Apadana: its stone doorways and window frames survive, but its wooden parts have vanished" loading="lazy"><figcaption>The Tachara, the palace of Darius I, just south of the Apadana: its stone doorways and window frames survive, but its wooden parts have vanished — <span class="cr">Photo: Bernard Gagnon · CC BY-SA 4.0</span></figcaption></figure>
+      <p class="small">Look at the tops of the stone doorways and windows: Livius says the lintels of Darius’s palace “… are made in an Egyptianizing style”.</p>
+    </div>
+    <div class="stack">
+      <div class="card quiet reveal"><div class="k">Borrowed</div>
+        <ul class="body"><li>Assyrian guardian bulls (the Gate)</li><li>Egyptian-style tops on doorways and windows (Darius’s palace)</li><li>Ionian-style fluting and stone-working (the columns)</li></ul></div>
+      <div class="card accent reveal"><div class="k">New at Persepolis</div>
+        <ul class="body"><li>the combination: many traditions on one terrace</li><li>the scale: halls of 72 or 100 columns</li><li>one calm, uniform style, kept with very little change by Darius’s successors</li></ul></div>
+      <div class="note reveal" data-code="judgement"><p class="body"><b>So:</b> almost every part has an older source, but no single tradition explains the whole. The combination is what makes it Persian.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The features" data-title="Notes 1 — The features and where they came from" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>The features and where they came from</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L9 · The design and ornamentation of the Achaemenid period</b></span><span>1 · The features</span></div>
+    <div class="row"><div class="cq">Describe a column at Persepolis.</div>
+      <div class="nts reveal">typical column: bell-shaped base <span class="sep">·</span> fluted shaft (Ionian contribution) <span class="sep">·</span> capital of two animals back to back: bulls, lions, human-headed bulls (one griffin-like pair) → roof beams rested between them <span class="sep">·</span> columned halls + animal capitals = Iranian (Median sites, Pasargadae)</div></div>
+    <div class="row"><div class="cq">Explain how the Gate’s guardians reworked an Assyrian tradition.</div>
+      <div class="nts reveal">human-headed winged bulls (lamassu) = Assyrian, to ward off evil <span class="sep">·</span> Persepolis: four legs, not five <span class="sep">·</span> in a free-standing gatehouse on the way into the terrace</div></div>
+    <div class="row"><div class="cq">Compare Persepolis reliefs with Assyrian palace reliefs.</div>
+      <div class="nts reveal">Persepolis: calm, repeated figures in profile, gifts, no battle scenes <span class="sep">·</span> Assyrian palaces: many war and siege scenes (Lachish, 701 BCE) <span class="sep">·</span> Apadana stairways: only the gift-bearing theme borrowed (Calmeyer)</div></div>
+    <div class="row"><div class="cq">Identify three motifs and what is debated about them.</div>
+      <div class="nts reveal">winged disc (Mesopotamian, first Egyptian): Ahuramazda or royal glory? <span class="sep">·</span> lion attacking bull: very old motif in Iran (older than the Medes and Persians), also on Lydian coins; meaning unknown <span class="sep">·</span> rosettes + lotus flowers</div></div>
+    <div class="row"><div class="cq">Outline what is borrowed and what is new.</div>
+      <div class="nts reveal">borrowed: Assyrian bulls, Egyptian-style doorway tops, Ionian fluting + stone-working <span class="sep">·</span> new: the combination, the scale, one calm style kept for generations</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Darius’s Susa charter" data-title="We do: read DSf" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">2 · Darius’s Susa charter · We do — supported reading · 4 minutes</p>
+  <h2>Who built the king’s palace, and with what?</h2>
+  <div class="split veil-parts" style="--cols:1.3fr 1fr" data-veil="Read and answer first — then show the answers">
+    <div class="src u2l09-dsf">
+      <div class="k">Source · Darius I, foundation charter from Susa (DSf)</div>
+      <p class="quote sm">This palace which I built at Susa, from afar its ornamentation was brought. … <span class="match" data-step="m3">And that the earth was dug downward, and that the rubble was packed down, and that the sun-dried brick was molded, the Babylonian people performed these tasks.</span> <span class="match" data-step="m1">The cedar timber, this was brought from a mountain named Lebanon.</span> The Assyrian people brought it to Babylon; from Babylon the Carians and the Yaunâ <span class="ed">[=Greeks]</span> brought it to Susa. … <span class="match" data-step="m1">The gold was brought from Lydia and from Bactria, which here was wrought.</span> … <span class="match" data-step="m1">The silver and the ebony were brought from Egypt.</span> The ornamentation with which the wall was adorned, that from Yaunâ was brought. <span class="match" data-step="m1">The ivory which was wrought here, was brought from Kush and from India and from Arachosia.</span> <span class="match" data-step="m2">The stone columns which were here wrought, a village named Abirâdu, in Elam - from there were brought. The stone-cutters who wrought the stone, those were Yaunâ and Lydians.</span> <span class="match" data-step="m4">The goldsmiths who wrought the gold, those were Medes and Egyptians. The men who wrought the wood, those were Lydians and Egyptians.</span> <span class="match" data-step="m3">The men who wrought the baked brick, those were Babylonians.</span> <span class="match" data-step="m4">The men who adorned the wall, those were Medes and Egyptians.</span></p>
+      <p class="prov">Darius I (king 522–486 BCE) · foundation charter of his palace at Susa, in Old Persian, Elamite and Babylonian, known from many fragments · translation as published by Livius.org · from Susa, not Persepolis: it describes the same royal way of building · <i>wrought</i> = worked, made</p>
+    </div>
+    <div class="stack">
+      <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Name four materials and the lands they came from.</b> <span class="vp">Cedar from Lebanon · gold from Lydia and Bactria · silver and ebony from Egypt · ivory from Kush, India and Arachosia.</span></span></p>
+      <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Who cut the stone, and where did the columns come from?</b> <span class="vp">Yaunâ (Ionian Greeks) and Lydians cut it; the stone columns came from Abirâdu in Elam.</span></span></p>
+      <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>What did the Babylonians do?</b> <span class="vp">Dug the foundations, packed the rubble, moulded the sun-dried brick, and worked the baked brick.</span></span></p>
+      <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>Who worked the gold, the wood and the walls?</b> <span class="vp">Gold: Medes and Egyptians · wood: Lydians and Egyptians · walls: Medes and Egyptians.</span></span></p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Darius’s Susa charter" data-title="We do: from the list to the pictures" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">2 · Darius’s Susa charter · We do — link your list to the pictures · cold call</p>
+  <h2>From Darius’s list to the stones of Persepolis</h2>
+  <div class="split" style="--cols:1.45fr .8fr">
+    <div class="tbl-scroll" data-veil="Link yours first — then show the answers"><table class="tbl compact u2l09-key">
+      <tr><th>Who (DSf)</th><th>What they did</th><th>Where we see that craft at Persepolis</th></tr>
+      <tr class="reveal"><td>Yaunâ (Ionian Greeks) and Lydians</td><td>cut the stone</td><td>probably the fluted shafts and fine stone-working; masons’ marks like letters of the Lydian alphabet on blocks at Persepolis and Susa</td></tr>
+      <tr class="reveal"><td>Babylonians</td><td>dug the foundations; worked the brick</td><td>brick walls (now mostly gone); glazed brick, a craft of Assyria and Babylon, survives at Persepolis only in fragments: the best panels are from Susa (pictured)</td></tr>
+      <tr class="reveal"><td>Medes and Egyptians</td><td>adorned the walls; worked the gold</td><td>wall decoration, mostly lost (Lesson 7). The Egyptian-style doorway tops show Egyptian taste, but DSf names Yaunâ and Lydians as the stone-cutters</td></tr>
+      <tr class="reveal"><td>Lydians and Egyptians</td><td>worked the wood</td><td>cedar roof beams resting on the animal capitals (the Apadana’s roof, probably of cedar, burned in 330 BCE)</td></tr>
+    </table></div>
+    <figure class="figure contain"><img src="images/u2l09-glazed-brick-archers-susa.jpg" alt="Archers in glazed brick from the palace of Darius I at Susa (Louvre, Paris)" loading="lazy"><figcaption>Archers in glazed brick from the palace of Darius I at Susa (Louvre, Paris) — <span class="cr">Photo: Jebulon · Public domain</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Darius’s Susa charter" data-title="Why combine?" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">2 · Darius’s Susa charter · We do — why combine so many traditions?</p>
+  <h2>Why would a king build in everyone’s style?</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack u2l09-mapcol">
+      <figure class="u2l09-figsvg"><svg class="u2l09-svg u2l09-influence" viewBox="0 0 760 500" role="img" aria-label="Influence map, a schematic not to scale: arrows run to Persepolis in Fars from Ionia and Lydia (fluted shafts, stone-cutting), Assyria (guardian bulls, gift-bearers, the winged figure), Media and Pasargadae (columned halls, animal capitals), Babylon (glazed brick, brick-making) and Egypt (doorway tops, the winged disc).">
+<defs><marker id="u2l09-ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="u2l09-ahp" d="M0,0 L12,6 L0,12 z"/></marker></defs>
+<path class="u2l09-arrow" d="M236,96 Q353,218 470,368" marker-end="url(#u2l09-ah)"/>
+<path class="u2l09-arrow" d="M420,128 Q468,219 516,338" marker-end="url(#u2l09-ah)"/>
+<path class="u2l09-arrow" d="M640,128 Q643,219 646,338" marker-end="url(#u2l09-ah)"/>
+<path class="u2l09-arrow" d="M310,290 Q390,332 470,402" marker-end="url(#u2l09-ah)"/>
+<path class="u2l09-arrow" d="M236,412 Q353,409 470,434" marker-end="url(#u2l09-ah)"/>
+<rect class="u2l09-node" x="8" y="14" width="228" height="102" rx="12"/>
+<text class="u2l09-t u2l09-tb" x="22" y="46">Ionia and Lydia</text>
+<text class="u2l09-t" x="22" y="76">fluted shafts</text>
+<text class="u2l09-t" x="22" y="104">stone-cutting</text>
+<rect class="u2l09-node" x="262" y="8" width="236" height="130" rx="12"/>
+<text class="u2l09-t u2l09-tb" x="276" y="40">Assyria</text>
+<text class="u2l09-t" x="276" y="70">guardian bulls</text>
+<text class="u2l09-t" x="276" y="98">gift-bearers</text>
+<text class="u2l09-t" x="276" y="126">winged figure</text>
+<rect class="u2l09-node" x="522" y="14" width="230" height="102" rx="12"/>
+<text class="u2l09-t u2l09-tb" x="536" y="46">Media, Pasargadae</text>
+<text class="u2l09-t" x="536" y="76">columned halls</text>
+<text class="u2l09-t" x="536" y="104">animal capitals</text>
+<rect class="u2l09-node" x="96" y="226" width="214" height="102" rx="12"/>
+<text class="u2l09-t u2l09-tb" x="110" y="258">Babylon</text>
+<text class="u2l09-t" x="110" y="288">glazed brick</text>
+<text class="u2l09-t" x="110" y="316">brick-making</text>
+<rect class="u2l09-node" x="8" y="356" width="228" height="102" rx="12"/>
+<text class="u2l09-t u2l09-tb" x="22" y="388">Egypt</text>
+<text class="u2l09-t" x="22" y="418">doorway tops</text>
+<text class="u2l09-t" x="22" y="446">the winged disc</text>
+<rect class="u2l09-node u2l09-home" x="476" y="346" width="276" height="118" rx="14"/>
+<text class="u2l09-t u2l09-tbig" x="614" y="386" text-anchor="middle">Persepolis (Fars)</text>
+<text class="u2l09-t" x="614" y="418" text-anchor="middle">one court style</text>
+<text class="u2l09-t" x="614" y="446" text-anchor="middle">at a new scale</text>
+<text class="u2l09-t u2l09-tmute" x="752" y="492" text-anchor="end">schematic: west left, north up</text>
+</svg><figcaption>Influence map drawn for this lesson: a schematic, not to scale. Not shown: the lion and bull, a very old motif whose origin is unclear</figcaption></figure>
+      <div class="card quiet sm"><div class="k">Reliable for what?</div><p class="body">DSf is Darius’s own claim, about Susa. Boucharlat (Iranica), following Nylander, says it ‘has more of a propaganda character than any documentary value’. Yet the Persepolis tablets do name Ionian workers.</p></div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Why would Darius record which peoples did the work?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">To present the palace as the work of the whole empire: many lands sent materials and many peoples did the work, for one king who built ‘by the grace of Ahuramazda’. The mixed style says the same thing in stone: one empire, built by and ruling over many peoples.</p></div>
+      <div class="card quiet sm reveal"><div class="k">A historian’s view · Margaret Cool Root (1979)</div><p class="body">The court chose images from many older traditions and repeated them on purpose, as an official program: the themes came from the centre, not from each craftsman. The ISAC Museum makes a similar point: the style was “… a visual expression of the Achaemenid imperial ideology of diversity and order.” Against this, Michael Roaf notes that “the motifs borrowed are hardly modified from their original forms”.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Darius’s Susa charter" data-title="Notes 2 — Darius’s Susa charter and the court style" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>Darius’s Susa charter and the court style</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L9 · The design and ornamentation of the Achaemenid period</b></span><span>2 · DSf and the court style</span></div>
+    <div class="row"><div class="cq">Outline what DSf records.</div>
+      <div class="nts reveal">Darius’s charter for his palace at Susa <span class="sep">·</span> materials from across the empire: cedar (Lebanon), gold (Lydia, Bactria), silver + ebony (Egypt), ivory (Kush, India, Arachosia) <span class="sep">·</span> stone: Yaunâ + Lydians <span class="sep">·</span> baked brick: Babylonians <span class="sep">·</span> walls: Medes + Egyptians</div></div>
+    <div class="row"><div class="cq">Explain how DSf links to the design of Persepolis.</div>
+      <div class="nts reveal">Ionian + Lydian stone-working → fluted shafts, Lydian-style masons’ marks <span class="sep">·</span> Babylonian brick-making → glazed brick (best at Susa) <span class="sep">·</span> Egyptian-style doorway tops = an Egyptian style, not proof of Egyptian hands</div></div>
+    <div class="row"><div class="cq">Explain why the design combined many traditions.</div>
+      <div class="nts reveal">to present one empire, built by + ruling over many peoples <span class="sep">·</span> a deliberate court style (Root 1979: an official program from the centre) <span class="sep">·</span> repeated with very little change</div></div>
+    <div class="row"><div class="cq">Assess how far DSf can be trusted on this.</div>
+      <div class="nts reveal">Darius’s own claim, about Susa → shows how he wanted the work seen <span class="sep">·</span> “propaganda” (Boucharlat, after Nylander) <span class="sep">·</span> but the tablets (Ionian workers) + Lydian-style masons’ marks agree: foreign craftsmen worked here</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: spot the influence">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">3 · You do · ‘Spot the influence’ card sort in pairs · 5 minutes · press K for the timer</p>
+  <h2>Where did each idea come from?</h2>
+  <div class="u2l09-cards">
+    <figure class="u2l09-card"><span class="l">A</span><img class="u2l09-top" src="images/u2l09-double-bull-capital.jpg" alt="A capital of two bulls back to back" loading="lazy"><figcaption><b>A capital of two bulls</b>on columns of the great halls</figcaption></figure>
+    <figure class="u2l09-card"><span class="l">B</span><img class="u2l09-top" src="images/u2l05-gate-of-all-nations.jpg" alt="Two huge human-headed winged bulls at a stone gateway" loading="lazy"><figcaption><b>Human-headed winged bulls</b>at the Gate of All Nations</figcaption></figure>
+    <figure class="u2l09-card"><span class="l">C</span><img src="images/u2l09-gate-of-all-nations-column.jpg" alt="A tall column with vertical grooves" loading="lazy"><figcaption><b>A fluted column shaft</b>and fine stone-working</figcaption></figure>
+    <figure class="u2l09-card"><span class="l">D</span><img src="images/u2l05-tachara-palace-of-darius.jpg" alt="Stone doorways and window frames of a palace" loading="lazy"><figcaption><b>Doorway and window tops</b>in Darius’s palace (the Tachara)</figcaption></figure>
+    <figure class="u2l09-card"><span class="l">E</span><img src="images/u2l09-winged-figure-tripylon.jpg" alt="A figure in a ring with outspread wings" loading="lazy"><figcaption><b>The winged disc</b>above the king</figcaption></figure>
+    <figure class="u2l09-card"><span class="l">F</span><img src="images/u2l09-lion-attacking-bull.jpg" alt="A lion attacking a bull" loading="lazy"><figcaption><b>The lion attacking the bull</b>on the stairways</figcaption></figure>
+    <figure class="u2l09-card"><span class="l">G</span><img src="images/u2l09-apadana-gift-bearers.jpg" alt="Men in a calm procession bringing gifts" loading="lazy"><figcaption><b>Gift-bearers in procession</b>on the Apadana’s stairways</figcaption></figure>
+    <figure class="u2l09-card"><span class="l">H</span><img class="u2l09-top" src="images/u2l09-glazed-brick-archers-susa.jpg" alt="Archers made of coloured glazed bricks" loading="lazy"><figcaption><b>Glazed-brick archers</b>from Darius’s palace at Susa</figcaption></figure>
+  </div>
+  <p class="u2l09-howto"><span><b>1</b>Sort by the tradition each idea came from</span><span><b>2</b>Two traditions? Put it in a ‘tricky’ pile, with your reason</span><span><b>3</b>For each card: what changed at Persepolis?</span></p>
+  <div class="bank" aria-label="Word bank"><span>Assyrian</span><span>Babylonian</span><span>Egyptian</span><span>Ionian and Lydian</span><span>Iranian (Median and Persian)</span></div>
+  <p class="small credline">Images: A. Davey (CC BY 2.0) · 4009dayton (CC BY-SA 4.0) · Bernard Gagnon (CC BY-SA 4.0) · Bernard Gagnon (CC BY-SA 4.0) · Carole Raddato (CC BY-SA 2.0) · Yong Woo Park (CC BY 4.0) · Carole Raddato (CC BY-SA 2.0) · Jebulon (Public domain). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Check the sort" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">3 · You do · check your sort · cold call a pair before each row</p>
+  <h2>Check your sort: the clearer cards, then the tricky ones</h2>
+  <div class="stack" data-veil="Sort first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u2l09-key">
+    <tr><th>Card</th><th>Tradition</th><th>What changed at Persepolis</th></tr>
+    <tr class="reveal"><td>A · bull capital</td><td>Iranian (Persian): animal capitals, including bulls, were already being tried out in Cyrus’s palace at Pasargadae</td><td>made far bigger: the Apadana’s columns were about 20–24 metres high</td></tr>
+    <tr class="reveal"><td>B · winged bulls</td><td>Assyrian</td><td>four legs, not five; set in a free-standing gatehouse on the way into the terrace</td></tr>
+    <tr class="reveal"><td>C · fluted shaft</td><td>Ionian and Lydian</td><td>set beneath Persian animal capitals</td></tr>
+    <tr class="reveal"><td>D · doorway tops</td><td>Egyptian</td><td>carved in stone for a Persian king’s palace</td></tr>
+    <tr class="reveal u2l09-tricky"><td>E · winged disc <i>tricky</i></td><td>Assyrian (Mesopotamian), and first Egyptian</td><td>above a Persian king, probably for Ahuramazda or royal glory (debated)</td></tr>
+    <tr class="reveal u2l09-tricky"><td>F · lion and bull <i>tricky</i></td><td>very ancient in Iran (Livius: from the fourth millennium BCE, older than the Medes and Persians); a similar image was on Lydian coins (Shahbazi)</td><td>placed beside the gift-bearers, framed with rosettes; what it meant is unknown</td></tr>
+    <tr class="reveal u2l09-tricky"><td>G · gift-bearers <i>tricky</i></td><td>Assyrian theme; perhaps carved with Ionian help, or in a Babylonian manner (Ehrenberg)</td><td>calm, no battle scenes: 23 peoples in orderly rows</td></tr>
+    <tr class="reveal u2l09-tricky"><td>H · glazed brick <i>tricky</i></td><td>Assyrian, then Babylonian craft (glazed figures); Susa also had older Elamite moulded brick. DSf: Babylonians worked the baked brick at Susa</td><td>Persian guards in the new style; the best survive at Susa, only fragments at Persepolis</td></tr>
+  </table></div>
+  <div class="note reveal" data-code="judgement"><p class="body"><b>So:</b> each card has an older source, but no one tradition explains the whole. Persepolis is continuity in its parts and change in its combination.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: check first" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">3 · You do · check first · gesture vote: one finger = A · two fingers = B</p>
+  <h2>Which sentence explains <i>why</i>, not just <i>what</i>?</h2>
+  <div class="stack veil-parts" data-veil="Vote first — then show the answer">
+    <div class="u2l09-sent"><span class="l">A</span><span class="nq">The Gate of All Nations had human-headed winged bulls like those of Assyrian palaces, Darius’s palace had Egyptian-style doorways, and the great halls had Ionian-style fluted columns.</span></div>
+    <div class="u2l09-sent"><span class="l">B</span><span class="nq">By combining Assyrian guardian bulls, Egyptian-style doorways and Ionian-style columns in one style, the Persian kings’ builders made the buildings themselves suggest an empire built by, and ruling over, many peoples.</span></div>
+    <div class="note vp reveal" data-code="evidence"><div class="k">B: it explains</div><p class="body">B links the features to a reason (<i>by combining … made the buildings suggest …</i>) and keeps a hedge (<i>suggest</i>). A only lists what was borrowed: it is a good start, but it never says why.</p></div>
+  </div>
+  <div class="bank u2l09-bank" aria-label="Causal and comparative language"><span>because</span><span>so that</span><span>in order to</span><span>which suggests that</span><span>like</span><span>unlike</span><span>whereas</span><span>while</span><span>rather than</span></div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: your short answer">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">3 · You do · 8 minutes · press K for the timer</p>
+  <h2>Explain how the design and ornamentation of Persepolis combined traditions from across the empire, and why.</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body">
+          <li>Name three features and trace each to a tradition (and say what changed).</li>
+          <li>Use DSf as evidence: <span class="nq">“As Darius’s Susa charter records, …”</span></li>
+          <li>Explain why, with causal and comparative language; end with one limit of DSf.</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Success check</div><p class="body">three named features · three traditions · one short DSf quotation · <i>because</i> or <i>which suggests that</i> · <i>unlike</i> or <i>whereas</i> · a hedge (probably, suggests) · one limit of the evidence</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet sm"><div class="k">Support · frame</div><p class="body nq">The design of Persepolis combined … · For example, the … at the … came from …, but … · As Darius’s Susa charter records, “…” · This mixture was probably deliberate, because … · However, DSf …</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Assess Margaret Cool Root’s argument that Achaemenid art was a deliberate new creation rather than a borrowing: what evidence supports it, and what challenges it?</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Compare: a model answer" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">3 · You do · compare with a model · two students read theirs first</p>
+  <h2>A model short answer</h2>
+  <div class="split" style="--cols:1.5fr 1fr">
+    <div class="src reveal" data-veil="Write yours first — then show the model">
+      <div class="k">A model · written for this lesson</div>
+      <p class="quote sm model">The design and ornamentation of Persepolis combined traditions from across the empire into one court style. At the Gate of All Nations, human-headed winged bulls guarded the doorway, a tradition borrowed from Assyrian palaces, although, unlike the five-legged Assyrian bulls, they were given four legs. The columns rose on fluted shafts, an Ionian contribution, to capitals of two animals set back to back, a form already used at Cyrus’s Pasargadae, while the doorways of Darius’s palace were topped in an Egyptian style. The empire’s peoples also supplied the skill: as Darius’s Susa charter records, “The stone-cutters who wrought the stone, those were Yaunâ and Lydians,” and “The men who wrought the baked brick, those were Babylonians.” The mixture was probably deliberate, because the same style was repeated across the terrace with very little change, which suggests that the king wanted his buildings to present one empire, built by and ruling over many peoples. However, the charter describes Susa rather than Persepolis and is Darius’s own claim, so it shows how he wanted the work to be seen more than exactly who did it.</p>
+    </div>
+    <div class="card quiet"><div class="k">Check yours</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> An answer to the question in the first sentence</label></li>
+        <li><label><input type="checkbox"> Three features, each traced to a tradition</label></li>
+        <li><label><input type="checkbox"> What changed at Persepolis</label></li>
+        <li><label><input type="checkbox"> A short DSf quotation, introduced</label></li>
+        <li><label><input type="checkbox"> Why: causal language, with a hedge</label></li>
+        <li><label><input type="checkbox"> One limit of the evidence</label></li>
+      </ul></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Summary" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What were the main features of Achaemenid design at Persepolis?</li>
+          <li>Where did its ideas and its craftsmen come from?</li>
+          <li>Why were so many traditions combined?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">The buildings of Persepolis combined columned halls and animal capitals from the Iranian tradition with Assyrian guardian bulls, Ionian fluted column shafts, Egyptian-style doorway tops and motifs such as the winged disc, the lion attacking the bull and bands of rosettes. Darius’s Susa charter (DSf) records that, for his palace at Susa, peoples from across the empire supplied the materials and did the work, for example Ionians and Lydians as stone-cutters and Babylonians as brick-makers. The combination, the vast scale and the calm, repeated style were new, which suggests a deliberate court style designed to present one empire built by, and ruling over, many peoples.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> A column, base to capital</label></li>
+        <li><label><input type="checkbox"> The Gate’s guardian bulls</label></li>
+        <li><label><input type="checkbox"> Calm reliefs, not battles</label></li>
+        <li><label><input type="checkbox"> Three motifs and their debates</label></li>
+        <li><label><input type="checkbox"> Borrowed parts, a new whole</label></li>
+        <li><label><input type="checkbox"> DSf: who worked what</label></li>
+        <li><label><input type="checkbox"> Why combine? and how far to trust DSf</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: hinge question" data-kind="intro">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">Check for understanding · hinge question · hold up your A, B, C or D card on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2>Why did Achaemenid design combine styles from many peoples?</h2>
+  <div class="stack veil-parts" data-veil="Vote first — then show the answer">
+  <ol class="opts">
+    <li><span class="n">A</span><span>because Persian craftsmen had no artistic style of their own</span></li>
+    <li id="u2l09-hqB"><span class="n">B</span><span>because the king wished to present one empire of many peoples</span></li>
+    <li><span class="n">C</span><span>because stone and timber were cheaper in the conquered lands</span></li>
+    <li><span class="n">D</span><span>because Greek craftsmen planned and designed the whole site</span></li>
+  </ol>
+  <i class="reveal" data-mark="#u2l09-hqB" hidden></i>
+  <div class="note vp reveal" data-code="evidence"><div class="k">B: to present one empire, built by and ruling over many peoples</div><p class="body"><b>A</b> ignores the Iranian parts (columned halls, animal capitals) and the fact that the combination itself was Persian. <b>C</b> does not fit DSf: cedar was carried from Lebanon, through Babylon, to Susa, so cost was probably not the reason; at Persepolis much of the stone was quarried close by, in the mountain behind the terrace (Boucharlat names a quarry on Kuh-e Rahmat). <b>D</b> takes one group for the whole: DSf names Ionians and Lydians as stone-cutters, but also Babylonians, Medes and Egyptians, and the court set the style.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 5 minutes · before you leave</p>
+  <h2>Two sentences</h2>
+  <div class="cols c2">
+    <div class="card accent"><div class="k">1</div><p class="lead">One feature of Persepolis, the tradition it came from, and one thing that changed.</p></div>
+    <div class="card accent"><div class="k">2</div><p class="lead"><span class="nq">“The Persian kings’ builders combined many traditions because …”</span></p></div>
+  </div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">1 · a named feature (the Gate’s bulls, a fluted shaft, an Egyptian-style doorway top …), its tradition, and a change (four legs, a new scale, a Persian capital above it). &nbsp;2 · a reason tied to the empire (one empire, built by and ruling over many peoples), ideally with DSf as evidence, and a hedge (probably, suggests).</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> Persepolis as a centre of Persian power: what the inscriptions and reliefs claim.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u2l09-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>The human-headed winged bulls at the Gate of All Nations were a Persian invention.</span>
+      <span class="sol no reveal">False <span class="why">— they follow an Assyrian tradition, reworked: four legs instead of five.</span></span></li>
+    <li><span class="n">2</span><span>Darius’s charter DSf was found at Persepolis.</span>
+      <span class="sol no reveal">False <span class="why">— it is from his palace at Susa; it describes the same royal way of building.</span></span></li>
+    <li><span class="n">3</span><span>According to DSf, the stone-cutters were Yaunâ (Ionians) and Lydians.</span>
+      <span class="sol reveal">True <span class="why">— and Lydian-style masons’ marks on blocks at Persepolis point the same way.</span></span></li>
+    <li><span class="n">4</span><span>Like Assyrian palace reliefs, the Persepolis reliefs show the king’s battles.</span>
+      <span class="sol no reveal">False <span class="why">— they show calm processions; for the Apadana stairways, only the theme of foreigners bringing gifts was taken from Assyrian reliefs (Calmeyer).</span></span></li>
+    <li><span class="n">5</span><span>Historians agree that the winged disc shows the god Ahuramazda.</span>
+      <span class="sol no reveal">False <span class="why">— it is often linked with him, but some read it as the king’s divine glory (khvarnah).</span></span></li>
+    <li><span class="n">6</span><span>The court style set under Darius changed very little under later kings.</span>
+      <span class="sol reveal">True <span class="why">— his successors kept it with very little alteration (ISAC Museum).</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — writing" data-kind="practice">
+<div class="wrap prac u2l09-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Write it as a historian</h2>
+  <div class="split" style="--cols:1fr 1.25fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · Compare and explain</div><p class="body">One sentence on one feature, using <i>unlike</i> or <i>whereas</i>, and <span class="nq">“which suggests that …”</span>.</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Unlike the five-legged guardian bulls of Assyrian palaces, the human-headed bulls at the Gate of All Nations were given four legs, which suggests that the Persian sculptors reworked an Assyrian tradition rather than simply copying it.</p></div>
+      <div class="card accent"><div class="k">2 · Reliable for what?</div><p class="body nq">Finish: “DSf is reliable for … but not for … because …”</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">DSf is reliable for how Darius wanted his building work to be seen, as the work of his whole empire, but not as an exact record of who built Persepolis, because it is his own claim and it describes his palace at Susa.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Assess Margaret Cool Root’s argument that Achaemenid art was a deliberate new creation rather than a borrowing: what evidence supports it, and what challenges it?</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">Margaret Cool Root argues that Achaemenid art was a deliberate creation: the court chose images from many older traditions and repeated them as an official program, so the themes came from the centre rather than from individual craftsmen. She does not deny the borrowing: her point is that the borrowed images were chosen and combined on purpose. Much of the evidence supports her. The style was set under Darius and kept with very little change by his successors; borrowed parts were reworked, as the Gate’s four-legged guardian bulls show; and the Apadana stairways took only the Assyrian theme of foreign peoples bringing gifts, without the battles. Darius’s Susa charter also presents the mixture as planned, listing the peoples who worked each material. However, Michael Roaf points out that the borrowed motifs are “hardly modified from their original forms”, and the charter is Darius’s own claim about Susa, which Rémy Boucharlat, following Carl Nylander, calls more propaganda than record. On balance, Root is convincing about the combination and its message, which were new, even though many single parts were borrowed almost unchanged.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u2l09-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Describe the parts of a column at Persepolis.
+      <span class="sol reveal">Many had a bell-shaped base, a fluted stone shaft and a capital of two animals back to back (bulls, lions or human-headed bulls), with the roof beams resting between them; some halls had square bases and plastered wooden shafts.</span></li>
+    <li>Where did the Gate’s guardian bulls come from, and what changed?
+      <span class="sol reveal">From Assyrian palace and city gateways; at Persepolis they have four legs, not five, and stand in a free-standing gatehouse on the way into the terrace.</span></li>
+    <li>How do the Persepolis reliefs differ from Assyrian palace reliefs?
+      <span class="sol reveal">They show calm, repeated processions of gift-bearers in profile, and no battle scenes; on the Apadana stairways, only the gift-bearing theme came from Assyria (Calmeyer).</span></li>
+    <li>What does DSf say about who worked the stone and the baked brick?
+      <span class="sol reveal">The stone-cutters were Yaunâ (Ionian Greeks) and Lydians; the baked brick was worked by Babylonians.</span></li>
+    <li>Why is the meaning of the winged disc debated?
+      <span class="sol reveal">No text labels it: it may stand for the god Ahuramazda or for the king’s divine glory (khvarnah), or both.</span></li>
+    <li>Why did Achaemenid design combine so many traditions?
+      <span class="sol reveal">Probably to present one empire, built by and ruling over many peoples: a deliberate court style, in Root’s view an official program set by the court.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u2l09-dense u2l09-credpage">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u2l09-cite"><div class="k">Written sources</div>
+      <p class="small">Darius I, Susa foundation charter <a href="https://www.livius.org/sources/content/achaemenid-royal-inscriptions/dsf/">DSf</a>, translation as published by Livius.org (after P. Lecoq, 1997); Livius.org pages on <a href="https://www.livius.org/articles/place/persepolis/">Persepolis</a> (Apadana, east stairs, Gate of All Nations, Palace of Darius) and <a href="https://www.livius.org/articles/religion/ahuramazda/">Ahuramazda</a>. © Livius.org, quoted briefly.</p>
+      <p class="small"><i>Encyclopaedia Iranica</i> online: A. S. Shahbazi, <a href="https://www.iranicaonline.org/articles/persepolis/">“Persepolis”</a> (2009); P. Calmeyer, <a href="https://www.iranicaonline.org/articles/art-in-iran-iii-achemenian/">“Art in Iran iii. Achaemenid art and architecture”</a> (1986); R. Boucharlat, <a href="https://www.iranicaonline.org/articles/greece-vii/">“Greece vii. Greek art and architecture in Iran”</a> (2002); E. Ehrenberg, <a href="https://www.iranicaonline.org/articles/achaemenid-visual-reps/">“Achaemenid visual representations of royal figures”</a> (2017); O. W. Muscarella, <a href="https://www.iranicaonline.org/articles/achaemenid-glazed-brick-decoration/">“Achaemenid glazed brick decoration”</a> (2017); D. Stronach and H. Gopnik, <a href="https://www.iranicaonline.org/articles/pasargadae/">“Pasargadae”</a> (2009); W. Kleiss, <a href="https://web.archive.org/web/20180927021123/http://www.iranicaonline.org/articles/columns-architectural">“Columns (architectural)”</a> (archived copy). Quoted briefly.</p>
+      <p class="small">ISAC Museum (University of Chicago), <a href="https://artsandculture.google.com/story/persepolis-isac-museum/KwVRKSxv_NfpLQ"><i>Persepolis: Images of an Empire</i></a> (curator Kiersten Neumann), quoting Margaret Cool Root. M. C. Root, <i>The King and Kingship in Achaemenid Art</i> (Leiden, 1979), as summarised by A. Wright, <a href="https://sites.exeter.ac.uk/exhistoria/wp-content/uploads/sites/123/2025/02/Wright-Achaemenid_Provincial_Palaces.pdf"><i>Ex Historia</i></a>. M. Roaf, <a href="https://materialentanglements.eie.gr/?p=847">“Was Achaemenid Art an ‘International Style’?”</a> P. Hunt, <a href="https://archaeolog.stanford.edu/?p=225">“Achaemenid Persian Griffin Capital at Persepolis”</a> (Stanford Archaeolog). C. Chandler, <a href="https://scholar.colorado.edu/downloads/mp48sd20f"><i>The iconography of warfare</i></a> (honours thesis, University of Colorado Boulder, 2014). Sennacherib 15, <a href="https://oracc.museum.upenn.edu/rinap/rinap3/Q003489/html">RINAP 3</a> (ORACC). <i>Archaeology</i> (AIA), 26 October 2023, on the Dur-Sharrukin lamassu.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet"><div class="k">Teacher resources</div>
+        <p class="small">Teacher resources: <i>Architectural Marvels: The Terrace and Gateway</i>, <i>Palaces and Private Spheres</i>, <i>Imperial Narratives in Stone</i>, <i>The Treasury and the Hall of a Hundred Columns</i> (class notebook ‘Persepolis’), used as leads; every fact re-checked.</p></div>
+      <div class="card quiet"><div class="k">Diagram</div>
+        <p class="small">Influence map: drawn for this lesson, a schematic, not to scale.</p></div>
+    </div>
+  </div>
+  <div class="card quiet u2l09-cite"><div class="k">Images</div>
+    <ul class="small credits"><li><b>A column of the Gate of All Nations</b> · Photo: Bernard Gagnon · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis,_Iran_03.jpg">source</a></li><li><b>A bell-shaped column base, Persepolis</b> · Photo: A. Davey · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Column_Base,_Persepolis_(4679315156).jpg">source</a></li><li><b>A double-bull capital from Persepolis (National Museum of Iran)</b> · Photo: A. Davey · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Bull_Capital_from_Persepolis_(4736419664).jpg">source</a></li><li><b>A capital of two griffin-like creatures (‘homa birds’), Persepolis</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Double-griffin_capital_locally_known_as_%22homa_birds%22_probably_from_the_Unfinished_Gate,_Persepolis,_Iran_(47779520471).jpg">source</a></li><li><b>Human-headed winged bull (lamassu), Nimrud (The Met 32.143.1)</b> · The Metropolitan Museum of Art, Open Access · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://www.metmuseum.org/art/collection/search/322608">source</a></li><li><b>The Gate of All Nations, eastern doorway</b> · Photo: 4009dayton · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Gate_of_All_Nations,_Persepolis,_Iran.jpg">source</a></li><li><b>Gift-bearers on the Apadana’s east stairway (usually identified as Armenians)</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Relief_on_the_southern_wall_of_the_east_stairway_of_the_Apadana_depicting_Armenians,_Persepolis,_Iran_(47727270352).jpg">source</a></li><li><b>The Assyrian siege of Lachish: relief from Sennacherib’s palace at Nineveh (British Museum)</b> · Photo: Osama Shukir Muhammed Amin · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Assyrian_siege-engine_attacking_the_city_wall_of_Lachish,_part_of_the_ascending_assaulting_wave._Detail_of_a_wall_relief_dating_back_to_the_reign_of_Sennacherib,_700-692_BCE._From_Nineveh,_Iraq,_currently_housed_in_the_British_Museum.jpg">source</a></li><li><b>Winged figure in a disc, Tripylon, Persepolis</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Relief_with_the_symbol_of_Ahuramazda_on_the_on_the_southern_end_of_the_Tripylon_(or_Council_Hall),_Persepolis,_Iran_(47727263202).jpg">source</a></li><li><b>A lion attacking a bull, staircase relief, Persepolis</b> · Photo: Yong Woo Park · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Bas-relief_of_Lion_Attacking_a_Bull_Apadana_Staircase_Persepolis.jpg">source</a></li><li><b>Lotus flowers and rosettes, Apadana east stairway</b> · Photo: Davide Mauro · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis_lotus_and_rosettes_in_the_Palace.jpg">source</a></li><li><b>The Tachara, palace of Darius I</b> · Photo: Bernard Gagnon · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis_-_Tachara_01.jpg">source</a></li><li><b>Glazed-brick archers from the palace of Darius I at Susa (Louvre AOD 488)</b> · Photo: Jebulon · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:Archers_frieze_Darius_1st_Palace_Suse_Louvre_AOD_488_a.jpg">source</a></li></ul>
+    <p class="small">All images are public domain or openly licensed, and were resized for the web. Each is shared under the licence shown.</p></div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

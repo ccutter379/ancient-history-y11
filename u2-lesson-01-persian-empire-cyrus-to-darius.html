@@ -1,0 +1,1649 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U2 L1 · The Persian Empire from Cyrus the Great to Darius I</title>
+<meta name="description" content="Year 11 Ancient History, case study Persepolis: how the Persian Empire grew under Cyrus, Cambyses and Darius I, and why historians question Darius’s own account of how he became king in 522 BCE.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#0F5E5A; --bright:#1A8A84; --tint:#E1F2F0; --statement:#0F5E5A;
+  --solid:#0F5E5A; --soft:#CBEDE9; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; } }
+:root[data-theme="dark"]{ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 2 Lesson 1 only (every class starts u2l01-) */
+
+/* Connect: the Cyrus Cylinder from Unit 1, Lesson 8 */
+.u2l01-cyl .figure img{max-height:30vh;}
+
+/* the unit's inquiry questions */
+.u2l01-iq{display:grid; grid-template-columns:auto 1fr; gap:.3em .8em; align-items:baseline;
+  padding:.6em 1em; border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:0 10px 10px 0;
+  background:var(--tint); font-size:var(--fs-body); line-height:1.35;}
+.u2l01-iq .w{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--deep); white-space:nowrap;}
+.u2l01-iq .q{font-weight:700;}
+
+/* the two maps: as large as the slide allows (the dense block would cap them at 30vh) */
+.u2l01-bigmap .figure img{max-height:58vh;}
+html:not(.read) .u2l01-dense .u2l01-bigmap .figure img{max-height:58vh;}
+.u2l01-bigmap .figure.contain img{background:transparent; box-shadow:none;}
+
+/* goals slide: syllabus line; credits */
+.u2l01-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u2l01-cite a{color:var(--deep);}
+
+/* three kings beside the map */
+.u2l01-kings .t .yr{font-family:var(--mono); font-weight:400; font-size:.82em; color:var(--slate); margin-left:.35em;}
+.u2l01-find{font-size:calc(var(--fs-body)*.8); color:var(--slate); line-height:1.35;}
+.u2l01-find b{color:var(--deep);}
+
+/* think aloud: event → connective → effect */
+.u2l01-ce td{vertical-align:middle;}
+.u2l01-ce td:first-child{font-weight:700;}
+.u2l01-ce .cx{white-space:nowrap; text-align:center;}
+.u2l01-ce .cx span{display:inline-block; padding:.12em .65em; border-radius:999px; background:var(--w-keyterm);
+  color:var(--c-keyterm); font-weight:700; font-size:.9em;}
+.u2l01-model{margin:0; padding:.4em .85em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 8px 8px 0; font-size:calc(var(--fs-body)*.86); line-height:1.4;}
+.u2l01-model .k{display:block; font-weight:700; color:var(--c-evidence); font-size:.82em; letter-spacing:.06em;
+  text-transform:uppercase;}
+
+/* numbered rows: badge + question + model (We do) */
+.u2l01-ov{display:grid; grid-template-columns:2.4em 1fr; gap:.7em; align-items:start;}
+.u2l01-ovl{display:grid; place-items:center; min-height:2.1em; border-radius:8px; background:var(--solid); color:#fff;
+  font-weight:700; font-family:var(--mono); font-size:calc(var(--fs-body)*.95); line-height:1.1; padding:.2em;}
+.u2l01-ov .qprompt::before{content:none;}
+
+/* supported reading: pause questions and the glossary */
+.u2l01-gloss{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.2em;
+  font-size:calc(var(--fs-body)*.78); line-height:1.35;}
+.u2l01-gloss b{color:var(--deep);}
+.u2l01-pause .vp{color:var(--ink); font-weight:400;}
+
+/* timeline cards (no dates on screen) */
+.u2l01-tl{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:clamp(8px,1vw,14px);}
+.u2l01-tlc{position:relative; background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:.55em .8em .6em 2.7em; box-shadow:var(--shadow); font-size:calc(var(--fs-body)*.82); line-height:1.32;}
+.u2l01-tlc .l{position:absolute; top:.55em; left:.6em; width:1.6em; height:1.6em; border-radius:50%;
+  background:var(--solid); color:#fff; display:grid; place-items:center; font-weight:700; font-size:.9em;}
+.u2l01-key td:first-child{white-space:nowrap; font-family:var(--mono); font-size:.92em;}
+.u2l01-key td:nth-child(2){font-weight:700;}
+.u2l01-bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.u2l01-bank span{border:1px solid var(--c-keyterm); color:var(--c-keyterm); border-radius:999px; padding:.1em .7em;
+  background:var(--w-keyterm); font-size:calc(var(--fs-body)*.8); font-weight:600;}
+
+/* hinge question */
+.u2l01-hinge{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+
+/* phones (Read mode): fewer columns */
+@media (max-width:900px){
+  .u2l01-tl{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .u2l01-cyl .figure img{max-height:34vh;}
+  .u2l01-ce .cx{white-space:normal;}
+}
+@media (max-width:520px){
+  .u2l01-tl{grid-template-columns:1fr;}
+  .u2l01-iq{grid-template-columns:1fr;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u2l01-dense{gap:10px;}
+  html:not(.read) .u2l01-dense h2{font-size:calc(var(--fs-h2)*.86);}
+  html:not(.read) .u2l01-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.4;}
+  html:not(.read) .u2l01-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u2l01-dense .src{padding:9px 15px;}
+  html:not(.read) .u2l01-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u2l01-dense .note{padding:.42em .8em;}
+  html:not(.read) .u2l01-dense .note .body, html:not(.read) .u2l01-dense .card .body,
+  html:not(.read) .u2l01-dense .qprompt{font-size:calc(var(--fs-body)*.8); line-height:1.34;}
+  html:not(.read) .u2l01-dense .card{padding:9px 15px;}
+  html:not(.read) .u2l01-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l01-dense .tbl.compact td{padding:.3em .55em;}
+  html:not(.read) .u2l01-dense .tbl th{padding:.4em .6em;}
+  html:not(.read) .u2l01-dense .figure img{max-height:30vh;}
+  html:not(.read) .u2l01-dense .mq{font-size:calc(var(--fs-body)*.78); line-height:1.35;}
+  html:not(.read) .u2l01-dense .u2l01-model{font-size:calc(var(--fs-body)*.74); padding:.28em .7em;}
+  html:not(.read) .u2l01-dense .keylist{gap:6px;}
+  html:not(.read) .u2l01-dense .keylist li{font-size:calc(var(--fs-body)*.84);}
+  html:not(.read) .u2l01-dense .keylist .d{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l01-dense .tf li, html:not(.read) .u2l01-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l01-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u2l01-dense .prac{gap:6px;}
+  html:not(.read) .u2l01-dense .cornell .cq, html:not(.read) .u2l01-dense .cornell .nts{font-size:calc(var(--fs-body)*.74); padding:.32em .8em;}
+  html:not(.read) .u2l01-dense .u2l01-tlc{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l01-dense .u2l01-iq{font-size:calc(var(--fs-body)*.84); padding:.45em .85em;}
+  html:not(.read) .u2l01-dense .u2l01-find{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l01-dense .u2l01-gloss{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u2l01-dense .u2l01-bank span{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l01-dense .opts li{padding:.4em .8em; font-size:calc(var(--fs-body)*.86);}
+  html:not(.read) .u2l01-dense .u2l01-cite .credits{font-size:calc(var(--fs-chrome)*.88); margin-bottom:.3em;}
+  html:not(.read) .u2l01-dense .u2l01-cite .credits li{margin:.1em 0;}
+  html:not(.read) .u2l01-dense .u2l01-cite .small{font-size:calc(var(--fs-chrome)*.92);}
+  html:not(.read) .u2l01-dense .checks label{font-size:calc(var(--fs-body)*.8);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 1" data-title="The Persian Empire from Cyrus the Great to Darius I" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.15fr .85fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 2 · Persepolis · Lesson 1</p>
+      <h1>The Persian Empire from Cyrus the Great to Darius I</h1>
+      <p class="lead">How did three kings build an empire in less than forty years, and why do historians question the third king’s story of how he came to power?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <figure class="figure tall contain"><img src="images/u1l08-persepolis-terrace.jpg" alt="Standing columns on the terrace at Persepolis, south-western Iran: the terrace was begun about 518 BCE under Darius I" loading="lazy"><figcaption>Standing columns on the terrace at Persepolis, south-western Iran: the terrace was begun about 518 BCE under Darius I — <span class="cr">Photo: Forough.Parhoudeh · CC BY-SA 4.0</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 1" data-title="Connect: the Cyrus Cylinder" data-kind="intro">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow">Connect · 5 minutes · everyone writes for 90 seconds · press K for the timer</p>
+  <h2>Who made the Cyrus Cylinder, and why?</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack u2l01-cyl">
+      <figure class="figure contain"><img src="images/u1l08-cyrus-cylinder.jpg" alt="The Cyrus Cylinder: fired clay, about 22 cm long, inscribed in Babylonian cuneiform after Cyrus II of Persia captured Babylon in 539 BCE (British Museum)" loading="lazy"><figcaption>The Cyrus Cylinder: fired clay, about 22 cm long, inscribed in Babylonian cuneiform after Cyrus II of Persia captured Babylon in 539 BCE (British Museum) — <span class="cr">Photo: Mike Peel (www.mikepeel.net), modified by مانفی · CC BY-SA 4.0</span></figcaption></figure>
+      <div class="card accent"><div class="k">Everyone · 90 seconds</div><p class="body">From Unit 1, Lesson 8: two lines, from memory. Who made it? Why? Use one precise term.</p></div>
+    </div>
+    <div class="stack">
+      <div class="note reveal" data-code="evidence" data-veil="Write yours first — then show a model answer"><div class="k">Who made it</div><p class="body">A Babylonian scribe, presumably on the orders of Cyrus II of Persia, after he captured Babylon in 539 BCE: a foundation inscription, written to be buried in the foundations of Babylon’s city wall.</p></div>
+      <div class="note reveal" data-code="judgement" data-veil="Write yours first — then show a model answer"><div class="k">Why</div><p class="body">To present Cyrus as the king chosen by Marduk, Babylon’s own god, so that a foreign conqueror looked like a lawful king. Its first readers were probably Marduk and future kings.</p></div>
+      <div class="note reveal" data-code="counter" data-veil="Show the reminder"><div class="k">Remember</div><p class="body">The ‘charter of human rights’ label is a modern, contested representation: the text itself says nothing of human rights.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 1" data-title="Connect: our questions about Persepolis" data-kind="intro">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow">Connect · the next four weeks · write one question of your own</p>
+  <h2>A new case study: Persepolis</h2>
+  <div class="u2l01-iq"><span class="w">Fortnight 1</span><span class="q">Why was Persepolis built where it was, and how do we know what it was like?</span>
+    <span class="w">Fortnight 2</span><span class="q">What was Persepolis for, why was it destroyed, and how has it been remembered?</span></div>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="card accent"><div class="k">Everyone · 1 minute</div><p class="body">Write one question of your own about Persepolis on your notes page in your booklet. Make it an inquiry question: open (how? why? in what ways? to what extent?), about people and a time, and one sources could answer.</p></div>
+    <div class="stack" data-veil="Write yours first — then show some examples">
+      <div class="note reveal" data-code="evidence"><div class="k">Some examples</div><p class="body">Why did Darius build a new capital instead of using Cyrus’s? · How do we know what Persepolis looked like before it was destroyed? · To what extent was Persepolis a working capital, and not only a ceremonial one?</p></div>
+      <div class="note reveal" data-code="counter"><div class="k">Not an inquiry question</div><p class="body">When was Persepolis built? (closed: one fact answers it)</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 1" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>understand how the Persian Empire grew from Cyrus the Great to Darius I</li>
+        <li>explain how Darius came to power and why his account is contested</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>put the key events from Cyrus to Darius I in order, with dates</li>
+        <li>explain two causes of the empire’s growth</li>
+        <li>explain why historians question Darius’s account of 522 BCE</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u2l01-syl"><b>Syllabus outcomes:</b> AH-11-02 proposes ideas about the varying causes and effects of events and developments · AH-11-03 explains the role and significance of forces, features, events, individuals and groups in shaping the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-04 recognises causes and effects of events or developments · AH-LS-06 investigates people, events or developments of the ancient world.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 1" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the same routine as Unit 1</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U2 L1 · The Persian Empire, Cyrus to Darius I</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Explain how Cyrus built the empire.</div><div class="nts">Cyrus II (c. 559–530 BCE): Media c. 550 → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A new unit, a new page</span><span class="d">Your inquiry question from the Connect at the top; a cue column about a quarter of the page wide; room for a summary.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences; dates with every event.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: the empire grows · how Darius became king.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 1" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow">Key vocabulary · start the unit word wall</p>
+  <h2>Words you will use all unit</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Kings and the empire</th><th>Meaning</th></tr>
+      <tr><td>Achaemenid</td><td>The royal family (and empire) descended, they claimed, from an ancestor called Achaemenes; it ruled Persia from Cyrus the Great to Darius III.</td></tr>
+      <tr><td>Satrapy / satrap</td><td>A province of the Persian Empire / the governor who ran it for the king.</td></tr>
+      <tr><td>Tribute</td><td>Payment in silver, gold or goods that a subject people made to the king.</td></tr>
+      <tr><td>Accession</td><td>The moment a ruler comes to the throne.</td></tr>
+      <tr><td>Magian</td><td>One of the Magi, a Median group whose members served as priests.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Places and sources</th><th>Meaning</th></tr>
+      <tr><td>Fars (Pārsa)</td><td>The Persian homeland in south-west Iran, where Persepolis stands.</td></tr>
+      <tr><td>Ecbatana</td><td>The capital of the Medes (modern Hamadan), taken by Cyrus; later a Persian royal residence.</td></tr>
+      <tr><td>Pasargadae</td><td>Cyrus the Great’s capital in Fars, with palaces in a garden landscape and his tomb.</td></tr>
+      <tr><td>Cuneiform</td><td>Wedge-shaped writing pressed into clay or carved in stone, used for Old Persian, Elamite and Babylonian.</td></tr>
+      <tr><td>Trilingual inscription</td><td>An inscription written in three languages (at Persepolis usually Old Persian, Elamite and Babylonian).</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The empire grows" data-title="Three kings, one growing empire" data-kind="notes">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow">1 · The empire grows · I do — an illustrated mini-lecture</p>
+  <h2>Three kings, one growing empire</h2>
+  <div class="split" style="--cols:1.9fr 1fr">
+    <div class="stack u2l01-bigmap">
+      <figure class="figure contain"><img src="images/u2l01-achaemenid-empire-map.jpg" alt="The Achaemenid Persian Empire about 500 BCE, under Darius I: a modern map (2009), based on one in a Russian history of the ancient world (Moscow, 1983)" loading="lazy"><figcaption>The Achaemenid Persian Empire about 500 BCE, under Darius I: a modern map (2009), based on one in a Russian history of the ancient world (Moscow, 1983) — <span class="cr">Map: Anton Gutsunaev, English version by Uirauna · CC BY-SA 3.0</span></figcaption></figure>
+      <p class="u2l01-find reveal"><b>Find on the map:</b> Persia and Pasargadae · Media and Ecbatana · Lydia and Sardis · Babylon · Egypt and Memphis (‘Menphis’ on this map) · Susa · Persepolis</p>
+    </div>
+    <ol class="keylist u2l01-kings">
+      <li class="reveal"><span class="num">1</span><span class="t">Cyrus II, ‘the Great’<span class="yr">c. 559–530 BCE</span></span><span class="d">From king of a small Persian kingdom to ruler of an empire: Media (c. 550), Lydia (c. 546), Babylon (539).</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Cambyses II, his son<span class="yr">530–522 BCE</span></span><span class="d">Adds Egypt (525). Away from Persia for years; dies in 522 as a rival king takes power at home.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Darius I<span class="yr">522–486 BCE</span></span><span class="d">Takes the throne in 522; crushes revolts; reorganises the satrapies and fixes tribute; royal roads; begins Persepolis (c. 518).</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The empire grows" data-title="Think aloud: from events to causes and effects" data-kind="notes">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow">1 · The empire grows · I do — think aloud · watch how each event becomes a cause</p>
+  <h2>Turning events into causes and effects</h2>
+  <div class="tbl-scroll"><table class="tbl compact u2l01-ce">
+    <tr><th>Event (cause)</th><th>Connective</th><th>Effect</th></tr>
+    <tr class="reveal"><td>Cyrus defeats Astyages of Media (c. 550 BCE)</td><td class="cx"><span>consequently</span></td><td>Cyrus takes over the Median empire and the lands it ruled, such as Armenia, Cappadocia and Parthia</td></tr>
+    <tr class="reveal"><td>Cyrus conquers Lydia (c. 546 BCE)</td><td class="cx"><span>this enabled</span></td><td>his general Harpagus to conquer the Greek cities of Ionia, which had been Lydia’s subjects</td></tr>
+    <tr class="reveal"><td>Cyrus takes Babylon (539 BCE)</td><td class="cx"><span>as a result</span></td><td>Persia rules Babylon’s lands in Syria and Palestine, the land route to Egypt: Cambyses conquers Egypt in 525 BCE</td></tr>
+    <tr class="reveal"><td>Cambyses is away in Egypt (525–522 BCE)</td><td class="cx"><span>this led to</span></td><td>unrest at home: Darius says that “the people became hostile, and the lie multiplied in the land”</td></tr>
+  </table></div>
+  <div class="src reveal" data-veil="Show the think-aloud sentence">
+    <div class="k">One sentence, thought aloud · written for this lesson</div>
+    <p class="quote sm model">Because Cyrus conquered Lydia in about 546 BCE, the Greek cities of Ionia, which had been Lydia’s subjects, came under Persian rule, which carried the empire to the shores of the Aegean Sea.</p>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The empire grows" data-title="Darius reorganises the empire" data-kind="notes">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow">1 · The empire grows · I do — Darius’s reforms</p>
+  <h2>Darius reorganises the empire</h2>
+  <div class="split" style="--cols:1.65fr 1fr">
+    <div class="u2l01-bigmap"><figure class="figure contain"><img src="images/u2l01-shepherd-1911-satrapies-map.jpg" alt="William R. Shepherd’s 1911 map of the Persian Empire about 500 BCE: dotted lines mark the boundaries of the satrapies under Darius I, and the double line the ‘Royal Highway’ from Sardis to Susa" loading="lazy"><figcaption>William R. Shepherd’s 1911 map of the Persian Empire about 500 BCE: dotted lines mark the boundaries of the satrapies under Darius I, and the double line the ‘Royal Highway’ from Sardis to Susa — <span class="cr">William R. Shepherd, Historical Atlas (1911) · Public domain</span></figcaption></figure></div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Revolts crushed (522–519 BCE)</span><span class="d">Darius claims nine ‘kings’ captured in a single year, Gaumata among them; on the Behistun relief Gaumata lies under his foot and bound captives stand before him.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Satrapies reorganised</span><span class="d">Provinces under satraps existed before him; Herodotus says Darius divided the empire into twenty.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Tribute fixed</span><span class="d">Herodotus says each province now paid a set amount in silver or gold, where Cyrus and Cambyses had received ‘gifts’.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Royal roads</span><span class="d">Road stations along the routes: Herodotus counts 111 from Sardis to Susa, about 90 days’ journey.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">A new royal centre</span><span class="d">The terrace of Persepolis, begun about 518 BCE in Fars, the Persian homeland.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The empire grows" data-title="The father, the master, the merchant" data-kind="notes">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow">1 · The empire grows · I do → cold call</p>
+  <h2>‘The father’, ‘the master’, ‘the merchant’</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="src">
+      <div class="k">Source · Herodotus on three kings</div>
+      <p class="quote">In the reigns of Cyrus and Cambyses after him there was no fixed tribute, but payment was made in gifts. It is because of this fixing of tribute, and other similar ordinances, that the Persians called Darius the merchant, Cambyses the master, and Cyrus the father; for Darius made petty profit out of everything, Cambyses was harsh and arrogant, Cyrus was merciful and always worked for their well-being.</p>
+      <p class="prov">Herodotus, <i>Histories</i> 3.89 · a Greek writer, about 430 BCE, about 90 years after Darius became king · A. D. Godley’s translation (Loeb, 1921), as revised by the Perseus Digital Library · ordinances = rules</p>
+    </div>
+    <div class="stack">
+      <p class="qprompt">What does calling Darius ‘the merchant’ suggest about his reforms?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">That they were about money and organisation: in Herodotus’s account, Darius set a fixed tribute for every province, where Cyrus and Cambyses had taken gifts. It also sounds like a complaint: a king who “made petty profit out of everything” was not loved like ‘the father’.</p></div>
+      <p class="qprompt reveal">Is the saying better evidence of what Darius did, or of how he was remembered?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">Mainly of how he was remembered: a Greek, writing about 90 years later, reports what ‘the Persians’ said. On what he did, it fits Darius’s own claim at Behistun that his lands “brought tribute unto me”.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The empire grows" data-title="Notes 1 — The empire grows" data-kind="notes">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>The empire grows: Cyrus, Cambyses, Darius</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L1 · The Persian Empire, Cyrus to Darius I</b></span><span>1 · The empire grows</span></div>
+    <div class="row"><div class="cq">Explain how Cyrus built the empire.</div>
+      <div class="nts reveal">Cyrus II (c. 559–530 BCE) <span class="sep">·</span> Media c. 550 → its subject lands <span class="sep">·</span> Lydia c. 546 → Ionian Greek cities <span class="sep">·</span> Babylon 539 → Syria and Palestine</div></div>
+    <div class="row"><div class="cq">What did Cambyses add?</div>
+      <div class="nts reveal">Cambyses II (530–522 BCE) → Egypt 525 <span class="sep">·</span> away from Persia for years → unrest at home (522), says Darius (Behistun §10)</div></div>
+    <div class="row"><div class="cq">Explain how Darius reorganised the empire.</div>
+      <div class="nts reveal">Darius I (522–486 BCE): revolts crushed (19 battles, nine ‘kings’ captured, Gaumata included, by his own count) <span class="sep">·</span> satrapies reorganised (20, Herodotus) + fixed tribute <span class="sep">·</span> royal roads with stations <span class="sep">·</span> Persepolis begun c. 518</div></div>
+    <div class="row"><div class="cq">Analyse what ‘the merchant’ suggests.</div>
+      <div class="nts reveal">fixed tribute, not ‘gifts’ (Herodotus’s contrast) → a king of money and organisation, less loved than ‘the father’ <span class="sep">·</span> a Persian saying, reported by a Greek (Herodotus 3.89, c. 430 BCE)</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · How Darius became king" data-title="Supported reading: Darius’s story" data-kind="notes">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow">2 · How Darius became king · We do — supported reading · read it together, pause at each question</p>
+  <h2>Darius tells how he became king</h2>
+  <div class="split veil-parts" style="--cols:1fr 1.25fr" data-veil="Read it together first — then show the answers">
+    <div class="stack">
+      <figure class="figure contain"><img src="images/u1l04-behistun-relief.jpg" alt="The Behistun relief: Darius I, with attendants behind him, stands with one foot on a fallen figure and faces a line of bound captives; a winged figure is carved above them" loading="lazy"><figcaption>The Behistun relief: Darius I (third from left, with two attendants behind him) has one foot on the fallen Gaumata and faces nine bound captives, the last of them added after later victories; above them is a winged figure usually identified as the god Ahuramazda</figcaption></figure>
+      <p class="small credline">Images: Patrick C (CC BY-SA 2.0). Full details on the last slide.</p>
+      <p class="mq reveal u2l01-pause" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>1 · What happened to Smerdis?</b> <span class="vp">Darius says Cambyses killed his own brother in secret.</span></span></p>
+      <p class="mq reveal u2l01-pause" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>2 · What did Gaumata claim?</b> <span class="vp">To be Smerdis, the son of Cyrus; then all the people rose in revolt.</span></span></p>
+      <p class="mq reveal u2l01-pause" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>3 · Why did no one stop him?</b> <span class="vp">Fear: he killed people who had known the real Smerdis.</span></span></p>
+      <p class="mq reveal u2l01-pause" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>4 · How does Darius explain his success?</b> <span class="vp">The god Ahuramazda helped him and made him king.</span></span></p>
+    </div>
+    <div class="src">
+      <div class="k">Source · the Behistun inscription, Column 1</div>
+      <p class="quote sm"><span class="ed">[§10]</span> A son of Cyrus, named Cambyses, one of our dynasty, was king here before me. That Cambyses had a brother, Smerdis by name, of the same mother and the same father as Cambyses. <span class="match" data-step="m1">Afterwards, Cambyses slew this Smerdis. When Cambyses slew Smerdis, it was not known unto the people that Smerdis was slain.</span> Thereupon Cambyses went to Egypt. … <span class="ed">[§11]</span> Afterwards, there was a certain man, a Magian, Gaumâta by name, who raised a rebellion … <span class="match" data-step="m2">He lied to the people, saying: ‘I am Smerdis, the son of Cyrus, the brother of Cambyses.’ Then were all the people in revolt</span> … <span class="ed">[§13]</span> <span class="match" data-step="m3">The people feared him exceedingly, for he slew many who had known the real Smerdis.</span> … There was none who dared to act against Gaumâta, the Magian, until I came. <span class="match" data-step="m4">Then I prayed to Ahuramazda; Ahuramazda brought me help.</span> … I, with a few men, slew that Gaumâta, the Magian, … <span class="match" data-step="m4">By the grace of Ahuramazda I became king; Ahuramazda granted me the kingdom.</span></p>
+      <p class="prov">Darius I, Behistun inscription, carved about 520 BCE · Old Persian text, as translated by L. W. King and R. C. Thompson (1907) and adapted by Livius.org · Smerdis = the Greek form of Bardiya, Cyrus’s younger son · Magian = one of the Magi · Gaumâta = Gaumata (Livius marks the long vowel) · slew = killed · Ahuramazda = the god Darius worshipped</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · How Darius became king" data-title="We do: claims, motive, another explanation" data-kind="notes">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow">2 · How Darius became king · We do — cold call · reliable for what?</p>
+  <h2>What does Darius claim, and why might he need the story?</h2>
+  <div class="stack veil-parts" data-veil="Answer together first — then show the models">
+    <div class="u2l01-ov"><span class="u2l01-ovl">1</span><div><p class="qprompt">What does Darius claim happened in 522 BCE?</p>
+      <p class="u2l01-model vp reveal">Cambyses secretly killed his brother Smerdis (Bardiya). A Magian, Gaumata, pretended to be Smerdis and took the throne. No one dared act until Darius, helped by Ahuramazda, killed him and became king.</p></div></div>
+    <div class="u2l01-ov"><span class="u2l01-ovl">2</span><div><p class="qprompt">Why did Darius need this story?</p>
+      <p class="u2l01-model vp reveal">He was not Cyrus’s son: by his own account only a distant relative, and his own father was still alive. Killing a son of Cyrus would make him a usurper; killing an impostor let him claim he had restored the rightful dynasty: “The kingdom that had been wrested from our line I brought back …”</p></div></div>
+    <div class="u2l01-ov"><span class="u2l01-ovl">3</span><div><p class="qprompt">What other explanation fits the evidence?</p>
+      <p class="u2l01-model vp reveal">The man Darius killed was the real Bardiya, son of Cyrus, and ‘Gaumata’ was invented to justify the killing. It fits that the empire accepted this king for months, that rebels rose against Darius across the empire (eight in his first year, by his own count), and that Darius then married two of Cyrus’s daughters (Herodotus 3.88).</p></div></div>
+    <div class="note vp reveal" data-code="judgement"><div class="k">Reliable for what? One sentence</div><p class="body nq">The Behistun inscription is reliable for how Darius wanted his accession to be seen, but, on its own, weak evidence of what happened in 522 BCE, because it was carved for the man who gained most from the story and no account from the losing side survives.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · How Darius became king" data-title="Notes 2 — How Darius became king" data-kind="notes">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>How Darius became king: a contested account</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L1 · The Persian Empire, Cyrus to Darius I</b></span><span>2 · How Darius became king</span></div>
+    <div class="row"><div class="cq">What does Darius claim happened in 522 BCE?</div>
+      <div class="nts reveal">Cambyses killed Smerdis (Bardiya) in secret → Gaumata the Magian posed as him, seized the throne (March–July 522) → Darius + a few men killed him (Sept 522), “By the grace of Ahuramazda”</div></div>
+    <div class="row"><div class="cq">Explain why Darius needed this story.</div>
+      <div class="nts reveal">not Cyrus’s son; by his own account a distant relative (his family tree may be invented); his father still alive <span class="sep">·</span> impostor, not a son of Cyrus → Darius the restorer, not a usurper</div></div>
+    <div class="row"><div class="cq">Explain why historians question it.</div>
+      <div class="nts reveal">carved c. 520 BCE for the man who gained most <span class="sep">·</span> no account from the losing side <span class="sep">·</span> Herodotus similar but probably the official version <span class="sep">·</span> some think ‘Gaumata’ was the real Bardiya</div></div>
+    <div class="row"><div class="cq">Assess: reliable for what?</div>
+      <div class="nts reveal">reliable for how Darius wanted to be seen <span class="sep">·</span> on its own, weak evidence of what happened <span class="sep">·</span> not disputed: he killed the reigning king (522) and then fought rebels</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · How Darius became king" data-title="Hinge: why doubt Darius?" data-kind="practice">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow">Check for understanding · hinge question · hold up your A, B, C or D card on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2>Why do many historians doubt Darius’s account of 522 BCE?</h2>
+  <div class="u2l01-hinge veil-parts" data-veil="Vote first — then show the answer">
+  <ol class="opts">
+    <li><span class="n">A</span><span>It was carved centuries after the events that it describes</span></li>
+    <li id="u2l01-hqB"><span class="n">B</span><span>It was carved for the man who gained most from the story</span></li>
+    <li><span class="n">C</span><span>It was the only ancient source to tell the story of Bardiya</span></li>
+    <li><span class="n">D</span><span>It was carved in three languages, so its wording is uncertain</span></li>
+  </ol>
+  <i class="reveal" data-mark="#u2l01-hqB" hidden></i>
+  <div class="note vp reveal" data-code="evidence"><div class="k">B: carved for the man who gained most from the story</div><p class="body"><b>A</b> is wrong: it was carved about 520 BCE, within about two years of the events. <b>C</b> is wrong: Herodotus tells the story too, though he probably repeats the official version. <b>D</b> confuses the form with the content: three languages show who it was meant for, not whether it is true.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Putting it in order" data-title="You do: the timeline">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow">3 · Putting it in order · You do · 7 minutes · press K for the timer</p>
+  <h2>Put the eight events in order, with dates</h2>
+  <div class="u2l01-tl">
+    <div class="u2l01-tlc"><span class="l">A</span>Cambyses conquers Egypt</div>
+    <div class="u2l01-tlc"><span class="l">B</span>Darius kills ‘Gaumata’ and becomes king</div>
+    <div class="u2l01-tlc"><span class="l">C</span>Cyrus takes Babylon</div>
+    <div class="u2l01-tlc"><span class="l">D</span>Cyrus becomes king of Anshan, a small Persian kingdom</div>
+    <div class="u2l01-tlc"><span class="l">E</span>Darius begins building Persepolis</div>
+    <div class="u2l01-tlc"><span class="l">F</span>Cyrus defeats Astyages and takes Media</div>
+    <div class="u2l01-tlc"><span class="l">G</span>Cyrus dies; his son Cambyses becomes king</div>
+    <div class="u2l01-tlc"><span class="l">H</span>Cyrus conquers Lydia and its capital, Sardis</div>
+  </div>
+  <div class="split" style="--cols:1.2fr 1fr">
+    <div class="card accent"><div class="k">Everyone</div><ol class="body"><li>On the timeline strip in your booklet, put the cards in order, oldest first, with a date for each (use “c.” where the date is approximate).</li><li>Draw an arrow between two events where one caused the other, and label it with a connective.</li></ol></div>
+    <div class="stack">
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Use your Notes 1 rows. Dates to match: 559 · 550 · 546 · 539 · 530 · 525 · 522 · 518 BCE.</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Which event was the most significant for the growth of the empire? Be ready to justify it.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Putting it in order" data-title="Check: the timeline" data-kind="notes">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow">3 · Putting it in order · check your timeline · cold call before each row</p>
+  <h2>Check your timeline</h2>
+  <div class="stack" data-veil="Order the cards first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u2l01-key">
+    <tr><th>When</th><th>Event</th><th>Cause → effect (examples)</th></tr>
+    <tr class="reveal"><td>c. 559 BCE</td><td>D · Cyrus becomes king of Anshan</td><td>a small Persian kingdom, then subject to the Medes</td></tr>
+    <tr class="reveal"><td>c. 550 BCE</td><td>F · Cyrus defeats Astyages, takes Media</td><td>→ the lands the Medes ruled become Persian</td></tr>
+    <tr class="reveal"><td>c. 546 BCE</td><td>H · Cyrus conquers Lydia (Sardis)</td><td>→ opens the way to the Greek cities of Ionia, which Cyrus’s general Harpagus then takes (the year Lydia fell is debated)</td></tr>
+    <tr class="reveal"><td>539 BCE</td><td>C · Cyrus takes Babylon</td><td>→ Syria and Palestine: the land route to Egypt</td></tr>
+    <tr class="reveal"><td>530 BCE</td><td>G · Cyrus dies; Cambyses becomes king</td><td>Cyrus killed on campaign in Central Asia</td></tr>
+    <tr class="reveal"><td>525 BCE</td><td>A · Cambyses conquers Egypt</td><td>→ the king away from Persia for years</td></tr>
+    <tr class="reveal"><td>522 BCE</td><td>B · Darius kills ‘Gaumata’, becomes king</td><td>→ revolts across the empire, crushed by 519 BCE</td></tr>
+    <tr class="reveal"><td>c. 518 BCE</td><td>E · Darius begins Persepolis</td><td>Why? Your exit ticket</td></tr>
+  </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Putting it in order" data-title="You do: two cause-and-effect sentences">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow">3 · Putting it in order · You do · 9 minutes · press K for the timer</p>
+  <h2>Write two cause-and-effect sentences</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · two sentences</div>
+        <ol class="body"><li>One on the empire’s growth.</li><li>One on Darius’s accession.</li></ol>
+        <p class="body">Each needs a precise date, a causal connective and a precise term (satrapy, tribute, accession).</p></div>
+      <div class="u2l01-bank" aria-label="Connectives"><span>because</span><span>as a result</span><span>consequently</span><span>this enabled</span><span>this led to</span><span>which meant that</span></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Start with <span class="nq">“As a result of …, …”</span> or <span class="nq">“… This led to …”</span>. Use your timeline and Notes 2.</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Add a hedge to your accession sentence: who says so, and how sure can we be?</p></div>
+    </div>
+    <div class="stack" data-veil="Write yours first — then show model sentences">
+      <div class="src reveal"><div class="k">1 · The empire’s growth · written for this lesson</div>
+        <p class="quote sm model">Because Cyrus captured Babylon in 539 BCE, Babylon’s lands in Syria and Palestine passed to Persia; this enabled his son Cambyses to march along the coast road and conquer Egypt in 525 BCE, which then became a Persian satrapy.</p></div>
+      <div class="src reveal"><div class="k">2 · Darius’s accession · written for this lesson</div>
+        <p class="quote sm model">Not a son of Cyrus, and by his own account only a distant relative, Darius needed to justify his accession in 522 BCE; consequently, his Behistun inscription presents the king he killed as an impostor, the Magian Gaumata, an account that many historians treat with caution.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Putting it in order" data-title="Summary" data-kind="notes">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>How did the empire grow under Cyrus and Cambyses?</li>
+          <li>How did Darius reorganise it?</li>
+          <li>Why do historians question Darius’s account of 522 BCE?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Cyrus II turned a small Persian kingdom into an empire by taking Media (c. 550 BCE), Lydia (c. 546 BCE) and Babylon (539 BCE), and his son Cambyses added Egypt in 525 BCE. After crushing the revolts that followed his accession in 522 BCE, Darius I reorganised the satrapies, fixed their tribute, developed the royal roads and began Persepolis in about 518 BCE. Historians question his Behistun account because it was carved for the man who gained most from the story, so it is reliable for how Darius wanted to be seen but, on its own, weak evidence of what happened.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Your own inquiry question</label></li>
+        <li><label><input type="checkbox"> Cyrus, Cambyses, Darius: dates and conquests</label></li>
+        <li><label><input type="checkbox"> Causes and effects of the empire’s growth</label></li>
+        <li><label><input type="checkbox"> Darius’s reforms; ‘the merchant’</label></li>
+        <li><label><input type="checkbox"> Darius’s story of Gaumata, and why it is doubted</label></li>
+        <li><label><input type="checkbox"> The timeline: eight dated events</label></li>
+        <li><label><input type="checkbox"> Two cause-and-effect sentences</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 7 minutes · before you leave</p>
+  <h2>Finish the sentence</h2>
+  <div class="card accent"><p class="lead">Darius needed a new capital because …</p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">A reason tied to today’s evidence. For example: he was a new king who was not Cyrus’s son (only a distant relative, he claimed), whose right to rule was doubted, so a capital of his own, not Cyrus’s Pasargadae, could display his power; or his reorganised empire needed a centre for its court. It is a prediction: Lessons 2 and 3 test it.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> before Persepolis, the capitals of Ecbatana and Pasargadae.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u2l01-dense">
+  <p class="eyebrow">Practice and review · 1 of 4 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Cyrus the Great conquered Egypt.</span>
+      <span class="sol no reveal">False <span class="why">— his son Cambyses conquered Egypt in 525 BCE; Cyrus never invaded it.</span></span></li>
+    <li><span class="n">2</span><span>Darius I invented the satrapies.</span>
+      <span class="sol no reveal">False <span class="why">— provinces under satraps probably existed under Cyrus; Darius reorganised them (Herodotus says into twenty) and fixed their tribute.</span></span></li>
+    <li><span class="n">3</span><span>According to Herodotus, the Persians called Darius ‘the merchant’ because he fixed the tribute.</span>
+      <span class="sol reveal">True <span class="why">— Herodotus 3.89: under Cyrus and Cambyses, payment was made in gifts.</span></span></li>
+    <li><span class="n">4</span><span>The Behistun inscription was carved centuries after Darius became king.</span>
+      <span class="sol no reveal">False <span class="why">— it was carved about 520 BCE, within about two years of the events of 522 BCE.</span></span></li>
+    <li><span class="n">5</span><span>Because Herodotus tells a similar story, Darius’s account must be true.</span>
+      <span class="sol no reveal">False <span class="why">— Herodotus probably drew on the official Persian version, so his agreement is weak corroboration.</span></span></li>
+    <li><span class="n">6</span><span>The terrace of Persepolis was begun by Darius I in about 518 BCE.</span>
+      <span class="sol reveal">True <span class="why">— in Fars, the Persian homeland, after he had crushed the revolts.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — cause, effect and reliability" data-kind="practice">
+<div class="wrap prac u2l01-dense">
+  <p class="eyebrow">Practice and review · 2 of 4 · writing</p>
+  <h2>Write it as a historian</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · Cause and effect</div><p class="body">Write one sentence on how Cambyses’s conquest of Egypt affected events in Persia. Use a date and a connective.</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Cambyses’s conquest of Egypt in 525 BCE kept him away from Persia for years; as a result, according to Darius, unrest spread at home, and in 522 BCE a rival king seized the throne.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 2 · Reliable for what?</div><p class="body nq">Finish: “The Behistun inscription is reliable for … but not for … because …”</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">The Behistun inscription is reliable for the official version of Darius’s accession, but not, on its own, for what happened in 522 BCE, because Darius carved it to justify his own seizure of the throne.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — extension: Herodotus and Darius" data-kind="practice">
+<div class="wrap prac u2l01-dense">
+  <p class="eyebrow">Practice and review · 3 of 4 · extension</p>
+  <h2>Does Herodotus make Darius’s story more reliable?</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Herodotus tells the same story</div>
+        <p class="quote sm">Now after Cambyses, son of Cyrus, had lost his mind, while he was still in Egypt, two Magus brothers rebelled against him. … this brother was in appearance very like Cyrus’ son Smerdis, whom Cambyses, his brother, had killed; nor was he like him in appearance only, but he bore the same name too, Smerdis.</p>
+        <p class="prov">Herodotus, <i>Histories</i> 3.61, about 430 BCE · A. D. Godley’s translation (Loeb, 1921), as revised by the Perseus Digital Library · the story runs from 3.61 to 3.79</p>
+      </div>
+      <div class="card quiet"><div class="k">Exercise 3 · one paragraph</div><p class="body">Herodotus and Darius tell a similar story. Does their agreement make the story more reliable, or might Herodotus depend on the official Persian version? Use the dates of both sources.</p></div>
+    </div>
+    <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+      <p class="quote sm model">Herodotus agrees with Darius on the core of the story: Cambyses had his brother Smerdis killed in secret, and a Magian impostor then took the throne. His agreement, however, adds less than it seems. Herodotus wrote about ninety years after the Behistun inscription was carved, as a Greek, and his version differs only in details: he has two Magian brothers, one of whom “bore the same name too, Smerdis”. Darius’s account did not stay on the cliff (an Aramaic copy was found in Egypt), so Herodotus probably heard the official Persian version rather than an independent one. If Herodotus is retelling the official version, his agreement is not independent corroboration: it makes Darius’s story more widely told, not more reliable.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u2l01-dense">
+  <p class="eyebrow">Practice and review · 4 of 4 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Name Cyrus’s three great conquests, with dates.
+      <span class="sol reveal">Media (c. 550 BCE), Lydia (c. 546 BCE) and Babylon (539 BCE).</span></li>
+    <li>What did Cambyses add to the empire, and when?
+      <span class="sol reveal">Egypt, in 525 BCE.</span></li>
+    <li>Explain one cause of the empire’s growth.
+      <span class="sol reveal">For example: taking Babylon (539 BCE) gave Persia Syria and Palestine, the land route that Cambyses used to conquer Egypt (525 BCE).</span></li>
+    <li>Name three of Darius’s reforms.
+      <span class="sol reveal">Any three: satrapies reorganised; tribute fixed; royal roads with road stations; a new royal centre at Persepolis (c. 518 BCE).</span></li>
+    <li>What does Darius claim happened in 522 BCE?
+      <span class="sol reveal">That Cambyses had secretly killed his brother Smerdis (Bardiya), that a Magian, Gaumata, pretended to be Smerdis and took the throne, and that Darius, helped by Ahuramazda, killed him.</span></li>
+    <li>Why do historians question Darius’s account?
+      <span class="sol reveal">It was carved for the man who gained most from the story, and no account from the losing side survives; some think the man he killed was the real Bardiya.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u2l01-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u2l01-cite"><div class="k">Written sources</div>
+      <p class="small">The Behistun inscription of Darius I, Column 1, §§7–14: translation by L. W. King and R. C. Thompson (1907, public domain), as adapted by <a href="https://www.livius.org/sources/content/behistun-persian-text/">Livius.org</a> (© Livius.org; quoted briefly for teaching).</p>
+      <p class="small">Herodotus, <i>Histories</i> 3.61, 3.88, 3.89 and 5.52–53: A. D. Godley’s Loeb translation (Vols II–III, 1921–22), in the revised version published by the <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=3:chapter=89">Perseus Digital Library</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 US</a>). Godley’s printed wording differs in places (at 3.89 he has ‘the huckster’).</p>
+      <p class="small">Facts: Livius.org (J. Lendering), “Cyrus the Great”, “Cambyses II”, “Darius I the Great” and “Gaumata / Smerdis”; <i>Encyclopaedia Britannica</i>, “Darius I”; British Museum, “Cyrus, King of Persia” and record 90920 (the Cyrus Cylinder); UNESCO World Heritage Centre, “Persepolis” (list no. 114).</p>
+      <p class="small">Also cited in the lesson notes: Herodotus 1.101, 1.132, 1.141, 1.169, 3.13, 3.64, 3.67, 3.97 and 4.166 (Godley’s printed Loeb, via <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/home.html">LacusCurtius</a>); Godley’s footnote at 5.52 quoting W. W. How and J. Wells, <i>A Commentary on Herodotus</i>; L. W. King and R. C. Thompson (1907) on Cambyses’ death; Livius.org, “Behistun” and “Aryandes”; J. Curtis, abstract for the Freer|Sackler Cyrus Cylinder symposium (2013); the British Museum’s statement on the loan of the Cyrus Cylinder (2010).</p></div>
+    <div class="card quiet"><div class="k">Syllabus</div>
+      <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+  </div>
+  <div class="card quiet u2l01-cite"><div class="k">Images</div>
+    <ul class="small credits"><li><b>Columns on the terrace at Persepolis</b> · Photo: Forough.Parhoudeh · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis_2_-_FP.jpg">source</a></li><li><b>The Cyrus Cylinder (British Museum 90920)</b> · Photo: Mike Peel (www.mikepeel.net), modified by مانفی · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Cyrus_Cylinder.jpg">source</a></li><li><b>Map of the Achaemenid Empire about 500 BCE</b> · Map: Anton Gutsunaev, English version by Uirauna · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Achaemenid_Empire_En.svg">source</a></li><li><b>The Persian Empire about 500 BCE (Shepherd, 1911)</b> · William R. Shepherd, Historical Atlas (1911) · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:The_Persian_Empire,_about_500_BC_-_Historical_Athlas_-_William_R._Shepherd_-_Henry_Holt_and_Company,_1911.png">source</a></li><li><b>The Behistun relief of Darius I</b> · Photo: Patrick C (dynamosquito on Flickr) · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Stone_record_at_Behistun.jpg">source</a></li></ul>
+    <p class="small">All images are public domain or openly licensed, and were resized for the web. Each is shared under the licence shown.</p></div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

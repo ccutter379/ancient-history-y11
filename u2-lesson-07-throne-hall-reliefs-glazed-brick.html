@@ -1,0 +1,1712 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U2 L7 · Throne Hall, Wall Reliefs and Glazed Brick: What Survives?</title>
+<meta name="description" content="Year 11 Ancient History, case study Persepolis: the Hall of a Hundred Columns and its doorway reliefs, the traces of paint on the reliefs, the puzzle of the glazed brick (Persepolis, Susa and Tol-e Ajori), what survives and what does not, and why colour reconstructions are interpretations.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#0F5E5A; --bright:#1A8A84; --tint:#E1F2F0; --statement:#0F5E5A;
+  --solid:#0F5E5A; --soft:#CBEDE9; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; } }
+:root[data-theme="dark"]{ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 2 Lesson 7 only (every class starts u2l07-) */
+
+/* goals slide syllabus line; credits links */
+.u2l07-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u2l07-cite a{color:var(--deep);}
+.u2l07-link a{color:var(--deep);}
+
+/* the Hall of a Hundred Columns: a simple plan of its doorways (north at the top) */
+.u2l07-plan{display:grid; grid-template-columns:1fr 1.25fr 1fr; grid-template-rows:auto 1fr auto; gap:6px;
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px; padding:10px; box-shadow:var(--shadow);}
+.u2l07-plan .door{background:var(--tint); border:1px solid var(--rule); border-radius:8px; padding:.4em .6em;
+  font-size:calc(var(--fs-body)*.78); line-height:1.32;}
+.u2l07-plan .door b{display:block; color:var(--deep); font-family:var(--ui); font-size:.92em; letter-spacing:.02em;}
+.u2l07-plan .n{grid-column:1 / 4;} .u2l07-plan .s{grid-column:1 / 4;}
+.u2l07-plan .hall{display:grid; place-items:center; text-align:center; min-height:9em; border:2px dashed var(--slate);
+  border-radius:8px; color:var(--slate); font-size:calc(var(--fs-body)*.78); line-height:1.3;
+  background-image:radial-gradient(circle, var(--slate) 1.6px, transparent 1.8px); background-size:10% 10%;
+  background-position:center;}
+.u2l07-plan .hall span{background:var(--surface); padding:.2em .5em; border-radius:6px;}
+.u2l07-plan .compass{grid-column:1 / 4; text-align:right; font-family:var(--ui); font-weight:700; font-size:var(--fs-chrome);
+  color:var(--slate); margin:-.2em 0 0;}
+
+/* two pictures side by side with a small label on each */
+.u2l07-pair{display:grid; grid-template-columns:var(--pc,1fr 1fr); gap:clamp(8px,1vw,14px); align-items:start;}
+.u2l07-pic{position:relative; margin:0;}
+.u2l07-pic img{display:block; width:100%; height:var(--ph,30vh); object-fit:cover; border-radius:10px; box-shadow:var(--shadow);
+  background:var(--surface-2);}
+.u2l07-pic img.fit{object-fit:contain;}
+.u2l07-pic img.u2l07-left{object-position:12% 50%;}
+.u2l07-pic .tag{position:absolute; left:8px; top:8px; background:rgba(255,255,255,.9); color:#14171C; font-family:var(--ui);
+  font-weight:700; font-size:calc(var(--fs-chrome)*.92); padding:.15em .5em; border-radius:6px; line-height:1.2;}
+.u2l07-pic figcaption{font-size:calc(var(--fs-chrome)*.92); color:var(--slate); margin-top:.35em; line-height:1.3;}
+
+/* three picture tiles in a row */
+.u2l07-tiles{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1.1vw,16px);}
+.u2l07-tile{margin:0; background:var(--surface); border:1px solid var(--rule); border-top:5px solid var(--bright);
+  border-radius:10px; overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;}
+.u2l07-tile img{display:block; width:100%; height:20vh; object-fit:cover; background:var(--surface-2);}
+.u2l07-tile img.fit{object-fit:contain;}
+.u2l07-tile figcaption{padding:.4em .7em .55em; display:flex; flex-direction:column; gap:.12em;
+  font-size:calc(var(--fs-body)*.76); line-height:1.32;}
+.u2l07-tile b{font-family:var(--disp); font-size:1.14em; color:var(--deep);}
+.u2l07-tile .ph{height:20vh; display:grid; place-items:center; text-align:center; padding:0 1em; background:var(--tint);
+  color:var(--ink); font-family:var(--serif); font-style:italic; font-size:calc(var(--fs-body)*.86);}
+
+/* think-aloud rows and model answers */
+.u2l07-model{margin-top:.3em; padding:.35em .8em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 8px 8px 0; font-size:calc(var(--fs-body)*.86); line-height:1.4;}
+.u2l07-step .qprompt{margin:0;}
+
+/* can say / cannot say */
+.u2l07-cc{display:grid; grid-template-columns:1fr 1fr; gap:clamp(8px,1vw,14px);}
+.u2l07-cc > div{border-radius:10px; padding:.45em .8em; border:1px solid var(--rule); background:var(--surface);}
+.u2l07-cc .k{font-weight:700; font-family:var(--ui); font-size:var(--fs-eyebrow); letter-spacing:.06em; text-transform:uppercase;}
+.u2l07-cc .can{border-left:5px solid var(--c-evidence);} .u2l07-cc .can .k{color:var(--c-evidence);}
+.u2l07-cc .cant{border-left:5px solid var(--c-counter);} .u2l07-cc .cant .k{color:var(--c-counter);}
+.u2l07-cc p{margin:.2em 0 0; font-size:calc(var(--fs-body)*.84); line-height:1.38;}
+
+/* the class T-chart */
+.u2l07-tchart th:nth-child(1){background:var(--c-evidence); color:#fff;}
+.u2l07-tchart th:nth-child(2){background:var(--c-counter); color:#fff;}
+.u2l07-tchart td{width:50%;}
+
+/* 'What survives?' sort cards */
+.u2l07-cards{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:clamp(8px,1vw,14px);}
+.u2l07-card{position:relative; margin:0; background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:.55em .7em .6em 2.5em; box-shadow:var(--shadow); font-size:calc(var(--fs-body)*.8); line-height:1.32; min-height:4.6em;}
+.u2l07-card .l{position:absolute; top:.55em; left:.6em; width:1.5em; height:1.5em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.9em;}
+.u2l07-card b{display:block; color:var(--deep); font-size:1.04em;}
+.u2l07-howto{display:flex; flex-wrap:wrap; gap:.4em 1.4em; font-size:calc(var(--fs-body)*.82);}
+.u2l07-howto b{display:inline-grid; place-items:center; width:1.5em; height:1.5em; border-radius:50%; background:var(--solid);
+  color:#fff; font-size:.85em; margin-right:.3em;}
+.u2l07-key td:first-child{font-weight:700;}
+.u2l07-key td.u2l07-pile{white-space:nowrap; font-weight:700;}
+.u2l07-key .well{color:var(--c-evidence);} .u2l07-key .frag{color:var(--c-judgement);} .u2l07-key .gone{color:var(--c-counter);}
+
+/* the gesture vote: the claim and the two pictures */
+.u2l07-claim{font-family:var(--disp); font-weight:700; font-size:calc(var(--fs-body)*1.12); line-height:1.3;}
+.u2l07-vote{display:flex; flex-direction:column; gap:clamp(8px,1.2vh,14px);}
+.u2l07-vote .opts{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1vw,14px);}
+.u2l07-vote .opts li{font-size:calc(var(--fs-body)*.9); line-height:1.34;}
+.u2l07-vote .note .body{max-width:none;}
+
+/* the language bank on the writing slide: a label, then the phrases */
+.bank .u2l07-banklab{border:0; background:none; padding-left:0; font-weight:700; color:var(--deep);}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u2l07-pair, .u2l07-cc{grid-template-columns:1fr;}
+  .u2l07-tiles{grid-template-columns:1fr;}
+  .u2l07-vote .opts{grid-template-columns:1fr;}
+  .u2l07-cards{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .u2l07-pic img, .u2l07-tile img{height:auto; max-height:60vh; aspect-ratio:auto;}
+  .u2l07-tile .ph{height:auto; min-height:6em;}
+  .u2l07-plan{grid-template-columns:1fr 1.4fr 1fr;}
+}
+@media (max-width:340px){
+  .u2l07-cards{grid-template-columns:1fr;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u2l07-dense{gap:10px;}
+  html:not(.read) .u2l07-dense h2{font-size:calc(var(--fs-h2)*.84);}
+  html:not(.read) .u2l07-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.4;}
+  html:not(.read) .u2l07-dense .quote{font-size:calc(var(--fs-body)*.86);}
+  html:not(.read) .u2l07-dense .src{padding:9px 15px;}
+  html:not(.read) .u2l07-dense .src .prov{margin-top:.35em; font-size:calc(var(--fs-chrome)*.92);}
+  html:not(.read) .u2l07-dense .note{padding:.4em .8em;}
+  html:not(.read) .u2l07-dense .note .body, html:not(.read) .u2l07-dense .card .body,
+  html:not(.read) .u2l07-dense .qprompt{font-size:calc(var(--fs-body)*.78); line-height:1.34;}
+  html:not(.read) .u2l07-dense .card{padding:9px 15px;}
+  html:not(.read) .u2l07-dense .tbl.compact{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u2l07-dense .tbl.compact td{padding:.3em .55em;}
+  html:not(.read) .u2l07-dense .tbl th{padding:.38em .6em;}
+  html:not(.read) .u2l07-dense .figure img{max-height:30vh;}
+  html:not(.read) .u2l07-dense .u2l07-model{font-size:calc(var(--fs-body)*.74); padding:.28em .7em;}
+  html:not(.read) .u2l07-dense .keylist li{font-size:calc(var(--fs-body)*.84);}
+  html:not(.read) .u2l07-dense .keylist .d{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l07-dense .u2l07-plan .door, html:not(.read) .u2l07-dense .u2l07-plan .hall{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u2l07-dense .u2l07-plan .hall{min-height:7em;}
+  html:not(.read) .u2l07-dense .u2l07-tile figcaption{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u2l07-dense .u2l07-tile img, html:not(.read) .u2l07-dense .u2l07-tile .ph{height:25vh;}
+  html:not(.read) .u2l07-dense .u2l07-cc p{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l07-dense .u2l07-cc > div{padding:.35em .7em;}
+  html:not(.read) .u2l07-dense .u2l07-card{font-size:calc(var(--fs-body)*.72); min-height:3.8em;}
+  html:not(.read) .u2l07-dense .u2l07-howto{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l07-dense .bank span{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u2l07-dense .opts li{padding:.32em .7em;}
+  html:not(.read) .u2l07-dense .u2l07-vote .opts li{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u2l07-dense .u2l07-claim{font-size:calc(var(--fs-body)*.98);}
+  html:not(.read) .u2l07-dense .tf li, html:not(.read) .u2l07-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l07-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u2l07-dense .prac{gap:6px;}
+  html:not(.read) .u2l07-dense .cornell .cq, html:not(.read) .u2l07-dense .cornell .nts{font-size:calc(var(--fs-body)*.76); padding:.35em .8em;}
+  html:not(.read) .u2l07-dense .u2l07-cite .small, html:not(.read) .u2l07-dense .u2l07-cite .credits{font-size:calc(var(--fs-chrome)*.86); line-height:1.36;}
+  html:not(.read) .u2l07-dense .u2l07-cite p{margin:.15em 0 .3em;}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 7" data-title="Throne Hall, wall reliefs and glazed brick: what survives?" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.1fr .9fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 2 · Persepolis · Lesson 7</p>
+      <h1>Throne Hall, wall reliefs and glazed brick: what survives?</h1>
+      <p class="lead">The stone has lasted 2,500 years. What has gone, and how much can the ruins still tell us about how Persepolis looked?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <figure class="figure tall contain"><img src="images/u2l07-hall-of-a-hundred-columns-today.jpg" alt="Inside the Hall of a Hundred Columns (the Throne Hall) at Persepolis today: broken column bases on the floor of the hall, and its stone doorway frames behind (one under modern scaffolding)" loading="lazy"><figcaption>Inside the Hall of a Hundred Columns (the Throne Hall) at Persepolis today: broken column bases on the floor of the hall, and its stone doorway frames behind (one under modern scaffolding) — <span class="cr">Photo: Carole Raddato · CC BY-SA 2.0</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="Review: Unit 1 and Lessons 1–6" data-kind="intro practice">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <h2>Six questions from Unit 1 and Lessons 1–6</h2>
+  <ol class="rq" data-answers>
+    <li>Name one scientific dating method and one limit of it.
+      <span class="sol reveal">Radiocarbon dating: it dates only once-living (organic) material such as wood, charcoal or bone, back to about 50,000 years, and gives a range that must be calibrated.</span></li>
+    <li>Who was Gaumata, according to Darius, and why do some historians doubt the story?
+      <span class="sol reveal">A Magian who, Darius says, posed as Cyrus’s son Bardiya. Our main account is Darius’s own Behistun inscription, carved for the man who gained most from the story, and some historians think Darius overthrew the real Bardiya.</span></li>
+    <li>What does Darius claim in his terrace inscription DPf, and what is it reliable for?
+      <span class="sol reveal">That he built a palace on this terrace, “on a place where no palace had been built before”, by the grace of Ahuramazda. Strong evidence of how Darius wanted the terrace to be seen; weak evidence of why he chose the site.</span></li>
+    <li>What did Herzfeld’s expedition find in 1933?
+      <span class="sol reveal">The gold and silver foundation tablets of the Apadana (found by his architect Krefter), and the Fortification Tablets: tens of thousands of clay tablets and fragments in the fortification wall.</span></li>
+    <li>Name three zones of the terrace, with one building in each.
+      <span class="sol reveal">Ceremonial and audience halls in the north (the Apadana); royal residences in the south (the Tachara); storage and administration in the south-east (the Treasury).</span></li>
+    <li>What does DPh list, and who was it written for?
+      <span class="sol reveal">The extent of Darius’s kingdom, “from the Sacae who are beyond Sogdia to Kush, and from Sind to Lydia”. Buried in the Apadana’s foundations, it was addressed to the gods and to future kings, not to visitors.</span></li>
+  </ol>
+  <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>analyse the Throne Hall reliefs and glazed brick as sources</li>
+        <li>explain how gaps in the evidence limit what we know about Persepolis</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>describe the Throne Hall reliefs and what they show about kingship</li>
+        <li>explain why so little glazed brick and paint survives, and what that means</li>
+        <li>write a value-and-limitations paragraph about surviving evidence</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u2l07-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-08 uses sources to form conclusions about the past · AH-LS-10 compares representations of the past.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U2 L7 · What survives?</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; km = kilometres)</span></div></div>
+      <div class="row"><div class="cq">Describe the throne-bearer relief.</div><div class="nts">king on throne · raised up by rows of …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: the Throne Hall reliefs · the glazed-brick puzzle.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for reliefs, bricks and what survives</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>From the unit list</th><th>Meaning</th></tr>
+      <tr><td>relief</td><td>A carving that stands out from a flat stone background.</td></tr>
+      <tr><td>polychromy</td><td>The use of many colours, as on the originally painted reliefs.</td></tr>
+      <tr><td>glazed brick</td><td>Brick coated with a coloured, glass-like finish; panels of it formed pictures on walls.</td></tr>
+      <tr><td>hypostyle hall</td><td>A hall whose roof is held up by many columns.</td></tr>
+      <tr><td>reconstruction</td><td>A modern rebuilding or picture of how something looked — evidence of what its maker imagined, not direct evidence of the past.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Added for this lesson</th><th>Meaning</th></tr>
+      <tr><td>Hall of a Hundred Columns</td><td>Also called the Throne Hall: the second-largest hall on the terrace, its roof held up by ten rows of ten columns.</td></tr>
+      <tr><td>throne-bearers</td><td>Small carved figures, in the dress of the empire’s different peoples, shown holding up the king’s throne.</td></tr>
+      <tr><td>royal hero</td><td>A relief figure of the king, or a Persian hero, killing a lion, a bull or a monster.</td></tr>
+      <tr><td>frieze</td><td>A long band of decoration along a wall.</td></tr>
+      <tr><td>cloisonné</td><td>A pattern made of small areas of coloured glaze, kept apart by thin lines of thick glaze.</td></tr>
+      <tr><td>mudbrick</td><td>Brick made of clay and dried in the sun, not fired in a kiln.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The Throne Hall" data-title="The Hall of a Hundred Columns" data-kind="notes">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow">1 · The Throne Hall · I do</p>
+  <h2>The Hall of a Hundred Columns: a forest of columns, eight carved doorways</h2>
+  <div class="split" style="--cols:1fr 1.05fr; align-items:start">
+    <div class="u2l07-plan" aria-label="A plan of the hall, north at the top, showing what the reliefs on each pair of doorways show">
+      <div class="door n reveal"><b>North doorways (2)</b>the king enthroned, receiving an official, above five rows of guards</div>
+      <div class="door w reveal"><b>West (2)</b>the royal hero kills a lion or a monster</div>
+      <div class="hall"><span>100 columns<br>10 rows × 10</span></div>
+      <div class="door e reveal"><b>East (2)</b>the royal hero kills a bull or a monster</div>
+      <div class="door s reveal"><b>South doorways (2)</b>the king enthroned, his throne held up by the peoples of the empire</div>
+      <p class="compass">N ↑ · plan not to scale</p>
+    </div>
+    <ol class="keylist">
+      <li><span class="num">1</span><span class="t">Begun by Xerxes, finished by his son</span><span class="d">An inscription of Artaxerxes I found in the hall says his father Xerxes laid the foundations and he completed it: the 5th century BCE.</span></li>
+      <li><span class="num">2</span><span class="t">Huge, and full of columns</span><span class="d">About 68.5 m square; ten rows of ten stone columns, each nearly 14 m high, under a roof of cedar beams.</span></li>
+      <li><span class="num">3</span><span class="t">Eight stone doorways, all carved</span><span class="d">The main entrance was on the north, through a portico; every doorway had carved reliefs: the plan shows what each pair shows.</span></li>
+      <li><span class="num">4</span><span class="t">What is left</span><span class="d">The stone: column bases, door and window frames, the reliefs. Charred cedar beams show that the hall burned.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The Throne Hall" data-title="Think aloud: the throne-bearer relief" data-kind="notes">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow">1 · The Throne Hall · I do — think aloud · a southern doorway relief</p>
+  <h2>The king carried by his peoples: what does it show, why, and what can it not tell us?</h2>
+  <div class="split" style="--cols:1fr 1.08fr; align-items:start">
+    <div class="stack">
+      <div class="u2l07-pair" style="--pc:1.25fr 1fr; --ph:34vh">
+        <figure class="u2l07-pic"><img src="images/u2l07-throne-scene-southern-doorway.jpg" alt="A carved stone relief: a bearded king seated on a tall-backed throne, holding a staff, with an attendant standing behind him"><span class="tag">top: the king</span></figure>
+        <figure class="u2l07-pic"><img src="images/u2l07-throne-bearers.jpg" alt="A carved stone relief: three small figures in different clothing standing side by side with both arms raised above their heads"><span class="tag">below: the bearers</span></figure>
+      </div>
+      <div class="src">
+        <div class="k">Source · Darius I, tomb inscription (DNa), Naqsh-e Rustam</div>
+        <p class="quote sm">… look at the sculptures <span class="ed">[of those]</span> who bear the throne, then shall you know, then shall it become known to you: the spear of a Persian man has gone forth far …</p>
+        <p class="prov">Darius I (king 522–486 BCE), carved on his rock-cut tomb, whose façade also shows throne-bearers · translation as published by Livius.org</p>
+      </div>
+    </div>
+    <div class="stack veil-parts" data-veil="Think first — then show the worked example">
+      <div class="u2l07-step"><p class="qprompt">What does it show?</p>
+        <p class="u2l07-model vp reveal">The king sits on a throne under a canopy, an attendant behind him. Below, rows of small figures in the dress of different peoples raise their arms and hold up the throne’s platform: the peoples of the empire carry the king.</p></div>
+      <div class="u2l07-step"><p class="qprompt">Who made it, and why?</p>
+        <p class="u2l07-model vp reveal">The king’s sculptors, on the southern doorways of his great hall, which led to narrow rooms behind it (the main entrance was on the north, so we do not know exactly who saw them). It presents his rule as resting on all his subject peoples, orderly and willing. Darius used the same image on his tomb to show how far Persian power reached.</p></div>
+      <div class="u2l07-step"><p class="qprompt">What can it not tell us?</p>
+        <p class="u2l07-model vp reveal">How the subject peoples really felt; any real event or ceremony; for certain which king it is (probably Artaxerxes I, who finished the hall); its original colours and metal fittings, which are gone.</p></div>
+      <div class="note vp reveal" data-code="judgement"><div class="k">Reliable for what?</div><p class="body">Strong evidence of how the king wanted his rule to be seen. Weak evidence of how his subjects saw it.</p></div>
+    </div>
+  </div>
+  <p class="small credline">Images: Carole Raddato (CC BY-SA 2.0) · Jona Lendering (CC0 1.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The Throne Hall" data-title="Other reliefs, and traces of paint" data-kind="notes">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow">1 · The Throne Hall · I do → cold call</p>
+  <h2>Heroes, servants and guards, and the paint that has almost gone</h2>
+  <div class="u2l07-tiles">
+    <figure class="u2l07-tile"><img class="fit" src="images/u2l07-royal-hero-relief.jpg" alt="A carved stone doorway relief: a tall crowned figure grips a winged creature with a bird’s head and stabs it"><figcaption><b>The royal hero</b><span>east and west doorways: the king, or a Persian hero, kills a lion, a bull or a monster</span></figcaption></figure>
+    <figure class="u2l07-tile"><img class="fit" src="images/u2l07-servants-relief-met.jpg" alt="A grey stone relief fragment of two men in long robes walking in single file, carrying a covered dish and a vessel"><figcaption><b>Servants and guards</b><span>servants carry food, drink and animals up the stairways; guards line walls and doorways (this relief: about 358–338 BCE)</span></figcaption></figure>
+    <figure class="u2l07-tile"><img class="fit" src="images/u2l07-winged-figure-relief-fragment-harvard.jpg" alt="A pale stone relief fragment of a bearded figure rising from a ring, with feathered wings below"><figcaption><b>Traces of paint</b><span>from above the throne scene on a southern doorway of this hall: limestone with traces of blue, green and red paint (Harvard)</span></figcaption></figure>
+  </div>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="src">
+      <div class="k">Source · Ernst Herzfeld, the excavator, quoted in Encyclopaedia Iranica</div>
+      <p class="small"><b>1932</b>, uncovering the Apadana’s eastern stairway, he found traces of pigment:</p>
+      <p class="quote sm">… everywhere at the sculptures which had been buried under the soil.</p>
+      <p class="small"><b>1941</b>, on the sculptures of Persepolis:</p>
+      <p class="quote sm">… were conceived in colour and intended to be painted.</p>
+      <p class="prov">As quoted by A. Shapur Shahbazi, ‘Persepolis’, <i>Encyclopaedia Iranica</i> (2009), who adds that the paint Herzfeld saw in 1932 vanished soon after it was dug up</p>
+    </div>
+    <div class="stack veil-parts" data-veil="Answer first — then show a model answer">
+      <p class="qprompt">The reliefs were painted. What does the grey stone hide from us today?</p>
+      <div class="note vp reveal" data-code="analysis"><p class="body">The colours, and the fittings of precious metal and stone once fixed to some figures (on one relief, the king’s crown, beard and arms), which were looted. We see the carving, not the finished picture an ancient visitor saw.</p></div>
+    </div>
+  </div>
+  <p class="small credline">Images: Jona Lendering (CC0 1.0) · The Met (CC0 1.0) · Daderot (CC0 1.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The Throne Hall" data-title="Notes 1 — The Throne Hall reliefs" data-kind="notes">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>The Throne Hall reliefs</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L7 · What survives?</b></span><span>1 · The Throne Hall</span></div>
+    <div class="row"><div class="cq">Describe the Hall of a Hundred Columns.</div>
+      <div class="nts reveal">begun by Xerxes, finished by Artaxerxes I (5th c. BCE) <span class="sep">·</span> c. 68.5 m square <span class="sep">·</span> 10 × 10 columns, cedar roof <span class="sep">·</span> 8 carved stone doorways</div></div>
+    <div class="row"><div class="cq">Describe the throne-bearer relief.</div>
+      <div class="nts reveal">south doorways <span class="sep">·</span> king on throne, canopy, attendant <span class="sep">·</span> rows of bearers in the dress of different peoples hold up the platform</div></div>
+    <div class="row"><div class="cq">Explain what it shows about kingship.</div>
+      <div class="nts reveal">king raised up by the whole empire, orderly and willing <span class="sep">·</span> Darius’s tomb (DNa): “look at the sculptures <span class="ed">[of those]</span> who bear the throne” → reliable for royal ideology, not for how the peoples felt</div></div>
+    <div class="row"><div class="cq">Name the other relief types.</div>
+      <div class="nts reveal">royal hero vs lion, bull, monster (E, W doorways) <span class="sep">·</span> audience scene + guards (N) <span class="sep">·</span> servants with food, animals <span class="sep">·</span> guards</div></div>
+    <div class="row"><div class="cq">What shows the reliefs were painted?</div>
+      <div class="nts reveal">traces of blue, green, red (fragment from this hall, Harvard) <span class="sep">·</span> Herzfeld 1932: pigment on the Apadana sculptures → vanished soon after</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The glazed-brick puzzle" data-title="Piece 1: Susa" data-kind="notes">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow">2 · The glazed-brick puzzle · We do — piece 1 of 3</p>
+  <h2>Piece 1: brilliant glazed-brick panels, but from Susa</h2>
+  <div class="split" style="--cols:1fr 1.1fr; align-items:start">
+    <div class="u2l07-pair" style="--pc:.8fr 1.2fr; --ph:50vh">
+      <figure class="u2l07-pic"><img src="images/u2l07-susa-archers-glazed-brick.jpg" alt="Two striding guards in long patterned robes, made of coloured glazed bricks, carrying spears, bows and quivers"><span class="tag">guards</span></figure>
+      <figure class="u2l07-pic"><img class="u2l07-left" src="images/u2l07-susa-griffin-glazed-brick.jpg" alt="A winged lion-like creature with horns, made of moulded, glazed bricks in pale green, yellow and brown"><span class="tag">griffin</span></figure>
+    </div>
+    <div class="stack">
+      <ul class="keylist">
+        <li><span class="num">1</span><span class="t">Where and when</span><span class="d">The palace of Darius I at Susa, built about 510 BCE: about 500 km west-north-west of Persepolis.</span></li>
+        <li><span class="num">2</span><span class="t">What</span><span class="d">Moulded, coloured, glazed bricks set together to make pictures: guards, lions, winged bulls and griffins. Now in the Louvre, Paris, and in Iran.</span></li>
+      </ul>
+      <div class="src">
+        <div class="k">Source · O. W. Muscarella, on the Susa bricks</div>
+        <p class="quote sm">… many were recovered outside the palaces, and even in post Achaemenid levels, all reused. Hence it is not possible to reconstruct their original positions, contexts and juxtapositions.</p>
+        <p class="prov">‘Achaemenid glazed brick decoration’, <i>Encyclopaedia Iranica</i> (2017)</p>
+      </div>
+      <div class="u2l07-cc veil-parts" data-veil="Decide first — then show what we can and cannot say">
+        <div class="can"><span class="k">We can say</span><p class="vp reveal">Darius’s builders could make, and chose to use, colourful glazed-brick friezes of guards and beasts.</p></div>
+        <div class="cant"><span class="k">We cannot say</span><p class="vp reveal">That Persepolis had the same: Susa is another city, and even there most panels’ original places are unknown.</p></div>
+      </div>
+    </div>
+  </div>
+  <p class="small credline">Images: Jebulon (Public domain) · Carole Raddato (CC BY-SA 2.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The glazed-brick puzzle" data-title="Piece 2: Persepolis" data-kind="notes">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow">2 · The glazed-brick puzzle · We do — piece 2 of 3</p>
+  <h2>Piece 2: what glazed brick has been found at Persepolis itself?</h2>
+  <div class="split" style="--cols:1.15fr .85fr; align-items:start">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · O. W. Muscarella, archaeologist</div>
+        <p class="quote">The only examples of glazed bricks from Persepolis consisted of a frieze of cloisonné palmettes, and two bricks with circular bands.</p>
+        <p class="prov">‘Achaemenid glazed brick decoration’, <i>Encyclopaedia Iranica</i> (2017)</p>
+      </div>
+      <ul class="keylist">
+        <li><span class="num">+</span><span class="t">And their find-spots?</span><span class="d">Six glazed-brick fragments from Herzfeld’s digs at Persepolis are in a museum in Washington, DC. Exactly where on the site they were found can no longer be worked out.</span></li>
+      </ul>
+      <div class="u2l07-cc veil-parts" data-veil="Decide first — then show what we can and cannot say">
+        <div class="can"><span class="k">We can say</span><p class="vp reveal">Glazed brick was used at Persepolis: fragments of a palmette frieze and a few banded bricks survive.</p></div>
+        <div class="cant"><span class="k">We cannot say</span><p class="vp reveal">Whether glazed-brick pictures of guards or beasts ever lined its walls, or where the frieze was: too little survives.</p></div>
+      </div>
+    </div>
+    <figure class="u2l07-pic" style="--ph:44vh"><img class="fit" src="images/u2l07-palmette-glazed-bricks-met.jpg" alt="Three stacked glazed bricks with a fan-shaped palmette in cream, yellow and green outlined in raised lines"><span class="tag">a palmette pattern</span><figcaption><b>Not from Persepolis:</b> Three glazed bricks with a palmette pattern, from Susa, about 6th–4th century BCE (Metropolitan Museum of Art, 48.98.20a–c) — <span class="cr">The Metropolitan Museum of Art, Rogers Fund, 1948 · CC0 1.0</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The glazed-brick puzzle" data-title="Piece 3: Tol-e Ajori" data-kind="notes">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow">2 · The glazed-brick puzzle · We do — piece 3 of 3</p>
+  <h2>Piece 3: a glazed-brick gate just outside Persepolis</h2>
+  <div class="split" style="--cols:.95fr 1.05fr; align-items:start">
+    <figure class="u2l07-pic" style="--ph:40vh"><img src="images/u2l07-ishtar-gate-bulls-and-dragons.jpg" alt="A tall wall of deep blue glazed bricks with rows of yellow-brown bulls and white dragon-like creatures"><span class="tag">for comparison: Babylon</span><figcaption>Bulls and mušḫuššu dragons in moulded, glazed brick on the Ishtar Gate of Babylon (6th century BCE), as rebuilt in the Pergamon Museum, Berlin — <span class="cr">Photo: Osama Shukir Muhammed Amin · CC BY-SA 4.0</span></figcaption></figure>
+    <div class="stack">
+      <ul class="keylist">
+        <li><span class="num">1</span><span class="t">Tol-e Ajori</span><span class="d">About 3.5 km west of the terrace; dug from 2011 to 2023 by an Iranian–Italian team (Alireza Askari Chaverdi and Pierfrancesco Callieri).</span></li>
+        <li><span class="num">2</span><span class="t">A gate, probably older than the terrace</span><span class="d">A huge gate of mudbrick and brick. Its excavators date it before the terrace, to Cyrus or Cambyses.</span></li>
+      </ul>
+      <div class="src">
+        <div class="k">Source · the excavators, 2025</div>
+        <p class="quote sm">Numerous glazed bricks recovered from the debris of the building indicate that the wall surfaces were entirely adorned with depictions of mythological animals such as the bull and the composite Mušḫuššu creature.</p>
+        <p class="prov">A. Askari Chaverdi and P. Callieri, <i>Journal of Archaeological Studies</i> (University of Tehran, 2025) · the mušḫuššu is a dragon, the emblem of the Babylonian god Marduk · photos: <span class="u2l07-link"><a href="https://irangazetteer.ucla.edu/catalogue/tol-e-ajori">UCLA Iran Gazetteer</a></span></p>
+      </div>
+      <div class="u2l07-cc veil-parts" data-veil="Decide first — then show what we can and cannot say">
+        <div class="can"><span class="k">We can say</span><p class="vp reveal">Glazed-brick bulls and dragons, like Babylon’s, decorated a gate just outside Persepolis, probably before the terrace.</p></div>
+        <div class="cant"><span class="k">We cannot say</span><p class="vp reveal">That the terrace’s own buildings looked like this: it is a separate, probably earlier, building.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The glazed-brick puzzle" data-title="We do: the class T-chart" data-kind="notes">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow">2 · The glazed-brick puzzle · We do — build the T-chart · cold call before each row</p>
+  <h2>How did Persepolis look? What we can say, and what we cannot</h2>
+  <div class="stack" data-veil="Build your T-chart first — then show the class version">
+  <div class="tbl-scroll"><table class="tbl compact u2l07-tchart">
+    <tr><th>What we can say</th><th>What we cannot say</th></tr>
+    <tr class="reveal"><td>The stone survives: column bases, doorways, stairways, reliefs. They show the plan and the carved images.</td><td>How the roofs, upper walls and rooms looked: the cedar beams burned and the mudbrick walls are mostly gone.</td></tr>
+    <tr class="reveal"><td>The reliefs were painted: traces of blue, green and red survive.</td><td>The full colour scheme of any one relief: most paint is lost, some soon after it was dug up.</td></tr>
+    <tr class="reveal"><td>Glazed brick was used at Persepolis: fragments of a palmette frieze and a few banded bricks.</td><td>Whether glazed-brick pictures lined its walls, or where: too little survives.</td></tr>
+    <tr class="reveal"><td>Darius’s builders made brilliant glazed-brick friezes at Susa.</td><td>That Persepolis had the same: Susa is about 500 km away, and most of its panels’ places are unknown.</td></tr>
+    <tr class="reveal"><td>A glazed-brick gate with bulls and dragons stood about 3.5 km away.</td><td>That the terrace looked like it: it is a separate, probably earlier, building.</td></tr>
+  </table></div>
+  <div class="note reveal" data-code="judgement"><p class="body"><b>So:</b> what survives is the stone skeleton of Persepolis, so the grey ruin is a misleading picture of it. Any picture of the city in colour has to fill large gaps, often with evidence from other sites.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The glazed-brick puzzle" data-title="Notes 2 — The glazed-brick puzzle" data-kind="notes">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>The glazed-brick puzzle</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L7 · What survives?</b></span><span>2 · The glazed-brick puzzle</span></div>
+    <div class="row"><div class="cq">What glazed brick survives at Persepolis?</div>
+      <div class="nts reveal">fragments only: “a frieze of cloisonné palmettes, and two bricks with circular bands” (Muscarella) <span class="sep">·</span> some find-spots now lost</div></div>
+    <div class="row"><div class="cq">What survives from Susa?</div>
+      <div class="nts reveal">palace of Darius I, c. 510 BCE <span class="sep">·</span> glazed-brick guards, lions, griffins (Louvre) <span class="sep">·</span> rejoined from scattered bricks → original places mostly unknown</div></div>
+    <div class="row"><div class="cq">What was found at Tol-e Ajori?</div>
+      <div class="nts reveal">c. 3.5 km W <span class="sep">·</span> dug 2011–2023 <span class="sep">·</span> glazed-brick gate: bulls + mušḫuššu dragons, like Babylon’s Ishtar Gate <span class="sep">·</span> probably before the terrace</div></div>
+    <div class="row"><div class="cq">Assess using Susa and Tol-e Ajori to fill the gaps at Persepolis.</div>
+      <div class="nts reveal">show what Achaemenid builders could make → not proof of what Persepolis had <span class="sep">·</span> other sites, other dates</div></div>
+    <div class="row"><div class="cq">Which piece is the strongest evidence for Persepolis itself, and why?</div>
+      <div class="nts reveal">piece 2, the Persepolis fragments → few, but from the site itself <span class="sep">·</span> Susa and Tol-e Ajori are other buildings</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · What survives?" data-title="You do: the What survives? sort">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow">3 · What survives? · You do — sort in pairs · 6 minutes · press K for the timer</p>
+  <h2>Sort the eight cards: what is left of Persepolis, and why?</h2>
+  <div class="u2l07-cards">
+    <div class="u2l07-card"><span class="l">A</span><b>Stone columns and doorways</b>bases, door and window frames, some whole columns</div>
+    <div class="u2l07-card"><span class="l">B</span><b>Carved reliefs</b>on doorways and stairways</div>
+    <div class="u2l07-card"><span class="l">C</span><b>Mudbrick walls</b>thick walls of sun-dried clay</div>
+    <div class="u2l07-card"><span class="l">D</span><b>Cedar roof beams</b>timber brought from far away</div>
+    <div class="u2l07-card"><span class="l">E</span><b>Cloth</b>curtains, hangings, cushions</div>
+    <div class="u2l07-card"><span class="l">F</span><b>Paint on the reliefs</b>blue, green, red and more</div>
+    <div class="u2l07-card"><span class="l">G</span><b>Glazed bricks</b>coloured, glass-like brick</div>
+    <div class="u2l07-card"><span class="l">H</span><b>Precious-metal fittings</b>once fixed to some figures’ crowns, beards and arms</div>
+  </div>
+  <p class="u2l07-howto"><span><b>1</b>Survives well</span><span><b>2</b>Survives only in fragments or traces</span><span><b>3</b>Almost all gone</span><span><b>?</b>For each: <i>why</i>? What destroyed it, or what saved it?</span></p>
+  <div class="bank" aria-label="Word bank"><span>stone</span><span>fired clay</span><span>sun-dried clay</span><span>wood</span><span>cloth</span><span>metal</span><span>burned</span><span>looted</span><span>weathered</span><span>excavated</span></div>
+  <div class="cols c3">
+    <div class="card accent sm"><div class="k">Everyone</div><p class="body">Sort all eight into the three piles, and write one reason for each pile.</p></div>
+    <div class="card quiet sm"><div class="k">Support</div><p class="body">Start with: Was it ever alive (wood, cloth)? Was it burned, looted, or left out in the weather?</p></div>
+    <div class="card quiet sm"><div class="k">Extension</div><p class="body">Which pile would an ancient visitor have noticed most? What does that tell you about the ruins we see?</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · What survives?" data-title="Check the sort: what survives?" data-kind="notes">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow">3 · What survives? · check your sort · cold call a pair before each row</p>
+  <h2>What survives at Persepolis, what is lost, and why</h2>
+  <div class="stack" data-veil="Sort first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u2l07-key">
+    <tr><th>Cards</th><th>Pile</th><th>Why</th></tr>
+    <tr class="reveal"><td>A · stone columns and doorways<br>B · carved reliefs</td><td class="u2l07-pile well">survive well</td><td>stone does not burn or rot (though the fire discoloured some); but the reliefs are broken, weathered or damaged, and some pieces were taken away to museums (Harvard, the Met)</td></tr>
+    <tr class="reveal"><td>D · cedar roof beams<br>F · paint<br>G · glazed bricks</td><td class="u2l07-pile frag">fragments or traces</td><td>the roofs burned (charred beams were found); paint survives only in traces, and some vanished soon after digging; glazed brick only as fragments, some with their find-spots lost</td></tr>
+    <tr class="reveal"><td>E · cloth<br>H · precious-metal fittings</td><td class="u2l07-pile gone">almost all gone</td><td>cloth burns and rots; the precious-metal fittings were stripped off when the city was looted</td></tr>
+    <tr class="reveal"><td>C · mudbrick walls</td><td class="u2l07-pile frag">tricky: fragments, or almost all gone</td><td>it depends on your reason: the upper walls are gone, but low walls survive in places (at the Treasury the excavators even cut them down to “a standard low level”)</td></tr>
+  </table></div>
+  <div class="note reveal" data-code="judgement"><p class="body"><b>So:</b> fire, looting, weather and even excavators decided what survives. We see the hardest materials, not the whole building. A gap in the evidence is not proof that something never existed.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · What survives?" data-title="You do: the value-and-limitations paragraph">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow">3 · What survives? · You do · 12 minutes · press K for the timer</p>
+  <h2>Paragraph: how useful are the reliefs and glazed brick?</h2>
+  <div class="split" style="--cols:1.1fr 1.1fr">
+    <div class="stack">
+      <div class="card accent sm"><div class="k">Everyone · 5–7 sentences</div>
+        <p class="body"><b class="nq">‘How useful are the surviving reliefs and glazed brick for understanding how Persepolis looked in the Achaemenid period?’</b></p>
+        <ul class="body"><li>value: what the reliefs and bricks <i>can</i> show, with evidence</li><li>limitations: what is lost, and why</li><li>end with a judgement: useful for what, and not for what?</li></ul></div>
+      <div class="bank" aria-label="Language to use"><span class="u2l07-banklab">Language to use</span><span class="nq">Surviving only as fragments, …</span><span class="nq">the loss of the painted surfaces</span><span class="nq">the destruction of the cedar roofs</span><span class="nq">the absence of glazed-brick panels</span></div>
+      <div class="cols c2">
+        <div class="card quiet sm"><div class="k">Support</div><p class="body">Use your T-chart and the starters: <span class="nq">“The reliefs are useful because …” · “However, they are limited because …” · “Overall, they are most useful for …”</span></p></div>
+        <div class="card quiet sm"><div class="k">Extension</div><p class="body">Can evidence from Susa or Tol-e Ajori fairly fill the gaps at Persepolis? What are the risks of using one site to reconstruct another?</p></div>
+      </div>
+    </div>
+    <div class="src reveal" data-veil="Write yours first — then show a model paragraph">
+      <div class="k">A model paragraph · written for this lesson</div>
+      <p class="quote sm model">The surviving reliefs and glazed brick are useful but limited evidence for how Persepolis looked in the Achaemenid period. Carved in stone, the reliefs survive in large numbers: on the southern doorways of the Hall of a Hundred Columns, for example, the king sits enthroned above rows of throne-bearers in the dress of the empire’s peoples. Their value, however, is limited by the loss of the painted surfaces. Traces of blue, green and red paint on a fragment from the same hall, and the pigment Herzfeld saw on the Apadana’s sculptures in 1932, show that the reliefs were once coloured, but most of the paint has gone, so the grey stone we see is not what an ancient visitor saw. Surviving only as fragments, the glazed brick from Persepolis is even less useful: Muscarella records only “a frieze of cloisonné palmettes, and two bricks with circular bands”, so we cannot tell whether glazed pictures lined its walls. The friezes from Susa and the gate at Tol-e Ajori suggest what Achaemenid builders could make, but they belong to other buildings, and the destruction of the cedar roofs leaves the setting of the reliefs uncertain. On balance, the surviving evidence is most useful for the carved stone decoration and much less useful for the colour and overall appearance of the buildings, which any reconstruction must partly imagine.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Gesture vote: the colour reconstruction" data-kind="practice">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow">Check for understanding · gesture vote · thumbs on <span class="nq">“3, 2, 1, show”</span></p>
+  <p class="u2l07-claim nq">“The colour reconstruction shows what Persepolis really looked like.”</p>
+  <div class="u2l07-pair" style="--pc:1fr 1.25fr; --ph:28vh">
+    <figure class="u2l07-pic"><img src="images/u2l07-hall-of-a-hundred-columns-today.jpg" alt="Ruins today: broken grey stone column bases in grass, with stone doorway frames and hills behind"><span class="tag">the Hall of a Hundred Columns today</span></figure>
+    <figure class="u2l07-pic"><img src="images/u2l07-chipiez-1890-colour-reconstruction.jpg" alt="A brightly coloured drawing of a palace on a raised platform, with patterned walls, columns, carved stairways, palm trees and statues of animals on top"><span class="tag">a colour reconstruction, 1890</span></figure>
+  </div>
+  <div class="u2l07-vote veil-parts" data-veil="Vote first — then show the answer">
+    <ol class="opts">
+      <li><span class="n">👍</span><span>Agree: it shows how the palace really looked</span></li>
+      <li><span class="n">✋</span><span>Partly: some of it rests on real evidence</span></li>
+      <li><span class="n">👎</span><span>Disagree: most of it rests on guesswork</span></li>
+    </ol>
+    <div class="note vp reveal" data-code="judgement"><div class="k">A strong answer: disagree, or partly, with evidence (not agree)</div><p class="body">Charles Chipiez drew from the ruins (the stone doorways, column bases and stair reliefs are real), but much of the rest was borrowed or imagined: the patterned brick walls, the lions on top and the frieze of archers in the porch, which the authors say was “copied on those found at Susa in the same situation”. Yet they claimed their restoration of the front “offers, so to speak, no doubtful elements”. So a reconstruction is evidence of what its maker imagined, not direct evidence of the past (Unit 1, Lesson 7). Even the Getty’s 2022 digital model, which it calls “the most accurate recreation of Persepolis to date”, must choose colours that mostly no longer survive.</p></div>
+  </div>
+  <p class="small credline">Images: Carole Raddato (CC BY-SA 2.0) · Chipiez 1890 (Public domain). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Summary" data-kind="notes">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What do the Throne Hall reliefs show about kingship?</li>
+          <li>Why does so little glazed brick and paint survive, and what does that mean?</li>
+          <li>How far can a colour reconstruction be trusted?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">The reliefs on the southern doorways of the Hall of a Hundred Columns show the king enthroned and carried by throne-bearers from his subject peoples, presenting his rule as upheld by the whole empire: strong evidence of how the king wanted to be seen, but not of how his subjects felt. Fire, looting and the weather left mainly the stone, so paint survives only in traces and glazed brick only as fragments, which means the grey ruin we see is not what an ancient visitor saw. A colour reconstruction must fill these gaps with evidence from other sites and with guesswork, so it is an interpretation of Persepolis, not a picture of it.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> The Hall of a Hundred Columns and its doorways</label></li>
+        <li><label><input type="checkbox"> The throne-bearer relief: shows, why, cannot tell</label></li>
+        <li><label><input type="checkbox"> Royal hero, servants, guards</label></li>
+        <li><label><input type="checkbox"> Traces of paint</label></li>
+        <li><label><input type="checkbox"> Glazed brick: Persepolis, Susa, Tol-e Ajori</label></li>
+        <li><label><input type="checkbox"> Your T-chart and your sort</label></li>
+        <li><label><input type="checkbox"> A value-and-limitations paragraph</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 5 minutes · before you leave</p>
+  <h2>One gap, and what it means</h2>
+  <div class="card accent"><div class="k">Finish both</div><p class="lead nq">“One gap in the evidence about Persepolis is … This means that …”</p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">A precise gap (the lost paint; glazed brick surviving only as fragments; the burned cedar roofs; the lost mudbrick walls; the looted precious-metal fittings) and a precise consequence for what we can know: for example, that we cannot see the original colours, so any colour reconstruction is partly imagined.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> writing an OVPRL paragraph on a relief from Persepolis.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u2l07-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>The Hall of a Hundred Columns was begun and finished by Darius I.</span>
+      <span class="sol no reveal">False <span class="why">— it was begun by Xerxes and finished under his son Artaxerxes I.</span></span></li>
+    <li><span class="n">2</span><span>On the southern doorways, the king’s throne is held up by figures in the dress of the empire’s peoples.</span>
+      <span class="sol reveal">True <span class="why">— the throne-bearers stand for the subject peoples carrying the king.</span></span></li>
+    <li><span class="n">3</span><span>The reliefs at Persepolis were always plain grey stone.</span>
+      <span class="sol no reveal">False <span class="why">— traces of blue, green and red paint survive; the reliefs were painted.</span></span></li>
+    <li><span class="n">4</span><span>Large glazed-brick panels of archers have been found at Persepolis.</span>
+      <span class="sol no reveal">False <span class="why">— the archers are from Susa; Persepolis has only fragments (a palmette frieze and two banded bricks).</span></span></li>
+    <li><span class="n">5</span><span>The gate at Tol-e Ajori proves that the buildings on the terrace were covered with bulls and dragons.</span>
+      <span class="sol no reveal">False <span class="why">— it is a separate gate, probably older than the terrace; it shows what builders could make, not what the terrace had.</span></span></li>
+    <li><span class="n">6</span><span>A colour reconstruction is evidence of what its maker imagined, not direct evidence of the past.</span>
+      <span class="sol reveal">True <span class="why">— it fills the gaps with guesses and with evidence from other sites.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — writing" data-kind="practice">
+<div class="wrap prac u2l07-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Write it as a historian</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · Nominalisation</div><p class="body">Rewrite as one sentence with noun groups: <span class="nq">“The paint was lost and the cedar roofs burned, so the ruins look grey.”</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">The loss of the painted surfaces and the destruction of the cedar roofs leave the ruins grey and bare.</p></div>
+      <div class="card accent"><div class="k">2 · Reliable for what?</div><p class="body nq">Finish: “The throne-bearer relief is reliable for … but not for … because …”</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">The throne-bearer relief is reliable for how the king wanted his rule to be seen, as upheld by all the peoples of his empire, but not for how those peoples felt about it, because it was carved by the king’s sculptors for a doorway of his own great hall.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Can evidence from Susa or Tol-e Ajori fairly fill the gaps at Persepolis? What are the risks of using one site to reconstruct another?</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">Evidence from Susa and Tol-e Ajori can suggest, but not prove, how Persepolis looked. Both show that Achaemenid builders made brilliant moulded and glazed brick: guards, lions and griffins in Darius’s palace at Susa, and bulls and mušḫuššu dragons on the gate at Tol-e Ajori, only about 3.5 km from the terrace. Using them to fill the gaps at Persepolis is risky, however. Susa lies about 500 km away, and even there most of the bricks were found scattered and reused, so their original places are mostly unknown. Tol-e Ajori is a separate gate that its excavators date before the terrace, so it may show an earlier style. At Persepolis itself, Muscarella records only “a frieze of cloisonné palmettes, and two bricks with circular bands”. A reconstruction that borrows Susa’s archers for Persepolis therefore shows what was possible, not what is known, and should say so.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u2l07-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Who began and who finished the Hall of a Hundred Columns?
+      <span class="sol reveal">It was begun by Xerxes and finished under his son Artaxerxes I, in the 5th century BCE.</span></li>
+    <li>Describe the relief on the southern doorways.
+      <span class="sol reveal">The king sits on a throne under a canopy, an attendant behind him; below, rows of throne-bearers in the dress of the empire’s peoples hold up the platform.</span></li>
+    <li>What does the throne-bearer relief show about kingship, and what is it not reliable for?
+      <span class="sol reveal">It presents the king’s rule as upheld by all his peoples; it is reliable for how he wanted to be seen, not for how his subjects felt.</span></li>
+    <li>What evidence shows that the reliefs were painted?
+      <span class="sol reveal">Traces of blue, green and red paint, for example on a fragment from the hall now at Harvard; Herzfeld also found pigment on the Apadana sculptures in 1932, but it vanished soon after.</span></li>
+    <li>What glazed brick survives from Persepolis, and where are the best panels from?
+      <span class="sol reveal">Only fragments: a frieze of cloisonné palmettes and two bricks with circular bands. The best panels (guards, lions, griffins) are from Susa, now in the Louvre and in Iran.</span></li>
+    <li>Why is a colour reconstruction of Persepolis an interpretation?
+      <span class="sol reveal">Paint, glazed brick, roofs and walls are mostly lost, so its maker fills the gaps from other sites and by guesswork: it is evidence of what its maker imagined, not direct evidence of the past.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="card quiet u2l07-cite"><div class="k">Written sources</div>
+    <p class="small">O. W. Muscarella, <a href="https://www.iranicaonline.org/articles/achaemenid-glazed-brick-decoration/">‘Achaemenid glazed brick decoration’</a>, and A. Shapur Shahbazi, <a href="https://www.iranicaonline.org/articles/persepolis/">‘Persepolis’</a> (quoting E. Herzfeld, 1932 and 1941), <i>Encyclopaedia Iranica</i>, quoted briefly with credit. Darius I, DNa: translation as published by <a href="https://www.livius.org/sources/content/achaemenid-royal-inscriptions/dna/">Livius.org</a> (the wording of R. G. Kent, <i>Old Persian</i>, 1953); DPf and DPh: translations as published by Livius.org (after P. Lecoq, 1997); quoted briefly; © Livius.org; facts from Livius.org, ‘Persepolis, Hall of 100 Columns’ and ‘Palace of Darius’. A. Askari Chaverdi and P. Callieri, <a href="https://jarcs.ut.ac.ir/article_104771.html?lang=en">Tol-e Ajori</a>, <i>Journal of Archaeological Studies</i> (2025), and the <a href="https://irangazetteer.ucla.edu/catalogue/tol-e-ajori">UCLA Iran Gazetteer</a>. G. Perrot and C. Chipiez, <i>History of Art in Persia</i> (1892), pp. 158–161, 327 and 338–340, <a href="https://archive.org/details/historyartinper00chipgoog">archive.org</a> (public domain). Tol-e Ajori’s direction: the excavators’ mission page, <a href="https://www.ismeo.eu/portfolio_page/archaeological-mission-of-the-university-of-bologna-and-ismeo-in-iran-excavations-of-the-early-achaemenid-monument-of-tol-e-ajori-persepolis-2/">ISMEO</a>. J. Paul Getty Museum, <a href="https://www.getty.edu/news/take-a-journey-to-ancient-persia-with-persepolis-reimagined/">Persepolis Reimagined</a> (2022).</p>
+    <p class="small">Object records: Harvard Art Museums 1943.1062; the Metropolitan Museum of Art 34.158 and 48.98.20a–c; ISAC Museum, <i>Persepolis: Images of an Empire</i>; French Ministry of Culture (Susa archers). Studies (CC BY 4.0): E. Aloiz, J. G. Douglas and A. Nagel, <i>Heritage Science</i> 4 (2016); S. Ebbinghaus and others, <i>Heritage</i> 7 (2023). Teacher resources: <i>Imperial Narratives in Stone</i>; <i>The Treasury and the Hall of a Hundred Columns</i>; <i>Palaces and Private Spheres</i> (class notebook ‘Persepolis’). <b>Syllabus:</b> outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+  <div class="card quiet u2l07-cite"><div class="k">Images</div>
+    <ul class="small credits"><li><b>Inside the Hall of a Hundred Columns today</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:The_interior_of_the_Hall_of_Hundred_Columns_(Throne_Hall),_Persepolis,_Iran_(47727265262).jpg">source</a></li><li><b>Throne scene, southern doorway, Hall of a Hundred Columns (cropped)</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Throne_scene_relief_on_the_southern_doorway_of_the_Hall_of_Hundred_Columns_(Throne_Hall)_depicting_an_enthroned_king_and_attendant,_Persepolis,_Iran_(47098456004).jpg">source</a></li><li><b>Throne-bearers, Hall of a Hundred Columns</b> · Photo: Jona Lendering (Livius.org) · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis,_Hall_of_100_Columns,_relief_of_carriers.jpg">source</a></li><li><b>The royal hero, Hall of a Hundred Columns</b> · Photo: Jona Lendering (Livius.org) · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis,_Hall_of_100_Columns,_Royal_Warrior.jpg">source</a></li><li><b>Relief: two servants bearing food and drink (Met 34.158)</b> · The Metropolitan Museum of Art, Harris Brisbane Dick Fund, 1934 · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://www.metmuseum.org/art/collection/search/323178">source</a></li><li><b>Relief fragment with a winged figure, Harvard Art Museums 1943.1062</b> · Photo: Daderot · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Ahuramazda_in_the_winged_disk,_from_the_Hall_of_100_Columns,_Persepolis,_Achaemenid_Persia,_486-460_BC,_limestone,_traces_of_paint_-_Sackler_Museum_-_Harvard_University_-_DSC01735.jpg">source</a></li><li><b>Glazed-brick frieze of archers from Susa (Louvre AOD 488)</b> · Photo: Jebulon · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:Archers_frieze_Darius_1st_Palace_Suse_Louvre_AOD_488_a.jpg">source</a></li><li><b>Glazed-brick griffin from Susa (Louvre)</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Frieze_of_Griffins,_circa_510_BC,_Apadana,_west_courtyard_of_the_palace,_Susa,_Iran_Susa,_Iran,_Louvre_Museum_(12251831946).jpg">source</a></li><li><b>Glazed bricks with a palmette motif, Susa (Met 48.98.20a–c)</b> · The Metropolitan Museum of Art, Rogers Fund, 1948 · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://www.metmuseum.org/art/collection/search/324036">source</a></li><li><b>Bulls and dragons on the Ishtar Gate of Babylon (Pergamon Museum)</b> · Photo: Osama Shukir Muhammed Amin · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Dragon_and_bulls_of_the_the_Ishtar_Gate_of_Babylon,_Iraq,_colored_glazed_and_molded_bricks,_6th_century_BCE._Pergamon_Museum.jpg">source</a></li><li><b>Charles Chipiez, Persepolis: Palace of Darius, restored (1890), Pl. IX (cropped)</b> · Charles Chipiez, in G. Perrot and C. Chipiez, Histoire de l’art dans l’antiquité, vol. V (1890), Pl. IX · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://archive.org/details/histoiredelartda05perruoft/page/n758/mode/1up">source</a></li></ul>
+    <p class="small">All images are public domain or openly licensed, and were resized for the web (the southern-doorway relief, the servants relief, the Susa guards and the 1890 plate were also cropped; the plate was turned upright). Each image is shared under the licence shown.</p></div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

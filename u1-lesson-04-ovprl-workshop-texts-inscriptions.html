@@ -1,0 +1,1702 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U1 L4 · OVPRL Workshop I: Ancient Texts and Inscriptions</title>
+<meta name="description" content="Year 11 Ancient History, the investigation of ancient sites and sources: reading Thucydides on his own method, then writing OVPRL as one connected paragraph, modelled on Thucydides, built together on the Behistun inscription and written alone on the Rosetta Stone.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#1D4E89; --bright:#2E6FBF; --tint:#E7EEF8; --statement:#1D4E89;
+  --solid:#1D4E89; --soft:#D3E2F6; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#A9C8F2; --bright:#5E9BE6; --tint:#142538; --statement:#173C66; --soft:#D3E2F6; } }
+:root[data-theme="dark"]{ --deep:#A9C8F2; --bright:#5E9BE6; --tint:#142538; --statement:#173C66; --soft:#D3E2F6; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 1 Lesson 4 only (every class starts u1l04-) */
+
+/* quick facts list (who / what / when) */
+.u1l04-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.25em;
+  font-size:calc(var(--fs-body)*.84); line-height:1.35;}
+.u1l04-facts b{color:var(--deep);}
+
+/* Connect: two example lines, spaced */
+.u1l04-two .body + .body{margin-top:.45em;}
+
+/* title slide picture */
+.u1l04-cover img{max-height:56vh;}
+
+/* Thucydides 1.22: the whole chapter in two newspaper columns, prompts underneath */
+.u1l04-read .quote.sm{columns:2 22em; column-gap:2em; font-size:calc(var(--fs-body)*.8); line-height:1.5;}
+.u1l04-mqgrid{display:grid; grid-template-columns:1fr 1fr; gap:.5em 1.6em;}
+.u1l04-mqgrid .mq{font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.u1l04-mqgrid .vp{display:block; color:var(--slate); font-weight:400;}
+
+/* live modelling: four decision points, two by two */
+.u1l04-dpgrid{display:grid; grid-template-columns:1fr 1fr; gap:clamp(8px,1.2vh,14px) clamp(12px,1.4vw,22px);}
+.u1l04-dp{display:grid; grid-template-columns:2em 1fr; gap:.6em; align-items:start; padding:.45em .7em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);}
+.u1l04-dp .n{display:grid; place-items:center; width:1.7em; height:1.7em; border-radius:50%; background:var(--solid);
+  color:#fff; font-weight:700; font-size:.9em;}
+.u1l04-dp .q{font-weight:700; font-size:calc(var(--fs-body)*.84); line-height:1.32;}
+.u1l04-dp .alt{font-size:calc(var(--fs-body)*.8); line-height:1.36; color:var(--slate); margin-top:.15em;}
+.u1l04-dp .alt s{text-decoration-color:var(--c-judgement);}
+.u1l04-pick{margin-top:.3em; padding:.3em .7em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 6px 6px 0; font-size:calc(var(--fs-body)*.8); line-height:1.38;}
+
+/* the annotated model paragraph (WAGOLL): five moves, five colours */
+.u1l04-wagoll .ans{font-size:calc(var(--fs-body)*.8); line-height:1.6;}
+.u1l04-wagoll .annot{grid-template-columns:1.45fr 1fr;}
+.u1l04-head{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep);}
+.u1l04-meta{display:block; margin-top:.6em; font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome); color:var(--slate);}
+.anote.u1l04-m1{border-color:var(--c-scope); background:var(--w-scope);}
+.anote.u1l04-m2{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.anote.u1l04-m3{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote.u1l04-m4{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote.u1l04-m5{border-color:var(--c-directive); background:var(--w-directive);}
+.mk.u1l04-m1, .u1l04-m1 .mk{background:var(--c-scope);}
+.mk.u1l04-m2, .u1l04-m2 .mk{background:var(--c-keyterm);}
+.mk.u1l04-m3, .u1l04-m3 .mk{background:var(--c-evidence);}
+.mk.u1l04-m4, .u1l04-m4 .mk{background:var(--c-judgement);}
+.mk.u1l04-m5, .u1l04-m5 .mk{background:var(--c-directive);}
+:root[data-theme="dark"] .mk[class*="u1l04-m"], :root[data-theme="dark"] [class*="u1l04-m"] .mk{color:var(--ground);}
+.u1l04-verdict{padding:.45em .8em; border:1px dashed var(--slate); border-radius:8px;
+  font-size:calc(var(--fs-body)*.8); line-height:1.38;}
+
+/* language bank table */
+.u1l04-bank td:first-child{font-weight:700; color:var(--deep); white-space:nowrap;}
+.u1l04-bank td:last-child{font-style:italic;}
+.u1l04-tdt{border-left:5px solid var(--c-evidence); background:var(--w-evidence); border-radius:0 8px 8px 0;
+  padding:.45em .9em; font-size:calc(var(--fs-body)*.84); line-height:1.4;}
+
+/* extracts: an editor's label before each passage */
+.u1l04-ex .quote.sm .ed{display:inline-block; margin-right:.2em; font-weight:700; color:var(--deep);}
+
+/* joint construction rows (letter badge + prompt + word choice + the class sentence) */
+.u1l04-jc{display:grid; grid-template-columns:2.4em 1fr; gap:.7em; align-items:start;}
+.u1l04-jcl{display:grid; place-items:center; min-height:2.1em; border-radius:8px; background:var(--solid); color:#fff;
+  font-weight:700; font-family:var(--mono); font-size:calc(var(--fs-body)*.9); line-height:1.1;}
+.u1l04-jc .qprompt{font-size:calc(var(--fs-body)*.86);}
+.u1l04-jc .qprompt::before{content:none;}
+.u1l04-jc .alt{font-size:calc(var(--fs-body)*.8); color:var(--slate); margin-top:.1em; line-height:1.35;}
+.u1l04-sent{margin-top:.3em; padding:.35em .8em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 8px 8px 0; font-size:calc(var(--fs-body)*.82); line-height:1.42;}
+.u1l04-iq{font-weight:700; font-size:calc(var(--fs-body)*.9); line-height:1.35;}
+.u1l04-iq span{color:var(--deep);}
+
+/* hinge options a little smaller */
+.u1l04-hinge li{font-size:calc(var(--fs-body)*.88); line-height:1.36;}
+
+/* goals and credits */
+.u1l04-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u1l04-cite a{color:var(--deep);}
+.u1l04-cite p + p{margin-top:.45em;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u1l04-read .quote.sm{columns:1;}
+  .u1l04-mqgrid, .u1l04-dpgrid{grid-template-columns:1fr;}
+  .u1l04-wagoll .annot{grid-template-columns:1fr;}
+  .u1l04-bank td:first-child{white-space:normal;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u1l04-dense{gap:9px;}
+  html:not(.read) .u1l04-dense h2{font-size:calc(var(--fs-h2)*.84);}
+  html:not(.read) .u1l04-dense .quote.sm{font-size:calc(var(--fs-body)*.72); line-height:1.4;}
+  html:not(.read) .u1l04-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u1l04-dense .src{padding:9px 15px;}
+  html:not(.read) .u1l04-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u1l04-dense .note{padding:.4em .8em;}
+  html:not(.read) .u1l04-dense .note .body, html:not(.read) .u1l04-dense .card .body,
+  html:not(.read) .u1l04-dense .qprompt{font-size:calc(var(--fs-body)*.78); line-height:1.34;}
+  html:not(.read) .u1l04-dense .card{padding:9px 15px;}
+  html:not(.read) .u1l04-dense .card .k, html:not(.read) .u1l04-dense .src .k{margin-bottom:.25em;}
+  html:not(.read) .u1l04-dense .tbl.compact{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u1l04-dense .tbl.compact td{padding:.28em .5em;}
+  html:not(.read) .u1l04-dense .tbl th{padding:.35em .55em;}
+  html:not(.read) .u1l04-dense .figure img{max-height:28vh;}
+  html:not(.read) .u1l04-dense .figure figcaption{font-size:calc(var(--fs-chrome)*.85); margin-top:.3em;}
+  html:not(.read) .u1l04-dense .u1l04-facts{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l04-dense .mq{font-size:calc(var(--fs-body)*.74); line-height:1.32;}
+  html:not(.read) .u1l04-dense .u1l04-read .quote.sm{font-size:calc(var(--fs-body)*.66); line-height:1.42;}
+  html:not(.read) .u1l04-dense .u1l04-dp{padding:.3em .6em;}
+  html:not(.read) .u1l04-dense .u1l04-dp .q{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u1l04-dense .u1l04-dp .alt, html:not(.read) .u1l04-dense .u1l04-pick{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l04-dense .u1l04-wagoll .ans, html:not(.read) .u1l04-dense.u1l04-wagoll .ans{font-size:calc(var(--fs-body)*.7); line-height:1.5;
+    padding:12px 18px;}
+  html:not(.read) .u1l04-dense .anote{font-size:calc(var(--fs-body)*.7); padding:.35em .65em;}
+  html:not(.read) .u1l04-dense .u1l04-verdict{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u1l04-dense .u1l04-jc .qprompt{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u1l04-dense .u1l04-jc .alt{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u1l04-dense .u1l04-sent{font-size:calc(var(--fs-body)*.72); padding:.28em .7em;}
+  html:not(.read) .u1l04-dense .u1l04-iq{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u1l04-dense .u1l04-tdt{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l04-dense .opts li{padding:.35em .7em;}
+  html:not(.read) .u1l04-dense .u1l04-hinge li{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u1l04-dense .keylist li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u1l04-dense .keylist .d{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l04-dense .tf li, html:not(.read) .u1l04-dense .rq{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l04-dense .tf li{padding:.24em .6em;}
+  html:not(.read) .u1l04-dense .prac{gap:6px;}
+  html:not(.read) .u1l04-dense .cornell .cq, html:not(.read) .u1l04-dense .cornell .nts{font-size:calc(var(--fs-body)*.72); padding:.32em .75em;}
+  html:not(.read) .u1l04-dense .checks label{font-size:calc(var(--fs-body)*.76);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 4" data-title="OVPRL workshop I: ancient texts and inscriptions" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1fr 1.05fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 1 · The investigation of ancient sites and sources · Lesson 4</p>
+      <h1>OVPRL workshop I: ancient texts and inscriptions</h1>
+      <p class="lead">What is a written source reliable <i>for</i>, and how do you say so in one strong paragraph?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u1l04-cover"><figure class="figure contain"><img src="images/u1l04-behistun-inscription.jpg" alt="The relief and inscription of Darius I at Behistun (Bisotun), western Iran, carved about 520 BCE, seen from below" loading="lazy"><figcaption>The relief and inscription of Darius I at Behistun (Bisotun), western Iran, carved about 520 BCE, seen from below — <span class="cr">Photo: Hamidreza Sorouri / Persian Dutch Network · CC BY-SA 4.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 4" data-title="Connect: dating methods" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Connect · 3 minutes · everyone writes one line · press K for the timer</p>
+  <h2>Name one dating method, what it can date, and one limit</h2>
+  <div class="card accent"><div class="k">Everyone · one line · 60 seconds</div>
+    <p class="lead">method → what it can date → one limit</p></div>
+  <div class="note reveal u1l04-two" data-code="evidence" data-veil="Write yours first — then show two examples"><div class="k">Two strong lines</div>
+    <p class="body">Radiocarbon dating → once-living (organic) material such as wood, bone or charcoal → organic material only, and it gives an age range, not an exact year.</p>
+    <p class="body">Thermoluminescence → fired material such as pottery → it dates the last heating, so it only works on material that was heated.</p></div>
+  <p class="cue reveal">Today: written sources. Carbon-14 cannot tell us whether a writer is telling the truth, so we ask who wrote it, when, why, and what it is reliable for.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 4" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>analyse ancient texts and inscriptions using OVPRL</li>
+        <li>write a source analysis as connected prose</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>complete a full OVPRL of an ancient text</li>
+        <li>explain how a source can be reliable for one question and unreliable for another</li>
+        <li>write an OVPRL paragraph that uses provenance phrases and precise verbs</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u1l04-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-08 uses sources to form conclusions about the past · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 4" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U1 L4 · OVPRL workshop I: texts and inscriptions</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = Before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Explain how Thucydides checked his evidence.</div><div class="nts">eyewitnesses disagreed → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: Thucydides 1.22 and the five moves · the Behistun inscription. Your paragraph today is prose, not notes.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 4" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for reading and writing about written sources</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Sources</th><th>Meaning</th></tr>
+      <tr><td>inscription</td><td>Words carved or written on a hard surface such as stone, clay or metal.</td></tr>
+      <tr><td>decipherment</td><td>Working out how to read a lost script or language.</td></tr>
+      <tr><td>reliability</td><td>How far a source can be trusted for a particular question.</td></tr>
+      <tr><td>perspective</td><td>The point of view of an individual or group, in the past or the present.</td></tr>
+      <tr><td>provenance</td><td>Where an object was found and its history of ownership since; without it, an object loses its context and may be a fake.</td></tr>
+      <tr><td>coincidence <span class="small">(in Crawley’s 1874 English)</span></td><td>Agreement: two accounts that coincide say the same thing. A “want of coincidence” is a lack of agreement.</td></tr>
+      <tr><td>partiality</td><td>Favouring one side over the other.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Writing moves</th><th>Meaning</th></tr>
+      <tr><td>propaganda</td><td>A message made to persuade people to see a ruler or a cause in a particular way.</td></tr>
+      <tr><td>provenance phrase</td><td>An opening phrase that says who made a source, when, where, and from what position.</td></tr>
+      <tr><td>relating verb</td><td>A verb that links a source to what it shows or does: presents … as, portrays, reveals.</td></tr>
+      <tr><td>nominalisation</td><td>Turning an action or quality into a noun: <span class="nq">Darius legitimised his rule</span> → <span class="nq">Darius’s legitimisation of his rule</span>.</td></tr>
+      <tr><td>evaluative modality</td><td>Words that show how sure a judgement is: may, probably, is likely to.</td></tr>
+      <tr><td>evaluative verb</td><td>A verb that judges a source precisely: overstates, omits, is corroborated by.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Reading Thucydides" data-title="Who was Thucydides?" data-kind="notes">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow">1 · Ancient texts · supported reading — who wrote it, when, and why?</p>
+  <h2>Thucydides: a general who wrote the history of his own war</h2>
+  <div class="split" style="--cols:.55fr 1.45fr">
+    <figure class="figure contain"><img src="images/u1l04-thucydides-head.jpg" alt="Head of Thucydides (Royal Ontario Museum, Toronto): a marble copy, made about the 2nd–1st century BCE, of a lost Greek portrait of the early 4th century BCE" loading="lazy"><figcaption>Head of Thucydides (Royal Ontario Museum, Toronto): a marble copy, made about the 2nd–1st century BCE, of a lost Greek portrait of the early 4th century BCE — <span class="cr">Photo: Captmondo (background removed) · Public domain</span></figcaption></figure>
+    <div class="stack">
+      <ul class="u1l04-facts">
+        <li><b>Who:</b> Thucydides, son of Olorus, an Athenian, and a commander in the war he describes</li>
+        <li><b>What:</b> the <i>History of the Peloponnesian War</i>, fought between Athens and Sparta and their allies, 431–404 BCE; his account is unfinished and breaks off in 411 BCE</li>
+        <li><b>When:</b> he began writing when the war broke out, and lived through the whole of it</li>
+        <li><b>Exile:</b> after he arrived too late to save the city of Amphipolis from the Spartans, he spent twenty years in exile from Athens</li>
+        <li><b>What we read:</b> his Greek, copied by hand for centuries, in Richard Crawley’s English translation (1874)</li>
+      </ul>
+      <div class="src">
+        <div class="k">Thucydides on his exile</div>
+        <p class="quote sm">It was also my fate to be an exile from my country for twenty years after my command at Amphipolis; and being present with both parties, and more especially with the Peloponnesians by reason of my exile, I had leisure to observe affairs somewhat particularly.</p>
+        <p class="prov">Thucydides, <i>History of the Peloponnesian War</i> 5.26, trans. R. Crawley (1874) · the Peloponnesians = Sparta and its allies</p>
+      </div>
+      <p class="qprompt">Was his exile a help or a problem for a historian of this war?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">Both. Exile let him watch both sides, especially Sparta’s. But he was no neutral observer: he had commanded in the war, failed at Amphipolis, and lost his place in his own city, which may have shaped how he judged Athens.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Reading Thucydides" data-title="Thucydides 1.22: read and annotate" data-kind="notes">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow">1 · Ancient texts · supported reading — read together, then annotate</p>
+  <h2>Thucydides on his own method</h2>
+  <div class="stack veil-parts" data-veil="Annotate first — then show the answers">
+  <div class="src u1l04-read">
+    <div class="k">Source · Thucydides, <i>History of the Peloponnesian War</i> 1.22</div>
+    <p class="quote sm">With reference to the speeches in this history, some were delivered before the war began, others while it was going on; some I heard myself, others I got from various quarters; it was in all cases difficult to carry them word for word in one's memory, <span class="match" data-step="m1">so my habit has been to make the speakers say what was in my opinion demanded of them by the various occasions, of course adhering as closely as possible to the general sense of what they really said.</span> And with reference to the narrative of events, far from permitting myself to derive it from the first source that came to hand, I did not even trust my own impressions, but <span class="match" data-step="m2">it rests partly on what I saw myself, partly on what others saw for me, the accuracy of the report being always tried by the most severe and detailed tests possible.</span> My conclusions have cost me some labour <span class="match" data-step="m3">from the want of coincidence between accounts of the same occurrences by different eye-witnesses, arising sometimes from imperfect memory, sometimes from undue partiality for one side or the other.</span> The absence of romance in my history will, I fear, detract somewhat from its interest; but <span class="match" data-step="m4">if it be judged useful by those inquirers who desire an exact knowledge of the past as an aid to the interpretation of the future</span>, which in the course of human things must resemble if it does not reflect it, I shall be content. In fine, I have written my work, <span class="match" data-step="m4">not as an essay which is to win the applause of the moment, but as a possession for all time.</span></p>
+    <p class="prov">Thucydides, an Athenian general, writing during and after the war of 431–404 BCE · trans. Richard Crawley (1874) · the whole chapter</p>
+  </div>
+  <div class="u1l04-mqgrid">
+    <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Speeches: did he record them word for word?</b> <span class="vp">No. He wrote what he thought each occasion demanded, keeping to the general sense.</span></span></p>
+    <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Events: how does he say he checked them?</b> <span class="vp">His own observation and other people’s reports, each tested as severely as he could.</span></span></p>
+    <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>Why did eyewitnesses disagree?</b> <span class="vp">Imperfect memory, and partiality: favouring one side.</span></span></p>
+    <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>Why did he write, and for whom?</b> <span class="vp">For future inquirers who want an exact knowledge of the past, not for applause now.</span></span></p>
+  </div>
+  </div>
+  <p class="cue reveal" data-veil="Show one question the passage raises">One question it raises: he says his tests were severe, but he never shows them or names his informants. How could we check?</p>
+  <p class="cue reveal" data-veil="Show one way to check">One way: compare him with other evidence. A treaty he quotes (5.47) survives in part on a stone found on the Athenian Acropolis, and the two texts match apart from minor variations.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · I do: a model paragraph" data-title="I do: a paragraph written live" data-kind="notes">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow">2 · I do — modelling · watch the paragraph being written, and the choices behind it</p>
+  <h2>One paragraph, written live</h2>
+  <div class="card accent"><div class="k">Inquiry question</div>
+    <p class="u1l04-iq">How useful is Thucydides 1.22 for judging the reliability of his <i>History of the Peloponnesian War</i>?</p></div>
+  <p class="cue">One connected paragraph: Origin → Value → Purpose → Reliability → Limitations, then a decisive judgement. While you watch, note one choice the writer makes, and why.</p>
+    <div class="u1l04-dpgrid veil-parts" data-veil="Think first — then show the choices">
+      <div class="u1l04-dp"><span class="n">1</span><div><p class="q">How should it begin?</p>
+        <p class="alt"><span class="nq">“Thucydides was an Athenian.”</span> or a phrase that says who, in what role, and in what situation?</p>
+        <p class="u1l04-pick vp reveal">A provenance phrase, such as <span class="nq">“Written by Thucydides, an Athenian general who spent twenty years in exile, …”</span>: his rank and his exile shape what he could know.</p></div></div>
+      <div class="u1l04-dp"><span class="n">2</span><div><p class="q">Which verb is accurate?</p>
+        <p class="alt"><span class="nq">“1.22 proves his tests were severe”</span> or <span class="nq">“Thucydides claims his tests were severe”</span>?</p>
+        <p class="u1l04-pick vp reveal">Claims. We have only his word: he never shows the tests or names the eyewitnesses.</p></div></div>
+      <div class="u1l04-dp"><span class="n">3</span><div><p class="q">What does perspective add?</p>
+        <p class="alt"><span class="nq">“He was biased.”</span> or say whose side he saw, and what that means?</p>
+        <p class="u1l04-pick vp reveal">Name the perspective and its effect: exile let him watch both sides, but he had a personal stake in how Athens was judged.</p></div></div>
+      <div class="u1l04-dp"><span class="n">4</span><div><p class="q">How should reliability be judged?</p>
+        <p class="alt"><span class="nq">“1.22 is reliable.”</span> or reliable for what?</p>
+        <p class="u1l04-pick vp reveal">For a question: reliable evidence of the standards he set himself, but not proof that his History met them.</p></div></div>
+    </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · I do: a model paragraph" data-title="I do: the model and its five moves" data-kind="notes">
+<div class="wrap u1l04-dense u1l04-wagoll">
+  <p class="eyebrow">2 · I do — a prepared model (Band 6 standard) and its five moves · one press per move</p>
+  <h2>What a strong OVPRL paragraph does</h2>
+  <div class="annot" data-veil="Show the model paragraph and its five moves">
+    <div class="ans long">
+      <span class="match" data-step="m1">Composed by Thucydides, an Athenian general exiled for twenty years after he failed to save Amphipolis from the Spartans,</span><span class="mk u1l04-m1">1</span>
+      the <i>History of the Peloponnesian War</i> is a contemporary (though unfinished) account of the war of 431–404 BCE, and its chapter 1.22 is the historian’s own statement of method. Its value for judging the History lies in this candour: Thucydides <span class="match" data-step="m2">distinguishes</span><span class="mk u1l04-m2">2</span> the narrative of events, which he says was “tried by the most severe and detailed tests possible”, <span class="match" data-step="m2">from</span> the speeches, in which, he admits, speakers say “what was in my opinion demanded of them by the various occasions”, though he kept “as closely as possible to the general sense of what they really said”. Because he <span class="match" data-step="m2">presents</span> his work <span class="match" data-step="m2">as</span> “a possession for all time” rather than a bid for “the applause of the moment”, his stated purpose was to instruct future inquirers, and <span class="match" data-step="m3">his acknowledgement of eyewitnesses’ imperfect memory and partiality</span><span class="mk u1l04-m3">3</span> reveals a critical awareness of how testimony can mislead. Nevertheless, <span class="match" data-step="m3">this self-description</span> <span class="match" data-step="m4">may overstate</span><span class="mk u1l04-m4">4</span> his rigour: 1.22 names none of the eyewitnesses he consulted, so his tests cannot be checked, and his exile, which by his own account let him observe the Peloponnesian side, <span class="match" data-step="m4">may</span> equally have coloured his judgement of Athens. <span class="match" data-step="m5">The passage is therefore reliable evidence of the standards Thucydides set himself, but not proof that he met them</span><span class="mk u1l04-m5">5</span>, and it cannot confirm any single event. Ultimately, 1.22 is indispensable for judging the History not because it guarantees accuracy, but because it shows historians where to place their trust: in the narrative he says he tested far more than in the speeches whose wording he admits is his own.
+      <span class="u1l04-meta">A model written for this lesson · about 275 words · quotations from Crawley’s translation</span>
+    </div>
+    <div class="margin fold">
+      <p class="u1l04-head">The five moves</p>
+      <div class="anote reveal u1l04-m1" data-hl="[data-step=m1]"><span class="mk">1</span><b>Provenance phrase</b><span class="tx">Who, in what role, in what situation, packed into the opening. His rank and his exile both affect what he could know.</span></div>
+      <div class="anote reveal u1l04-m2" data-hl="[data-step=m2]"><span class="mk">2</span><b>Relating verbs</b><span class="tx">distinguishes … from, presents … as: verbs that say what the source does, not just what it says.</span></div>
+      <div class="anote reveal u1l04-m3" data-hl="[data-step=m3]"><span class="mk">3</span><b>Nominalisation</b><span class="tx">his acknowledgement of …, this self-description: whole ideas packed into nouns, so the next sentence can pick them up.</span></div>
+      <div class="anote reveal u1l04-m4" data-hl="[data-step=m4]"><span class="mk">4</span><b>Evaluative modality</b><span class="tx">may overstate, may equally: we cannot check his tests, so we say may, not is likely to. The confidence matches the evidence. Overstate is a precise evaluative verb.</span></div>
+      <div class="anote reveal u1l04-m5" data-hl="[data-step=m5]"><span class="mk">5</span><b>Precise judgement of reliability</b><span class="tx">Reliable for one thing (his standards), not for another (proof he met them), with the reason.</span></div>
+      <p class="u1l04-verdict reveal"><b>Then a decisive last sentence</b> that answers the inquiry question. No roadmap, no summary: the paragraph ends on its judgement.</p>
+      <p class="u1l04-verdict reveal"><b>Make it weaker?</b> Swap <span class="nq">“he says was tried”</span> for <span class="nq">“proves”</span>, or <span class="nq">“may equally have coloured his judgement”</span> for <span class="nq">“was biased”</span>.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · I do: a model paragraph" data-title="Notes 1 — Thucydides 1.22 and the five moves" data-kind="notes">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>Thucydides 1.22 and the five moves</h2>
+  <p class="cue">Write your own notes first. Then compare, row by row, and add what you missed in a second colour.</p>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U1 L4 · OVPRL workshop I: texts and inscriptions</b></span><span>1 · Thucydides</span></div>
+    <div class="row"><div class="cq">Who was Thucydides, and why does it matter?</div>
+      <div class="nts reveal">Athenian general <span class="sep">·</span> lived through the war (431–404 BCE) <span class="sep">·</span> exiled 20 years after Amphipolis (5.26) → saw both sides, but personally involved</div></div>
+    <div class="row"><div class="cq">Explain how Thucydides says he checked his evidence.</div>
+      <div class="nts reveal">events: own observation + others’ reports, “tried by the most severe and detailed tests possible” <span class="sep">·</span> eyewitnesses disagreed (memory, partiality) <span class="sep">·</span> speeches: his wording, keeping “the general sense”</div></div>
+    <div class="row"><div class="cq">Assess 1.22 as evidence for the reliability of his History.</div>
+      <div class="nts reveal">reliable for his standards and method <span class="sep">·</span> not proof he met them: no informants named, tests not shown <span class="sep">·</span> speeches = his interpretation → trust the narrative more</div></div>
+    <div class="row"><div class="cq">Name the five moves of a strong OVPRL paragraph.</div>
+      <div class="nts reveal">provenance phrase <span class="sep">·</span> relating verb (presents … as) <span class="sep">·</span> nominalisation (this self-description) <span class="sep">·</span> modality (may, is likely to) <span class="sep">·</span> precise judgement (reliable for … but not for … because …)</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · We do: Behistun" data-title="Language bank" data-kind="notes">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow">3 · We do — your language bank · keep it open for the We do and the You do</p>
+  <h2>Language bank: words that do the analysis</h2>
+  <div class="tbl-scroll"><table class="tbl compact u1l04-bank">
+    <tr><th>Move</th><th>Use it to</th><th>Try</th></tr>
+    <tr><td>1 · Provenance phrase</td><td>open with who made it, when, where, and from what position</td><td>Composed by … · Carved on the orders of … · Issued by … in … · Writing in exile, … · As a king addressing his whole empire, …</td></tr>
+    <tr><td>2 · Relating verb</td><td>say what the source does, not just what it says</td><td>presents … as · portrays · reveals · illuminates · distinguishes … from</td></tr>
+    <tr><td>3 · Nominalisation and noun groups</td><td>pack an idea into a noun, then link the next sentence to it</td><td>legitimise → this legitimisation · claim → his claim to the throne · a priestly decree in three scripts from 196 BCE</td></tr>
+    <tr><td>4 · Evaluative modality</td><td>show how sure you are, no more and no less</td><td>may · probably · is likely to · suggests · it is unlikely that</td></tr>
+    <tr><td>5 · Precise judgement</td><td>judge reliability for a question, with a precise verb</td><td>overstates · omits · is corroborated by · offers a partisan account of · reliable for … but not for … because …</td></tr>
+  </table></div>
+  <p class="u1l04-tdt"><b>One sentence that does all of it:</b> <span class="nq">Darius’s appeal to Ahuramazda presents his rule as divinely chosen, legitimising a king who had seized the throne.</span> <span class="small">(a ‘This Does That’ sentence: evidence → precise verb → what it does)</span></p>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · We do: Behistun" data-title="The Behistun inscription" data-kind="notes">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow">3 · Inscriptions · We do — the source</p>
+  <h2>The Behistun inscription: a king tells his own story</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <figure class="figure contain"><img src="images/u1l04-behistun-relief.jpg" alt="The Behistun relief: Darius I (third from left, with two attendants behind him) has one foot on the fallen Gaumâta and faces nine bound captives (rebel leaders, and a Scythian chief added after a later campaign); above them is a winged figure usually identified as the god Ahuramazda. Columns of the inscription are carved below and beside the figures" loading="lazy"><figcaption>The Behistun relief: Darius I (third from left, with two attendants behind him) has one foot on the fallen Gaumâta and faces nine bound captives (rebel leaders, and a Scythian chief added after a later campaign); above them is a winged figure usually identified as the god Ahuramazda. Columns of the inscription are carved below and beside the figures — <span class="cr">Photo: Patrick C (dynamosquito on Flickr) · CC BY-SA 2.0</span></figcaption></figure>
+      <ul class="u1l04-facts">
+        <li><b>Who:</b> Darius I, king of Persia, who ruled 522–486 BCE</li>
+        <li><b>What:</b> a relief and a long inscription in three languages: Old Persian, Elamite and Babylonian</li>
+        <li><b>When and where:</b> carved about 520 BCE, about 100 metres up a cliff at Behistun (Bisotun), western Iran, beside the road from Babylon to Ecbatana</li>
+      </ul>
+    </div>
+    <div class="stack">
+      <div class="src u1l04-ex">
+        <div class="k">Source · the Behistun inscription (Old Persian text)</div>
+        <p class="quote sm"><span class="ed">[Col. I, §I]</span> I am Darius, the great king, the king of kings, the king of Persia, the king of the provinces, the son of Hystaspes, the grandson of Arsames, the Achaemenian. <span class="ed">[§V]</span> (Thus) saith Darius, the king: By the grace of Auramazda am I king; Auramazda hath granted me the kingdom. <span class="ed">[§XIII]</span> There was none who dared say aught against Gaumâta, the Magian, until I came. Then I prayed to Auramazda; Auramazda brought me help. … I, with a few men, slew that Gaumâta, the Magian, … <span class="ed">[Col. IV, §LVI]</span> Whosoever shall read this inscription hereafter, let that which I have done be believed; thou shalt not hold it to be lies.</p>
+        <p class="prov">Darius I, about 520 BCE · trans. L. W. King and R. C. Thompson (British Museum, 1907) · saith = says · hath = has · aught = anything · Auramazda = Ahuramazda, the god Darius worshipped · Gaumâta, the Magian = the man Darius killed: one of the Magi (a Median group who served as priests), who, Darius says, had pretended to be Smerdis, son of King Cyrus</p>
+      </div>
+      <p class="qprompt">Why might Darius carve this 100 metres up a cliff, beside a main road?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">To be seen rather than read: a permanent display of royal power where travellers passed, too high for anyone to deface. The words also travelled: a later Aramaic copy, written about a century afterwards, was found at Elephantine in Egypt.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · We do: Behistun" data-title="We do: Origin, Value, Purpose">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow">3 · We do — joint construction · I scribe, you supply each move · vote 1 or 2 fingers on each choice</p>
+  <h2>Our paragraph, part 1: Origin, Value, Purpose</h2>
+  <p class="u1l04-iq"><span>Inquiry question:</span> How useful is the Behistun inscription for understanding how Darius I became king?</p>
+  <div class="stack veil-parts" data-veil="Build it together first — then show one version">
+    <div class="u1l04-jc"><span class="u1l04-jcl">O</span><div><p class="qprompt">Provenance phrase: who, when, where, from what position?</p>
+      <p class="alt">Which is more precise: 1 · made by Darius · 2 · carved on the orders of Darius?</p>
+      <p class="u1l04-sent vp reveal">Carved on the orders of Darius I about 520 BCE, high on a cliff beside the road from Babylon to Ecbatana, the Behistun inscription is the king’s own account of how he took the throne in 522 BCE.</p></div></div>
+    <div class="u1l04-jc"><span class="u1l04-jcl">V</span><div><p class="qprompt">Value: what can it tell us, for this question?</p>
+      <p class="alt">1 · tells us · 2 · reveals?</p>
+      <p class="u1l04-sent vp reveal">Its value lies in revealing the official version of Darius’s accession: the king claims that no one ‘dared say aught against Gaumâta, the Magian’ until he came, and that he killed this rival ‘with a few men’.</p></div></div>
+    <div class="u1l04-jc"><span class="u1l04-jcl">P</span><div><p class="qprompt">Purpose and perspective: a relating verb, then a nominalisation</p>
+      <p class="alt">1 · Darius says he is king · 2 · Darius presents his kingship as …?</p>
+      <p class="u1l04-sent vp reveal">By repeating that he rules ‘by the grace of Auramazda’, Darius presents his kingship as chosen by the god; this legitimisation of his rule was the inscription’s main purpose, displayed in three languages on the rock and copied for other parts of a vast empire.</p></div></div>
+    <div class="u1l04-jc"><span class="u1l04-jcl">?</span><div><p class="qprompt">Perspective check: whose voice is this, and who is missing?</p>
+      <p class="u1l04-sent vp reveal">Darius’s alone. Missing: the rebels he calls liars, and Gaumâta himself.</p></div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · We do: Behistun" data-title="We do: Reliability and Limitations">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow">3 · We do — joint construction · keep going</p>
+  <h2>Our paragraph, part 2: Reliability and Limitations</h2>
+  <p class="u1l04-iq"><span>Inquiry question:</span> How useful is the Behistun inscription for understanding how Darius I became king?</p>
+  <div class="stack veil-parts" data-veil="Build it together first — then show one version">
+    <div class="u1l04-jc"><span class="u1l04-jcl">R</span><div><p class="qprompt">Reliability: modality and a precise evaluative verb</p>
+      <p class="alt">Herodotus tells a similar story. Does that 1 · confirm Darius’s account, or 2 · corroborate it only weakly?</p>
+      <p class="u1l04-sent vp reveal">Herodotus tells a similar story (<i>Histories</i> 3.61–79), but he probably drew on the same official version, so this corroboration is weaker than it appears; indeed, Darius’s insistence that readers must not ‘hold it to be lies’ suggests that he expected his account to be doubted.</p></div></div>
+    <div class="u1l04-jc"><span class="u1l04-jcl">L</span><div><p class="qprompt">Limitations, and a precise judgement: reliable for … but not for … because …</p>
+      <p class="alt">1 · Darius was biased · 2 · it is the winner’s account?</p>
+      <p class="u1l04-sent vp reveal">The inscription is therefore reliable evidence of how Darius wanted his accession to be seen, but, on its own, not of how he actually gained the throne, because no account from the losing side survives; historians cannot rule out that the man he killed was the real Smerdis (Bardiya), Cyrus’s son.</p></div></div>
+    <div class="u1l04-jc"><span class="u1l04-jcl">!</span><div><p class="qprompt">A decisive last sentence: answer the question</p>
+      <p class="u1l04-sent vp reveal">Behistun is thus invaluable as Darius’s propaganda but, on its own, weak evidence for the truth of his accession.</p></div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · We do: Behistun" data-title="Notes 2 — the Behistun inscription" data-kind="notes">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>Inscriptions: the Behistun inscription</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U1 L4 · OVPRL workshop I: texts and inscriptions</b></span><span>2 · Behistun</span></div>
+    <div class="row"><div class="cq">Explain the purpose of the Behistun inscription.</div>
+      <div class="nts reveal">Darius I’s own account of taking the throne (522 BCE) → “by the grace of Auramazda”: kingship chosen by the god <span class="sep">·</span> carved c. 520 BCE, c. 100 m up a cliff on the Babylon–Ecbatana road → seen, not read</div></div>
+    <div class="row"><div class="cq">Analyse whose perspective it gives.</div>
+      <div class="nts reveal">a king’s, the winner of a civil war → rebels and Gaumâta called liars <span class="sep">·</span> no account from the losing side</div></div>
+    <div class="row"><div class="cq">Assess its reliability for how Darius became king.</div>
+      <div class="nts reveal">reliable for the official version, how he wanted to be seen <span class="sep">·</span> not, on its own, for what really happened <span class="sep">·</span> Herodotus (3.61–79) similar but probably the same official story <span class="sep">·</span> “Gaumâta” may have been the real Bardiya (debated)</div></div>
+    <div class="row"><div class="cq">Explain its significance for decipherment.</div>
+      <div class="nts reveal">3 languages (Old Persian, Elamite, Babylonian) <span class="sep">·</span> Rawlinson’s copies (1835–1847) → Old Persian read (1846), then Babylonian cuneiform in the 1850s (Rawlinson, Hincks and others)</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · You do: the Rosetta Stone" data-title="Check before you write: hinge question">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow">4 · You do · check first · hinge question · hold up A, B, C or D</p>
+  <h2>Which sentence makes the most precise judgement of reliability?</h2>
+  <ol class="opts u1l04-hinge">
+    <li><span class="n">A</span><span>The Behistun inscription is reliable evidence of how Darius became king, but not of how he wanted to be seen, because it was carved at the time.</span></li>
+    <li><span class="n">B</span><span>The Behistun inscription is reliable evidence of how Darius wanted to be seen, but not of anything else, because a biased source is useless.</span></li>
+    <li id="u1l04-hc"><span class="n">C</span><span>The Behistun inscription is reliable evidence of how Darius wanted his rule to be seen, but, on its own, not of how he actually became king, because it gives only the winner’s account.</span></li>
+    <li><span class="n">D</span><span>The Behistun inscription is reliable evidence of how Darius became king, but not of the rebels’ reasons, because Herodotus tells the same story independently.</span></li>
+  </ol>
+  <div class="note reveal" data-mark="#u1l04-hc" data-code="evidence" data-veil="Vote first — then show the answer"><p class="body"><b>C.</b> It names what the source is reliable for, what it cannot show on its own, and a reason that fits. A reverses the two and assumes that being carved at the time makes it true. B treats bias as a dead end: bias is evidence of perspective, and the inscription is still evidence of much else (its languages, the provinces Darius claimed, his ideology). D treats Herodotus as independent, but he probably repeats the official version.</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · You do: the Rosetta Stone" data-title="You do: the Rosetta Stone" data-kind="notes">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow">4 · You do — your source · read it first, then write</p>
+  <h2>The Rosetta Stone: a decree in three scripts</h2>
+  <div class="split" style="--cols:.95fr 1.25fr">
+    <div class="stack">
+      <figure class="figure contain"><img src="images/rosetta-stone.jpg" alt="The Rosetta Stone, 196 BCE (British Museum)" loading="lazy"><figcaption>The Rosetta Stone, 196 BCE (British Museum) — <span class="cr">Photo: Hans Hillewaert · CC BY-SA 4.0</span></figcaption></figure>
+      <ul class="u1l04-facts">
+        <li><b>What:</b> one copy of a decree, carved three times: in hieroglyphic, Demotic and Greek</li>
+        <li><b>Who:</b> a council of Egyptian priests, honouring the 13-year-old king Ptolemy V</li>
+        <li><b>When:</b> 196 BCE, on the first anniversary of his coronation</li>
+        <li><b>Found:</b> in 1799 by French soldiers near el-Rashid (Rosetta); in the British Museum since 1802</li>
+        <li><b>Why it matters:</b> its Greek text helped Thomas Young and then Jean-François Champollion (1822) decipher hieroglyphs</li>
+      </ul>
+    </div>
+    <div class="stack">
+      <div class="src u1l04-ex">
+        <div class="k">Source · the Rosetta Stone decree (the Greek text)</div>
+        <p class="quote sm"><span class="ed">[Who made it]</span> The chief priests and prophets … and all the other priests who have come together to the king from the temples throughout the land to Memphis … declared: <span class="ed">[What the king did]</span> … being a god sprung from a god and goddess … has dedicated to the temples revenues in money and corn … of the revenues and taxes which he receives from Egypt some has wholly remitted and others has lightened … having gone to Lycopolis, in the Busirite nome, which had been occupied and fortified against a siege … presently took the town by storm, and destroyed all the impious men in it … <span class="ed">[How it was to be shown]</span> This decree shall be set up on a stele of hard stone, in sacred and native and Greek letters, and set up in each of the first, second, and third (rank) temples at the image of the ever-living king.</p>
+        <p class="prov">Decree of the priests at Memphis, 196 BCE · trans. E. R. Bevan, <i>The House of Ptolemy</i> (1927) · nome = district · sacred, native and Greek letters = hieroglyphic, Demotic and Greek</p>
+      </div>
+      <div class="card accent"><div class="k">Your inquiry question</div>
+        <p class="u1l04-iq">How useful is the Rosetta Stone for understanding Ptolemaic Egypt?</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · You do: the Rosetta Stone" data-title="You do: write your paragraph">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow">4 · You do · 13 minutes · press K for the timer · your paragraph is collected</p>
+  <h2>Write your OVPRL paragraph on the Rosetta Stone</h2>
+  <div class="split" style="--cols:1fr 1.05fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body"><li>Answer: <b>How useful is the Rosetta Stone for understanding Ptolemaic Egypt?</b></li>
+          <li>One connected paragraph: Origin → Value → Purpose → Reliability → Limitations.</li>
+          <li>Use the five moves (language bank) and end with a decisive judgement.</li></ol></div>
+      <div class="card quiet sm"><div class="k">Support</div>
+        <p class="body">Start each move with: <span class="nq">Issued by … in …, the Rosetta Stone …</span> · <span class="nq">Its value for understanding Ptolemaic Egypt lies in …</span> · <span class="nq">The priests present Ptolemy V as …</span> · <span class="nq">It is reliable for … but not for … because …</span> · <span class="nq">It cannot tell us …</span> · <span class="nq">Overall, …</span> Use the fact list and the OVPRL routine on page 2 of your booklet.</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div>
+        <p class="body">Compare Behistun and the Rosetta Stone as official ‘messages’: which is more useful for understanding how rulers wanted to be seen, and why?</p></div>
+    </div>
+    <div class="src reveal" data-veil="Write yours first — then show a model paragraph">
+      <div class="k">A model paragraph · written for this lesson</div>
+      <p class="quote sm model">Issued by a council of Egyptian priests at Memphis in 196 BCE and carved in hieroglyphic, Demotic and Greek, the Rosetta Stone preserves one copy of a decree honouring the 13-year-old Ptolemy V. Its value for understanding Ptolemaic Egypt lies in what it reveals about the relationship between a Greek-speaking dynasty and the native priesthood: the decree records the king’s remission of taxes, his gifts to the temples and his storming of rebel-held Lycopolis, evidence that royal authority was contested. Its three scripts, moreover, illuminate a state that was administered in Greek while Demotic remained the native script of daily life. Yet the priests present Ptolemy as a benevolent “god sprung from a god and goddess”, because the decree’s purpose was to honour a king whose favour secured their privileges; such praise is likely to overstate royal generosity and to understate the scale of unrest. The decree is therefore reliable evidence of official ideology and of the concessions the crown made to the temples, but not of how ordinary Egyptians experienced Ptolemaic rule, which this priestly voice omits. Ultimately, the Rosetta Stone is most useful not as an impartial account of Ptolemaic Egypt but as a record of how power was negotiated between its rulers and its priests.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · You do: the Rosetta Stone" data-title="Summary" data-kind="notes">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What can ancient texts and inscriptions tell historians, and what limits them?</li>
+          <li>How can one source be reliable for one question and unreliable for another?</li>
+          <li>What makes an OVPRL paragraph strong?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Ancient texts and inscriptions preserve their makers’ own words, so Thucydides 1.22 reveals the method a historian says he used, and the Behistun inscription and the Rosetta Stone reveal how a king and a council of priests wanted power to be seen, but each speaks for an elite author with a purpose. A source is reliable for some questions and not others: Behistun is strong evidence of Darius’s propaganda but, on its own, weak evidence of how he really became king. A strong OVPRL paragraph moves from a provenance phrase through value, purpose, reliability and limitations, using relating verbs, nominalisation and modality, and ends with a decisive judgement.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Thucydides: who, when, his exile</label></li>
+        <li><label><input type="checkbox"> 1.22: how he checked evidence; the speeches</label></li>
+        <li><label><input type="checkbox"> The five moves of a strong paragraph</label></li>
+        <li><label><input type="checkbox"> Behistun: purpose and perspective</label></li>
+        <li><label><input type="checkbox"> Reliable for what? Behistun and the Rosetta Stone</label></li>
+        <li><label><input type="checkbox"> Your paragraph on the Rosetta Stone</label></li>
+        <li><label><input type="checkbox"> The class checklist</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: the class checklist" data-kind="intro">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow">Check · 8 minutes · build the checklist together · then hand in your paragraph</p>
+  <h2>A strong OVPRL paragraph …</h2>
+  <div class="split" style="--cols:1.25fr 1fr">
+    <div class="stack">
+      <p class="cue">Look back at the model on slide 9. What did that writer do that we should do? Five points, in your own words.</p>
+      <ol class="keylist" data-veil="Build yours first — then show one class checklist">
+        <li class="reveal"><span class="num">1</span><span class="t">opens with a provenance phrase</span><span class="d">who made the source, when, where, and from what position</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">uses precise evidence for its value</span><span class="d">a short quotation or detail from the source, tied to the inquiry question</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">explains purpose and perspective</span><span class="d">with a relating verb: presents … as, portrays, reveals</span></li>
+        <li class="reveal"><span class="num">4</span><span class="t">judges reliability for this question</span><span class="d">reliable for … but not for … because …, with modality and a precise evaluative verb</span></li>
+        <li class="reveal"><span class="num">5</span><span class="t">names a limitation and ends decisively</span><span class="d">links ideas with nominalisation; the last sentence answers the question, with no roadmap or summary</span></li>
+      </ol>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Reliable for which question, and how do you know?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">The Rosetta Stone is reliable for how the priests wanted Ptolemy V to be seen and for the concessions the crown made to the temples, because it is the priests’ own decree; it is not reliable for how ordinary Egyptians experienced his rule, which it never records.</p></div>
+      <div class="card accent sm reveal"><div class="k">Before you leave</div>
+        <p class="body">Hand in your paragraph: next lesson you get back one strength and one next step, marked against this checklist. Then check yourself against today’s three “I can” statements.</p></div>
+      <p class="small"><b>Next lesson:</b> OVPRL on sources without words: petroglyphs and iconography.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u1l04-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Thucydides says he reported every speech word for word.</span>
+      <span class="sol no reveal">False <span class="why">— he made speakers say what he thought each occasion demanded, keeping as close as he could to the general sense.</span></span></li>
+    <li><span class="n">2</span><span>The Behistun inscription is carved in three languages.</span>
+      <span class="sol reveal">True <span class="why">— Old Persian, Elamite and Babylonian.</span></span></li>
+    <li><span class="n">3</span><span>Because Darius ordered the Behistun inscription, it is useless to historians.</span>
+      <span class="sol no reveal">False <span class="why">— reliable for what? It is strong evidence of how Darius wanted to be seen and, on its own, weak evidence of what really happened.</span></span></li>
+    <li><span class="n">4</span><span>The Rosetta Stone records a decree made by a council of priests.</span>
+      <span class="sol reveal">True <span class="why">— priests assembled at Memphis honoured the young Ptolemy V in 196 BCE.</span></span></li>
+    <li><span class="n">5</span><span>Herodotus tells a similar story, so Darius’s version must be true.</span>
+      <span class="sol no reveal">False <span class="why">— Herodotus probably drew on the same official version, so agreement is not independent proof.</span></span></li>
+    <li><span class="n">6</span><span>“Is likely to” and “may” are examples of evaluative modality.</span>
+      <span class="sol reveal">True <span class="why">— they show how certain the writer is.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — writing moves" data-kind="practice">
+<div class="wrap prac u1l04-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Practise the moves</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · Nominalise</div><p class="body">Rewrite each as a noun group that could start the next sentence: <span class="nq">Darius claimed that the god had chosen him.</span> · <span class="nq">The priests praised Ptolemy because he cut taxes.</span></p></div>
+      <div class="src reveal" data-veil="Show model answers"><div class="k">Models · written for this lesson</div>
+        <p class="quote sm model">Darius’s claim to have been chosen by the god … · The priests’ praise of Ptolemy, which followed his reduction of taxes, …</p></div>
+      <div class="card accent"><div class="k">2 · Reliable for what?</div><p class="body">Finish for the Behistun inscription: <span class="nq">It is reliable for … but not for … because …</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">The Behistun inscription is reliable for how Darius wanted his kingship to be seen, but, on its own, not for how he actually became king, because it gives only the winner’s account.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Compare Behistun and the Rosetta Stone as official ‘messages’: which is more useful for understanding how rulers wanted to be seen, and why?</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">Both inscriptions are official messages, but the Behistun inscription is the more direct evidence of how a ruler wanted to be seen, because Darius speaks in his own voice: he presents his kingship as granted “by the grace of Auramazda” and even instructs future readers not to “hold it to be lies”. The Rosetta Stone, by contrast, is a decree of the priests at Memphis, so its portrait of Ptolemy V as a generous “god sprung from a god and goddess” shows how the priesthood chose to honour a king whose favour it needed: the image of the ruler is filtered through a second set of interests. For royal self-presentation, then, Behistun is more useful; for the bargain between a dynasty and the priests it relied on, the Rosetta Stone reveals more.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u1l04-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Explain how Thucydides says he checked his evidence.
+      <span class="sol reveal">Events rest on what he saw and what others saw for him, each report tested as severely as possible; eyewitnesses disagreed through memory and partiality; the speeches are his own wording of the general sense.</span></li>
+    <li>Assess Thucydides 1.22 as evidence for the reliability of his History.
+      <span class="sol reveal">Reliable evidence of the standards he set himself, but not proof that he met them: he shows no tests and names no informants, and the speeches are his interpretation.</span></li>
+    <li>Explain the purpose of the Behistun inscription.
+      <span class="sol reveal">To prove Darius’s right to rule: it presents his kingship as granted by Ahuramazda and gives his version of how he killed Gaumâta and crushed the rebels.</span></li>
+    <li>Assess its reliability for how Darius became king.
+      <span class="sol reveal">Reliable for the official version and how he wanted to be seen; on its own, weak evidence of what actually happened, because only the winner’s account survives.</span></li>
+    <li>Explain why the Rosetta Stone and the Behistun inscription mattered for decipherment.
+      <span class="sol reveal">Each carries one text in three scripts or languages: the Rosetta Stone’s Greek helped Young and Champollion (1822) read hieroglyphs; Rawlinson’s copies of Behistun helped scholars unlock Old Persian and then Babylonian cuneiform.</span></li>
+    <li>Name the five moves of a strong OVPRL paragraph.
+      <span class="sol reveal">Provenance phrase, relating verb, nominalisation, evaluative modality, and a precise judgement of reliability, then a decisive last sentence.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u1l04-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u1l04-cite"><div class="k">Written sources</div>
+      <p class="small">Thucydides, <i>History of the Peloponnesian War</i> 1.1, 1.22, 4.104, 4.106 and 5.26, trans. Richard Crawley (1874, public domain), from the <a href="http://classics.mit.edu/Thucydides/pelopwar.html">Internet Classics Archive</a>.</p>
+      <p class="small">The Behistun inscription, Old Persian text, §§I, IV, V, X, XIII, LII, LVI–LVII, trans. L. W. King and R. C. Thompson, <i>The Sculptures and Inscription of Darius the Great on the Rock of Behistûn in Persia</i> (London: British Museum, 1907; public domain), checked against <a href="https://archive.org/details/sculpturesinscri00brituoft">the 1907 page images</a>. Facts: <a href="https://www.livius.org/articles/place/behistun/">Livius, “Behistun”</a> and “Darius the Great” (J. Lendering).</p>
+      <p class="small">The Rosetta Stone decree, Greek text, trans. E. R. Bevan, <i>The House of Ptolemy</i> (London: Methuen, 1927; public domain), from <a href="https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Africa/Egypt/_Texts/BEVHOP/8*.html">LacusCurtius</a>. Facts: the British Museum (EA 24), <a href="https://artsandculture.google.com/asset/the-rosetta-stone/DgH6pMM1guUUPA">on Google Arts &amp; Culture</a>; J.-F. Champollion, <a href="https://archive.org/details/bub_gb_7PymbAAf0lcC"><i>Lettre à M. Dacier</i></a> (Paris, 1822). Thucydides’ portrait: Royal Ontario Museum, 957.159.</p>
+      <p class="small">Herodotus, <i>Histories</i> 1.101, 1.132 and 3.61–79, trans. George Rawlinson (public domain), from the <a href="http://classics.mit.edu/Herodotus/history.html">Internet Classics Archive</a> (teacher notes). The treaty in Thucydides 5.47: <a href="https://www.atticinscriptions.com/inscription/IGI3/83">Attic Inscriptions Online, IG I³ 83</a>. Decipherment: Livius, “Behistun (2)”; Hackl, “On the Rocks”, <i>Iraq</i> 87 (2025).</p>
+      <p class="small">The model paragraphs, the class paragraph and the summary were written for this lesson.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus and program</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p>
+        <p class="small">Teacher resource: <i>Investigating the Past – Archaeological &amp; Written Sources</i> (class notebook).</p></div>
+      <div class="card quiet u1l04-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>The Behistun relief and inscription, seen from below</b> · Photo: Hamidreza Sorouri / Persian Dutch Network · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Behistun_Inscription_in_Persia_ca._520_BC-_UNESCO_World_Heritage_Site.jpg">source</a></li><li><b>Head of Thucydides (Royal Ontario Museum)</b> · Photo: Captmondo (background removed) · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:Thucydides-bust-cutout_ROM.jpg">source</a></li><li><b>The Behistun relief of Darius I</b> · Photo: Patrick C (dynamosquito on Flickr) · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Stone_record_at_Behistun.jpg">source</a></li><li><b>The Rosetta Stone</b> · Photo: Hans Hillewaert · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Rosetta_Stone.JPG">source</a></li></ul>
+        <p class="small">All images are public domain or openly licensed, and were resized for the web. Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1736 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U2 L6 · The Apadana: Stairway Reliefs, Delegations and Foundation Tablets</title>
+<meta name="description" content="Year 11 Ancient History, case study Persepolis: the Apadana audience hall, its stairway reliefs of 23 delegations bringing gifts, and Darius’s gold and silver foundation tablets, analysed as sources for how the king wanted his empire to be seen.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#0F5E5A; --bright:#1A8A84; --tint:#E1F2F0; --statement:#0F5E5A;
+  --solid:#0F5E5A; --soft:#CBEDE9; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; } }
+:root[data-theme="dark"]{ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 2 Lesson 6 only (every class starts u2l06-) */
+
+/* See-Think-Wonder: the uncaptioned relief and three columns */
+.u2l06-stw-img{margin:0;}
+.u2l06-stw-img img{display:block; width:100%; height:36vh; object-fit:contain; background:var(--surface-2);
+  border-radius:10px; box-shadow:var(--shadow);}
+.u2l06-stw .card{padding:clamp(10px,1.6vh,20px) clamp(14px,1.4vw,22px);}
+.u2l06-stw .body{color:var(--slate); font-size:calc(var(--fs-body)*.85);}
+.u2l06-eg{margin-top:.5em; padding-top:.5em; border-top:1px dashed var(--rule); font-style:italic;
+  font-size:calc(var(--fs-body)*.85); line-height:1.4;}
+.u2l06-eg::before{content:"For example: "; font-style:normal; font-weight:700; color:var(--deep);}
+
+/* quick facts list */
+.u2l06-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.3em;
+  font-size:calc(var(--fs-body)*.88); line-height:1.38;}
+.u2l06-facts b{color:var(--deep);}
+
+/* the two diagrams (inline SVG): colours from the page variables, so both themes work */
+.u2l06-diag svg{max-height:56vh;}
+.u2l06-diag.wide svg{max-height:34vh;}
+.u2l06-svg text{font-family:var(--ui); fill:var(--ink); text-anchor:middle;}
+.u2l06-plat{fill:var(--surface-2); stroke:var(--rule); stroke-width:2;}
+.u2l06-hall{fill:var(--tint); stroke:var(--deep); stroke-width:3;}
+.u2l06-port{fill:var(--surface); stroke:var(--deep); stroke-width:2; stroke-dasharray:6 4;}
+.u2l06-tower{fill:var(--surface); stroke:var(--slate); stroke-width:2;}
+.u2l06-col{fill:var(--deep);}
+.u2l06-col.p{fill:var(--slate);}
+.u2l06-stairs rect{fill:var(--w-keyterm); stroke:var(--c-keyterm); stroke-width:2;}
+.u2l06-stairs line{stroke:var(--c-keyterm); stroke-width:1.5;}
+.u2l06-lab{font-size:19px;}
+.u2l06-lab.big{font-size:26px; font-weight:700; fill:var(--deep);}
+.u2l06-lab.sm{font-size:17px; fill:var(--slate);}
+.u2l06-lab.xs{font-size:18px; fill:var(--slate);}
+.u2l06-lab.key{font-size:24px; font-weight:700; fill:var(--deep);}
+.u2l06-lab.st{font-size:20px; font-weight:700; fill:var(--c-keyterm);}
+.u2l06-lab.note{font-size:15px; fill:var(--slate); font-style:italic;}
+.u2l06-north path{fill:var(--slate);} .u2l06-north text{font-size:18px; font-weight:700; fill:var(--slate);}
+.u2l06-arrow{stroke:var(--c-keyterm); stroke-width:3; fill:none;}
+.u2l06-wall{fill:var(--surface-2); stroke:var(--slate); stroke-width:2;}
+.u2l06-lion{fill:var(--w-judgement); stroke:var(--c-judgement); stroke-width:2;}
+.u2l06-centre{fill:var(--tint); stroke:var(--deep); stroke-width:3;}
+.u2l06-court{fill:var(--w-scope); stroke:var(--c-scope); stroke-width:1.5;}
+.u2l06-dele{fill:var(--w-evidence); stroke:var(--c-evidence); stroke-width:1.5;}
+.u2l06-dir{stroke:var(--slate); stroke-width:3; fill:none;}
+.u2l06-ahead{fill:var(--slate);}
+.u2l06-lab.wing{font-size:29px; font-weight:600;}
+.u2l06-lab.leg{font-size:22px; text-anchor:start;}
+.u2l06-lab.cen{font-size:26px; font-weight:700; fill:var(--deep);}
+.u2l06-lab.cen.once{font-weight:400; font-style:italic;}
+.u2l06-lab.tri{font-size:24px; font-weight:700; fill:var(--c-judgement);}
+.u2l06-tight{gap:4px;}
+
+/* delegation detectives: six picture cards, three across */
+.u2l06-cards{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1vw,14px);}
+.u2l06-card{position:relative; margin:0; background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  overflow:hidden; box-shadow:var(--shadow);}
+.u2l06-card img{display:block; width:100%; height:24vh; object-fit:cover; background:var(--surface-2);}
+.u2l06-card img.u2l06-top{object-position:50% 15%;}
+.u2l06-card img.u2l06-fit{object-fit:contain;}
+.u2l06-card .l{position:absolute; top:6px; left:6px; width:1.7em; height:1.7em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:calc(var(--fs-body)*.8);
+  box-shadow:0 0 0 2px #fff;}
+.u2l06-clues ul{list-style:none; padding:0; margin:.2em 0 0; display:flex; flex-direction:column; gap:.35em;}
+.u2l06-clues li{margin:0; line-height:1.32;}
+.u2l06-clues b{color:var(--deep); display:inline-block; min-width:0; margin-right:.3em;}
+.u2l06-howto{display:flex; flex-wrap:wrap; gap:.35em 1.1em; font-size:calc(var(--fs-body)*.8); margin:0;}
+.u2l06-howto b{display:inline-grid; place-items:center; width:1.5em; height:1.5em; border-radius:50%; background:var(--solid);
+  color:#fff; font-size:.85em; margin-right:.3em;}
+
+/* the answer table */
+.u2l06-key td:first-child{font-weight:700; font-family:var(--mono); text-align:center;}
+.u2l06-key td:nth-child(2){font-weight:700; white-space:nowrap;}
+.u2l06-sure{display:inline-block; padding:.05em .55em; border-radius:999px; background:var(--w-evidence); color:var(--c-evidence);
+  font-weight:700; font-size:.88em; margin-right:.3em; white-space:nowrap;}
+.u2l06-sure.q{background:var(--w-judgement); color:var(--c-judgement);}
+
+/* experts disagree */
+.u2l06-deb .card{padding:clamp(10px,1.4vh,18px) clamp(12px,1.2vw,20px);}
+.u2l06-deb .body{font-size:calc(var(--fs-body)*.84); line-height:1.4;}
+
+/* think-aloud rows: badge + question + model */
+.u2l06-ov{display:grid; grid-template-columns:2.4em 1fr; gap:.7em; align-items:start;}
+.u2l06-ovl{display:grid; place-items:center; min-height:2.1em; border-radius:8px; background:var(--solid); color:#fff;
+  font-weight:700; font-family:var(--mono); font-size:calc(var(--fs-body)*.95); line-height:1.1; padding:.2em; text-align:center;}
+.u2l06-ov .qprompt::before{content:none;}
+.u2l06-model{margin:.3em 0 0; padding:.4em .85em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 8px 8px 0; font-size:calc(var(--fs-body)*.86); line-height:1.4;}
+.u2l06-later{opacity:.75;}
+.u2l06-later .u2l06-ovl{background:var(--slate); font-size:calc(var(--fs-body)*.62);}
+
+/* verb bank and modality chips */
+.u2l06-bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.u2l06-bank span{border:1px solid var(--c-keyterm); color:var(--c-keyterm); border-radius:999px; padding:.1em .7em;
+  background:var(--w-keyterm); font-size:calc(var(--fs-body)*.8); font-weight:600;}
+.u2l06-bank.mod span{border-color:var(--c-judgement); color:var(--c-judgement); background:var(--w-judgement);}
+
+/* hinge question */
+.u2l06-hinge{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+
+/* goals slide: syllabus line; credits */
+.u2l06-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u2l06-cite a{color:var(--deep);}
+
+/* phones (Read mode): fewer columns, natural picture heights */
+@media (max-width:900px){
+  .u2l06-cards{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .u2l06-card img{height:auto; aspect-ratio:4/3;}
+  .u2l06-stw-img img{height:auto; max-height:40vh;}
+  .u2l06-diag svg, .u2l06-diag.wide svg{max-height:none;}
+  .u2l06-key td:nth-child(2){white-space:normal;}
+  .u2l06-dense .figure.short img{height:auto; max-height:50vh;}
+}
+@media (max-width:420px){
+  .u2l06-cards{grid-template-columns:1fr;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u2l06-dense{gap:10px;}
+  html:not(.read) .u2l06-dense h2{font-size:calc(var(--fs-h2)*.86);}
+  html:not(.read) .u2l06-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.4;}
+  html:not(.read) .u2l06-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u2l06-dense .src{padding:9px 15px;}
+  html:not(.read) .u2l06-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u2l06-dense .note{padding:.42em .8em;}
+  html:not(.read) .u2l06-dense .note .body, html:not(.read) .u2l06-dense .card .body,
+  html:not(.read) .u2l06-dense .qprompt{font-size:calc(var(--fs-body)*.8); line-height:1.34;}
+  html:not(.read) .u2l06-dense .card{padding:9px 15px;}
+  html:not(.read) .u2l06-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l06-dense .tbl.compact td{padding:.3em .55em;}
+  html:not(.read) .u2l06-dense .tbl th{padding:.4em .6em;}
+  html:not(.read) .u2l06-dense .figure img{max-height:30vh;}
+  html:not(.read) .u2l06-dense .figure.short img{height:22vh;}
+  html:not(.read) .u2l06-dense .figure figcaption{font-size:calc(var(--fs-chrome)*.9); margin-top:.3em;}
+  html:not(.read) .u2l06-dense .u2l06-model{font-size:calc(var(--fs-body)*.74); padding:.28em .7em;}
+  html:not(.read) .u2l06-dense .keylist{gap:6px;}
+  html:not(.read) .u2l06-dense .keylist li{font-size:calc(var(--fs-body)*.84);}
+  html:not(.read) .u2l06-dense .keylist .d{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l06-dense .u2l06-facts{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u2l06-dense .u2l06-stw-img img{height:40vh;}
+  html:not(.read) .u2l06-dense .u2l06-big .figure img{max-height:50vh;}
+  html:not(.read) .u2l06-dense .u2l06-eg{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l06-dense .u2l06-card img{height:26vh;}
+  html:not(.read) .u2l06-dense .u2l06-clues .body{font-size:calc(var(--fs-body)*.72); line-height:1.3;}
+  html:not(.read) .u2l06-dense .u2l06-deb .body{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l06-dense .u2l06-diag svg{max-height:50vh;}
+  html:not(.read) .u2l06-dense .u2l06-diag.wide svg{max-height:30vh;}
+  html:not(.read) .u2l06-dense .u2l06-bank span{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l06-dense .u2l06-howto{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l06-dense .tf li, html:not(.read) .u2l06-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l06-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u2l06-dense .prac{gap:6px;}
+  html:not(.read) .u2l06-dense .cornell .cq, html:not(.read) .u2l06-dense .cornell .nts{font-size:calc(var(--fs-body)*.74); padding:.32em .8em;}
+  html:not(.read) .u2l06-dense .opts li{padding:.4em .8em; font-size:calc(var(--fs-body)*.86);}
+  html:not(.read) .u2l06-dense .u2l06-cite .credits{font-size:calc(var(--fs-chrome)*.85); margin-bottom:.3em;}
+  html:not(.read) .u2l06-dense .u2l06-cite .credits li{margin:.1em 0;}
+  html:not(.read) .u2l06-dense .u2l06-cite .small{font-size:calc(var(--fs-chrome)*.9);}
+  html:not(.read) .u2l06-dense .checks label{font-size:calc(var(--fs-body)*.8);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 6" data-title="The Apadana: stairway reliefs, delegations and foundation tablets" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.05fr .95fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 2 · Persepolis · Lesson 6</p>
+      <h1>The Apadana: stairway reliefs, delegations and foundation tablets</h1>
+      <p class="lead">Twenty-three peoples climb the stairs with gifts for the king. What can a carved procession tell us, and whose view of the empire does it show?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <figure class="figure tall contain"><img src="images/u2l06-apadana-eastern-stairway.jpg" alt="The eastern stairway of the Apadana at Persepolis, under a modern protective roof (carved in the late 6th to early 5th century BCE)" loading="lazy"><figcaption>The eastern stairway of the Apadana at Persepolis, under a modern protective roof (carved in the late 6th to early 5th century BCE) — <span class="cr">Photo: A. Davey · CC BY 2.0</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 6" data-title="Connect: the zones of the terrace" data-kind="intro">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">Connect · 3 minutes · everyone writes one line · press K for the timer</p>
+  <h2>Name three zones of the terrace and one building in each</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · 60 seconds · from Lesson 5</div><p class="body">One line, from memory: three zones of the terrace, and one building in each. Use the precise names.</p></div>
+      <div class="card quiet sm"><div class="k">Push yourself</div><p class="body">Which zone did a visiting delegation reach first, and why might that matter?</p></div>
+    </div>
+    <div class="stack" data-veil="Write yours first — then show a model answer">
+      <div class="note reveal" data-code="evidence"><div class="k">A model answer</div><p class="body"><b>Ceremonial and audience (north):</b> the Apadana, the Hall of a Hundred Columns, the Gate of All Nations · <b>Royal residences (south):</b> the Tachara, the Hadish · <b>Storage and administration (south-east):</b> the Treasury · <b>Defence:</b> the walls and towers, with the mountain behind.</p></div>
+      <div class="note reveal" data-code="judgement"><div class="k">Today</div><p class="body">The Apadana stands in the ceremonial zone. Visitors came up the great stairway, through the Gate, and climbed the Apadana’s own stairways to meet the king: today we read what they saw carved on those stairs.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 6" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>analyse the Apadana reliefs and foundation tablets as sources</li>
+        <li>explain whose perspective the reliefs present</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>describe what the stairway reliefs show and who made them</li>
+        <li>explain what the reliefs are reliable for and what they are not</li>
+        <li>write two analytical sentences about the reliefs</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u2l06-syl"><b>Syllabus outcomes:</b> AH-11-03 explains the role and significance of forces, features, events, individuals and groups in shaping the past · AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-08 uses sources to form conclusions about the past · AH-LS-09 identifies different interpretations of the past.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 6" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the same routine as always</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U2 L6 · The Apadana: reliefs and tablets</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Describe the Apadana.</div><div class="nts">audience hall, begun by Darius I → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">Title, date, a cue column about a quarter of the page wide, room for a summary.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: the Apadana, its reliefs and tablets · your OVPRL notes on the stairway relief.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 6" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for today</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>The hall and its stairways</th><th>Meaning</th></tr>
+      <tr><td>Apadana</td><td>The great columned audience hall of Persepolis, begun by Darius I.</td></tr>
+      <tr><td>Hypostyle hall</td><td>A hall whose roof is held up by many columns.</td></tr>
+      <tr><td>Capital (of a column)</td><td>The carved top of a column; at Persepolis, often two animal fronts back to back.</td></tr>
+      <tr><td>Relief</td><td>A carving that stands out from a flat stone background.</td></tr>
+      <tr><td>Usher</td><td>A court official who leads visitors in to the king.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Sources and debates</th><th>Meaning</th></tr>
+      <tr><td>Delegation</td><td>A group sent to represent a people or land — on the Apadana, 23 of them bring gifts.</td></tr>
+      <tr><td>Foundation tablet</td><td>An inscribed tablet buried in a building’s foundations, addressed to the gods and to future kings, not to visitors.</td></tr>
+      <tr><td>Trilingual inscription</td><td>An inscription written in three languages (at Persepolis usually Old Persian, Elamite and Babylonian).</td></tr>
+      <tr><td>Tribute</td><td>Payment in silver, gold or goods that a subject people made to the king.</td></tr>
+      <tr><td>Polychromy</td><td>The use of many colours, as on the originally painted reliefs.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Looking closely" data-title="See – Think – Wonder" data-kind="intro">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">1 · Looking closely · I do — See – Think – Wonder · 3 minutes · press K for the timer</p>
+  <h2>Look closely. What is happening here?</h2>
+  <figure class="u2l06-stw-img"><img src="images/u2l06-see-think-wonder-relief.jpg" alt="A carved stone panel to look at closely: a line of men walking to the right, one leading a horse, the man at the front holding the hand of the man behind him"></figure>
+  <div class="cols c3 u2l06-stw veil-parts" data-veil="Try it first — then show some examples">
+    <div class="card"><div class="k">I see …</div><p class="body">only what is really there</p>
+      <p class="u2l06-eg vp reveal">a man in a tall ridged hat and long robe, holding the hand of the man behind him · men in cloaks and soft caps · a horse with a decorated bridle · part of a pot with curved handles (far left)</p></div>
+    <div class="card"><div class="k">I think …</div><p class="body">what it might be, and how sure you are</p>
+      <p class="u2l06-eg vp reveal">a procession bringing gifts (fairly sure) · the front man guides the others in (fairly sure) · the others are foreigners: they dress differently from him (fairly sure) · the horse is a gift (guess)</p></div>
+    <div class="card"><div class="k">I wonder …</div><p class="body">questions you want answered</p>
+      <p class="u2l06-eg vp reveal">Who are they, and where are they from? · Who were the gifts for? · Did this procession ever really happen?</p></div>
+  </div>
+  <p class="small credline">Images: Carole Raddato (CC BY-SA 2.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Looking closely" data-title="What it is: one delegation of twenty-three" data-kind="notes">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">1 · Looking closely · the reveal</p>
+  <h2>One delegation of twenty-three, on the Apadana’s eastern stairway</h2>
+  <div class="split u2l06-big" style="--cols:1.15fr 1fr">
+    <figure class="figure contain"><img src="images/u2l06-see-think-wonder-relief.jpg" alt="A delegation usually identified as the Armenians, with a horse, led in by an usher in Persian dress (right): southern wing of the Apadana’s eastern stairway, Persepolis" loading="lazy"><figcaption>A delegation usually identified as the Armenians, with a horse, led in by an usher in Persian dress (right): southern wing of the Apadana’s eastern stairway, Persepolis — <span class="cr">Photo: Carole Raddato · CC BY-SA 2.0</span></figcaption></figure>
+    <div class="stack">
+      <ul class="u2l06-facts">
+        <li><b>What:</b> a carved stone relief, once painted, on the eastern stairway of the Apadana, the king’s audience hall at Persepolis</li>
+        <li><b>When:</b> carved in the late 6th to early 5th century BCE, probably for Darius I</li>
+        <li><b>Who:</b> a delegation usually identified as the Armenians, bringing a horse and a metal vessel; the man in front is an usher of the Persian court, leading the first visitor by the hand</li>
+        <li><b>One of many:</b> 23 delegations from across the empire climb the same stairway</li>
+      </ul>
+      <p class="qprompt reveal">No label names this delegation. So how can historians say who they are?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">From their clothing, hair and gifts, compared with what other sources say about each land. That is detective work, so some identifications are surer than others (section 2).</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Looking closely" data-title="The Apadana: the hall" data-kind="notes">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">1 · Looking closely · I do — the hall the stairways lead to</p>
+  <h2>The Apadana: an audience hall of 72 columns</h2>
+  <div class="split" style="--cols:1fr 1.05fr">
+    <figure class="diagram u2l06-diag"><svg class="u2l06-svg u2l06-plan" viewBox="0 0 660 640" role="img" aria-label="Plan of the Apadana, simplified: a square hall of six rows of six columns (36), with a portico of two rows of six columns (12) on the north, west and east sides, a tower at each corner, a stairway on the north side and a stairway on the east side."><rect class="u2l06-plat" x="40" y="44" width="520" height="500" rx="6"/><rect class="u2l06-hall" x="192" y="200" width="216" height="216"/><rect class="u2l06-port" x="192" y="108" width="216" height="80"/><rect class="u2l06-port" x="100" y="200" width="80" height="216"/><rect class="u2l06-port" x="420" y="200" width="80" height="216"/><rect class="u2l06-tower" x="100" y="108" width="80" height="80"/><rect class="u2l06-tower" x="420" y="108" width="80" height="80"/><rect class="u2l06-tower" x="100" y="428" width="80" height="80"/><rect class="u2l06-tower" x="420" y="428" width="80" height="80"/><circle class="u2l06-col" cx="210.0" cy="218.0" r="8"/><circle class="u2l06-col" cx="246.0" cy="218.0" r="8"/><circle class="u2l06-col" cx="282.0" cy="218.0" r="8"/><circle class="u2l06-col" cx="318.0" cy="218.0" r="8"/><circle class="u2l06-col" cx="354.0" cy="218.0" r="8"/><circle class="u2l06-col" cx="390.0" cy="218.0" r="8"/><circle class="u2l06-col" cx="210.0" cy="254.0" r="8"/><circle class="u2l06-col" cx="246.0" cy="254.0" r="8"/><circle class="u2l06-col" cx="282.0" cy="254.0" r="8"/><circle class="u2l06-col" cx="318.0" cy="254.0" r="8"/><circle class="u2l06-col" cx="354.0" cy="254.0" r="8"/><circle class="u2l06-col" cx="390.0" cy="254.0" r="8"/><circle class="u2l06-col" cx="210.0" cy="290.0" r="8"/><circle class="u2l06-col" cx="246.0" cy="290.0" r="8"/><circle class="u2l06-col" cx="282.0" cy="290.0" r="8"/><circle class="u2l06-col" cx="318.0" cy="290.0" r="8"/><circle class="u2l06-col" cx="354.0" cy="290.0" r="8"/><circle class="u2l06-col" cx="390.0" cy="290.0" r="8"/><circle class="u2l06-col" cx="210.0" cy="326.0" r="8"/><circle class="u2l06-col" cx="246.0" cy="326.0" r="8"/><circle class="u2l06-col" cx="282.0" cy="326.0" r="8"/><circle class="u2l06-col" cx="318.0" cy="326.0" r="8"/><circle class="u2l06-col" cx="354.0" cy="326.0" r="8"/><circle class="u2l06-col" cx="390.0" cy="326.0" r="8"/><circle class="u2l06-col" cx="210.0" cy="362.0" r="8"/><circle class="u2l06-col" cx="246.0" cy="362.0" r="8"/><circle class="u2l06-col" cx="282.0" cy="362.0" r="8"/><circle class="u2l06-col" cx="318.0" cy="362.0" r="8"/><circle class="u2l06-col" cx="354.0" cy="362.0" r="8"/><circle class="u2l06-col" cx="390.0" cy="362.0" r="8"/><circle class="u2l06-col" cx="210.0" cy="398.0" r="8"/><circle class="u2l06-col" cx="246.0" cy="398.0" r="8"/><circle class="u2l06-col" cx="282.0" cy="398.0" r="8"/><circle class="u2l06-col" cx="318.0" cy="398.0" r="8"/><circle class="u2l06-col" cx="354.0" cy="398.0" r="8"/><circle class="u2l06-col" cx="390.0" cy="398.0" r="8"/><circle class="u2l06-col p" cx="210.0" cy="128" r="8"/><circle class="u2l06-col p" cx="210.0" cy="168" r="8"/><circle class="u2l06-col p" cx="246.0" cy="128" r="8"/><circle class="u2l06-col p" cx="246.0" cy="168" r="8"/><circle class="u2l06-col p" cx="282.0" cy="128" r="8"/><circle class="u2l06-col p" cx="282.0" cy="168" r="8"/><circle class="u2l06-col p" cx="318.0" cy="128" r="8"/><circle class="u2l06-col p" cx="318.0" cy="168" r="8"/><circle class="u2l06-col p" cx="354.0" cy="128" r="8"/><circle class="u2l06-col p" cx="354.0" cy="168" r="8"/><circle class="u2l06-col p" cx="390.0" cy="128" r="8"/><circle class="u2l06-col p" cx="390.0" cy="168" r="8"/><circle class="u2l06-col p" cx="120" cy="218.0" r="8"/><circle class="u2l06-col p" cx="440" cy="218.0" r="8"/><circle class="u2l06-col p" cx="160" cy="218.0" r="8"/><circle class="u2l06-col p" cx="480" cy="218.0" r="8"/><circle class="u2l06-col p" cx="120" cy="254.0" r="8"/><circle class="u2l06-col p" cx="440" cy="254.0" r="8"/><circle class="u2l06-col p" cx="160" cy="254.0" r="8"/><circle class="u2l06-col p" cx="480" cy="254.0" r="8"/><circle class="u2l06-col p" cx="120" cy="290.0" r="8"/><circle class="u2l06-col p" cx="440" cy="290.0" r="8"/><circle class="u2l06-col p" cx="160" cy="290.0" r="8"/><circle class="u2l06-col p" cx="480" cy="290.0" r="8"/><circle class="u2l06-col p" cx="120" cy="326.0" r="8"/><circle class="u2l06-col p" cx="440" cy="326.0" r="8"/><circle class="u2l06-col p" cx="160" cy="326.0" r="8"/><circle class="u2l06-col p" cx="480" cy="326.0" r="8"/><circle class="u2l06-col p" cx="120" cy="362.0" r="8"/><circle class="u2l06-col p" cx="440" cy="362.0" r="8"/><circle class="u2l06-col p" cx="160" cy="362.0" r="8"/><circle class="u2l06-col p" cx="480" cy="362.0" r="8"/><circle class="u2l06-col p" cx="120" cy="398.0" r="8"/><circle class="u2l06-col p" cx="440" cy="398.0" r="8"/><circle class="u2l06-col p" cx="160" cy="398.0" r="8"/><circle class="u2l06-col p" cx="480" cy="398.0" r="8"/><g class="u2l06-stairs"><rect x="220" y="16" width="160" height="28"/><line x1="240" y1="16" x2="240" y2="44"/><line x1="260" y1="16" x2="260" y2="44"/><line x1="280" y1="16" x2="280" y2="44"/><line x1="300" y1="16" x2="300" y2="44"/><line x1="320" y1="16" x2="320" y2="44"/><line x1="340" y1="16" x2="340" y2="44"/><line x1="360" y1="16" x2="360" y2="44"/><rect x="560" y="228" width="28" height="160"/><line x1="560" y1="248" x2="588" y2="248"/><line x1="560" y1="268" x2="588" y2="268"/><line x1="560" y1="288" x2="588" y2="288"/><line x1="560" y1="308" x2="588" y2="308"/><line x1="560" y1="328" x2="588" y2="328"/><line x1="560" y1="348" x2="588" y2="348"/><line x1="560" y1="368" x2="588" y2="368"/></g><text class="u2l06-lab xs" x="140" y="165"><tspan x="140" dy="0">tower</tspan></text><text class="u2l06-lab st" x="470" y="34"><tspan x="470" dy="0">north stairway</tspan></text><text class="u2l06-lab st" x="620" y="290"><tspan x="620" dy="0">east</tspan><tspan x="620" dy="1.15em">stair-</tspan><tspan x="620" dy="1.15em">way</tspan></text><g class="u2l06-north"><path d="M610,560 l-10,24 l10,-6 l10,6 Z"/><text x="610" y="552">N</text></g><circle class="u2l06-col" cx="66" cy="576" r="9"/><text class="u2l06-lab leg" x="84" y="583">hall: 6 × 6 = 36</text><circle class="u2l06-col p" cx="276" cy="576" r="9"/><text class="u2l06-lab leg" x="294" y="583">porticoes: 3 × 12 = 36</text><text class="u2l06-lab key" x="300" y="625">36 + 36 = 72 columns</text></svg><figcaption>The Apadana in plan · simplified, drawn for this lesson</figcaption></figure>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">An audience hall</span><span class="d">Probably where the king received visitors (that is how its stairway reliefs are usually read); begun by Darius I, finished under his son Xerxes.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">72 columns</span><span class="d">36 in the hall (6 × 6) and 12 in each of three porticoes; about 20–24 metres high, holding a roof of wooden beams.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Double-animal capitals</span><span class="d">Two bull (or lion) fronts back to back; the roof beams rested between the heads.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Two carved stairways</span><span class="d">On the north and east sides, both carved with the same procession.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Looking closely" data-title="The eastern stairway and its centre" data-kind="notes">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">1 · Looking closely · I do — how the eastern stairway is laid out</p>
+  <h2>The eastern stairway: two processions meet at the centre</h2>
+  <div class="split" style="--cols:1.45fr 1fr">
+    <div class="stack">
+      <figure class="diagram u2l06-diag wide"><svg class="u2l06-svg u2l06-stair" viewBox="0 0 1200 500" role="img" aria-label="Layout of the eastern stairway of the Apadana, seen from the front (from the east, so north is on the right), simplified: on the left (south) wing, three rows of the 23 delegations walking right, towards the centre; in the centre, a panel that now shows eight guards and once showed the king enthroned; on the right (north) wing, three rows of Persian and Median courtiers, guards, horses and chariots walking left, towards the centre; a lion attacking a bull in four triangular panels."><polygon class="u2l06-wall" points="20,300 150,90 470,90 520,40 680,40 730,90 1050,90 1180,300"/><polygon class="u2l06-lion" points="20,300 150,90 150,300"/><polygon class="u2l06-lion" points="1050,90 1180,300 1050,300"/><polygon class="u2l06-lion" points="470,90 520,40 520,300"/><polygon class="u2l06-lion" points="680,40 730,90 680,300"/><rect class="u2l06-centre" x="520" y="40" width="160" height="260"/><rect class="u2l06-dele" x="158" y="96.0" width="304" height="58.0"/><rect class="u2l06-dele" x="158" y="166.0" width="304" height="58.0"/><rect class="u2l06-dele" x="158" y="236.0" width="304" height="58.0"/><rect class="u2l06-court" x="738" y="96.0" width="304" height="58.0"/><rect class="u2l06-court" x="738" y="166.0" width="304" height="58.0"/><rect class="u2l06-court" x="738" y="236.0" width="304" height="58.0"/><defs><marker id="u2l06-ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path class="u2l06-ahead" d="M0,0 L10,5 L0,10 Z"/></marker></defs><path class="u2l06-dir" d="M190,330 L430,330" marker-end="url(#u2l06-ah)"/><path class="u2l06-dir" d="M1010,330 L770,330" marker-end="url(#u2l06-ah)"/><text class="u2l06-lab cen" x="600" y="92"><tspan x="600" dy="0">now:</tspan><tspan x="600" dy="1.15em">eight</tspan><tspan x="600" dy="1.15em">guards</tspan></text><text class="u2l06-lab cen once" x="600" y="200"><tspan x="600" dy="0">once:</tspan><tspan x="600" dy="1.15em">the king</tspan><tspan x="600" dy="1.15em">enthroned</tspan></text><text class="u2l06-lab tri" x="90" y="342"><tspan x="90" dy="0">lion + bull</tspan></text><text class="u2l06-lab tri" x="1110" y="342"><tspan x="1110" dy="0">lion + bull</tspan></text><text class="u2l06-lab wing" x="310" y="382"><tspan x="310" dy="0">SOUTH WING: the empire</tspan><tspan x="310" dy="1.15em">the 23 delegations, each</tspan><tspan x="310" dy="1.15em">led in by an usher, with gifts</tspan></text><text class="u2l06-lab wing" x="890" y="382"><tspan x="890" dy="0">NORTH WING: the court</tspan><tspan x="890" dy="1.15em">Persian and Median courtiers,</tspan><tspan x="890" dy="1.15em">guards, horses, chariots</tspan></text></svg><figcaption>The eastern stairway seen from the front (from the east, so north is on the right): both processions walk towards the centre; a lion attacks a bull in four places · simplified, drawn for this lesson</figcaption></figure>
+      <ol class="keylist u2l06-tight">
+        <li class="reveal"><span class="num">1</span><span class="t">South wing: the empire</span><span class="d">23 delegations in three rows, each led in by an usher, carrying gifts.</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">North wing: the court</span><span class="d">Persian and Median courtiers, guards, horses and chariots.</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">The centre: the king, once</span><span class="d">Each stairway’s centre once showed the king enthroned. Both panels were later moved to the Treasury, where Erich Schmidt’s excavation found them; no one knows why they were moved.</span></li>
+      </ol>
+    </div>
+    <div class="stack">
+      <figure class="figure contain short"><img src="images/u2l06-audience-relief-tehran.jpg" alt="The Audience relief (National Museum of Iran): the king enthroned, often identified as Darius I, with an official saluting him" loading="lazy"><figcaption>The Audience relief (National Museum of Iran): the king enthroned, often identified as Darius I, with an official saluting him — <span class="cr">Photo: Arashk rp2 · CC BY-SA 4.0</span></figcaption></figure>
+      <figure class="figure contain short"><img src="images/u2l06-lion-attacking-bull.jpg" alt="A lion attacking a bull, carved on a stairway at Persepolis: the motif appears four times on the Apadana’s eastern stairway" loading="lazy"><figcaption>A lion attacking a bull, carved on a stairway at Persepolis: the motif appears four times on the Apadana’s eastern stairway — <span class="cr">Photo: Yong Woo Park · CC BY 4.0</span></figcaption></figure>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Looking closely" data-title="Think aloud: OVPRL on the stairway relief" data-kind="notes">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">1 · Looking closely · I do — think aloud · use the OVPRL routine on page 2 of your booklet</p>
+  <h2>OVPRL on the stairway relief: three decisions, thought aloud</h2>
+  <div class="split" style="--cols:.8fr 1.2fr">
+    <div class="stack">
+      <figure class="figure contain short"><img src="images/u2l06-eastern-stairway-delegations.jpg" alt="The southern wing of the Apadana’s eastern stairway: delegations walk in rows, separated by trees, each led in by an usher" loading="lazy"><figcaption>The southern wing of the Apadana’s eastern stairway: delegations walk in rows, separated by trees, each led in by an usher — <span class="cr">Photo: Diego Delso · CC BY-SA 4.0</span></figcaption></figure>
+      <figure class="figure contain short"><img src="images/u2l06-eastern-stairway-north-wing-guards.jpg" alt="The north wing of the eastern stairway: guards with spears, in long court robes, walk left, towards the centre" loading="lazy"><figcaption>The north wing of the eastern stairway: guards with spears, in long court robes, walk left, towards the centre — <span class="cr">Photo: Carole Raddato · CC BY-SA 2.0</span></figcaption></figure>
+      <p class="qprompt">Who made it, why, and what is it reliable for?</p>
+    </div>
+    <div class="stack veil-parts" data-veil="Try it first — then show the worked example">
+      <div class="u2l06-ov"><span class="u2l06-ovl">O</span><div><p class="qprompt">Origin: who made it, when and where?</p>
+        <p class="u2l06-model vp reveal">Carved for the king, probably Darius I, on the eastern stairway of his audience hall at Persepolis, late 6th to early 5th century BCE (the hall was finished under Xerxes) · stone, once painted · by the king’s sculptors, none named</p></div></div>
+      <div class="u2l06-ov"><span class="u2l06-ovl">P</span><div><p class="qprompt">Purpose: why was it made, and for whom?</p>
+        <p class="u2l06-model vp reveal">Made for the king, to show the whole empire arriving in order: 23 peoples bring gifts, each led in by his ushers · seen by everyone who climbed the stairs to an audience</p></div></div>
+      <div class="u2l06-ov"><span class="u2l06-ovl">R</span><div><p class="qprompt">Reliability: how far can we trust it, and for what?</p>
+        <p class="u2l06-model vp reveal">Reliable evidence of royal ideology (how the king wanted his empire seen), and of dress and goods (carved in detail) · less reliable as a record of one event: no date, no names, the same procession carved twice</p></div></div>
+      <div class="u2l06-ov u2l06-later"><span class="u2l06-ovl">V L</span><div><p class="body">Value and Limitations: your turn, in the You do.</p></div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Delegation detectives" data-title="The foundation tablets (DPh)" data-kind="notes">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">2 · Delegation detectives · We do — supported reading · read it together</p>
+  <h2>Buried under the hall: Darius’s gold and silver tablets</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · the Apadana foundation tablets (DPh)</div>
+        <p class="quote sm">Darius the great king, king of kings, king of countries, son of Hystaspes, an Achaemenid. King Darius says: This is the kingdom which I hold, from the Sacae who are beyond Sogdia to Kush, and from Sind to Lydia – <span class="ed">[this is]</span> what Ahuramazda, the greatest of gods, bestowed upon me. May Ahuramazda protect me and my royal house!</p>
+        <p class="prov">Darius I, foundation tablets of the Apadana, late 6th century BCE · the same text in Old Persian, Elamite and Babylonian · translation as published by Livius.org · Sacae = nomad peoples of Central Asia · Sogdia = Central Asia · Kush = the Nile valley south of Egypt · Sind = the Indus valley</p>
+      </div>
+      <ul class="u2l06-facts">
+        <li><b>Found:</b> 1933, by Ernst Herzfeld’s expedition (his architect Friedrich Krefter)</li>
+        <li><b>Where:</b> under two corners of the hall, each in a stone box with one gold and one silver tablet</li>
+      </ul>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Why bury a gold tablet where no one would read it?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">Its readers were the gods and future kings: buried in the foundations, it told them who built the hall and how far Darius ruled. A claim made for ever, not for visitors.</p></div>
+      <p class="qprompt reveal">Which four lands does Darius name as the edges of his kingdom?</p>
+      <div class="note reveal" data-code="analysis" data-veil="Answer first — then show the answer"><p class="body">The Sacae beyond Sogdia (north-east), Kush (south-west), Sind (east), Lydia (west). Now look for them on the stairway.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Delegation detectives" data-title="Delegation detectives">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">2 · Delegation detectives · We do — pairs · 6 minutes · press K for the timer</p>
+  <h2>Match each delegation to its land</h2>
+  <div class="split" style="--cols:1.55fr 1fr">
+    <div class="u2l06-cards">
+      <figure class="u2l06-card"><span class="l">A</span><img src="images/u2l06-delegation-card-a.jpg" alt="Card A: men in tall hats carrying vessels and armlets, with a horse behind them"></figure>
+      <figure class="u2l06-card"><span class="l">B</span><img class="u2l06-fit" src="images/u2l06-delegation-card-b.jpg" alt="Card B: the head of a bearded man wearing a tall hat"></figure>
+      <figure class="u2l06-card"><span class="l">C</span><img class="u2l06-top" src="images/u2l06-delegation-card-c.jpg" alt="Card C: men with tightly curled hair, one carrying a long curved object, one a small bowl with a lid"></figure>
+      <figure class="u2l06-card"><span class="l">D</span><img class="u2l06-fit" src="images/u2l06-delegation-card-d.jpg" alt="Card D: a man carrying two containers hanging from a pole across his shoulders"></figure>
+      <figure class="u2l06-card"><span class="l">E</span><img src="images/u2l06-delegation-card-e.jpg" alt="Card E: men with headbands carrying bowls, leading a large animal"></figure>
+      <figure class="u2l06-card"><span class="l">F</span><img src="images/u2l06-delegation-card-f.jpg" alt="Card F: bareheaded men carrying folded cloth, bowls and round bundles"></figure>
+    </div>
+    <div class="stack">
+      <div class="card quiet sm u2l06-clues"><div class="k">The lands · ★ = named on the tablets</div>
+        <ul class="body">
+          <li><b>Ionia (Yauna)</b> Greek cities on the Aegean coast, Lydia’s neighbours</li>
+          <li><b>★ Kush</b> south of Egypt; Herodotus says it sent gold, ebony and “twenty great elephants’ tusks”</li>
+          <li><b>Bactria</b> far north-east (northern Afghanistan): land of the two-humped camel</li>
+          <li><b>★ Lydia</b> west (capital Sardis): rich, famous for gold and fine metalwork</li>
+          <li><b>★ Sind</b> the Indus valley; Herodotus says the Indians paid “three hundred and sixty talents of gold dust”</li>
+          <li><b>★ the Sacae</b> nomad horsemen of Central Asia; Darius’s tomb labels one figure “This is the Saca with the pointed hat”</li>
+        </ul></div>
+      <p class="u2l06-howto"><span><b>1</b>Clothing</span><span><b>2</b>Gifts</span><span><b>3</b>Clues</span><span><b>4</b>How sure? ✓ or ?</span></p>
+    </div>
+  </div>
+  <p class="small credline">Images: Carole Raddato (CC BY-SA 2.0) · dynamosquito (CC BY-SA 2.0) · A. Davey (CC BY 2.0) · A. Davey (CC BY 2.0) · A. Davey (CC BY 2.0) · Carole Raddato (CC BY-SA 2.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Delegation detectives" data-title="Check: the matches" data-kind="notes">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">2 · Delegation detectives · We do — check your matches · cold call a pair before each row</p>
+  <h2>Check your matches: how sure can we be?</h2>
+  <div class="stack" data-veil="Match first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u2l06-key">
+    <tr><th>Card</th><th>Land</th><th>Clues that fit</th><th>How sure?</th></tr>
+    <tr class="reveal"><td>A</td><td>Lydia (perhaps)</td><td>metal vessels and armlets with griffin heads; horses (on the full relief they pull a chariot); tall hats</td><td><span class="u2l06-sure q">debated</span> scholars split between Lydians and Syrians, and the Ionians dress much like them</td></tr>
+    <tr class="reveal"><td>B</td><td>the Sacae</td><td>the tall pointed hat, as on the labelled figure on Darius’s tomb</td><td><span class="u2l06-sure">agreed</span></td></tr>
+    <tr class="reveal"><td>C</td><td>Kush</td><td>an elephant’s tusk and a bowl with a lid (on the full relief an okapi or giraffe follows); Herodotus’s tusks</td><td><span class="u2l06-sure">agreed</span></td></tr>
+    <tr class="reveal"><td>D</td><td>Sind (India)</td><td>a yoke with two containers (probably gold dust: Livius; Herodotus’s gold)</td><td><span class="u2l06-sure">agreed</span></td></tr>
+    <tr class="reveal"><td>E</td><td>Bactria (most likely)</td><td>a two-humped camel and bowls</td><td><span class="u2l06-sure q">debated</span> four delegations bring this camel: experts look at small details of dress and hair</td></tr>
+    <tr class="reveal"><td>F</td><td>Ionia (most likely)</td><td>no tall hat; folded cloth, bowls and round bundles (wool? beehives?)</td><td><span class="u2l06-sure q">debated</span> most scholars say Ionians, some say Lydians: the dress is like card A’s and the gifts are uncertain</td></tr>
+  </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Delegation detectives" data-title="Experts disagree" data-kind="notes">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">2 · Delegation detectives · We do — contestability · gesture vote at the end</p>
+  <h2>Three questions experts still argue about</h2>
+  <div class="cols c3 u2l06-deb">
+    <div class="card reveal"><div class="k">1 · Which delegation is which?</div><p class="body">No delegation is labelled. The labelled figures on Darius’s tomb help, but several peoples bring the same gifts: four bring a two-humped camel. A 2021 study compared nine scholars, who agree on only about half of the 23 delegations, and still found “an ongoing identification problem among scholars”.</p></div>
+    <div class="card reveal"><div class="k">2 · Tribute or gifts?</div><p class="body">Herodotus says most lands paid a fixed tribute, but some, such as Kush and the Arabians, gave gifts instead. Modern writers use both words: ‘tribute bearers’ (Livius) or ‘gift-bearing delegations’ (Swart, 2021).</p></div>
+    <div class="card reveal"><div class="k">3 · A real ceremony or an ideal image?</div><p class="body">Livius thinks a gift-giving ceremony in the Apadana “is very likely”, and some link it to the New Year, but “there is no hard evidence for the date of its celebration”. Yet the king here is an idealised figure, and “the relief is a piece of art and not an account book” (Livius).</p></div>
+  </div>
+  <div class="src u2l06-hdt">
+    <div class="k">Source · Herodotus on gifts and tribute</div>
+    <p class="quote sm">As for those on whom no tribute was laid, but who rendered gifts instead, they were, firstly, the Ethiopians nearest to Egypt … The Arabians rendered a thousand talents’ weight of frankincense yearly. Such were the gifts of these peoples to the king, besides the tribute.</p>
+    <p class="prov">Herodotus, <i>Histories</i> 3.97 · a Greek writer, about 430 BCE · A. D. Godley’s translation (Loeb, 1921), as revised by the Perseus Digital Library · ‘Ethiopians nearest to Egypt’ = the people of Kush</p>
+  </div>
+  <p class="qprompt reveal">Gesture vote: <span class="nq">“The stairway shows a real ceremony, exactly as it happened.”</span> Thumbs up, down or sideways?</p>
+  <div class="note reveal" data-code="judgement" data-veil="Vote first — then show a model judgement"><p class="body">Partly. The peoples, clothes and kinds of gifts are real, but they are arranged as an ideal, timeless picture of the empire. It is strong evidence of how the king wanted the empire to be seen, and weak evidence of any one day.</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Delegation detectives" data-title="Notes 1 — The Apadana, its reliefs and tablets" data-kind="notes">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>The Apadana, its reliefs and its tablets</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L6 · The Apadana: reliefs and tablets</b></span><span>1 · The sources</span></div>
+    <div class="row"><div class="cq">Describe the Apadana.</div>
+      <div class="nts reveal">audience hall, begun by Darius I, finished under Xerxes <span class="sep">·</span> 72 columns (36 + 3 porticoes × 12), c. 20–24 m <span class="sep">·</span> double-animal capitals <span class="sep">·</span> stairways N and E</div></div>
+    <div class="row"><div class="cq">Explain what the stairway reliefs show.</div>
+      <div class="nts reveal">N wing: Persian + Median court <span class="sep">·</span> S wing: 23 delegations with gifts, each led by an usher <span class="sep">·</span> lion attacking bull <span class="sep">·</span> centre once the king enthroned → moved to the Treasury (found by Schmidt’s dig)</div></div>
+    <div class="row"><div class="cq">What does DPh claim, and for whom?</div>
+      <div class="nts reveal">2 gold + 2 silver tablets under 2 corners (found 1933) <span class="sep">·</span> kingdom “from the Sacae who are beyond Sogdia to Kush, and from Sind to Lydia” <span class="sep">·</span> for gods + future kings, not visitors</div></div>
+    <div class="row"><div class="cq">Explain why the delegations are contested.</div>
+      <div class="nts reveal">no labels → identified by dress + gifts <span class="sep">·</span> same gifts (camels) <span class="sep">·</span> tribute or gifts? (Herodotus 3.97) <span class="sep">·</span> real event or ideal image?</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Delegation detectives" data-title="Hinge: reliable as evidence of what?" data-kind="practice">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">Check for understanding · hinge question · hold up your A, B, C or D card on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2>The Apadana reliefs are most reliable as evidence of …</h2>
+  <div class="u2l06-hinge veil-parts" data-veil="Vote first — then show the answer">
+  <ol class="opts">
+    <li><span class="n">A</span><span>how many people came to the king each year</span></li>
+    <li id="u2l06-hqB"><span class="n">B</span><span>how the king wanted the empire to be seen</span></li>
+    <li><span class="n">C</span><span>how much the gifts of each people were worth</span></li>
+    <li><span class="n">D</span><span>how Darius really felt about his subject peoples</span></li>
+  </ol>
+  <i class="reveal" data-mark="#u2l06-hqB" hidden></i>
+  <div class="note vp reveal" data-code="evidence"><div class="k">B: how the king wanted the empire to be seen</div><p class="body"><b>A</b> is wrong: the reliefs give no numbers or dates, and the same procession is carved on both stairways. <b>C</b> is wrong: the gifts are symbols, not accounts: the relief is “a piece of art and not an account book”. <b>D</b> is wrong: the king is an idealised figure made for display, not a window into one man’s feelings.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Your analysis" data-title="You do: OVPRL notes on the stairway relief">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">3 · Your analysis · You do · 8 minutes · press K for the timer</p>
+  <h2>OVPRL notes on the eastern stairway relief</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <figure class="figure contain short"><img src="images/u2l06-eastern-stairway-delegations.jpg" alt="The southern wing of the Apadana’s eastern stairway: delegations walk in rows, separated by trees, each led in by an usher" loading="lazy"><figcaption>The southern wing of the Apadana’s eastern stairway: delegations walk in rows, separated by trees, each led in by an usher — <span class="cr">Photo: Diego Delso · CC BY-SA 4.0</span></figcaption></figure>
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body"><li>In your Cornell notes: all five OVPRL rows on the eastern stairway relief, following the OVPRL routine on page 2 of your booklet.</li>
+          <li>Use today’s evidence: one delegation, the DPh tablets and Herodotus.</li>
+          <li>Reliability row: “reliable for … but not for … because …”</li></ol></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Use the OVPRL prompt cards, one question at a time. Value: what can you <i>see</i> (clothes, gifts, ushers)? Limitations: whose voice is missing?</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Add a Limitations point from Herodotus 3.97: what did Kush send that the relief does not show? Then try the Lachish comparison in Practice and review (<span class="nq">“A procession of gifts, or a parade of captives?”</span>).</p></div>
+      <div class="card quiet sm"><div class="k">Check yourself</div><p class="body">Did you say what it is reliable <b>for</b>? Did you use one precise piece of evidence for each row?</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Your analysis" data-title="Notes 2 — OVPRL on the stairway relief" data-kind="notes">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2 · compare with your own OVPRL notes</p>
+  <h2>OVPRL on the eastern stairway relief</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L6 · The Apadana: reliefs and tablets</b></span><span>2 · OVPRL</span></div>
+    <div class="row"><div class="cq">Origin: who, when, where?</div>
+      <div class="nts reveal">carved for the king (prob. Darius I), Apadana east stairway, Persepolis <span class="sep">·</span> late 6th–early 5th c. BCE (hall finished under Xerxes) <span class="sep">·</span> stone, once painted <span class="sep">·</span> royal sculptors, unnamed</div></div>
+    <div class="row"><div class="cq">Value: for which inquiry?</div>
+      <div class="nts reveal">dress, hair, weapons + gifts of many peoples <span class="sep">·</span> court ceremony (ushers lead visitors in) <span class="sep">·</span> royal ideology: order, hierarchy, a willing empire</div></div>
+    <div class="row"><div class="cq">Purpose: why, for whom?</div>
+      <div class="nts reveal">for the king → the whole empire arriving in order <span class="sep">·</span> seen by visitors climbing to an audience <span class="sep">·</span> DPh makes the same claim in words</div></div>
+    <div class="row"><div class="cq">Reliability: how far, for what?</div>
+      <div class="nts reveal">reliable for how the king wanted the empire seen + for dress and goods (a vessel like one carved has been found) <span class="sep">·</span> not for one event: no date, no names, carved twice, “a piece of art and not an account book”</div></div>
+    <div class="row"><div class="cq">Limitations?</div>
+      <div class="nts reveal">no labels → some peoples debated <span class="sep">·</span> no subject people’s own view <span class="sep">·</span> nothing on force, cost or revolts <span class="sep">·</span> Herodotus: Kush also sent boys, not shown</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Your analysis" data-title="You do: two ‘This Does That’ sentences">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">3 · Your analysis · You do · 10 minutes · press K for the timer</p>
+  <h2>Two ‘This Does That’ sentences about the reliefs</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · two sentences</div>
+        <p class="body"><b>This</b> (a precise detail) <b>does</b> (a precise verb) <b>that</b> (its effect or meaning), then extend with a hedge.</p>
+        <p class="body nq">e.g. “The orderly procession of delegations presents the empire as harmonious and willingly obedient, which suggests …”</p></div>
+      <div class="u2l06-bank" aria-label="Verb bank"><span>presents</span><span>conveys</span><span>emphasises</span><span>idealises</span><span>implies</span></div>
+      <div class="u2l06-bank mod" aria-label="Modality"><span>may suggest</span><span>is likely to</span><span>probably</span><span>appears to</span></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body nq">“The [detail] [verb] the empire as …, which may suggest that …”</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Combine two pieces of evidence in one sentence (a relief detail and the DPh tablets).</p></div>
+    </div>
+    <div class="stack" data-veil="Write yours first — then show model sentences">
+      <div class="src reveal"><div class="k">1 · The procession · written for this lesson</div>
+        <p class="quote sm model">The orderly procession of delegations, each with a court usher leading its first delegate by the hand, presents the empire as harmonious and willingly obedient, which may suggest that Darius wanted his rule to appear accepted rather than imposed.</p></div>
+      <div class="src reveal"><div class="k">2 · The gifts and the tablets · written for this lesson</div>
+        <p class="quote sm model">The carving of gifts from the edges of the empire, such as the elephant’s tusk from Kush and the gold from Sind, emphasises the vast reach of the king’s power, which is likely to have shown visitors in stone the same claim that Darius buried beneath the hall for the gods and future kings: a kingdom “from the Sacae who are beyond Sogdia to Kush”.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Your analysis" data-title="Summary" data-kind="notes">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What was the Apadana, and what do its stairways show?</li>
+          <li>What do the foundation tablets claim, and what do experts still debate?</li>
+          <li>What are the reliefs reliable for, and what are they not?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">The Apadana was Darius I’s audience hall at Persepolis, finished under his son Xerxes, and its two stairways show the Persian court and 23 delegations bringing gifts to the king. Its gold and silver foundation tablets claim a kingdom “from the Sacae who are beyond Sogdia to Kush, and from Sind to Lydia”, but experts still debate who some delegations are, whether they brought tribute or gifts, and whether the scene records a real ceremony. Made for the king, the reliefs are reliable evidence of how he wanted his empire to be seen and of its peoples’ dress and goods, but weak evidence of any one real event.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> The Apadana: hall, 72 columns, capitals</label></li>
+        <li><label><input type="checkbox"> The stairway: court, delegations, centre</label></li>
+        <li><label><input type="checkbox"> The Audience reliefs, moved to the Treasury</label></li>
+        <li><label><input type="checkbox"> DPh: what it claims, and for whom</label></li>
+        <li><label><input type="checkbox"> Six delegations matched, with confidence</label></li>
+        <li><label><input type="checkbox"> Three debates</label></li>
+        <li><label><input type="checkbox"> OVPRL notes + two ‘This Does That’ sentences</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 7 minutes · before you leave</p>
+  <h2>Finish the sentence</h2>
+  <div class="card accent"><p class="lead nq">“The Apadana reliefs are reliable for … but not for … because …”</p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">Reliable <b>for</b> how the king wanted his empire to be seen (orderly, willing, vast), or for the dress and goods of its peoples · <b>not for</b> one real event, or for what the subject peoples thought · <b>because</b> it was made for the king as royal display: no date, no names, an idealised scene.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> the Hall of a Hundred Columns, wall reliefs and glazed brick: what survives?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u2l06-dense">
+  <p class="eyebrow">Practice and review · 1 of 4 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>The Apadana’s roof was held up by 72 columns.</span>
+      <span class="sol reveal">True <span class="why">— 36 in the hall and 12 in each of three porticoes, about 20–24 metres high.</span></span></li>
+    <li><span class="n">2</span><span>Each delegation on the stairway is labelled with the name of its land.</span>
+      <span class="sol no reveal">False <span class="why">— there are no labels; historians identify them by dress and gifts, and some are still debated.</span></span></li>
+    <li><span class="n">3</span><span>The DPh foundation tablets were written for visitors to the Apadana to read.</span>
+      <span class="sol no reveal">False <span class="why">— they were buried under the hall, addressed to the gods and to future kings.</span></span></li>
+    <li><span class="n">4</span><span>The Audience reliefs were found in the place they were carved for.</span>
+      <span class="sol no reveal">False <span class="why">— they were carved for the centres of the stairways, later moved to the Treasury, and found there by Schmidt’s excavation; no one knows why.</span></span></li>
+    <li><span class="n">5</span><span>Herodotus says every land in the empire paid a fixed tribute.</span>
+      <span class="sol no reveal">False <span class="why">— some, such as the Ethiopians nearest Egypt and the Arabians, gave gifts instead; the Persians paid no taxes.</span></span></li>
+    <li><span class="n">6</span><span>The reliefs are good evidence of how the king wanted his empire to be seen.</span>
+      <span class="sol reveal">True <span class="why">— they were made for the king, to show the whole empire arriving in order with gifts.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — the foundation tablets" data-kind="practice">
+<div class="wrap prac u2l06-dense">
+  <p class="eyebrow">Practice and review · 2 of 4 · writing</p>
+  <h2>Write it as a historian: the foundation tablets</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · This Does That</div><p class="body">Write one ‘This Does That’ sentence about the DPh tablets, with a hedge (may, is likely to, probably).</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">The list of distant lands on tablets of gold and silver, buried where only the gods and future kings would find them, presents Darius as the ruler of a vast kingdom, from Central Asia to the Nile and from the Indus to Lydia, which may suggest that he cared as much about how gods and future kings would remember him as about how he was seen in his own lifetime.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 2 · Reliable for what?</div><p class="body nq">Finish: “The DPh tablets are reliable for … but not for … because …”</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">The DPh tablets are reliable for the extent of the kingdom Darius claimed to rule and for how he wanted future kings to see him, but not, on their own, for how firmly he controlled those distant lands, because the text was written for the king to glorify his own rule.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — extension: Persepolis and Lachish" data-kind="practice">
+<div class="wrap prac u2l06-dense">
+  <p class="eyebrow">Practice and review · 3 of 4 · extension</p>
+  <h2>A procession of gifts, or a parade of captives?</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <figure class="figure contain short"><img src="images/u2l06-lachish-relief-captives.jpg" alt="After the capture of Lachish (701 BCE): Assyrian soldiers carry off booty and Judean families leave as captives. Relief from Sennacherib’s South-West Palace at Nineveh, about 700–692 BCE (British Museum)" loading="lazy"><figcaption>After the capture of Lachish (701 BCE): Assyrian soldiers carry off booty and Judean families leave as captives. Relief from Sennacherib’s South-West Palace at Nineveh, about 700–692 BCE (British Museum) — <span class="cr">Photo: Zunkir · CC BY-SA 4.0</span></figcaption></figure>
+      <div class="card quiet"><div class="k">Exercise 3 · one paragraph</div><p class="body">Compare the Apadana’s peaceful procession with this Assyrian relief of the capture of Lachish. What does the contrast suggest about Achaemenid royal ideology? Use modality, and say what the contrast cannot tell us.</p></div>
+    </div>
+    <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+      <p class="quote sm model">Both reliefs show foreign peoples before a king, but they present empire in opposite ways. At Nineveh, Sennacherib’s sculptors carved the capture of Lachish in 701 BCE: Judean families leave their city as captives while Assyrian soldiers carry off its goods. At Persepolis, by contrast, twenty-three delegations climb the Apadana stairs in orderly rows, each led in by a court usher and carrying gifts. This contrast may suggest that Achaemenid royal ideology chose to present empire as willing cooperation rather than conquest, under a king whose kingdom, the DPh tablets claim, was “bestowed” on him by Ahuramazda. However, the contrast is more likely to reveal how each king wanted his rule to be seen than how subject peoples lived under it: Darius’s own Behistun relief shows bound captives standing before him, so Persian rule was also held by force.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u2l06-dense">
+  <p class="eyebrow">Practice and review · 4 of 4 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Describe the Apadana.
+      <span class="sol reveal">Darius I’s audience hall at Persepolis, finished under Xerxes: 72 columns (36 in the hall, 12 in each of three porticoes), about 20–24 metres high, with double-animal capitals and two carved stairways.</span></li>
+    <li>Explain what the eastern stairway reliefs show.
+      <span class="sol reveal">On one wing, Persian and Median courtiers and guards; on the other, 23 delegations bringing gifts, each led in by an usher; a lion attacking a bull; the centre once showed the king enthroned.</span></li>
+    <li>What happened to the Audience reliefs?
+      <span class="sol reveal">They were moved in ancient times from the stairways to the Treasury, for reasons no one knows; Schmidt’s excavation found them there. One is now in the National Museum of Iran.</span></li>
+    <li>What does DPh claim, and who was it written for?
+      <span class="sol reveal">A kingdom “from the Sacae who are beyond Sogdia to Kush, and from Sind to Lydia”, given by Ahuramazda; buried under the hall for the gods and future kings, not visitors.</span></li>
+    <li>Explain why historians disagree about some delegations.
+      <span class="sol reveal">No delegation is labelled; they are identified by dress and gifts, and several bring the same gifts (four bring a two-humped camel).</span></li>
+    <li>Assess what the reliefs are reliable for.
+      <span class="sol reveal">How the king wanted his empire to be seen, and its peoples’ dress and goods; not any one real event, or the subject peoples’ own views.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u2l06-cite"><div class="k">Written sources</div>
+      <p class="small">Darius I, the Apadana foundation tablets (DPh): translation as published by <a href="https://www.livius.org/sources/content/achaemenid-royal-inscriptions/dph/">Livius.org</a> (© Livius.org; quoted briefly for teaching). Labels on Darius’s tomb (DNe): <a href="https://www.livius.org/sources/content/achaemenid-royal-inscriptions/dne/">Livius.org</a>.</p>
+      <p class="small">Herodotus, <i>Histories</i> 3.94 and 3.97: A. D. Godley’s Loeb translation (Vol. II, 1921), in the revised version published by the <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=3:chapter=97">Perseus Digital Library</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 US</a>). Godley’s printed wording differs in places (at 3.97 he has ‘pure gold’ and ‘every third year’).</p>
+      <p class="small">Facts and short quotations: Livius.org (J. Lendering), “<a href="https://www.livius.org/articles/place/persepolis/persepolis-photos/persepolis-apadana/">Persepolis, Apadana</a>”, “<a href="https://www.livius.org/articles/place/persepolis/persepolis-photos/persepolis-apadana-east-stairs/">… East Stairs</a>”, <span class="nq">“… North Stairs”, “… North Stairs, Central Relief” and “… Treasury”</span> (© Livius.org); A. Swart, <i>The Apadana reliefs at Persepolis</i> (PhD thesis, Stellenbosch University, 2021), <a href="https://scholar.sun.ac.za/handle/10019.1/123950">abstract</a>; A. Zournatzi, <span class="nq">“The Apadana coin hoards, Darius I, and the West”</span>, <i>American Journal of Numismatics</i> 15 (2003), and her record “The Apadāna coins”, <a href="https://iranohellenica.eie.gr/node/12">Iranohellenica</a> (National Hellenic Research Foundation); E. F. Schmidt, <i>The Treasury of Persepolis</i> (Chicago, 1939).</p></div>
+    <div class="card quiet u2l06-cite"><div class="k">Syllabus and other works</div>
+      <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p>
+      <p class="small">The two diagrams were drawn for this lesson (simplified, not to scale).</p>
+      <p class="small">Also cited in the lesson notes: <i>Encyclopaedia Iranica</i>; <i>Encyclopaedia Britannica</i>, “Iranian art: architecture”; the Oxford Cabinet, “The Apadana at Persepolis”; World History Encyclopedia; NSW Department of Education, <i>Persepolis teaching support resource</i>.</p>
+      <p class="small">Teacher resource: <i>Imperial Narratives in Stone: Wall Reliefs of Persepolis</i> (class notebook).</p></div>
+  </div>
+  <div class="card quiet u2l06-cite"><div class="k">Images</div>
+    <ul class="small credits"><li><b>The Apadana’s eastern stairway, Persepolis</b> · Photo: A. Davey · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:The_Apadana_Staircase_with_the_Procession_of_the_Vassals_(4686171639).jpg">source</a></li><li><b>A carved stone relief from Persepolis, late 6th to early 5th century BCE</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Relief_on_the_southern_wall_of_the_east_stairway_of_the_Apadana_depicting_Armenians,_Persepolis,_Iran_(47727270352).jpg">source</a></li><li><b>The Audience relief from the Apadana (National Museum of Iran)</b> · Photo: Arashk rp2 · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Darius-The-Great-or-Xerxes-I-The-Great-of-Persia-With-Crown-Prince-(Behind-Him)-and-Median-Commander-Simin-Ancient-Iran-Muesem-Full.jpg">source</a></li><li><b>A lion attacking a bull, stairway relief, Persepolis</b> · Photo: Yong Woo Park · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Bas-relief_of_Lion_Attacking_a_Bull_Apadana_Staircase_Persepolis.jpg">source</a></li><li><b>Delegations on the Apadana’s eastern stairway (southern wing)</b> · Photo: Diego Delso · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Pers%C3%A9polis,_Ir%C3%A1n,_2016-09-24,_DD_49.jpg">source</a></li><li><b>Guards on the north wing of the Apadana’s eastern stairway</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Relief_on_the_northern_wall_of_the_east_stairway_of_the_Apadana_depicting_a_procession_of_dignitaries,_Persepolis,_Iran_(47074165314).jpg">source</a></li><li><b>Delegation card A, Apadana eastern stairway</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Relief_on_the_southern_wall_of_the_east_stairway_of_the_Apadana_depicting_Lydians_who_offer_vases,_cups_and_bracelets_and_a_chariot_drawn_by_diminutive_horses,_Persepolis,_Iran_(32836014327).jpg">source</a></li><li><b>Delegation card B, Apadana eastern stairway</b> · Photo: dynamosquito · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Saka_(3719571493).jpg">source</a></li><li><b>Delegation card C, Apadana eastern stairway</b> · Photo: A. Davey · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Closeup_-1_Ethiopian_Tribute_Bearers_(Best_Viewed_as_Size_%22Large%22)_(4685803510).jpg">source</a></li><li><b>Delegation card D, Apadana eastern stairway</b> · Photo: A. Davey · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Indian_Tribute_Bearers_on_the_Apadana_Staircase_8_(Best_Viewed_Size_%22Large%22)_(4688525278).jpg">source</a></li><li><b>Delegation card E, Apadana eastern stairway</b> · Photo: A. Davey · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Bactrian_Tribute_Bearers_on_the_Apadana_Staircase_9_(Best_Viewed_Size_%22Large%22)_(4687986033).jpg">source</a></li><li><b>Delegation card F, Apadana eastern stairway</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Relief_on_the_southern_wall_of_the_east_stairway_of_the_Apadana_depicting_Ionian_Greeks_carrying_what_may_be_beehives_and_skeins_of_coloured_wool,_Persepolis,_Iran_(40897093913).jpg">source</a></li><li><b>Lachish relief: booty and captives (British Museum)</b> · Photo: Zunkir · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Capture_of_Lachish_-_booty_and_exiles.jpg">source</a></li></ul>
+    <p class="small">All images are public domain or openly licensed, and were resized for the web (some were also cropped). Each is shared under the licence shown.</p></div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

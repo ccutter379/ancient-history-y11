@@ -1,0 +1,1782 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U1 L5 · OVPRL Workshop II: Petroglyphs and Iconography</title>
+<meta name="description" content="Year 11 Ancient History, the investigation of ancient sites and sources: OVPRL on sources without words, from the inlaid panels of the so-called Standard of Ur to Aboriginal rock engravings, whose meanings are Cultural Knowledge held by their Custodians.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#1D4E89; --bright:#2E6FBF; --tint:#E7EEF8; --statement:#1D4E89;
+  --solid:#1D4E89; --soft:#D3E2F6; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#A9C8F2; --bright:#5E9BE6; --tint:#142538; --statement:#173C66; --soft:#D3E2F6; } }
+:root[data-theme="dark"]{ --deep:#A9C8F2; --bright:#5E9BE6; --tint:#142538; --statement:#173C66; --soft:#D3E2F6; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 1 Lesson 5 only (every class starts u1l05-) */
+
+/* title slide: the wide panel sits under the title */
+.u1l05-cover img{max-height:40vh;}
+
+/* quick facts list (who / what / when) */
+.u1l05-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.25em;
+  font-size:calc(var(--fs-body)*.84); line-height:1.35;}
+.u1l05-facts b{color:var(--deep);}
+
+/* wide panel pictures (the Standard's long sides) */
+.u1l05-panel{margin:0;}
+.u1l05-panel img{display:block; width:auto; max-width:100%; height:auto; max-height:34vh; margin:0 auto;
+  border-radius:10px; box-shadow:var(--shadow);}
+.u1l05-panel figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.4em; line-height:1.35;}
+
+/* the 'War' panel read register by register: picture with labels, then a see / think table */
+.u1l05-regpic{display:grid; grid-template-columns:5.4em 1fr; gap:.5em; align-items:stretch;}
+.u1l05-reglabels{display:grid; grid-template-rows:repeat(3,1fr); gap:3px; font-family:var(--ui);
+  font-size:calc(var(--fs-chrome)*.92); font-weight:700; color:#fff; text-align:center;}
+.u1l05-reglabels span{display:grid; place-items:center; border-radius:6px; background:var(--solid); line-height:1.15; padding:0 .2em;}
+.u1l05-regpic{justify-items:start;}
+.u1l05-regpic img{display:block; width:auto; max-width:100%; height:auto; max-height:36vh; border-radius:8px;}
+.u1l05-reg td:first-child{font-weight:700; color:var(--deep); white-space:nowrap;}
+.u1l05-reg td.u1l05-think{color:var(--ink);}
+
+/* OVPRL rows: letter badge + question + model (as Lesson 1) */
+.u1l05-ovgrid{display:grid; grid-template-columns:1fr 1fr; grid-template-rows:repeat(3,auto); grid-auto-flow:column;
+  gap:clamp(8px,1.2vh,14px) clamp(14px,1.6vw,26px); align-items:start;}
+.u1l05-ov{display:grid; grid-template-columns:2.4em 1fr; gap:.6em; align-items:start;}
+.u1l05-ovl{display:grid; place-items:center; min-height:2.1em; border-radius:8px; background:var(--solid); color:#fff;
+  font-weight:700; font-family:var(--mono); font-size:calc(var(--fs-body)*.9); text-align:center; line-height:1.1; padding:.2em;}
+.u1l05-ov .qprompt{font-size:calc(var(--fs-body)*.86);}
+.u1l05-ov .qprompt::before{content:none;}
+.u1l05-model{margin-top:.25em; padding:.3em .75em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 8px 8px 0; font-size:calc(var(--fs-body)*.8); line-height:1.4;}
+.u1l05-iq{font-weight:700; font-size:calc(var(--fs-body)*.9); line-height:1.35;}
+.u1l05-iq span{color:var(--deep);}
+
+/* feedback in action: Lesson 4's checklist, compact, and the before/after examples */
+.u1l05-check{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.3em;}
+.u1l05-check li{display:grid; grid-template-columns:1.6em 1fr; gap:.5em; align-items:start;
+  font-size:calc(var(--fs-body)*.84); line-height:1.32;}
+.u1l05-check .num{display:grid; place-items:center; width:1.5em; height:1.5em; border-radius:50%; background:var(--solid);
+  color:#fff; font-weight:700; font-size:.88em;}
+.u1l05-check .d{display:block; color:var(--slate); font-size:.92em;}
+.u1l05-ba{display:grid; grid-template-columns:4.6em 1fr; gap:.25em .6em; font-size:calc(var(--fs-body)*.8); line-height:1.38;}
+.u1l05-ba .l{font-family:var(--ui); font-weight:700; font-size:.82em; letter-spacing:.04em; text-transform:uppercase;
+  color:var(--slate); padding-top:.2em;}
+.u1l05-ba .l.after{color:var(--c-evidence);}
+.u1l05-ba + .u1l05-ba{margin-top:.55em; padding-top:.55em; border-top:1px dashed var(--rule);}
+.u1l05-steps{margin:0; padding-left:1.3em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.u1l05-steps li{margin:.2em 0;}
+
+/* text-only sources: no pictures here, on purpose */
+.u1l05-nopic{border:2px dashed var(--slate); border-radius:10px; padding:.55em .9em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.82); line-height:1.4;}
+.u1l05-nopic .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.25em;}
+.u1l05-links{list-style:none; margin:.3em 0 0; padding:0; display:flex; flex-direction:column; gap:.2em;
+  font-size:var(--fs-chrome); line-height:1.35;}
+.u1l05-links a{color:var(--deep); font-weight:600;}
+.u1l05-ex .quote.sm .ed{display:inline-block; margin-right:.2em; font-weight:700; color:var(--deep);}
+.u1l05-ex .quote.sm p + p{margin-top:.4em;}
+
+/* outsiders / Custodians: two columns of answers */
+.u1l05-who .card .body{font-size:calc(var(--fs-body)*.84);}
+.u1l05-who ul{margin:.2em 0 0; padding-left:1.1em;}
+.u1l05-who li{margin:.2em 0; font-size:calc(var(--fs-body)*.82); line-height:1.36;}
+
+/* ICIP: three kinds, each with a Murujuga example */
+.u1l05-icip .card .k{font-size:calc(var(--fs-body)*.9);}
+.u1l05-icip .card .body{font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.u1l05-icip .u1l05-eg{margin-top:.4em; padding-top:.4em; border-top:1px dashed var(--rule); font-size:calc(var(--fs-body)*.78);
+  line-height:1.36; color:var(--ink);}
+.u1l05-icip .u1l05-eg b{color:var(--deep);}
+
+/* value / limitations T-chart */
+.u1l05-tchart th:first-child{width:9em;}
+.u1l05-tchart td:first-child{font-weight:700; color:var(--deep);}
+.u1l05-tchart td{vertical-align:top;}
+
+/* the two-move legend under the model paragraphs */
+.u1l05-legend .mq{font-size:calc(var(--fs-body)*.84);}
+
+.u1l05-hingebox{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+
+/* ICIP slide: two short source cards side by side */
+.u1l05-icipsrc .src{padding:10px 16px;}
+
+/* hinge options a little smaller */
+.u1l05-hinge li{font-size:calc(var(--fs-body)*.9); line-height:1.36;}
+
+/* goals and credits */
+.u1l05-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u1l05-cite a{color:var(--deep);}
+.u1l05-cite p + p{margin-top:.45em;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u1l05-ovgrid{grid-template-columns:1fr; grid-template-rows:none; grid-auto-flow:row;}
+  .u1l05-regpic{grid-template-columns:1fr;}
+  .u1l05-reglabels{display:none;}
+  .u1l05-panel img, .u1l05-regpic img{max-height:none;}
+  .u1l05-reg td:first-child{white-space:normal;}
+  .u1l05-tchart th:first-child{width:auto;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u1l05-dense{gap:9px;}
+  html:not(.read) .u1l05-dense h2{font-size:calc(var(--fs-h2)*.84);}
+  html:not(.read) .u1l05-dense .quote.sm{font-size:calc(var(--fs-body)*.72); line-height:1.4;}
+  html:not(.read) .u1l05-dense .quote{font-size:calc(var(--fs-body)*.88);}
+  html:not(.read) .u1l05-dense .src{padding:9px 15px;}
+  html:not(.read) .u1l05-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u1l05-dense .note{padding:.4em .8em;}
+  html:not(.read) .u1l05-dense .note .body, html:not(.read) .u1l05-dense .card .body,
+  html:not(.read) .u1l05-dense .qprompt{font-size:calc(var(--fs-body)*.78); line-height:1.34;}
+  html:not(.read) .u1l05-dense .card{padding:9px 15px;}
+  html:not(.read) .u1l05-dense .card .k, html:not(.read) .u1l05-dense .src .k{margin-bottom:.25em;}
+  html:not(.read) .u1l05-dense .tbl.compact{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u1l05-dense .tbl.compact td{padding:.28em .5em;}
+  html:not(.read) .u1l05-dense .tbl th{padding:.35em .55em;}
+  html:not(.read) .u1l05-dense .figure img{max-height:28vh;}
+  html:not(.read) .u1l05-dense .figure figcaption, html:not(.read) .u1l05-dense .u1l05-panel figcaption{font-size:calc(var(--fs-chrome)*.85); margin-top:.3em;}
+  html:not(.read) .u1l05-dense .u1l05-panel img{max-height:28vh;}
+  html:not(.read) .u1l05-dense .u1l05-regpic img{max-height:33vh;}
+  html:not(.read) .u1l05-dense .u1l05-facts{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l05-dense .u1l05-model{font-size:calc(var(--fs-body)*.7); padding:.25em .65em;}
+  html:not(.read) .u1l05-dense .u1l05-ov .qprompt{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u1l05-dense .u1l05-iq{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u1l05-dense .u1l05-check li{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u1l05-dense .u1l05-ba{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l05-dense .u1l05-steps{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u1l05-dense .u1l05-nopic{font-size:calc(var(--fs-body)*.72); padding:.4em .75em;}
+  html:not(.read) .u1l05-dense .u1l05-who li{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l05-dense .u1l05-icip .card .body{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u1l05-dense .u1l05-icip .u1l05-eg{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u1l05-dense .opts li{padding:.35em .7em;}
+  html:not(.read) .u1l05-dense .u1l05-hinge li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u1l05-dense .keylist li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u1l05-dense .keylist .d{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l05-dense .tf li, html:not(.read) .u1l05-dense .rq{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l05-dense .tf li{padding:.24em .6em;}
+  html:not(.read) .u1l05-dense .prac{gap:6px;}
+  html:not(.read) .u1l05-dense .cornell .cq, html:not(.read) .u1l05-dense .cornell .nts{font-size:calc(var(--fs-body)*.72); padding:.32em .75em;}
+  html:not(.read) .u1l05-dense .checks label{font-size:calc(var(--fs-body)*.76);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 5" data-title="OVPRL workshop II: petroglyphs and iconography" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1fr 1.15fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 1 · The investigation of ancient sites and sources · Lesson 5</p>
+      <h1>OVPRL workshop II: petroglyphs and iconography</h1>
+      <p class="lead">What can sources without words tell us, and whose knowledge do we need to read them?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u1l05-cover"><figure class="figure contain"><img src="images/u1l05-standard-of-ur-war-side.jpg" alt="The ‘Standard of Ur’, ‘War’ side, about 2600–2400 BCE (British Museum)" loading="lazy"><figcaption>The ‘Standard of Ur’, ‘War’ side, about 2600–2400 BCE (British Museum) — <span class="cr">Photo: BabelStone, adjusted by LeastCommonAncestor · CC BY-SA 3.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Review: Lessons 1–4" data-kind="intro practice">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <h2>Six questions from Lessons 1–4</h2>
+  <ol class="rq" data-answers>
+    <li>Name one type of ancient source and give an example of it.
+      <span class="sol reveal">Any one of the seven, for example: an inscription, the Rosetta Stone · a text, Vindolanda Tablet 291 · a petroglyph, the deer engraved at Naquane in Italy · iconography, the painting of Nebamun hunting birds.</span></li>
+    <li>A coin minted in 200 CE is found in undisturbed Layer 3. What does it tell us about when Layer 3 formed?
+      <span class="sol reveal">In or after 200 CE: the coin is a terminus post quem, the earliest possible date for the layer. It does not mean the layer formed in 200 CE.</span></li>
+    <li>Name one dating method, what it can date, and one limit.
+      <span class="sol reveal">For example: radiocarbon dates once-living (organic) material such as wood, bone or charcoal, but only organic material, and it gives a range, not an exact year. Or thermoluminescence dates fired material such as pottery, but only its last heating.</span></li>
+    <li>What was the purpose of the Behistun inscription?
+      <span class="sol reveal">To prove Darius I’s right to rule: it presents his kingship as granted by Ahuramazda and gives his own account of how he killed Gaumâta and took the throne.</span></li>
+    <li>What did the Rosetta Stone make possible, and why?
+      <span class="sol reveal">The decipherment of Egyptian hieroglyphs: it carries one decree in hieroglyphic, Demotic and Greek, so Thomas Young and then Champollion (1822) could use the Greek to read the hieroglyphs.</span></li>
+    <li>Layard’s 1849 painting of an Assyrian palace hall: primary or secondary, and evidence of what?
+      <span class="sol reveal">Secondary for the Assyrian palace: a reconstruction, evidence of what Layard imagined in 1849, not direct evidence of how the hall looked.</span></li>
+  </ol>
+  <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>analyse petroglyphs and iconography as sources</li>
+        <li>understand whose knowledge is needed to interpret Aboriginal rock engravings</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>explain one value and one limitation of petroglyphs and of iconography</li>
+        <li>explain why ICIP protocols matter when studying Aboriginal sites</li>
+        <li>write a value-and-limitations paragraph for a non-written source</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u1l05-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-08 uses sources to form conclusions about the past · AH-LS-09 identifies different interpretations of the past.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U1 L5 · OVPRL workshop II: petroglyphs and iconography</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = Before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Explain why ‘Standard’ is an interpretation.</div><div class="nts">Woolley’s guess → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: iconography (the ‘Standard of Ur’) · petroglyphs and ICIP. Your paragraph today is prose, not notes.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Feedback in action" data-kind="notes">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow">Feedback in action · 6 minutes · press K for the timer · your Lesson 4 paragraph comes back</p>
+  <h2>Rewrite the move your feedback names</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="card quiet"><div class="k">Our class checklist from Lesson 4 · a strong OVPRL paragraph …</div>
+      <ol class="u1l05-check">
+        <li><span class="num">1</span><span><b>opens with a provenance phrase</b><span class="d">who made the source, when, where, and from what position</span></span></li>
+        <li><span class="num">2</span><span><b>uses precise evidence for its value</b><span class="d">a short quotation or detail from the source, tied to the inquiry question</span></span></li>
+        <li><span class="num">3</span><span><b>explains purpose and perspective</b><span class="d">with a relating verb: presents … as, portrays, reveals</span></span></li>
+        <li><span class="num">4</span><span><b>judges reliability for this question</b><span class="d">reliable for … but not for … because …, with modality and a precise evaluative verb</span></span></li>
+        <li><span class="num">5</span><span><b>names a limitation and ends decisively</b><span class="d">links ideas with nominalisation; the last sentence answers the question, with no roadmap or summary</span></span></li>
+      </ol></div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="u1l05-steps">
+          <li>Read your strength and your next step.</li>
+          <li>Find the sentence your next step points to and underline it.</li>
+          <li>Rewrite it underneath, using that point on the checklist.</li>
+          <li>Check: is it a real change in thinking or language, not just a neater copy?</li>
+        </ol></div>
+      <div class="note reveal" data-code="evidence" data-veil="Rewrite yours first — then show two examples"><div class="k">Two before-and-after examples · written for this lesson</div>
+        <div class="u1l05-ba"><span class="l">Point 4</span><span>&nbsp;</span>
+          <span class="l">Before</span><span class="nq">The Rosetta Stone is reliable because it is a primary source.</span>
+          <span class="l after">After</span><span class="nq">The Rosetta Stone is reliable evidence of how the priests wanted Ptolemy V to be seen, but it is likely to overstate his generosity and cannot show how ordinary Egyptians experienced his rule, because it is the priests’ own decree.</span></div>
+        <div class="u1l05-ba"><span class="l">Point 1</span><span>&nbsp;</span>
+          <span class="l">Before</span><span class="nq">The Rosetta Stone was made in 196 BCE.</span>
+          <span class="l after">After</span><span class="nq">Issued by a council of Egyptian priests at Memphis in 196 BCE, the Rosetta Stone preserves a decree honouring the young Ptolemy V.</span></div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Iconography" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for sources without words</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Sources</th><th>Meaning</th></tr>
+      <tr><td>petroglyph</td><td>An image engraved or pecked into rock.</td></tr>
+      <tr><td>iconography</td><td>The images and symbols used in art, and what they meant to the people who made them.</td></tr>
+      <tr><td>context (archaeological)</td><td>The exact place and layer an object was found in, and what was found with it.</td></tr>
+      <tr><td>reconstruction</td><td>A modern rebuilding or picture of how something looked in the past — evidence of what its maker imagined, not direct evidence of the past.</td></tr>
+      <tr><td>register</td><td>One band, or row, of pictures in a scene arranged in rows.</td></tr>
+      <tr><td>reliability</td><td>How far a source can be trusted for a particular question.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Culture · writing</th><th>Meaning</th></tr>
+      <tr><td>ICIP</td><td>Indigenous Cultural and Intellectual Property — the rights of Aboriginal and Torres Strait Islander Peoples to control their Cultural Knowledge, Practices and Property.</td></tr>
+      <tr><td>Custodian</td><td>A person or Community with the Cultural responsibility to care for Country, sites and Knowledge.</td></tr>
+      <tr><td>Country</td><td>The land and waters of an Aboriginal People, to which they are connected physically and spiritually.</td></tr>
+      <tr><td>context phrase</td><td>An opening phrase that places a source in its setting before the judgement: <span class="nq">Within a royal tomb at Ur, …</span></td></tr>
+      <tr><td>nominalisation</td><td>Turning an action or quality into a noun: <span class="nq">Woolley guessed</span> → <span class="nq">Woolley’s guess</span>.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Iconography" data-title="The ‘Standard of Ur’: what was found" data-kind="notes">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow">1 · Iconography · I do — the object, and the name we gave it</p>
+  <h2>The ‘Standard of Ur’: what was found, and what was guessed</h2>
+  <div class="split" style="--cols:.9fr 1.2fr">
+    <div class="stack">
+      <figure class="figure contain"><img src="images/u1l05-standard-of-ur-as-displayed.jpg" alt="The ‘Standard of Ur’ as the British Museum displays it today: the ‘War’ side and one sloping end panel, on a modern wooden mount" loading="lazy"><figcaption>The ‘Standard of Ur’ as the British Museum displays it today: the ‘War’ side and one sloping end panel, on a modern wooden mount — <span class="cr">Photo: Denis Bourez · CC BY 2.0</span></figcaption></figure>
+      <ul class="u1l05-facts">
+        <li><b>What:</b> two long panels of shell, red limestone and lapis lazuli set in bitumen, about 50 cm long; the wood behind them had rotted away</li>
+        <li><b>When:</b> about 2600–2400 BCE</li>
+        <li><b>Found:</b> by Leonard Woolley’s team in 1927–28, in a corner of a royal tomb at Ur (southern Iraq) that had been thoroughly robbed in ancient times</li>
+        <li><b>Now:</b> in the British Museum, London</li>
+      </ul>
+    </div>
+    <div class="stack">
+      <div class="src u1l05-ex">
+        <div class="k">Source · the excavator, 1934</div>
+        <p class="quote sm">What it really was it is hard to say. … it lay in the tomb against and above the right shoulder of a man as if it had been carried by him on a pole, and the suggestion that it was a sort of standard seemed the most reasonable.</p>
+        <p class="prov">C. Leonard Woolley, <i>Ur Excavations II: The Royal Cemetery</i> (1934), p. 266 · a standard = a flag or emblem carried on a pole</p>
+      </div>
+      <div class="src u1l05-ex">
+        <div class="k">Source · the British Museum today</div>
+        <p class="quote sm">It was named at the time of its discovery by Leonard Woolley who initially proposed that it may have been carried on a pole like a battle standard, but its original function is unknown.</p>
+        <p class="prov">The British Museum, description of “The Standard of Ur” (1928,1010.3), on Google Arts &amp; Culture</p>
+      </div>
+      <p class="qprompt">Is the name ‘Standard’ a fact or an interpretation? How do you know?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">An interpretation. Woolley chose it from where the object lay, and admitted it was hard to say what it was; the Museum says its function is unknown. Others have suggested different uses, for example the sound box of a musical instrument, but none has been proved. Even the sloping shape on display is a modern mount, based on Woolley’s reading of the crushed end pieces.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Iconography" data-title="Reading the ‘War’ panel" data-kind="notes">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow">1 · Iconography · I do — what can we see, and what do we think it means?</p>
+  <h2>Reading the ‘War’ panel, row by row</h2>
+  <div class="u1l05-regpic">
+    <div class="u1l05-reglabels" aria-hidden="true"><span>Top row</span><span>Middle row</span><span>Bottom row</span></div>
+    <img src="images/u1l05-standard-of-ur-war-side.jpg" alt="The ‘War’ side of the ‘Standard of Ur’: three rows of shell figures on a blue lapis lazuli background, with wagons, soldiers and a tall central figure">
+  </div>
+  <div class="tbl-scroll" data-veil="Look first — then show one reading of the panel"><table class="tbl compact u1l05-reg">
+    <tr><th>Row</th><th>I see (only what is there)</th><th>I think (an inference: how sure?)</th></tr>
+    <tr class="reveal"><td>Top</td><td>a figure taller than the rest, in the centre, his head reaching the border · an empty wagon behind him · men without clothes, arms behind their backs, led towards him</td><td class="u1l05-think">a king (bigger = more important), receiving prisoners after a victory · Woolley: “… in the centre of the top row, stands the king, distinguished by his greater height …”</td></tr>
+    <tr class="reveal"><td>Middle</td><td>a line of men in matching spotted cloaks and helmets, holding weapons · further along, fighting, and men without clothes being led away</td><td class="u1l05-think">an organised army in uniform · defeated enemies taken prisoner (fairly sure)</td></tr>
+    <tr class="reveal"><td>Bottom</td><td>four wagons on wheels, each with two men, pulled by animals · bodies on the ground under them · the animals on the left walk, those on the right run</td><td class="u1l05-think">war chariots charging over the dead enemy: the battle itself, shown as movement (fairly sure)</td></tr>
+  </table></div>
+  <p class="small credline">Images: BabelStone / LeastCommonAncestor (CC BY-SA 3.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Iconography" data-title="I do: OVPRL on the ‘War’ panel" data-kind="notes">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow">1 · Iconography · I do — think aloud · use the OVPRL routine on page 2 of your booklet</p>
+  <h2>OVPRL on the ‘War’ panel</h2>
+  <p class="u1l05-iq"><span>Inquiry question:</span> How useful is the ‘War’ panel for understanding war and kingship at Ur?</p>
+  <div class="u1l05-ovgrid veil-parts" data-veil="Try it first — then show the worked example">
+    <div class="u1l05-ov"><span class="u1l05-ovl">O</span><div><p class="qprompt">Origin: who made it, when and where?</p>
+      <p class="u1l05-model vp reveal">Unknown craftworkers, about 2600–2400 BCE · found by Woolley’s team in 1927–28 in a robbed royal tomb at Ur · no words, so no owner is named: costly materials and a royal tomb suggest the ruling elite (an inference)</p></div></div>
+    <div class="u1l05-ov"><span class="u1l05-ovl">V</span><div><p class="qprompt">Value: what can it tell us, for this inquiry?</p>
+      <p class="u1l05-model vp reveal">How war and kingship were pictured: chariots, uniformed soldiers, bound prisoners brought to the largest figure · Woolley (1934) called it “the first record that we possess of the Sumerian army” · the soldiers’ helmets look like real copper helmets Woolley found in another royal grave (PG 789)</p></div></div>
+    <div class="u1l05-ov"><span class="u1l05-ovl">P</span><div><p class="qprompt">Purpose: why was it made, and for whom?</p>
+      <p class="u1l05-model vp reveal">Probably to display royal power and victory: the largest figure receives the prisoners · for a royal or elite owner, and buried with the dead · its exact use is unknown</p></div></div>
+    <div class="u1l05-ov"><span class="u1l05-ovl">R</span><div><p class="qprompt">Reliability: how far can we trust it, and for what?</p>
+      <p class="u1l05-model vp reveal">Reliable for how Ur’s rulers probably wanted victory and kingship to be seen, and for equipment such as the soldiers’ helmets · not for any real battle, because it is a celebration with no names, place or date</p></div></div>
+    <div class="u1l05-ov"><span class="u1l05-ovl">L</span><div><p class="qprompt">Limitations: what can it not tell us?</p>
+      <p class="u1l05-model vp reveal">What the object was for (‘Standard’ is Woolley’s guess) · who the king was, or whom he fought · the losers’ side of the story · the mount’s sloping shape and the arrangement of the end panels are modern</p></div></div>
+    <div class="note vp reveal" data-code="judgement"><div class="k">Reliable for what? One sentence</div><p class="body nq">The ‘War’ panel is reliable for how Ur’s ruling elite probably wanted war and kingship to be seen, but not for a particular battle, because it is a celebration without words.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Iconography" data-title="Notes 1 — Iconography: the ‘Standard of Ur’" data-kind="notes">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>Iconography: the ‘Standard of Ur’</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U1 L5 · OVPRL workshop II: petroglyphs and iconography</b></span><span>1 · Iconography</span></div>
+    <div class="row"><div class="cq">Explain why ‘Standard’ is an interpretation, not a fact.</div>
+      <div class="nts reveal">Woolley’s guess from where it lay (by a man’s shoulder, “as if” on a pole) <span class="sep">·</span> he wrote “What it really was it is hard to say” <span class="sep">·</span> British Museum: function unknown <span class="sep">·</span> sloping shape = modern mount</div></div>
+    <div class="row"><div class="cq">Analyse what the ‘War’ panel shows about kingship.</div>
+      <div class="nts reveal">tallest figure, centre, receives bound prisoners → king as victor <span class="sep">·</span> chariots, uniformed soldiers → organised army <span class="sep">·</span> costly materials, royal tomb → made for the elite</div></div>
+    <div class="row"><div class="cq">Assess the ‘War’ panel as evidence for war at Ur.</div>
+      <div class="nts reveal">reliable for how rulers probably wanted war shown + equipment (helmets like real finds) <span class="sep">·</span> not for a real battle: no words, names, place, date <span class="sep">·</span> winners’ view only</div></div>
+    <div class="row"><div class="cq">Explain one value and one limitation of iconography.</div>
+      <div class="nts reveal">value: shows how makers and patrons saw the world, and details words leave out <span class="sep">·</span> limitation: meaning must be inferred; may be restored or rearranged</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Petroglyphs and ICIP" data-title="Murujuga, in the Custodians’ words" data-kind="notes">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow">2 · Petroglyphs · We do — read together · text only, on purpose</p>
+  <h2>Murujuga: the petroglyphs, in the Custodians’ own words</h2>
+  <div class="split" style="--cols:.95fr 1.2fr">
+    <div class="stack">
+      <ul class="u1l05-facts">
+        <li><b>Where:</b> Murujuga, the Burrup Peninsula and Dampier Archipelago, in the Pilbara region of Western Australia</li>
+        <li><b>Whose:</b> the Ngarda-Ngarli, five Traditional Owner and Custodial groups: the Ngarluma, Mardudhunera, Yaburara, Yindjibarndi and Wong-Goo-Tt-Oo peoples, represented by the Murujuga Aboriginal Corporation (MAC)</li>
+        <li><b>How many:</b> an estimated one to two million petroglyphs</li>
+        <li><b>Recognised:</b> inscribed on the UNESCO World Heritage List in July 2025, as the Murujuga Cultural Landscape</li>
+      </ul>
+      <div class="u1l05-nopic"><div class="k">Why there are no pictures here</div>
+        <p>Custodians decide what is shared, and how. MAC asks visitors: “We also ask that our visitors abstain from taking or publishing photographs and video of humanoid rock art figures due to cultural restrictions.”</p>
+        <ul class="u1l05-links">
+          <li><a href="https://murujuga.org.au/about/about-murujuga/">MAC · About Murujuga</a></li>
+          <li><a href="https://murujuga.org.au/world-heritage/about-the-murujuga-cultural-landscape/">MAC · About the Murujuga Cultural Landscape</a></li>
+        </ul></div>
+    </div>
+    <div class="stack">
+      <div class="src u1l05-ex">
+        <div class="k">Source · the Murujuga Aboriginal Corporation</div>
+        <p class="quote sm"><span class="ed">[How many]</span> With an estimated one to two million images, Murujuga is home to one of the largest, densest and most diverse collections of rock art engravings, also called petroglyphs, in the world. <span class="ed">[How old]</span> Some of the petroglyphs are estimated to be more than 50,000 years old, whilst some are much more recent … <span class="ed">[Still living]</span> The ‘stories from the stones’ of Murujuga are still relevant today. They have not been lost to history but instead are a key component of the living culture of the contemporary Aboriginal Custodians of the land.</p>
+        <p class="prov">Murujuga Aboriginal Corporation, murujuga.org.au: [How many] “About Murujuga” · [How old] “About the Murujuga Cultural Landscape” · [Still living] “World Heritage Listing” · MAC speaks for the Ngarda-Ngarli, the Traditional Owners and Custodians</p>
+      </div>
+      <p class="qprompt">Who is speaking in these extracts, and why does that matter for OVPRL?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">The Custodians themselves, through their own corporation. They hold the Knowledge of what the engravings mean and decide what is shared, so their published words are the most reliable public source on Murujuga’s meaning, though they share only what they choose to.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Petroglyphs and ICIP" data-title="Whose knowledge?" data-kind="notes">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow">2 · Petroglyphs · We do — discuss in pairs, then cold call</p>
+  <h2>What can outsiders reliably conclude, and what must come from Custodians?</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <div class="src u1l05-ex">
+        <div class="k">Closer to Sydney · text only</div>
+        <p class="quote sm"><span class="ed">[NSW National Parks]</span> With over 800 Aboriginal sites recorded across Ku-ring-gai Chase National Park, each one is a visible reminder of the rich Aboriginal heritage of the region. … Here, you’ll make out the outlines of animals and human figures. <span class="ed">[Metropolitan Local Aboriginal Land Council]</span> Over 4500 sites of cultural significance are registered within Metro’s boundaries …</p>
+        <p class="prov">NSW National Parks and Wildlife Service, “Basin Aboriginal art site”, Ku-ring-gai Chase National Park · Metropolitan Local Aboriginal Land Council (Sydney), “Culture &amp; Heritage”</p>
+        <ul class="u1l05-links"><li><a href="https://metrolalc.org.au/culture-heritage/">Metropolitan Local Aboriginal Land Council · Culture &amp; Heritage</a></li></ul>
+      </div>
+      <p class="qprompt">The park service describes “the outlines of animals and human figures”. Is that what the engravings mean?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">No. It is what an outsider can see. What a figure is, which story it belongs to and who may know it is Cultural Knowledge held by Custodians.</p></div>
+    </div>
+    <div class="stack u1l05-who" data-veil="Discuss first — then show the answers">
+      <div class="card quiet reveal"><div class="k">Outsiders can reliably say …</div>
+        <ul><li>where recorded engravings are, and roughly how many (but some places are restricted, and their locations are not shared)</li>
+          <li>how they were made: engraved or pecked into rock</li>
+          <li>what shapes they appear to show (to an outsider, outlines like animals, people and sea life)</li>
+          <li>rough ages, as estimates only, never exact years</li>
+          <li>whether the rock is being damaged (scientific monitoring, which MAC runs with the WA Government)</li></ul></div>
+      <div class="card accent reveal"><div class="k">Must come from Custodians …</div>
+        <ul><li>what an engraving means, and the stories and Lore it belongs to</li>
+          <li>which images and places may be seen, photographed or shared, and by whom (some places are for men or women only)</li>
+          <li>how the sites should be cared for, visited and recorded today</li></ul></div>
+      <p class="cue reveal">An outsider can describe a petroglyph; only its Custodians can say what it means, and whether it should be shared.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Petroglyphs and ICIP" data-title="ICIP: whose Knowledge, whose rules?" data-kind="notes">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow">2 · ICIP · We do — Indigenous Cultural and Intellectual Property</p>
+  <h2>ICIP: whose Knowledge, and whose rules?</h2>
+  <div class="cols c2 u1l05-icipsrc">
+  <div class="src u1l05-ex">
+    <div class="k">Source · Arts Law Centre of Australia, on ICIP</div>
+    <p class="quote sm">ICIP means all aspects of Aboriginal and Torres Strait Islander peoples’ traditional knowledge and cultural expressions. … Aboriginal and Torres Strait Islander laws and protocols say how knowledge and culture can be shared and used.</p>
+    <p class="prov">Arts Law Centre of Australia, “Indigenous Cultural and Intellectual Property (ICIP)”, information sheet (last reviewed 2024) · protocols = the rules for doing something properly</p>
+  </div>
+  <div class="src u1l05-ex">
+    <div class="k">Source · the NSW syllabus</div>
+    <p class="quote sm">ICIP protocols include Cultural Knowledges, Cultural Practices and Cultural Property.</p>
+    <p class="prov">NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024), List B: Ancient Australia, p. 34 · “Knowledges” is plural: each Community has its own</p>
+  </div>
+  </div>
+  <div class="cols c3 u1l05-icip">
+    <div class="card reveal"><div class="k">Cultural Knowledge</div><p class="body">what things mean: stories, Lore, knowledge of Country and of places</p>
+      <p class="u1l05-eg"><b>At Murujuga:</b> MAC writes, “The rock art tells the stories of our country and intrinsic link to it.”</p></div>
+    <div class="card reveal"><div class="k">Cultural Practices</div><p class="body">ceremonies, ways of caring for Country, and the rules about who may see, do or share what</p>
+      <p class="u1l05-eg"><b>At Murujuga:</b> some places are for men or women only, and some figures must not be photographed or shared.</p></div>
+    <div class="card reveal"><div class="k">Cultural Property</div><p class="body">the engravings, sites and objects themselves, and the images and recordings made of them</p>
+      <p class="u1l05-eg"><b>At Murujuga:</b> visitors must not remove stones, shells or artefacts from Country; photographs of some figures are Custodians’ to control.</p></div>
+  </div>
+  <p class="cue reveal" data-veil="Show the answer: why does this site show no photographs of Murujuga?">So why does this site show no photographs of Murujuga? Because recording and sharing images is part of ICIP: under ICIP principles Custodians have the right to control how their Culture is recorded and shared, and MAC has asked people not to publish some of them.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Petroglyphs and ICIP" data-title="We do: the value and limitations T-chart" data-kind="notes">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow">2 · We do — build the T-chart together · I scribe, you supply each point</p>
+  <h2>Sources without words: value and limitations</h2>
+  <div class="tbl-scroll" data-veil="Build yours first — then show one class T-chart"><table class="tbl compact u1l05-tchart">
+    <tr><th>Source</th><th>Value: what it can tell us</th><th>Limitations: what it cannot</th></tr>
+    <tr class="reveal"><td>Petroglyphs</td><td>made by people of the time, in the place itself, sometimes over thousands of years · show what mattered to their makers (animals, people, sea life) and how environments changed · belong to a living Culture whose Custodians can explain them</td><td>hard to date: ages are estimates, based on weathering and on extinct animals shown · meaning cannot be read by outsiders from the image alone: it is Cultural Knowledge, shared only under protocols · weathering and damage</td></tr>
+    <tr class="reveal"><td>Iconography</td><td>shows how makers and patrons wanted the world to be seen (a king’s victory, a feast) · records details words leave out (dress, weapons, chariots) · can be checked against finds (the helmets)</td><td>no words: meaning must be inferred, and people read the same image differently · shows what the patron wanted, not everyday life · may be restored or rearranged (the Standard’s modern mount)</td></tr>
+  </table></div>
+  <p class="cue reveal" data-veil="Show the rule for both">One rule for both: a picture shows, but someone chose what to show, and someone else has to interpret it.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Petroglyphs and ICIP" data-title="Notes 2 — Petroglyphs and ICIP" data-kind="notes">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>Petroglyphs and ICIP</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U1 L5 · OVPRL workshop II: petroglyphs and iconography</b></span><span>2 · Petroglyphs and ICIP</span></div>
+    <div class="row"><div class="cq">Explain one value and one limitation of petroglyphs.</div>
+      <div class="nts reveal">value: made in place by people of the time; record change over thousands of years (Murujuga: est. 1–2 million, some est. 50,000+ years old, MAC) <span class="sep">·</span> limitation: hard to date (estimates); meaning not readable by outsiders</div></div>
+    <div class="row"><div class="cq">Explain why outsiders cannot read the meaning of an engraving from the image alone.</div>
+      <div class="nts reveal">meaning = Cultural Knowledge held by Custodians (Ngarda-Ngarli at Murujuga) <span class="sep">·</span> living Culture, shared under protocols → outsiders can describe shapes, not meanings</div></div>
+    <div class="row"><div class="cq">Explain what ICIP covers, with an example.</div>
+      <div class="nts reveal">rights to control Cultural Knowledge, Practices, Property <span class="sep">·</span> includes images and recordings → MAC asks visitors not to photograph or publish humanoid figures</div></div>
+    <div class="row"><div class="cq">Analyse why ICIP protocols matter when studying Aboriginal sites.</div>
+      <div class="nts reveal">Custodians decide what is shared → respect, accuracy, no restricted Knowledge spread <span class="sep">·</span> use Community-endorsed sources (MAC, Land Councils)</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: choose your source" data-kind="notes">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow">3 · You do · choose one source · check first</p>
+  <h2>Choose your source: the rock engravings or the ‘Peace’ panel</h2>
+  <div class="split" style="--cols:.8fr 1.3fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">A · The rock engravings</div>
+        <p class="body">Murujuga, from the Custodians’ published words on slide 11 (or the Sydney-region engravings, from the park service and Land Council extracts on slide 12). Text only.</p>
+        <p class="u1l05-iq">How useful are the Murujuga petroglyphs for understanding the past of the people of Murujuga, and whose knowledge is needed to interpret them?</p></div>
+      <div class="card accent"><div class="k">B · The ‘Peace’ panel</div>
+        <p class="body">The other long side of the ‘Standard of Ur’, from the same tomb.</p>
+        <p class="u1l05-iq">How useful is the ‘Peace’ panel for understanding kingship at Ur?</p></div>
+      <p class="qprompt">Check first: what will your context phrase say?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show two examples"><p class="body nq">Within a robbed royal tomb at Ur, … · Engraved into the rocks of Murujuga, where Custodians still hold their meaning, …</p></div>
+    </div>
+    <div class="stack">
+      <figure class="u1l05-panel"><img src="images/u1l05-standard-of-ur-peace-side.jpg" alt="The ‘Peace’ side of the ‘Standard of Ur’: three rows of shell figures on lapis lazuli; seated figures with cups and a lyre player in the top row, people leading animals and carrying loads below"><figcaption>The ‘Standard of Ur’, ‘Peace’ side, about 2600–2400 BCE (British Museum) — <span class="cr">Photo: Geni, adjusted by LeastCommonAncestor · CC BY-SA 3.0</span></figcaption></figure>
+      <div class="src u1l05-ex">
+        <div class="k">Source · the excavator, 1929</div>
+        <p class="quote sm">On one side the king and the royal family are seen at feast. … servants wait on them, and at one end of the scene is a musician playing on a small harp, … in two lower rows attendants are shown bringing in spoils captured from the enemy and food-supplies for the banquet …</p>
+        <p class="prov">C. Leonard Woolley, <i>Ur of the Chaldees</i> (1929), pp. 84–85 · Woolley’s reading of the panel, written for the general public · in his 1934 report he calls the instrument a lyre</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: notes, then one paragraph">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow">3 · You do · 16 minutes · press K for the timer · OVPRL notes 6 · paragraph 8 · share 2</p>
+  <h2>OVPRL notes, then one value-and-limitations paragraph</h2>
+  <div class="split" style="--cols:1.05fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body">
+          <li>OVPRL notes on your source, using the OVPRL routine on page 2 of your booklet (6 minutes).</li>
+          <li>One connected paragraph on its value and limitations for your inquiry question (8 minutes). Include:
+            <ul><li>a <b>context phrase</b> to open, such as <span class="nq">Within a royal tomb …</span></li>
+              <li>at least one <b>nominalisation</b> (<span class="nq">Woolley’s guess</span>, <span class="nq">this dependence on Custodians</span>)</li>
+              <li>a judgement: reliable for … but not for … because …</li></ul></li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Support</div>
+        <p class="body">Use the labelled ‘War’ panel (slide 8) as your model and the T-chart (slide 14). Start with: <span class="nq">Within …, the source …</span> · <span class="nq">Its value lies in …</span> · <span class="nq">However, it cannot tell us …</span> · <span class="nq">It is reliable for … but not for … because …</span></p></div>
+      <div class="card quiet sm"><div class="k">Extension</div>
+        <p class="body">Evaluate the claim: <span class="nq">‘Images are more reliable than texts because they show rather than tell.’</span> Use the ‘Standard of Ur’ and one written source from Lesson 4.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Check your paragraph against the success criteria</div>
+        <ul class="checks">
+          <li><label><input type="checkbox"> A context phrase opens it</label></li>
+          <li><label><input type="checkbox"> One value, with a precise detail from the source</label></li>
+          <li><label><input type="checkbox"> One limitation, and why it matters</label></li>
+          <li><label><input type="checkbox"> At least one nominalisation</label></li>
+          <li><label><input type="checkbox"> Reliable for … but not for … because …</label></li>
+          <li><label><input type="checkbox"> For A: whose knowledge is needed, and why</label></li>
+        </ul></div>
+      <p class="small">When you finish, swap with a partner and tick their checklist. Two of you will read your paragraphs aloud.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Compare: two model paragraphs" data-kind="notes">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow">3 · You do · 2 minutes · two students read theirs aloud, then compare</p>
+  <h2>Compare: two model paragraphs</h2>
+  <div class="cols c2" data-veil="Write yours first — then show the model paragraphs">
+    <div class="src reveal">
+      <div class="k">A · the Murujuga petroglyphs · a model written for this lesson</div>
+      <p class="quote sm model"><span class="match" data-step="m1">Engraved into the rocks of Murujuga, on the Burrup Peninsula and Dampier Archipelago of Western Australia,</span> an estimated one to two million petroglyphs form one of the largest collections of rock engravings in the world. Their value lies in <span class="match" data-step="m2">their continuity</span>: the Murujuga Aboriginal Corporation writes that some are estimated to be more than 50,000 years old while others are much more recent, so together they record people’s lives through great environmental change. Yet their meaning is Cultural Knowledge held by the Ngarda-Ngarli, the Traditional Owners and Custodians, who decide under their own protocols what may be shared. Outsiders can therefore reliably describe how the engravings were made and what shapes they appear to show, but not what they mean, because that Knowledge belongs to a living Culture rather than to the image alone. <span class="match" data-step="m2">This dependence on Custodians’ Knowledge</span> is not a weakness of the source but a reminder that, for Aboriginal sites, the most reliable interpretation comes from the people whose Culture made them.</p>
+    </div>
+    <div class="src reveal">
+      <div class="k">B · the ‘Peace’ panel · a model written for this lesson</div>
+      <p class="quote sm model"><span class="match" data-step="m1">Within a robbed royal tomb at Ur,</span> Leonard Woolley’s team found in 1927–28 the inlaid panel now called the ‘Peace’ side of the ‘Standard of Ur’, made about 2600–2400 BCE by unknown craftworkers. Its value for understanding kingship lies in its careful staging: the largest seated figure drinks with companions while a musician plays a lyre, and below them two rows of attendants lead animals and carry loads, which Woolley read as supplies for the banquet. <span class="match" data-step="m2">This display of abundance</span> suggests that the panel was made to present a ruler as the source of plenty, for an elite owner, before it was buried in a royal tomb. It is therefore reliable evidence of how kingship at Ur was meant to be seen, but not of how ordinary people lived, because no words identify the figures and the scene shows only the ruler’s view. <span class="match" data-step="m2">Its limitations are deepened by modern intervention</span>: Woolley rearranged the front of the bottom row and admitted that “the whole corner therefore is a reconstruction”, and the object’s original function is still unknown.</p>
+    </div>
+  </div>
+  <div class="stack u1l05-legend">
+    <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Context phrase</b> · places the source before judging it</span></p>
+    <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Nominalisation</b> · packs an idea into a noun the sentence can build on</span></p>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Summary" data-kind="notes">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What can iconography such as the ‘Standard of Ur’ tell historians, and what limits it?</li>
+          <li>Why can outsiders not read the meaning of Aboriginal rock engravings from the image alone?</li>
+          <li>Why do ICIP protocols matter when studying Aboriginal sites?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Iconography such as the ‘Standard of Ur’ shows how rulers wanted war and kingship to be seen, but with no words its meaning must be inferred, and even its name and shape are modern interpretations. The meaning of Aboriginal rock engravings such as those at Murujuga is Cultural Knowledge held by their Custodians, so outsiders can describe the shapes but cannot read what they mean. ICIP protocols matter because Custodians have the right to decide how their Knowledge, Practices and Property, including images of their sites, are shared and used.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Your rewritten Lesson 4 sentence</label></li>
+        <li><label><input type="checkbox"> ‘Standard’: Woolley’s guess</label></li>
+        <li><label><input type="checkbox"> OVPRL on the ‘War’ panel</label></li>
+        <li><label><input type="checkbox"> Murujuga: whose Knowledge?</label></li>
+        <li><label><input type="checkbox"> ICIP: Knowledge, Practices, Property</label></li>
+        <li><label><input type="checkbox"> The value and limitations T-chart</label></li>
+        <li><label><input type="checkbox"> Your paragraph</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: hinge question" data-kind="intro">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow">Check · hinge question · 3 minutes · hold up A, B, C or D</p>
+  <h2>Why is the meaning of many rock engravings not available to outside researchers?</h2>
+  <div class="u1l05-hingebox veil-parts" data-veil="Vote first — then show the answer">
+  <ol class="opts u1l05-hinge">
+    <li><span class="n">A</span><span>They are so old that their meaning has been lost</span></li>
+    <li id="u1l05-hb"><span class="n">B</span><span>Custodians hold their meaning as Cultural Knowledge and decide what is shared</span></li>
+    <li><span class="n">C</span><span>Researchers have not yet studied them closely enough to work them out</span></li>
+    <li><span class="n">D</span><span>They were made as decoration, so there is no meaning to find</span></li>
+  </ol>
+  <i class="reveal" data-mark="#u1l05-hb" hidden></i>
+  <div class="note vp reveal" data-code="evidence"><p class="body"><b>B.</b> The meaning belongs to a living Culture, and Custodians decide what is shared. A: age alone is not the barrier; at Murujuga, for example, the stories “are still relevant today”. C: they have been recorded and studied for decades, but study can describe shapes, not supply meanings. D: they do have meanings; outsiders just aren’t the ones who hold them.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 4 minutes · before you leave</p>
+  <h2>Iconography: one value and one limitation</h2>
+  <div class="cols c2">
+    <div class="card accent"><div class="k">1 · Value</div><p class="lead">One thing iconography can tell historians is … for example …</p></div>
+    <div class="card accent"><div class="k">2 · Limitation</div><p class="lead">One thing it cannot tell us is … because …</p></div>
+  </div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">1 · how its makers or patrons wanted something to be seen, or a detail words leave out, with a named example (the ‘War’ panel’s king and prisoners; the soldiers’ helmets). &nbsp;2 · a limit tied to having no words or to a modern restoration: its meaning must be inferred, it shows only the patron’s view, or (the ‘Standard’) its purpose is unknown and its shape is a modern mount.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> what if the source itself is a fake? Testing authenticity.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u1l05-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>‘Standard’ is the name the people of Ur gave to the object.</span>
+      <span class="sol no reveal">False <span class="why">— it was Leonard Woolley’s guess in the 1920s, from where the object lay; its original function is unknown.</span></span></li>
+    <li><span class="n">2</span><span>The Murujuga petroglyphs can be dated to an exact year with radiocarbon dating.</span>
+      <span class="sol no reveal">False <span class="why">— an engraving is cut into rock, not once-living material, so radiocarbon cannot date it directly; and radiocarbon gives a range, never an exact year.</span></span></li>
+    <li><span class="n">3</span><span>The sloping shape of the ‘Standard of Ur’ on display today is a modern restoration.</span>
+      <span class="sol reveal">True <span class="why">— the wood rotted away; the mount follows Woolley’s reading of the crushed end pieces, and the end panels’ arrangement is speculative.</span></span></li>
+    <li><span class="n">4</span><span>An outsider can work out what an Aboriginal rock engraving means by looking at it closely.</span>
+      <span class="sol no reveal">False <span class="why">— an outsider can describe its shapes; its meaning is Cultural Knowledge held by Custodians.</span></span></li>
+    <li><span class="n">5</span><span>The ‘War’ panel is useless to historians because it shows only the winners.</span>
+      <span class="sol no reveal">False <span class="why">— reliable for what? It is strong evidence of how rulers wanted victory to be seen, weak evidence of a real battle.</span></span></li>
+    <li><span class="n">6</span><span>ICIP covers photographs and recordings of sites, not only the sites themselves.</span>
+      <span class="sol reveal">True <span class="why">— under ICIP principles, Custodians have the right to control how their Culture is recorded and shared.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — writing moves" data-kind="practice">
+<div class="wrap prac u1l05-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Practise the moves</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · Context phrase + nominalisation</div><p class="body">Combine into one sentence that opens with a context phrase and uses a nominalisation: <span class="nq">Woolley found the object in a royal tomb. He guessed that it was a standard. The name stuck.</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Within a robbed royal tomb at Ur, Woolley found an inlaid object whose position beside a man’s shoulder prompted his guess that it was a standard, and that guess became the name it still bears.</p></div>
+      <div class="card accent"><div class="k">2 · Reliable for what?</div><p class="body">Finish for the ‘Peace’ panel: <span class="nq">It is reliable for … but not for … because …</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">The ‘Peace’ panel is reliable for how kingship at Ur was meant to be seen, but not for how ordinary people lived, because no words identify the figures and it shows only the ruler’s view.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Evaluate the claim: <span class="nq">‘Images are more reliable than texts because they show rather than tell.’</span></p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">The claim is only partly convincing. Images can record what texts leave out: the ‘War’ panel shows the helmets, cloaks and chariots of an army, and Woolley found real copper helmets like the soldiers’ ones in another royal grave. Yet an image also “tells”, because someone chose what to show: the panel stages a king’s victory and shows the defeated only as naked captives and bodies under the chariots, never their side of the story, just as Darius’s Behistun inscription tells only the winner’s story. Images are also harder to read than texts, since without words their meaning must be inferred, and their names and shapes may be modern, as the ‘Standard’ itself shows. For Aboriginal rock engravings, the meaning cannot be read from the image at all, but is held by Custodians. Images are therefore not more reliable than texts in general; like texts, they are reliable for some questions and not others.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u1l05-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Explain why ‘Standard’ is an interpretation, not a fact.
+      <span class="sol reveal">Woolley chose the name from where the object lay, by a man’s shoulder as if carried on a pole; he admitted it was hard to say what it was, and the British Museum says its function is unknown.</span></li>
+    <li>Analyse what the ‘War’ panel shows about kingship.
+      <span class="sol reveal">The tallest figure, in the centre, receives bound prisoners while chariots and uniformed soldiers fight below: the ruler is shown as a victorious war leader with an organised army.</span></li>
+    <li>Assess the ‘War’ panel as evidence for war at Ur.
+      <span class="sol reveal">Reliable for how rulers probably wanted war and victory to be seen, and for some equipment (the helmets look like real finds); not for any real battle, because it has no words, names, place or date and shows only the winners.</span></li>
+    <li>Explain one value and one limitation of petroglyphs.
+      <span class="sol reveal">Value: made in place by people of the time, recording change over thousands of years. Limitation: hard to date (ages are estimates), and their meaning cannot be read by outsiders from the image alone.</span></li>
+    <li>Explain why outsiders cannot read the meaning of an Aboriginal rock engraving from the image alone.
+      <span class="sol reveal">Its meaning is Cultural Knowledge held by Custodians in a living Culture, and shared only under their protocols.</span></li>
+    <li>Explain what ICIP covers, with an example.
+      <span class="sol reveal">The rights of Aboriginal and Torres Strait Islander Peoples to control their Cultural Knowledge, Practices and Property, including images and recordings: the Murujuga Aboriginal Corporation asks visitors not to photograph or publish humanoid figures.</span></li>
+    <li>Analyse why ICIP protocols matter when studying Aboriginal sites.
+      <span class="sol reveal">Custodians decide what is shared, so following their protocols respects their rights, keeps restricted Knowledge from spreading and keeps our sources accurate: use Community-endorsed sources such as the Murujuga Aboriginal Corporation.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u1l05-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u1l05-cite"><div class="k">Written sources</div>
+      <p class="small">Murujuga Aboriginal Corporation (for the Ngarda-Ngarli, Traditional Owners and Custodians of Murujuga), <a href="https://murujuga.org.au/">murujuga.org.au</a>: “About Murujuga”, “About the Murujuga Cultural Landscape”, “World Heritage Listing”, “About Our Land”, “Rock Art Strategy” and “Rock Art Tours and Cultural Training”; short extracts quoted with attribution, © Murujuga Aboriginal Corporation. No images reproduced.</p>
+      <p class="small">C. L. Woolley, <i>Ur of the Chaldees</i> (London: Ernest Benn, 1929), pp. 82–86, <a href="https://archive.org/details/in.ernet.dli.2015.529792">scan on archive.org</a>; C. L. Woolley, <i>Ur Excavations II: The Royal Cemetery</i> (British Museum and University of Pennsylvania Museum, 1934), pp. 7, 61–62, 243, 255, 266–269, <a href="https://archive.org/details/ur-excavations-ii.-the-royal-cemetery-text">scan on archive.org</a>. The British Museum, “The Standard of Ur” (1928,1010.3), <a href="https://artsandculture.google.com/asset/the-standard-of-ur/7gGnYlXZRuvAAA">on Google Arts &amp; Culture</a>. Short extracts, quoted for study.</p>
+      <p class="small">Arts Law Centre of Australia, <a href="https://www.artslaw.com.au/information-sheet/indigenous-cultural-intellectual-property-icip-aitb/">“Indigenous Cultural and Intellectual Property (ICIP)”</a> (last reviewed 2024). NSW National Parks and Wildlife Service, “Basin Aboriginal art site” (nationalparks.nsw.gov.au), quoted for its words only; not linked, because the page shows photographs of the engravings. Metropolitan Local Aboriginal Land Council, <a href="https://metrolalc.org.au/culture-heritage/">“Culture &amp; Heritage”</a>.</p>
+      <p class="small">Teacher resource: <i>Investigating the Past – Archaeological &amp; Written Sources</i> (class notebook). The British Museum’s text on the Standard of Ur on Khan Academy (CC BY-NC-SA), quoted in the teacher notes.</p>
+      <p class="small">The model paragraphs, model notes, examples and summary were written for this lesson.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus and program</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA. ICIP protocols: pp. 8 and 34.</p>
+        <p class="small">ICIP: this public site shows no photographs, drawings or reproductions of Aboriginal or Torres Strait Islander rock art, sites or Cultural material.</p></div>
+      <div class="card quiet u1l05-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>The ‘Standard of Ur’, ‘War’ side</b> · Photo: BabelStone, adjusted by LeastCommonAncestor · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Standard_of_Ur_-_War_side.jpg">source</a></li><li><b>The ‘Standard of Ur’ as displayed today (cropped)</b> · Photo: Denis Bourez · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Denis_Bourez_-_British_Museum,_London_(8747049029)_(2).jpg">source</a></li><li><b>The ‘Standard of Ur’, ‘Peace’ side</b> · Photo: Geni, adjusted by LeastCommonAncestor · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Standard_of_Ur_-_Peace.jpg">source</a></li></ul>
+        <p class="small">All images are openly licensed, and were resized for the web (the museum view was also cropped). Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

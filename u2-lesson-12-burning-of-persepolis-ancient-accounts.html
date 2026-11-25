@@ -1,0 +1,1754 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U2 L12 · The burning of Persepolis: the ancient accounts</title>
+<meta name="description" content="Year 11 Ancient History, case study Persepolis: what Arrian, Diodorus, Plutarch and Curtius say about how and why the palace at Persepolis was burned in 330 BCE, how far each writer was from the event and whose lost histories he used, and why their accounts differ.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#0F5E5A; --bright:#1A8A84; --tint:#E1F2F0; --statement:#0F5E5A;
+  --solid:#0F5E5A; --soft:#CBEDE9; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; } }
+:root[data-theme="dark"]{ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 2 Lesson 12 only (every class starts u2l12-) */
+
+/* goals slide syllabus line; credits links */
+.u2l12-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u2l12-cite a{color:var(--deep);}
+
+/* the relief map with our own route markers. The box keeps the picture's shape, so the markers
+   (left/top in % of the picture) stay in place at any size; the route is an SVG stretched over it. */
+.u2l12-mapfig{margin:0;}
+.u2l12-mapbox{position:relative; width:min(100%, calc(var(--h,50vh) * var(--ar,1))); aspect-ratio:var(--ar,1);
+  margin:0 auto; border-radius:10px; overflow:hidden; box-shadow:var(--shadow); background:var(--surface-2);}
+.u2l12-mapbox img{position:absolute; inset:0; width:100%; height:100%; display:block;}
+.u2l12-route{position:absolute; inset:0; width:100%; height:100%;}
+.u2l12-route path{fill:none; stroke:#B02F19; stroke-width:3; stroke-linejoin:round; stroke-linecap:round;
+  vector-effect:non-scaling-stroke;}
+.u2l12-route path.later{stroke:#4E5A66; stroke-dasharray:2 7; stroke-width:3;}
+.u2l12-pin{position:absolute; left:var(--x); top:var(--y); display:flex; align-items:center; gap:.3em;
+  transform:translate(-.42em,-50%); font-family:var(--ui); font-weight:700; line-height:1.15; white-space:nowrap;
+  font-size:calc(var(--fs-chrome)*.9); color:#14171C;}
+.u2l12-pin i{flex:none; width:.75em; height:.75em; border-radius:50%; background:#B02F19; box-shadow:0 0 0 2px #fff;}
+.u2l12-pin b{background:rgba(255,255,255,.9); padding:.1em .4em; border-radius:5px; font-weight:700;}
+.u2l12-pin.left{flex-direction:row-reverse; transform:translate(calc(-100% + .42em),-50%);}
+.u2l12-pin.main i{background:#0F5E5A; width:.95em; height:.95em;}
+.u2l12-pin.main b{background:#0F5E5A; color:#fff;}
+.u2l12-pin.later i{background:#4E5A66;}
+.u2l12-mapfig figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.4em; line-height:1.35;}
+.u2l12-mapfig figcaption .cr{white-space:nowrap;}
+
+/* the context time line: date column, marker, event */
+.u2l12-tl{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:clamp(4px,.8vh,10px);}
+.u2l12-tl li{display:grid; grid-template-columns:8.6em 1fr; gap:.7em; align-items:baseline; padding:.28em .7em;
+  border-left:4px solid var(--bright); background:var(--surface); border-radius:0 8px 8px 0;
+  font-size:calc(var(--fs-body)*.84); line-height:1.32;}
+.u2l12-tl .when{font-family:var(--mono); font-weight:700; color:var(--deep); font-size:.88em; white-space:nowrap;}
+.u2l12-tl li.u2l12-fire{border-left-color:var(--c-judgement); background:var(--w-judgement);}
+.u2l12-tl li.u2l12-fire .when{color:var(--c-judgement);}
+
+/* the four-writers diagram (svg_u2l12_writers.svg) */
+.u2l12-svg{display:block; width:100%; height:auto;}
+.u2l12-svg text{fill:var(--ink); font-family:var(--ui); font-size:21px;}
+.u2l12-svg .u2l12-tb{font-weight:700;}
+.u2l12-svg .u2l12-tname{font-weight:700; fill:var(--deep);}
+.u2l12-svg .u2l12-tsm{font-size:18px;}
+.u2l12-svg .u2l12-tmute{fill:var(--slate);}
+.u2l12-svg .u2l12-tgap{fill:var(--c-judgement); font-weight:600;}
+.u2l12-svg .u2l12-tfire{fill:var(--c-judgement);}
+.u2l12-lane{stroke:var(--rule); stroke-width:1.5;}
+.u2l12-fire{stroke:var(--c-judgement); stroke-width:3; stroke-dasharray:7 5;}
+.u2l12-firedot{fill:var(--c-judgement);}
+.u2l12-lost{fill:var(--surface-2); stroke:var(--slate); stroke-width:2; stroke-dasharray:7 5;}
+.u2l12-writer{fill:var(--surface); stroke:var(--deep); stroke-width:2.5;}
+.u2l12-drop{stroke:var(--slate); stroke-width:1.5; stroke-dasharray:3 5;}
+.u2l12-dot{fill:var(--deep);}
+.u2l12-arrow{stroke:var(--slate); stroke-width:2.5;}
+.u2l12-arrow.dashed{stroke-dasharray:8 6;}
+.u2l12-ahp{fill:var(--slate);}
+.u2l12-axis{stroke:var(--ink); stroke-width:2;}
+.u2l12-tick{stroke:var(--ink); stroke-width:2;}
+.u2l12-diagram{margin:0;}
+.u2l12-diagram svg{max-height:50vh;}
+
+/* supported reading: the extract beside the annotation questions */
+.u2l12-read .src .quote.sm{line-height:1.48;}
+.u2l12-gloss{margin:.55em 0 0; padding-top:.45em; border-top:1px dashed var(--rule); font-size:calc(var(--fs-chrome)*.95);
+  color:var(--slate); line-height:1.38;}
+.u2l12-gloss b{color:var(--deep);}
+.u2l12-qs{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.u2l12-qs .mq{font-size:calc(var(--fs-body)*.86); line-height:1.36;}
+.u2l12-key{display:flex; flex-wrap:wrap; gap:.3em .9em; font-size:calc(var(--fs-chrome)*.95); color:var(--slate);}
+.u2l12-key span{display:inline-flex; align-items:center; gap:.35em;}
+.u2l12-key i{display:inline-block; width:.9em; height:.9em; border-radius:3px;}
+.u2l12-key .k1{background:var(--c-scope);} .u2l12-key .k2{background:var(--c-keyterm);}
+.u2l12-key .k3{background:var(--c-evidence);} .u2l12-key .k4{background:var(--c-judgement);}
+
+/* the comparison grid */
+.u2l12-grid th{text-align:left;}
+.u2l12-grid td:first-child{font-weight:700; color:var(--deep); white-space:nowrap; width:1%;}
+.u2l12-grid td{vertical-align:top;}
+.u2l12-grid td.u2l12-given{color:var(--slate); font-style:italic;}
+.u2l12-grid td.u2l12-blank{height:3.2em;}
+
+/* preface extract beside the diagram */
+.u2l12-pref .quote.sm{font-size:calc(var(--fs-body)*.86);}
+
+/* hinge options: four in two columns */
+.u2l12-hinge .opts{display:grid; grid-template-columns:1fr 1fr; gap:.5em .9em;}
+
+/* the artist's version (practice) */
+.u2l12-art{display:grid; grid-template-columns:.7fr 1.3fr; gap:clamp(12px,1.8vw,30px); align-items:start;}
+.u2l12-art .figure img{width:auto; max-width:100%; max-height:62vh; margin:0 auto; object-fit:contain; background:none; box-shadow:none;}
+
+/* phones (Read mode): one column, natural heights */
+@media (max-width:900px){
+  .u2l12-tl li{grid-template-columns:1fr; gap:.1em;}
+  .u2l12-pin{font-size:.7rem;}
+  .u2l12-hinge .opts{grid-template-columns:1fr;}
+  .u2l12-art{grid-template-columns:1fr;}
+  .u2l12-art .figure img{max-height:60vh;}
+  .u2l12-grid td:first-child{white-space:normal;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u2l12-dense{gap:9px;}
+  html:not(.read) .u2l12-dense h2{font-size:calc(var(--fs-h2)*.84);}
+  html:not(.read) .u2l12-dense .quote.sm{font-size:calc(var(--fs-body)*.72); line-height:1.4;}
+  html:not(.read) .u2l12-dense .quote{font-size:calc(var(--fs-body)*.88);}
+  html:not(.read) .u2l12-dense .src{padding:9px 15px;}
+  html:not(.read) .u2l12-dense .src .k{margin-bottom:.3em;}
+  html:not(.read) .u2l12-dense .src .prov{margin-top:.35em; font-size:calc(var(--fs-chrome)*.9);}
+  html:not(.read) .u2l12-dense .u2l12-gloss{margin-top:.35em; padding-top:.3em; font-size:calc(var(--fs-chrome)*.86);}
+  html:not(.read) .u2l12-dense .note{padding:.4em .8em;}
+  html:not(.read) .u2l12-dense .note .body, html:not(.read) .u2l12-dense .card .body,
+  html:not(.read) .u2l12-dense .qprompt{font-size:calc(var(--fs-body)*.78); line-height:1.34;}
+  html:not(.read) .u2l12-dense .card{padding:9px 15px;}
+  html:not(.read) .u2l12-dense .tbl.compact{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u2l12-dense .tbl.compact td{padding:.28em .5em;}
+  html:not(.read) .u2l12-dense .tbl th{padding:.34em .55em;}
+  html:not(.read) .u2l12-dense .figure img{max-height:30vh;}
+  html:not(.read) .u2l12-dense .u2l12-diagram svg{max-height:46vh;}
+  html:not(.read) .u2l12-dense .u2l12-art .figure img{max-height:60vh;}
+  html:not(.read) .u2l12-dense .mq, html:not(.read) .u2l12-dense .u2l12-qs .mq{font-size:calc(var(--fs-body)*.76); line-height:1.32;}
+  html:not(.read) .u2l12-dense .u2l12-tl li{font-size:calc(var(--fs-body)*.76); padding:.2em .6em;}
+  html:not(.read) .u2l12-dense .tf li, html:not(.read) .u2l12-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l12-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u2l12-dense .prac{gap:6px;}
+  html:not(.read) .u2l12-dense .cornell .cq, html:not(.read) .u2l12-dense .cornell .nts{font-size:calc(var(--fs-body)*.74); padding:.32em .8em;}
+  html:not(.read) .u2l12-dense .keylist li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u2l12-dense .bank span{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l12-dense .opts li{font-size:calc(var(--fs-body)*.8);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 12" data-title="The burning of Persepolis: the ancient accounts" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.1fr .9fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 2 · Persepolis · Lesson 12</p>
+      <h1>The burning of Persepolis: the ancient accounts</h1>
+      <p class="lead">Four ancient writers tell how the palace burned in 330 BCE. How, and why, do their stories differ?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <figure class="figure tall contain"><img src="images/u2l12-apadana-columns-today.jpg" alt="One of the standing columns of the Apadana (13 of its 72 still stand); in the distance, the columns and doorways of the Gate of All Nations. The Apadana was one of the buildings destroyed by fire" loading="lazy"><figcaption>One of the standing columns of the Apadana (13 of its 72 still stand); in the distance, the columns and doorways of the Gate of All Nations. The Apadana was one of the buildings destroyed by fire — <span class="cr">Photo: Bernard Gagnon · CC BY-SA 4.0</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="Connect: the Fortification Tablets" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Connect · 3 minutes · everyone writes one line · press K for the timer</p>
+  <h2>Name one thing the Fortification Tablets tell us that the reliefs do not.</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <figure class="figure short"><img src="images/u2l04-fortification-tablets-chicago.jpg" alt="Fortification Tablets and fragments from Persepolis in study boxes, with their catalogue labels, at the Oriental Institute (now ISAC), University of Chicago, in 2017" loading="lazy"><figcaption>Fortification Tablets and fragments from Persepolis in study boxes, with their catalogue labels, at the Oriental Institute (now ISAC), University of Chicago, in 2017 — <span class="cr">Photo: Pfa16 · CC BY-SA 4.0</span></figcaption></figure>
+    <div class="stack">
+      <div class="card accent"><div class="k">One line, from Lesson 11</div><p class="body">Name something the tablets record, then say why the royal reliefs leave it out. Use a precise term (ration, worker, administration).</p></div>
+      <div class="note reveal" data-code="evidence" data-veil="Write yours first — then show a model answer"><div class="k">A model answer</div><p class="body">The tablets record everyday administration: food stored and paid out as rations to people from the lowest workers to the king’s own family. The reliefs show the empire as the king wanted it to be seen, not who was fed or paid, or how much.</p></div>
+      <p class="small">Today: four ancient writers tell how the palace burned in 330 BCE, and they disagree.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>understand the ancient accounts of the burning of Persepolis</li>
+        <li>analyse how and why the accounts differ</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>summarise what each of the four writers says happened</li>
+        <li>explain the causes each writer gives</li>
+        <li>explain one reason the accounts differ, using origin and purpose</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u2l12-syl"><b>Syllabus outcomes:</b> AH-11-02 proposes ideas about the varying causes and effects of events and developments · AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-04 recognises causes and effects of events or developments · AH-LS-09 identifies different interpretations of the past.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U2 L12 · The burning: the ancient accounts</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; A. = Alexander)</span></div></div>
+      <div class="row"><div class="cq">Outline the campaign to Persepolis.</div><div class="nts">Gaugamela, 1 Oct 331 BCE → Babylon → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: the context and the four writers · what each writer says. The comparison grid goes on the facing page.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u2l12-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for reading the four accounts</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>From the unit list</th><th>Meaning</th></tr>
+      <tr><td>Gaugamela</td><td>The battle (331 BCE) in which Alexander defeated Darius III, opening the way to Persepolis.</td></tr>
+      <tr><td>Thaïs</td><td>An Athenian woman who, according to Diodorus, Curtius and Plutarch, urged the burning of the palace at a feast.</td></tr>
+      <tr><td>Vulgate tradition</td><td>The group of ancient Alexander histories (Diodorus, Curtius and others) thought to share a lost source, often identified as Cleitarchus.</td></tr>
+      <tr><td>Premeditated</td><td>Planned in advance.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Added for this lesson</th><th>Meaning</th></tr>
+      <tr><td>Parmenio</td><td>Alexander’s senior general (also spelled Parmenion).</td></tr>
+      <tr><td>comus</td><td>A noisy procession of revellers; in Diodorus, a victory procession in honour of Dionysus, god of wine.</td></tr>
+      <tr><td>courtesan</td><td>A woman who was the paid companion of wealthy men.</td></tr>
+      <tr><td>prudence</td><td>Good judgement: thinking carefully before acting.</td></tr>
+      <tr><td>retributive</td><td>Given as a punishment, to pay back a wrong.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The context" data-title="From Gaugamela to Persepolis" data-kind="notes">
+<div class="wrap u2l12-dense">
+  <p class="eyebrow">1 · The context · I do — the time line, 334–330 BCE</p>
+  <h2>From Gaugamela to Persepolis, and the fire</h2>
+  <div class="split" style="--cols:.95fr 1.05fr; align-items:start">
+    <figure class="u2l12-mapfig">
+      <div class="u2l12-mapbox" style="--ar:1.1433; --h:50vh">
+        <img src="images/u2l03-relief-map-fars-susa.jpg" alt="Relief map of Mesopotamia and Iran with markers for Gaugamela, Babylon, Susa, the Persian Gates, Persepolis and Ecbatana, joined by a route line">
+        <svg class="u2l12-route" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M2,6 L6.8,44.6 L35.3,48.1 L59.9,63.3 L69.6,70.6"/><path class="later" d="M69.6,70.6 L37.2,22"/></svg>
+        <span class="u2l12-pin" style="--x:2%; --y:6%"><i></i><b>Gaugamela</b></span>
+        <span class="u2l12-pin" style="--x:6.8%; --y:44.6%"><i></i><b>Babylon</b></span>
+        <span class="u2l12-pin" style="--x:35.3%; --y:48.1%"><i></i><b>Susa</b></span>
+        <span class="u2l12-pin left" style="--x:59.9%; --y:63.3%"><i></i><b>Persian Gates</b></span>
+        <span class="u2l12-pin main" style="--x:69.6%; --y:70.6%"><i></i><b>Persepolis</b></span>
+        <span class="u2l12-pin later" style="--x:37.2%; --y:22%"><i></i><b>Ecbatana</b></span>
+      </div>
+      <figcaption>Relief map of Iran and its neighbours; markers added for this lesson — <span class="cr">Map: Uwe Dedering (Natural Earth data) · CC BY-SA 3.0</span> · the route is simplified; the dotted line is the march after the fire</figcaption>
+    </figure>
+    <div class="stack">
+      <ol class="u2l12-tl">
+        <li class="reveal"><span class="when">334–332 BCE</span><span>Alexander crosses into Asia (May 334), defeats Darius III at Issus (333), then takes Tyre and Egypt.</span></li>
+        <li class="reveal"><span class="when">1 Oct 331</span><span>Gaugamela: Darius III is defeated again, but escapes.</span></li>
+        <li class="reveal"><span class="when">Oct–Dec 331</span><span>Babylon (22 October) and then Susa (December) surrender; Susa hands over its treasure.</span></li>
+        <li class="reveal"><span class="when">January 330</span><span>Alexander forces the Persian Gates and reaches Persepolis. The city is looted and the treasure taken away.</span></li>
+        <li class="reveal"><span class="when">Jan–May 330</span><span>He stays more than four months, through the winter.</span></li>
+        <li class="reveal u2l12-fire"><span class="when">about May 330</span><span>The palace burns. The army marches north to Ecbatana.</span></li>
+        <li class="reveal"><span class="when">July 330</span><span>Darius III is killed by his own men.</span></li>
+      </ol>
+      <p class="qprompt reveal">Why did Alexander stay so long at Persepolis? What does Plutarch say?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Think first — then show the answer"><p class="body">Plutarch: “Wishing to refresh his soldiers (for it was winter time), he spent four months in that place.” Keep the long stay in mind: it matters when we ask whether the fire was planned.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The context" data-title="Four writers, far from the event" data-kind="notes">
+<div class="wrap u2l12-dense">
+  <p class="eyebrow">1 · The context · I do — think aloud: how far from the event, and whose accounts?</p>
+  <h2>Four writers, centuries later, using histories that are now lost</h2>
+  <div class="split" style="--cols:1.9fr 1fr">
+    <div class="stack">
+    <figure class="diagram u2l12-diagram"><svg class="u2l12-svg u2l12-writers" viewBox="0 0 1000 398" role="img" aria-label="Time line from 350 BCE to 150 CE. The palace at Persepolis burns in 330 BCE. In the decades after it, histories were written that are now lost: Ptolemy and Aristobulus, officers on the campaign, who wrote after Alexander died in 323 BCE, and Cleitarchus at Alexandria, probably about 310 to 301 BCE. Arrian, in the 2nd century CE, used Ptolemy and Aristobulus. Diodorus, about 60 to 30 BCE, and Curtius, probably about 40 to 80 CE, probably used Cleitarchus. Plutarch, about 100 CE, used several earlier writers. All four wrote about 270 to 470 years after the fire.">
+<defs><marker id="u2l12-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="u2l12-ahp"/></marker></defs>
+<line class="u2l12-drop" x1="927.4" y1="108" x2="927.4" y2="360"/>
+<line class="u2l12-drop" x1="624.3" y1="182" x2="624.3" y2="360"/>
+<line class="u2l12-drop" x1="806.1" y1="256" x2="806.1" y2="360"/>
+<line class="u2l12-drop" x1="875.4" y1="330" x2="875.4" y2="360"/>
+<line class="u2l12-fire" x1="130.6" y1="34" x2="130.6" y2="360"/>
+<text class="u2l12-t u2l12-tb u2l12-tfire" x="120.6" y="24">330 BCE · the palace burns</text>
+<text class="u2l12-t u2l12-tsm u2l12-tmute" x="992" y="24" text-anchor="end">dashed boxes: histories now lost</text>
+<rect class="u2l12-lost" x="148.6" y="50" width="292" height="58" rx="10"/>
+<text class="u2l12-t u2l12-tb" x="162.6" y="74">Ptolemy · Aristobulus</text>
+<text class="u2l12-t u2l12-tsm u2l12-tmute" x="162.6" y="97">officers on the campaign</text>
+<rect class="u2l12-lost" x="148.6" y="161" width="292" height="58" rx="10"/>
+<text class="u2l12-t u2l12-tb" x="162.6" y="185">Cleitarchus</text>
+<text class="u2l12-t u2l12-tsm u2l12-tmute" x="162.6" y="208">probably 310–301 BCE</text>
+<rect class="u2l12-lost" x="148.6" y="272" width="292" height="58" rx="10"/>
+<text class="u2l12-t u2l12-tb" x="162.6" y="296">several earlier writers</text>
+<text class="u2l12-t u2l12-tsm u2l12-tmute" x="162.6" y="319">“some writers … others say”</text>
+<line class="u2l12-arrow" x1="440.6" y1="79" x2="716" y2="79" marker-end="url(#u2l12-ah)"/>
+<text class="u2l12-t u2l12-tsm u2l12-tmute" x="454.6" y="71">used (Arrian’s preface)</text>
+<line class="u2l12-arrow" x1="440.6" y1="182" x2="480" y2="153" marker-end="url(#u2l12-ah)"/>
+<line class="u2l12-arrow" x1="440.6" y1="198" x2="684" y2="227" marker-end="url(#u2l12-ah)"/>
+<text class="u2l12-t u2l12-tsm u2l12-tmute" x="454.6" y="240">probably used</text>
+<line class="u2l12-arrow dashed" x1="440.6" y1="301" x2="716" y2="301" marker-end="url(#u2l12-ah)"/>
+<text class="u2l12-t u2l12-tsm u2l12-tmute" x="454.6" y="293">used several</text>
+<rect class="u2l12-writer" x="722" y="50" width="272" height="58" rx="10"/>
+<text class="u2l12-t" x="736" y="74"><tspan class="u2l12-tname">Arrian</tspan><tspan class="u2l12-tsm"> · 2nd century CE</tspan></text>
+<text class="u2l12-t u2l12-tsm u2l12-tgap" x="736" y="97">about 460 years later</text>
+<rect class="u2l12-writer" x="486" y="124" width="272" height="58" rx="10"/>
+<text class="u2l12-t" x="500" y="148"><tspan class="u2l12-tname">Diodorus</tspan><tspan class="u2l12-tsm"> · 60–30 BCE</tspan></text>
+<text class="u2l12-t u2l12-tsm u2l12-tgap" x="500" y="171">about 270–300 years later</text>
+<rect class="u2l12-writer" x="690" y="198" width="272" height="58" rx="10"/>
+<text class="u2l12-t" x="704" y="222"><tspan class="u2l12-tname">Curtius</tspan><tspan class="u2l12-tsm"> · about 40–80 CE</tspan></text>
+<text class="u2l12-t u2l12-tsm u2l12-tgap" x="704" y="245">about 370–410 years later</text>
+<rect class="u2l12-writer" x="722" y="272" width="272" height="58" rx="10"/>
+<text class="u2l12-t" x="736" y="296"><tspan class="u2l12-tname">Plutarch</tspan><tspan class="u2l12-tsm"> · about 100 CE</tspan></text>
+<text class="u2l12-t u2l12-tsm u2l12-tgap" x="736" y="319">about 430 years later</text>
+<line class="u2l12-axis" x1="96" y1="360" x2="962" y2="360"/>
+<line class="u2l12-tick" x1="182.6" y1="353" x2="182.6" y2="367"/>
+<text class="u2l12-t u2l12-tsm u2l12-tmute" x="182.6" y="390" text-anchor="middle">300 BCE</text>
+<line class="u2l12-tick" x1="355.8" y1="353" x2="355.8" y2="367"/>
+<text class="u2l12-t u2l12-tsm u2l12-tmute" x="355.8" y="390" text-anchor="middle">200 BCE</text>
+<line class="u2l12-tick" x1="529.0" y1="353" x2="529.0" y2="367"/>
+<text class="u2l12-t u2l12-tsm u2l12-tmute" x="529.0" y="390" text-anchor="middle">100 BCE</text>
+<line class="u2l12-tick" x1="702.2" y1="353" x2="702.2" y2="367"/>
+<text class="u2l12-t u2l12-tsm u2l12-tmute" x="702.2" y="390" text-anchor="middle">BCE | CE</text>
+<line class="u2l12-tick" x1="875.4" y1="353" x2="875.4" y2="367"/>
+<text class="u2l12-t u2l12-tsm u2l12-tmute" x="875.4" y="390" text-anchor="middle">100 CE</text>
+<circle class="u2l12-firedot" cx="130.6" cy="360" r="8"/>
+<circle class="u2l12-dot" cx="927.4" cy="360" r="6"/>
+<circle class="u2l12-dot" cx="624.3" cy="360" r="6"/>
+<circle class="u2l12-dot" cx="806.1" cy="360" r="6"/>
+<circle class="u2l12-dot" cx="875.4" cy="360" r="6"/>
+</svg></figure>
+    <div class="src u2l12-pref">
+      <div class="k">Arrian on his own sources · Preface</div>
+      <p class="quote sm">… in my opinion the narratives of Ptolemy and Aristobulus are more worthy of credit than the rest; Aristobulus, because he served under king Alexander in his expedition, and Ptolemy, not only because he accompanied Alexander in his expedition, but also because he was himself a king afterwards, and falsification of facts would have been more disgraceful to him than to any other man.</p>
+      <p class="prov">Arrian, <i>Anabasis of Alexander</i>, Preface · trans. E. J. Chinnock (1884)</p>
+    </div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Diodorus is the closest in time. Does that make him the most reliable?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">Not on its own. None of the four saw the fire; all of them depend on lost histories written within a few decades of it. Whose account a writer followed, and why he wrote, matter more than his date.</p></div>
+      <p class="qprompt reveal">Why does Arrian trust Ptolemy? Is his reason convincing?</p>
+      <div class="note reveal" data-code="counter" data-veil="Answer first — then show a model answer"><p class="body">Ptolemy was on the campaign and later a king, so lying would have shamed him. But a king also had a reputation to protect: being there does not make a writer neutral.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The context" data-title="Notes 1 — The context and the four writers" data-kind="notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>The context and the four writers</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L12 · The burning: the ancient accounts</b></span><span>1 · The context</span></div>
+    <div class="row"><div class="cq">Outline the campaign to Persepolis.</div>
+      <div class="nts reveal">Gaugamela 1 Oct 331 BCE → Babylon, Susa (Oct–Dec 331) → Persian Gates → Persepolis Jan 330: looted, treasure taken → 4+ months → palace burns, about May 330 → Darius III killed, July 330</div></div>
+    <div class="row"><div class="cq">How far from the event was each writer?</div>
+      <div class="nts reveal">Diodorus c. 60–30 BCE (~270–300 yrs) <span class="sep">·</span> Curtius 1st c. CE (~370–410) <span class="sep">·</span> Plutarch c. 100 CE (~430) <span class="sep">·</span> Arrian 2nd c. CE (~460) → none saw it</div></div>
+    <div class="row"><div class="cq">Whose accounts did each use?</div>
+      <div class="nts reveal">Arrian: Ptolemy + Aristobulus (officers on the campaign) <span class="sep">·</span> Diodorus, Curtius: probably Cleitarchus <span class="sep">·</span> Plutarch: several → all lost</div></div>
+    <div class="row"><div class="cq">Explain why the writers’ sources matter.</div>
+      <div class="nts reveal">each writer depends on a lost history → whose account he followed matters more than how close he lived</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Reading the accounts" data-title="Supported reading: Arrian" data-kind="notes">
+<div class="wrap u2l12-dense">
+  <p class="eyebrow">2 · Reading the accounts · supported reading 1 of 4 · read together, then annotate</p>
+  <h2>Arrian: a deliberate act, against advice</h2>
+  <div class="split u2l12-read veil-parts" style="--cols:1.2fr .8fr" data-veil="Annotate first — then show the answers">
+    <div class="src">
+      <div class="k">Source · Arrian, <i>Anabasis of Alexander</i> 3.18</div>
+      <p class="quote sm"><span class="match" data-step="m1">He burnt down the Persian palace, though Parmenio advised him to preserve it,</span> <span class="match" data-step="m4">for many reasons, and especially because it was not well to destroy what was now his own property, and because the men of Asia would not by this course of action be induced to come over to him, thinking that he himself had decided not to retain the rule of Asia, but only to conquer it and depart.</span> <span class="match" data-step="m2">But Alexander said that he wished to take vengeance on the Persians, in retaliation for their deeds in the invasion of Greece, when they razed Athens to the ground and burnt down the temples. He also desired to punish the Persians for all the other injuries they had done the Greeks.</span> <span class="match" data-step="m3">But Alexander does not seem to me to have acted on this occasion with prudence; nor do I think that this was any retributive penalty at all on the ancient Persians.</span></p>
+      <p class="prov">Arrian of Nicomedia, a Greek historian and Roman senator, 2nd century CE, who based his history mainly on Ptolemy and Aristobulus · trans. E. J. Chinnock (1884)</p>
+      <p class="u2l12-gloss"><b>Words:</b> preserve = keep safe · induced to come over = persuaded to join · retaliation = paying back a wrong · prudence = good judgement · retributive = given as punishment</p>
+    </div>
+    <div class="u2l12-qs">
+      <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Who does he say did it?</b> <span class="vp">Alexander himself, as a decision: he burnt the palace although his general advised against it.</span></span></p>
+      <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>What did Parmenio advise, and why?</b> <span class="vp">Keep it: it was now Alexander’s own property, and burning it would tell Asia he meant to conquer and leave, not rule.</span></span></p>
+      <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>What cause does Alexander give?</b> <span class="vp">Revenge for the Persian invasion of Greece, when Athens was razed and the temples burnt, and for other injuries to the Greeks.</span></span></p>
+      <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>What is Arrian’s own attitude?</b> <span class="vp">Critical: it was not prudent, and it punished no one who had harmed Greece, because the invaders lived about 150 years earlier.</span></span></p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Reading the accounts" data-title="Supported reading: Diodorus" data-kind="notes">
+<div class="wrap u2l12-dense">
+  <p class="eyebrow">2 · Reading the accounts · supported reading 2 of 4 · read together, then annotate</p>
+  <h2>Diodorus: a victory feast, Thaïs and the torches</h2>
+  <div class="split u2l12-read veil-parts" style="--cols:1.3fr .7fr" data-veil="Annotate first — then show the answers">
+    <div class="src">
+      <div class="k">Source · Diodorus of Sicily, <i>Library of History</i> 17.70–72</div>
+      <p class="quote sm"><span class="ed">[70.1]</span> <span class="match" data-step="m4">Alexander described it to the Macedonians as the most hateful of the cities of Asia,</span> and gave it over to his soldiers to plunder, all but the palaces. … <span class="ed">[71.3]</span> <span class="match" data-step="m4">He felt bitter enmity to the inhabitants. He did not trust them, and he meant to destroy Persepolis utterly.</span> … <span class="ed">[72]</span> Alexander held games in honour of his victories. He performed costly sacrifices to the gods and entertained his friends bountifully. <span class="match" data-step="m2">While they were feasting and the drinking was far advanced, as they began to be drunken a madness took possession of the minds of the intoxicated guests.</span> <span class="match" data-step="m1">At this point one of the women present, Thaïs by name and Attic by origin, said that for Alexander it would be the finest of all his feats in Asia if he joined them in a triumphal procession, set fire to the palaces,</span> and permitted women’s hands in a minute to extinguish the famed accomplishments of the Persians. This was said to men who were still young and giddy with wine, and so, as would be expected, someone shouted out to form the comus and to light torches, <span class="match" data-step="m2">and urged all to take vengeance for the destruction of the Greek temples.</span> … <span class="match" data-step="m1">When the king had caught fire at their words,</span> all leaped up from their couches and passed the word along to form a victory procession in honour of Dionysus. … <span class="match" data-step="m1">She was the first, after the king, to hurl her blazing torch into the palace.</span> … <span class="match" data-step="m3">It was most remarkable that the impious act of Xerxes, king of the Persians, against the acropolis at Athens should have been repaid in kind after many years by one woman, a citizen of the land which had suffered it, and in sport.</span></p>
+      <p class="prov">Diodorus, a Greek historian who wrote a universal history about 60–30 BCE, probably following the lost history of Cleitarchus · trans. C. Bradford Welles, Loeb Classical Library (1963)</p>
+      <p class="u2l12-gloss"><b>Words:</b> enmity = hatred · Attic = from Attica, the land of Athens · comus = a victory procession with torches and music · impious = disrespectful to the gods · acropolis = the citadel of Athens, with its temples · in sport = as a game</p>
+    </div>
+    <div class="u2l12-qs">
+      <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Who is blamed?</b> <span class="vp">Thaïs proposes the fire and throws the first torch after the king; Alexander, fired up by the guests, leads.</span></span></p>
+      <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>What causes are given?</b> <span class="vp">Drink at a victory feast, and vengeance for the destruction of the Greek temples.</span></span></p>
+      <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>Was it only a drunken whim?</b> <span class="vp">Not quite: before the feast, Diodorus says Alexander hated the city and meant to destroy it utterly.</span></span></p>
+      <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>What is Diodorus’s attitude?</b> <span class="vp">He tells it as a dramatic turn of fortune: one Athenian woman repays the Persians, “in sport”.</span></span></p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Reading the accounts" data-title="Supported reading: Plutarch" data-kind="notes">
+<div class="wrap u2l12-dense">
+  <p class="eyebrow">2 · Reading the accounts · supported reading 3 of 4 · read together, then annotate</p>
+  <h2>Plutarch: Thaïs’s speech, and two versions</h2>
+  <div class="split u2l12-read veil-parts" style="--cols:1.3fr .7fr" data-veil="Annotate first — then show the answers">
+    <div class="src">
+      <div class="k">Source · Plutarch, <i>Life of Alexander</i> 38</div>
+      <p class="quote sm"><span class="match" data-step="m2">After this, as he was about to march forth against Dareius, it chanced that he consented to take part in a merry drinking bout of his companions,</span> at which women also came to meet their lovers and shared in their wine and revelry. <span class="match" data-step="m4">The most famous among these women was Thaïs, an Athenian, the mistress of Ptolemy, who was afterwards king.</span> She, partly in graceful praise of Alexander, and partly to make sport for him, as the drinking went on, was moved to utter a speech which befitted the character of her native country, but was too lofty for one of her kind. She said, namely, that for all her hardships in wandering over Asia she was being requited that day by thus revelling luxuriously in the splendid palace of the Persians; <span class="match" data-step="m1">but it would be a still greater pleasure to go in revel rout and set fire to the house of the Xerxes who burned Athens, she herself kindling the fire under the eyes of Alexander,</span> <span class="match" data-step="m2">in order that a tradition might prevail among men that the women in the train of Alexander inflicted a greater punishment upon the Persians in behalf of Hellas than all her famous commanders by sea and land.</span> <span class="match" data-step="m1">As soon as she had thus spoken, tumultuous applause arose, and the companions of the king eagerly urged him on, so that he yielded to their desires, and leaping to his feet, with a garland on his head and a torch in his hand, led them the way.</span> … <span class="match" data-step="m3">This is the way the deed was done, according to some writers; but others say it was premeditated. However, it is agreed that Alexander speedily repented and gave orders to put out the fire.</span></p>
+      <p class="prov">Plutarch of Chaeronea, a Greek biographer writing about 100 CE, using several earlier writers · trans. Bernadotte Perrin, Loeb Classical Library (1919)</p>
+      <p class="prov">Plutarch on his aim (<i>Life of Alexander</i> 1.2): “… it is not Histories that I am writing, but Lives …”</p>
+      <p class="u2l12-gloss"><b>Words:</b> Dareius = Darius III · requited = repaid · revel rout = a rowdy crowd of revellers · Hellas = Greece · premeditated = planned in advance · repented = was sorry · the Xerxes who burned Athens = the Persian king whose army burned Athens in 480 BCE</p>
+    </div>
+    <div class="u2l12-qs">
+      <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Who is blamed?</b> <span class="vp">Thaïs suggests it; the companions urge Alexander on; he yields and leads them with a torch.</span></span></p>
+      <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>What causes are given?</b> <span class="vp">A drinking party, and revenge: a greater punishment of the Persians on behalf of Greece.</span></span></p>
+      <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>Who was Thaïs? Why might it matter?</b> <span class="vp">An Athenian, the mistress of Ptolemy, later king: the same Ptolemy whose history Arrian followed.</span></span></p>
+      <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>What does Plutarch add at the end?</b> <span class="vp">That other writers say it was planned. He reports both versions, and says Alexander soon regretted it.</span></span></p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Reading the accounts" data-title="Supported reading: Curtius" data-kind="notes">
+<div class="wrap u2l12-dense">
+  <p class="eyebrow">2 · Reading the accounts · supported reading 4 of 4 · read together, then annotate</p>
+  <h2>Curtius: wine, Thaïs and regret</h2>
+  <div class="split u2l12-read veil-parts" style="--cols:1.3fr .7fr" data-veil="Annotate first — then show the answers">
+    <div class="src">
+      <div class="k">Source · Quintus Curtius Rufus, <i>History of Alexander</i> 5.7</div>
+      <p class="quote sm"><span class="ed">[5.7.1]</span> <span class="match" data-step="m3">But Alexander’s great mental endowments, that noble disposition, in which he surpassed all kings,</span> … <span class="match" data-step="m3">were sullied by an excessive love of wine.</span> … <span class="ed">[5.7.3]</span> <span class="match" data-step="m1">One of these <span class="ed">[women at his banquets]</span>, Thais by name, herself also drunken, declared that the king would win most favour among all the Greeks, if he should order the palace of the Persians to be set on fire;</span> <span class="match" data-step="m2">that this was expected by those whose cities the barbarians had destroyed.</span> <span class="match" data-step="m3">When a drunken strumpet had given her opinion on a matter of such moment,</span> one or two, themselves also loaded with wine, agreed. <span class="match" data-step="m2">The king too, more greedy for wine than able to carry it, cried: “Why do we not, then, avenge Greece and apply torches to the city?”</span> All had become heated with wine, and so they arose when drunk to fire the city which they had spared when armed. <span class="match" data-step="m1">The king was the first to throw a firebrand upon the palace,</span> then the guests and the servants and courtesans. … <span class="ed">[5.7.10–11]</span> The Macedonians were ashamed that so renowned a city had been destroyed by their king in a drunken revel … <span class="match" data-step="m4">It is certain that Alexander himself, as soon as sleep had restored his senses after he had been overcome by drunkenness, regretted what he had done and said that the Greeks would have been more severely avenged upon the Persians, if these had been forced to see Alexander on the throne and in the palace of Xerxes.</span></p>
+      <p class="prov">Curtius Rufus, a Roman writing in Latin in the 1st century CE (probably about 40–80 CE), probably following Cleitarchus · trans. J. C. Rolfe, Loeb Classical Library (1946)</p>
+      <p class="u2l12-gloss"><b>Words:</b> endowments = natural gifts · sullied = stained · strumpet = an insulting old word for a woman who sells sex · firebrand = a burning piece of wood</p>
+    </div>
+    <div class="u2l12-qs">
+      <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Who is blamed?</b> <span class="vp">Thaïs, drunk, suggests it; Alexander throws the first firebrand himself.</span></span></p>
+      <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>What causes are given?</b> <span class="vp">Wine above all, and revenge: the Greeks whose cities had been destroyed expected it.</span></span></p>
+      <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>What is Curtius’s attitude?</b> <span class="vp">Moral disapproval: a great king spoiled by wine, and contempt for Thaïs.</span></span></p>
+      <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>How does Alexander feel afterwards?</b> <span class="vp">Once sober, he regretted it, but even his regret is about revenge: the Greeks would have been “more severely avenged” if the Persians had been forced to see him on the throne.</span></span></p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Reading the accounts" data-title="Notes 2 — What each writer says happened" data-kind="notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>What each writer says happened</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L12 · The burning: the ancient accounts</b></span><span>2 · Reading the accounts</span></div>
+    <div class="row"><div class="cq">Summarise Arrian’s account.</div>
+      <div class="nts reveal">A. burns the palace deliberately, against Parmenio’s advice → revenge for the Persian invasion of Greece (Athens, temples) → Arrian: not prudent</div></div>
+    <div class="row"><div class="cq">Summarise Diodorus’s account.</div>
+      <div class="nts reveal">victory feast, drunk guests → Thaïs proposes it → comus with torches; king first, Thaïs next <span class="sep">·</span> but A. already “meant to destroy Persepolis utterly”</div></div>
+    <div class="row"><div class="cq">Summarise Plutarch’s account.</div>
+      <div class="nts reveal">drinking party → Thaïs’s speech: punish the Persians for Greece → A. leads with a torch <span class="sep">·</span> “others say it was premeditated” <span class="sep">·</span> A. “speedily repented”</div></div>
+    <div class="row"><div class="cq">Summarise Curtius’s account.</div>
+      <div class="nts reveal">drunken banquet → Thaïs; A.: “avenge Greece” → A. throws the first firebrand → regrets it when sober</div></div>
+    <div class="row"><div class="cq">What do all four agree on?</div>
+      <div class="nts reveal">the palace burned (330 BCE) <span class="sep">·</span> A. himself took part <span class="sep">·</span> revenge for what the Persians did in Greece is given as a reason</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Comparing the accounts" data-title="We do: the grid for Arrian and Diodorus" data-kind="notes">
+<div class="wrap">
+  <p class="eyebrow">3 · Comparing the accounts · We do — the class fills the grid · cold call each cell</p>
+  <h2>The comparison grid: Arrian and Diodorus</h2>
+  <div class="tbl-scroll" data-veil="Fill in your grid first — then show the answers"><table class="tbl compact u2l12-grid">
+    <tr><th>Writer</th><th>Arrian</th><th>Diodorus</th></tr>
+    <tr><td>Date</td><td class="reveal">2nd century CE · about 460 years after</td><td class="reveal">about 60–30 BCE · about 270–300 years after</td></tr>
+    <tr><td>Sources used</td><td class="reveal">Ptolemy and Aristobulus, officers on the campaign (his preface)</td><td class="reveal">earlier histories, probably Cleitarchus (lost)</td></tr>
+    <tr><td>Cause given</td><td class="reveal">revenge for the Persian invasion of Greece: Athens razed, the temples burnt</td><td class="reveal">drink at a victory feast; Thaïs’s idea; vengeance for the Greek temples</td></tr>
+    <tr><td>Alexander’s state of mind</td><td class="reveal">deliberate: he hears Parmenio’s advice and overrules it (Arrian mentions no feast or drink)</td><td class="reveal">drunk, he “caught fire at their words”; but he already hated the city</td></tr>
+    <tr><td>Role of Thaïs</td><td class="reveal">none: she is not mentioned</td><td class="reveal">proposes it at the feast; throws her torch first, after the king</td></tr>
+    <tr><td>The writer’s purpose</td><td class="reveal">a history that judges Alexander: the act was not done “with prudence” (elsewhere he is “not ashamed to admire Alexander himself”)</td><td class="reveal">a universal history, told as drama: one Athenian woman repays Persia “in sport”</td></tr>
+  </table></div>
+  <p class="cue">The biggest difference so far: a considered decision, or a drunken feast?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Comparing the accounts" data-title="You do: Plutarch and Curtius">
+<div class="wrap u2l12-dense">
+  <p class="eyebrow">3 · Comparing the accounts · You do · 6 minutes · press K for the timer</p>
+  <h2>Your turn: complete the grid for Plutarch and Curtius</h2>
+  <div class="split" style="--cols:1.25fr .75fr">
+    <div class="tbl-scroll"><table class="tbl compact u2l12-grid">
+      <tr><th>Writer</th><th>Plutarch</th><th>Curtius</th></tr>
+      <tr><td>Date</td><td class="u2l12-given">about 100 CE · about 430 years after</td><td class="u2l12-given">1st century CE · about 370–410 years after</td></tr>
+      <tr><td>Sources used</td><td class="u2l12-given">several earlier writers</td><td class="u2l12-given">probably Cleitarchus (lost)</td></tr>
+      <tr><td>Cause given</td><td class="u2l12-blank"></td><td class="u2l12-blank"></td></tr>
+      <tr><td>Alexander’s state of mind</td><td class="u2l12-blank"></td><td class="u2l12-blank"></td></tr>
+      <tr><td>Role of Thaïs</td><td class="u2l12-blank"></td><td class="u2l12-blank"></td></tr>
+      <tr><td>The writer’s purpose</td><td class="u2l12-blank"></td><td class="u2l12-blank"></td></tr>
+    </table></div>
+    <div class="stack">
+      <div class="card accent sm"><div class="k">Everyone</div><p class="body">Fill the four empty rows for both writers, using the Plutarch and Curtius extracts. Quote two or three words as evidence in each cell.</p></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Use your annotations on the Plutarch and Curtius extracts: “who is blamed” helps with Thaïs, “cause” with the cause, “attitude” with the purpose. The date and sources rows are done for you.</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Why might Arrian, who admired Alexander, report a deliberate burning but criticise it, while the other three tell the Thaïs story? Think about each writer’s sources and purpose.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Comparing the accounts" data-title="Check: the grid for Plutarch and Curtius" data-kind="notes">
+<div class="wrap">
+  <p class="eyebrow">3 · Comparing the accounts · You do — check your grid · cold call before each row</p>
+  <h2>Check your grid: Plutarch and Curtius</h2>
+  <div class="tbl-scroll" data-veil="Fill in your grid first — then show the answers"><table class="tbl compact u2l12-grid">
+    <tr><th>Writer</th><th>Plutarch</th><th>Curtius</th></tr>
+    <tr class="reveal"><td>Cause given</td><td>Thaïs’s speech at a drinking party: punish the Persians “in behalf of Hellas”; but “others say it was premeditated”</td><td>wine above all, and Thaïs’s idea; Alexander cries “avenge Greece”</td></tr>
+    <tr class="reveal"><td>Alexander’s state of mind</td><td>merry and persuaded by applause; he “speedily repented”</td><td>drunk, “more greedy for wine than able to carry it”; regretted it when sober</td></tr>
+    <tr class="reveal"><td>Role of Thaïs</td><td>an Athenian, “the mistress of Ptolemy”; her speech starts it</td><td>“herself also drunken”; Curtius scorns her as a “strumpet”</td></tr>
+    <tr class="reveal"><td>The writer’s purpose</td><td>a biography to show character: he writes “not Histories … but Lives”</td><td>a moral lesson: Alexander’s great qualities “sullied by an excessive love of wine”</td></tr>
+  </table></div>
+  <p class="cue">Compare your cells: did you quote the words? Add what you missed in a second colour.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Comparing the accounts" data-title="You do: the difference sentence">
+<div class="wrap u2l12-dense">
+  <p class="eyebrow">3 · Comparing the accounts · You do · 5 minutes · press K for the timer</p>
+  <h2>One sentence: the biggest difference, and one possible reason for it</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <div class="card accent sm"><div class="k">Everyone · one sentence</div><p class="body">Explain the biggest difference between the accounts, and one possible reason for it, using the origin or purpose of the sources.</p></div>
+      <div class="card quiet sm"><div class="k">Compare and attribute precisely</div><div class="bank"><span>whereas</span><span>unlike</span><span>both</span><span>while</span><span>Arrian presents …</span><span>Diodorus attributes … to …</span><span>Plutarch reports …</span><span>Curtius condemns …</span><span>this may be because …</span></div></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body nq">“Whereas Arrian presents the burning as …, Diodorus, Plutarch and Curtius describe …; this may be because …”</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Write a second sentence that explains why Arrian, who admired Alexander, criticises the burning.</p></div>
+    </div>
+    <div class="stack">
+      <div class="src reveal" data-veil="Write yours first — then show a model sentence">
+        <div class="k">A model sentence · written for this lesson</div>
+        <p class="quote sm model">Whereas Arrian presents the burning as a deliberate act of revenge that Alexander chose against Parmenio’s advice, Diodorus, Plutarch and Curtius describe a drunken feast at which the Athenian Thaïs urged it; this may be because Arrian followed Ptolemy and Aristobulus, officers on the campaign, while Diodorus and Curtius probably followed Cleitarchus’s more dramatic history.</p>
+      </div>
+      <div class="card quiet sm"><div class="k">Check your sentence</div>
+        <ul class="checks">
+          <li><label><input type="checkbox"> names each writer and what he “presents” or “reports”</label></li>
+          <li><label><input type="checkbox"> uses whereas, unlike, both or while</label></li>
+          <li><label><input type="checkbox"> gives a reason from origin (sources) or purpose</label></li>
+          <li><label><input type="checkbox"> hedges the reason: may, probably</label></li>
+        </ul></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Hinge: which statement is accurate?" data-kind="practice">
+<div class="wrap u2l12-dense">
+  <p class="eyebrow">Check for understanding · hinge question · hold up your A, B, C or D card on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2>Which statement is accurate?</h2>
+  <div class="u2l12-hinge veil-parts" data-veil="Vote first — then show the answer">
+  <ol class="opts">
+    <li><span class="n">A</span><span>All four writers describe a fire that they saw for themselves</span></li>
+    <li id="u2l12-hqB"><span class="n">B</span><span>Arrian describes a deliberate burning, as revenge for Greece</span></li>
+    <li><span class="n">C</span><span>Plutarch describes a burning that was definitely an accident</span></li>
+    <li><span class="n">D</span><span>Diodorus describes a burning that Parmenio himself began</span></li>
+  </ol>
+  <i class="reveal" data-mark="#u2l12-hqB" hidden></i>
+  <div class="note vp reveal" data-code="evidence"><div class="k">B: Arrian describes a deliberate act of revenge</div><p class="body"><b>A</b> is wrong: they wrote about 270–470 years later, from earlier histories. <b>C</b> is wrong: Plutarch tells the feast story but adds that “others say it was premeditated”, and never calls it an accident. <b>D</b> is wrong: Diodorus’s account of the burning never mentions Parmenio; in Arrian, Parmenio advised against the burning.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Summary" data-kind="notes">
+<div class="wrap u2l12-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What do all four writers agree happened?</li>
+          <li>How do their accounts differ?</li>
+          <li>Why might they differ?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">All four ancient writers agree that the palace at Persepolis was burned (in 330 BCE), that Alexander himself took part, and that revenge for what the Persians had done in Greece was given as a reason. They differ on how it happened: Arrian presents a deliberate act of revenge, chosen against Parmenio’s advice, whereas Diodorus, Plutarch and Curtius describe a drunken feast at which the Athenian Thaïs urged the burning. The differences probably come from the lost histories each writer used and from their purposes, since Arrian followed Ptolemy and Aristobulus, Diodorus and Curtius probably followed Cleitarchus, and Plutarch and Curtius used the story to show Alexander’s character.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> The campaign, 331–330 BCE</label></li>
+        <li><label><input type="checkbox"> The four writers: when, and whose accounts</label></li>
+        <li><label><input type="checkbox"> Arrian: deliberate, against advice</label></li>
+        <li><label><input type="checkbox"> Diodorus, Plutarch, Curtius: feast and Thaïs</label></li>
+        <li><label><input type="checkbox"> What all four agree on</label></li>
+        <li><label><input type="checkbox"> The grid: all four writers</label></li>
+        <li><label><input type="checkbox"> Your difference sentence</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 4 minutes · before you leave</p>
+  <h2>One question, two sentences</h2>
+  <div class="card accent"><div class="k">Plutarch, <i>Life of Alexander</i> 38</div><p class="body">“This is the way the deed was done, according to some writers; but others say it was premeditated.”</p><p class="lead">What does this tell a historian about the sources Plutarch had?</p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">Plutarch had more than one earlier account, and they disagreed: some told the feast story, others said the burning was planned. So the disagreement is older than Plutarch: it goes back to the lost histories he read. He reports both, though he tells the feast story at length.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> deliberate or drunken? Testing the accounts against the archaeology and modern historians.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u2l12-dense">
+  <p class="eyebrow">Practice and review · 1 of 4 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Arrian says that Thaïs urged Alexander to burn the palace.</span>
+      <span class="sol no reveal">False <span class="why">— Arrian’s history never mentions Thaïs: he says Alexander burnt it deliberately, against Parmenio’s advice.</span></span></li>
+    <li><span class="n">2</span><span>In Diodorus, “the most hateful of the cities of Asia” is Alexander’s own description of Persepolis.</span>
+      <span class="sol reveal">True <span class="why">— Diodorus reports that Alexander described it so to the Macedonians (17.70.1); it is not Diodorus’s own judgement.</span></span></li>
+    <li><span class="n">3</span><span>All four writers saw the palace burn.</span>
+      <span class="sol no reveal">False <span class="why">— they wrote about 270–470 years later, from earlier histories that are now lost.</span></span></li>
+    <li><span class="n">4</span><span>Plutarch says that the burning was definitely an accident.</span>
+      <span class="sol no reveal">False <span class="why">— he tells the feast story, but adds that “others say it was premeditated”.</span></span></li>
+    <li><span class="n">5</span><span>All four accounts link the burning to revenge for what the Persians had done in Greece.</span>
+      <span class="sol reveal">True <span class="why">— Arrian (Athens and the temples), Diodorus (the Greek temples), Plutarch (“in behalf of Hellas”) and Curtius (“avenge Greece”).</span></span></li>
+    <li><span class="n">6</span><span>Diodorus and Curtius probably drew on the same lost history, by Cleitarchus.</span>
+      <span class="sol reveal">True <span class="why">— probably: they belong to the ‘vulgate tradition’, histories thought to share a lost source, often identified as Cleitarchus.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — write it as a historian" data-kind="practice">
+<div class="wrap prac u2l12-dense">
+  <p class="eyebrow">Practice and review · 2 of 4 · writing</p>
+  <h2>Write it as a historian</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · A “both” sentence</div><p class="body">Write one sentence on something Arrian and Curtius agree on, and one way they differ.</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Both Arrian and Curtius present Alexander himself as responsible for the burning and link it to revenge for Greece, but Arrian describes a deliberate decision, whereas Curtius blames wine and the urging of Thaïs.</p></div>
+      <div class="card accent"><div class="k">2 · Reliable for what?</div><p class="body nq">Finish: “Arrian 3.18 is reliable for … but not for … because …”</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Arrian 3.18 is reliable for the reason Alexander gave for the burning, revenge for Greece, as men who served with him probably recorded it, because Arrian followed Ptolemy and Aristobulus, but it is less reliable for what happened at any feast, because his sources may have left out a story that embarrassed one of them.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Why might Arrian, who admired Alexander, report a deliberate burning but criticise it, while the other three tell the Thaïs story? Consider each writer’s sources and purpose.</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">Arrian’s version may reflect both his sources and his purpose. He followed Ptolemy and Aristobulus, and Plutarch calls Thaïs “the mistress of Ptolemy, who was afterwards king”, so a history by her partner may have left out a story in which she led a drunken king to burn the palace. Arrian also wrote to judge Alexander honestly: he says he was compelled to censure some of Alexander’s acts, but was “not ashamed to admire Alexander himself”, so a deliberate decision that he could criticise as lacking prudence fits his history. Diodorus and Curtius probably followed Cleitarchus, whose lost history told vivid stories, and Plutarch and Curtius wanted to show Alexander’s character, so the feast, the wine and the regret suited all three. The difference may therefore tell us as much about the writers and their sources as about what happened that night.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — the artist’s version" data-kind="practice">
+<div class="wrap prac u2l12-dense">
+  <p class="eyebrow">Practice and review · 3 of 4 · an account or a representation?</p>
+  <h2>About 1,900 years later, an artist draws the scene</h2>
+  <div class="u2l12-art">
+    <figure class="figure contain"><img src="images/u2l12-carracci-drawing-about-1592.jpg" alt="Lodovico Carracci, Alexander and Thaïs Setting Fire to Persepolis, probably about 1592: pen and brown ink with brown wash (National Gallery of Art, Washington, 1975.55.1)" loading="lazy"><figcaption>Lodovico Carracci, Alexander and Thaïs Setting Fire to Persepolis, probably about 1592: pen and brown ink with brown wash (National Gallery of Art, Washington, 1975.55.1) — <span class="cr">Lodovico Carracci; image: National Gallery of Art, Washington (open access) · CC0 1.0</span></figcaption></figure>
+    <div class="stack veil-parts" data-veil="Answer first — then show the answers">
+      <p class="qprompt">Which of the four accounts could the artist have followed? Which detail shows it?</p>
+      <div class="note vp reveal" data-code="evidence"><p class="body">Diodorus, Plutarch or Curtius, not Arrian. The woman with a torch beside Alexander is Thaïs (the museum’s title names her), and Arrian never mentions her: the artist followed the feast story.</p></div>
+      <p class="qprompt">Is the drawing evidence for what happened in 330 BCE?</p>
+      <div class="note vp reveal" data-code="counter"><p class="body">No. It was made in Italy about 1592, from the ancient texts and the artist’s imagination. It is good evidence for how one artist of his time pictured the story, and that he chose the Thaïs version.</p></div>
+      <p class="qprompt">What has the artist added that no ancient writer gives?</p>
+      <div class="note vp reveal" data-code="analysis"><p class="body">How everyone looked. Plutarch gives Alexander “a garland on his head”, but the artist gives him a plumed helmet; the clothes and the arched hall are the artist’s choices too.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u2l12-dense">
+  <p class="eyebrow">Practice and review · 4 of 4 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>When did Alexander reach Persepolis, and when did the palace burn?
+      <span class="sol reveal">He reached it in January 330 BCE, after Gaugamela, Babylon and Susa; the palace burned about four months later, about May 330, just before he marched on.</span></li>
+    <li>Name the four ancient writers and roughly when each wrote.
+      <span class="sol reveal">Diodorus (about 60–30 BCE), Curtius (1st century CE), Plutarch (about 100 CE) and Arrian (2nd century CE): about 270–470 years after the fire.</span></li>
+    <li>Whose accounts did Arrian use, and whose did Diodorus and Curtius probably use?
+      <span class="sol reveal">Arrian: Ptolemy and Aristobulus, officers on the campaign. Diodorus and Curtius: probably Cleitarchus. All three earlier histories are lost.</span></li>
+    <li>What cause does Arrian give for the burning, and what does he think of it?
+      <span class="sol reveal">Revenge for the Persian invasion of Greece, when Athens was razed and the temples burnt: the reason Arrian says Alexander gave. Arrian himself thinks Alexander did not act with prudence, and that it was no real punishment of the Persians who had done it.</span></li>
+    <li>What part does Thaïs play in Diodorus, Plutarch and Curtius?
+      <span class="sol reveal">At a drinking party she urges the burning: as revenge for Greece in Plutarch and Curtius; in Diodorus as Alexander’s finest feat, while another guest calls for vengeance. In Diodorus she throws her torch first, after the king.</span></li>
+    <li>Explain one reason the accounts differ.
+      <span class="sol reveal">They used different lost histories (Ptolemy and Aristobulus, or probably Cleitarchus), and wrote for different purposes, such as Plutarch’s aim to show character.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u2l12-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u2l12-cite"><div class="k">Written sources</div>
+      <p class="small">Arrian, <i>Anabasis of Alexander</i>, Preface and 3.18 (also 6.30, 7.30 in the notes), trans. E. J. Chinnock (1884), public domain, from <a href="https://archive.org/details/theanabasisofale46976gut">Project Gutenberg #46976</a>.</p>
+      <p class="small">Diodorus of Sicily, <i>Library of History</i> 17.70–72, trans. C. Bradford Welles, Loeb Classical Library, Vol. VIII (1963), with Welles’s notes; public domain, from <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/17D*.html">LacusCurtius</a>.</p>
+      <p class="small">Plutarch, <i>Life of Alexander</i> 1, 37–38, trans. Bernadotte Perrin, Loeb Classical Library, Vol. VII (1919); public domain, from <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Alexander*/5.html">LacusCurtius</a>.</p>
+      <p class="small">Quintus Curtius Rufus, <i>History of Alexander</i> 5.7, trans. J. C. Rolfe, Loeb Classical Library, Vol. I (1946), quoted briefly, with credit; read from the <a href="https://archive.org/details/in.ernet.dli.2015.532642">Internet Archive scan</a>.</p>
+      <p class="small">Facts: Livius.org, ‘Alexander the Great’ 2.3–2.10, ‘Cleitarchus’, ‘Parmenion’, ‘Persepolis’ and ‘Persepolis: Apadana’, and the pages on Arrian, Diodorus, Curtius Rufus and Plutarch (© Livius.org); B. Thayer, LacusCurtius, introduction to Plutarch’s <i>Life of Alexander</i>; ISAC, University of Chicago, Persepolis Fortification Archive project page; National Gallery of Art, Washington, open data (object 55424); L. Prandi, <span class="nq">‘New Evidence for the Dating of Cleitarchus (POxy LXXI.4808)?’</span>, <i>Histos</i> 6 (2012); Encyclopaedia Romana, ‘Thaïs’ (University of Chicago). Teacher resources: <i>Decline and Alexander</i> and <i>The Destruction of Persepolis</i> (class notebook ‘Persepolis’).</p></div>
+    <div class="card quiet"><div class="k">Syllabus</div>
+      <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+  </div>
+  <div class="card quiet u2l12-cite"><div class="k">Images</div>
+    <ul class="small credits"><li><b>An Apadana column, looking north to the Gate of All Nations</b> · Photo: Bernard Gagnon · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis_-_Apadana_01.jpg">source</a></li><li><b>Persepolis Fortification Archive tablets being studied in Chicago, 2017</b> · Photo: Pfa16 · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Persepolis_Fortification_Archive_Tablets.jpg">source</a></li><li><b>Relief map of Iran (markers added)</b> · Map: Uwe Dedering (Natural Earth data) · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Iran_relief_location_map.jpg">source</a></li><li><b>Lodovico Carracci, Alexander and Thaïs Setting Fire to Persepolis (drawing, probably about 1592)</b> · Lodovico Carracci; image: National Gallery of Art, Washington (open access) · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Lodovico_Carracci,_Alexander_and_Tha%C3%AFs_Setting_Fire_to_Persepolis,_probably_c._1592,_NGA_55424.jpg">source</a></li></ul>
+    <p class="small">All images are public domain or openly licensed, and were resized for the web. The markers and route on the relief map were added for this lesson. Each image is shared under the licence shown.</p></div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

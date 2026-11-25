@@ -1,0 +1,1649 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U1 L1 · Sources, Evidence and the Historian’s Questions</title>
+<meta name="description" content="Year 11 Ancient History, the investigation of ancient sites and sources: what sources are, how a source becomes evidence, the types of ancient source, and the five OVPRL questions, worked on a letter from a Roman fort.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#1D4E89; --bright:#2E6FBF; --tint:#E7EEF8; --statement:#1D4E89;
+  --solid:#1D4E89; --soft:#D3E2F6; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#A9C8F2; --bright:#5E9BE6; --tint:#142538; --statement:#173C66; --soft:#D3E2F6; } }
+:root[data-theme="dark"]{ --deep:#A9C8F2; --bright:#5E9BE6; --tint:#142538; --statement:#173C66; --soft:#D3E2F6; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+
+/* ---- Unit 1 Lesson 1 only (every class starts u1l01-) */
+
+/* See-Think-Wonder: the uncaptioned tablet and three columns */
+.u1l01-stw-img{margin:0;}
+.u1l01-stw-img img{display:block; width:100%; height:34vh; object-fit:contain; background:var(--surface-2);
+  border-radius:10px; box-shadow:var(--shadow);}
+.u1l01-stw .card{padding:clamp(10px,1.6vh,20px) clamp(14px,1.4vw,22px);}
+.u1l01-stw .body{color:var(--slate); font-size:calc(var(--fs-body)*.85);}
+.u1l01-eg{margin-top:.5em; padding-top:.5em; border-top:1px dashed var(--rule); font-style:italic;
+  font-size:calc(var(--fs-body)*.85); line-height:1.4;}
+.u1l01-eg::before{content:"For example: "; font-style:normal; font-weight:700; color:var(--deep);}
+
+/* quick facts list */
+.u1l01-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.25em;
+  font-size:calc(var(--fs-body)*.88); line-height:1.35;}
+.u1l01-facts b{color:var(--deep);}
+
+/* seven types of source: picture tiles */
+.u1l01-types{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:clamp(8px,1.2vw,18px);}
+.u1l01-type{margin:0; background:var(--surface); border:1px solid var(--rule); border-top:5px solid var(--bright);
+  border-radius:10px; overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;}
+.u1l01-type img{display:block; width:100%; height:13.5vh; object-fit:cover;}
+.u1l01-type img.u1l01-top{object-position:50% 18%;}
+.u1l01-type figcaption, .u1l01-type .u1l01-tx{padding:.45em .7em .6em; display:flex; flex-direction:column; gap:.15em;
+  font-size:calc(var(--fs-body)*.74); line-height:1.3;}
+.u1l01-type b{font-family:var(--disp); font-size:1.18em; color:var(--deep);}
+.u1l01-type span{color:var(--ink);}
+.u1l01-type i{color:var(--slate);}
+.u1l01-ph{height:15vh; display:grid; place-items:center; text-align:center; padding:0 1em; background:var(--surface-2);
+  color:var(--slate); font-size:calc(var(--fs-body)*.7); line-height:1.3;}
+
+/* card sort: ten cards, five across */
+.u1l01-cards{display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:clamp(8px,1vw,14px);}
+.u1l01-card{position:relative; margin:0; background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;}
+.u1l01-card img{display:block; width:100%; height:12.5vh; object-fit:cover; background:var(--surface-2);}
+.u1l01-card img.fit{object-fit:contain;}
+.u1l01-card .l{position:absolute; top:6px; left:6px; width:1.6em; height:1.6em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:calc(var(--fs-body)*.72);
+  box-shadow:0 0 0 2px #fff;}
+.u1l01-card figcaption{padding:.4em .6em .55em; font-size:calc(var(--fs-body)*.66); line-height:1.3;}
+.u1l01-card figcaption b{display:block; font-size:1.08em; color:var(--deep);}
+.u1l01-card .u1l01-txt{height:12.5vh; padding:.5em .7em .5em 2.6em; background:var(--tint); display:flex; align-items:center;
+  font-family:var(--serif); font-style:italic; font-size:calc(var(--fs-body)*.66); line-height:1.3; color:var(--ink);}
+.u1l01-card .u1l01-txt.long{align-items:flex-start; padding:.45em .6em .4em 2.5em; font-size:calc(var(--fs-body)*.58);
+  line-height:1.28; overflow:hidden;}
+.u1l01-howto{display:flex; flex-wrap:wrap; gap:.4em 1.4em; font-size:calc(var(--fs-body)*.82);}
+.u1l01-howto b{display:inline-grid; place-items:center; width:1.5em; height:1.5em; border-radius:50%; background:var(--solid);
+  color:#fff; font-size:.85em; margin-right:.3em;}
+
+/* the card-sort answer tables */
+.u1l01-key td:first-child{font-weight:700; white-space:nowrap;}
+.u1l01-key td.u1l01-ps{white-space:nowrap; font-weight:700;}
+.u1l01-key .p{color:var(--c-evidence);} .u1l01-key .s{color:var(--c-counter);}
+
+/* OVPRL rows: letter badge + question + model */
+.u1l01-ov{display:grid; grid-template-columns:2.6em 1fr; gap:.7em; align-items:start;}
+.u1l01-ovl{display:grid; place-items:center; min-height:2.2em; border-radius:8px; background:var(--solid); color:#fff;
+  font-weight:700; font-family:var(--mono); font-size:calc(var(--fs-body)*.95); text-align:center; line-height:1.1; padding:.2em;}
+.u1l01-ov .qprompt::before{content:none;}
+.u1l01-model{margin-top:.3em; padding:.35em .8em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 8px 8px 0; font-size:calc(var(--fs-body)*.86); line-height:1.4;}
+.u1l01-later{opacity:.75;}
+.u1l01-later .u1l01-ovl{background:var(--slate); font-size:calc(var(--fs-body)*.62);}
+
+/* credits line under a slide of pictures; syllabus line on the goals slide */
+.u1l01-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u1l01-cite a{color:var(--deep);}
+
+/* phones (Read mode): fewer columns, natural picture heights */
+@media (max-width:900px){
+  .u1l01-types{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .u1l01-cards{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .u1l01-type img, .u1l01-ph{height:auto; aspect-ratio:4/3;}
+  .u1l01-card img, .u1l01-card .u1l01-txt{height:auto; aspect-ratio:4/3;}
+  .u1l01-card .u1l01-txt{aspect-ratio:auto; min-height:8em;}
+  .u1l01-stw-img img{height:auto; max-height:40vh;}
+}
+@media (max-width:340px){
+  .u1l01-types, .u1l01-cards{grid-template-columns:1fr;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u1l01-dense{gap:10px;}
+  html:not(.read) .u1l01-dense h2{font-size:calc(var(--fs-h2)*.88);}
+  html:not(.read) .u1l01-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.4;}
+  html:not(.read) .u1l01-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u1l01-dense .src{padding:10px 16px;}
+  html:not(.read) .u1l01-dense .src .prov{margin-top:.4em;}
+  html:not(.read) .u1l01-dense .note{padding:.45em .85em;}
+  html:not(.read) .u1l01-dense .note .body, html:not(.read) .u1l01-dense .card .body,
+  html:not(.read) .u1l01-dense .qprompt{font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+  html:not(.read) .u1l01-dense .card{padding:10px 16px;}
+  html:not(.read) .u1l01-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l01-dense .tbl.compact td{padding:.32em .55em;}
+  html:not(.read) .u1l01-dense .tbl th{padding:.4em .6em;}
+  html:not(.read) .u1l01-dense .figure img{max-height:30vh;}
+  html:not(.read) .u1l01-dense .u1l01-model{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u1l01-dense .mq{font-size:calc(var(--fs-body)*.78); line-height:1.35;}
+  html:not(.read) .u1l01-dense .u1l01-facts{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u1l01-dense .tf li, html:not(.read) .u1l01-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u1l01-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u1l01-dense .prac{gap:6px;}
+  html:not(.read) .u1l01-dense .cornell .cq, html:not(.read) .u1l01-dense .cornell .nts{font-size:calc(var(--fs-body)*.76); padding:.35em .8em;}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 1" data-title="Sources, evidence and the historian’s questions" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.3fr .7fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 1 · The investigation of ancient sites and sources · Lesson 1</p>
+      <h1>Sources, evidence and the historian’s questions</h1>
+      <p class="lead">How do historians turn the things people left behind into evidence about the past?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <figure class="figure tall contain"><img src="images/rosetta-stone.jpg" alt="The Rosetta Stone, 196 BCE (British Museum)" loading="lazy"><figcaption>The Rosetta Stone, 196 BCE (British Museum) — <span class="cr">Photo: Hans Hillewaert · CC BY-SA 4.0</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 1" data-title="See – Think – Wonder" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Connect · See – Think – Wonder · 8 minutes · press K for the timer</p>
+  <h2>Look closely. What could this be?</h2>
+  <figure class="u1l01-stw-img"><img src="images/u1l01-mystery-object.jpg" alt="An object to look at closely: two thin, dark, broken pieces of a flat material covered in faded handwriting"></figure>
+  <div class="cols c3 u1l01-stw veil-parts" data-veil="Try it first — then show some examples">
+    <div class="card"><div class="k">I see …</div><p class="body">only what is really there</p>
+      <p class="u1l01-eg vp reveal">two thin, broken, flat brown pieces · lines of dark writing · two styles of handwriting?</p></div>
+    <div class="card"><div class="k">I think …</div><p class="body">what it might be, and how sure you are</p>
+      <p class="u1l01-eg vp reveal">wood or bark (fairly sure) · a letter or a list (fairly sure) · someone here could write (sure) · it was thrown away (guess)</p></div>
+    <div class="card"><div class="k">I wonder …</div><p class="body">questions you want answered</p>
+      <p class="u1l01-eg vp reveal">Who wrote it, and to whom? · How old is it? · How did something so thin survive?</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 1" data-title="What it is: Vindolanda Tablet 291" data-kind="notes">
+<div class="wrap u1l01-dense">
+  <p class="eyebrow">Connect · the reveal</p>
+  <h2>A birthday invitation, about 1,900 years old</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <figure class="figure contain"><img src="images/u1l01-mystery-object.jpg" alt="Vindolanda Tablet 291: Claudia Severa’s birthday invitation to Sulpicia Lepidina, ink on a thin wooden leaf, about 97–105 CE (British Museum)" loading="lazy"><figcaption>Vindolanda Tablet 291: Claudia Severa’s birthday invitation to Sulpicia Lepidina, ink on a thin wooden leaf, about 97–105 CE (British Museum) — <span class="cr">Photo: Fæ · CC BY-SA 3.0</span></figcaption></figure>
+      <ul class="u1l01-facts">
+        <li><b>What:</b> a letter in ink on a thin leaf of wood</li>
+        <li><b>Where:</b> found in 1985 at Vindolanda, a Roman fort in northern Britain</li>
+        <li><b>When:</b> about 97–105 CE</li>
+        <li><b>Who:</b> from Claudia Severa to her friend Sulpicia Lepidina</li>
+        <li><b>Now:</b> in the British Museum, London</li>
+      </ul>
+    </div>
+    <div class="src reveal">
+      <div class="k">Source · Vindolanda Tablet 291</div>
+      <p class="quote sm">Claudia Severa to her Lepidina greetings. On 11 September, sister, for the day of the celebration of my birthday, I give you a warm invitation to make sure that you come to us, to make the day more enjoyable for me by your arrival, if you are present (?). Give my greetings to your Cerialis. My Aelius and my little son send him (?) their greetings. <span class="ed">[in a second hand:]</span> I shall expect you, sister. Farewell, sister, my dearest soul, as I hope to prosper, and hail. <span class="ed">[on the back:]</span> To Sulpicia Lepidina, wife of Cerialis, from Severa.</p>
+      <p class="prov">Letter from Claudia Severa to Sulpicia Lepidina · ink on wood · about 97–105 CE · Tab. Vindol. 291, translation as published by Roman Inscriptions of Britain Online · (?) marks a word the editors are unsure of</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 1" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>understand how historians use sources as evidence</li>
+        <li>learn the five OVPRL questions for analysing a source</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>explain the difference between a source and evidence</li>
+        <li>name the seven types of ancient source, with an example of each</li>
+        <li>ask the five OVPRL questions of a written source</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u1l01-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-08 uses sources to form conclusions about the past · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 1" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U1 L1 · Sources, evidence and questions</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; CE = Common Era)</span></div></div>
+      <div class="row"><div class="cq">Explain source vs evidence.</div><div class="nts">source = anything from the past … evidence = …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: sources and evidence · OVPRL on Tablet 291.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 1" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u1l01-dense">
+  <p class="eyebrow">Key vocabulary · start the unit word wall</p>
+  <h2>Words you will use all unit</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Sources and evidence</th><th>Meaning</th></tr>
+      <tr><td>source</td><td>Anything from or about the past that can tell us something about it — a text, object, image, site or human remains.</td></tr>
+      <tr><td>evidence</td><td>Information from a source that is used to answer a particular historical question.</td></tr>
+      <tr><td>primary / secondary source</td><td>A primary source was made at the time being studied; a secondary source was made later by someone interpreting the past.</td></tr>
+      <tr><td>reliability</td><td>How far a source can be trusted for a particular question.</td></tr>
+      <tr><td>OVPRL</td><td>The school’s source-analysis questions: Origin, Value, Purpose, Reliability, Limitations.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Types of source</th><th>Meaning</th></tr>
+      <tr><td>inscription</td><td>Words carved or written on a hard surface such as stone, clay or metal.</td></tr>
+      <tr><td>petroglyph</td><td>An image engraved or pecked into rock.</td></tr>
+      <tr><td>iconography</td><td>The images and symbols used in art, and what they meant to the people who made them.</td></tr>
+      <tr><td>artefact</td><td>An object made or used by people, such as a tool, a pot, a coin or a shoe.</td></tr>
+      <tr><td>reconstruction</td><td>A modern rebuilding or picture of how something looked in the past — an interpretation: evidence of what its maker imagined, not direct evidence of the past.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Sources and evidence" data-title="A source becomes evidence" data-kind="notes">
+<div class="wrap u1l01-dense">
+  <p class="eyebrow">1 · Sources and evidence · I do</p>
+  <h2>A source becomes evidence when you ask it a question</h2>
+  <div class="split veil-parts" style="--cols:.95fr 1.15fr" data-veil="Think first — then show which words answer each question">
+    <div class="stack">
+      <div class="card quiet"><div class="k">Source</div><p class="body">Anything from or about the past that can tell us something about it — a text, object, image, site or human remains.</p></div>
+      <div class="card accent"><div class="k">Evidence</div><p class="body">Information from a source that is used to answer a particular historical question.</p></div>
+      <p class="qprompt">One source, three questions. Which words answer each one?</p>
+      <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Could women at Roman forts write?</b> <span class="vp">The last lines are in Claudia Severa’s own hand.</span></span></p>
+      <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Did officers’ families live on the frontier?</b> <span class="vp">Her husband and her “little son” send greetings.</span></span></p>
+      <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>How did people at the forts write Latin?</b> <span class="vp">Two hands: a scribe’s neat script, then Severa’s own.</span></span></p>
+    </div>
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Vindolanda Tablet 291</div>
+        <p class="quote sm">Claudia Severa to her Lepidina greetings. On 11 September, sister, for the day of the celebration of my birthday, I give you a warm invitation to make sure that you come to us, to make the day more enjoyable for me by your arrival, if you are present (?). Give my greetings to your Cerialis. <span class="match" data-step="m2">My Aelius and my little son send him (?) their greetings.</span> <span class="ed match" data-step="m3">[in a second hand:]</span> <span class="match" data-step="m1">I shall expect you, sister. Farewell, sister, my dearest soul, as I hope to prosper, and hail.</span></p>
+        <p class="prov">Tab. Vindol. 291, about 97–105 CE · translation as published by Roman Inscriptions of Britain Online</p>
+      </div>
+      <div class="note reveal" data-code="judgement"><p class="body">Same object, three questions, three different pieces of evidence. A source only <b>becomes evidence</b> when a historian asks it a question: before that, the tablet is a source, not yet evidence.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Sources and evidence" data-title="Seven types of ancient source" data-kind="notes">
+<div class="wrap u1l01-dense">
+  <p class="eyebrow">1 · Sources and evidence · I do — one example of each type</p>
+  <h2>Seven types of ancient source</h2>
+  <div class="u1l01-types">
+    <figure class="u1l01-type reveal"><img src="images/u1l01-mystery-object.jpg" alt="Vindolanda Tablet 291, a letter in ink on wood"><figcaption><b>Texts</b><span>written words: letters, histories, poems, laws</span><i>Vindolanda Tablet 291</i></figcaption></figure>
+    <figure class="u1l01-type reveal"><img src="images/hadrians-wall-centurial-stone.jpg" alt="A carved building stone from Hadrian’s Wall"><figcaption><b>Inscriptions</b><span>words carved or written on stone, clay or metal</span><i>a building stone from Hadrian’s Wall</i></figcaption></figure>
+    <figure class="u1l01-type reveal"><img src="images/naquane-deer-engraving.jpg" alt="Deer engraved into a rock surface"><figcaption><b>Petroglyphs</b><span>images engraved or pecked into rock</span><i>deer engraved at Naquane, northern Italy</i></figcaption></figure>
+    <figure class="u1l01-type reveal"><img src="images/nebamun-hunting-in-the-marshes.jpg" alt="An Egyptian tomb painting of a man hunting birds"><figcaption><b>Iconography</b><span>images and symbols in art, and what they meant</span><i>Nebamun hunting birds, Egypt, about 1350 BCE</i></figcaption></figure>
+    <figure class="u1l01-type reveal"><img src="images/vindolanda-roman-shoe.jpg" alt="A Roman leather shoe in a museum case"><figcaption><b>Artefacts</b><span>objects people made or used</span><i>a Roman shoe from Vindolanda</i></figcaption></figure>
+    <figure class="u1l01-type reveal"><img src="images/vindolanda-fort-remains.jpg" alt="Stone foundations of Roman buildings at Vindolanda"><figcaption><b>Sites</b><span>places where people lived, worked, worshipped or were buried</span><i>the Roman fort at Vindolanda</i></figcaption></figure>
+    <figure class="u1l01-type reveal"><img class="u1l01-top" src="images/roman-burial-lead-coffin-wels.jpg" alt="A Roman skeleton lying in a lead coffin in a museum case"><figcaption><b>Human remains</b><span>bones, mummies, bodies preserved in ice or bogs</span><i>a Roman burial in a lead coffin, Wels, Austria</i></figcaption></figure>
+  </div>
+  <p class="cue reveal" data-veil="Show the answer: can one source be two types?">Could the tablet be more than one type? Yes: a text, and an artefact (a piece of wood someone made and used).</p>
+  <p class="small credline">Images: Fæ (CC BY-SA 3.0) · Carole Raddato (CC BY-SA 2.0) · Luca Giarelli (CC BY-SA 3.0) · Egyptian painting (Public domain) · Victuallers (CC BY 4.0) · Nilfanion (CC BY-SA 3.0) · Wolfgang Sauber (CC BY-SA 3.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Sources and evidence" data-title="Not things, but people" data-kind="notes">
+<div class="wrap u1l01-dense">
+  <p class="eyebrow">1 · Sources and evidence · I do → cold call</p>
+  <h2>Digging up “not things, but people”</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">An archaeologist on his own work</div>
+        <p class="quote">… the archaeologist is digging up, not <i>things</i>, but <i>people</i>.</p>
+        <p class="prov">Mortimer Wheeler, <i>Archaeology from the Earth</i> (Oxford: Clarendon Press, 1954), Preface · a British archaeologist who excavated in Britain and India · secondary for the ancient world, but a primary source for how archaeologists worked in the 1950s</p>
+      </div>
+      <p class="qprompt">What does it mean to dig up ‘people’?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">Every object was made, used or lost by someone. The archaeologist’s real aim is the people behind the things: how they lived, what they believed, how they treated each other.</p></div>
+    </div>
+    <div class="stack">
+      <figure class="figure contain"><img src="images/vindolanda-roman-shoe.jpg" alt="A Roman leather shoe found at Vindolanda (Vindolanda Museum)" loading="lazy"><figcaption>A Roman leather shoe found at Vindolanda (Vindolanda Museum) — <span class="cr">Photo: Victuallers · CC BY 4.0</span></figcaption></figure>
+      <p class="qprompt reveal">This shoe is a thing. What ‘people’ questions could it help answer?</p>
+      <div class="note reveal" data-code="analysis" data-veil="Answer first — then show some examples"><p class="body">Who wore it: a soldier, a woman, a child? How far did they walk? Who made it, and who could afford it?</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Sources and evidence" data-title="Card sort">
+<div class="wrap u1l01-dense">
+  <p class="eyebrow">1 · Sources and evidence · We do — card sort in pairs · 6 minutes · press K for the timer</p>
+  <h2>Sort the ten cards: what type? primary or secondary?</h2>
+  <div class="u1l01-cards">
+    <figure class="u1l01-card"><span class="l">A</span><img src="images/rosetta-stone.jpg" alt="The Rosetta Stone"><figcaption><b>The Rosetta Stone</b>a decree carved in three scripts, 196 BCE</figcaption></figure>
+    <figure class="u1l01-card"><span class="l">B</span><div class="u1l01-txt long">“Thucydides, an Athenian, wrote the history of the war between the Peloponnesians and the Athenians …”</div><figcaption><b>A page of Thucydides</b>an Athenian general on the war he lived through (431–404 BCE); trans. R. Crawley, 1874</figcaption></figure>
+    <figure class="u1l01-card"><span class="l">C</span><img src="images/standard-of-ur-war-side.jpg" alt="The ‘Standard of Ur’, war side"><figcaption><b>The ‘Standard of Ur’</b>an inlaid object of unknown purpose from a royal grave at Ur, about 2600–2400 BCE (‘Standard’ was the excavator’s guess)</figcaption></figure>
+    <figure class="u1l01-card"><span class="l">D</span><img src="images/tanum-vitlycke-ship-carving.jpg" alt="Ships carved into rock, painted red"><figcaption><b>Ship carvings, Tanum, Sweden</b>carved in the Bronze Age; the red paint is modern</figcaption></figure>
+    <figure class="u1l01-card"><span class="l">E</span><img class="fit" src="images/trajan-denarius-114-ce.jpg" alt="Both sides of a Roman silver coin"><figcaption><b>A silver coin of Trajan</b>minted in Rome, about 114 CE</figcaption></figure>
+    <figure class="u1l01-card"><span class="l">F</span><img class="fit" src="images/housesteads-fort-plan-1911.jpg" alt="A coloured plan of a Roman fort"><figcaption><b>A plan of Housesteads fort</b>a Roman fort on Hadrian’s Wall; plan printed in 1911</figcaption></figure>
+    <figure class="u1l01-card"><span class="l">G</span><img src="images/layard-assyrian-palace-reconstruction-1849.jpg" alt="A colourful drawing of a palace hall"><figcaption><b>An Assyrian palace hall, ‘restored’</b>a reconstruction painted by the excavator Austen Henry Layard, published in 1849</figcaption></figure>
+    <figure class="u1l01-card"><span class="l">H</span><div class="u1l01-txt">Ötzi, the ‘Iceman’</div><figcaption><b>Ötzi, the ‘Iceman’</b>the body of a man who died in the Alps more than 5,000 years ago, found by two walkers in 1991</figcaption></figure>
+    <figure class="u1l01-card"><span class="l">I</span><div class="u1l01-txt">Chapter 4: Life on Rome’s northern frontier</div><figcaption><b>A modern textbook chapter</b>an example: a chapter written by a historian today, using the Vindolanda tablets</figcaption></figure>
+    <figure class="u1l01-card"><span class="l">J</span><img src="images/hadrians-wall-housesteads-crags.jpg" alt="A stone wall running along a ridge"><figcaption><b>Hadrian’s Wall</b>begun about 122 CE; this stretch is on Housesteads Crags</figcaption></figure>
+  </div>
+  <p class="u1l01-howto"><span><b>1</b>Sort by type</span><span><b>2</b>Then primary or secondary</span><span><b>3</b>Argued about a card? Put it in a ‘tricky’ pile</span></p>
+  <div class="bank" aria-label="Word bank"><span>text</span><span>inscription</span><span>petroglyph</span><span>iconography</span><span>artefact</span><span>site</span><span>human remains</span><span>reconstruction</span></div>
+  <p class="small credline">Images: Hans Hillewaert (CC BY-SA 4.0) · BabelStone (CC BY-SA 3.0) · Bengt Oberger (CC BY-SA 3.0) · CNG (CC BY-SA 2.5) · Britannica 1911 (Public domain) · Layard 1849 (Public domain) · G Laird (CC BY-SA 2.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Sources and evidence" data-title="Check: the clearer cards" data-kind="notes">
+<div class="wrap u1l01-dense">
+  <p class="eyebrow">1 · Sources and evidence · We do — check your sort · cold call a pair before each row</p>
+  <h2>Check your sort: the clearer cards</h2>
+  <div class="cols c2">
+    <div class="card quiet"><div class="k">Primary source</div><p class="body">made at the time being studied</p></div>
+    <div class="card quiet"><div class="k">Secondary source</div><p class="body">made later, by someone interpreting the past</p></div>
+  </div>
+  <div class="tbl-scroll" data-veil="Sort first — then show the answers"><table class="tbl compact u1l01-key">
+    <tr><th>Card</th><th>Type</th><th>Primary or secondary?</th><th>Why</th></tr>
+    <tr class="reveal"><td>A · Rosetta Stone</td><td>inscription (on an artefact: a stone slab)</td><td class="u1l01-ps p">primary</td><td>carved in 196 BCE, at the time of the decree it records</td></tr>
+    <tr class="reveal"><td>D · Tanum carvings</td><td>petroglyph (at a site)</td><td class="u1l01-ps p">primary</td><td>carved in the Bronze Age, though we now see it through modern paint: someone chose which lines to paint</td></tr>
+    <tr class="reveal"><td>H · Ötzi</td><td>human remains</td><td class="u1l01-ps p">primary</td><td>the man himself, from more than 5,000 years ago</td></tr>
+    <tr class="reveal"><td>I · textbook chapter</td><td>text (modern)</td><td class="u1l01-ps s">secondary</td><td>written today by someone interpreting the past</td></tr>
+  </table></div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Sources and evidence" data-title="Check: the tricky cards" data-kind="notes">
+<div class="wrap u1l01-dense">
+  <p class="eyebrow">1 · Sources and evidence · We do — the tricky pile · gesture vote: thumbs up = primary · down = secondary</p>
+  <h2>The tricky pile: is a reconstruction drawing a source?</h2>
+  <div class="stack" data-veil="Vote first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u1l01-key">
+    <tr><th>Card</th><th>Type</th><th>Primary or secondary?</th><th>Why it is tricky</th></tr>
+    <tr class="reveal"><td>B · Thucydides</td><td>text</td><td class="u1l01-ps p">primary</td><td>for the war he lived through; but we read a modern translation of copies made centuries later, and for earlier events he too was looking back</td></tr>
+    <tr class="reveal"><td>C · ‘Standard of Ur’</td><td>iconography (on an artefact)</td><td class="u1l01-ps p">primary</td><td>the pictures are ancient, but no one knows what the object was for: ‘Standard’ was the excavator Leonard Woolley’s guess, and the shape it has on display is a modern mount for crushed pieces</td></tr>
+    <tr class="reveal"><td>E · coin of Trajan</td><td>artefact + inscription + iconography</td><td class="u1l01-ps p">primary</td><td>one source can be three types at once: an object, with words and pictures on it</td></tr>
+    <tr class="reveal"><td>F · plan of Housesteads</td><td>site (shown in a modern plan)</td><td class="u1l01-ps s">secondary for the fort</td><td>the plan redraws the Roman fort (the colour was added later still); but excavators’ plans are also a primary record of what was found</td></tr>
+    <tr class="reveal"><td>G · Layard’s palace hall</td><td>reconstruction</td><td class="u1l01-ps s">secondary</td><td>built on the remains but filling the gaps with guesses (some details are now known to be wrong): evidence of what Layard imagined in 1849, not direct evidence of how the hall looked</td></tr>
+    <tr class="reveal"><td>J · Hadrian’s Wall</td><td>site</td><td class="u1l01-ps p">primary</td><td>the source is the Wall itself; the photo is only a modern view, and this stretch (the ‘Clayton Wall’) was repaired and partly rebuilt by John Clayton’s workmen in the 1800s</td></tr>
+  </table></div>
+  <div class="note reveal" data-code="judgement"><p class="body"><b>So:</b> a reconstruction drawing <i>is</i> a source, but a secondary one: evidence of what its maker imagined, not direct evidence of the past. “Primary” and “secondary” depend on the question you are asking.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Sources and evidence" data-title="Notes 1 — Sources and evidence" data-kind="notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>Sources and evidence</h2>
+  <p class="cue">Write your own notes first. Then compare, row by row, and add what you missed in a second colour.</p>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U1 L1 · Sources, evidence and questions</b></span><span>1 · Sources and evidence</span></div>
+    <div class="row"><div class="cq">Explain the difference between a source and evidence.</div>
+      <div class="nts reveal"><b>Source</b> = anything from or about the past <span class="sep">·</span> <b>evidence</b> = information from a source used to answer a question → a source <b>becomes</b> evidence when we ask it a question</div></div>
+    <div class="row"><div class="cq">Name seven types of ancient source.</div>
+      <div class="nts reveal">texts <span class="sep">·</span> inscriptions <span class="sep">·</span> petroglyphs <span class="sep">·</span> iconography <span class="sep">·</span> artefacts <span class="sep">·</span> sites <span class="sep">·</span> human remains → one source can be several (coin = artefact + inscription + iconography)</div></div>
+    <div class="row"><div class="cq">Distinguish primary and secondary sources.</div>
+      <div class="nts reveal"><b>Primary</b> = made at the time <span class="sep">·</span> <b>secondary</b> = made later, interpreting the past → reconstructions, textbooks = secondary <span class="sep">·</span> site plans: secondary for the past, a primary record of the dig <span class="sep">·</span> depends on the question</div></div>
+    <div class="row"><div class="cq">Explain Wheeler’s point about ‘people’.</div>
+      <div class="nts reveal">Wheeler (1954): the archaeologist digs up “not <i>things</i>, but <i>people</i>” → objects matter for what they reveal about the people who made and used them</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · OVPRL" data-title="OVPRL: five questions for every source" data-kind="notes">
+<div class="wrap">
+  <p class="eyebrow">2 · OVPRL · I do — the habit for every source this year</p>
+  <h2>OVPRL: five questions to ask every source</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <ol class="keylist">
+      <li class="reveal"><span class="num">O</span><span class="t">Origin</span><span class="d">Who made it, when and where?</span></li>
+      <li class="reveal"><span class="num">V</span><span class="t">Value</span><span class="d">What can it tell us for this inquiry?</span></li>
+      <li class="reveal"><span class="num">P</span><span class="t">Purpose</span><span class="d">Why was it made, and for whom?</span></li>
+      <li class="reveal"><span class="num">R</span><span class="t">Reliability</span><span class="d">How far can we trust it, and for what?</span></li>
+      <li class="reveal"><span class="num">L</span><span class="t">Limitations</span><span class="d">What can it not tell us?</span></li>
+    </ol>
+    <div class="stack">
+      <div class="card quiet reveal"><div class="k">Not this</div><p class="lead nq">“The tablet is reliable.”</p></div>
+      <div class="card accent reveal"><div class="k">This: reliable for what?</div><p class="lead nq">“The tablet is reliable for … but not for … because …”</p></div>
+      <p class="cue reveal">A source is never simply ‘reliable’ or ‘biased’: it is reliable for some questions and not others.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · OVPRL" data-title="I do: Origin and Purpose" data-kind="notes">
+<div class="wrap u1l01-dense">
+  <p class="eyebrow">2 · OVPRL · I do — think aloud · use the OVPRL routine on page 2 of your booklet</p>
+  <h2>OVPRL on Tablet 291: Origin and Purpose</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="src">
+      <div class="k">Source · Vindolanda Tablet 291</div>
+      <p class="quote sm">Claudia Severa to her Lepidina greetings. On 11 September, sister, for the day of the celebration of my birthday, I give you a warm invitation to make sure that you come to us, to make the day more enjoyable for me by your arrival, if you are present (?). Give my greetings to your Cerialis. My Aelius and my little son send him (?) their greetings. <span class="ed">[in a second hand:]</span> I shall expect you, sister. Farewell, sister, my dearest soul, as I hope to prosper, and hail. <span class="ed">[on the back:]</span> To Sulpicia Lepidina, wife of Cerialis, from Severa.</p>
+      <p class="prov">Tab. Vindol. 291 · ink on wood · found at Vindolanda in 1985 · about 97–105 CE</p>
+    </div>
+    <div class="stack veil-parts" data-veil="Try it first — then show the worked example">
+      <div class="u1l01-ov"><span class="u1l01-ovl">O</span><div><p class="qprompt">Origin: who made it, when and where?</p>
+        <p class="u1l01-model vp reveal">Claudia Severa, wife of Aelius Brocchus, commander of a nearby fort · to Sulpicia Lepidina, wife of Cerialis, commander at Vindolanda · about 97–105 CE · ink on a thin wooden leaf, mostly in a scribe’s hand, the last lines in Severa’s own · probably written at Severa’s own fort (“come to us”), and found where it was received</p></div></div>
+      <div class="u1l01-ov"><span class="u1l01-ovl">P</span><div><p class="qprompt">Purpose: why was it made, and for whom?</p>
+        <p class="u1l01-model vp reveal">To invite Lepidina to Severa’s birthday on 11 September and to keep the two families’ friendship going · a private letter for one reader, not for the public, and not for us</p></div></div>
+      <div class="u1l01-ov u1l01-later"><span class="u1l01-ovl">V R L</span><div><p class="body">Value, Reliability and Limitations: your turn, on the next slide.</p></div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · OVPRL" data-title="We do: Value, Reliability, Limitations" data-kind="notes">
+<div class="wrap">
+  <p class="eyebrow">2 · OVPRL · We do — cold call · use the OVPRL routine on page 2 of your booklet</p>
+  <h2>OVPRL on Tablet 291: Value, Reliability, Limitations</h2>
+  <div class="stack veil-parts" data-veil="Answer first — then show the models">
+    <div class="u1l01-ov"><span class="u1l01-ovl">V</span><div><p class="qprompt">Value: what can it tell us, and for which inquiry?</p>
+      <p class="u1l01-model vp reveal">For an inquiry into life on Rome’s northern frontier: a friendship between two officers’ wives · one woman writing in her own hand (Severa’s closing lines) · an officer’s family with a young son (“my little son”) · a birthday celebration</p></div></div>
+    <div class="u1l01-ov"><span class="u1l01-ovl">R</span><div><p class="qprompt">Reliability: how far can we trust it, and for what?</p>
+      <p class="u1l01-model vp reveal">Reliable for the private lives of these two families: the original letter, written at the time, for a friend, with no public to impress · but some words are uncertain (the editors’ “(?)”), and we read it in translation</p></div></div>
+    <div class="u1l01-ov"><span class="u1l01-ovl">L</span><div><p class="qprompt">Limitations: what can it not tell us?</p>
+      <p class="u1l01-model vp reveal">One letter between two commanders’ wives: it cannot tell us whether Lepidina came, what the day was like, or how ordinary soldiers, local Britons or enslaved people lived</p></div></div>
+    <div class="note vp reveal" data-code="judgement"><div class="k">Reliable for what? One sentence</div><p class="body nq">The tablet is reliable for the friendship of two commanders’ wives on the northern frontier, but not for the lives of ordinary soldiers, because it was written by and for officers’ families.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · OVPRL" data-title="Notes 2 — OVPRL on Tablet 291" data-kind="notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>OVPRL on Vindolanda Tablet 291</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U1 L1 · Sources, evidence and questions</b></span><span>2 · OVPRL</span></div>
+    <div class="row"><div class="cq">Origin: who, when, where?</div>
+      <div class="nts reveal">Claudia Severa → Sulpicia Lepidina (commanders’ wives) <span class="sep">·</span> c. 97–105 CE <span class="sep">·</span> ink on wood, scribe + Severa’s own hand <span class="sep">·</span> found at Vindolanda 1985 (probably written at Severa’s fort)</div></div>
+    <div class="row"><div class="cq">Value: for which inquiry?</div>
+      <div class="nts reveal">life on the northern frontier → one woman’s own handwriting (Severa) <span class="sep">·</span> an officer’s family with a son <span class="sep">·</span> a friendship, a birthday</div></div>
+    <div class="row"><div class="cq">Purpose: why, for whom?</div>
+      <div class="nts reveal">birthday invitation (11 Sept) <span class="sep">·</span> private, one reader → not written to impress</div></div>
+    <div class="row"><div class="cq">Reliability: how far, for what?</div>
+      <div class="nts reveal">reliable for these families’ private lives (original, at the time) <span class="sep">·</span> some words uncertain (?) + translation</div></div>
+    <div class="row"><div class="cq">Limitations?</div>
+      <div class="nts reveal">one letter, two elite women → not ordinary soldiers, Britons, enslaved people <span class="sep">·</span> did Lepidina go?</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Your questions" data-title="You do: your inquiry questions">
+<div class="wrap u1l01-dense">
+  <p class="eyebrow">3 · Your questions · You do · 8 minutes · press K for the timer</p>
+  <h2>Your questions about the tablet, and one sentence</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body"><li>In your cue column: three inquiry questions Tablet 291 could help answer, and one it <b>cannot</b> answer (say why not).</li>
+          <li>Then one sentence: <span class="nq">“This source is valuable for investigating … because …”</span></li></ol></div>
+      <div class="card quiet sm"><div class="k">A good inquiry question</div><p class="body">is open (how? why? in what ways? to what extent?), names who and when, and can be tested against sources.</p></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Start with: What does the tablet tell us about …? · How did …? · To what extent …? Use the OVPRL routine on page 2 of your booklet and the word bank.</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Explain why a private letter can be more reliable than an official inscription for some questions and less reliable for others.</p></div>
+    </div>
+    <div class="stack" data-veil="Write yours first — then show examples">
+      <div class="note reveal" data-code="evidence"><div class="k">Questions it could help answer</div><p class="body">What does the tablet suggest about whether women on the frontier could read and write? · What does it show about officers’ families living at the forts? · How did families at different forts keep in touch?</p></div>
+      <div class="note reveal" data-code="counter"><div class="k">A question it cannot answer</div><p class="body">Why did the Romans build Hadrian’s Wall? The letter was written before the Wall was begun, and never mentions it.</p></div>
+      <div class="note reveal" data-code="judgement"><div class="k">A model sentence</div><p class="body nq">Vindolanda Tablet 291 is valuable for investigating women’s literacy on Rome’s northern frontier because its closing lines are in Claudia Severa’s own handwriting.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Your questions" data-title="Summary" data-kind="notes">
+<div class="wrap u1l01-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What is the difference between a source and evidence?</li>
+          <li>What types of source do historians use?</li>
+          <li>What did OVPRL show about Vindolanda Tablet 291?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">A source is anything from or about the past, but it only becomes evidence when a historian uses it to answer a particular question. Historians use texts, inscriptions, petroglyphs, iconography, artefacts, sites and human remains; some are primary, made at the time, and others are secondary interpretations made later. OVPRL showed that Vindolanda Tablet 291, a private letter from about 100 CE, is reliable evidence for the friendship of two commanders’ wives on Rome’s northern frontier, and shows that at least one of them could write in Latin, but it is limited evidence for the lives of ordinary soldiers.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Source vs evidence</label></li>
+        <li><label><input type="checkbox"> Seven types of source</label></li>
+        <li><label><input type="checkbox"> Primary and secondary</label></li>
+        <li><label><input type="checkbox"> Wheeler: “not things, but people”</label></li>
+        <li><label><input type="checkbox"> OVPRL on Tablet 291</label></li>
+        <li><label><input type="checkbox"> Three inquiry questions + one it cannot answer</label></li>
+        <li><label><input type="checkbox"> One sentence: valuable for investigating … because …</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 5 minutes · before you leave</p>
+  <h2>Two sentences</h2>
+  <div class="cols c2">
+    <div class="card accent"><div class="k">1</div><p class="lead">A source becomes evidence when …</p></div>
+    <div class="card accent"><div class="k">2</div><p class="lead">One question Tablet 291 cannot answer is … because …</p></div>
+  </div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">1 · … a historian uses it to answer a particular question. &nbsp;2 · a real question about the past, and a reason tied to the source: who wrote it, when, or whose lives it leaves out.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> how sources come out of the ground, from treasure hunting to scientific excavation.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u1l01-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>A source and evidence are the same thing.</span>
+      <span class="sol no reveal">False <span class="why">— a source only becomes evidence when it is used to answer a particular question.</span></span></li>
+    <li><span class="n">2</span><span>Vindolanda Tablet 291 is a primary source.</span>
+      <span class="sol reveal">True <span class="why">— it was written about 97–105 CE by people living at the time.</span></span></li>
+    <li><span class="n">3</span><span>A reconstruction drawing shows us what the past really looked like.</span>
+      <span class="sol no reveal">False <span class="why">— it is a modern interpretation (secondary): evidence of what its maker imagined, not direct evidence of the past.</span></span></li>
+    <li><span class="n">4</span><span>A Roman coin can be an artefact, an inscription and iconography at once.</span>
+      <span class="sol reveal">True <span class="why">— it is an object, with words and images on it.</span></span></li>
+    <li><span class="n">5</span><span>Because Claudia Severa was a commander’s wife, her letter is useless to historians.</span>
+      <span class="sol no reveal">False <span class="why">— reliable for what? It is strong evidence for two officers’ families, weak evidence for ordinary soldiers.</span></span></li>
+    <li><span class="n">6</span><span>OVPRL stands for Origin, Value, Purpose, Reliability, Limitations.</span>
+      <span class="sol reveal">True <span class="why">— in that order.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — reliable for what?" data-kind="practice">
+<div class="wrap prac u1l01-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Write it as a historian</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · Value, for a different inquiry</div><p class="body nq">You wrote one in class. Now write another, for a different inquiry: “This source is valuable for investigating … because …”</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Vindolanda Tablet 291 is valuable for investigating family life on Rome’s northern frontier because Severa sends greetings from her husband and her young son.</p></div>
+      <div class="card accent"><div class="k">2 · Reliable for what?</div><p class="body nq">Finish: “This source is reliable for … but not for … because …”</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">The tablet is reliable for the private friendship of two commanders’ wives, but not for the experiences of ordinary soldiers, because it was written by one officer’s wife to another.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Explain why a private letter can be more reliable than an official inscription for some questions and less reliable for others. Use Tablet 291 and the Rosetta Stone.</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">For everyday life, a private letter can be more reliable than an official inscription, because it was written for one reader with no public to impress: Tablet 291 shows an officer’s wife inviting a friend to her birthday in her own words. An official inscription such as the Rosetta Stone was carved to present a decree to the public, so it shows what the authorities wanted people to read. For official decisions, however, the inscription is the better evidence, because it records the decree itself, while a private letter shows only one family’s concerns. Reliability therefore depends on the question being asked.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u1l01-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Explain the difference between a source and evidence.
+      <span class="sol reveal">A source is anything from or about the past; evidence is information from a source used to answer a particular question.</span></li>
+    <li>Name the seven types of ancient source in this lesson.
+      <span class="sol reveal">Texts, inscriptions, petroglyphs, iconography, artefacts, sites and human remains.</span></li>
+    <li>What is the difference between a primary and a secondary source?
+      <span class="sol reveal">A primary source was made at the time being studied; a secondary source was made later by someone interpreting the past.</span></li>
+    <li>Is a reconstruction drawing a source?
+      <span class="sol reveal">Yes, a secondary one: an interpretation of how something looked — evidence of what its maker imagined or believed, not direct evidence of the past.</span></li>
+    <li>Give one thing Tablet 291 is reliable for, and one thing it is not.
+      <span class="sol reveal">Reliable for the friendship of two commanders’ wives, and for Severa’s own ability to write; not for the lives of ordinary soldiers.</span></li>
+    <li>What did Wheeler mean by digging up “not things, but people”?
+      <span class="sol reveal">Objects matter for what they reveal about the people who made and used them.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u1l01-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u1l01-cite"><div class="k">Written sources</div>
+      <p class="small">Vindolanda Tablet 291 (Tab. Vindol. 291): translation as published by <a href="https://romaninscriptionsofbritain.org/inscriptions/TabVindol291">Roman Inscriptions of Britain Online</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>), from the edition by A. K. Bowman and J. D. Thomas (Tab. Vindol. II). This edition has replaced Vindolanda Tablets Online (Centre for the Study of Ancient Documents, University of Oxford). Facts about the tablet: RIB Online and the British Museum (1986,1001.64).</p>
+      <p class="small">Mortimer Wheeler, <i>Archaeology from the Earth</i> (Oxford: Clarendon Press, 1954), Preface; checked against <a href="https://archive.org/details/in.gov.ignca.1711">the 1954 edition</a>.</p>
+      <p class="small">Thucydides, <i>History of the Peloponnesian War</i> 1.1, trans. Richard Crawley (1874, public domain), from the <a href="http://classics.mit.edu/Thucydides/pelopwar.1.first.html">Internet Classics Archive</a>.</p></div>
+    <div class="card quiet"><div class="k">Syllabus</div>
+      <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+  </div>
+  <div class="card quiet u1l01-cite"><div class="k">Images</div>
+    <ul class="small credits"><li><b>The Rosetta Stone</b> · Photo: Hans Hillewaert · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Rosetta_Stone.JPG">source</a></li><li><b>Vindolanda Tablet 291</b> · Photo: Fæ · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Vindolanda_tablet_291.jpg">source</a></li><li><b>Building stone of the century of Lousius Suavis</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:A_centurial_stone_recording_the_building_of_a_stretch_of_Hadrian%27s_Wall_by_centurion_Lousius_Suavis_and_his_men,_found_near_Chesters,_Clayton_Museum,_Chesters_Roman_Fort,_Hadrian%27s_Wall_(30985999158).jpg">source</a></li><li><b>Deer engraving at Naquane, Val Camonica</b> · Photo: Luca Giarelli · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Cervidi_-_Parco_di_Naquane_R_1_-_Capo_di_Ponte_(Foto_Luca_Giarelli).jpg">source</a></li><li><b>Nebamun hunting in the marshes</b> · Ancient Egyptian painter (a photograph of a public-domain painting) · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:Tomb_of_Nebamun.jpg">source</a></li><li><b>Roman shoe from Vindolanda (cropped)</b> · Photo: Victuallers · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Vindolanda_Roman_shoe_in_the_museum.jpg">source</a></li><li><b>The remains of Vindolanda</b> · Photo: Nilfanion · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Vindolanda_overview.jpg">source</a></li><li><b>Skeleton in a Roman lead coffin, Wels</b> · Photo: Wolfgang Sauber · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:SMWM_Gr%C3%A4berstra%C3%9Fe_-_Bleisarg_1.jpg">source</a></li><li><b>The ‘Standard of Ur’, war side</b> · Photo: BabelStone, adjusted by LeastCommonAncestor · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Standard_of_Ur_-_War_side.jpg">source</a></li><li><b>Ship carvings at Vitlycke, Tanum</b> · Photo: Bengt Oberger · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Rock_carving_Vitlycke_Tanum.JPG">source</a></li><li><b>Denarius of Trajan, about 114 CE</b> · Classical Numismatic Group, Inc. (cngcoins.com) · <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a> · <a href="https://commons.wikimedia.org/wiki/File:Traianus_Denarius_114_90020186.jpg">source</a></li><li><b>Plan of Housesteads fort (1911; colour added later)</b> · Encyclopædia Britannica, 11th edn (1911) · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:Plan_Castel_Housestaeds_1911_Encyclop%C3%A6dia_Britannica.png">source</a></li><li><b>Reconstruction of an Assyrian palace hall (1849)</b> · A. H. Layard, The Monuments of Nineveh, First Series (1849), pl. 2 · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:Artist%E2%80%99s_impression_of_a_hall_in_an_Assyrian_palace_from_The_Monuments_of_Nineveh_by_Sir_Austen_Henry_Layard,_1853.jpg">source</a></li><li><b>Hadrian’s Wall on Housesteads Crags</b> · Photo: G Laird (geograph.org.uk) · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Hadrian%27s_Wall_and_Housesteads_Crags_-_geograph.org.uk_-_1410595.jpg">source</a></li></ul>
+    <p class="small">All images are public domain or openly licensed, and were resized for the web (the shoe was also cropped). Each is shared under the licence shown.</p></div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1731 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U1 L3 · Digging the Past II: Surveying, Dating and Scientific Analysis</title>
+<meta name="description" content="Year 11 Ancient History, the investigation of ancient sites and sources: how archaeologists find buried sites without digging, how relative and absolute dating methods work and where they fail, and why scientific results must be tested and cross-checked.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#1D4E89; --bright:#2E6FBF; --tint:#E7EEF8; --statement:#1D4E89;
+  --solid:#1D4E89; --soft:#D3E2F6; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#A9C8F2; --bright:#5E9BE6; --tint:#142538; --statement:#173C66; --soft:#D3E2F6; } }
+:root[data-theme="dark"]{ --deep:#A9C8F2; --bright:#5E9BE6; --tint:#142538; --statement:#173C66; --soft:#D3E2F6; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 1 Lesson 3 only (every class starts u1l03-) */
+
+/* survey methods: three picture cards */
+.u1l03-methods{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1.2vw,18px);}
+.u1l03-m{margin:0; background:var(--surface); border:1px solid var(--rule); border-top:5px solid var(--bright);
+  border-radius:10px; overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;}
+.u1l03-m img{display:block; width:100%; height:17vh; object-fit:cover; background:var(--surface-2);}
+.u1l03-m .u1l03-mb{padding:.45em .8em .6em; display:flex; flex-direction:column; gap:.2em;
+  font-size:calc(var(--fs-body)*.78); line-height:1.32;}
+.u1l03-m b.u1l03-mt{font-family:var(--disp); font-size:1.2em; color:var(--deep);}
+.u1l03-m .u1l03-lim{margin-top:.2em; padding-top:.3em; border-top:1px dashed var(--rule); color:var(--ink);}
+.u1l03-m .u1l03-lim::before{content:"Limitation: "; font-weight:700; color:var(--c-judgement);}
+.u1l03-row{display:grid; grid-template-columns:1fr 1fr; gap:clamp(8px,1.2vw,18px);}
+
+/* dating matrix */
+.u1l03-matrix td:first-child{font-weight:700; white-space:nowrap;}
+.u1l03-matrix td.u1l03-kind{white-space:nowrap; font-weight:700;}
+.u1l03-matrix .rel{color:var(--c-counter);} .u1l03-matrix .abs{color:var(--c-evidence);}
+
+/* the stone-axe question under the dating matrix */
+.u1l03-axe{display:flex; flex-direction:column; gap:.2em;}
+.u1l03-axe .small{color:var(--ink); line-height:1.4;}
+
+/* radiocarbon diagram (colours from the page, so it follows the theme) */
+.u1l03-c14 text{font-family:var(--ui); fill:var(--ink);}
+.u1l03-c14 .u1l03-bg{fill:var(--surface); stroke:var(--rule); stroke-width:2;}
+.u1l03-c14 .u1l03-zone{fill:var(--surface-2);}
+.u1l03-c14 .u1l03-zone-lbl{fill:var(--c-judgement); font-size:30px; font-weight:700; text-anchor:middle;}
+.u1l03-c14 .u1l03-zone-sm{fill:var(--slate); font-size:28px; text-anchor:middle;}
+.u1l03-c14 .u1l03-grid{stroke:var(--paper-rule); stroke-width:1.5;}
+.u1l03-c14 .u1l03-axis{stroke:var(--ink); stroke-width:3;}
+.u1l03-c14 .u1l03-tick{stroke:var(--slate); stroke-width:2;}
+.u1l03-c14 .u1l03-ylbl{fill:var(--slate); font-size:30px; text-anchor:end;}
+.u1l03-c14 .u1l03-xlbl{fill:var(--slate); font-size:30px; text-anchor:middle;}
+.u1l03-c14 .u1l03-axt{fill:var(--slate); font-size:30px; font-weight:700; text-anchor:middle;}
+.u1l03-c14 .u1l03-curve{fill:none; stroke:var(--deep); stroke-width:6; stroke-linejoin:round;}
+.u1l03-c14 .u1l03-guide{stroke:var(--slate); stroke-width:2; stroke-dasharray:8 6;}
+.u1l03-c14 .u1l03-dot{fill:var(--c-evidence); stroke:var(--surface); stroke-width:3;}
+.u1l03-c14 .u1l03-dot.start{fill:var(--deep);}
+.u1l03-c14 .u1l03-mk{font-size:33px; font-weight:700; fill:var(--ink); paint-order:stroke; stroke:var(--surface);
+  stroke-width:6px; stroke-linejoin:round;}
+.u1l03-c14fig svg{max-height:50vh;}
+
+/* a small picture inside a key-list item */
+.u1l03-thumb{display:grid; grid-template-columns:5.2em 1fr; gap:.6em; align-items:start;}
+.u1l03-thumb img{width:5.2em; height:5.2em; object-fit:cover; border-radius:8px; box-shadow:var(--shadow);}
+
+/* acknowledgement of Country (Lake Mungo) */
+.u1l03-ack{border-left:6px solid var(--c-evidence); background:var(--w-evidence); border-radius:0 10px 10px 0;
+  padding:.5em 1em; font-size:calc(var(--fs-body)*.82); line-height:1.42;}
+.u1l03-ack b{color:var(--c-evidence);}
+.u1l03-ack a{color:var(--deep);}
+
+/* dated steps (Lake Mungo, the tomb scans) */
+.u1l03-tl{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:clamp(5px,.9vh,10px);}
+.u1l03-tl li{display:grid; grid-template-columns:4.1em 1fr; gap:.6em; align-items:start;
+  font-size:calc(var(--fs-body)*.82); line-height:1.36;}
+.u1l03-tl .u1l03-yr{font-family:var(--mono); font-weight:700; color:#fff; background:var(--solid); border-radius:6px;
+  text-align:center; padding:.08em .2em; font-size:.92em;}
+.u1l03-tl li.u1l03-open .u1l03-yr{background:var(--slate);}
+
+/* layers that bracket a grave (Lake Mungo cross-check): text only, no picture of the burial */
+.u1l03-layers{display:flex; flex-direction:column; border:1px solid var(--rule); border-radius:10px; overflow:hidden;
+  font-size:calc(var(--fs-body)*.78); line-height:1.3;}
+.u1l03-layers span{padding:.35em .8em; border-bottom:1px solid var(--rule);}
+.u1l03-layers span:last-child{border-bottom:0;}
+.u1l03-layers .a{background:var(--tint);} .u1l03-layers .g{background:var(--w-evidence); font-weight:700;}
+.u1l03-layers .b{background:var(--surface-2);}
+
+/* claim -> evidence -> later test chain */
+.u1l03-chain{display:grid; grid-template-columns:1fr auto 1fr auto 1fr; gap:.5em; align-items:stretch;}
+.u1l03-chain .card{padding:clamp(8px,1.4vh,16px) clamp(10px,1vw,16px);}
+.u1l03-chain .u1l03-arrow{align-self:center; font-size:calc(var(--fs-body)*1.4); color:var(--slate); font-weight:700;}
+.u1l03-model{margin-top:.35em; padding:.35em .7em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 8px 8px 0; font-size:calc(var(--fs-body)*.8); line-height:1.38;}
+
+/* six 'Which method?' cases */
+.u1l03-cases{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1vw,14px);}
+.u1l03-case{position:relative; background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); padding:.55em .8em .6em 2.9em; font-size:calc(var(--fs-body)*.8); line-height:1.34;}
+.u1l03-case .l{position:absolute; top:.55em; left:.6em; width:1.7em; height:1.7em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700;}
+.u1l03-case b{display:block; color:var(--deep); font-size:1.08em;}
+.u1l03-steps{display:flex; flex-wrap:wrap; gap:.4em 1.4em; font-size:calc(var(--fs-body)*.82);}
+.u1l03-steps b{display:inline-grid; place-items:center; width:1.5em; height:1.5em; border-radius:50%; background:var(--solid);
+  color:#fff; font-size:.85em; margin-right:.3em;}
+.u1l03-key td:first-child{font-weight:700; white-space:nowrap;}
+
+/* gesture vote claims */
+.u1l03-claim{display:grid; grid-template-columns:2.4em 1fr; gap:.7em; align-items:start;}
+.u1l03-claim .u1l03-cn{display:grid; place-items:center; height:2.1em; border-radius:8px; background:var(--solid); color:#fff;
+  font-weight:700; font-family:var(--mono);}
+.u1l03-claim .lead{margin:0;}
+
+/* the quotation inside the Lake Mungo DNA note */
+.u1l03-dna .quote.sm{font-size:var(--fs-body); line-height:1.45; margin:.25em 0;}
+
+/* smaller callout headings on the busy slides */
+.u1l03-dense .note .k{font-size:calc(var(--fs-body)*.92);}
+
+/* goals line, credits */
+.u1l03-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u1l03-cite a{color:var(--deep);}
+.u1l03-cite p{margin:.15em 0 .45em;}
+.u1l03-cite .credits{columns:1; padding-left:1em;}
+
+/* phones (Read mode): fewer columns, natural picture heights */
+@media (max-width:900px){
+  .u1l03-methods, .u1l03-cases{grid-template-columns:1fr;}
+  .u1l03-row{grid-template-columns:1fr;}
+  .u1l03-m img{height:auto; aspect-ratio:16/9;}
+  .u1l03-chain{grid-template-columns:1fr;}
+  .u1l03-chain .u1l03-arrow{transform:rotate(90deg); justify-self:center;}
+  html.read .u1l03-c14fig{overflow-x:auto;}
+  html.read .u1l03-c14fig svg{min-width:640px; max-height:none;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u1l03-dense{gap:10px;}
+  html:not(.read) .u1l03-dense h2{font-size:calc(var(--fs-h2)*.86);}
+  html:not(.read) .u1l03-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.4;}
+  html:not(.read) .u1l03-dense .quote{font-size:calc(var(--fs-body)*.86);}
+  html:not(.read) .u1l03-dense .src{padding:10px 16px;}
+  html:not(.read) .u1l03-dense .src .prov{margin-top:.4em;}
+  html:not(.read) .u1l03-dense .note{padding:.45em .85em;}
+  html:not(.read) .u1l03-dense .note .body, html:not(.read) .u1l03-dense .card .body,
+  html:not(.read) .u1l03-dense .qprompt{font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+  html:not(.read) .u1l03-dense .card{padding:10px 16px;}
+  html:not(.read) .u1l03-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l03-dense .tbl.compact td{padding:.3em .55em;}
+  html:not(.read) .u1l03-dense .tbl th{padding:.4em .6em;}
+  html:not(.read) .u1l03-dense .figure img{max-height:30vh;}
+  html:not(.read) .u1l03-dense .keylist li{font-size:calc(var(--fs-body)*.84);}
+  html:not(.read) .u1l03-dense .keylist .d{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u1l03-dense .u1l03-m img{height:12.5vh;}
+  html:not(.read) .u1l03-dense .note .k{font-size:calc(var(--fs-body)*.82); margin-bottom:.2em;}
+  html:not(.read) .u1l03-dense .u1l03-row .note .body{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u1l03-dense .u1l03-methods{gap:12px;}
+  html:not(.read) .u1l03-dense .u1l03-m .u1l03-mb{font-size:calc(var(--fs-body)*.69); line-height:1.28; padding:.35em .7em .45em;}
+  html:not(.read) .u1l03-dense .u1l03-tl li{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u1l03-dense .u1l03-case{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u1l03-dense .u1l03-model{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l03-dense .u1l03-ack{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u1l03-dense .u1l03-layers{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l03-dense .u1l03-c14fig svg{max-height:47vh;}
+  html:not(.read) .u1l03-dense .tf li, html:not(.read) .u1l03-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u1l03-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u1l03-dense .prac{gap:6px;}
+  html:not(.read) .u1l03-credits .small{font-size:calc(var(--fs-chrome)*.86); line-height:1.34;}
+  html:not(.read) .u1l03-credits .u1l03-cite p{margin:.1em 0 .32em;}
+  html:not(.read) .u1l03-dense .cornell .cq, html:not(.read) .u1l03-dense .cornell .nts{font-size:calc(var(--fs-body)*.74); padding:.32em .8em;}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 3" data-title="Digging the past II: surveying, dating and scientific analysis" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.3fr .7fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 1 · The investigation of ancient sites and sources · Lesson 3</p>
+      <h1>Digging the past II: surveying, dating and scientific analysis</h1>
+      <p class="lead">How do archaeologists find what is buried without digging, work out how old it is, and test what the science tells them?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <figure class="figure tall contain"><img src="images/u1l03-stonehenge-from-the-air-1906.jpg" alt="Stonehenge photographed from a Royal Engineers’ tethered balloon by Lieutenant Philip Henry Sharpe in 1906: one of the earliest aerial photographs of an archaeological site" loading="lazy"><figcaption>Stonehenge photographed from a Royal Engineers’ tethered balloon by Lieutenant Philip Henry Sharpe in 1906: one of the earliest aerial photographs of an archaeological site — <span class="cr">Photo: P. H. Sharpe, Royal Engineers (1906) · Public domain</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 3" data-title="Review: Lessons 1 and 2" data-kind="intro practice">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <h2>Five questions from Lessons 1 and 2</h2>
+  <ol class="rq" data-answers>
+    <li>What is the difference between a source and evidence?
+      <span class="sol reveal">A source is anything from or about the past; it becomes evidence when it is used to answer a particular historical question.</span></li>
+    <li>The Rosetta Stone: what type of source is it, and what is one limitation?
+      <span class="sol reveal">An inscription (on an artefact, a stone slab). It records an official decree, so it shows what the authorities wanted people to read, not what ordinary people thought.</span></li>
+    <li>In undisturbed layers, which is older: the lowest layer or the top one? Name the rule.
+      <span class="sol reveal">The lowest. The law of superposition: in undisturbed layers, the lower layers are older than the layers above them.</span></li>
+    <li>What did Schliemann’s great trench at Hisarlik destroy, and why does that matter?
+      <span class="sol reveal">It cut through the mound and destroyed later layers that he thought did not matter. Excavation destroys what it uncovers, so whatever is not recorded is lost for ever.</span></li>
+    <li>A coin minted in 120 CE is found in undisturbed Layer 2. What does it tell us about when Layer 2 formed?
+      <span class="sol reveal">In or after 120 CE: the coin is a terminus post quem, the earliest possible date. It does not mean the layer formed in 120 CE.</span></li>
+  </ol>
+  <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 3" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>understand how archaeologists survey sites and date finds</li>
+        <li>judge which scientific method suits which historical question</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>describe three survey or dating methods and what each can detect or date</li>
+        <li>explain one limitation of a scientific method</li>
+        <li>choose a method for an inquiry question and justify my choice</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u1l03-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-08 uses sources to form conclusions about the past · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 3" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U1 L3 · Surveying, dating and science</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; C-14 = carbon-14)</span></div></div>
+      <div class="row"><div class="cq">Explain one limitation of radiocarbon dating.</div><div class="nts">organic only → not stone, metal …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: survey, dating and cross-checking · science on people and when methods mislead.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 3" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for finding and dating the past</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Finding without digging</th><th>Meaning</th></tr>
+      <tr><td>ground-penetrating radar (GPR)</td><td>A survey method that sends radar pulses into the ground to detect buried features without digging.</td></tr>
+      <tr><td>magnetometry</td><td>A survey method that measures tiny changes in the earth’s magnetic field to map buried ditches, pits and burnt areas without digging.</td></tr>
+      <tr><td>LiDAR</td><td>Laser scanning, usually from the air, that maps the ground surface in fine detail — even under trees.</td></tr>
+      <tr><th>Dating: two kinds</th><th>Meaning</th></tr>
+      <tr><td>relative dating</td><td>Putting layers or finds in order, older or younger, without a date in years.</td></tr>
+      <tr><td>absolute dating</td><td>Giving a date in years, usually as a range, using a scientific method.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Dating methods</th><th>Meaning</th></tr>
+      <tr><td>stratigraphy</td><td>The study of the layers (strata) built up on a site over time.</td></tr>
+      <tr><td>typology</td><td>Dating or grouping objects by comparing their style and form with similar objects.</td></tr>
+      <tr><td>radiocarbon dating</td><td>Dating once-living (organic) material, such as wood, bone or charcoal, by measuring how much carbon-14 has decayed.</td></tr>
+      <tr><td>dendrochronology</td><td>Dating wood by matching its pattern of tree rings to a known sequence.</td></tr>
+      <tr><td>thermoluminescence</td><td>Dating fired material, such as pottery, by measuring energy stored since it was last heated.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Finding without digging" data-title="Survey: finding sites without digging" data-kind="notes">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow">1 · Finding without digging · I do — fill in the survey rows of your methods matrix</p>
+  <h2>Finding what is buried, without digging</h2>
+  <div class="u1l03-methods">
+    <figure class="u1l03-m"><img src="images/u1l03-magnetometer-survey.jpg" alt="An archaeologist walking across a dry grassy field carrying a magnetometer with two sensors on a pole">
+      <figcaption class="u1l03-mb"><b class="u1l03-mt">Magnetometry</b>
+        <span><b>Detects:</b> tiny changes in the earth’s magnetic field from filled-in ditches and pits, and burnt areas such as hearths</span>
+        <span><b>Best for:</b> covering large areas quickly</span>
+        <i>a magnetometer survey in Montana, USA</i>
+        <span class="u1l03-lim reveal">a feature must differ magnetically from the soil around it; it cannot date what it finds</span></figcaption></figure>
+    <figure class="u1l03-m"><img src="images/u1l03-radar-map-velm.jpg" alt="A radar map laid over an aerial view of fields, showing the dark rings of a large buried circular ditched enclosure">
+      <figcaption class="u1l03-mb"><b class="u1l03-mt">Ground-penetrating radar (GPR)</b>
+        <span><b>Detects:</b> echoes of radar pulses from buried walls, ditches and empty spaces, and how deep they are</span>
+        <span><b>Best for:</b> detail in a smaller area</span>
+        <i>a radar map of a buried Neolithic enclosure at Velm, Austria</i>
+        <span class="u1l03-lim reveal">slower and dearer than magnetometry, and people must interpret its echoes: they can mislead</span></figcaption></figure>
+    <figure class="u1l03-m"><img src="images/u1l03-lidar-west-of-stonehenge.jpg" alt="A grey shaded-relief image of farmland showing faint straight banks and small round mounds">
+      <figcaption class="u1l03-mb"><b class="u1l03-mt">LiDAR</b>
+        <span><b>Detects:</b> the shape of the ground surface, from laser pulses usually fired from the air, even under trees</span>
+        <span><b>Best for:</b> banks, ditches and mounds across a whole landscape</span>
+        <i>a lidar view of fields west of Stonehenge</i>
+        <span class="u1l03-lim reveal">it maps only the surface: it cannot see buried features that leave no bump or hollow</span></figcaption></figure>
+  </div>
+  <div class="u1l03-row">
+    <div class="note reveal" data-code="evidence"><div class="k">Stonehenge Hidden Landscapes Project, 2010–2014</div><p class="body">Magnetometry over more than 12 km² around Stonehenge, and radar over smaller areas, found 17 previously unknown ritual monuments (announced in 2014). An earlier LiDAR survey of the Stonehenge landscape had also found new sites.</p></div>
+    <div class="note reveal" data-code="counter"><div class="k">But a survey is not proof</div><p class="body">At nearby Durrington Walls, radar signals were read in 2015 as a row of up to 90 buried standing stones. When archaeologists dug two of them in 2016, the holes had held huge timber posts, not stones.</p></div>
+  </div>
+  <p class="small credline">Images: Tapatio (CC BY-SA 3.0) · LBI ArchPro (CC BY-SA 4.0) · John Wells (CC BY 4.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Dating" data-title="Dating: relative and absolute" data-kind="notes">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow">2 · Dating · I do — fill in the dating rows of your methods matrix</p>
+  <h2>Putting things in order, or giving a date in years?</h2>
+  <div class="cols c2">
+    <div class="card quiet"><div class="k">Relative dating</div><p class="body">Older or younger than something else: an order, not years.</p></div>
+    <div class="card accent"><div class="k">Absolute dating</div><p class="body">A date in years, usually given as a range.</p></div>
+  </div>
+  <div class="tbl-scroll"><table class="tbl compact u1l03-matrix">
+    <tr><th>Method</th><th>Kind</th><th>What it dates</th><th>Material needed</th><th>One limitation</th></tr>
+    <tr class="reveal"><td>stratigraphy</td><td class="u1l03-kind rel">relative</td><td>the order in which layers, and the finds in them, were laid down</td><td>undisturbed layers</td><td>an order, not years; pits, burrows and later digging can mix layers</td></tr>
+    <tr class="reveal"><td>typology</td><td class="u1l03-kind rel">relative</td><td>objects, by placing their style and form in a sequence</td><td>objects whose styles changed in a known order</td><td>only as good as the sequence it is compared with; gives years only if that sequence has been dated</td></tr>
+    <tr class="reveal"><td>radiocarbon</td><td class="u1l03-kind abs">absolute</td><td>when a plant or animal was alive</td><td>once-living (organic) material: wood, charcoal, bone, seeds</td><td>organic material only; back to about 50,000 years; a range that must be calibrated</td></tr>
+    <tr class="reveal"><td>dendrochronology</td><td class="u1l03-kind abs">absolute</td><td>the year each ring grew, so the year a tree was felled if its last ring survives</td><td>wood with enough rings: at least about 50</td><td>needs a dated ring sequence for that region and kind of tree; a beam may be reused from an older building</td></tr>
+    <tr class="reveal"><td>thermoluminescence</td><td class="u1l03-kind abs">absolute</td><td>when fired material was last heated</td><td>pottery, burnt flint or stone, plus the soil around it</td><td>error usually 5–10% of the age; any later heating resets its clock</td></tr>
+  </table></div>
+  <div class="u1l03-axe">
+    <p class="qprompt reveal">Which of these could date a stone axe?</p>
+    <p class="small reveal" data-veil="Think first — then show the answer">Not radiocarbon or tree rings: stone was never alive. Typology can place it by its shape, and stratigraphy by its layer; charcoal from the same layer can be radiocarbon dated, which dates the layer. (If the stone was burnt, luminescence could date that heating.)</p>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Dating" data-title="Radiocarbon: what it can and cannot do" data-kind="notes">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow">2 · Dating · I do — think aloud</p>
+  <h2>Radiocarbon dating: how much carbon-14 is left?</h2>
+  <div class="split" style="--cols:1.35fr 1fr">
+    <div class="stack">
+      <figure class="diagram u1l03-c14fig"><svg class="u1l03-c14" viewBox="0 0 1200 620" role="img" aria-label="Graph: the share of carbon-14 left in a once-living thing after it dies. It starts at 100 per cent, falls to half after about 5,730 years, a quarter after about 11,460 years and an eighth after about 17,190 years. Beyond about 50,000 years too little is left to measure."><rect class="u1l03-bg" x="2" y="2" width="1196" height="616" rx="14"/><line class="u1l03-grid" x1="120" y1="500.0" x2="1170" y2="500.0"/><text class="u1l03-ylbl" x="106" y="510.0">0%</text><line class="u1l03-grid" x1="120" y1="390.0" x2="1170" y2="390.0"/><text class="u1l03-ylbl" x="106" y="400.0">25%</text><line class="u1l03-grid" x1="120" y1="280.0" x2="1170" y2="280.0"/><text class="u1l03-ylbl" x="106" y="290.0">50%</text><line class="u1l03-grid" x1="120" y1="170.0" x2="1170" y2="170.0"/><text class="u1l03-ylbl" x="106" y="180.0">75%</text><line class="u1l03-grid" x1="120" y1="60.0" x2="1170" y2="60.0"/><text class="u1l03-ylbl" x="106" y="70.0">100%</text><rect class="u1l03-zone" x="927.7" y="60" width="242.3" height="440"/><text class="u1l03-zone-lbl" x="1048.8" y="100">beyond about</text><text class="u1l03-zone-lbl" x="1048.8" y="134">50,000 years:</text><text class="u1l03-zone-sm" x="1048.8" y="172">too little left</text><text class="u1l03-zone-sm" x="1048.8" y="204">to measure</text><line class="u1l03-axis" x1="120" y1="500" x2="1170" y2="500"/><line class="u1l03-axis" x1="120" y1="500" x2="120" y2="50"/><line class="u1l03-tick" x1="120.0" y1="500" x2="120.0" y2="510"/><text class="u1l03-xlbl" x="120.0" y="542">0</text><line class="u1l03-tick" x1="281.5" y1="500" x2="281.5" y2="510"/><text class="u1l03-xlbl" x="281.5" y="542">10,000</text><line class="u1l03-tick" x1="443.1" y1="500" x2="443.1" y2="510"/><text class="u1l03-xlbl" x="443.1" y="542">20,000</text><line class="u1l03-tick" x1="604.6" y1="500" x2="604.6" y2="510"/><text class="u1l03-xlbl" x="604.6" y="542">30,000</text><line class="u1l03-tick" x1="766.2" y1="500" x2="766.2" y2="510"/><text class="u1l03-xlbl" x="766.2" y="542">40,000</text><line class="u1l03-tick" x1="927.7" y1="500" x2="927.7" y2="510"/><text class="u1l03-xlbl" x="927.7" y="542">50,000</text><line class="u1l03-tick" x1="1089.2" y1="500" x2="1089.2" y2="510"/><text class="u1l03-xlbl" x="1089.2" y="542">60,000</text><text class="u1l03-axt" x="645" y="586">years since the plant or animal died</text><text class="u1l03-axt" transform="translate(38 280) rotate(-90)">carbon-14 left</text><polyline class="u1l03-curve" points="120.0,60.0 124.0,73.1 128.1,85.8 132.1,98.2 136.2,110.1 140.2,121.7 144.2,133.0 148.3,143.9 152.3,154.6 156.3,164.8 160.4,174.8 164.4,184.5 168.5,193.9 172.5,203.0 176.5,211.9 180.6,220.5 184.6,228.8 188.7,236.9 192.7,244.7 196.7,252.3 200.8,259.7 204.8,266.8 208.8,273.8 212.9,280.5 216.9,287.1 221.0,293.4 225.0,299.6 229.0,305.5 233.1,311.3 237.1,317.0 241.2,322.4 245.2,327.7 249.2,332.8 253.3,337.8 257.3,342.6 261.3,347.3 265.4,351.9 269.4,356.3 273.5,360.6 277.5,364.7 281.5,368.8 285.6,372.7 289.6,376.5 293.7,380.1 297.7,383.7 301.7,387.2 305.8,390.5 309.8,393.8 313.8,397.0 317.9,400.0 321.9,403.0 326.0,405.9 330.0,408.7 334.0,411.4 338.1,414.1 342.1,416.6 346.2,419.1 350.2,421.5 354.2,423.8 358.3,426.1 362.3,428.3 366.3,430.5 370.4,432.5 374.4,434.5 378.5,436.5 382.5,438.4 386.5,440.2 390.6,442.0 394.6,443.7 398.7,445.4 402.7,447.0 406.7,448.6 410.8,450.1 414.8,451.6 418.8,453.1 422.9,454.5 426.9,455.8 431.0,457.1 435.0,458.4 439.0,459.6 443.1,460.8 447.1,462.0 451.2,463.1 455.2,464.2 459.2,465.3 463.3,466.3 467.3,467.3 471.3,468.3 475.4,469.3 479.4,470.2 483.5,471.1 487.5,471.9 491.5,472.8 495.6,473.6 499.6,474.4 503.7,475.1 507.7,475.9 511.7,476.6 515.8,477.3 519.8,478.0 523.8,478.6 527.9,479.3 531.9,479.9 536.0,480.5 540.0,481.1 544.0,481.6 548.1,482.2 552.1,482.7 556.2,483.2 560.2,483.7 564.2,484.2 568.3,484.7 572.3,485.1 576.3,485.6 580.4,486.0 584.4,486.4 588.5,486.8 592.5,487.2 596.5,487.6 600.6,488.0 604.6,488.3 608.7,488.7 612.7,489.0 616.7,489.3 620.8,489.7 624.8,490.0 628.8,490.3 632.9,490.5 636.9,490.8 641.0,491.1 645.0,491.4 649.0,491.6 653.1,491.9 657.1,492.1 661.2,492.4 665.2,492.6 669.2,492.8 673.3,493.0 677.3,493.2 681.3,493.4 685.4,493.6 689.4,493.8 693.5,494.0 697.5,494.2 701.5,494.3 705.6,494.5 709.6,494.7 713.7,494.8 717.7,495.0 721.7,495.1 725.8,495.3 729.8,495.4 733.8,495.6 737.9,495.7 741.9,495.8 746.0,495.9 750.0,496.1 754.0,496.2 758.1,496.3 762.1,496.4 766.2,496.5 770.2,496.6 774.2,496.7 778.3,496.8 782.3,496.9 786.3,497.0 790.4,497.1 794.4,497.2 798.5,497.3 802.5,497.3 806.5,497.4 810.6,497.5 814.6,497.6 818.7,497.6 822.7,497.7 826.7,497.8 830.8,497.9 834.8,497.9 838.8,498.0 842.9,498.0 846.9,498.1 851.0,498.2 855.0,498.2 859.0,498.3 863.1,498.3 867.1,498.4 871.2,498.4 875.2,498.5 879.2,498.5 883.3,498.6 887.3,498.6 891.3,498.6 895.4,498.7 899.4,498.7 903.5,498.8 907.5,498.8 911.5,498.8 915.6,498.9 919.6,498.9 923.7,498.9 927.7,499.0 931.7,499.0 935.8,499.0 939.8,499.1 943.8,499.1 947.9,499.1 951.9,499.1 956.0,499.2 960.0,499.2 964.0,499.2 968.1,499.2 972.1,499.3 976.2,499.3 980.2,499.3 984.2,499.3 988.3,499.3 992.3,499.4 996.3,499.4 1000.4,499.4 1004.4,499.4 1008.5,499.4 1012.5,499.4 1016.5,499.5 1020.6,499.5 1024.6,499.5 1028.7,499.5 1032.7,499.5 1036.7,499.5 1040.8,499.6 1044.8,499.6 1048.8,499.6 1052.9,499.6 1056.9,499.6 1061.0,499.6 1065.0,499.6 1069.0,499.6 1073.1,499.7 1077.1,499.7 1081.2,499.7 1085.2,499.7 1089.2,499.7 1093.3,499.7 1097.3,499.7 1101.3,499.7 1105.4,499.7 1109.4,499.7 1113.5,499.7 1117.5,499.7 1121.5,499.8 1125.6,499.8 1129.6,499.8 1133.7,499.8 1137.7,499.8 1141.7,499.8 1145.8,499.8 1149.8,499.8 1153.8,499.8 1157.9,499.8 1161.9,499.8 1166.0,499.8 1170.0,499.8"/><line class="u1l03-guide" x1="212.6" y1="280.0" x2="212.6" y2="500"/><line class="u1l03-guide" x1="120" y1="280.0" x2="212.6" y2="280.0"/><circle class="u1l03-dot" cx="212.6" cy="280.0" r="8"/><text class="u1l03-mk" x="230.6" y="264.0">half left after about 5,730 years</text><line class="u1l03-guide" x1="305.1" y1="390.0" x2="305.1" y2="500"/><line class="u1l03-guide" x1="120" y1="390.0" x2="305.1" y2="390.0"/><circle class="u1l03-dot" cx="305.1" cy="390.0" r="8"/><text class="u1l03-mk" x="323.1" y="376.0">a quarter after about 11,460</text><line class="u1l03-guide" x1="397.7" y1="445.0" x2="397.7" y2="500"/><line class="u1l03-guide" x1="120" y1="445.0" x2="397.7" y2="445.0"/><circle class="u1l03-dot" cx="397.7" cy="445.0" r="8"/><text class="u1l03-mk" x="415.7" y="433.0">an eighth after about 17,190</text><circle class="u1l03-dot start" cx="120.0" cy="60.0" r="9"/><text class="u1l03-mk" x="140.0" y="68.0">dies: no new carbon-14 is taken in</text></svg><figcaption>Every living thing takes in carbon, including a little radioactive carbon-14. After death no new carbon-14 is taken in, and what is there decays at a steady rate. <span class="swipe">Swipe to see the whole graph.</span></figcaption></figure>
+      <div class="src">
+        <div class="k">A radiocarbon laboratory explains</div>
+        <p class="quote">… the radiocarbon date tells us when the organism was alive (not when the material was used).</p>
+        <p class="prov">Oxford Radiocarbon Accelerator Unit (ORAU), University of Oxford, ‘Radiocarbon Dating’ web page</p>
+      </div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Organic material only</span><span class="d">Wood, charcoal, bone, seeds. Stone, metal and pottery cannot usually be dated directly.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">It dates life, not use</span><span class="d">Charcoal from an old tree, or a beam taken from an older building, gives a date earlier than the fire or the house.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">A range, not a year</span><span class="d">For example, 95% likely to fall between 1375 and 1129 BCE (an example from the Oxford laboratory).</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">It must be calibrated</span><span class="d u1l03-thumb"><img src="images/u1l03-tree-rings-bald-cypress.jpg" alt="Close-up of many thin tree rings in a slice of wood"><span>The amount of carbon-14 in the air has changed over time, so results are checked against tree rings of known age.</span></span></li>
+    </ol>
+  </div>
+  <p class="small credline">Images: James St. John (CC BY 2.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Science and cross-checking" data-title="Science on people: Tutankhamun" data-kind="notes">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow">3 · Science and cross-checking · I do — fill in the CT scan and DNA rows of your methods matrix</p>
+  <h2>Science on people: Tutankhamun’s CT scan and DNA</h2>
+  <div class="cols c2">
+    <div class="card accent"><div class="k">CT scan · January 2005</div>
+      <ul class="body">
+        <li>A CT scanner takes X-ray ‘slices’ through a body without cutting it: about 1,900 images of the king, whose mummy had already been unwrapped and damaged by Howard Carter’s team in the 1920s.</li>
+        <li>No evidence of a blow to the back of the head, or of other foul play: a popular murder theory lost its main support.</li>
+        <li>A broken left thigh bone: part of the team thought he may have broken his leg shortly before he died; the team did not agree.</li>
+      </ul></div>
+    <div class="card accent"><div class="k">DNA study · published 2010</div>
+      <ul class="body">
+        <li>Samples from 16 royal mummies, with the work repeated in a second, separate laboratory.</li>
+        <li>A five-generation family tree: two mummies known by their tomb labels, KV55 and KV35YL, were identified as his parents (the team argued KV55 was the pharaoh Akhenaten; not everyone agrees).</li>
+        <li>Signs of malaria in four of the mummies, including his.</li>
+      </ul></div>
+  </div>
+  <div class="src">
+    <div class="k">The DNA study’s conclusion</div>
+    <p class="quote sm">These results suggest avascular bone necrosis in conjunction with the malarial infection as the most likely cause of death in Tutankhamun.</p>
+    <p class="prov">Z. Hawass and 16 co-authors, ‘Ancestry and pathology in King Tutankhamun’s family’, <i>JAMA</i> (<i>Journal of the American Medical Association</i>) 303 (2010), abstract · avascular bone necrosis: bone tissue dying because its blood supply fails</p>
+  </div>
+  <p class="qprompt reveal">Look at the words “suggest” and “most likely”. How sure were the scientists?</p>
+  <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">Fairly sure, but not certain: it is a careful conclusion, not a proven fact. Other scientists wrote to the journal to challenge parts of the study.</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Science and cross-checking" data-title="Cross-checking at Lake Mungo" data-kind="notes">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow">3 · Science and cross-checking · I do — think aloud</p>
+  <h2>Cross-checking a date and a DNA claim: Lake Mungo</h2>
+  <p class="u1l03-ack"><b>Lake Mungo is on the Country of the Paakantyi (Barkindji), Ngiyampaa and Mutthi Mutthi peoples.</b> Mungo Lady and Mungo Man, buried on the lake’s shore, are their Ancestors, and both have been returned to Country (in 1992 and 2017). Out of respect, this site shows no photographs of the Ancestral Remains or the burial places. Learn more from the <a href="https://education.nsw.gov.au/teaching-and-learning/curriculum/hsie/planning-programming-and-assessing-hsie-7-10/virtual-excursions-hsie/lake-mungo-virtual-excursion">Lake Mungo virtual excursion</a>, made with representatives of these three peoples, and from <a href="https://www.nationalparks.nsw.gov.au/conservation-programs/mungo-national-park-joint-management-program">Mungo National Park’s joint management program</a>.</p>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <p class="qprompt">How old are the burials? The early estimates were far apart.</p>
+      <ol class="u1l03-tl">
+        <li class="reveal"><span class="u1l03-yr">earlier</span><span>Radiocarbon dates placed Mungo Lady’s cremation at about 20,000–26,000 years ago.</span></li>
+        <li class="reveal"><span class="u1l03-yr">1999</span><span>Three methods, two on Mungo Man’s remains and one on the sand around them, agreed on about 62,000 years.</span></li>
+        <li class="reveal"><span class="u1l03-yr">2003</span><span>25 luminescence dates on the layers of the lakeside dune placed both burials at about 40,000 years ago (± 2,000), correcting the earlier estimates.</span></li>
+      </ol>
+      <div class="u1l03-layers reveal" role="list" aria-label="Three separately dated deposits">
+        <span class="a" role="listitem">layer over the grave · dated: must be younger than the burial</span>
+        <span class="g" role="listitem">sand that filled Mungo Man’s grave · dated directly (2006)</span>
+        <span class="b" role="listitem">sand the grave was dug into · dated: must be older than the burial</span>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="note reveal u1l03-dna" data-code="counter"><div class="k">A DNA claim tested</div><p class="body">In 2001 a team reported ancient DNA from Mungo Man that seemed to challenge the ‘Out of Africa’ model of human origins. In 2016 another team tested the same remains with newer methods and reported:</p>
+        <p class="quote sm">… the Mungo Man (WLH3) sample contained no Aboriginal Australian DNA.</p>
+        <p class="body">They found only modern European DNA: contamination. None of his own DNA was found in the sample, so the 2001 result could not be repeated.</p></div>
+      <div class="note reveal" data-code="judgement"><div class="k">Why cross-check?</div><p class="body">Every method has weak points: uranium can seep in and out of bone, and modern DNA can contaminate a sample. A result is trusted when independent checks agree with each other and with the order of the layers.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Science and cross-checking" data-title="Notes 1 — Survey, dating and cross-checking" data-kind="notes">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>Survey, dating and cross-checking</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U1 L3 · Surveying, dating and science</b></span><span>1 – 3 · Survey, dating, cross-checking</span></div>
+    <div class="row"><div class="cq">Compare magnetometry, GPR and LiDAR.</div>
+      <div class="nts reveal"><b>magnetometry</b> = magnetic changes (ditches, pits, burning), big areas fast <span class="sep">·</span> <b>GPR</b> = radar echoes + depth, detail, smaller area <span class="sep">·</span> <b>LiDAR</b> = laser, surface shape, even under trees → none can date; must be tested (Durrington 2016: ‘stones’ = post holes)</div></div>
+    <div class="row"><div class="cq">Distinguish relative and absolute dating.</div>
+      <div class="nts reveal"><b>relative</b> = order (stratigraphy, typology) <span class="sep">·</span> <b>absolute</b> = years, as a range (radiocarbon, tree rings, thermoluminescence)</div></div>
+    <div class="row"><div class="cq">Explain two limitations of radiocarbon dating.</div>
+      <div class="nts reveal">organic only (not stone, metal, pottery) <span class="sep">·</span> dates when it was alive, not when used <span class="sep">·</span> a range, calibrated with tree rings <span class="sep">·</span> back to c. 50,000 years</div></div>
+    <div class="row"><div class="cq">Explain why the Lake Mungo dates were cross-checked.</div>
+      <div class="nts reveal">early estimates far apart (Mungo Lady c. 20–26,000 by radiocarbon; Mungo Man c. 30,000 to c. 62,000) → grave fill + sand it was dug into + layers over it dated separately and agreed → both c. 40,000 years <span class="sep">·</span> 2001 DNA claim could not be repeated (2016: contamination)</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · When methods mislead" data-title="We do: the tomb scans" data-kind="notes">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow">4 · When methods mislead · We do — read the summary together</p>
+  <h2>Is there a hidden chamber in Tutankhamun’s tomb?</h2>
+  <div class="split" style="--cols:.8fr 1.2fr">
+    <div class="stack">
+      <figure class="figure contain"><img src="images/u1l03-tutankhamun-burial-chamber-north-wall.jpg" alt="The painted north wall of the burial chamber in Tutankhamun’s tomb (KV62), Valley of the Kings, Egypt" loading="lazy"><figcaption>The painted north wall of the burial chamber in Tutankhamun’s tomb (KV62), Valley of the Kings, Egypt — <span class="cr">Photo: ولاء (Wiki Loves Monuments 2025) · CC BY-SA 4.0</span></figcaption></figure>
+      <p class="qprompt reveal">Does ‘not supported by the GPR data’ mean the radar proved there is nothing there?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Think first — then show the answer"><p class="body">Not quite. The radar found no evidence of doors or empty spaces up to about 4 metres beyond the walls: strong evidence against the claim, but not proof that nothing exists anywhere.</p></div>
+    </div>
+    <div class="src">
+      <div class="k">Summary · the hidden-chamber scans, 2015–2020</div>
+      <ol class="u1l03-tl">
+        <li><span class="u1l03-yr">2015</span><span>Egyptologist Nicholas Reeves argues that straight lines and cracks in the painted walls of the burial chamber mark hidden doorways, perhaps to the lost tomb of Queen Nefertiti.</span></li>
+        <li><span class="u1l03-yr">2015</span><span>A radar scan by Hirokatsu Watanabe is announced as evidence for hidden doorways in the north and west walls.</span></li>
+        <li><span class="u1l03-yr">2016</span><span>A second radar scan, by National Geographic engineers, does not find the same results.</span></li>
+        <li><span class="u1l03-yr">2018</span><span>Three independent teams scan with radar, each at a different frequency. Their report ends:</span></li>
+      </ol>
+      <p class="quote sm">We conclude, with a very high level of confidence, that the hypothesis concerning the existence of hidden chambers adjacent <span class="ed">[to]</span> Tutankhamun’s tomb is not supported by the GPR data.</p>
+      <ol class="u1l03-tl"><li class="u1l03-open"><span class="u1l03-yr">2020</span><span>A team led by Mamdouh Eldamaty describes, in an unpublished report, a possible corridor-like space a few metres east of the burial chamber, found by radar from outside the tomb. In 2020 it had not been tested by digging.</span></li></ol>
+      <p class="prov">Summary written for this lesson from <i>National Geographic</i> (6 May 2018, quoting the 2018 report) and <i>Nature</i> (27 February 2020)</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · When methods mislead" data-title="We do: claim, evidence, later test" data-kind="notes">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow">4 · When methods mislead · We do — build the chain together · cold call</p>
+  <h2>Claim → evidence → later test</h2>
+  <div class="u1l03-chain veil-parts" data-veil="Build the chain first — then show the model">
+    <div class="card quiet"><div class="k">1 · Claim</div><p class="body">What was claimed, and by whom?</p><p class="u1l03-model vp reveal">Hidden doorways in the burial-chamber walls lead to more rooms, perhaps Nefertiti’s tomb (Reeves, 2015).</p></div>
+    <span class="u1l03-arrow" aria-hidden="true">→</span>
+    <div class="card quiet"><div class="k">2 · Evidence</div><p class="body">What was the claim based on?</p><p class="u1l03-model vp reveal">Lines and cracks in the wall paintings, then the echoes in the first radar scan (2015).</p></div>
+    <span class="u1l03-arrow" aria-hidden="true">→</span>
+    <div class="card quiet"><div class="k">3 · Later test</div><p class="body">What happened when it was tested again?</p><p class="u1l03-model vp reveal">The 2016 scan did not find the same results. Three teams in 2018 found no evidence of doors or empty spaces up to 4 metres beyond the burial chamber.</p></div>
+  </div>
+  <div class="cols c2">
+    <div class="stack">
+      <p class="qprompt reveal">So what can we conclude?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Decide first — then show a model judgement"><p class="body">Most of the evidence does not support a hidden chamber behind the walls, but the debate is not closed: a 2020 survey outside the tomb reported a possible space that had not been tested by digging.</p></div>
+    </div>
+    <div class="stack">
+      <p class="qprompt reveal">How can a new method mislead as well as reveal?</p>
+      <div class="note reveal" data-code="counter" data-veil="Discuss first — then show a model answer"><p class="body">Radar records echoes; people decide what they mean. The 2018 team suspected ‘ghost signals’: radar waves travelling along the painted plaster walls, and reflections from the stone sarcophagus. So results must be repeated by other teams, and tested by digging where possible.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · When methods mislead" data-title="Notes 2 — Science on people and when methods mislead" data-kind="notes">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>Science on people, and when methods mislead</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U1 L3 · Surveying, dating and science</b></span><span>3 – 4 · Science on people, misleading methods</span></div>
+    <div class="row"><div class="cq">Explain what CT scanning and DNA added to the study of Tutankhamun.</div>
+      <div class="nts reveal"><b>CT 2005</b>: no evidence of a blow to the head <span class="sep">·</span> broken left thigh (team disagreed) <span class="sep">·</span> <b>DNA 2010</b>: parents identified (KV55, KV35YL) <span class="sep">·</span> malaria → “most likely” cause with bone disease, still debated</div></div>
+    <div class="row"><div class="cq">Explain one limitation of DNA analysis.</div>
+      <div class="nts reveal">ancient DNA breaks down, and modern DNA contaminates samples (Mungo Man: 2001 claim → 2016 re-test found none of his own DNA, only modern European contamination) <span class="sep">·</span> these are real people: permission matters</div></div>
+    <div class="row"><div class="cq">Analyse how the Tutankhamun tomb scans show contestability.</div>
+      <div class="nts reveal">claim (2015, cracks in paintings) → radar 1 yes (2015) → radar 2 no (2016) → 3 teams no (2018) → 2020 possible space, untested → interpretations change with new evidence</div></div>
+    <div class="row"><div class="cq">Assess whether a scan can prove what lies underground.</div>
+      <div class="nts reveal">no: echoes must be interpreted (‘ghost signals’) → repeat scans + digging test them (Durrington 2016)</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="5 · Which method?" data-title="You do: which method?">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow">5 · Which method? · You do · 12 minutes · press K for the timer</p>
+  <h2>Which method? Six practice cases</h2>
+  <p class="u1l03-steps"><span><b>1</b>Choose a method</span><span><b>2</b>Justify it: why this method for this material?</span><span><b>3</b>Name one limitation</span></p>
+  <div class="u1l03-cases">
+    <div class="u1l03-case"><span class="l">A</span><b>A charcoal hearth</b>the remains of a fire on the floor of a hut</div>
+    <div class="u1l03-case"><span class="l">B</span><b>A wooden roof beam</b>an oak beam in the roof of an old hall</div>
+    <div class="u1l03-case"><span class="l">C</span><b>A pottery kiln</b>a clay oven where pots were fired</div>
+    <div class="u1l03-case"><span class="l">D</span><b>An unexcavated field</b>a farmer keeps finding broken pottery in the ploughed soil</div>
+    <div class="u1l03-case"><span class="l">E</span><b>A skeleton’s family links</b>was this person related to the others buried nearby?</div>
+    <div class="u1l03-case"><span class="l">F</span><b>A coin hoard</b>a pot of silver coins buried under a floor</div>
+  </div>
+  <div class="cols c3">
+    <div class="card quiet sm"><div class="k">Use your matrix</div><p class="body">magnetometry · radar · LiDAR · stratigraphy · typology · radiocarbon · dendrochronology · thermoluminescence · CT scan · DNA</p></div>
+    <div class="card quiet sm reveal" data-veil="Need support? Show two choices for each case"><div class="k">Support: choose one of two</div><p class="body">A radiocarbon or typology · B dendrochronology or stratigraphy · C thermoluminescence or radiocarbon · D radar or radiocarbon · E DNA or typology · F the coins’ own dates or radiocarbon</p></div>
+    <div class="card quiet sm"><div class="k">Extension</div><p class="body">Find out why radiocarbon dates must be calibrated and given as ranges. What does that mean for how sure we can be about a date?</p></div>
+  </div>
+  <p class="small">These are made-up cases for practice.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="5 · Which method?" data-title="You do: your question and your sentence">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow">5 · Which method? · You do · 5 minutes</p>
+  <h2>Your own inquiry question, and one sentence</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">4 · Frame your own inquiry question</div><p class="body">Write one open question (how? why? in what ways? to what extent?) about a site or a find, and name the method that would help answer it.</p></div>
+      <div class="note reveal" data-code="evidence" data-veil="Write yours first — then show examples"><div class="k">Examples</div><p class="body">How was the landscape around Stonehenge used while the monument was being built? → magnetometry and radar to map buried monuments, then excavation and radiocarbon to date them · How were the royal mummies of Tutankhamun’s time related to each other? → DNA analysis</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">5 · Write it: one of the six cases</div><p class="body nq">“X is the most suitable method because …; however, it cannot …”</p></div>
+      <div class="src reveal" data-veil="Write yours first — then show a model sentence"><div class="k">A model · written for this lesson · case A</div>
+        <p class="quote sm model">Radiocarbon dating is the most suitable method for the charcoal from the hearth because charcoal was once part of a living tree; however, it cannot tell us exactly when the fire was lit, because it dates when the wood grew and gives a range of years.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="5 · Which method?" data-title="Check: the six cases" data-kind="notes">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow">5 · Which method? · check your cases · cold call before each row</p>
+  <h2>Check your cases: best method, why, and one limitation</h2>
+  <div class="tbl-scroll" data-veil="Try the cases first — then show the answers"><table class="tbl compact u1l03-key">
+    <tr><th>Case</th><th>Best method</th><th>Why</th><th>One limitation</th></tr>
+    <tr class="reveal"><td>A · charcoal hearth</td><td>radiocarbon</td><td>charcoal was once part of a living tree</td><td>dates when the wood grew, not the fire; a range of years</td></tr>
+    <tr class="reveal"><td>B · roof beam</td><td>dendrochronology (radiocarbon also works)</td><td>its rings can be matched to a dated ring sequence</td><td>needs enough rings, and the last ring for the felling year; the beam may be reused</td></tr>
+    <tr class="reveal"><td>C · pottery kiln</td><td>thermoluminescence</td><td>it dates when fired clay was last heated</td><td>error usually 5–10% of the age; it dates the last firing, not the first</td></tr>
+    <tr class="reveal"><td>D · unexcavated field</td><td>magnetometry, then radar (LiDAR for banks or mounds)</td><td>finds buried features without digging</td><td>shows patterns, not what they are or when; must be tested by digging</td></tr>
+    <tr class="reveal"><td>E · family links</td><td>DNA analysis</td><td>DNA can show biological family links directly</td><td>ancient DNA breaks down and is easily contaminated; testing real people needs permission</td></tr>
+    <tr class="reveal"><td>F · coin hoard</td><td>the coins’ own dates and designs (typology)</td><td>the newest coin gives the earliest date the hoard could have been buried</td><td>only a ‘date after which’; radiocarbon cannot date metal</td></tr>
+  </table></div>
+</div>
+</section>
+
+<section class="slide" data-sec="5 · Which method?" data-title="Check: gesture vote" data-kind="notes">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow">Check · gesture vote · thumbs up = true · down = false · sideways = not sure</p>
+  <h2>True or false? Vote, then justify</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="u1l03-claim"><span class="u1l03-cn">1</span><p class="lead nq">“Radiocarbon can date a bronze sword.”</p></div>
+      <div class="note reveal" data-code="judgement" data-veil="Vote first — then show the answer"><div class="k">False</div><p class="body">Bronze was never alive. As Oxford’s radiocarbon laboratory puts it, “… stone, metal and pottery cannot usually be directly dated by this means unless there is some organic material embedded or left as a residue.” A wooden handle, or charcoal in the same layer, could be dated instead.</p></div>
+    </div>
+    <div class="stack">
+      <div class="u1l03-claim"><span class="u1l03-cn">2</span><p class="lead nq">“Radar proves what lies underground.”</p></div>
+      <div class="note reveal" data-code="judgement" data-veil="Vote first — then show the answer"><div class="k">False</div><p class="body">Radar records echoes, and people interpret them. At Durrington Walls the radar ‘stones’ turned out to be post holes when two were dug; in Tutankhamun’s tomb the 2015 ‘doorways’ were not found again. Radar shows where to look; repeat scans and digging test it.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="5 · Which method?" data-title="Summary" data-kind="notes">
+<div class="wrap u1l03-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>How can archaeologists find buried sites without digging?</li>
+          <li>How do relative and absolute dating differ, and what limits them?</li>
+          <li>Why must scientific results be tested and cross-checked?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Archaeologists can find buried features without digging by using magnetometry, ground-penetrating radar and LiDAR, but these show only patterns that must be interpreted and then tested. Relative dating such as stratigraphy puts layers and finds in order, while absolute methods such as radiocarbon, dendrochronology and thermoluminescence give dates in years, each only for the right material and usually as a range. Because every method has limits, results must be cross-checked: at Lake Mungo independent dates agreed on about 40,000 years and a DNA claim could not be repeated, and in Tutankhamun’s tomb later scans did not support a hidden chamber.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Magnetometry, radar and LiDAR</label></li>
+        <li><label><input type="checkbox"> Relative and absolute dating</label></li>
+        <li><label><input type="checkbox"> Radiocarbon’s limits</label></li>
+        <li><label><input type="checkbox"> Tutankhamun: CT scan and DNA</label></li>
+        <li><label><input type="checkbox"> Cross-checking at Lake Mungo</label></li>
+        <li><label><input type="checkbox"> The tomb scans: claim → evidence → later test</label></li>
+        <li><label><input type="checkbox"> Six cases + your inquiry question</label></li>
+        <li><label><input type="checkbox"> One sentence: most suitable because …; however …</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 4 minutes · before you leave</p>
+  <h2>One sentence</h2>
+  <div class="card accent"><div class="k">Finish it</div><p class="lead nq">“The best method for dating a wooden beam is … because …”</p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">a method that suits wood (dendrochronology is best; radiocarbon also works but gives a wider range) · a reason tied to the material: its tree rings can be matched to a dated ring sequence · and, for a stronger answer, a limitation: too few rings, a missing last ring, or a reused beam.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> what ancient texts and inscriptions can and cannot tell us.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u1l03-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Radiocarbon dating can date a pottery bowl directly.</span>
+      <span class="sol no reveal">False <span class="why">— pottery was never alive. Date organic residue in it, or use thermoluminescence to date its firing.</span></span></li>
+    <li><span class="n">2</span><span>Dendrochronology can give the exact year a tree was felled.</span>
+      <span class="sol reveal">True <span class="why">— if the last ring (at the bark edge) survives and the ring pattern matches a dated sequence for that region.</span></span></li>
+    <li><span class="n">3</span><span>Stratigraphy tells us the age of a layer in years.</span>
+      <span class="sol no reveal">False <span class="why">— it gives the order of the layers (relative dating), not years.</span></span></li>
+    <li><span class="n">4</span><span>A radar survey proves what lies underground.</span>
+      <span class="sol no reveal">False <span class="why">— it records echoes that people interpret; digging at Durrington Walls showed radar ‘stones’ were post holes.</span></span></li>
+    <li><span class="n">5</span><span>If three dating methods agree, the date must be right.</span>
+      <span class="sol no reveal">False <span class="why">— at Lake Mungo three methods agreed on about 62,000 years for Mungo Man (1999), but later dating of the layers corrected this to about 40,000.</span></span></li>
+    <li><span class="n">6</span><span>Thermoluminescence dates when pottery was last heated.</span>
+      <span class="sol reveal">True <span class="why">— heating resets its ‘clock’, so it dates the last firing (or any later fire).</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — justify a method" data-kind="practice">
+<div class="wrap prac u1l03-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Write it as a historian</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · A second case</div><p class="body nq">You wrote one in class. Now write one for case C, the pottery kiln: “X is the most suitable method because …; however, it cannot …”</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Thermoluminescence is the most suitable method for the kiln because it dates when fired clay was last heated; however, it cannot give an exact year, because its results usually carry an error of 5 to 10 per cent of the age.</p></div>
+      <div class="card accent"><div class="k">2 · Contestability</div><p class="body">Explain how the Tutankhamun tomb scans show that interpretations of the past can change with new evidence.</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">In 2015 a radar scan seemed to support the claim that hidden doorways lay behind the painted walls of Tutankhamun’s burial chamber. When the scan was repeated in 2016, and again by three teams in 2018, the results were not found, so the claim lost its main support. A 2020 survey outside the tomb has reopened the question, which shows that interpretations stay open to new evidence.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Why must radiocarbon dates be calibrated and given as ranges? Explain what that means for how confident we can be about a date.</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">The amount of carbon-14 in the atmosphere has not always been the same, so a raw radiocarbon result is not a calendar date. Scientists calibrate it by comparing it with tree rings and other records of known age. Because both the sample and the tree rings are measured with some uncertainty, and the record goes up and down over time, the answer is a range of years, sometimes more than one. A result given as a 95% chance of falling between 1375 and 1129 BCE tells us the event almost certainly lies in that range, but not exactly when.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u1l03-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Name three survey methods and what each detects.
+      <span class="sol reveal">Magnetometry: magnetic changes from ditches, pits and burning · ground-penetrating radar: echoes from buried features, with their depth · LiDAR: the shape of the ground surface, even under trees.</span></li>
+    <li>What is the difference between relative and absolute dating?
+      <span class="sol reveal">Relative dating puts things in order (stratigraphy, typology); absolute dating gives a date in years, usually as a range (radiocarbon, dendrochronology, thermoluminescence).</span></li>
+    <li>Give two limitations of radiocarbon dating.
+      <span class="sol reveal">Any two: organic material only · it dates when the organism was alive, not when the material was used · it gives a range that must be calibrated · it reaches back only about 50,000 years.</span></li>
+    <li>What did the 2005 CT scan and the 2010 DNA study add to what we know about Tutankhamun?
+      <span class="sol reveal">No evidence of a blow to the head; a broken left thigh bone; his parents identified among the royal mummies; signs of malaria, suggested with bone disease as the most likely cause of death (still debated).</span></li>
+    <li>Why were the Lake Mungo dates cross-checked, and what was the result?
+      <span class="sol reveal">Early estimates were far apart: radiocarbon put Mungo Lady at about 20,000–26,000 years, and estimates for Mungo Man ranged from about 30,000 to about 62,000 years. Dating the grave fill, the sand the grave was dug into and the layers over it gave agreeing results: both burials about 40,000 years. The 2001 DNA claim could not be repeated in 2016.</span></li>
+    <li>Can a radar scan prove what lies underground? Explain.
+      <span class="sol reveal">No. It records echoes that people interpret; results must be repeated and tested by digging (Durrington Walls, Tutankhamun’s tomb).</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u1l03-dense u1l03-credits">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="card quiet u1l03-cite"><div class="k">Written sources</div>
+      <p class="small">Oxford Radiocarbon Accelerator Unit, University of Oxford, <a href="https://c14.arch.ox.ac.uk/dating.html">‘Radiocarbon Dating’</a> and <a href="https://c14.arch.ox.ac.uk/calibration.html">‘Radiocarbon Calibration’</a> (© University of Oxford; quoted briefly).</p>
+      <p class="small">Kristin Romey, <a href="https://www.nationalgeographic.com/science/article/king-tut-tutankhamun-tomb-radar-results-science">‘It’s Official: Tut’s Tomb Has No Hidden Chambers After All’</a>, <i>National Geographic</i>, 6 May 2018, quoting the 2018 radar report (© National Geographic; quoted briefly). Jo Marchant, ‘Is this Nefertiti’s tomb? Radar clues reignite debate over hidden chambers’, <i>Nature</i> 578 (2020): 497–498.</p>
+      <p class="small">Z. Hawass et al., ‘Ancestry and pathology in King Tutankhamun’s family’, <i>JAMA</i> 303 (2010): 638–647, <a href="https://pubmed.ncbi.nlm.nih.gov/20159872/">abstract</a> (© American Medical Association; quoted briefly). CT scan: Associated Press, 8 March 2005; <i>National Geographic</i>, 1 December 2006.</p>
+      <p class="small">Lake Mungo: J. M. Bowler et al., <i>Nature</i> 421 (2003): 837–840 (<a href="https://pubmed.ncbi.nlm.nih.gov/12594511/">abstract</a>); A. Thorne et al., <i>Journal of Human Evolution</i> 36 (1999): 591–612; G. J. Adcock et al., <i>PNAS</i> 98 (2001): 537–542; T. H. Heupink et al., <i>PNAS</i> 113 (2016): 6892–6897 (<a href="https://pubmed.ncbi.nlm.nih.gov/27274055/">abstract</a>; © the authors; quoted briefly); J. M. Olley et al., <i>Quaternary Science Reviews</i> 25 (2006): 2469–2474; T. Pietsch et al., <i>Journal of Quaternary Science</i> 34 (2019): 662–673.</p>
+      <p class="small">Survey: University of Birmingham news (10 September 2014; 7 September 2015); Chris Gaffney, <i>The Conversation</i> (15 September 2014); <i>Current Archaeology</i> 320 (2016); M. Bewley et al., <i>Antiquity</i> 79 (2005). Dating: G. Duller, <i>Luminescence Dating</i> (English Heritage, 2008); Oxford Tree-Ring Laboratory (Baltimore, USA), ‘Sampling procedures’ (page now offline; archived copy, 13 September 2024).</p>
+      <p class="small">Teacher resources (class notebook): <i>Lake Mungo and Australia’s Ancient Past</i>; <i>Introduction to Archaeology</i>. Lake Mungo information shared with Community: NSW Department of Education, Lake Mungo virtual excursion; NSW National Parks and Wildlife Service, Mungo National Park.</p>
+</div>
+    <div class="stack">
+      <div class="card quiet u1l03-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>Stonehenge from a tethered balloon, 1906</b> · Photo: P. H. Sharpe, Royal Engineers (1906) · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:Stonehenge_from_the_air_-_Philip_Henry_Sharpe_(Royal_Engineers)_-_1906.jpg">source</a></li><li><b>Magnetometer survey, Montana, USA</b> · Photo: Tapatio · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Mag_survey_g858grad.JPG">source</a></li><li><b>Ground-penetrating radar map, Velm, Austria</b> · LBI ArchPro · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Bodenradar_LBI-ArchPro.jpg">source</a></li><li><b>Lidar view of the prehistoric field system west of Stonehenge</b> · Image: Dr John Wells, from Environment Agency lidar (lidarmap.uk; contains public sector information licensed under the Open Government Licence v3.0) · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:The_prehistoric_field_system_west_of_Stonehenge.jpg">source</a></li><li><b>Tree rings in a slice of bald cypress</b> · Photo: James St. John · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Tree_rings_in_Taxodium_distichum_wood_(bald_cypress)_1_(24518408267).jpg">source</a></li><li><b>North wall of Tutankhamun’s burial chamber (KV62)</b> · Photo: ولاء (Wiki Loves Monuments 2025) · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:KV62,_Egypt_01.jpg">source</a></li></ul>
+        <p class="small">All images are public domain or openly licensed, and were resized for the web (the magnetometer and tree-ring photos were also cropped). Each is shared under the licence shown. No photographs of Aboriginal Ancestral Remains, burials or sites are used.</p>
+        <p class="small"><b>Diagram:</b> the radiocarbon graph was drawn for this lesson, to scale, from the half-life given by the Oxford Radiocarbon Accelerator Unit (5,730 years).</p>
+        <p class="small"><b>Syllabus:</b> Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

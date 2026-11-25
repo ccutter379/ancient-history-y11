@@ -1,0 +1,1778 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U1 L7 · Reconstructing the Past: Beliefs, Gaps and Provenance</title>
+<meta name="description" content="Year 11 Ancient History, the investigation of ancient sites and sources: why reconstructions are interpretations, what survives and what is lost, and why an object without a record of where it was found loses its value as evidence.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#1D4E89; --bright:#2E6FBF; --tint:#E7EEF8; --statement:#1D4E89;
+  --solid:#1D4E89; --soft:#D3E2F6; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#A9C8F2; --bright:#5E9BE6; --tint:#142538; --statement:#173C66; --soft:#D3E2F6; } }
+:root[data-theme="dark"]{ --deep:#A9C8F2; --bright:#5E9BE6; --tint:#142538; --statement:#173C66; --soft:#D3E2F6; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 1 Lesson 7 only (every class starts u1l07-) */
+
+/* title picture */
+.u1l07-cover img{max-height:56vh;}
+
+/* quick facts list */
+.u1l07-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.25em;
+  font-size:calc(var(--fs-body)*.88); line-height:1.35;}
+.u1l07-facts b{color:var(--deep);}
+
+/* two photos side by side (then and now) */
+.u1l07-pair{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(8px,1vw,14px);}
+.u1l07-pair .figure img{height:30vh; max-height:none; object-fit:cover;}
+.u1l07-pair .figure figcaption{font-size:calc(var(--fs-chrome)*.9);}
+
+/* the 'Priest-King' panel: tall and narrow */
+.u1l07-pk .figure img{max-height:66vh; width:auto; max-width:100%; margin:0 auto;}
+.u1l07-pk .figure figcaption{font-size:calc(var(--fs-chrome)*.9);}
+.u1l07-wc .figure img{max-height:44vh; width:100%; object-fit:contain; background:var(--surface);}
+.u1l07-s8 > *, .u1l07-wc, .u1l07-wc .figure{min-width:0;}
+.u1l07-wc .figure figcaption .cr, .u1l07-pair .figure figcaption .cr, .u1l07-pk .figure figcaption .cr{white-space:normal;}
+.u1l07-wc .figure figcaption{font-size:calc(var(--fs-chrome)*.88);}
+
+/* think-aloud rows: a question, then the model (a step) */
+.u1l07-q{display:grid; grid-template-columns:2.1em 1fr; gap:.6em; align-items:start;}
+.u1l07-qn{display:grid; place-items:center; min-height:1.9em; border-radius:8px; background:var(--solid); color:#fff;
+  font-weight:700; font-family:var(--mono); font-size:calc(var(--fs-body)*.9);}
+.u1l07-q .qprompt::before{content:none;}
+.u1l07-model{margin-top:.3em; padding:.35em .8em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 8px 8px 0; font-size:calc(var(--fs-body)*.86); line-height:1.4;}
+.u1l07-model.interp{border-left-color:var(--c-counter); background:var(--w-counter);}
+
+/* timeline of interpretations */
+.u1l07-time{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.u1l07-time li{display:grid; grid-template-columns:6.2em 1fr; gap:.7em; align-items:start;
+  font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.u1l07-time .when{font-family:var(--mono); font-weight:700; color:var(--deep); text-align:right;}
+
+/* the mystery-room plan (colours from the page, so it follows the theme) */
+.u1l07-room text{font-family:var(--ui); fill:var(--ink);}
+.u1l07-room .u1l07-bg{fill:var(--surface); stroke:var(--rule); stroke-width:2;}
+.u1l07-room .u1l07-floor{fill:var(--surface-2);}
+.u1l07-room .u1l07-wall{fill:var(--slate);}
+.u1l07-room .u1l07-bench{fill:var(--w-keyterm); stroke:var(--c-keyterm); stroke-width:4;}
+.u1l07-room .u1l07-fig{fill:var(--c-scope); stroke:var(--surface); stroke-width:3;}
+.u1l07-room .u1l07-hearth{fill:var(--w-judgement); stroke:var(--c-judgement); stroke-width:5;}
+.u1l07-room .u1l07-ash{fill:var(--c-judgement); opacity:.55;}
+.u1l07-room .u1l07-jar{fill:var(--w-counter); stroke:var(--c-counter); stroke-width:5;}
+.u1l07-room .u1l07-jarmouth{fill:var(--surface); stroke:var(--c-counter); stroke-width:3;}
+.u1l07-room .u1l07-lead{stroke:var(--slate); stroke-width:3;}
+.u1l07-room .u1l07-north{fill:var(--deep);}
+.u1l07-room .u1l07-scale{fill:var(--ink);} .u1l07-room .u1l07-scale.alt{fill:var(--surface); stroke:var(--ink); stroke-width:2;}
+.u1l07-room .u1l07-lbl{font-size:34px; font-weight:700; text-anchor:middle; paint-order:stroke; stroke:var(--surface);
+  stroke-width:7px; stroke-linejoin:round;}
+.u1l07-room .u1l07-sm{font-size:28px; fill:var(--slate); text-anchor:middle;}
+.u1l07-room .u1l07-note{font-size:28px; fill:var(--slate); font-style:italic; text-anchor:end;}
+.u1l07-roomfig svg{max-height:64vh;}
+.u1l07-finds{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.3em;
+  font-size:calc(var(--fs-body)*.86); line-height:1.35;}
+.u1l07-finds .sw{display:inline-block; width:.85em; height:.85em; border-radius:50%; margin-right:.45em; vertical-align:-.05em;}
+.u1l07-finds .h{background:var(--c-judgement);} .u1l07-finds .b{background:var(--c-keyterm); border-radius:2px;}
+.u1l07-finds .f{background:var(--c-scope);} .u1l07-finds .j{background:var(--c-counter);}
+
+/* survival sort: ten cards, five across */
+.u1l07-cards{display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:clamp(8px,1vw,14px);}
+.u1l07-card{position:relative; margin:0; background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;}
+.u1l07-card img{display:block; width:100%; height:13vh; object-fit:cover; background:var(--surface-2);}
+.u1l07-card .l{position:absolute; top:6px; left:6px; width:1.6em; height:1.6em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:calc(var(--fs-body)*.72);
+  box-shadow:0 0 0 2px #fff;}
+.u1l07-card figcaption{padding:.4em .6em .55em; font-size:calc(var(--fs-body)*.68); line-height:1.3;}
+.u1l07-card figcaption b{display:block; font-size:1.08em; color:var(--deep);}
+.u1l07-card .u1l07-txt{height:13vh; padding:.5em .7em .5em 2.6em; background:var(--tint); display:flex; align-items:center;
+  font-family:var(--serif); font-style:italic; font-size:calc(var(--fs-body)*.78); line-height:1.3; color:var(--ink);}
+.u1l07-howto{display:flex; flex-wrap:wrap; gap:.4em 1.4em; font-size:calc(var(--fs-body)*.82);}
+.u1l07-howto b{display:inline-grid; place-items:center; width:1.5em; height:1.5em; border-radius:50%; background:var(--solid);
+  color:#fff; font-size:.85em; margin-right:.3em;}
+
+/* answer tables */
+.u1l07-key td:first-child{font-weight:700; white-space:nowrap;}
+.u1l07-key td.u1l07-pile{white-space:nowrap; font-weight:700;}
+.u1l07-key .s{color:var(--c-evidence);} .u1l07-key .x{color:var(--c-judgement);} .u1l07-key .d{color:var(--c-counter);}
+
+/* hinge options (Read mode: the right option is marked only when the reader opens the answer) */
+.u1l07-hinge li{font-size:calc(var(--fs-body)*.9); line-height:1.36;}
+
+/* a respectful content note */
+.u1l07-care{border-left:6px solid var(--slate); background:var(--surface-2); border-radius:0 8px 8px 0;
+  padding:.5em .9em; font-size:calc(var(--fs-body)*.8); line-height:1.4;}
+.u1l07-care b{color:var(--ink);}
+
+/* credits: written sources in two columns */
+.u1l07-cols2{columns:2 24em; column-gap:2em;}
+.u1l07-cols2 p{break-inside:avoid; margin:0 0 .35em;}
+
+/* credits line under a slide of uncaptioned pictures; syllabus line on the goals slide */
+.u1l07-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u1l07-cite a{color:var(--deep);}
+
+/* phones (Read mode): fewer columns, natural picture heights */
+@media (max-width:900px){
+  .u1l07-cards{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .u1l07-card img, .u1l07-card .u1l07-txt{height:auto; aspect-ratio:4/3;}
+  .u1l07-card .u1l07-txt{aspect-ratio:auto; min-height:7em;}
+  .u1l07-pair{grid-template-columns:1fr;}
+  .u1l07-pair .figure img{height:auto; max-height:40vh;}
+  .u1l07-pk .figure img{max-height:70vh;}
+  .u1l07-time li{grid-template-columns:4.6em 1fr;}
+}
+@media (max-width:340px){
+  .u1l07-cards{grid-template-columns:1fr;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u1l07-dense{gap:10px;}
+  html:not(.read) .u1l07-dense h2{font-size:calc(var(--fs-h2)*.86);}
+  html:not(.read) .u1l07-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.4;}
+  html:not(.read) .u1l07-dense .quote{font-size:calc(var(--fs-body)*.86);}
+  html:not(.read) .u1l07-dense .src{padding:10px 16px;}
+  html:not(.read) .u1l07-dense .src .prov{margin-top:.4em;}
+  html:not(.read) .u1l07-dense .note{padding:.45em .85em;}
+  html:not(.read) .u1l07-dense .note .body, html:not(.read) .u1l07-dense .card .body,
+  html:not(.read) .u1l07-dense .qprompt{font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+  html:not(.read) .u1l07-dense .card{padding:10px 16px;}
+  html:not(.read) .u1l07-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l07-dense .tbl.compact td{padding:.32em .55em;}
+  html:not(.read) .u1l07-dense .tbl th{padding:.4em .6em;}
+  html:not(.read) .u1l07-dense .figure img{max-height:30vh;}
+  html:not(.read) .u1l07-dense .u1l07-model{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u1l07-dense .mq{font-size:calc(var(--fs-body)*.78); line-height:1.35;}
+  html:not(.read) .u1l07-dense .u1l07-facts{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u1l07-dense .u1l07-time li{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u1l07-dense .u1l07-finds{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u1l07-dense .u1l07-care{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u1l07-dense .tf li, html:not(.read) .u1l07-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u1l07-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u1l07-dense .prac{gap:6px;}
+  html:not(.read) .u1l07-dense .cornell .cq, html:not(.read) .u1l07-dense .cornell .nts{font-size:calc(var(--fs-body)*.76); padding:.35em .8em;}
+  html:not(.read) .u1l07-dense .u1l07-hinge li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u1l07-dense .u1l07-pk .figure img{max-height:62vh;}
+  html:not(.read) .u1l07-dense .u1l07-pair .figure img{height:25vh;}
+  html:not(.read) .u1l07-dense .u1l07-card img, html:not(.read) .u1l07-dense .u1l07-card .u1l07-txt{height:11vh;}
+  html:not(.read) .u1l07-dense .u1l07-roomfig svg{max-height:60vh;}
+  html:not(.read) .u1l07-dense .u1l07-wc .figure img{max-height:38vh;}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 7" data-title="Reconstructing the past: beliefs, gaps and provenance" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1fr 1.05fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 1 · The investigation of ancient sites and sources · Lesson 7</p>
+      <h1>Reconstructing the past: beliefs, gaps and provenance</h1>
+      <p class="lead">When the evidence is broken, missing or taken from its place, how much can we really know?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u1l07-cover"><figure class="figure contain"><img src="images/u1l07-knossos-north-entrance.jpg" alt="The North Entrance at Knossos, Crete: the west bastion as rebuilt for Arthur Evans, with a modern copy of a painted relief of a charging bull" loading="lazy"><figcaption>The North Entrance at Knossos, Crete: the west bastion as rebuilt for Arthur Evans, with a modern copy of a painted relief of a charging bull — <span class="cr">Photo: Zde · CC BY-SA 4.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="Review: Lessons 1–6" data-kind="intro practice">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <h2>Six questions from Lessons 1–6</h2>
+  <ol class="rq" data-answers>
+    <li>What do the five letters of OVPRL stand for, in order?
+      <span class="sol reveal">Origin, Value, Purpose, Reliability, Limitations.</span></li>
+    <li>Name one survey method and what it can find without digging.
+      <span class="sol reveal">Ground-penetrating radar: radar pulses detect buried features. (Or magnetometry: buried ditches, pits and burnt areas; or LiDAR: the shape of the ground, even under trees.) Survey finds features; it does not date them.</span></li>
+    <li>Why did Darius I have the Behistun inscription carved?
+      <span class="sol reveal">To justify (legitimise) his right to rule: it presents his kingship as granted by Ahuramazda and gives his own version of how he took the throne. It was carved high on a cliff beside a main road, to be seen rather than read.</span></li>
+    <li>Give one value of petroglyphs as a source.
+      <span class="sol reveal">They are images people chose to make, still in the place where they were made, and some are many thousands of years old (Murujuga has one of the world’s largest collections).</span></li>
+    <li>Who holds the knowledge of what Aboriginal rock engravings mean, and who decides what is shared?
+      <span class="sol reveal">Aboriginal Custodians (the Traditional Owners) hold it as Cultural Knowledge, and they decide what is shared, under their own protocols (their ICIP rights). Outsiders cannot read the meaning from the image alone.</span></li>
+    <li>Name two methods of authentication.
+      <span class="sol reveal">Any two: scientific dating (radiocarbon, thermoluminescence); material or chemical analysis (fluorine tests from 1949 helped expose Piltdown Man, shown to be a forgery in 1953); microscope study of tool marks; stylistic comparison; provenance research.</span></li>
+  </ol>
+  <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>understand the challenges of reconstructing the past from archaeological sources</li>
+        <li>distinguish evidence from interpretation in a reconstruction</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>explain two challenges of reconstructing the past, with an example of each</li>
+        <li>explain why provenance matters</li>
+        <li>identify which parts of a reconstruction are evidence and which are interpretation</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u1l07-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-09 identifies different interpretations of the past · AH-LS-10 compares representations of the past.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U1 L7 · Reconstructing the past</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = Before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Explain why the ‘Priest-King’ is an interpretation.</div><div class="nts">fragments found 1901 → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: reconstructing beliefs (Knossos and the mystery room) · gaps and provenance.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for reconstructing the past</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Evidence and interpretation</th><th>Meaning</th></tr>
+      <tr><td>evidence</td><td>Information from a source that is used to answer a particular historical question.</td></tr>
+      <tr><td>reconstruction</td><td>A modern rebuilding or picture of how something looked in the past — evidence of what its maker imagined, not direct evidence of the past.</td></tr>
+      <tr><td>interpretation</td><td>An explanation of what the evidence means, made by a historian or archaeologist; it can be questioned and changed.</td></tr>
+      <tr><td>contestability</td><td>Recognising that interpretations and representations of the past are debated and can change with new evidence.</td></tr>
+      <tr><td>relief</td><td>Carving or moulding that stands out from a flat background.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Gaps and provenance</th><th>Meaning</th></tr>
+      <tr><td>organic material</td><td>Material that was once alive, such as wood, leather, wool, linen or food. It usually decays unless conditions are special.</td></tr>
+      <tr><td>inorganic material</td><td>Material that was never living, such as stone, pottery, metal and glass. It usually survives better.</td></tr>
+      <tr><td>context (archaeological)</td><td>The exact place and layer an object was found in, and what was found with it.</td></tr>
+      <tr><td>provenance</td><td>Where an object was found and its history of ownership since; without it, an object loses its context and may be a fake.</td></tr>
+      <tr><td>looting</td><td>Digging up or stealing objects to keep or sell, with no record of where they came from.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Reconstructing beliefs: Knossos" data-title="Evans rebuilds Knossos" data-kind="notes">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">1 · Reconstructing beliefs · I do — Knossos, Crete</p>
+  <h2>Arthur Evans rebuilt the ‘Palace of Minos’</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <div class="u1l07-pair">
+        <figure class="figure"><img src="images/u1l07-grand-staircase-1911.jpg" alt="Part of the Grand Staircase and the Hall of the Colonnades at Knossos, already propped up with iron beams, in a photograph credited to A. J. Evans and published in 1911" loading="lazy"><figcaption>Part of the Grand Staircase and the Hall of the Colonnades at Knossos, already propped up with iron beams, in a photograph credited to A. J. Evans and published in 1911 — <span class="cr">A. J. Evans, Britannica (1911) · Public domain</span></figcaption></figure>
+        <figure class="figure"><img src="images/u1l07-grand-staircase-2016.jpg" alt="The Grand Staircase at Knossos in 2016" loading="lazy"><figcaption>The Grand Staircase at Knossos in 2016 — <span class="cr">Photo: Olaf Tausch · CC BY 3.0</span></figcaption></figure>
+      </div>
+      <p class="qprompt">Compare the two photos. What is evidence, and what is reconstruction?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">Evidence: the gypsum steps, the balustrades and the round sockets where columns once stood. Reconstruction: the upper floors and today’s red-and-black concrete columns. Look closely: even the 1911 photo shows an early stage of the rebuilding, with iron beams holding up the landings and replacement columns in the hall below. Evans had a real reason (the building was collapsing), but what visitors see now mixes the Bronze Age with the 20th century.</p></div>
+    </div>
+    <div class="stack">
+      <ul class="u1l07-facts">
+        <li><b>Who:</b> Arthur Evans, a British archaeologist, excavated at Knossos from 1900 to 1931</li>
+        <li><b>What:</b> a Bronze Age building in use from about 1900 to 1350 BCE, which he called the ‘Palace of Minos’ (Minos is a king of Crete in Greek legend)</li>
+        <li><b>How:</b> his architects first propped up collapsing floors with iron girders and stone column shafts under stucco; from the 1920s they rebuilt floors and columns in reinforced concrete</li>
+      </ul>
+      <div class="src">
+        <div class="k">Evans explains why</div>
+        <p class="quote sm">To relax our efforts meant that the remains of the Upper Stories would have crashed down on those below, and the result would have been an indistinguishable heap of ruins.</p>
+        <p class="prov">Arthur Evans, <i>The Palace of Minos at Knossos</i>, vol. III (London, 1930), p. 288</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Reconstructing beliefs: Knossos" data-title="The ‘Priest-King’: fragments and restoration" data-kind="notes">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">1 · Reconstructing beliefs · I do — think aloud · evidence or interpretation?</p>
+  <h2>The ‘Priest-King’: what survives, and what was added?</h2>
+  <div class="split" style="--cols:.8fr 1.2fr">
+    <div class="u1l07-pk"><figure class="figure contain"><img src="images/u1l07-priest-king-restored.jpg" alt="The ‘Priest-King’ (also called the Prince of the Lilies) as restored for Arthur Evans: pieces of ancient painted plaster relief, found at Knossos in 1901, set into a modern panel (Heraklion Archaeological Museum)" loading="lazy"><figcaption>The ‘Priest-King’ (also called the Prince of the Lilies) as restored for Arthur Evans: pieces of ancient painted plaster relief, found at Knossos in 1901, set into a modern panel (Heraklion Archaeological Museum) — <span class="cr">Photo: ArchaiOptix · CC BY-SA 4.0</span></figcaption></figure></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">What was found</div>
+        <p class="body">In May 1901, on the south side of the palace: broken pieces of painted plaster relief. They include parts of a crown of lilies and plumes, a man’s chest with a lily necklace and a bent right arm, part of a thigh and leg, and another arm.</p></div>
+      <div class="stack veil-parts" data-veil="Look closely first — then show the answers">
+        <div class="u1l07-q"><span class="u1l07-qn">1</span><div><p class="qprompt">Which parts are evidence?</p>
+          <p class="u1l07-model vp reveal">The cracked, uneven pieces with a raised surface (pale on the body and legs, coloured in the crown and plumes): the ancient plaster found in 1901, plus a few joining pieces found later.</p></div></div>
+        <div class="u1l07-q"><span class="u1l07-qn">2</span><div><p class="qprompt">Which parts are interpretation?</p>
+          <p class="u1l07-model interp vp reveal">The smooth, brightly painted parts: the face, the background, most of the outstretched left arm and the cord in its hand. And one big decision: that all the pieces belong to one walking man.</p></div></div>
+        <div class="u1l07-q"><span class="u1l07-qn">3</span><div><p class="qprompt">Is the name ‘Priest-King’ evidence?</p>
+          <p class="u1l07-model interp vp reveal">No: it is Evans’s interpretation. He believed the figure showed “one of the actual Priest-Kings of Knossos”.</p></div></div>
+        <div class="note vp reveal" data-code="judgement"><p class="body"><b>So:</b> the panel is evidence of what Evans and his restorers imagined, built round a few real fragments, not direct evidence of how the wall once looked.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Reconstructing beliefs: Knossos" data-title="One man, or several figures?" data-kind="notes">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">1 · Reconstructing beliefs · I do → gesture vote · contestability</p>
+  <h2>One man, or several figures?</h2>
+  <div class="split u1l07-s8" style="--cols:.78fr 1.22fr">
+    <div class="stack">
+      <div class="u1l07-wc"><figure class="figure contain"><img src="images/u1l07-priest-king-torso-1901.jpg" alt="One fragment on its own: the ‘male torso with the lily collar’, painted plaster relief, as photographed for Arthur Evans’s first report on the 1901 season" loading="lazy"><figcaption>One fragment on its own: the ‘male torso with the lily collar’, painted plaster relief, as photographed for Arthur Evans’s first report on the 1901 season — <span class="cr">A. J. Evans, BSA 7 (1901), fig. 6 · Public domain</span></figcaption></figure></div>
+      <div class="src">
+        <div class="k">A museum that owns a copy</div>
+        <p class="quote sm">Since the remains are so fragmentary, the original composition cannot be determined with certainty …</p>
+        <p class="prov">The Metropolitan Museum of Art, New York, description of its reproduction of the ‘Priest-King’ (07.99.9a–f)</p>
+      </div>
+    </div>
+    <div class="stack">
+      <ol class="u1l07-time">
+        <li class="reveal"><span class="when">1901</span><span>Evans’s first report: the pieces seemed to come from <b>three</b> figures. He saw the crowned head as “a Mycenaean King”, and thought this torso’s clenched hand “may suggest a boxer”.</span></li>
+        <li class="reveal"><span class="when">1903–1926</span><span>Evans decided the pieces belonged to <b>one</b> figure; his restorers, Emile Gilliéron and his son, joined them (1905; final version 1926). Evans called him the ‘Priest-King’.</span></li>
+        <li class="reveal"><span class="when">since 1979</span><span>Other scholars have redrawn the same pieces as a boxer, a god, or an athlete walking in a procession.</span></li>
+        <li class="reveal"><span class="when">today</span><span>The Ashmolean Museum: “Most scholars now believe that the fragments belong to several different figures.”</span></li>
+      </ol>
+      <div class="card accent sm"><div class="k">Gesture vote · thumbs up, down or sideways</div>
+        <p class="body nq">“The ‘Priest-King’ shows a priest-king who ruled Knossos.”</p></div>
+      <div class="note reveal" data-code="judgement" data-veil="Vote first — then show the answer"><p class="body">Down, or at least sideways: not proven. The pieces may come from several figures, the crown probably not from this man (a 2024 study), and ‘Priest-King’ is Evans’s label. The same fragments have been read as a boxer, a god and an athlete: that is contestability.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Reconstructing beliefs: Knossos" data-title="How Evans’s own world shaped what he saw" data-kind="notes">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">1 · Reconstructing beliefs · I do — read Evans closely</p>
+  <h2>How did Evans’s own world shape his reconstruction?</h2>
+  <div class="split veil-parts" style="--cols:1fr 1.15fr" data-veil="Think first — then show which words answer each question">
+    <div class="stack">
+      <p class="qprompt">Evans looks down the rebuilt Grand Staircase by moonlight, during a fever. Which words come from what he imagined, not from what he found?</p>
+      <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Does Evans think this is real?</b> <span class="vp">No: he calls it “imaginative suggestion” and an “illusion”. But the rebuilt staircase made it feel real.</span></span></p>
+      <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Where does the ‘Priest-King’ come from?</b> <span class="vp">From Evans himself: his own label now walks the stairs as if it were a fact.</span></span></p>
+      <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>Whose world do these words describe?</b> <span class="vp">“Great ladies” and a “retinue” suggest he pictured Knossos as a royal court like those he knew.</span></span></p>
+      <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>What did the restored paintings do?</b> <span class="vp">The painted figures “stepped down from the walls” in his mind: one reconstruction fed the next.</span></span></p>
+    </div>
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Arthur Evans on the rebuilt Grand Staircase</div>
+        <p class="quote sm">It was, indeed, my own lot to experience its strange power of <span class="match" data-step="m1">imaginative suggestion</span> … the whole place seemed to awake awhile to life and movement. Such was the force of <span class="match" data-step="m1">the illusion</span> that <span class="match" data-step="m2">the Priest-King with his plumed lily crown</span>, <span class="match" data-step="m3">great ladies, tightly girdled, flounced and corseted</span>, long-stoled priests, and, after them, <span class="match" data-step="m3">a retinue of elegant but sinewy youths</span> — <span class="match" data-step="m4">as if the Cup-bearer and his fellows had stepped down from the walls</span> — passed and repassed on the flights below.</p>
+        <p class="prov">Arthur Evans, <i>The Palace of Minos at Knossos</i>, vol. III (London, 1930), p. 301 · the Cup-bearer = a figure in a Knossos wall painting</p>
+      </div>
+      <div class="note vp reveal" data-code="judgement"><p class="body"><b>So:</b> the rebuilt palace mixes real Bronze Age remains with what Evans imagined, shaped by his own world: the rebuilt parts are evidence of his imagination, not direct evidence of Bronze Age Crete. The Ashmolean Museum: “Often the reconstruction on paper provided the inspiration for the physical reconstruction, adding a layer of interpretation along the way.”</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The mystery room" data-title="We do: the mystery room">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">2 · The mystery room · We do — in groups of three · 5 minutes · press K for the timer</p>
+  <h2>What was this room used for?</h2>
+  <div class="split" style="--cols:1.25fr 1fr">
+    <figure class="diagram u1l07-roomfig"><svg class="u1l07-room" viewBox="0 0 1200 800" role="img" aria-label="Plan of an invented room, about 6 metres by 4 metres, with a doorway in the south wall. A low bench runs along the north wall; a small clay figurine lies on the bench. A hearth is near the middle of the room. Three large storage jars stand in the north-east corner. A scale bar shows 2 metres."><rect class="u1l07-bg" x="2" y="2" width="1196" height="796" rx="14"/><rect class="u1l07-floor" x="150" y="110" width="750" height="500"/><rect class="u1l07-wall" x="120" y="80" width="810" height="30"/><rect class="u1l07-wall" x="120" y="110" width="30" height="500"/><rect class="u1l07-wall" x="900" y="110" width="30" height="500"/><rect class="u1l07-wall" x="120" y="610" width="305" height="30"/><rect class="u1l07-wall" x="575" y="610" width="355" height="30"/><text class="u1l07-lbl" x="500" y="688">doorway</text><rect class="u1l07-bench" x="200" y="110" width="450" height="75" rx="6"/><text class="u1l07-lbl" x="425" y="229">low plastered bench</text><circle class="u1l07-fig" cx="538" cy="148" r="13"/><line class="u1l07-lead" x1="538" y1="134" x2="538" y2="66"/><text class="u1l07-lbl" x="538" y="56">small clay figurine (on the bench)</text><circle class="u1l07-hearth" cx="475" cy="398" r="54"/><circle class="u1l07-ash" cx="475" cy="398" r="30"/><text class="u1l07-lbl" x="475" y="492">hearth</text><circle class="u1l07-jar" cx="831" cy="179" r="38"/><circle class="u1l07-jarmouth" cx="831" cy="179" r="14"/><circle class="u1l07-jar" cx="831" cy="279" r="38"/><circle class="u1l07-jarmouth" cx="831" cy="279" r="14"/><circle class="u1l07-jar" cx="744" cy="179" r="38"/><circle class="u1l07-jarmouth" cx="744" cy="179" r="14"/><text class="u1l07-lbl" x="788" y="391">three large</text><text class="u1l07-lbl" x="788" y="427">storage jars</text><path class="u1l07-north" d="M1010,116 L1028,172 L1010,160 L992,172 Z"/><text class="u1l07-lbl" x="1010" y="212">N</text><rect class="u1l07-scale" x="150" y="740" width="125" height="14"/><rect class="u1l07-scale alt" x="275" y="740" width="125" height="14"/><text class="u1l07-sm" x="150" y="730">0</text><text class="u1l07-sm" x="275" y="730">1</text><text class="u1l07-sm" x="400" y="730">2 m</text><text class="u1l07-note" x="930" y="754">An invented plan, drawn for this lesson</text></svg><figcaption>An invented room, drawn for this lesson, with each find where it was found. <span class="swipe">Swipe to see the whole plan.</span></figcaption></figure>
+    <div class="stack">
+      <div class="card quiet sm"><div class="k">The finds</div>
+        <ul class="u1l07-finds">
+          <li><span class="sw h"></span>a hearth near the middle of the room</li>
+          <li><span class="sw b"></span>a low plastered bench along the north wall</li>
+          <li><span class="sw f"></span>a small clay figurine, lying on the bench</li>
+          <li><span class="sw j"></span>three large storage jars in one corner</li>
+        </ul></div>
+      <div class="card accent sm"><div class="k">Your group</div>
+        <ol class="body">
+          <li>From the finds alone, decide what the room was used for.</li>
+          <li>For each find, say how it supports your idea.</li>
+          <li>Name one find that does not fit, and what new evidence would test your idea.</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Start with: <span class="nq">We think the room was … because the … suggests … But the … does not fit, so we would look for …</span></p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The mystery room" data-title="We do: one room, several interpretations" data-kind="notes">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">2 · The mystery room · We do — compare the groups · cold call one group per row</p>
+  <h2>One room, several interpretations</h2>
+  <div class="tbl-scroll" data-veil="Share yours first — then show three possible interpretations"><table class="tbl compact u1l07-key">
+    <tr><th>Interpretation</th><th>Finds that fit</th><th>What doesn’t fit yet · how to test it</th></tr>
+    <tr class="reveal"><td>a home</td><td>a hearth for cooking and warmth; jars to store food; a bench to sit or sleep on</td><td>the figurine? · look for food remains in the jars, cooking waste, wear on the bench</td></tr>
+    <tr class="reveal"><td>a shrine (a room for worship)</td><td>the figurine on the bench, as if on display; the bench as a shelf for offerings</td><td>the hearth and jars also fit a home · are figurines like this found in ordinary houses too?</td></tr>
+    <tr class="reveal"><td>a store or workshop</td><td>the jars; a hearth for heat (cooking, or a craft)</td><td>the bench and the figurine · look for tools, waste from making things, what was in the jars</td></tr>
+  </table></div>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="card accent sm"><div class="k">Careful</div>
+      <p class="body">Why is <span class="nq">“it was used for ritual”</span> not an explanation on its own?</p></div>
+    <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">It is a label, not an explanation. It doesn’t say what people did, who did it or which finds show it, so it can’t be tested. A figurine could be a god, an offering, a toy or a decoration: the object alone doesn’t tell us which.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The mystery room" data-title="Archaeologists disagree about rooms like this" data-kind="notes">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">2 · The mystery room · We do — the reveal: real archaeologists disagree too</p>
+  <h2>Shrines, houses, or both? A real debate at Çatalhöyük</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <ul class="u1l07-facts">
+        <li><b>Where and when:</b> Çatalhöyük, a large farming settlement in central Turkey, about 7400–6000 BCE</li>
+        <li><b>1960s:</b> James Mellaart dug there and labelled some of its decorated rooms ‘shrines’</li>
+        <li><b>From 1993:</b> a new team led by Ian Hodder dug with modern recording and science</li>
+      </ul>
+      <div class="src">
+        <div class="k">Ian Hodder on what the new team found</div>
+        <p class="quote sm">The art and symbolism and burial all occur within houses. There is evidence of productive activities in all houses, in midden areas and on roofs of houses.</p>
+        <p class="prov">Ian Hodder (ed.), <i>Religion in the Emergence of Civilization: Çatalhöyük as a Case Study</i> (Cambridge University Press, 2010), ch. 1 · midden = rubbish heap · productive activities = everyday work</p>
+      </div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">What does this disagreement show about interpretations?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">The same kind of evidence (paintings, burials, benches) can support different interpretations. Mellaart saw special religious rooms (‘shrines’); Hodder’s team argues that art, burial and everyday work all happened in the same houses, so religion may have been part of home life rather than kept in separate shrines. Interpretations are contestable, and new methods and new evidence can change them.</p></div>
+      <p class="qprompt reveal">So, was our mystery room a shrine?</p>
+      <div class="note reveal" data-code="counter" data-veil="Answer first — then show a model answer"><p class="body">We can’t tell from these four finds. A strong answer says what is likely, how sure we are, and what evidence would settle it.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The mystery room" data-title="Notes 1 — Reconstructing beliefs" data-kind="notes">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>Reconstructing beliefs</h2>
+  <p class="cue">Write your own notes first. Then compare, row by row, and add what you missed in a second colour.</p>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U1 L7 · Reconstructing the past</b></span><span>1 · Beliefs: Knossos and the mystery room</span></div>
+    <div class="row"><div class="cq">Explain why the ‘Priest-King’ is an interpretation.</div>
+      <div class="nts reveal">fragments of painted plaster relief found 1901 (crown, chest + arm, thigh/leg) → joined into <b>one</b> man by the Gilliérons (final 1926) <span class="sep">·</span> face, background, most of left arm = modern <span class="sep">·</span> Evans first saw 3 figures; most scholars now: several figures</div></div>
+    <div class="row"><div class="cq">Analyse how Evans’s own world shaped his reconstruction.</div>
+      <div class="nts reveal">his label ‘Priest-King’ <span class="sep">·</span> rebuilding (‘reconstitution’) of the palace, 1900s–1930s, later in concrete <span class="sep">·</span> his 1930 “illusion”: “great ladies”, a “retinue” → suggests a royal court like those of his own world</div></div>
+    <div class="row"><div class="cq">Explain why ‘ritual’ is not an explanation on its own.</div>
+      <div class="nts reveal">a label, not a reason → say what was done, by whom, which finds show it, what would prove it wrong</div></div>
+    <div class="row"><div class="cq">Assess how certain we can be about what a room was used for.</div>
+      <div class="nts reveal">same finds → several interpretations (contestability) <span class="sep">·</span> Çatalhöyük: Mellaart’s ‘shrines’ vs Hodder: art, burial, work all in houses → say how sure, and what would test it</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Gaps in the evidence" data-title="You do: the survival sort">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">3 · Gaps in the evidence · You do — survival sort in pairs · 4 minutes · press K for the timer</p>
+  <h2>Buried for centuries: what is left?</h2>
+  <div class="u1l07-cards">
+    <figure class="u1l07-card"><span class="l">A</span><img src="images/hadrians-wall-housesteads-crags.jpg" alt="A stone wall running along a ridge"><figcaption><b>a stone wall</b></figcaption></figure>
+    <figure class="u1l07-card"><span class="l">B</span><img src="images/u1l07-knossos-storage-jars.jpg" alt="Large clay storage jars"><figcaption><b>a clay storage jar</b></figcaption></figure>
+    <figure class="u1l07-card"><span class="l">C</span><img src="images/trajan-denarius-114-ce.jpg" alt="Both sides of a silver coin"><figcaption><b>a silver coin</b></figcaption></figure>
+    <figure class="u1l07-card"><span class="l">D</span><div class="u1l07-txt">an iron sword</div><figcaption><b>an iron sword</b></figcaption></figure>
+    <figure class="u1l07-card"><span class="l">E</span><div class="u1l07-txt">bones left over from a meal</div><figcaption><b>animal bones</b></figcaption></figure>
+    <figure class="u1l07-card"><span class="l">F</span><img src="images/u1l01-mystery-object.jpg" alt="A letter written in ink on thin pieces of wood"><figcaption><b>a letter in ink on thin wood</b></figcaption></figure>
+    <figure class="u1l07-card"><span class="l">G</span><img src="images/vindolanda-roman-shoe.jpg" alt="A Roman leather shoe"><figcaption><b>a leather shoe</b></figcaption></figure>
+    <figure class="u1l07-card"><span class="l">H</span><div class="u1l07-txt">a soldier’s woollen cloak</div><figcaption><b>a woollen cloak</b></figcaption></figure>
+    <figure class="u1l07-card"><span class="l">I</span><div class="u1l07-txt">a day’s bread and porridge</div><figcaption><b>food</b></figcaption></figure>
+    <figure class="u1l07-card"><span class="l">J</span><div class="u1l07-txt">what a local farmer thought of the Romans</div><figcaption><b>a farmer’s thoughts</b></figcaption></figure>
+  </div>
+  <p class="u1l07-howto"><span><b>1</b>Usually survives</span><span><b>2</b>Usually rots: lasts only in special conditions</span><span><b>3</b>Not an object: lost unless written down</span><span><b>?</b>Argued about it? A ‘depends’ pile: say on what</span></p>
+  <div class="bank" aria-label="Word bank"><span>organic</span><span>inorganic</span><span>very wet ground</span><span>very dry ground</span><span>frozen</span><span>acidic soil</span><span>written down</span></div>
+  <p class="small credline">Images: G Laird (CC BY-SA 2.0) · Zde (CC BY-SA 4.0) · CNG (CC BY-SA 2.5) · Fæ (CC BY-SA 3.0) · Victuallers (CC BY 4.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Gaps in the evidence" data-title="Check the sort: what survives?" data-kind="notes">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">3 · Gaps in the evidence · check your sort · cold call a pair before each row</p>
+  <h2>What survives, what is lost, and why</h2>
+  <div class="stack" data-veil="Sort first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u1l07-key">
+    <tr><th>Card</th><th>Pile</th><th>Why</th></tr>
+    <tr class="reveal"><td>A · stone wall · B · storage jar · C · silver coin</td><td class="u1l07-pile s">usually survive</td><td>inorganic: stone, fired clay and metal last, though pottery breaks, silver tarnishes and walls can be rebuilt later (Lesson 1’s ‘Clayton Wall’)</td></tr>
+    <tr class="reveal"><td>D · iron sword</td><td class="u1l07-pile d">depends</td><td>metal, but iron decays the most of the metals and becomes highly corroded</td></tr>
+    <tr class="reveal"><td>E · animal bones</td><td class="u1l07-pile d">depends</td><td>bones and teeth can survive if the soil is not too acidic</td></tr>
+    <tr class="reveal"><td>F · ink on wood · G · leather shoe · H · woollen cloak · I · food</td><td class="u1l07-pile d">usually rot: special conditions only</td><td>organic: they usually decay, unless the ground is very wet, very dry or frozen. The Vindolanda tablets survived in “damp, anaerobic conditions” (airless, wet ground); Ötzi’s clothes of hide, leather and grass survived in ice</td></tr>
+    <tr class="reveal"><td>J · a farmer’s thoughts</td><td class="u1l07-pile x">lost unless written down</td><td>only if someone wrote them down, and most surviving texts speak for the powerful: a king (Behistun), priests (the Rosetta Stone), a general (Thucydides), officers’ wives (Vindolanda)</td></tr>
+  </table></div>
+  <div class="note reveal" data-code="judgement"><p class="body"><b>So:</b> the evidence is uneven. Stone, pottery and metal, and the inscriptions of kings and priests, survive far better than wood, cloth, food and the voices of ordinary people. A gap in the evidence is not proof that something never existed.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · Provenance" data-title="You do: graves dug with no record" data-kind="notes">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">4 · Provenance · You do — read the article, then answer</p>
+  <h2>Dr Glidden’s collection: graves dug with no record</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card quiet sm"><div class="k">Your reading</div>
+        <p class="body">James Nye, <i class="nq">The strange and mysterious Dr Glidden</i>, <i>Daily Mail</i> (London), May 2013: a report on a 2013 exhibition about him. Note who wrote it, where, and its tone.</p>
+        <p class="u1l07-care"><b>Before you read:</b> these were the graves of Indigenous people. Santa Catalina Island (Pimu) was Tongva land, but the museum can say only that the remains “could be affiliated with Tongva or Chumash”. They were real people, with descendants alive today, so this page shows no photographs of them.</p></div>
+      <ul class="u1l07-facts">
+        <li><b>Who:</b> Ralph Glidden, a self-styled archaeologist</li>
+        <li><b>When:</b> mainly 1919–1928, much of it paid for by the Heye Foundation, New York</li>
+        <li><b>What:</b> hundreds of burials and thousands of objects taken from Santa Catalina and three other Channel Islands, California; he put human remains on show in his own tourist museum (closed 1950)</li>
+      </ul>
+      <div class="src">
+        <div class="k">The exhibition’s verdict, as reported by AP (2013)</div>
+        <p class="quote sm">… he, through his unscientific plundering, disregarded “the sanctity of human remains” and inflicted “near-permanent damage” on research into local Native American life.</p>
+        <p class="prov">Associated Press report of the exhibition’s introduction, 13 May 2013</p>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="src">
+        <div class="k">The museum’s legal notice, 2016</div>
+        <p class="quote sm">… these numbers were not transferred to the human remains, objects or photos that he took. As a result, linking the physical human remains and burial objects to its original provenience is impossible.</p>
+        <p class="prov">Catalina Island Museum, notice under the US law on returning Native American remains (NAGPRA), <i>Federal Register</i>, 5 April 2016 · the numbers = Glidden’s find numbers in his journals · provenience = the exact place an object was found</p>
+      </div>
+      <div class="stack veil-parts" data-veil="Answer first — then show model answers">
+        <p class="qprompt">1 · What did Glidden fail to record, and what was lost?</p>
+        <p class="u1l07-model vp reveal">He numbered his finds in his journals but never marked the numbers on the remains or objects. So nothing can be traced to its grave: the findspot, the layer and the things buried with each person (the context) are lost.</p>
+        <p class="qprompt">2 · Why does this matter to Tongva and Chumash people today?</p>
+        <p class="u1l07-model vp reveal">No person can be linked to a particular grave or community: the museum could only “surmise” that they “could be affiliated with Tongva or Chumash”. In 2016 it agreed to transfer control of the remains to the Santa Ynez Band of Chumash Mission Indians, but no family or community can be sure which ancestors are theirs.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · Provenance" data-title="The Iraq Museum, 2003" data-kind="notes">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">4 · Provenance · You do — a second case</p>
+  <h2>The Iraq Museum, Baghdad, April 2003</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <ul class="u1l07-facts">
+        <li><b>When:</b> from 10 April 2003: looters broke in two days after staff left ahead of the US advance on Baghdad, and the museum was ransacked for about 36 hours</li>
+        <li><b>Before:</b> staff had removed and safely stored 8,366 artefacts</li>
+        <li><b>Taken:</b> some 15,000 objects; by 2018 about 7,000 had been recovered and more than 8,000 were still missing</li>
+        <li><b>Cylinder seals</b> (small carved cylinders, used to print images, usually into clay): 5,144 taken; just over half returned</li>
+      </ul>
+      <div class="src">
+        <div class="k">An Australian university’s view</div>
+        <p class="quote sm">In order to halt looting, it is essential that private collectors and institutions only purchase antiquities with a legal provenance to dry up the demand.</p>
+        <p class="prov">The University of Sydney, <i>Iraq museum looting: 15 years on</i> (news, 10 April 2018)</p>
+      </div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">A cylinder seal from the museum turns up for sale with no paperwork. Why does provenance matter here?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">A seal the museum had recorded can be recognised and returned, but only because it was recorded. Sold without a legal provenance, its theft is hidden, and buying it rewards looters. An object dug straight out of a site and sold has no record at all: its context is lost for ever.</p></div>
+      <p class="qprompt reveal">What do Glidden and the Iraq Museum have in common?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">In both, objects were cut off from the place they belong. Glidden’s finds can never be linked to their graves again; a recorded museum object can be traced and returned, but an object dug from a site by looters and sold has lost its place for ever. Once that link is broken, historians lose its context, and the people it belongs to may never get it back.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · Provenance" data-title="Notes 2 — Gaps and provenance" data-kind="notes">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>Gaps and provenance</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U1 L7 · Reconstructing the past</b></span><span>2 · Gaps and provenance</span></div>
+    <div class="row"><div class="cq">Explain what usually survives, and what does not.</div>
+      <div class="nts reveal">inorganic (stone, pottery, metal) lasts, though iron corrodes <span class="sep">·</span> organic (wood, leather, cloth, food) decays unless very wet, very dry or frozen <span class="sep">·</span> bones if the soil is not too acidic</div></div>
+    <div class="row"><div class="cq">Analyse the bias in what survives.</div>
+      <div class="nts reveal">kings’ and priests’ stone inscriptions survive (Behistun, Rosetta) → elite voices <span class="sep">·</span> ordinary people’s lives, homes, thoughts mostly lost <span class="sep">·</span> a gap ≠ proof it never existed</div></div>
+    <div class="row"><div class="cq">Explain why provenance matters.</div>
+      <div class="nts reveal">findspot → context: layer, date, finds with it <span class="sep">·</span> ownership history → taken legally? genuine? <span class="sep">·</span> without them: less value as evidence, may be fake <span class="sep">·</span> Glidden (1919–28): numbers never put on finds → link to graves “impossible” (2016)</div></div>
+    <div class="row"><div class="cq">Explain what the Iraq Museum looting shows.</div>
+      <div class="nts reveal">April 2003: some 15,000 objects taken, about 7,000 recovered by 2018 <span class="sep">·</span> recorded objects can be traced and returned; objects looted straight from sites have no record at all → buy only with legal provenance</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · Provenance" data-title="You do: short answer">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">You do · short answer · 8 minutes · press K for the timer</p>
+  <h2>Explain the challenges of reconstructing the past using archaeological sources</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · one paragraph</div>
+        <ol class="body">
+          <li>Two challenges. For each: the challenge → an example from today → what it means for historians.</li>
+          <li>Choose from: understanding beliefs (Knossos, the mystery room) · gaps in the evidence (the survival sort) · provenance (Glidden, the Iraq Museum).</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Support</div>
+        <p class="body">Use: <span class="nq">One challenge of reconstructing the past is … For example, … This means that historians … A second challenge is …</span> Word bank: interpretation, reconstruction, organic, context, provenance.</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div>
+        <p class="body">Assess the claim: <span class="nq">“Every reconstruction of the ancient past says as much about the reconstructor as about the past.”</span> Use Evans as evidence.</p></div>
+    </div>
+    <div class="src reveal" data-veil="Write yours first — then show a model paragraph">
+      <div class="k">A model paragraph · written for this lesson</div>
+      <p class="quote sm model">One challenge of reconstructing the past from archaeological sources is that objects rarely explain the beliefs of the people who made them, so archaeologists must interpret them, and their interpretations can reflect their own world. At Knossos, Arthur Evans had a few fragments of painted plaster relief restored as a single crowned ‘Priest-King’, although he first thought the pieces came from three figures and most scholars now believe they belong to several different figures. Historians must therefore treat a reconstruction as evidence of what its makers imagined, not direct evidence of the past, and separate the surviving fragments from the restoration. A second challenge is provenance: an object that loses the record of where it was found loses its context. Ralph Glidden dug up hundreds of burials on Santa Catalina and three other Channel Islands between 1919 and 1928 without marking his find numbers on the remains or objects, so in 2016 the museum that holds his collection stated that linking them to their original graves was “impossible”. As a result, historians cannot use the collection to ask who was buried where, when or with what, and no person in it can be linked to a particular community.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · Provenance" data-title="Summary" data-kind="notes">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>Why is a reconstruction like the ‘Priest-King’ an interpretation?</li>
+          <li>Why are there gaps in the archaeological evidence, and whose lives do they hide?</li>
+          <li>Why does provenance matter?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">The ‘Priest-King’ at Knossos is an interpretation because Evans’s restorers built a whole figure round a few fragments that may come from several figures, so it is evidence of what they imagined rather than direct evidence of the past. Organic materials such as wood, cloth and food usually decay while stone, pottery and metal survive, so the evidence favours the powerful, whose inscriptions lasted, over ordinary people. Provenance matters because an object cut off from the record of where it was found, like Glidden’s finds, loses its context and much of its value as evidence, and objects sold without a legal provenance, like many looted from the Iraq Museum, are hard to trace and return.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Evans’s rebuilding of Knossos</label></li>
+        <li><label><input type="checkbox"> The ‘Priest-King’: fragments vs restoration</label></li>
+        <li><label><input type="checkbox"> One figure or several? (contestability)</label></li>
+        <li><label><input type="checkbox"> The mystery room and the ‘ritual’ caution</label></li>
+        <li><label><input type="checkbox"> What survives, and the bias towards elites</label></li>
+        <li><label><input type="checkbox"> Provenance: Glidden and the Iraq Museum</label></li>
+        <li><label><input type="checkbox"> Your short answer: two challenges</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: provenance hinge" data-kind="intro">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">Check · hinge question · hold up A, B, C or D · 3 minutes</p>
+  <h2>An object bought from a dealer with no record of where it was found is most limited as evidence because:</h2>
+  <ol class="opts u1l07-hinge">
+    <li><span class="n">A</span><span>it is almost certainly a fake, so it is worthless as evidence</span></li>
+    <li id="u1l07-hc"><span class="n">B</span><span>it cannot be connected to a place, a layer or other finds</span></li>
+    <li><span class="n">C</span><span>its age can no longer be tested by any scientific method</span></li>
+    <li><span class="n">D</span><span>looters always damage objects too badly for them to be studied</span></li>
+  </ol>
+  <div class="note reveal" data-mark="#u1l07-hc" data-code="evidence" data-veil="Vote first — then show the answer"><p class="body"><b>B.</b> Without a findspot it can’t be dated by its layer, compared with the things found with it, or checked against its site. A overstates: it <i>may</i> be a fake, but that is not certain. C is wrong: its material can still be tested. D overgeneralises: damage varies, and even a perfect object has lost its context.</p></div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 5 minutes · before you leave</p>
+  <h2>Two sentences</h2>
+  <div class="cols c2">
+    <div class="card accent"><div class="k">1</div><p class="lead">One challenge of reconstructing the past from archaeological sources is … For example, …</p></div>
+    <div class="card accent"><div class="k">2</div><p class="lead">Provenance matters because …</p></div>
+  </div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">1 · a named challenge (beliefs and interpretation, gaps, or provenance) with a real example from today: the ‘Priest-King’, the survival sort, Glidden or the Iraq Museum. &nbsp;2 · the findspot gives an object its context (place, layer, other finds); its ownership history shows where it has been since, whether it was taken legally, and helps show it is genuine.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> bringing it together: a checkpoint quiz and a timed OVPRL on an unseen source.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u1l07-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>The ‘Priest-King’ in the Heraklion Museum is a complete ancient painting.</span>
+      <span class="sol no reveal">False <span class="why">— it is a modern restoration built round a few fragments, which most scholars now think come from several figures.</span></span></li>
+    <li><span class="n">2</span><span>Evans’s team rebuilt parts of Knossos in reinforced concrete.</span>
+      <span class="sol reveal">True <span class="why">— to stop collapsing floors falling in, and to show how he imagined the palace; the result mixes the Bronze Age with the 20th century.</span></span></li>
+    <li><span class="n">3</span><span>Wood and leather usually survive as well as pottery.</span>
+      <span class="sol no reveal">False <span class="why">— they are organic and usually decay, unless the ground is very wet, very dry or frozen.</span></span></li>
+    <li><span class="n">4</span><span>A figurine found on a bench proves that a room was a shrine.</span>
+      <span class="sol no reveal">False <span class="why">— one find fits several interpretations; a strong claim says what else would test it.</span></span></li>
+    <li><span class="n">5</span><span>Provenance includes where an object was found and who has owned it since.</span>
+      <span class="sol reveal">True <span class="why">— the findspot gives its context; the ownership history shows where it has been since and helps show it is genuine.</span></span></li>
+    <li><span class="n">6</span><span>Because Glidden kept journals, his finds can still be traced to their graves.</span>
+      <span class="sol no reveal">False <span class="why">— his numbers were never marked on the remains or objects, so the museum says the link is impossible.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — writing" data-kind="practice">
+<div class="wrap prac u1l07-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Write it as a historian</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · A different challenge</div><p class="body">Explain one challenge you did not use in class (for many students: gaps in the evidence), with an example and what it means for historians.</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">A further challenge is that the evidence that survives is uneven. Organic materials such as wood, leather, cloth and food usually decay unless the ground is very wet, very dry or frozen, while stone, pottery and metal last; the Vindolanda tablets survived only because they lay in damp, airless ground. As a result, historians have far more evidence for the powerful, whose stone inscriptions survive, than for ordinary people, and they must not mistake a gap in the evidence for proof that something never existed.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">2 · Extension</div><p class="body">Assess the claim: <span class="nq">“Every reconstruction of the ancient past says as much about the reconstructor as about the past.”</span> Use Evans as evidence.</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">The claim is largely true of Evans at Knossos. His restorers turned fragments that he first thought came from three figures into a single ‘Priest-King’, the name reflected his own belief in priestly rulers, and his description of the rebuilt Grand Staircase peopled it with “great ladies” and a “retinue”, the language of a royal court. Yet the claim overstates the case, because his reconstructions were built round real evidence: the fragments are ancient, and the column sockets and steps are Bronze Age. A reconstruction therefore says a great deal about its maker, but historians can still separate the evidence it contains from the interpretation added to it, which is exactly why the surviving fragments matter.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u1l07-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Explain why the ‘Priest-King’ is an interpretation.
+      <span class="sol reveal">It is a modern restoration built round a few fragments; Evans first saw three figures, most scholars now see several, and the name is Evans’s.</span></li>
+    <li>Analyse how Evans’s own world shaped his reconstruction.
+      <span class="sol reveal">He labelled the figure a ‘Priest-King’, and his picture of the rebuilt palace full of “great ladies” and a “retinue” suggests he imagined a royal court like those of his own time.</span></li>
+    <li>Explain why ‘ritual’ is not an explanation on its own.
+      <span class="sol reveal">It is a label, not a reason: an explanation says what was done, by whom and which finds show it, so it can be tested.</span></li>
+    <li>Explain what usually survives in the ground, and what does not.
+      <span class="sol reveal">Inorganic stone, pottery and metal usually survive; organic wood, leather, cloth and food usually decay unless the ground is very wet, very dry or frozen.</span></li>
+    <li>Explain why provenance matters.
+      <span class="sol reveal">The findspot gives an object its context (place, layer, other finds); the ownership history shows it was obtained legally and helps show it is genuine. Without them it loses much of its value as evidence.</span></li>
+    <li>Is a reconstruction evidence?
+      <span class="sol reveal">Yes, but of what its maker imagined, not direct evidence of the past. The same is true of drawings, models and digital reconstructions.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u1l07-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="card quiet u1l07-cite"><div class="k">Written sources</div><div class="u1l07-cols2">
+      <p class="small">Arthur Evans, <i>The Palace of Minos at Knossos</i>, vol. III (London: Macmillan, 1930), pp. 288–289 and 301 (public domain), checked against <a href="https://archive.org/details/cu31924081667820">the page images</a>.</p>
+      <p class="small">U. Günkel-Maschek, <i>The Lilies of the Prince</i>, <i>Annual of the British School at Athens</i> 119 (2024), pp. 249–282, <a href="https://doi.org/10.1017/S0068245424000054">doi:10.1017/S0068245424000054</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>). Ashmolean Museum: <a href="https://minoanroom.ashmolean.org/catalogue/ae_2398/">The Minoan Room, replica of the Priest-King</a>; A. Shapland, <a href="https://ashmolean.org/node/3039631">Rebuilding the Palace of Minos at Knossos</a>. The Metropolitan Museum of Art, reproduction of the ‘Priest-King’ (07.99.9a–f), <a href="https://archive.org/details/mma_reproduction_of_the_priestking_from_knossos_258221">description</a>.</p>
+      <p class="small">I. Hodder (ed.), <i>Religion in the Emergence of Civilization: Çatalhöyük as a Case Study</i> (Cambridge University Press, 2010), ch. 1, <a href="https://assets.cambridge.org/97805211/92606/excerpt/9780521192606_excerpt.pdf">publisher’s excerpt</a>.</p>
+      <p class="small">Segedunum Roman Fort, <a href="https://www.northeastmuseums.org.uk/segedunum/rot-and-rust">Rot and Rust</a>; US National Park Service, <a href="https://www.nps.gov/mana/learn/kidsyouth/archaeology-what-survives.htm">Archaeology: What Survives?</a>; Bowman and Thomas, <i>Tab. Vindol.</i> I, introduction, <a href="https://romaninscriptionsofbritain.org/tabvindol/vol-I/introduction/ch1-b">RIB Online</a> (CC BY 4.0); South Tyrol Museum of Archaeology, <a href="https://www.iceman.it/en/oetzi/clothing">Ötzi’s clothing</a>.</p>
+      <p class="small">Associated Press, <i>Catalina exhibits American Indian grave plunderer</i>, 13 May 2013, <a href="https://www.washingtonexaminer.com/?p=769098">as published by the Washington Examiner</a>. Catalina Island Museum, Notice of Inventory Completion, <i>Federal Register</i> 81 (5 April 2016), pp. 19636–19638, <a href="https://www.govinfo.gov/content/pkg/FR-2016-04-05/html/2016-07764.htm">govinfo.gov</a> (US government work, public domain). The University of Sydney, <a href="https://sydney.edu.au/news-opinion/news/2018/04/10/iraq-museum-looting--15-years-on.html">Iraq museum looting: 15 years on</a> (10 April 2018).</p>
+      <p class="small">The model paragraphs and summary were written for this lesson. The mystery-room plan is an invented example. Teacher resource: <i>The Strange and Mysterious Dr. Glidden</i> (class notebook). Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div></div>
+  <div class="card quiet u1l07-cite"><div class="k">Images</div>
+    <ul class="small credits"><li><b>The North Entrance at Knossos, rebuilt for Arthur Evans</b> · Photo: Zde · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:North_entrance_(West_bastion),_copy_of_relief_fresco,_Knossos,_144459.jpg">source</a></li><li><b>Part of the Grand Staircase at Knossos (photo published 1911)</b> · A. J. Evans, Britannica (1911) · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:EB1911_Crete_-_Palace_of_Cnossus_-_Part_of_Grand_Staircase_and_Hall_of_Colonnades.jpg">source</a></li><li><b>The Grand Staircase at Knossos in 2016</b> · Photo: Olaf Tausch · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Knossos_Gro%C3%9Fes_Treppenhaus_01.jpg">source</a></li><li><b>The ‘Priest-King’ relief as restored (Heraklion Archaeological Museum)</b> · Photo: ArchaiOptix · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Wall_painting_of_the_Priest-King_from_Knossos_(North-South_Corridor)_-_Heraklion_AM.jpg">source</a></li><li><b>The ‘male torso with the lily collar’, as first published (1901)</b> · A. J. Evans, BSA 7 (1901), fig. 6 · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://archive.org/details/annual-of-the-british-school-at-athens_1900-1901_7/page/n31/mode/1up">source</a></li><li><b>Hadrian’s Wall on Housesteads Crags</b> · Photo: G Laird (geograph.org.uk) · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Hadrian%27s_Wall_and_Housesteads_Crags_-_geograph.org.uk_-_1410595.jpg">source</a></li><li><b>Clay storage jars (pithoi) at Knossos</b> · Photo: Zde · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Pithoi_nearby_South_Propylaeum,_Knossos,_144446.jpg">source</a></li><li><b>Denarius of Trajan, about 114 CE</b> · Classical Numismatic Group, Inc. (cngcoins.com) · <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a> · <a href="https://commons.wikimedia.org/wiki/File:Traianus_Denarius_114_90020186.jpg">source</a></li><li><b>Vindolanda Tablet 291</b> · Photo: Fæ · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Vindolanda_tablet_291.jpg">source</a></li><li><b>Roman shoe from Vindolanda (cropped)</b> · Photo: Victuallers · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Vindolanda_Roman_shoe_in_the_museum.jpg">source</a></li></ul>
+    <p class="small">All images are public domain or openly licensed, and were resized for the web. Each is shared under the licence shown. No photographs of human remains or graves are used.</p></div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1783 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U2 L2 · Before Persepolis: Ecbatana and Pasargadae</title>
+<meta name="description" content="Year 11 Ancient History, case study Persepolis: what the early royal centres of Ecbatana and Pasargadae tell us about the empire, how far the evidence for them can be trusted, and continuity and change from Pasargadae to Persepolis.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#0F5E5A; --bright:#1A8A84; --tint:#E1F2F0; --statement:#0F5E5A;
+  --solid:#0F5E5A; --soft:#CBEDE9; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; } }
+:root[data-theme="dark"]{ --deep:#8FDDD6; --bright:#4FCBC2; --tint:#0F302E; --statement:#0C4A47; --soft:#CBEDE9; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 2 Lesson 2 only (every class starts u2l02-) */
+
+/* quick facts list */
+.u2l02-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.25em;
+  font-size:calc(var(--fs-body)*.86); line-height:1.35;}
+.u2l02-facts b{color:var(--deep);}
+
+/* diagrams (inline SVG, drawn by make_u2l02_diagrams.py) */
+.u2l02-diag{margin:0;}
+.u2l02-diag svg{display:block; width:100%; height:auto; max-height:calc(100vh - 330px);}
+.u2l02-diag figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.4em; line-height:1.35;}
+.u2l02-svg text{fill:var(--ink); font-family:var(--ui); font-size:22px;}
+.u2l02-svg .u2l02-tb{font-weight:700;}
+.u2l02-svg .u2l02-tsm{font-size:18px;}
+.u2l02-svg .u2l02-tmute{fill:var(--slate);}
+.u2l02-svg .u2l02-triver{fill:var(--c-directive);}
+.u2l02-bg{fill:var(--surface-2);}
+.u2l02-hill{fill:var(--w-keyterm);}
+.u2l02-river{fill:none; stroke:var(--c-directive); stroke-width:9; stroke-linecap:round; opacity:.5;}
+.u2l02-garden{fill:var(--w-evidence); stroke:var(--c-evidence); stroke-width:2; stroke-dasharray:7 5;}
+.u2l02-chan{fill:none; stroke:var(--c-directive); stroke-width:3;}
+.u2l02-bld{fill:var(--tint); stroke:var(--deep); stroke-width:2.5;}
+.u2l02-bld2{fill:var(--surface); stroke:var(--deep); stroke-width:1.5; stroke-dasharray:4 3;}
+.u2l02-tomb{fill:var(--c-judgement); stroke:var(--ink); stroke-width:1.5;}
+.u2l02-bridge{stroke:var(--ink); stroke-width:6;}
+.u2l02-lead{fill:none; stroke:var(--slate); stroke-width:1.5;}
+.u2l02-dist{fill:none; stroke:var(--slate); stroke-width:2; stroke-dasharray:6 5;}
+.u2l02-ahp{fill:var(--slate);}
+.u2l02-north{stroke:var(--ink); stroke-width:2.5;}
+.u2l02-terrace{fill:var(--surface); stroke:var(--slate); stroke-width:3;}
+.u2l02-stair{fill:var(--w-keyterm); stroke:var(--c-keyterm); stroke-width:2;}
+.u2l02-scale{fill:none; stroke:var(--ink); stroke-width:3;}
+/* Herodotus's seven colours are the content of that diagram, so they stay the same in both themes */
+.u2l02-walls circle, .u2l02-walls rect{stroke:#5A5A5A; stroke-width:2;}
+.u2l02-w1{fill:#F7F4EA;} .u2l02-w2{fill:#1E1E1E;} .u2l02-w3{fill:#6E2C7D;} .u2l02-w4{fill:#2C5DAA;}
+.u2l02-w5{fill:#E27B1E;} .u2l02-w6{fill:#C3C8CD;} .u2l02-w7{fill:#D6A92C;}
+.u2l02-wc{fill:var(--surface);}
+
+/* See-Think-Wonder: the uncaptioned figure beside three columns */
+.u2l02-stwgrid{display:grid; grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr); gap:clamp(12px,1.6vw,26px); align-items:start;}
+.u2l02-stw-img{margin:0;}
+.u2l02-stw-img img{display:block; width:100%; height:58vh; object-fit:contain; background:var(--surface-2);
+  border-radius:10px; box-shadow:var(--shadow);}
+.u2l02-stw{display:flex; flex-direction:column; gap:clamp(8px,1.2vh,14px);}
+.u2l02-stw .card{padding:clamp(8px,1.3vh,16px) clamp(14px,1.4vw,22px);}
+.u2l02-stw .body{color:var(--slate); font-size:calc(var(--fs-body)*.85);}
+.u2l02-eg{margin-top:.4em; padding-top:.4em; border-top:1px dashed var(--rule); font-style:italic;
+  font-size:calc(var(--fs-body)*.84); line-height:1.4;}
+.u2l02-eg::before{content:"For example: "; font-style:normal; font-weight:700; color:var(--deep);}
+
+/* the Pasargadae tour: four picture tiles */
+.u2l02-tour{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:clamp(8px,1.1vw,16px);}
+.u2l02-tile{margin:0; background:var(--surface); border:1px solid var(--rule); border-top:5px solid var(--bright);
+  border-radius:10px; overflow:hidden; box-shadow:var(--shadow); display:flex; flex-direction:column;}
+.u2l02-tile img{display:block; width:100%; height:30vh; object-fit:cover;}
+.u2l02-tile figcaption{padding:.45em .7em .6em; display:flex; flex-direction:column; gap:.2em;
+  font-size:calc(var(--fs-body)*.72); line-height:1.32;}
+.u2l02-tile b{font-family:var(--disp); font-size:1.18em; color:var(--deep);}
+.u2l02-shows{margin-top:.3em; padding:.3em .55em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 6px 6px 0;}
+.u2l02-shows::before{content:"Shows: "; font-weight:700; color:var(--c-evidence);}
+
+/* two pictures side by side (Gate R and the Assyrian comparison) */
+.u2l02-pair{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(8px,1vw,14px);}
+.u2l02-pair .figure img{height:36vh; max-height:none; object-fit:contain; background:var(--surface-2);}
+.u2l02-pair .figure figcaption .cr{white-space:normal;}
+
+/* the comparison grid */
+.u2l02-cmp td:first-child{font-weight:700; min-width:7.5em;}
+.u2l02-cmp td.u2l02-cc{font-weight:700; min-width:7em;}
+.u2l02-cmp .c{color:var(--c-evidence);} .u2l02-cmp .x{color:var(--c-judgement);} .u2l02-cmp .t{color:var(--c-counter);}
+.u2l02-cmp td.blank{color:var(--slate); font-style:italic;}
+.u2l02-cmp th{white-space:normal;}
+html:not(.read) .u2l02-cmp-sm{font-size:calc(var(--fs-body)*.7);}
+
+/* syllabus line on the goals slide; credits */
+.u2l02-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u2l02-cite a{color:var(--deep);}
+
+/* phones (Read mode): fewer columns, natural picture heights */
+@media (max-width:900px){
+  .u2l02-tour{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .u2l02-tile img{height:auto; aspect-ratio:4/3;}
+  .u2l02-stwgrid{grid-template-columns:1fr;}
+  .u2l02-stw-img img{height:auto; max-height:60vh;}
+  .u2l02-pair .figure img{height:auto; max-height:50vh;}
+  .u2l02-diag svg{max-height:none;}
+}
+@media (max-width:420px){
+  .u2l02-tour, .u2l02-pair{grid-template-columns:1fr;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u2l02-dense{gap:10px;}
+  html:not(.read) .u2l02-dense h2{font-size:calc(var(--fs-h2)*.86);}
+  html:not(.read) .u2l02-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.4;}
+  html:not(.read) .u2l02-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u2l02-dense .src{padding:10px 16px;}
+  html:not(.read) .u2l02-dense .src .prov{margin-top:.4em;}
+  html:not(.read) .u2l02-dense .note{padding:.45em .85em;}
+  html:not(.read) .u2l02-dense .note .body, html:not(.read) .u2l02-dense .card .body,
+  html:not(.read) .u2l02-dense .qprompt{font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+  html:not(.read) .u2l02-dense .card{padding:10px 16px;}
+  html:not(.read) .u2l02-dense .tbl.compact{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u2l02-dense .tbl.compact td{padding:.3em .5em;}
+  html:not(.read) .u2l02-dense .tbl th{padding:.38em .55em;}
+  html:not(.read) .u2l02-dense .u2l02-cmp-sm{font-size:calc(var(--fs-body)*.64);}
+  html:not(.read) .u2l02-dense .figure img{max-height:30vh;}
+  html:not(.read) .u2l02-dense .u2l02-facts{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u2l02-dense .u2l02-tile img{height:27vh;}
+  html:not(.read) .u2l02-dense .u2l02-tile figcaption{font-size:calc(var(--fs-body)*.66);}
+  html:not(.read) .u2l02-dense .u2l02-diag svg{max-height:calc(100vh - 300px);}
+  html:not(.read) .u2l02-dense .u2l02-pair .figure img{height:44vh; max-height:none;}
+  html:not(.read) .u2l02-dense .u2l02-gate .figure img{max-height:50vh;}
+  html:not(.read) .u2l02-dense .keylist li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u2l02-dense .keylist .d{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l02-dense .tf li, html:not(.read) .u2l02-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l02-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u2l02-dense .prac{gap:6px;}
+  html:not(.read) .u2l02-dense .cornell .cq, html:not(.read) .u2l02-dense .cornell .nts{font-size:calc(var(--fs-body)*.74); padding:.32em .8em;}
+  html:not(.read) .u2l02-dense .u2l02-eg{font-size:calc(var(--fs-body)*.74);}
+}
+.u2l02-badge{fill:var(--solid); stroke:var(--surface); stroke-width:2;}
+.u2l02-svg .u2l02-badgetx{fill:#fff; font-size:17px; font-weight:700;}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 2" data-title="Before Persepolis: Ecbatana and Pasargadae" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.15fr .85fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 2 · Persepolis · Lesson 2</p>
+      <h1>Before Persepolis: Ecbatana and Pasargadae</h1>
+      <p class="lead">Where did the first Persian kings rule from, and what changed when Darius built Persepolis?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <figure class="figure contain"><img src="images/u2l02-tomb-of-cyrus-pasargadae.jpg" alt="The tomb of Cyrus the Great at Pasargadae: a gabled stone chamber on six steps, about 11 m high, probably built about 540–530 BCE" loading="lazy"><figcaption>The tomb of Cyrus the Great at Pasargadae: a gabled stone chamber on six steps, about 11 m high, probably built about 540–530 BCE — <span class="cr">Photo: Carole Raddato · CC BY-SA 2.0</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 2" data-title="Connect: Cyrus’s empire" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Connect · 3 minutes · everyone writes one line</p>
+  <h2>Name one cause of the empire’s growth under Cyrus and one effect.</h2>
+  <div class="cols c2">
+    <div class="card accent"><div class="k">1 · Everyone writes</div><p class="lead nq">“Because Cyrus …, … ”</p><p class="body">One line, in 60 seconds. Use a place and a date.</p></div>
+    <div class="card quiet"><div class="k">2 · Then think</div><p class="lead">Where did these kings rule from?</p></div>
+  </div>
+  <div class="stack" data-veil="Write yours first — then show some examples">
+    <div class="note reveal" data-code="evidence"><div class="k">For example</div><p class="body">The Median king Astyages’s own army turned against him and handed him to Cyrus (about 550 BCE), so Cyrus took the Medes’ royal city, Ecbatana, and its treasure. · Because Cyrus took Lydia (about 546 BCE), his general Harpagus was able to conquer the Greek cities of Ionia, Lydia’s former subjects.</p></div>
+    <div class="note reveal" data-code="judgement"><div class="k">Where did they rule from?</div><p class="body">Not from one capital. The Persian kings used several royal centres, among them Ecbatana, taken from the Medes, and Pasargadae, which Cyrus built in Fars. Darius later founded Persepolis. Today: the two royal centres before Persepolis.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 2" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>understand what the early capitals Ecbatana and Pasargadae tell us about the empire</li>
+        <li>analyse continuity and change from Pasargadae to Persepolis</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>describe two features of Pasargadae and explain why so little is known about Ecbatana</li>
+        <li>identify two continuities and two changes between Pasargadae and Persepolis</li>
+        <li>write a continuity-and-change paragraph using precise evidence</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u2l02-syl"><b>Syllabus outcomes:</b> AH-11-01 explains continuity and change in the ancient world · AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-03 identifies continuity and change in the ancient world · AH-LS-05 describes features of places or societies in the ancient world.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 2" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U2 L2 · Ecbatana and Pasargadae</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = Before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Explain why so little is known about Ecbatana.</div><div class="nts">Median capital, taken by Cyrus c. 550 BCE → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Rule up the page first</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: Ecbatana and Pasargadae · the Gate R figure and two continuities.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 2" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for today</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Places and people</th><th>Meaning</th></tr>
+      <tr><td>Achaemenid</td><td>The royal family (and empire) descended, they claimed, from an ancestor called Achaemenes; it ruled Persia from Cyrus the Great to Darius III.</td></tr>
+      <tr><td>Fars (Pārsa)</td><td>The Persian homeland in south-west Iran, where Persepolis stands.</td></tr>
+      <tr><td>Ecbatana</td><td>The capital of the Medes (modern Hamadan), taken by Cyrus; later a Persian royal residence.</td></tr>
+      <tr><td>Pasargadae</td><td>Cyrus the Great’s capital in Fars, with palaces in a garden landscape and his tomb.</td></tr>
+      <tr><td>Paradise (pairidaeza)</td><td>A walled Persian garden or park; the origin of the English word ‘paradise’.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Buildings and change</th><th>Meaning</th></tr>
+      <tr><td>Terrace</td><td>The huge raised platform on which the buildings of Persepolis stand.</td></tr>
+      <tr><td>Hypostyle hall</td><td>A hall whose roof is held up by many columns.</td></tr>
+      <tr><td>Relief</td><td>A carving that stands out from a flat stone background.</td></tr>
+      <tr><td>Trilingual inscription</td><td>An inscription written in three languages (at Persepolis usually Old Persian, Elamite and Babylonian).</td></tr>
+      <tr><td>continuity / change</td><td>What stays the same over time / what becomes different over time.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Ecbatana" data-title="Ecbatana: under a modern city" data-kind="notes">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow">1 · Ecbatana · I do</p>
+  <h2>Ecbatana: a royal city under a modern city</h2>
+  <div class="split" style="--cols:1fr 1.05fr">
+    <div class="stack">
+      <ul class="u2l02-facts">
+        <li><b>Where:</b> modern Hamadan, in western Iran</li>
+        <li><b>What:</b> the capital of the Medes</li>
+        <li><b>When:</b> taken by Cyrus in about 550 BCE (a Babylonian chronicle records it)</li>
+        <li><b>Later:</b> a Persian royal residence and treasury: in 330 BCE Alexander had the treasure brought from Persis stored in its citadel</li>
+        <li><b>Digs:</b> Iranian teams have dug at the hill of Tepe Hegmataneh since 1983</li>
+      </ul>
+      <p class="qprompt">Why do we know so little about Ecbatana?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">Most of the ancient city lies under modern Hamadan, so only parts of it can be dug. The digs at Tepe Hegmataneh have found little that can be firmly dated to the Median city. So historians rely mostly on Greek writers, who were outsiders writing long after the Medes lost power.</p></div>
+    </div>
+    <figure class="figure contain"><img src="images/u2l02-tepe-hegmataneh-excavation.jpg" alt="Excavation work at Tepe Hegmataneh in Hamadan, the site of ancient Ecbatana: mud-brick walls under a protective frame, photographed in 2012" loading="lazy"><figcaption>Excavation work at Tepe Hegmataneh in Hamadan, the site of ancient Ecbatana: mud-brick walls under a protective frame, photographed in 2012 — <span class="cr">Photo: Adam Jones · CC BY-SA 2.0</span></figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Ecbatana" data-title="Herodotus’s seven walls" data-kind="notes">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow">1 · Ecbatana · I do — think aloud</p>
+  <h2>Herodotus’s Ecbatana: seven circles of walls</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Herodotus on Ecbatana</div>
+        <p class="quote sm">So he <span class="ed">[Deioces, the first king of the Medes]</span> built the big and strong walls, one standing inside the next in circles, which are now called Ecbatana. … There are seven circles in all; within the innermost circle are the palace and the treasuries … The battlements of the first circle are white, of the second black, of the third circle purple, of the fourth blue, and of the fifth orange … and the battlements of the last two circles are coated, the one with silver and the other with gold.</p>
+        <p class="prov">Herodotus, <i>Histories</i> 1.98 · written about 430 BCE, about 120 years after Cyrus took Ecbatana · A. D. Godley’s translation (Loeb, 1920), as revised by the Perseus Digital Library</p>
+      </div>
+      <p class="qprompt">How far can we trust this as a description of the Medes’ Ecbatana?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">Probably exaggerated. Herodotus wrote about 120 years after Cyrus took the city and does not say he saw it; seven rising walls ending in silver and gold read more like a story about a great king than a survey; and digs have not found them. It is still useful evidence of the story Herodotus heard and told about a Median royal city, and its palace and treasuries fit other sources that call Ecbatana a royal residence and treasury.</p></div>
+    </div>
+    <figure class="u2l02-diag"><svg class="u2l02-svg u2l02-walls" viewBox="0 0 760 480" role="img" aria-label="Seven circles of walls, one inside the next, drawn from Herodotus’s description: the battlements of the outer circle white, then black, purple, blue and orange, and the last two silver and gold, with the palace and the treasuries in the middle.">
+<circle class="u2l02-w1" cx="230" cy="240" r="222"/>
+<circle class="u2l02-w2" cx="230" cy="240" r="198"/>
+<circle class="u2l02-w3" cx="230" cy="240" r="174"/>
+<circle class="u2l02-w4" cx="230" cy="240" r="150"/>
+<circle class="u2l02-w5" cx="230" cy="240" r="126"/>
+<circle class="u2l02-w6" cx="230" cy="240" r="102"/>
+<circle class="u2l02-w7" cx="230" cy="240" r="78"/>
+<circle class="u2l02-wc" cx="230" cy="240" r="54"/>
+<text class="u2l02-t u2l02-tsm" x="230" y="237" text-anchor="middle">palace and</text>
+<text class="u2l02-t u2l02-tsm" x="230" y="260" text-anchor="middle">treasuries</text>
+<text class="u2l02-t u2l02-tb" x="488" y="52">Battlements, outside in</text>
+<rect class="u2l02-w1" x="488" y="82" width="34" height="26" rx="4"/>
+<text class="u2l02-t" x="536" y="102">1 · white</text>
+<rect class="u2l02-w2" x="488" y="122" width="34" height="26" rx="4"/>
+<text class="u2l02-t" x="536" y="142">2 · black</text>
+<rect class="u2l02-w3" x="488" y="162" width="34" height="26" rx="4"/>
+<text class="u2l02-t" x="536" y="182">3 · purple</text>
+<rect class="u2l02-w4" x="488" y="202" width="34" height="26" rx="4"/>
+<text class="u2l02-t" x="536" y="222">4 · blue</text>
+<rect class="u2l02-w5" x="488" y="242" width="34" height="26" rx="4"/>
+<text class="u2l02-t" x="536" y="262">5 · orange</text>
+<rect class="u2l02-w6" x="488" y="282" width="34" height="26" rx="4"/>
+<text class="u2l02-t" x="536" y="302">6 · silver</text>
+<rect class="u2l02-w7" x="488" y="322" width="34" height="26" rx="4"/>
+<text class="u2l02-t" x="536" y="342">7 · gold</text>
+<text class="u2l02-t u2l02-tsm u2l02-tmute" x="488" y="382">Each circle higher than the one</text>
+<text class="u2l02-t u2l02-tsm u2l02-tmute" x="488" y="408">outside it (Herodotus 1.98)</text>
+</svg><figcaption>Herodotus’s description drawn as he gives it: a picture of a text, not a plan of the real site. Drawn for this lesson.</figcaption></figure>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Pasargadae" data-title="Pasargadae: a royal park" data-kind="notes">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow">2 · Pasargadae · I do</p>
+  <h2>Pasargadae: Cyrus’s royal centre in Fars</h2>
+  <div class="split" style="--cols:1.05fr 1fr">
+    <figure class="u2l02-diag"><svg class="u2l02-svg u2l02-map" viewBox="0 0 680 640" role="img" aria-label="Sketch map of Pasargadae, not to scale. North at the top. Tall-e Takht, a stone platform, stands on a hill in the north-east. South-west of it are the Zendan tower, then Palace P (the residence), the royal garden with its water channels and pavilions, and Palace S (the audience hall). A branch of the river runs between Palace S and the gatehouse, Gate R, crossed by a bridge. The tomb of Cyrus stands alone about 1.25 kilometres to the south-west.">
+<defs><marker id="u2l02-ah" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="u2l02-ahp"/></marker></defs>
+<rect class="u2l02-bg" x="0" y="0" width="680" height="640" rx="12"/>
+<path class="u2l02-hill" d="M300,40 C380,10 520,20 600,70 C650,110 640,200 600,240 C560,280 500,250 470,280 C430,320 380,300 360,250 C330,190 250,170 240,120 C232,80 260,55 300,40 z"/>
+<path class="u2l02-river" d="M640,150 C560,230 470,300 410,360 C380,392 360,410 330,440 C302,488 284,560 272,640"/>
+<text class="u2l02-t u2l02-tsm u2l02-triver" x="572" y="262" transform="rotate(-42 572 262)">river Pulvar</text>
+<path class="u2l02-garden" d="M235,318 L345,318 L395,372 L330,430 L240,420 z"/>
+<path class="u2l02-chan" d="M255,340 L335,340"/>
+<path class="u2l02-chan" d="M255,340 L255,405"/>
+<path class="u2l02-chan" d="M335,340 L335,405"/>
+<path class="u2l02-chan" d="M255,372 L335,372"/>
+<rect class="u2l02-bld" x="250" y="380" width="14" height="14"/><rect class="u2l02-bld" x="326" y="350" width="14" height="14"/>
+<path class="u2l02-bld" d="M455,150 L505,138 L520,176 L478,196 z"/>
+<rect class="u2l02-bld" x="350" y="262" width="14" height="14"/>
+<rect class="u2l02-bld" x="262" y="292" width="62" height="22"/>
+<rect class="u2l02-bld" x="268" y="432" width="34" height="24"/>
+<rect class="u2l02-bld" x="368" y="442" width="26" height="24"/>
+<path class="u2l02-bridge" d="M318,444 L352,452"/>
+<rect class="u2l02-tomb" x="92" y="558" width="18" height="18"/>
+<rect class="u2l02-bld" x="96" y="44" width="14" height="14"/>
+<text class="u2l02-t u2l02-tb" x="448" y="214">Tall-e Takht</text>
+<text class="u2l02-t u2l02-tsm u2l02-tmute" x="448" y="236">stone platform</text>
+<text class="u2l02-t u2l02-tb" x="374" y="272">Zendan</text>
+<text class="u2l02-t u2l02-tsm u2l02-tmute" x="374" y="294">stone tower</text>
+<text class="u2l02-t u2l02-tb" x="40" y="296">Palace P</text>
+<text class="u2l02-t u2l02-tsm u2l02-tmute" x="40" y="318">residence</text>
+<text class="u2l02-t u2l02-tb" x="40" y="384">royal garden</text>
+<text class="u2l02-t u2l02-tsm u2l02-tmute" x="40" y="406">channels, pavilions</text>
+<text class="u2l02-t u2l02-tb" x="40" y="452">Palace S</text>
+<text class="u2l02-t u2l02-tsm u2l02-tmute" x="40" y="474">audience hall</text>
+<text class="u2l02-t u2l02-tb" x="404" y="468">Gate R</text>
+<text class="u2l02-t u2l02-tsm u2l02-tmute" x="404" y="490">gatehouse</text>
+<text class="u2l02-t u2l02-tb" x="20" y="610">Tomb of Cyrus</text>
+<text class="u2l02-t u2l02-tsm u2l02-tmute" x="20" y="632">about 1.25 km from Palace S</text>
+<text class="u2l02-t u2l02-tb" x="118" y="56">sacred precinct</text>
+<path class="u2l02-lead" d="M160,290 L258,302"/><path class="u2l02-lead" d="M206,378 L246,378"/><path class="u2l02-lead" d="M160,446 L264,444"/>
+<text class="u2l02-t u2l02-tsm u2l02-tmute" x="300" y="497">bridge</text><path class="u2l02-lead" d="M318,482 L334,452"/>
+<path class="u2l02-dist" d="M114,558 L264,460" marker-start="url(#u2l02-ah)" marker-end="url(#u2l02-ah)"/>
+<path class="u2l02-north" d="M630,600 L630,548" marker-end="url(#u2l02-ah)"/><text class="u2l02-t u2l02-tb" x="623" y="540" text-anchor="middle">N</text>
+<text class="u2l02-t u2l02-tsm u2l02-tmute" x="604" y="626" text-anchor="end">sketch, not to scale</text>
+</svg><figcaption>Sketch map, not to scale, drawn for this lesson after the map on Livius.org; the distance is from Mousavi (2023).</figcaption></figure>
+    <div class="stack">
+      <ul class="u2l02-facts">
+        <li><b>Where:</b> in Fars, the Persian homeland, about 40 km north-east of where Persepolis would stand</li>
+        <li><b>Built:</b> under Cyrus the Great (ruled about 559–530 BCE)</li>
+        <li><b>Layout:</b> separate buildings spread through a park of about 2 × 3 km, with a walled royal garden at its centre</li>
+        <li><b>Material:</b> cut stone, held with metal clamps, where most buildings of the time were mud brick</li>
+        <li><b>Later:</b> still honoured; probably where later kings were crowned</li>
+      </ul>
+      <div class="src">
+        <div class="k">A modern historian</div>
+        <p class="quote sm">It is best to imagine Pasargadae as a group of garden pavilions in a park …</p>
+        <p class="prov">Jona Lendering, ‘Pasargadae’, Livius.org</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Pasargadae" data-title="Think aloud: a tour of Pasargadae" data-kind="notes">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow">2 · Pasargadae · I do — think aloud: what does each feature show about Cyrus as king?</p>
+  <h2>A tour of Pasargadae</h2>
+  <div class="u2l02-tour veil-parts" data-veil="Think first — then show what each feature shows">
+    <figure class="u2l02-tile"><img src="images/u2l02-pasargadae-garden-channels.jpg" alt="Lines of cut stone forming a narrow water channel across a grassy field"><figcaption><b>The royal garden</b><span>a walled garden with stone water channels more than 1,100 m long, and small pavilions</span><span class="u2l02-shows vp reveal">a king who brings water and order to the land: the king as gardener</span></figcaption></figure>
+    <figure class="u2l02-tile"><img src="images/u2l02-pasargadae-palace-s.jpg" alt="A single tall stone column standing among low stone remains"><figcaption><b>Palace S, the audience hall</b><span>a hall 32 × 22 m; one re-erected column stands more than 13 m high; carvings of Mesopotamian guardian creatures at its doors</span><span class="u2l02-shows vp reveal">a king who receives visitors in a tall hall built to impress, using images from older empires</span></figcaption></figure>
+    <figure class="u2l02-tile"><img src="images/u2l02-pasargadae-palace-p.jpg" alt="Rows of stone column bases of equal height on a stone floor"><figcaption><b>Palace P, the residence</b><span>30 columns (five rows of six); long porches facing the garden</span><span class="u2l02-shows vp reveal">a king who lives among his gardens; his columned hall grows out of older Iranian halls and points ahead to the great halls of Persepolis</span></figcaption></figure>
+    <figure class="u2l02-tile"><img src="images/u2l02-pasargadae-tall-e-takht.jpg" alt="A wall of cut stone on top of a green hill, with a path leading up to it"><figcaption><b>Tall-e Takht</b><span>a stone platform on the hill; building seems to have stopped when Cyrus died in 530 BCE</span><span class="u2l02-shows vp reveal">plans for a raised, fortified royal platform, apparently still unfinished at his death</span></figcaption></figure>
+  </div>
+  <p class="small credline">Images: Carole Raddato (CC BY-SA 2.0) · Carole Raddato (CC BY-SA 2.0) · Carole Raddato (CC BY-SA 2.0) · Carole Raddato (CC BY-SA 2.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Pasargadae" data-title="The tomb of Cyrus and Arrian" data-kind="notes">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow">2 · Pasargadae · I do — think aloud</p>
+  <h2>The tomb of Cyrus, and what Arrian says was written on it</h2>
+  <div class="split" style="--cols:.9fr 1.1fr">
+    <div class="stack">
+      <figure class="figure contain"><img src="images/u2l02-tomb-of-cyrus-pasargadae.jpg" alt="The tomb of Cyrus the Great at Pasargadae: a gabled stone chamber on six steps, about 11 m high, probably built about 540–530 BCE" loading="lazy"><figcaption>The tomb of Cyrus the Great at Pasargadae: a gabled stone chamber on six steps, about 11 m high, probably built about 540–530 BCE — <span class="cr">Photo: Carole Raddato · CC BY-SA 2.0</span></figcaption></figure>
+      <ul class="u2l02-facts">
+        <li><b>Built:</b> probably about 540–530 BCE</li>
+        <li><b>Form:</b> a gabled stone chamber on six steps, about 11 m high</li>
+        <li><b>Today:</b> no inscription can be seen on it; repaired in 1971 and restored again in 2003–2008</li>
+      </ul>
+    </div>
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Arrian on Alexander at the tomb</div>
+        <p class="quote sm">He <span class="ed">[Alexander]</span> was grieved by the outrage committed upon the tomb of Cyrus, son of Cambyses; for according to Aristobulus, he found it dug through and pillaged. … Upon the tomb an inscription in Persian letters had been placed, which bore the following meaning in the Persian language: “O man, I am Cyrus, son of Cambyses, who founded the empire of the Persians, and was king of Asia. Do not therefore grudge me this monument.”</p>
+        <p class="prov">Arrian, <i>Anabasis of Alexander</i> 6.29 · written in the 2nd century CE, from the account of Aristobulus, who was with Alexander at the tomb in 324 BCE · trans. E. J. Chinnock (1884) · Project Gutenberg</p>
+      </div>
+      <p class="qprompt">How did Cyrus want to be remembered? How far can we rely on Arrian for the words?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">As the founder of the Persian Empire and king of Asia, and the son of a king, asking passers-by to respect his tomb. But no inscription can be seen on the tomb today, and Arrian wrote about 450 years after Alexander’s visit (more than 650 years after Cyrus died), giving only its “meaning” as Aristobulus reported it. Reliable for what Aristobulus reported; less reliable for Cyrus’s exact words.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Pasargadae" data-title="Notes 1 — Ecbatana and Pasargadae" data-kind="notes">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>Ecbatana and Pasargadae</h2>
+  <p class="cue">Write your own notes first. Then compare, row by row, and add what you missed in a second colour.</p>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L2 · Ecbatana and Pasargadae</b></span><span>1 · The early royal centres</span></div>
+    <div class="row"><div class="cq">Explain why so little is known about Ecbatana.</div>
+      <div class="nts reveal">Median capital, taken by Cyrus c. 550 BCE → under modern Hamadan <span class="sep">·</span> digs at Tepe Hegmataneh since 1983 found little firmly Median <span class="sep">·</span> so we rely on Greek writers (Herodotus, c. 430 BCE: seven coloured walls, probably exaggerated)</div></div>
+    <div class="row"><div class="cq">Describe two features of Pasargadae.</div>
+      <div class="nts reveal">palaces and pavilions apart in a walled garden (paradise) with stone water channels <span class="sep">·</span> Palace S audience hall (column &gt; 13 m) <span class="sep">·</span> Palace P (30 columns) <span class="sep">·</span> Tall-e Takht platform, probably unfinished at Cyrus’s death <span class="sep">·</span> tomb on six steps</div></div>
+    <div class="row"><div class="cq">Analyse what Pasargadae shows about Cyrus’s kingship.</div>
+      <div class="nts reveal">king as gardener, bringing order <span class="sep">·</span> stone not mud brick → wealth, permanence <span class="sep">·</span> halls built to impress <span class="sep">·</span> images borrowed from older empires</div></div>
+    <div class="row"><div class="cq">Assess Arrian as evidence for the tomb inscription.</div>
+      <div class="nts reveal">2nd century CE, from Aristobulus (with Alexander, 324 BCE) → only its “meaning” <span class="sep">·</span> no inscription visible today → reliable for what Aristobulus reported, not for exact words</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Continuity and change" data-title="See – Think – Wonder">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow">3 · Continuity and change · We do — See – Think – Wonder · 5 minutes · press K for the timer</p>
+  <h2>Look closely. Who or what could this be?</h2>
+  <div class="u2l02-stwgrid">
+    <figure class="u2l02-stw-img"><img src="images/u2l02-mystery-figure.jpg" alt="A tall stone slab carved with a standing figure in profile, with wings and a tall headdress"></figure>
+    <div class="u2l02-stw veil-parts" data-veil="Try it first — then show some examples">
+      <div class="card"><div class="k">I see …</div><p class="body">only what is really there</p>
+        <p class="u2l02-eg vp reveal">a figure in profile, carved on a tall stone slab · four wings, two raised and two lowered · a tall headdress on long horns · a long robe with a fringed edge · one hand raised</p></div>
+      <div class="card"><div class="k">I think …</div><p class="body">what it might be, and how sure you are</p>
+        <p class="u2l02-eg vp reveal">a god or a spirit (fairly sure: the wings) · a king (a guess: the headdress) · it stood beside a doorway (a guess: the tall slab) · borrowed from another people’s art (fairly sure)</p></div>
+      <div class="card"><div class="k">I wonder …</div><p class="body">questions you want answered</p>
+        <p class="u2l02-eg vp reveal">Who carved it, and for whom? · Why mix so many styles? · Was there writing with it?</p></div>
+    </div>
+  </div>
+  <p class="small credline">Images: Shamsshams67 (CC BY-SA 4.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Continuity and change" data-title="What it is: the winged figure of Gate R" data-kind="notes">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow">3 · Continuity and change · We do — the reveal</p>
+  <h2>A guardian at the gate: the winged figure of Gate R</h2>
+  <div class="split" style="--cols:minmax(0,1fr) minmax(0,1.05fr)">
+    <div class="u2l02-pair">
+      <figure class="figure contain"><img src="images/u2l02-mystery-figure.jpg" alt="The four-winged figure carved on a doorjamb of the gatehouse (Gate R) at Pasargadae, probably under Cyrus the Great (about 550–530 BCE)" loading="lazy"><figcaption>The four-winged figure carved on a doorjamb of the gatehouse (Gate R) at Pasargadae, probably under Cyrus the Great (about 550–530 BCE) — <span class="cr">Photo: Shamsshams67 · CC BY-SA 4.0</span></figcaption></figure>
+      <figure class="figure contain"><img src="images/u2l02-nimrud-winged-figure-met.jpg" alt="For comparison: a winged figure, probably a protective spirit, on a relief from Nimrud (ancient Kalhu), Assyria, about 883–859 BCE (The Met)" loading="lazy"><figcaption>For comparison: a winged figure, probably a protective spirit, on a relief from Nimrud (ancient Kalhu), Assyria, about 883–859 BCE (The Met) — <span class="cr">The Metropolitan Museum of Art, Gift of John D. Rockefeller Jr., 1932 · CC0 1.0</span></figcaption></figure>
+    </div>
+    <div class="stack">
+      <ul class="u2l02-facts">
+        <li><b>Where:</b> on a doorjamb of the gatehouse (Gate R), the main entrance to Cyrus’s palace garden at Pasargadae</li>
+        <li><b>When:</b> probably carved under Cyrus the Great</li>
+        <li><b>What:</b> four wings, an Elamite-style robe and an Egyptian-style crown</li>
+        <li><b>Who:</b> probably a protective spirit. An inscription naming Cyrus, once above it, made some think it was Cyrus himself</li>
+      </ul>
+      <p class="qprompt">Where do its features come from, and what does the mix suggest?</p>
+      <div class="stack" data-veil="Answer first — then show a model answer">
+        <div class="note reveal" data-code="evidence"><p class="body">Crown: Egyptian style · robe: Elamite style · wings: like the guardian spirits of Assyrian palaces (compare the Nimrud figure). Cyrus’s artists borrowed from the older kingdoms of the Near East, probably to show that the new empire had taken over their traditions of power.</p></div>
+        <div class="note reveal" data-code="counter"><p class="body">The inscription was still there in 1861, when a traveller drew it, but had gone about fifteen years later. It used the Old Persian script, first used under Darius, so it was probably added after Cyrus died.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Continuity and change" data-title="Persepolis: the plan for comparison" data-kind="notes">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow">3 · Continuity and change · We do — the site we are comparing</p>
+  <h2>Persepolis: the terrace begun by Darius I in about 518 BCE</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <figure class="u2l02-diag"><svg class="u2l02-svg u2l02-plan" viewBox="0 0 780 600" role="img" aria-label="Simplified plan of the Persepolis terrace, main buildings only. A grand stairway on the west side leads up to the Gate of All Nations in the north-west. South of it is the Apadana, the largest hall. East of the Apadana is the Hall of a Hundred Columns. South of the Apadana are the Palace of Darius and the Hadish, and the Treasury is in the south-east. The mountain Kuh-e Rahmat rises along the east side. All the main buildings stand together on one terrace.">
+<rect class="u2l02-bg" x="0" y="0" width="780" height="600" rx="12"/>
+<path class="u2l02-hill" d="M411,105 L466,105 L466,589 L392,589 L429,415 L412,272 z"/>
+<text class="u2l02-t u2l02-tsm u2l02-tmute" x="448" y="359" text-anchor="middle" transform="rotate(-90 448 359)">Kuh-e Rahmat (mountain)</text>
+<path class="u2l02-terrace" d="M63,21 L197,40 L206,62 L234,74 L392,111 L399,384 L417,415 L364,558 L101,536 L82,496 L48,359 L48,210 L63,189 z"/>
+<rect class="u2l02-stair" x="34" y="99" width="19" height="87"/>
+<rect class="u2l02-bld" x="94" y="122" width="42" height="38"/>
+<rect class="u2l02-bld" x="50" y="212" width="141" height="129"/>
+<rect class="u2l02-bld2" x="88" y="244" width="78" height="74"/>
+<rect class="u2l02-bld" x="234" y="260" width="99" height="105"/>
+<rect class="u2l02-bld" x="76" y="344" width="34" height="37"/>
+<rect class="u2l02-bld" x="107" y="427" width="65" height="56"/>
+<rect class="u2l02-bld" x="271" y="372" width="90" height="155"/>
+<circle class="u2l02-badge" cx="115" cy="142" r="14"/><text class="u2l02-t u2l02-badgetx" x="115" y="148" text-anchor="middle">1</text>
+<circle class="u2l02-badge" cx="127" cy="282" r="14"/><text class="u2l02-t u2l02-badgetx" x="127" y="288" text-anchor="middle">2</text>
+<circle class="u2l02-badge" cx="284" cy="313" r="14"/><text class="u2l02-t u2l02-badgetx" x="284" y="319" text-anchor="middle">3</text>
+<circle class="u2l02-badge" cx="93" cy="362" r="14"/><text class="u2l02-t u2l02-badgetx" x="93" y="368" text-anchor="middle">4</text>
+<circle class="u2l02-badge" cx="139" cy="455" r="14"/><text class="u2l02-t u2l02-badgetx" x="139" y="461" text-anchor="middle">5</text>
+<circle class="u2l02-badge" cx="316" cy="449" r="14"/><text class="u2l02-t u2l02-badgetx" x="316" y="455" text-anchor="middle">6</text>
+<circle class="u2l02-badge" cx="43" cy="142" r="14"/><text class="u2l02-t u2l02-badgetx" x="43" y="148" text-anchor="middle">7</text>
+<text class="u2l02-t u2l02-tb" x="500" y="44">Main buildings</text>
+<circle class="u2l02-badge" cx="513" cy="77" r="13"/><text class="u2l02-t u2l02-badgetx" x="513" y="83" text-anchor="middle">1</text><text class="u2l02-t u2l02-tsm" x="536" y="84">Gate of All Nations</text>
+<circle class="u2l02-badge" cx="513" cy="115" r="13"/><text class="u2l02-t u2l02-badgetx" x="513" y="121" text-anchor="middle">2</text><text class="u2l02-t u2l02-tsm" x="536" y="122">Apadana (audience hall)</text>
+<circle class="u2l02-badge" cx="513" cy="153" r="13"/><text class="u2l02-t u2l02-badgetx" x="513" y="159" text-anchor="middle">3</text><text class="u2l02-t u2l02-tsm" x="536" y="160">Hall of a Hundred Columns</text>
+<circle class="u2l02-badge" cx="513" cy="191" r="13"/><text class="u2l02-t u2l02-badgetx" x="513" y="197" text-anchor="middle">4</text><text class="u2l02-t u2l02-tsm" x="536" y="198">Palace of Darius (Tachara)</text>
+<circle class="u2l02-badge" cx="513" cy="229" r="13"/><text class="u2l02-t u2l02-badgetx" x="513" y="235" text-anchor="middle">5</text><text class="u2l02-t u2l02-tsm" x="536" y="236">Hadish (a palace)</text>
+<circle class="u2l02-badge" cx="513" cy="267" r="13"/><text class="u2l02-t u2l02-badgetx" x="513" y="273" text-anchor="middle">6</text><text class="u2l02-t u2l02-tsm" x="536" y="274">Treasury</text>
+<circle class="u2l02-badge" cx="513" cy="305" r="13"/><text class="u2l02-t u2l02-badgetx" x="513" y="311" text-anchor="middle">7</text><text class="u2l02-t u2l02-tsm" x="536" y="312">grand stairway</text>
+<path class="u2l02-scale" d="M500,470 L619,470 M500,463 L500,477 M619,463 L619,477"/>
+<text class="u2l02-t u2l02-tsm" x="560" y="458" text-anchor="middle">100 m</text>
+<text class="u2l02-t u2l02-tsm u2l02-tmute" x="500" y="506">terrace about 450 × 300 m</text>
+<text class="u2l02-t u2l02-tsm u2l02-tmute" x="500" y="532">simplified; north roughly</text>
+<text class="u2l02-t u2l02-tsm u2l02-tmute" x="500" y="554">at the top</text>
+</svg><figcaption>Simplified plan of the Persepolis terrace (main buildings only), drawn for this lesson after the plan on Livius.org.</figcaption></figure>
+    <ol class="keylist">
+      <li><span class="num">A</span><span class="t">One terrace</span><span class="d">about 450 × 300 m, holding all the main buildings</span></li>
+      <li><span class="num">B</span><span class="t">The Apadana</span><span class="d">an audience hall with 72 columns, about 20–24 m high</span></li>
+      <li><span class="num">C</span><span class="t">Hall of a Hundred Columns</span><span class="d">70 × 70 m; begun under Xerxes, finished by Artaxerxes I</span></li>
+      <li><span class="num">D</span><span class="t">Gate of All Nations</span><span class="d">built under Xerxes; bulls guard its west side, human-headed winged bulls its east</span></li>
+      <li><span class="num">E</span><span class="t">Inscriptions</span><span class="d">in Old Persian, Elamite and Babylonian, by Darius and later kings</span></li>
+      <li><span class="num">F</span><span class="t">Reliefs</span><span class="d">the same scenes repeated across the terrace, such as delegations of the empire’s peoples on the Apadana stairways</span></li>
+      <li><span class="num">G</span><span class="t">A new kind of tomb</span><span class="d">Darius’s tomb is cut into a cliff at Naqsh-e Rustam, about 6 km north</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Continuity and change" data-title="We do: the comparison grid, rows 1–2" data-kind="notes">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow">3 · Continuity and change · We do — the first two rows together · cold call for each cell</p>
+  <h2>The comparison grid: two features that continue</h2>
+  <div class="split" style="--cols:minmax(0,1fr) minmax(0,.24fr)">
+    <div class="stack" data-veil="Work it out together first — then show the model rows">
+    <div class="tbl-scroll"><table class="tbl compact u2l02-cmp">
+      <tr><th>Feature</th><th>Pasargadae (Cyrus)</th><th>Persepolis (Darius and later kings)</th><th>Continuity or change?</th><th>Evidence</th></tr>
+      <tr class="reveal"><td>1 · Columned halls</td><td>Palace S, the audience hall (a column more than 13 m high) and Palace P (30 columns)</td><td>the Apadana (72 columns, about 20–24 m high) and the Hall of a Hundred Columns</td><td class="u2l02-cc c">continuity, on a bigger scale</td><td>column bases and the re-erected column at Pasargadae; the Apadana’s columns</td></tr>
+      <tr class="reveal"><td>2 · Guardian figures at the gate</td><td>Gate R: a four-winged guardian on a doorjamb; its doorways probably guarded by bulls too</td><td>Gate of All Nations: bulls on the west side, human-headed winged bulls on the east</td><td class="u2l02-cc c">continuity</td><td>the Gate R relief; the figures of the Gate of All Nations</td></tr>
+    </table></div>
+    </div>
+    <div class="u2l02-gate"><figure class="figure contain"><img src="images/u2l02-persepolis-gate-of-all-nations.jpg" alt="The Gate of All Nations at Persepolis, built under Xerxes: huge guardian bulls flank its doorway" loading="lazy"><figcaption>The Gate of All Nations at Persepolis, built under Xerxes: huge guardian bulls flank its doorway — <span class="cr">Photo: dynamosquito · CC BY-SA 2.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Continuity and change" data-title="Notes 2 — The Gate R figure and two continuities" data-kind="notes">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>The Gate R figure and two continuities</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U2 L2 · Ecbatana and Pasargadae</b></span><span>2 · Continuity and change</span></div>
+    <div class="row"><div class="cq">Describe the Gate R figure.</div>
+      <div class="nts reveal">doorjamb of Cyrus’s gatehouse <span class="sep">·</span> four wings, Elamite-style robe, Egyptian-style crown <span class="sep">·</span> probably a protective spirit, not Cyrus</div></div>
+    <div class="row"><div class="cq">Explain what its mix of styles suggests.</div>
+      <div class="nts reveal">borrowing from older Near Eastern kingdoms (Assyrian-style wings) → a new empire using older images of power</div></div>
+    <div class="row"><div class="cq">Why is its inscription tricky evidence?</div>
+      <div class="nts reveal">lost between 1861 and the mid-1870s (known from travellers’ drawings) <span class="sep">·</span> Old Persian script first used under Darius → probably added after Cyrus</div></div>
+    <div class="row"><div class="cq">Identify two continuities, Pasargadae → Persepolis.</div>
+      <div class="nts reveal">columned halls (Palace S, Palace P → Apadana, 72 columns) <span class="sep">·</span> guardian figures at gates (Gate R → Gate of All Nations)</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Continuity and change" data-title="You do: finish the grid">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow">3 · Continuity and change · You do · 8 minutes · press K for the timer</p>
+  <h2>Finish the grid: rows 3–6</h2>
+  <div class="cols c3">
+    <div class="card accent sm"><div class="k">Everyone</div><p class="body">Rows 3–6, every column. Use the Persepolis plan and fact file and your notes.</p></div>
+    <div class="card quiet sm"><div class="k">Support</div><p class="body">Use the labelled pictures. For each row ask: the same, or different?</p></div>
+    <div class="card quiet sm"><div class="k">Extension</div><p class="body">Add row 7, royal tombs. Which row is the hardest to call, and why?</p></div>
+  </div>
+  <div class="stack" data-veil="Finish your grid first — then show the model rows">
+  <div class="tbl-scroll"><table class="tbl compact u2l02-cmp u2l02-cmp-sm">
+    <tr><th>Feature</th><th>Pasargadae (Cyrus)</th><th>Persepolis (Darius and later kings)</th><th>Continuity or change?</th><th>Evidence</th></tr>
+    <tr class="reveal"><td>3 · Inscriptions</td><td>‘I, Cyrus the king, an Achaemenid’ in three languages, but in a script first used under Darius</td><td>three-language inscriptions of Darius and later kings</td><td class="u2l02-cc t">tricky: probably Darius’s work at both</td><td>the Old Persian script was first used under Darius</td></tr>
+    <tr class="reveal"><td>4 · A raised platform</td><td>Tall-e Takht, a stone platform probably left unfinished when Cyrus died (530 BCE)</td><td>one terrace, about 450 × 300 m, for all the main buildings</td><td class="u2l02-cc x">change</td><td>a raised platform was already planned at Pasargadae; one terrace for everything is new</td></tr>
+    <tr class="reveal"><td>5 · Layout</td><td>palaces and pavilions apart in a walled garden</td><td>main buildings side by side on the terrace</td><td class="u2l02-cc x">change</td><td>the two plans</td></tr>
+    <tr class="reveal"><td>6 · Carving style</td><td>a mix of Egyptian, Elamite and Assyrian styles</td><td>the same scenes repeated in a more uniform court style</td><td class="u2l02-cc x">change, though borrowing continues</td><td>Gate R; the Apadana stairways</td></tr>
+    <tr class="reveal"><td>7 · Royal tombs</td><td>a free-standing tomb on six steps</td><td>Darius’s tomb cut into a cliff at Naqsh-e Rustam</td><td class="u2l02-cc x">change</td><td>the tomb of Cyrus; Naqsh-e Rustam</td></tr>
+  </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Continuity and change" data-title="You do: the paragraph">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow">3 · Continuity and change · You do — write · 12 minutes · press K for the timer</p>
+  <h2>Explain the continuity and change from Pasargadae to Persepolis.</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · one paragraph</div>
+        <ul class="body"><li>two continuities and two changes, each with precise evidence from your grid</li>
+          <li>a judgement: which matters more, and why?</li>
+          <li>time connectives and comparative language: <i>whereas · similarly · in contrast · by the reign of Darius</i></li></ul></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Use the frame: <span class="nq">“One continuity is … ; however, … changed because …”</span> Then repeat it for your second pair.</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Assess why Darius built a new capital rather than enlarging Pasargadae: legitimacy after 522 BCE, practicality or ideology?</p></div>
+    </div>
+    <div class="src reveal" data-veil="Write yours first — then show a model paragraph">
+      <div class="k">A model paragraph · written for this lesson</div>
+      <p class="quote sm model">From Pasargadae to Persepolis, the kinds of royal building continued, but the way they were planned changed. Cyrus’s audience hall and residence at Pasargadae were halls of stone columns; similarly, Persepolis was built around columned halls, above all the Apadana with its 72 columns. Guardian figures also continued: a four-winged guardian was carved at Cyrus’s gatehouse, and bulls guard the Gate of All Nations at Persepolis. However, by the reign of Darius the layout had changed. Whereas Cyrus’s palaces stood apart in a walled garden, and his stone platform at Tall-e Takht was probably left unfinished when he died, the main buildings of Persepolis stand together on one terrace of about 450 by 300 metres. In contrast to the mix of styles on the Gate R figure, Persepolis repeats the same scenes in a more uniform court style. The changes matter more, because they turn Cyrus’s separate buildings into one planned display of royal power.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Check: gesture vote" data-kind="practice">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow">Check · gesture vote · thumbs up = agree · sideways = not sure · down = disagree</p>
+  <h2><span class="nq">“Persepolis was just Pasargadae on a bigger scale.”</span></h2>
+  <div class="cols c2">
+    <div class="card accent"><div class="k">1 · Vote</div><p class="body">Everyone at once, on <span class="nq">“3, 2, 1, vote”</span>.</p></div>
+    <div class="card quiet"><div class="k">2 · Defend your vote</div><p class="body">One student from each camp: give your best piece of evidence from the grid.</p></div>
+  </div>
+  <div class="stack" data-veil="Vote first — then show the evidence for each side">
+    <div class="note reveal" data-code="evidence"><div class="k">Evidence for “agree”</div><p class="body">Columned halls, guardian figures at the gates and building in cut stone all continue; the Apadana is a far larger version of Cyrus’s halls.</p></div>
+    <div class="note reveal" data-code="counter"><div class="k">Evidence for “disagree”</div><p class="body">One terrace holding everything replaces separate buildings in a garden; the carvings follow a more uniform court style; and the three-language inscriptions at Pasargadae were probably Darius’s own additions.</p></div>
+    <div class="note reveal" data-code="judgement"><div class="k">A balanced verdict</div><p class="body">Partly true: the kinds of building continue, but the plan and the style are new, so calling Persepolis ‘just’ a bigger Pasargadae is too strong.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 4 minutes · before you leave</p>
+  <h2>One continuity and one change</h2>
+  <div class="cols c2">
+    <div class="card accent"><div class="k">1</div><p class="lead">One continuity from Pasargadae to Persepolis is …</p></div>
+    <div class="card accent"><div class="k">2</div><p class="lead">One change is … , because …</p></div>
+  </div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">1 · a feature found at both sites, named precisely, with an example from each (columned halls: Palace S, the Apadana). &nbsp;2 · a feature that is new at Persepolis, with evidence from both sites (one terrace instead of buildings spread through a garden), and a reason that explains it.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> why did Darius build here? The significance of the site’s location.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Summary" data-kind="notes">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>Why is so little known about Ecbatana?</li>
+          <li>What do the features of Pasargadae suggest about Cyrus as king?</li>
+          <li>What continued, and what changed, at Persepolis?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Ecbatana, the Median capital that Cyrus took in about 550 BCE, lies mostly under modern Hamadan, so historians rely largely on Greek writers such as Herodotus, whose seven coloured walls are probably exaggerated. At Pasargadae, Cyrus built stone palaces and pavilions in a walled garden that presented him as a king who brought order to the land, with an audience hall built to impress visitors and a guardian figure that mixes Egyptian-style, Elamite-style and Assyrian-style features. Persepolis continued Pasargadae’s columned halls and guardian figures, but placed all its main buildings on one great terrace in a more uniform court style, so the change from Cyrus to Darius was greater than the continuity.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Ecbatana and the evidence problem</label></li>
+        <li><label><input type="checkbox"> Herodotus’s seven walls</label></li>
+        <li><label><input type="checkbox"> Pasargadae: garden, palaces, platform</label></li>
+        <li><label><input type="checkbox"> The tomb of Cyrus and Arrian</label></li>
+        <li><label><input type="checkbox"> The Gate R figure</label></li>
+        <li><label><input type="checkbox"> Two continuities, two changes</label></li>
+        <li><label><input type="checkbox"> A continuity-and-change paragraph</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u2l02-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Ecbatana has been fully excavated.</span>
+      <span class="sol no reveal">False <span class="why">— most of it lies under modern Hamadan, and the digs have found little that can be firmly dated to the Median city.</span></span></li>
+    <li><span class="n">2</span><span>Herodotus’s seven coloured walls at Ecbatana are probably exaggerated.</span>
+      <span class="sol reveal">True <span class="why">— he wrote about 120 years after Cyrus took the city, the pattern is too neat, and the walls have not been found.</span></span></li>
+    <li><span class="n">3</span><span>Pasargadae was a walled city of crowded streets.</span>
+      <span class="sol no reveal">False <span class="why">— its palaces and pavilions stood apart in a walled garden park.</span></span></li>
+    <li><span class="n">4</span><span>The inscriptions naming Cyrus at Pasargadae prove that Cyrus had them carved.</span>
+      <span class="sol no reveal">False <span class="why">— they use a script first used under Darius, so they were probably added by Darius.</span></span></li>
+    <li><span class="n">5</span><span>The tomb inscription quoted by Arrian can still be read on the tomb.</span>
+      <span class="sol no reveal">False <span class="why">— no inscription can be seen today; we rely on Arrian’s report of Aristobulus’s account.</span></span></li>
+    <li><span class="n">6</span><span>Columned halls are a continuity from Pasargadae to Persepolis.</span>
+      <span class="sol reveal">True <span class="why">— Palace S and Palace P at Pasargadae; the Apadana and the Hall of a Hundred Columns at Persepolis.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — write it as a historian" data-kind="practice">
+<div class="wrap prac u2l02-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Write it as a historian</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">1 · Reliable for what?</div><p class="body nq">Finish, about Herodotus 1.98: “This source is reliable for … but not for … because …”</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Herodotus 1.98 is reliable for the story about the Median kings’ capital that Herodotus heard and told his Greek readers in the fifth century BCE, but not for the real layout of Median Ecbatana, because he wrote about 120 years after Cyrus took the city and digs have not found his seven walls.</p></div>
+      <div class="card accent"><div class="k">2 · One sentence with “whereas”</div><p class="body">Compare the layout of Pasargadae and Persepolis in one sentence.</p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Whereas Cyrus’s buildings at Pasargadae stood apart in a walled garden, by the reign of Darius the main buildings of Persepolis stood together on one terrace.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Assess why Darius built a new capital rather than enlarging Pasargadae: legitimacy after 522 BCE, practicality or ideology?</p></div>
+      <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+        <p class="quote sm model">Darius probably built Persepolis more for legitimacy and ideology than for practical reasons. After 522 BCE his right to rule was open to doubt: he was not Cyrus’s son, and some historians think the king he killed was Cyrus’s real son, Bardiya. If, as seems likely, it was Darius who added the inscriptions at Pasargadae that call Cyrus an Achaemenid, he was tying his own family to the founder, but Pasargadae remained Cyrus’s monument, with Cyrus’s tomb nearby. A new capital let Darius present his own vision of kingship: one terrace, a more uniform court style and his own inscriptions. Practical reasons, such as room for a larger court and treasury, may also have mattered, but the evidence we have seen so far is weaker for them, so legitimacy and ideology are the stronger explanation.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u2l02-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Explain why so little is known about Ecbatana.
+      <span class="sol reveal">Most of it lies under modern Hamadan; the digs at Tepe Hegmataneh have found little firmly dated to the Median city; so historians rely mostly on Greek writers.</span></li>
+    <li>What did Herodotus say about Ecbatana’s walls, and why do historians doubt it?
+      <span class="sol reveal">Seven circles of walls, each higher than the last, with coloured battlements and the last two silver and gold; he wrote about 120 years after Cyrus took the city, it is too neat, and the walls have not been found.</span></li>
+    <li>Describe two features of Pasargadae.
+      <span class="sol reveal">Any two: palaces and pavilions in a walled garden with stone water channels; Palace S, an audience hall with a column more than 13 m high; Palace P with 30 columns; the unfinished platform of Tall-e Takht; the tomb of Cyrus on six steps.</span></li>
+    <li>Who wrote down the inscription ‘O man, I am Cyrus …’ for us, and why is that a problem?
+      <span class="sol reveal">Arrian, in the 2nd century CE, from Aristobulus’s account: about 450 years after Alexander’s visit, giving only its meaning, and no inscription can be seen on the tomb today.</span></li>
+    <li>Identify two continuities and two changes from Pasargadae to Persepolis.
+      <span class="sol reveal">Continuities: columned halls; guardian figures at gates. Changes: one terrace holding all the main buildings; a more uniform court style (also: a rock-cut royal tomb).</span></li>
+    <li>Why are the three-language inscriptions at Pasargadae tricky evidence?
+      <span class="sol reveal">They name Cyrus, but they use a script first used under Darius, so they were probably added by Darius, linking himself to Cyrus.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u2l02-cite"><div class="k">Written sources</div>
+      <p class="small">Arrian, <i>Anabasis of Alexander</i> 6.29, trans. E. J. Chinnock (1884, public domain), from <a href="https://archive.org/details/theanabasisofale46976gut">Project Gutenberg EBook #46976</a> (archive.org copy).</p>
+      <p class="small">Herodotus, <i>Histories</i> 1.98: A. D. Godley’s Loeb translation (Vol. I, 1920), in the revised version published by the <a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=1:chapter=98">Perseus Digital Library</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 US</a>). Godley’s printed wording differs in places (he has ‘Agbatana’ and ‘the king’s dwellings’).</p>
+      <p class="small">Jona Lendering, <a href="https://www.livius.org/articles/place/pasargadae/">‘Pasargadae’</a>, <a href="https://www.livius.org/articles/place/ecbatana-hamadan/">‘Ecbatana (Hamadan)’</a> and <a href="https://www.livius.org/articles/place/persepolis/">‘Persepolis’</a>, Livius.org (quoted briefly; the sketch map of Pasargadae and the plan of Persepolis are drawn after its maps). The inscription ‘I, Cyrus the king, an Achaemenid’ is in Livius’s translation.</p>
+      <p class="small">Ali Mousavi, <a href="https://irangazetteer.ucla.edu/catalogue/pasargadae-%D9%BE%D8%A7%D8%B3%D8%A7%D8%B1%DA%AF%D8%A7%D8%AF/">‘Pasargadae’</a>, <i>Archaeological Gazetteer of Iran</i> (UCLA, 2023).</p></div>
+    <div class="card quiet"><div class="k">Syllabus and diagrams</div>
+      <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p>
+      <p class="small">The three diagrams were drawn for this lesson. Teacher resource: <i>The Persian Empire: Cyrus to Darius I</i> (class notebook).</p>
+      <p class="small">Also cited in the lesson notes: the Nabonidus Chronicle (ABC 7) ii.1–4, trans. A. K. Grayson, as published by <a href="https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-7-nabonidus-chronicle/">Livius.org</a>; Arrian, <i>Anabasis</i> 3.19 (Chinnock, as above); Herodotus 1.98 in Godley’s printed Loeb, with his footnote (via <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Herodotus/1B*.html">LacusCurtius</a>, public domain); A. Majlesi, ‘Excavation sheds new light on mysterious capital of Medes in Ecbatana’, <i>Tehran Times</i>, 30 June 2020; Encyclopaedia Iranica, ‘Cyrus v. Tomb’; Britannica, ‘Tomb of Cyrus’; University of Oxford, ‘Cabinet’: Tomb of Cyrus; UNESCO World Heritage Centre, ‘Persepolis’; and Xenophon (<i>Anabasis</i> 3.5.15), Polybius (10.27) and Plutarch (<i>Artaxerxes</i> 3), as cited by Livius.</p></div>
+  </div>
+  <div class="card quiet u2l02-cite"><div class="k">Images</div>
+    <ul class="small credits"><li><b>The tomb of Cyrus, Pasargadae</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Tomb_of_Cyrus,_Pasargadae,_the_first_capital_of_the_Achaemenid_Empire,_Iran_(48835820706).jpg">source</a></li><li><b>Excavation work at Tepe Hegmataneh, Hamadan</b> · Photo: Adam Jones · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Excavation_Work_at_Hegmataneh_Site_-_Hamadan_-_Western_Iran_(7423597384).jpg">source</a></li><li><b>Water channels of the royal garden, Pasargadae</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Pasargadae,_the_first_capital_of_the_Achaemenid_Empire,_Iran_(48835819046).jpg">source</a></li><li><b>Palace S (the audience hall), Pasargadae</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Pasargadae,_the_first_capital_of_the_Achaemenid_Empire,_Iran_(48835449158).jpg">source</a></li><li><b>Palace P (the residence), Pasargadae</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Pasargadae,_the_first_capital_of_the_Achaemenid_Empire,_Iran_(48835818591).jpg">source</a></li><li><b>Tall-e Takht, Pasargadae</b> · Photo: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Pasargadae,_the_first_capital_of_the_Achaemenid_Empire,_Iran_(48835447413).jpg">source</a></li><li><b>The winged figure of Gate R, Pasargadae (cropped)</b> · Photo: Shamsshams67 · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:%D8%A7%D9%86%D8%B3%D8%A7%D9%86_%D8%A8%D8%A7%D9%84%D8%AF%D8%A7%D8%B11.jpg">source</a></li><li><b>Relief panel with a winged figure, Nimrud (The Met, 32.143.8)</b> · The Metropolitan Museum of Art, Gift of John D. Rockefeller Jr., 1932 · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://www.metmuseum.org/art/collection/search/322615">source</a></li><li><b>The Gate of All Nations, Persepolis</b> · Photo: dynamosquito · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Gates_of_All_Nations.jpg">source</a></li></ul>
+    <p class="small">All images are public domain or openly licensed, and were resized for the web (the Gate R relief was also cropped). Each is shared under the licence shown.</p></div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>
