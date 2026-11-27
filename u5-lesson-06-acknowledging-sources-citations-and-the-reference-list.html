@@ -1,0 +1,1724 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U5 L6 · Acknowledging sources: citations and the reference list</title>
+<meta name="description" content="Year 11 Ancient History, the historical investigation: how to acknowledge every source in author–date style, with an in-text citation and a reference list entry for an ancient text in translation, a book, a journal article, a museum page, a web page and an online article, how to acknowledge an image or a permitted use of AI, and how to build a cited paraphrase into a sentence.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#384656; --bright:#5B6E84; --tint:#E9EDF2; --statement:#384656;
+  --solid:#384656; --soft:#DCE3EB; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#C2CEDB; --bright:#93A6BC; --tint:#1C252E; --statement:#2E3A47; --soft:#DCE3EB; } }
+:root[data-theme="dark"]{ --deep:#C2CEDB; --bright:#93A6BC; --tint:#1C252E; --statement:#2E3A47; --soft:#DCE3EB; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 5 Lesson 6 only (every class starts u5l06-) */
+
+/* title picture; goals slide syllabus line; credits links */
+.u5l06-cover img{max-height:50vh;}
+.u5l06-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u5l06-cite a, .u5l06-cite-card a{color:var(--deep);}
+
+/* a search string, exactly as typed */
+.u5l06-str{font-family:var(--mono); font-size:.86em; background:var(--surface-2); border:1px solid var(--rule);
+  border-radius:5px; padding:.02em .38em; white-space:normal; overflow-wrap:anywhere; color:var(--ink);}
+
+/* the practice question, set large */
+.u5l06-bigq{margin:0; padding:.5em .9em; border-left:6px solid var(--deep); background:var(--tint); border-radius:0 10px 10px 0;
+  font-family:var(--disp); font-size:calc(var(--fs-body)*1.0); line-height:1.3; color:var(--ink);}
+.u5l06-bigq .k{display:block; font-family:var(--ui); font-size:.62em; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--deep); margin-bottom:.2em;}
+
+/* where to look; search moves; primary or secondary */
+.u5l06-where td:first-child{width:24%; font-weight:600;}
+.u5l06-where td:nth-child(2){width:46%;}
+.u5l06-where a, .u5l06-urls a, .u5l06-trail a, .u5l06-pay a{color:var(--deep);}
+.u5l06-strs td:first-child{width:42%;}
+.u5l06-sort td:first-child{width:34%; font-weight:600;}
+
+/* read the URL */
+.u5l06-urls{list-style:none; margin:0; padding:0; display:grid; gap:.45em;}
+.u5l06-urls li{border:1px solid var(--rule); border-radius:8px; background:var(--surface); padding:.35em .7em;
+  font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+.u5l06-urls .u5l06-url{display:block; font-family:var(--mono); font-size:.86em; color:var(--slate); overflow-wrap:anywhere;
+  margin-bottom:.15em;}
+.u5l06-urls .u5l06-url b{color:var(--deep);}
+.u5l06-ends{display:flex; flex-wrap:wrap; gap:.35em;}
+.u5l06-ends span{border:1px solid var(--rule); border-radius:999px; padding:.1em .65em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.74);}
+.u5l06-ends b{font-family:var(--mono); color:var(--deep);}
+
+/* the trail */
+.u5l06-trail li .d{overflow-wrap:anywhere;}
+.u5l06-pay{margin:.2em 0 0; padding-left:1.15em; font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+.u5l06-pay li{margin:.18em 0;}
+
+/* a museum database result beside the sort */
+.u5l06-rel .figure img{max-height:26vh;}
+
+/* an invented reference (chatbot slide) */
+.u5l06-fake{border:2px dashed var(--c-keyterm); border-radius:10px; padding:.5em .85em; background:var(--surface);}
+.u5l06-fake .k{color:var(--c-keyterm);}
+.u5l06-fake p{margin:.2em 0 0; font-size:calc(var(--fs-body)*.82); line-height:1.36;}
+
+/* the research log template and the AI log model */
+.u5l06-tpl{display:grid; grid-template-columns:auto 1fr; margin:0; border:1px solid var(--rule); border-radius:10px;
+  overflow:hidden; background:var(--surface);}
+.u5l06-tpl dt{padding:.3em .7em; font-weight:700; color:var(--deep); background:var(--tint); border-bottom:1px solid var(--rule);
+  font-size:calc(var(--fs-body)*.78);}
+.u5l06-tpl dd{margin:0; padding:.3em .7em; border-bottom:1px solid var(--rule); font-size:calc(var(--fs-body)*.78);
+  line-height:1.34; color:var(--slate);}
+.u5l06-tpl dt:last-of-type, .u5l06-tpl dd:last-of-type{border-bottom:0;}
+
+/* paragraphs inside a card need a little air */
+.card .body + .body, .card .body + .u5l06-tpl, .card .u5l06-tpl + .body, .card .veil-parts, .card .body + .quote{margin-top:.4em;}
+
+/* a frame or word bank */
+.u5l06-bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.u5l06-bank span{border:1px solid var(--c-keyterm); color:var(--c-keyterm); border-radius:999px; padding:.1em .7em;
+  background:var(--w-keyterm); font-size:calc(var(--fs-body)*.8); font-weight:600;}
+
+/* the Writing focus key: four labels in two columns */
+.u5l06-wfkey{display:grid; grid-template-columns:1fr 1fr; gap:.2em .8em; margin-top:.35em;}
+.u5l06-contrast{display:grid; grid-template-columns:auto 1fr; gap:.15em .6em; margin:.35em 0 0;
+  font-size:calc(var(--fs-body)*.78); line-height:1.34;}
+.u5l06-contrast dt{font-weight:700; color:var(--deep);}
+.u5l06-contrast dd{margin:0; color:var(--slate);}
+
+
+/* a reference-list entry: hanging indent, as on paper */
+.u5l06-ref{margin:0; padding-left:1.6em; text-indent:-1.6em; font-size:calc(var(--fs-body)*.8); line-height:1.4; color:var(--ink);
+  overflow-wrap:anywhere;}
+.u5l06-ref + .u5l06-ref{margin-top:.35em;}
+.u5l06-ref .u5l06-url{font-family:var(--mono); font-size:.84em; color:var(--slate);}
+.u5l06-ref i{font-style:italic;}
+.u5l06-list{border:1px solid var(--rule); border-radius:10px; background:var(--surface); padding:.55em .9em;}
+.u5l06-list .u5l06-ref{border-bottom:1px dotted var(--rule); padding-bottom:.3em;}
+.u5l06-list .u5l06-ref:last-child{border-bottom:0; padding-bottom:0;}
+.u5l06-list .u5l06-ltr{display:inline-block; text-indent:0; min-width:1.6em; font-weight:700; color:var(--deep);}
+.u5l06-ref .u5l06-ltr{display:inline-block; text-indent:0; min-width:1.35em; font-weight:700; color:var(--deep); margin-left:0;}
+
+/* an in-text citation chip */
+.u5l06-cite{display:inline-block; font-family:var(--mono); font-size:.84em; border:1px solid var(--rule); border-radius:6px;
+  background:var(--surface-2); padding:.02em .4em; color:var(--ink); white-space:normal;}
+
+/* the labelled boxes of a reference template */
+.u5l06-tpl{display:grid; grid-template-columns:repeat(auto-fit,minmax(7.5em,1fr)); gap:.35em; margin:.2em 0 0;}
+.u5l06-tpl span{border:1.5px solid var(--deep); border-radius:8px; padding:.25em .5em; font-size:calc(var(--fs-body)*.72);
+  color:var(--slate); background:var(--surface);}
+.u5l06-tpl span b{display:block; color:var(--deep); font-size:.92em;}
+
+/* a faulty citation and its fix */
+.u5l06-bad{color:var(--c-keyterm); font-weight:600;}
+.u5l06-fix td:first-child{width:36%;}
+.u5l06-cards td:first-child{width:17%; font-weight:600;}
+.u5l06-cards td:nth-child(2){width:49%;}
+.u5l06-order td:first-child{width:68%; font-weight:400;}
+.u5l06-order td:nth-child(2){width:32%;}
+.u5l06-card td:first-child{width:15%;}
+.u5l06-card td:nth-child(2){width:57%;}
+
+/* the title picture is a portrait statue */
+.u5l06-cover img{max-height:56vh; width:auto; max-width:100%;}
+.u5l06-pyr .figure img{max-height:22vh;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u5l06-where td:first-child, .u5l06-where td:nth-child(2), .u5l06-moves td:first-child, .u5l06-moves td:nth-child(2),
+  .u5l06-sort td:first-child, .u5l06-strs td:first-child{width:auto;}
+  .u5l06-wfkey{grid-template-columns:1fr;}
+  /* the entry tables stack on phones: each row becomes a small card */
+  .u5l06-cards td:first-child, .u5l06-cards td:nth-child(2), .u5l06-order td:first-child, .u5l06-order td:nth-child(2),
+  .u5l06-card td:first-child, .u5l06-card td:nth-child(2), .u5l06-fix td:first-child{width:auto;}
+  .u5l06-cards tr, .u5l06-fix tr{display:block; border-bottom:1px solid var(--rule); padding:.3em 0;}
+  .u5l06-cards td, .u5l06-fix td{display:block; border:0; padding:.12em .5em;}
+  .u5l06-cards tr:first-child, .u5l06-fix tr:first-child{display:none;}
+  .u5l06-cards:not(.u5l06-order) td:first-child{font-weight:700; color:var(--deep);}
+  .u5l06-order td:nth-child(2){padding-top:0;}
+  .u5l06-cover img{max-height:340px;}
+  /* three-column tables stack on phones: each row becomes a small card */
+  .u5l06-where tr, .u5l06-moves tr, .u5l06-strs tr{display:block; border-bottom:1px solid var(--rule); padding:.3em 0;}
+  .u5l06-where td, .u5l06-moves td, .u5l06-strs td{display:block; border:0; padding:.12em .5em;}
+  .u5l06-where tr:first-child, .u5l06-moves tr:first-child, .u5l06-strs tr:first-child{display:none;}
+  .u5l06-where td:first-child, .u5l06-moves td:first-child, .u5l06-strs td:first-child{font-weight:700; color:var(--deep);}
+  .u5l06-rel .figure img{max-height:220px;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u5l06-dense .u5l06-ref{font-size:calc(var(--fs-body)*.7); line-height:1.3;}
+  html:not(.read) .u5l06-dense .u5l06-order .u5l06-ref{font-size:calc(var(--fs-body)*.68); line-height:1.28;}
+  html:not(.read) .u5l06-dense .u5l06-order td{padding:.2em .5em;}
+  html:not(.read) .u5l06-dense .u5l06-cite{font-size:.74em;}
+  html:not(.read) .u5l06-dense .u5l06-order .u5l06-cite{font-size:.68em;}
+  html:not(.read) .u5l06-dense .u5l06-tpl span{font-size:calc(var(--fs-body)*.66);}
+  html:not(.read) .u5l06-dense{gap:10px;}
+  html:not(.read) .u5l06-dense h2{font-size:calc(var(--fs-h2)*.82);}
+  html:not(.read) .u5l06-dense .quote.sm{font-size:calc(var(--fs-body)*.76); line-height:1.4;}
+  html:not(.read) .u5l06-dense .quote{font-size:calc(var(--fs-body)*.88);}
+  html:not(.read) .u5l06-dense .src{padding:9px 15px;}
+  html:not(.read) .u5l06-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u5l06-dense .note{padding:.42em .8em;}
+  html:not(.read) .u5l06-dense .note .body, html:not(.read) .u5l06-dense .card .body,
+  html:not(.read) .u5l06-dense .qprompt{font-size:calc(var(--fs-body)*.76); line-height:1.34;}
+  html:not(.read) .u5l06-dense .card{padding:9px 15px;}
+  html:not(.read) .u5l06-dense .card .k{margin-bottom:.22em;}
+  html:not(.read) .u5l06-dense .keylist{gap:5px;}
+  html:not(.read) .u5l06-dense .keylist li{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u5l06-dense .tbl.compact{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u5l06-dense .tbl.compact td{padding:.28em .5em;}
+  html:not(.read) .u5l06-dense .tbl th{padding:.35em .55em;}
+  html:not(.read) .u5l06-dense .figure img{max-height:28vh;}
+  html:not(.read) .u5l06-dense .u5l06-rel .figure img{max-height:20vh;}
+  html:not(.read) .u5l06-dense .u5l06-bigq{font-size:calc(var(--fs-body)*.9); padding:.32em .8em;}
+  html:not(.read) .u5l06-dense .u5l06-urls li{font-size:calc(var(--fs-body)*.72); padding:.26em .6em;}
+  html:not(.read) .u5l06-dense .u5l06-urls{gap:.3em;}
+  html:not(.read) .u5l06-dense .u5l06-ends span{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u5l06-dense .u5l06-pay{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u5l06-dense .u5l06-fake p{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u5l06-dense .u5l06-tpl dt, html:not(.read) .u5l06-dense .u5l06-tpl dd{font-size:calc(var(--fs-body)*.7); padding:.22em .6em;}
+  html:not(.read) .u5l06-dense .u5l06-contrast{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u5l06-dense .mq{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u5l06-dense .u5l06-wfkey .mq{font-size:calc(var(--fs-body)*.68); line-height:1.3;}
+  html:not(.read) .u5l06-dense .tf li, html:not(.read) .u5l06-dense .rq{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u5l06-dense .tf li{padding:.24em .6em;}
+  html:not(.read) .u5l06-dense .prac{gap:6px;}
+  html:not(.read) .u5l06-dense .cornell .cq, html:not(.read) .u5l06-dense .cornell .nts{font-size:calc(var(--fs-body)*.74); padding:.32em .75em;}
+  html:not(.read) .u5l06-dense .u5l06-bank span{font-size:calc(var(--fs-body)*.7);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 6" data-title="Acknowledging sources: citations and the reference list" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.15fr .85fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 5 · Historical investigation · Lesson 6</p>
+      <h1>Acknowledging sources: citations and the reference list</h1>
+      <p class="lead">How do you show a reader exactly where every idea, quotation and picture came from, so that they can check it?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u5l06-cover"><figure class="figure contain"><img src="images/u5l06-nikare-as-a-scribe-met.jpg" alt="A granite statue showing an Egyptian official, Nikare, as a scribe: Old Kingdom, Dynasty 5, dated by The Met to about 2420–2389 BCE or later (The Met, 48.67). A scribe’s work was keeping records; a historian’s includes recording where each source came from" loading="lazy"><figcaption>A granite statue showing an Egyptian official, Nikare, as a scribe: Old Kingdom, Dynasty 5, dated by The Met to about 2420–2389 BCE or later (The Met, 48.67). A scribe’s work was keeping records; a historian’s includes recording where each source came from — <span class="cr">The Metropolitan Museum of Art, Rogers Fund, 1948 · CC0 1.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 6" data-title="Connect: patchwriting" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Connect · 3 minutes · books closed · everyone writes · press K for the timer</p>
+  <h2>From last lesson: patchwriting</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · one line</div>
+        <p class="lead">What is patchwriting, and how do you avoid it?</p></div>
+      <p class="cue">Then compare your line with a partner’s, and fix one thing.</p>
+    </div>
+    <div class="note reveal" data-code="judgement" data-veil="Write your line first — then show the answer"><div class="k">A strong line includes</div>
+      <p class="body"><b>Patchwriting:</b> swapping synonyms into a source’s sentence; still plagiarism, because the words are changed but the structure is still the source’s. <b>Avoid it</b> by closing the source, writing from your own notes in your own words and structure, and adding the citation.</p>
+      <p class="body">Even a perfect paraphrase needs a citation: that is today’s lesson.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 6" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>acknowledge sources consistently in text and in a reference list</li>
+        <li>integrate a cited paraphrase into a sentence</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>write in-text citations in author–date style, including for ancient texts</li>
+        <li>write reference-list entries for a book, an article, a website and an ancient text in translation</li>
+        <li>integrate a paraphrase with a signal phrase and a citation</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u5l06-syl"><b>Syllabus outcomes:</b> AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts · AH-11-08 plans and conducts historical investigations and presents conclusions, using evidence from a range of sources. <b>Life Skills:</b> AH-LS-12 participates in a historical investigation · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 6" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U5 L6 · Acknowledging sources: citations and the reference list</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (n.d. = no date; c. = about; BCE = Before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">What are the two places to acknowledge a source?</div><div class="nts">in the text (citation) → at the end (reference list)</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A new lesson, a new page</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences; copy a reference exactly, punctuation and all, only from your citation card.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at the ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: describe, explain, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Your reference list is separate</span><span class="d">Notes hold what you learn; the reference list holds the sources you cite. One checkpoint today: acknowledging sources.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 6" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u5l06-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for acknowledging sources</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Writing terms</th><th>Meaning</th></tr>
+      <tr><td>In-text citation</td><td>A short reference in your sentence, e.g. <span class="nq">(Tallet and Marouard 2014)</span> or <span class="nq">(Herodotus 2.124)</span>.</td></tr>
+      <tr><td>Reference list</td><td>The full details of every source cited, in alphabetical order by author.</td></tr>
+      <tr><th>Research terms</th><th>Meaning</th></tr>
+      <tr><td>Translation / edition</td><td>An ancient text in another language, made by a named translator / a particular published version of it.</td></tr>
+      <tr><td>Plagiarism</td><td>Using another person’s words or ideas without acknowledgement.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Author–date style</td><td>A referencing style that cites the author and year in the text, and gives the full entry in an alphabetical reference list. It is a form of Harvard referencing.</td></tr>
+      <tr><td>n.d.</td><td>‘No date’: used in place of the year when a source shows none.</td></tr>
+      <tr><td>Signal phrase</td><td>Words that tell the reader whose idea is coming and what they did: <span class="nq">‘Excavators at Heit el-Ghurab found …’</span></td></tr>
+      <tr><td>DOI</td><td>A permanent link to one published article, such as <span class="nq">https://doi.org/10.5615/neareastarch.77.1.0004</span>.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Acknowledging sources" data-title="Two places, and what to record" data-kind="notes">
+<div class="wrap u5l06-dense">
+  <p class="eyebrow">1 · Acknowledging sources · I do — two places, and what to record the moment you find a source · then cold call</p>
+  <h2>Two places to acknowledge a source</h2>
+  <div class="split" style="--cols:.95fr 1.05fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Every source you use, twice</div>
+        <ol class="body">
+          <li><b>In the text:</b> an in-text citation each time you quote, paraphrase, summarise or directly copy.</li>
+          <li><b>At the end:</b> a reference list of the sources you cited, in alphabetical order.</li>
+        </ol></div>
+      <div class="src">
+        <div class="k">Source · NESA, All My Own Work</div>
+        <p class="quote">Every source you’ve included as an in-text citation, footnote or endnote should also be in your reference list.</p>
+        <p class="prov">NSW Education Standards Authority, <i>HSC: All My Own Work</i>, Topic 3, 3.3 · students must use a consistent referencing style</p>
+      </div>
+      <p class="qprompt">Why record the date you viewed a web page?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">Web pages change and disappear. The date tells a reader which version you saw. Record it, with the URL and the other details, the moment you find the source.</p></div>
+    </div>
+    <div class="stack">
+      <p class="small">One reference-list entry, taken apart · class model · author–date style</p>
+      <p class="u5l06-ref nq"><span class="match" data-step="m1">Ancient Egypt Research Associates</span> <span class="match" data-step="m2">(n.d.)</span> <span class="match" data-step="m3">‘The Lost City of the Pyramids (Heit el-Ghurab)’</span>, <span class="match" data-step="m4">AERA</span>, <span class="match" data-step="m5">viewed [date], https://aeraweb.org/projects/lost-city/</span></p>
+      <div class="u5l06-wfkey" style="grid-template-columns:1fr">
+        <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Who:</b> the person or organisation that made the page</span></p>
+        <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>When:</b> the year the page shows, or <b>n.d.</b> (no date)</span></p>
+        <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>What:</b> the title of the page, in quotation marks</span></p>
+        <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>Where:</b> the site it sits on</span></p>
+        <p class="mq reveal" data-c="m5" data-hl="[data-step=m5]"><span class="sw"></span><span><b>Find it again:</b> the date you viewed it, and the URL</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Acknowledging sources" data-title="An ancient text in translation" data-kind="notes">
+<div class="wrap u5l06-dense">
+  <p class="eyebrow">1 · Acknowledging sources · I do — an ancient text in translation · then cold call</p>
+  <h2>An ancient text: cite the ancient author, and name the translator</h2>
+  <div class="split" style="--cols:1.1fr .9fr">
+    <div class="stack">
+      <p class="small">Reference-list entry</p>
+      <p class="u5l06-ref nq">Herodotus (1920) <i>The Histories</i>, trans. A. D. Godley, as revised by the Perseus Digital Library, viewed [date], https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126</p>
+      <p class="small">In the text</p>
+      <p class="u5l06-cite nq">(Herodotus 2.124)</p>
+      <p class="qprompt">In (Herodotus 2.124), what do the numbers mean, and why is there no year?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body"><b>Book 2, chapter 124.</b> Every edition and translation numbers the text the same way, so a reader can find the passage in any of them. The edition you used is in the reference list.</p></div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">The author is the ancient writer</span><span class="d">Herodotus, not Perseus and not the translator.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">The year is the translation’s</span><span class="d">Godley’s, 1920: the date on Perseus’s source line.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">The translator is named</span><span class="d">A translation is a source too. Perseus names only Godley; we add “as revised by the Perseus Digital Library” because we checked its wording against Godley’s printed book.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">The library goes at the end</span><span class="d">Perseus is where you read it, with the date you viewed it and the URL.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Acknowledging sources" data-title="A book and a journal article" data-kind="notes">
+<div class="wrap u5l06-dense">
+  <p class="eyebrow">1 · Acknowledging sources · I do — a book and a journal article · then cold call</p>
+  <h2>A book and a journal article: what goes where</h2>
+  <div class="tbl-scroll"><table class="tbl compact u5l06-cards">
+    <tr><th>Kind</th><th>Reference-list entry</th><th>In the text</th></tr>
+    <tr class="reveal"><td>A book</td><td><p class="u5l06-ref nq">Lehner, M. and Hawass, Z. (2017) <i>Giza and the Pyramids: The Definitive History</i>. Chicago: University of Chicago Press.</p></td><td><span class="u5l06-cite nq">(Lehner and Hawass 2017, p. [page])</span></td></tr>
+    <tr class="reveal"><td>A journal article</td><td><p class="u5l06-ref nq">Tallet, P. and Marouard, G. (2014) ‘The Harbor of Khufu on the Red Sea Coast at Wadi al-Jarf, Egypt’, <i>Near Eastern Archaeology</i>, 77(1), pp. 4–14. https://doi.org/10.5615/neareastarch.77.1.0004</p></td><td><span class="u5l06-cite nq">(Tallet and Marouard 2014)</span></td></tr>
+  </table></div>
+  <div class="split" style="--cols:1fr 1fr">
+    <ul class="keylist u5l06-pts">
+      <li class="reveal"><span class="num">1</span><span class="t">Surname first, then initials</span><span class="d">In the list. Two authors are joined with <i>and</i>, in the list and in the text.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Titles of whole works are in italics</span><span class="d">A book’s title; a journal’s title. An article’s own title is in quotation marks.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">A page number when it is a particular passage</span><span class="d">Add <span class="nq">p. 12</span> after the year in the text.</span></li>
+    </ul>
+    <div class="stack">
+      <p class="qprompt">Why does the article entry give the volume, issue and pages?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">So a reader can go straight to it in a library or database: <b>77(1)</b> is volume 77, issue 1, and <b>pp. 4–14</b> are its pages. The DOI is a permanent link to the same article.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Acknowledging sources" data-title="Web pages and an online article" data-kind="notes">
+<div class="wrap u5l06-dense">
+  <p class="eyebrow">1 · Acknowledging sources · I do — three web pages and an online article · then cold call</p>
+  <h2>Web pages: who made it, and what date does it show?</h2>
+  <div class="tbl-scroll"><table class="tbl compact u5l06-cards">
+    <tr><th>Kind</th><th>Reference-list entry</th><th>In the text</th></tr>
+    <tr class="reveal"><td>An organisation’s web page</td><td><p class="u5l06-ref nq">Ancient Egypt Research Associates (n.d.) ‘The Lost City of the Pyramids (Heit el-Ghurab)’, AERA, viewed [date], https://aeraweb.org/projects/lost-city/</p></td><td><span class="u5l06-cite nq">(Ancient Egypt Research Associates n.d.)</span></td></tr>
+    <tr class="reveal"><td>A museum’s collection page</td><td><p class="u5l06-ref nq">Metropolitan Museum of Art (n.d.) ‘Relief fragment with king Khufu’s cattle’ (22.1.3a, b), The Met, viewed [date], https://www.metmuseum.org/art/collection/search/543890</p></td><td><span class="u5l06-cite nq">(Metropolitan Museum of Art n.d.)</span></td></tr>
+    <tr class="reveal"><td>A government page</td><td><p class="u5l06-ref nq">Ministry of Tourism and Antiquities (Egypt) (n.d.) ‘Workers’ Town and Cemetery’, Discover Egypt’s Monuments, viewed [date], https://egymonuments.gov.eg/en/monuments/workers-town-and-cemetery/</p></td><td><span class="u5l06-cite nq">(Ministry of Tourism and Antiquities (Egypt) n.d.)</span></td></tr>
+    <tr class="reveal"><td>An online article with an author</td><td><p class="u5l06-ref nq">Weiss, D. (2022) ‘Journeys of the Pyramid Builders’, <i>Archaeology</i>, July/August, viewed [date], https://archaeology.org/issues/july-august-2022/features/egypt-wadi-el-jarf-port-papyri/</p></td><td><span class="u5l06-cite nq">(Weiss 2022)</span></td></tr>
+  </table></div>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="card accent"><div class="k">Author and date: the rule</div>
+      <p class="body"><b>Author:</b> the person named on the page, or else the organisation that runs it; never Google, and never the library that holds it. <b>Date:</b> the date the page shows; if it shows none, <b>n.d.</b> A © year in the footer belongs to the whole site, so it is not the page’s date.</p></div>
+    <div class="stack">
+      <p class="qprompt">A page shows no author and no date. What do you write for each?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body"><b>Author:</b> the organisation that runs the site (AERA). <b>Date:</b> <b>n.d.</b> The footer’s © year is the site’s, not this page’s.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Acknowledging sources" data-title="Put the list in order" data-kind="notes">
+<div class="wrap u5l06-dense">
+  <p class="eyebrow">1 · Acknowledging sources · I do — the whole reference list, in order, with its in-text citations · then cold call</p>
+  <h2>The reference list: alphabetical, and matched to the text</h2>
+  <div class="tbl-scroll"><table class="tbl compact u5l06-cards u5l06-order">
+    <tr><th>Reference list · alphabetical by author</th><th>In the text</th></tr>
+    <tr class="reveal"><td><p class="u5l06-ref nq"><b>A</b> Ancient Egypt Research Associates (n.d.) ‘The Lost City of the Pyramids (Heit el-Ghurab)’, AERA, viewed [date], https://aeraweb.org/projects/lost-city/</p></td><td><span class="u5l06-cite nq">(Ancient Egypt Research Associates n.d.)</span></td></tr>
+    <tr class="reveal"><td><p class="u5l06-ref nq"><b>H</b> Herodotus (1920) <i>The Histories</i>, trans. A. D. Godley, as revised by the Perseus Digital Library, viewed [date], https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126</p></td><td><span class="u5l06-cite nq">(Herodotus 2.124)</span></td></tr>
+    <tr class="reveal"><td><p class="u5l06-ref nq"><b>L</b> Lehner, M. and Hawass, Z. (2017) <i>Giza and the Pyramids: The Definitive History</i>. Chicago: University of Chicago Press.</p></td><td><span class="u5l06-cite nq">(Lehner and Hawass 2017, p. [page])</span></td></tr>
+    <tr class="reveal"><td><p class="u5l06-ref nq"><b>Me</b> Metropolitan Museum of Art (n.d.) ‘Relief fragment with king Khufu’s cattle’ (22.1.3a, b), The Met, viewed [date], https://www.metmuseum.org/art/collection/search/543890</p></td><td><span class="u5l06-cite nq">(Metropolitan Museum of Art n.d.)</span></td></tr>
+    <tr class="reveal"><td><p class="u5l06-ref nq"><b>Mi</b> Ministry of Tourism and Antiquities (Egypt) (n.d.) ‘Workers’ Town and Cemetery’, Discover Egypt’s Monuments, viewed [date], https://egymonuments.gov.eg/en/monuments/workers-town-and-cemetery/</p></td><td><span class="u5l06-cite nq">(Ministry of Tourism and Antiquities (Egypt) n.d.)</span></td></tr>
+    <tr class="reveal"><td><p class="u5l06-ref nq"><b>T</b> Tallet, P. and Marouard, G. (2014) ‘The Harbor of Khufu on the Red Sea Coast at Wadi al-Jarf, Egypt’, <i>Near Eastern Archaeology</i>, 77(1), pp. 4–14. https://doi.org/10.5615/neareastarch.77.1.0004</p></td><td><span class="u5l06-cite nq">(Tallet and Marouard 2014)</span></td></tr>
+    <tr class="reveal"><td><p class="u5l06-ref nq"><b>W</b> Weiss, D. (2022) ‘Journeys of the Pyramid Builders’, <i>Archaeology</i>, July/August, viewed [date], https://archaeology.org/issues/july-august-2022/features/egypt-wadi-el-jarf-port-papyri/</p></td><td><span class="u5l06-cite nq">(Weiss 2022)</span></td></tr>
+  </table></div>
+  <div class="split" style="--cols:1.1fr .9fr">
+    <p class="small"><b>Two ways to cite in a sentence.</b> Name in the brackets: <span class="nq">… the crown fed its crews (Ancient Egypt Research Associates n.d.).</span> Name in the sentence, year in brackets: <span class="nq">Weiss (2022) reports that …</span></p>
+    <div class="stack">
+      <p class="qprompt">‘Metropolitan Museum of Art’ or ‘Ministry of Tourism and Antiquities’: which comes first, and how do you know?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body"><b>Metropolitan.</b> Both start with M, so compare the next letters: <b>e</b> comes before <b>i</b>. Go letter by letter.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Acknowledging sources" data-title="An image, and a permitted use of AI" data-kind="notes">
+<div class="wrap u5l06-dense">
+  <p class="eyebrow">1 · Acknowledging sources · I do — acknowledge an image, and any permitted use of AI · then cold call</p>
+  <h2>Acknowledge pictures and permitted AI like any other source</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack u5l06-pyr">
+      <figure class="figure contain"><img src="images/u5l01-great-pyramid-giza.jpg" alt="The Great Pyramid at Giza, built for King Khufu, whom Herodotus calls Kheops; visitors at its base give the scale" loading="lazy"><figcaption>The Great Pyramid at Giza, built for King Khufu, whom Herodotus calls Kheops; visitors at its base give the scale — <span class="cr">Photo: Nina Aldin Thune · CC BY 2.5</span></figcaption></figure>
+      <div class="card accent"><div class="k">An image: credit it twice</div>
+        <p class="body">In the text, a caption: <span class="u5l06-cite nq">Figure 1. The Great Pyramid at Giza (Nina Aldin Thune 2005).</span></p>
+        <p class="u5l06-ref nq" style="margin-top:.35em">Nina Aldin Thune (2005) <i>Kheops pyramid</i> [photograph], Wikimedia Commons, CC BY 2.5, viewed [date], https://commons.wikimedia.org/wiki/File:Kheops-Pyramid.jpg</p>
+        <p class="body" style="margin-top:.35em">Find the owner and the licence on the picture’s own page; don’t just copy a result from an image search. This entry goes in the list between ‘Ministry’ and ‘Tallet’.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card"><div class="k">A permitted use of AI: acknowledge the use</div>
+        <ul class="body">
+          <li>Only when your teacher permits it, and only for the purpose they allow.</li>
+          <li>AI is not a source, so never cite it for a fact: find the real source and cite that.</li>
+          <li>Keep a note of the tool, your exact prompt, what you kept and how you checked it.</li>
+        </ul>
+        <p class="small">A model acknowledgement · written for this lesson, generic</p>
+        <p class="quote sm model">I used [tool, version] on [date] only for [the purpose my teacher permitted]. My prompt, its output and what I kept are in my research log, and I checked everything I kept against a real source. AI did not write, paraphrase or summarise any of my work.</p>
+        <p class="body" style="margin-top:.35em">Put it where your teacher directs.</p></div>
+      <p class="qprompt">Why name the maker and the licence of a picture, even when it is free to use?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">A ‘CC BY’ licence allows reuse on condition that you credit the maker and name the licence. Naming them also lets a reader check the picture is what its caption says.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · We do: faulty citations" data-title="We do: correct five faulty citations" data-kind="notes">
+<div class="wrap u5l06-dense">
+  <p class="eyebrow">2 · We do · pairs correct five faulty citations, then we check · then cold call</p>
+  <h2>Five faulty citations: fix each one</h2>
+  <div data-veil="Correct them first — then show the fixes">
+    <div class="tbl-scroll"><table class="tbl compact u5l06-fix">
+      <tr><th>Faulty citation</th><th>What is wrong, and the corrected version</th></tr>
+      <tr><td><span class="u5l06-cite nq u5l06-bad">(Google)</span></td><td class="reveal"><b>Google is a search tool, not an author.</b> Name who made the page you read: <span class="u5l06-cite nq">(Ancient Egypt Research Associates n.d.)</span></td></tr>
+      <tr><td><span class="u5l06-cite nq u5l06-bad">(Perseus, 2.124)</span></td><td class="reveal"><b>Perseus is where you read it, not who wrote it.</b> <span class="u5l06-cite nq">(Herodotus 2.124)</span>; Perseus goes in the reference-list entry.</td></tr>
+      <tr><td><span class="u5l06-cite nq u5l06-bad">(ChatGPT)</span></td><td class="reveal"><b>A chatbot is not a source.</b> Find a real source for the fact and cite that. If your teacher permitted AI for a purpose, acknowledge the use in your statement, not as a citation.</td></tr>
+      <tr><td><span class="u5l06-cite nq u5l06-bad">(Tallet and Marouard)</span></td><td class="reveal"><b>The date is missing.</b> <span class="u5l06-cite nq">(Tallet and Marouard 2014)</span>. Use <i>n.d.</i> only when the source really shows no date.</td></tr>
+      <tr><td><span class="nq">… a phyle of about 40 men <span class="u5l06-bad">(Weiss 2022)</span>.</span> The student’s reference list holds entries for AERA, Herodotus and Tallet and Marouard only.</td><td class="reveal"><b>The citation is not in the list.</b> Every in-text citation needs an entry: add <span class="nq">Weiss, D. (2022) ‘Journeys of the Pyramid Builders’, <i>Archaeology</i>, July/August, viewed [date], https://archaeology.org/issues/july-august-2022/features/egypt-wadi-el-jarf-port-papyri/</span> (or delete the citation if you did not use the source).</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · We do: faulty citations" data-title="Notes — Acknowledging sources" data-kind="notes">
+<div class="wrap u5l06-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint</p>
+  <h2>Acknowledging sources</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U5 L6 · Acknowledging sources: citations and the reference list</b></span><span>1–5 · Acknowledging sources</span></div>
+    <div class="row"><div class="cq">Explain the two places to acknowledge a source, and how they match.</div>
+      <div class="nts reveal">in the text: in-text citation (quote, paraphrase, summarise, copy) <span class="sep">·</span> at the end: reference list, alphabetical by author <span class="sep">·</span> every citation has an entry <span class="sep">·</span> list = cited; bibliography = all used</div></div>
+    <div class="row"><div class="cq">What goes in an author–date entry for each kind of source?</div>
+      <div class="nts reveal">ancient text: author (edition year) <i>title</i>, trans., where read, URL <span class="sep">·</span> book: authors (year) <i>Title</i>. Place: publisher <span class="sep">·</span> article: authors (year) ‘title’, <i>Journal</i>, vol(issue), pp., DOI <span class="sep">·</span> web page: organisation (year or n.d.) ‘title’, site, viewed, URL</div></div>
+    <div class="row"><div class="cq">How do I choose the author and the date of a web page?</div>
+      <div class="nts reveal">author = the person named, else the organisation behind the page (never Google, never the library) <span class="sep">·</span> date = the date the page shows, else n.d. <span class="sep">·</span> a footer © year is the site’s</div></div>
+    <div class="row"><div class="cq">How is an ancient text cited, and why?</div>
+      <div class="nts reveal">(Herodotus 2.124) = author, book, chapter, no year <span class="sep">·</span> numbers belong to the text, any edition <span class="sep">·</span> translator in the list</div></div>
+    <div class="row"><div class="cq">How do I acknowledge an image and a permitted use of AI?</div>
+      <div class="nts reveal">image: caption + entry: maker (year) title [photograph], site, licence, viewed, URL <span class="sep">·</span> AI (only if permitted): a statement of tool, purpose, prompt, what kept, checked; never cited for a fact</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Writing focus: integrating a cited paraphrase" data-kind="notes">
+<div class="wrap u5l06-dense">
+  <p class="eyebrow">3 · You do · Writing focus · 6 minutes · I do → We do → apply</p>
+  <h2>Writing focus: build a cited paraphrase into your sentence</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+    <div class="card accent"><div class="k">I do · watch</div>
+      <p class="body">A cited paraphrase has three parts: a <b>signal phrase</b> that says whose idea is coming · the idea in <b>your own words and structure</b> · the <b>citation</b>, before the full stop.</p>
+      <p class="small">Worked example · written for this lesson, on the class question</p>
+      <p class="small">Source · AERA: “craft workshops, industrial yards, bakeries, commissaries, kitchens”; the town was “Purpose-built by the crown”.</p>
+      <p class="quote sm model" data-booklet="model"><span class="match" data-step="m1">Excavators at Heit el-Ghurab found</span> <span class="match" data-step="m2">bakeries, kitchens and workshops in the builders’ town, which suggests that the crown fed and equipped its crews</span> <span class="match" data-step="m3">(Ancient Egypt Research Associates n.d.)</span>.</p>
+      <div class="u5l06-wfkey">
+        <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Signal phrase:</b> who found what</span></p>
+        <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Paraphrase</b> + my inference (<i>suggests</i>)</span></p>
+        <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>Citation:</b> before the full stop</span></p>
+      </div>
+      <p class="body">Frame: <span class="nq">‘[Signal phrase] …, which suggests … (Author year).’</span></p>
+    </div>
+    <div class="card quiet"><div class="k">Apply · in your own writing</div>
+      <p class="body" style="max-width:none">Write two cited sentences from your own notes with the frame. Your Writing toolkit (booklet pages 3–4): attribution verbs.</p></div>
+    </div>
+    <div class="card"><div class="k">We do · cold call</div>
+      <p class="body">Look at the worked example. Where does the citation go, and why does it say <span class="nq">n.d.</span>?</p>
+      <div class="veil-parts" data-veil="Answer first — then show the answer">
+        <div class="note vp reveal" data-code="evidence"><div class="k">Answer</div><p class="body">Before the full stop, so the citation belongs to the sentence. <b>n.d.</b> because the AERA page shows no date.</p></div>
+        <p class="small vp reveal">One more look · the same idea, with the name in the sentence</p>
+        <p class="quote sm model vp reveal">Ancient Egypt Research Associates (n.d.) describe a purpose-built town of bakeries, kitchens and workshops, which suggests that the crown fed and equipped its crews.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Your citation card" data-kind="notes">
+<div class="wrap u5l06-dense">
+  <p class="eyebrow">3 · You do · reference card · keep it open while you work</p>
+  <h2>Your author–date citation card</h2>
+  <div class="tbl-scroll"><table class="tbl compact u5l06-cards u5l06-card">
+    <tr><th>Source</th><th>Reference-list entry: the pattern</th><th>In the text</th></tr>
+    <tr><td>Ancient text in translation</td><td><p class="u5l06-ref nq">Ancient author (edition year) <i>Title</i>, trans. Translator, edition or library, viewed [date], URL</p></td><td><span class="u5l06-cite nq">(Author 2.124)</span></td></tr>
+    <tr><td>Book</td><td><p class="u5l06-ref nq">Surname, Initial. and Surname, Initial. (year) <i>Title</i>. Place: Publisher.</p></td><td><span class="u5l06-cite nq">(Surname and Surname year, p. N)</span></td></tr>
+    <tr><td>Journal article</td><td><p class="u5l06-ref nq">Surname, Initial. and Surname, Initial. (year) ‘Article title’, <i>Journal</i>, volume(issue), pp. x–y. DOI</p></td><td><span class="u5l06-cite nq">(Surname and Surname year)</span></td></tr>
+    <tr><td>Web page or museum page</td><td><p class="u5l06-ref nq">Organisation (year or n.d.) ‘Page title’, Site, viewed [date], URL</p></td><td><span class="u5l06-cite nq">(Organisation n.d.)</span></td></tr>
+    <tr><td>Online article</td><td><p class="u5l06-ref nq">Surname, Initial. (year) ‘Article title’, <i>Magazine</i>, issue, viewed [date], URL</p></td><td><span class="u5l06-cite nq">(Surname year)</span></td></tr>
+    <tr><td>Image</td><td><p class="u5l06-ref nq">Maker (year) <i>Title</i> [photograph], Site, licence, viewed [date], URL</p></td><td><span class="u5l06-cite nq">(Maker year)</span> in the caption</td></tr>
+  </table></div>
+  <div class="split" style="--cols:1.15fr .85fr">
+    <div class="card quiet"><div class="k">The reference template · fill in the boxes for each source</div>
+      <div class="u5l06-tpl"><span><b>Who</b> author or organisation</span><span><b>When</b> year or n.d.</span><span><b>What</b> title</span><span><b>Where</b> publisher, journal or site</span><span><b>Find it again</b> URL or DOI · date viewed</span></div></div>
+    <p class="small">Filled examples of every row are in today’s model entries: an ancient text, a book and an article, three web pages and an online article, an image, and the whole list in order.</p>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: reference entries, two cited sentences, research">
+<div class="wrap u5l06-dense">
+  <p class="eyebrow">3 · You do · 28 minutes, including the Writing focus apply · check first · press K for the timer</p>
+  <h2>You do: turn your sources into entries, and keep researching</h2>
+  <div class="split" style="--cols:1.1fr .9fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body">
+          <li>Write two cited sentences from your notes with the frame.</li>
+          <li>Turn your annotated source list into reference entries, using your citation card.</li>
+          <li>Put the entries in alphabetical order, and write the in-text citation for each.</li>
+          <li>Keep researching, and log every search.</li>
+        </ol></div>
+      <div class="card quiet"><div class="k">Check each entry against the card</div>
+        <p class="body">Right kind of pattern? Author or organisation, year or n.d., title, where, URL or DOI and the date viewed? Italics on whole works only?</p></div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Check first: what must a reference-list entry for a web page record?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">Who made it (the author or organisation), the year or <b>n.d.</b>, the page’s title, the site it sits on, the date you viewed it, and the URL.</p></div>
+      <div class="cols c2">
+        <div class="card quiet sm"><div class="k">Support</div><p class="body">The citation card with a filled example for each source type, and the reference template with labelled boxes.</p></div>
+        <div class="card quiet sm"><div class="k">Extension</div><p class="body">Find the original publication behind a website’s claim in your topic and cite both correctly. In your log, explain which you should rely on.</p></div>
+      </div>
+      <div class="card accent"><div class="k">While you work · conferences</div>
+        <p class="body">Your teacher meets the first half of the class today, for about two minutes each. Bring your log and notes.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 6 minutes · before you leave</p>
+  <h2>One entry, one citation</h2>
+  <div class="card accent"><p class="lead">Write one reference-list entry for one of your own sources, and the in-text citation that matches it. Check both against your citation card.</p>
+    <p class="body nq">Entry: Who (year or n.d.) title, where, viewed [date], URL or DOI · In the text: (Who year)</p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">the right pattern for that kind of source; a real author or organisation, never Google or the library; a year, or <b>n.d.</b> when the source shows none; the title in the right form; the date viewed and URL for a web page; and an in-text citation that starts like the entry.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> historians disagree: examining interpretations.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Summary" data-kind="notes">
+<div class="wrap u5l06-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>Where do you acknowledge a source, and how do the two places match?</li>
+          <li>How does an entry differ for an ancient text, a book, an article and a web page?</li>
+          <li>How do you build a cited paraphrase, and how do you acknowledge an image or a permitted use of AI?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">A source is acknowledged twice: with an in-text citation where the idea is used, and with an entry in an alphabetical reference list, and every citation must have an entry. An ancient text is cited by author, book and chapter and names its translator, a book and an article give their authors, year, title and where they were published, and a web page gives its organisation, the year or n.d., the site, the date viewed and the URL. A cited paraphrase joins a signal phrase, my own words and the citation before the full stop, and an image or a permitted use of AI is acknowledged with the same habit rather than cited as a source.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Two places to acknowledge</label></li>
+        <li><label><input type="checkbox"> An ancient text and its translator</label></li>
+        <li><label><input type="checkbox"> A book and an article</label></li>
+        <li><label><input type="checkbox"> Web pages, n.d. and the date viewed</label></li>
+        <li><label><input type="checkbox"> The list in alphabetical order</label></li>
+        <li><label><input type="checkbox"> An image and permitted AI</label></li>
+        <li><label><input type="checkbox"> A cited paraphrase</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u5l06-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>A web page’s footer says © 2025, so the page’s date is 2025.</span>
+      <span class="sol no reveal">False <span class="why">— a footer year belongs to the whole site. Use the date the page shows; if it shows none, write <i>n.d.</i></span></span></li>
+    <li><span class="n">2</span><span>In (Herodotus 2.124), the numbers are a page number in one book.</span>
+      <span class="sol no reveal">False <span class="why">— they are book 2, chapter 124 of the text, the same in every edition.</span></span></li>
+    <li><span class="n">3</span><span>A reference list holds every source you read, even ones you did not cite.</span>
+      <span class="sol no reveal">False <span class="why">— it holds the sources you cited; a bibliography lists everything you used.</span></span></li>
+    <li><span class="n">4</span><span>Every in-text citation needs a matching entry in the reference list.</span>
+      <span class="sol reveal">True <span class="why">— and every entry should be cited somewhere in your writing.</span></span></li>
+    <li><span class="n">5</span><span>If your teacher permits AI to suggest search terms, you can cite the chatbot as the source of a fact.</span>
+      <span class="sol no reveal">False <span class="why">— a chatbot is not a source. Find a real source for the fact; acknowledge the permitted use in your statement.</span></span></li>
+    <li><span class="n">6</span><span>‘Metropolitan Museum of Art’ comes before ‘Ministry of Tourism and Antiquities’ in a reference list.</span>
+      <span class="sol reveal">True <span class="why">— both start with M, so go letter by letter: e comes before i.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — an entry and a cited paraphrase" data-kind="practice">
+<div class="wrap prac u5l06-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Write an entry, then a cited paraphrase</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · Write the entry and the citation</div>
+        <p class="body">For the Assyrian question, you read this page. <b>Page:</b> ‘ABC 3 (Fall of Nineveh Chronicle)’. <b>Site and organisation:</b> Livius.org. <b>Date shown on the page:</b> <i>last modified on 11 July 2020</i>. <b>URL:</b> https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-3-fall-of-nineveh-chronicle/</p>
+        <p class="body">Write the reference-list entry and the in-text citation. Then say how the date differs from AERA’s page.</p></div>
+      <div class="src reveal" data-veil="Show a model answer"><div class="k">A model · written for this lesson</div>
+        <p class="u5l06-ref nq">Livius.org (2020) ‘ABC 3 (Fall of Nineveh Chronicle)’, Livius, viewed [date], https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-3-fall-of-nineveh-chronicle/</p>
+        <p class="body small">In the text: <span class="u5l06-cite nq">(Livius.org 2020)</span>. This page shows a date, so it is 2020, not n.d.; AERA’s shows none.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 2 · Paraphrase and cite</div>
+        <p class="body">The chronicle on that page says: “From the month Simanu until the month Âbu - for three months - they subjected the city to a heavy siege.” Write one sentence that paraphrases it, with a signal phrase, a hedged inference and the citation. Don’t patchwrite.</p></div>
+      <div class="src reveal" data-veil="Show a model answer"><div class="k">A model · written for this lesson, on the practice question</div>
+        <p class="quote sm model">A Babylonian chronicle records that the Babylonians and Medes besieged Nineveh for three months, which suggests that the city’s fall followed a sustained campaign (Livius.org 2020).</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u5l06-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Explain the two places to acknowledge a source.
+      <span class="sol reveal">In the text, with an in-text citation, and at the end, in a reference list in alphabetical order; every citation has an entry.</span></li>
+    <li>What goes in an author–date entry for a journal article?
+      <span class="sol reveal">Authors (year) ‘Article title’, <i>Journal</i>, volume(issue), pages, and the DOI.</span></li>
+    <li>How is an ancient text cited, and why is there no year?
+      <span class="sol reveal">By author, book and chapter, for example (Herodotus 2.124): the numbers belong to the text, not to one edition. The translator and edition are in the reference list.</span></li>
+    <li>What do you write when a web page shows no author and no date?
+      <span class="sol reveal">The organisation that runs the site as the author, and <i>n.d.</i> for the date; a footer © year is the site’s.</span></li>
+    <li>Why is ‘(ChatGPT)’ not a citation?
+      <span class="sol reveal">A chatbot is not a source: it can invent facts and references. Cite a real source; acknowledge a permitted use in a statement.</span></li>
+    <li>Where does the citation go in a cited paraphrase?
+      <span class="sol reveal">Before the full stop, after a signal phrase and the idea in your own words.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u5l06-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u5l06-cite-card"><div class="k">Written sources</div>
+      <p class="small">NSW Education Standards Authority (NESA), <i>HSC: All My Own Work</i>, <a href="https://www.nsw.gov.au/sites/default/files/noindex/2024-06/Topic%203%20PDF.pdf">Topic 3, <span class="nq">“How do I acknowledge other people’s work?”</span></a> and <a href="https://www.nsw.gov.au/sites/default/files/noindex/2024-06/Topic%201%20PDF.pdf">Topic 1, <span class="nq">“What is all my own work?”</span></a>, quoted briefly. © NESA.</p>
+      <p class="small">The sources modelled in this lesson: Herodotus, <i>The Histories</i>, A. D. Godley’s translation (Loeb, 1920), as revised by the <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126">Perseus Digital Library</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 US</a>); <a href="https://aeraweb.org/projects/lost-city/">Ancient Egypt Research Associates, “The Lost City of the Pyramids (Heit el-Ghurab)”</a>; <a href="https://www.metmuseum.org/art/collection/search/543890">The Met, 22.1.3a, b</a>; <a href="https://egymonuments.gov.eg/en/monuments/workers-town-and-cemetery/">Egypt’s Ministry of Tourism and Antiquities, “Workers’ Town and Cemetery”</a>; M. Lehner and Z. Hawass, <i>Giza and the Pyramids: The Definitive History</i> (University of Chicago Press, 2017); P. Tallet and G. Marouard (2014), <i>Near Eastern Archaeology</i> 77(1), pp. 4–14, <a href="https://doi.org/10.5615/neareastarch.77.1.0004">doi:10.5615/neareastarch.77.1.0004</a>; D. Weiss, <a href="https://archaeology.org/issues/july-august-2022/features/egypt-wadi-el-jarf-port-papyri/">“Journeys of the Pyramid Builders”</a>, <i>Archaeology</i> (July/August 2022); <a href="https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-3-fall-of-nineveh-chronicle/">Livius.org, “ABC 3 (Fall of Nineveh Chronicle)”</a>. Every reference was checked against the page or catalogue record on 27 November 2026.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet u5l06-cite-card"><div class="k">Images</div>
+        <ul class="small credits"><li><b>Nikare as a scribe, granite statue, Old Kingdom, about 2420–2389 BCE or later (The Metropolitan Museum of Art, 48.67)</b> · The Metropolitan Museum of Art, Rogers Fund, 1948 · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://www.metmuseum.org/art/collection/search/543900">source</a></li><li><b>The Great Pyramid of Giza, built for King Khufu (Kheops in Herodotus)</b> · Photo: Nina Aldin Thune · <a href="https://creativecommons.org/licenses/by/2.5/">CC BY 2.5</a> · <a href="https://commons.wikimedia.org/wiki/File:Kheops-Pyramid.jpg">source</a></li></ul>
+        <p class="small">All images are public domain or openly licensed, and were resized or cropped for the web. Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

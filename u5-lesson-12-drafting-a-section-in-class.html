@@ -1,0 +1,1581 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U5 L12 · Drafting a section in class</title>
+<meta name="description" content="Year 11 Ancient History, the historical investigation: how to write a sentence from your own notes with the source closed instead of patchwriting it, then plan and draft one full section of your own investigation report in class, and check it against the class checklist.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#384656; --bright:#5B6E84; --tint:#E9EDF2; --statement:#384656;
+  --solid:#384656; --soft:#DCE3EB; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#C2CEDB; --bright:#93A6BC; --tint:#1C252E; --statement:#2E3A47; --soft:#DCE3EB; } }
+:root[data-theme="dark"]{ --deep:#C2CEDB; --bright:#93A6BC; --tint:#1C252E; --statement:#2E3A47; --soft:#DCE3EB; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 5 Lesson 12 only (every class starts u5l12-) */
+
+/* title picture; goals slide syllabus line; credits links */
+.u5l12-cover img{max-height:50vh; width:auto; max-width:100%;}
+.u5l12-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u5l12-cite a{color:var(--deep);}
+
+/* paragraphs inside a card need a little air */
+.card .body + .body, .card .body + .quote, .card .quote + .body, .card .quote + .small, .card .small + .quote, .card .veil-parts,
+.card .body + .u5l12-routine, .card .quote + .u5l12-wfkey, .card .small + .u5l12-note{margin-top:.4em;}
+
+/* a line above a model that says what it is */
+.u5l12-was{margin:.1em 0 .1em; font-size:calc(var(--fs-body)*.8); line-height:1.4; color:var(--slate);}
+.u5l12-was b{color:var(--deep);}
+
+/* the student's note, set like a note card */
+.u5l12-note{margin:.3em 0 0; padding:.4em .75em; border:1.5px dashed var(--deep); border-radius:8px; background:var(--tint);
+  font-family:var(--mono); font-size:calc(var(--fs-body)*.78); line-height:1.4; color:var(--ink);}
+
+/* the routine: five short steps in a row */
+.u5l12-routine{list-style:none; margin:.35em 0 0; padding:0; display:flex; flex-wrap:wrap; gap:.3em .35em; counter-reset:u5l12r;}
+.u5l12-routine li{counter-increment:u5l12r; display:flex; align-items:center; gap:.35em; border:1px solid var(--deep); color:var(--deep);
+  background:var(--surface); border-radius:999px; padding:.08em .75em .08em .45em; font-family:var(--ui); font-weight:700;
+  font-size:calc(var(--fs-body)*.78); line-height:1.3;}
+.u5l12-routine li::before{content:counter(u5l12r); display:inline-grid; place-items:center; width:1.4em; height:1.4em; border-radius:50%;
+  background:var(--deep); color:#fff; font-size:.85em;}
+
+/* the Writing focus key: labels in two columns */
+.u5l12-wfkey{display:grid; grid-template-columns:1fr 1fr; gap:.2em .8em; margin-top:.35em;}
+
+/* the hinge: four options of one length and pattern */
+.u5l12-opts{list-style:none; margin:.4em 0 0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.u5l12-opts li{display:grid; grid-template-columns:1.6em 1fr; column-gap:.5em; background:var(--surface); border:1px solid var(--rule);
+  border-radius:8px; padding:.35em .65em; font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.u5l12-opts li.right{font-weight:400;}
+.u5l12-opts .n{font-family:var(--mono); font-weight:700; color:var(--slate);}
+
+/* the hinge: options on the left, the answer on the right */
+.u5l12-hgrid{display:grid; grid-template-columns:1.15fr .85fr; gap:clamp(10px,1.4vw,20px); align-items:start;}
+.u5l12-hgrid .u5l12-opts{margin-top:0;}
+.u5l12-hgrid .note{margin-top:0;}
+
+/* the plan sheet: one row for each part of the section */
+.u5l12-plan th{vertical-align:bottom;}
+.u5l12-plan td{vertical-align:top; line-height:1.38; height:3em;}
+.u5l12-plan td:first-child{width:21%; font-weight:700; color:var(--deep);}
+.u5l12-plan td:nth-child(2){width:37%;}
+.u5l12-plan .u5l12-fill{color:var(--slate); font-size:.86em;}
+.u5l12-sheet td{border-style:dashed;}
+
+/* the class checklist (Lesson 9) */
+.u5l12-six{list-style:none; margin:0; padding:0; display:grid; gap:.4em; counter-reset:u5l12six;}
+.u5l12-six li{counter-increment:u5l12six; display:grid; grid-template-columns:1.8em 1fr; column-gap:.5em; align-items:start;
+  background:var(--surface); border:1px solid var(--rule); border-radius:8px; padding:.4em .7em; line-height:1.38;}
+.u5l12-six li::before{content:counter(u5l12six); font-family:var(--mono); font-weight:700; color:var(--deep);}
+.u5l12-six label{display:flex; gap:.5em; align-items:flex-start; cursor:pointer;}
+.u5l12-six b{color:var(--deep);}
+
+/* the checklist in two columns */
+.u5l12-six.u5l12-two{grid-template-columns:1fr 1fr; gap:.4em .6em;}
+
+/* the shape of a section: four parts in order */
+.u5l12-shape{list-style:none; margin:0; padding:0; display:grid; gap:.4em; counter-reset:u5l12sh;}
+.u5l12-shape li{counter-increment:u5l12sh; display:grid; grid-template-columns:1.8em 1fr; column-gap:.5em; align-items:start;
+  background:var(--surface); border:1px solid var(--rule); border-left:5px solid var(--deep); border-radius:8px; padding:.4em .7em; line-height:1.38;}
+.u5l12-shape li::before{content:counter(u5l12sh); font-family:var(--mono); font-weight:700; color:var(--deep);}
+.u5l12-shape b{color:var(--deep);}
+
+/* the 34 minutes: a short timetable */
+.u5l12-times{list-style:none; margin:0; padding:0; display:grid; gap:.3em;}
+.u5l12-times li{display:grid; grid-template-columns:4.2em 1fr; column-gap:.5em; line-height:1.38;}
+.u5l12-times .t{font-family:var(--mono); font-weight:700; color:var(--deep);}
+
+/* the checklist on the check slide, with boxes */
+.u5l12-tick{list-style:none; margin:.3em 0 0; padding:0; display:flex; flex-direction:column; gap:.35em;}
+.u5l12-tick li{display:grid; grid-template-columns:1.5em 1fr; gap:.4em; font-size:calc(var(--fs-body)*.9); line-height:1.38;}
+.u5l12-tick .bx{width:1em; height:1em; border:2px solid var(--deep); border-radius:3px; margin-top:.2em;}
+
+/* terms table */
+.u5l12-terms td:first-child{width:27%; font-weight:700; color:var(--deep);}
+.u5l12-terms td{vertical-align:top; line-height:1.38;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u5l12-hgrid{grid-template-columns:1fr;}
+  .u5l12-six.u5l12-two{grid-template-columns:1fr;}
+  .u5l12-wfkey{grid-template-columns:1fr;}
+  .u5l12-cover img{max-height:340px;}
+  .u5l12-plan td:first-child, .u5l12-plan td:nth-child(2), .u5l12-terms td:first-child{width:auto;}
+  .u5l12-plan tr, .u5l12-terms tr{display:block; border-bottom:1px solid var(--rule); padding:.3em 0;}
+  .u5l12-plan td, .u5l12-terms td{display:block; border:0; padding:.12em .5em;}
+  .u5l12-plan tr:first-child{display:none;}
+  .u5l12-plan td[data-label]::before{content:attr(data-label) ": "; font-weight:700; color:var(--deep);}
+  .u5l12-plan td:first-child::before{content:none;}
+  .u5l12-plan td:first-child{font-weight:700; color:var(--deep);}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u5l12-dense{gap:10px;}
+  html:not(.read) .u5l12-dense h2{font-size:calc(var(--fs-h2)*.82);}
+  html:not(.read) .u5l12-dense .quote.sm{font-size:calc(var(--fs-body)*.76); line-height:1.4;}
+  html:not(.read) .u5l12-dense .quote{font-size:calc(var(--fs-body)*.88);}
+  html:not(.read) .u5l12-dense .src{padding:9px 15px;}
+  html:not(.read) .u5l12-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u5l12-dense .note{padding:.42em .8em;}
+  html:not(.read) .u5l12-dense .note .body, html:not(.read) .u5l12-dense .card .body,
+  html:not(.read) .u5l12-dense .qprompt{font-size:calc(var(--fs-body)*.76); line-height:1.34;}
+  html:not(.read) .u5l12-dense .card{padding:9px 15px;}
+  html:not(.read) .u5l12-dense .card .k{margin-bottom:.22em;}
+  html:not(.read) .u5l12-dense .keylist{gap:5px;}
+  html:not(.read) .u5l12-dense .keylist li{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u5l12-dense .tbl.compact{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u5l12-dense .tbl.compact td{padding:.28em .5em;}
+  html:not(.read) .u5l12-dense .tbl th{padding:.35em .55em;}
+  html:not(.read) .u5l12-dense .figure img{max-height:28vh;}
+  html:not(.read) .u5l12-dense .mq{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u5l12-dense .u5l12-wfkey .mq{font-size:calc(var(--fs-body)*.68); line-height:1.3;}
+  html:not(.read) .u5l12-dense .u5l12-opts li{font-size:calc(var(--fs-body)*.7); padding:.22em .5em; line-height:1.3;}
+  html:not(.read) .u5l12-dense .u5l12-opts{gap:.22em;}
+  html:not(.read) .u5l12-dense .u5l12-routine li{font-size:calc(var(--fs-body)*.66);}
+  html:not(.read) .u5l12-dense .u5l12-note{font-size:calc(var(--fs-body)*.68); padding:.3em .6em;}
+  html:not(.read) .u5l12-dense .u5l12-was{font-size:calc(var(--fs-body)*.68); line-height:1.32;}
+  html:not(.read) .u5l12-dense .u5l12-six li{font-size:calc(var(--fs-body)*.7); padding:.26em .6em;}
+  html:not(.read) .u5l12-dense .u5l12-six{gap:.28em;}
+  html:not(.read) .u5l12-dense .u5l12-six.u5l12-two{gap:.25em .5em;}
+  html:not(.read) .u5l12-dense .u5l12-six.u5l12-two li{font-size:calc(var(--fs-body)*.66); padding:.2em .55em; line-height:1.3;}
+  html:not(.read) .u5l12-dense ol.body{margin-top:.1em; margin-bottom:0;}
+  html:not(.read) .u5l12-dense .u5l12-shape li{font-size:calc(var(--fs-body)*.74); padding:.3em .6em;}
+  html:not(.read) .u5l12-dense .u5l12-times li{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u5l12-dense .u5l12-tick li{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u5l12-dense .tf li, html:not(.read) .u5l12-dense .rq{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u5l12-dense .tf li{padding:.24em .6em;}
+  html:not(.read) .u5l12-dense .prac{gap:6px;}
+  html:not(.read) .u5l12-dense .cornell .cq, html:not(.read) .u5l12-dense .cornell .nts{font-size:calc(var(--fs-body)*.74); padding:.32em .75em;}
+}
+
+/* the last slide is short: give it room so a link to the slide before it can scroll to the top (Read mode) */
+html.read .u5l12-credits{min-height:75vh;}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 12" data-title="Drafting a section in class" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.15fr .85fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 5 · Historical investigation · Lesson 12</p>
+      <h1>Drafting a section in class</h1>
+      <p class="lead">How do you write a whole section from your own notes, without patchwriting, and check it against our checklist?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u5l12-cover"><figure class="figure contain"><img src="images/u5l01-great-pyramid-giza.jpg" alt="The Great Pyramid at Giza, built for King Khufu, whom Herodotus calls Kheops; visitors at its base give the scale" loading="lazy"><figcaption>The Great Pyramid at Giza, built for King Khufu, whom Herodotus calls Kheops; visitors at its base give the scale — <span class="cr">Photo: Nina Aldin Thune · CC BY 2.5</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="Connect: your claim heading and a term" data-kind="intro">
+<div class="wrap u5l12-dense">
+  <p class="eyebrow">Connect · 3 minutes · books closed · everyone writes · press K for the timer</p>
+  <h2>Your claim heading, and a term to use exactly</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · 1 line</div>
+        <p class="body">Write the <b>claim heading</b> of the section you will draft today, and one <b>historical term</b> from the term bank that you will need to use exactly.</p></div>
+      <div class="card quiet sm"><div class="k">Then</div><p class="body">Test your heading: could a source support or challenge it? If not, it only names a topic.</p></div>
+    </div>
+    <div class="stack">
+      <div data-veil="Write yours first — then show what a strong line includes">
+        <div class="note reveal" data-code="evidence"><div class="k">A strong line</div>
+          <p class="body">A <b>claim heading</b> states the section’s answer, so a source could support or challenge it, and a <b>term</b> is named for its exact meaning. From Lesson 11’s class model: <span class="nq">‘Fed at the crown’s expense’</span> is a claim heading; <span class="nq">‘The papyri’</span> only names a topic. <i>Provenance</i> means where a piece of evidence comes from: who wrote or found it, and when.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>draft a section of an investigation report independently</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>write a section that makes a claim and synthesises at least two cited sources</li>
+        <li>write from my notes without patchwriting</li>
+        <li>check my section against the class checklist</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u5l12-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts · AH-11-08 plans and conducts historical investigations and presents conclusions, using evidence from a range of sources. <b>Life Skills:</b> AH-LS-12 participates in a historical investigation · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="How to set out your draft" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Setting out · the same layout every time you draft</p>
+  <h2>How to set out your draft</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a page for a drafted section">
+      <div class="ch"><span><b>Name · date · U5 L12</b></span><span>lined paper or a document</span></div>
+      <div class="row"><div class="cq">Top line</div><div class="nts">your claim heading · box it</div></div>
+      <div class="row"><div class="cq">Topic sentence</div><div class="nts">answers your sub-question and links to your thesis</div></div>
+      <div class="row"><div class="cq">Moves</div><div class="nts">Evidence · Analyse · Evaluate, with two or more cited sources</div></div>
+      <div class="row"><div class="cq">Last sentence</div><div class="nts">your resolving sentence</div></div>
+      <div class="sum"><span class="k">Margin</span>left blank for feedback · write on every second line</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Your claim heading goes at the top</span><span class="d">Then box it. Everything below it has to serve that claim.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Leave a margin</span><span class="d">Your feedback comes back in it: one strength and one next step.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Connected sentences, not dot points</span><span class="d">Each source is named and cited where you use it.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write on every second line</span><span class="d">Next lesson you rewrite the part your next step names, and the space keeps your two versions together.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Your notes sit beside the draft, not in it</span><span class="d">Write from them with the source closed; do not copy the source.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u5l12-dense">
+  <p class="eyebrow">Key vocabulary · the words for today’s drafting</p>
+  <h2>Words for drafting from notes</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact u5l12-terms">
+      <tr><th>Writing terms</th><th>Meaning</th></tr>
+      <tr><td>Claim heading</td><td>A section heading that states the section’s answer.</td></tr>
+      <tr><td>Topic sentence</td><td>The first sentence of a section; it answers the sub-question and links to the thesis.</td></tr>
+      <tr><td>Paraphrase</td><td>Another writer’s idea in your own words and structure, with a citation.</td></tr>
+      <tr><td>Patchwriting</td><td>Swapping synonyms into a source’s sentence; still plagiarism.</td></tr>
+      <tr><td>Synthesis paragraph</td><td>A Judge → Evidence → Analyse → Evaluate → Resolve paragraph that joins two or more cited sources.</td></tr>
+      <tr><td>Hedge (modality)</td><td>A word or phrase that matches a claim’s certainty to the evidence: probably, suggests, on present evidence.</td></tr>
+      <tr><td>Degree of extent</td><td>How far a judgement goes: <i>entirely</i>, <i>largely</i>, <i>partly</i>, <i>only to a limited extent</i>. It answers <i>how far</i>; it is not a hedge.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact u5l12-terms">
+      <tr><th>Research terms</th><th>Meaning</th></tr>
+      <tr><td>In-text citation</td><td>A short reference in your sentence, e.g. (Tallet and Marouard 2014) or (Herodotus 2.124).</td></tr>
+      <tr><td>Plagiarism</td><td>Using another person’s words or ideas without acknowledgement.</td></tr>
+      <tr><td>Research log</td><td>A dated record of what you searched, found, read and decided.</td></tr>
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Writing from notes</td><td>Closing the source, writing a sentence from your own note, then checking it against the original.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Writing from notes" data-title="Writing focus: a patchwritten sentence and one written from a note" data-kind="notes">
+<div class="wrap u5l12-dense">
+  <p class="eyebrow">1 · Writing from notes · Writing focus · 5 minutes · I do (2 minutes) · on the class question’s evidence</p>
+  <h2>Writing focus: write from your note, not from the source</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">The source sentence · the excavators’ own summary</div>
+        <p class="quote sm">Massive royal silos stood in a large <span class="match" data-step="m1">compound where the grain was</span> distributed to create <span class="match" data-step="m2">the beer and bread used to help feed this</span> massive workforce.</p>
+        <p class="prov">Ancient Egypt Research Associates (AERA) n.d., <span class="nq">‘The Lost City of the Pyramids (Heit el-Ghurab)’</span>, aeraweb.org</p>
+      </div>
+      <div class="card"><div class="k">I do · written with the source open · patchwriting</div>
+        <p class="quote sm model" data-booklet="model">Enormous royal granaries stood in a big <span class="match" data-step="m1">compound where the grain was</span> handed out to produce <span class="match" data-step="m2">the beer and bread used to help feed this</span> enormous workforce (Ancient Egypt Research Associates n.d.).</p>
+        <p class="small">An example of what not to do · written for this lesson. <b>Patchwriting:</b> swapping synonyms into a source’s sentence; still plagiarism. A citation does not fix it.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">I do · written from a note, with the source closed</div>
+        <p class="small">My note, made in Lesson 5’s routine · written for this lesson</p>
+        <div class="u5l12-note nq">royal silos → grain handed out → bread and beer, to help feed the workforce (Ancient Egypt Research Associates n.d.)</div>
+        <p class="quote sm model" data-booklet="model"><span class="match" data-step="m3">The excavators report that</span> grain from royal silos was handed out and made into bread and beer, which helped to feed the workforce <span class="match" data-step="m4">(Ancient Egypt Research Associates n.d.).</span></p>
+        <ol class="u5l12-routine" aria-label="Writing from notes: five steps"><li>read your note</li><li>close the source</li><li>write</li><li>check against the original</li><li>cite</li></ol></div>
+      <div class="u5l12-wfkey">
+        <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Copied run:</b> five words in the source’s order</span></p>
+        <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Copied run:</b> nine words in a row, unchanged</span></p>
+        <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>New structure:</b> who says it comes first</span></p>
+        <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>Citation:</b> in-text, author–date</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Writing from notes" data-title="Writing focus: which sentence was written from the note?" data-kind="notes">
+<div class="wrap u5l12-dense">
+  <p class="eyebrow">1 · Writing from notes · Writing focus · We do (3 minutes) · a hinge · vote on <span class="nq">“3, 2, 1, show”</span> · then apply</p>
+  <h2>Which sentence was written from the note, with the source closed?</h2>
+  <div class="split" style="--cols:1.1fr .9fr 1fr">
+    <div class="src">
+      <div class="k">The source sentence · class question, closed</div>
+      <p class="quote sm">They worked in gangs of a hundred thousand men, each gang for three months.</p>
+      <p class="prov">Herodotus, <i>Histories</i> 2.124 · trans. A. D. Godley (Loeb, 1920), as revised by the Perseus Digital Library</p>
+    </div>
+    <div class="card quiet"><div class="k">The student’s note · written for this lesson</div>
+      <div class="u5l12-note nq">100,000 in a crew · three months each · what Egyptians told him (Herodotus 2.124)</div></div>
+    <div class="card quiet"><div class="k">Apply · in your own draft</div>
+      <p class="body">Write your section’s <b>topic sentence from your notes</b>, with your sources closed: it is the first thing you do in the drafting. Then check it against the original, and cite it. Your Writing toolkit (booklet pages 3–4): attribution verbs.</p></div>
+  </div>
+  <div class="veil-parts u5l12-hgrid" data-veil="Vote first — then show the answer">
+    <ol class="opts u5l12-opts">
+      <li><span class="n">A</span><span>Herodotus reports that they laboured in crews of a hundred thousand men, each crew for three months (Herodotus 2.124).</span></li>
+      <li><span class="n">B</span><span>Herodotus reports that they worked in gangs of a hundred thousand men, each gang for three months (Herodotus 2.124).</span></li>
+      <li id="u5l12-hqC"><span class="n">C</span><span>Herodotus reports that every stint of work lasted three months, and that each crew numbered 100,000 men (Herodotus 2.124).</span></li>
+      <li><span class="n">D</span><span>Herodotus reports that every stint of work lasted three months, and that each crew numbered 100,000 men, as Egyptians told him.</span></li>
+    </ol>
+    <i class="reveal" data-mark="#u5l12-hqC" hidden></i>
+    <div class="note vp reveal" data-code="evidence"><div class="k">C: the one that changes the structure and cites</div><p class="body"><b>C</b> changes the source’s structure: the length of the stint comes first and the size of the crew second, in the note’s words (<i>crew</i>, <i>100,000</i>), and the citation gives the book and chapter. <b>A</b> is <b>patchwriting</b>: <i>laboured</i> and <i>crews</i> swapped into the source’s sentence, in its order, even with a citation. <b>B</b> copies the source’s words with <b>no quotation marks</b>: a citation does not make copied words yours. <b>D</b> changes the structure but has <b>no citation</b>: <i>as Egyptians told him</i> says who said it, not where a reader can find it.</p></div>
+  </div>
+  <p class="qprompt">Cold call: what makes C different from A and B?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Planning" data-title="Planning: the conditions and your section question" data-kind="notes">
+<div class="wrap u5l12-dense">
+  <p class="eyebrow">2 · Planning · 6 minutes · the conditions · check first · then choose your section</p>
+  <h2>Planning: what the drafting needs from you</h2>
+  <div class="split" style="--cols:1.05fr .95fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Conditions</div>
+        <ul class="body">
+          <li>Individual and quiet.</li>
+          <li>Allowed: your notes, research log, synthesis grid and annotated source list.</li>
+          <li>Not allowed: draft text you prepared earlier. Today’s draft is written today.</li>
+          <li>Paper or a device, and whether the internet is on, are your teacher’s choice. Your teacher will say which.</li>
+          <li>Your draft is collected, and comes back next lesson with one strength and one next step.</li>
+        </ul></div>
+      <div class="card quiet sm"><div class="k">Everyone</div>
+        <ol class="body">
+          <li>Choose the sub-question your section answers.</li>
+          <li>Check your claim heading and topic sentence. Fix one thing.</li>
+          <li>List the source and evidence for each move (next).</li>
+        </ol></div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Check first: what does your sub-question ask you to do?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body"><b>Verb:</b> how far, why or how: it sets the structure (a degree, or causes ranked). <b>Topic:</b> what you are writing about. <b>Limits:</b> the sources you have, so <i>on present evidence</i>. <b>Do:</b> a full section: a claim heading, then the five moves (your topic sentence is the Judge, your resolving sentence the Resolve), with two or more cited sources.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Planning" data-title="Planning: your section and your moves" data-kind="notes">
+<div class="wrap u5l12-dense">
+  <p class="eyebrow">2 · Planning · choose your section · check its heading and topic sentence · list your sources and evidence · 4 minutes</p>
+  <h2>Plan your section: one row for each part</h2>
+  <div class="tbl-scroll"><table class="tbl compact u5l12-plan u5l12-sheet">
+    <tr><th>Part of the section</th><th>What it must do</th><th>My source and evidence, from my notes</th></tr>
+    <tr><td data-label="Part">Claim heading</td><td data-label="Must do">A section heading that states the section’s answer.</td><td data-label="Mine"><span class="u5l12-fill">answers my sub-question</span></td></tr>
+    <tr><td data-label="Part">Topic sentence (your Judge)</td><td data-label="Must do">The first sentence of a section; it answers the sub-question with a degree and one hedge, and links to the thesis.</td><td data-label="Mine"><span class="u5l12-fill">degree · hedge · link to my thesis</span></td></tr>
+    <tr><td data-label="Part">Evidence</td><td data-label="Must do">Two or more sources, each named, attributed with an accurate verb and cited (author–date).</td><td data-label="Mine"><span class="u5l12-fill">source 1 · source 2</span></td></tr>
+    <tr><td data-label="Part">Analyse</td><td data-label="Must do">What the sources show together, with a precise verb (<i>suggests</i>, <i>indicates</i>), never <i>proves</i>.</td><td data-label="Mine"><span class="u5l12-fill">what they show together</span></td></tr>
+    <tr><td data-label="Part">Evaluate</td><td data-label="Must do">What the evidence cannot show: a gap, a later date, one team, sources that are not independent.</td><td data-label="Mine"><span class="u5l12-fill">one real limit</span></td></tr>
+    <tr><td data-label="Part">Resolving sentence (your Resolve)</td><td data-label="Must do">A refined judgement at the same degree, with no new evidence.</td><td data-label="Mine"><span class="u5l12-fill">same degree, a sharper limit</span></td></tr>
+  </table></div>
+  <p class="small">Your five moves, in order: <b>Judge → Evidence → Analyse → Evaluate → Resolve</b>. Jot your notes in the last column in words and arrows, not sentences, so the drafting starts from your notes.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Drafting" data-title="Drafting: 34 minutes">
+<div class="wrap u5l12-dense">
+  <p class="eyebrow">3 · Drafting · 34 minutes · individual and quiet · your notes beside you, sources closed · press K for the timer</p>
+  <h2>Draft your section</h2>
+  <div class="split" style="--cols:1.15fr .85fr">
+    <div class="card accent"><div class="k">Everyone · one section</div>
+      <ol class="body">
+        <li>Write your <b>claim heading</b> and <b>topic sentence</b> from your notes. Check the sentence against the original, then cite it.</li>
+        <li>Write <b>Evidence, Analyse and Evaluate</b> from your notes, with the source closed. Cite two or more sources, author–date.</li>
+        <li>Write your <b>resolving sentence</b>. Check each citation.</li>
+      </ol>
+      <p class="small">Each time: read your note · close the source · write · check against the original · cite.</p>
+    </div>
+    <div class="card quiet sm"><div class="k">Your 34 minutes</div>
+      <ol class="u5l12-times">
+        <li><span class="t">0–4</span><span><b>Claim heading and topic sentence,</b> from your notes</span></li>
+        <li><span class="t">4–29</span><span><b>Evidence · Analyse · Evaluate,</b> with two or more cited sources</span></li>
+        <li><span class="t">29–34</span><span><b>Resolving sentence;</b> then check your citations</span></li>
+      </ol></div>
+  </div>
+  <div class="card quiet sm"><div class="k">Our class checklist · a strong section …</div>
+    <ol class="u5l12-six u5l12-two">
+      <li><span><b>Judge:</b> answers the sub-question with a degree (largely, partly) and one hedge.</span></li>
+      <li><span><b>Evidence:</b> two or more sources, each named, attributed with an accurate verb and cited (author–date).</span></li>
+      <li><span><b>Analyse:</b> says what the sources show together, with a precise verb (<i>suggests</i>, <i>indicates</i>), never <i>proves</i>.</span></li>
+      <li><span><b>Evaluate:</b> names what the evidence cannot show (a gap, a later date, one team, sources that are not independent).</span></li>
+      <li><span><b>Resolve:</b> a refined judgement at the same degree, with no new evidence.</span></li>
+      <li><span><b>Own words:</b> paraphrase, not patchwriting; present tense for what sources say, past tense for what happened.</span></li>
+    </ol></div>
+  <div class="split" style="--cols:1.3fr .7fr">
+    <div class="card quiet sm"><div class="k">Support</div><p class="body">A frame for each move: <span class="nq">Judge: On present evidence, … more probably … than …, although … · Evidence: [A] reports … (Author year), whereas [B] … · Analyse: Together, these suggest … · Evaluate: However, … cannot show … · Resolve: On balance, … although …</span></p></div>
+    <div class="card quiet sm"><div class="k">Extension</div><p class="body">Draft the section that deals with the strongest counter-evidence to your thesis, and resolve it without dismissing it.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: tick, highlight, log, hand in" data-kind="intro">
+<div class="wrap u5l12-dense">
+  <p class="eyebrow">Check · 10 minutes · tick · highlight · log · hand in</p>
+  <h2>Check your section against our checklist</h2>
+  <div class="split" style="--cols:1.1fr .9fr">
+    <div class="card quiet"><div class="k">Our class checklist · a strong section …</div>
+      <ol class="u5l12-six">
+        <li><label><input type="checkbox"> <span><b>Judge:</b> answers the sub-question with a degree (largely, partly) and one hedge.</span></label></li>
+        <li><label><input type="checkbox"> <span><b>Evidence:</b> two or more sources, each named, attributed with an accurate verb and cited (author–date).</span></label></li>
+        <li><label><input type="checkbox"> <span><b>Analyse:</b> says what the sources show together, with a precise verb (<i>suggests</i>, <i>indicates</i>), never <i>proves</i>.</span></label></li>
+        <li><label><input type="checkbox"> <span><b>Evaluate:</b> names what the evidence cannot show (a gap, a later date, one team, sources that are not independent).</span></label></li>
+        <li><label><input type="checkbox"> <span><b>Resolve:</b> a refined judgement at the same degree, with no new evidence.</span></label></li>
+        <li><label><input type="checkbox"> <span><b>Own words:</b> paraphrase, not patchwriting; present tense for what sources say, past tense for what happened.</span></label></li>
+      </ol></div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body">
+          <li>Tick each point your section meets. Be honest: it helps your feedback.</li>
+          <li>Highlight <b>one synthesis sentence</b> (it joins two sources) and <b>one hedge</b>.</li>
+          <li>Write a <b>log entry</b>: what you drafted, which sources you used, and one decision with its reason.</li>
+          <li>Hand in your draft.</li>
+        </ol></div>
+      <div class="note reveal" data-code="evidence" data-veil="Write yours first — then show what a useful entry includes"><div class="k">A useful log entry</div><p class="body">is a <b>procedural recount</b>: past tense, first person. It names the section and the sources you used, and records one decision with its reason. Frame: <span class="nq">‘I drafted … from my notes on …; I decided … because …’</span></p></div>
+      <p class="small"><b>Next lesson:</b> your draft comes back with one strength and one next step, in the checklist’s words. You then work on the part your next step names.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Summary" data-kind="notes">
+<div class="wrap u5l12-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences on drafting from notes</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>How does writing from notes differ from patchwriting?</li>
+          <li>What does a full section contain, in order?</li>
+          <li>Which checklist point will you work on next, and why?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Writing from notes means closing the source, writing from my own note and checking the sentence against the original afterwards, so the words and the structure are mine; patchwriting only swaps synonyms into the source’s sentence and is still plagiarism, even with a citation. A section has a claim heading, a topic sentence that answers the sub-question, evidence from two or more cited sources, what the sources show together, what they cannot show, and a resolving sentence at the same degree. I will check my own draft for the point where I hedge, because I want my certainty to match my evidence.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Patchwriting against writing from notes</label></li>
+        <li><label><input type="checkbox"> The five steps: note, close, write, check, cite</label></li>
+        <li><label><input type="checkbox"> The parts of a full section</label></li>
+        <li><label><input type="checkbox"> The class checklist</label></li>
+        <li><label><input type="checkbox"> A log entry as a procedural recount</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u5l12-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · homework or revision · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>A citation after a patchwritten sentence makes it acceptable.</span>
+      <span class="sol no reveal">False <span class="why">— the citation credits the idea, not the borrowed sentence. If the words and the structure are still the source’s, it is still patchwriting.</span></span></li>
+    <li><span class="n">2</span><span>Writing from notes means closing the source, writing from your own note, then checking your sentence against the original.</span>
+      <span class="sol reveal">True <span class="why">— you check afterwards, for meaning, for runs of the source’s words, and for the citation.</span></span></li>
+    <li><span class="n">3</span><span>A sentence that only swaps synonyms into a source’s sentence is a paraphrase.</span>
+      <span class="sol no reveal">False <span class="why">— that is patchwriting. A paraphrase changes the words <i>and</i> the structure.</span></span></li>
+    <li><span class="n">4</span><span>A run of four or more of a source’s words in a row, outside quotation marks, is a sign that you should rewrite from your note.</span>
+      <span class="sol reveal">True <span class="why">— names, titles and numbers don’t count. A shorter run can still be patchwriting if the order is the source’s.</span></span></li>
+    <li><span class="n">5</span><span>A hedge and a degree of extent such as <i>largely</i> are the same thing.</span>
+      <span class="sol no reveal">False <span class="why">— a hedge (<i>probably</i>, <i>suggests</i>) sets how sure a claim is. A degree of extent (<i>largely</i>, <i>partly</i>) answers <i>how far</i>, and is not a hedge.</span></span></li>
+    <li><span class="n">6</span><span>A log entry is written in the report’s formal voice, with no <i>I</i>.</span>
+      <span class="sol no reveal">False <span class="why">— a log entry is a procedural recount: past tense, first person. Your report is the formal one.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — write from a note on the Assyrian question" data-kind="practice">
+<div class="wrap prac u5l12-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · homework or revision · writing</p>
+  <h2>Fix a patchwrite, then write from a note</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · Fix the patchwrite</div>
+        <p class="body">The question is the closed practice question, <b>Why did the Assyrian Empire collapse in the late 7th century BCE?</b> Livius.org says:</p>
+        <p class="quote sm">After the death of king Aššurbanipal in 631 BCE, the Assyrian empire became unquiet, and the Babylonians seized their independence.</p>
+        <p class="body">A student wrote: <span class="nq">‘After king Aššurbanipal died in 631 BCE, the Assyrian empire grew restless, and the Babylonians took their independence (Livius.org 2020).’</span> Make a note of its ideas, close the source, and write a sentence from the note.</p></div>
+      <div class="src reveal" data-veil="Show a model answer"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Livius.org reports that Assyria became unsettled when king Aššurbanipal died in 631 BCE, and that the Babylonians then broke free (Livius.org 2020).</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 2 · Write from a note</div>
+        <p class="body">Here is a note on the same question:</p>
+        <div class="u5l12-note nq">cave record, northern Iraq: droughts lasting decades, early to mid 7th century BCE → farming declined → helped cause the collapse (Sinha et al. 2019)</div>
+        <p class="body">Close the source. Write one sentence from the note, with one hedge and a citation. Then open the original to check it.</p></div>
+      <div class="src reveal" data-veil="Write yours first — then show the original and a model"><div class="k">The original, then a model · written for this lesson</div>
+        <p class="quote sm">… megadroughts during the early-mid seventh century BCE, as severe as recent droughts in the region but lasting for decades, triggered a decline in Assyria's agrarian productivity and thus contributed to its eventual political and economic collapse</p>
+        <p class="prov">A. Sinha et al. 2019, <span class="nq">‘Role of climate in the rise and fall of the Neo-Assyrian Empire’</span>, <i>Science Advances</i> 5(11), abstract</p>
+        <p class="quote sm model">A cave record from northern Iraq suggests that droughts lasting decades in the early to mid 7th century BCE weakened Assyria’s farming and so helped bring about its collapse (Sinha et al. 2019).</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u5l12-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · homework or revision · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>What is writing from notes?
+      <span class="sol reveal">Closing the source, writing a sentence from your own note, then checking it against the original.</span></li>
+    <li>What is patchwriting?
+      <span class="sol reveal">Swapping synonyms into a source’s sentence; still plagiarism.</span></li>
+    <li>Why doesn’t a citation fix a patchwritten sentence?
+      <span class="sol reveal">The citation credits the idea, not the borrowed sentence. The words and the structure are still the source’s.</span></li>
+    <li>What do you check after writing from a note?
+      <span class="sol reveal">That the meaning is kept (and the hedge), that no run of four or more of the source’s words survives outside quotation marks (names, titles and numbers don’t count), and that the sentence is cited.</span></li>
+    <li>Name the five moves of a section, in order.
+      <span class="sol reveal"><b>Judge → Evidence → Analyse → Evaluate → Resolve.</b> Your topic sentence is the Judge; your resolving sentence is the Resolve.</span></li>
+    <li>What does the checklist’s “Own words” point ask of you?
+      <span class="sol reveal">Paraphrase, not patchwriting; present tense for what sources say, past tense for what happened.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u5l12-dense u5l12-credits">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u5l12-cite"><div class="k">Written sources</div>
+      <p class="small">Herodotus, <i>Histories</i> 2.124: A. D. Godley’s translation (Loeb, 1920), as revised by the <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126">Perseus Digital Library</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 US</a>). NESA, <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p>
+      <p class="small">Quoted briefly and used for facts: <a href="https://aeraweb.org/projects/lost-city/">Ancient Egypt Research Associates, “The Lost City of the Pyramids (Heit el-Ghurab)”</a>; <a href="https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-3-fall-of-nineveh-chronicle/">Livius.org, “ABC 3 (Fall of Nineveh Chronicle)”</a>; A. Sinha et al., “Role of climate in the rise and fall of the Neo-Assyrian Empire”, <i>Science Advances</i> 5(11) (2019), <a href="https://doi.org/10.1126/sciadv.aax6656">doi:10.1126/sciadv.aax6656</a> (open access; used briefly). The patchwritten sentences, notes, hinge options, exercises and models are written for this lesson. Every page was checked on 27 November 2026.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet u5l12-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>The Great Pyramid of Giza, built for King Khufu (Kheops in Herodotus)</b> · Photo: Nina Aldin Thune · <a href="https://creativecommons.org/licenses/by/2.5/">CC BY 2.5</a> · <a href="https://commons.wikimedia.org/wiki/File:Kheops-Pyramid.jpg">source</a></li></ul>
+        <p class="small">All images are public domain or openly licensed, and were resized or cropped for the web. Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

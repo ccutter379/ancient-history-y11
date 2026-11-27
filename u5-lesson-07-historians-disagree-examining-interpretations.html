@@ -1,0 +1,1709 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U5 L7 · Historians disagree: examining interpretations</title>
+<meta name="description" content="Year 11 Ancient History, the historical investigation: why historians and excavators disagree about the builders of the Great Pyramid (an ancient account, the excavators&#x27; picture and a middle reading), interpretation or representation, how slavery and corvée differ, finding the debate in your own topic, and attributing each view with a reporting verb that fits how sure the writer is.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#384656; --bright:#5B6E84; --tint:#E9EDF2; --statement:#384656;
+  --solid:#384656; --soft:#DCE3EB; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#C2CEDB; --bright:#93A6BC; --tint:#1C252E; --statement:#2E3A47; --soft:#DCE3EB; } }
+:root[data-theme="dark"]{ --deep:#C2CEDB; --bright:#93A6BC; --tint:#1C252E; --statement:#2E3A47; --soft:#DCE3EB; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 5 Lesson 7 only (every class starts u5l07-) */
+
+/* title banner; goals slide syllabus line; credits links */
+.u5l07-cover .figure img{max-height:34vh; width:100%; object-fit:cover;}
+.u5l07-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u5l07-cite a{color:var(--deep);}
+.u5l07-ref{line-height:1.4; color:var(--slate);}
+
+/* interpretation cards: the row label is the first column */
+.u5l07-ic td:first-child{width:21%; font-weight:700; color:var(--deep);}
+.u5l07-voices td:first-child{width:23%; font-weight:600;}
+.u5l07-voices td:nth-child(2){width:40%;}
+.u5l07-camps td:first-child{width:19%; font-weight:600;}
+.u5l07-camps td:nth-child(2){width:38%;}
+
+/* the gesture vote */
+.u5l07-vote{display:grid; grid-template-columns:1fr 1fr; gap:.4em .8em; margin:0;}
+.u5l07-vote li{margin:0;}
+
+/* the painting: shown whole */
+.u5l07-paint .figure img{width:100%; height:auto;}
+
+/* the Writing focus key and the verb grid */
+.u5l07-wfkey{display:grid; grid-template-columns:1fr 1fr; gap:.2em .8em; margin-top:.35em;}
+.u5l07-verbs{display:grid; grid-template-columns:repeat(6,1fr); gap:.3em;}
+.u5l07-verbs div{border:1px solid var(--rule); border-left:5px solid var(--c-keyterm); border-radius:6px; background:var(--surface);
+  padding:.25em .55em; font-size:calc(var(--fs-body)*.74); line-height:1.3;}
+.u5l07-verbs b{display:block; color:var(--c-keyterm);}
+.u5l07-verbs span{color:var(--slate);}
+
+/* the interpretation card template */
+.u5l07-tpl{display:grid; grid-template-columns:auto 1fr; margin:0; border:1px solid var(--rule); border-radius:10px;
+  overflow:hidden; background:var(--surface);}
+.u5l07-tpl dt{padding:.28em .7em; font-weight:700; color:var(--deep); background:var(--tint); border-bottom:1px solid var(--rule);
+  font-size:calc(var(--fs-body)*.76);}
+.u5l07-tpl dd{margin:0; padding:.28em .7em; border-bottom:1px solid var(--rule); font-size:calc(var(--fs-body)*.76);
+  line-height:1.34; color:var(--slate);}
+.u5l07-tpl dt:last-of-type, .u5l07-tpl dd:last-of-type{border-bottom:0;}
+
+/* two source cards stacked */
+.u5l07-kind{display:flex; flex-direction:column; gap:.4em;}
+.u5l07-kind .src{flex:1 1 auto;}
+.u5l07-kind .quote.sm{font-size:calc(var(--fs-body)*.8); line-height:1.38;}
+.u5l07-kind .prov{font-size:calc(var(--fs-body)*.68); line-height:1.34;}
+
+/* paragraphs inside a card need a little air */
+.card .body + .body, .card .body + .u5l07-tpl, .card .u5l07-tpl + .body, .card .veil-parts, .card .body + .quote, .card .quote + .u5l07-wfkey{margin-top:.4em;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u5l07-ic td:first-child, .u5l07-voices td:first-child, .u5l07-voices td:nth-child(2), .u5l07-camps td:first-child, .u5l07-camps td:nth-child(2){width:auto;}
+  .u5l07-wfkey, .u5l07-vote, .u5l07-verbs{grid-template-columns:1fr;}
+  .u5l07-verbs{grid-template-columns:1fr 1fr;}
+  .u5l07-cover .figure img{max-height:200px;}
+  /* three-column tables stack on phones: each row becomes a small card */
+  .u5l07-voices tr, .u5l07-camps tr{display:block; border-bottom:1px solid var(--rule); padding:.3em 0;}
+  .u5l07-voices td, .u5l07-camps td{display:block; border:0; padding:.12em .5em;}
+  .u5l07-voices tr:first-child, .u5l07-camps tr:first-child{display:none;}
+  .u5l07-voices td:first-child, .u5l07-camps td:first-child{font-weight:700; color:var(--deep);}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u5l07-dense{gap:9px;}
+  html:not(.read) .u5l07-dense h2{font-size:calc(var(--fs-h2)*.8);}
+  html:not(.read) .u5l07-dense .eyebrow{margin-bottom:0;}
+  html:not(.read) .u5l07-dense .quote.sm{font-size:calc(var(--fs-body)*.72); line-height:1.36;}
+  html:not(.read) .u5l07-dense .quote{font-size:calc(var(--fs-body)*.84);}
+  html:not(.read) .u5l07-dense .src{padding:8px 13px;}
+  html:not(.read) .u5l07-dense .src .prov{margin-top:.3em; font-size:calc(var(--fs-body)*.64);}
+  html:not(.read) .u5l07-dense .note{padding:.38em .75em;}
+  html:not(.read) .u5l07-dense .note .body, html:not(.read) .u5l07-dense .card .body,
+  html:not(.read) .u5l07-dense .qprompt{font-size:calc(var(--fs-body)*.74); line-height:1.32;}
+  html:not(.read) .u5l07-dense .card{padding:8px 14px;}
+  html:not(.read) .u5l07-dense .card .k{margin-bottom:.2em;}
+  html:not(.read) .u5l07-dense .keylist{gap:4px;}
+  html:not(.read) .u5l07-dense .keylist li{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u5l07-dense .tbl.compact{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u5l07-dense .tbl.compact td{padding:.24em .48em;}
+  html:not(.read) .u5l07-dense .tbl th{padding:.3em .5em;}
+  html:not(.read) .u5l07-dense .mq{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u5l07-dense .u5l07-wfkey .mq{font-size:calc(var(--fs-body)*.66); line-height:1.28;}
+  html:not(.read) .u5l07-dense .u5l07-wfkey{margin-bottom:.3em;}
+  html:not(.read) .u5l07-dense .u5l07-verbs div{font-size:calc(var(--fs-body)*.64); padding:.14em .5em; line-height:1.25;}
+  html:not(.read) .u5l07-dense .u5l07-verbs{gap:.25em;}
+  html:not(.read) .u5l07-dense .tf li, html:not(.read) .u5l07-dense .rq{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u5l07-dense .tf li{padding:.24em .6em;}
+  html:not(.read) .u5l07-dense .prac{gap:6px;}
+  html:not(.read) .u5l07-dense .opts li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u5l07-dense .cornell .cq, html:not(.read) .u5l07-dense .cornell .nts{font-size:calc(var(--fs-body)*.72); padding:.3em .72em;}
+  html:not(.read) .u5l07-dense .u5l07-tpl dt, html:not(.read) .u5l07-dense .u5l07-tpl dd{font-size:calc(var(--fs-body)*.68); padding:.2em .6em;}
+  html:not(.read) .u5l07-dense .u5l07-kind .quote.sm{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u5l07-dense .u5l07-vote li{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u5l07-dense .u5l07-hinge .opts{gap:.25em;}
+  html:not(.read) .u5l07-dense .u5l07-hinge .opts li{padding:.28em .6em; font-size:calc(var(--fs-body)*.72); line-height:1.3;}
+  html:not(.read) .u5l07-dense .u5l07-hinge .note .body{font-size:calc(var(--fs-body)*.68);}
+  /* the Writing focus slide carries the most: a little smaller again */
+  html:not(.read) .u5l07-wf .card .body{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u5l07-wf .quote.sm{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u5l07-wf .u5l07-hinge .opts li{font-size:calc(var(--fs-body)*.66);}
+  html:not(.read) .u5l07-wf .u5l07-hinge .note .body{font-size:calc(var(--fs-body)*.64);}
+  html:not(.read) .u5l07-wf .u5l07-wfkey .mq{font-size:calc(var(--fs-body)*.62);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 7" data-title="Historians disagree: examining interpretations" data-kind="intro">
+<div class="wrap">
+  <div class="stack">
+    <p class="eyebrow">Unit 5 · Historical investigation · Lesson 7</p>
+    <h1>Historians disagree: examining interpretations</h1>
+    <p class="lead">Two accounts of the same builders: why do they differ, and how do you say whose view is whose?</p>
+    <div class="u5l07-cover"><figure class="figure"><img src="images/u5l01-great-pyramid-giza.jpg" alt="The Great Pyramid at Giza, built for King Khufu, whom Herodotus calls Kheops; visitors at its base give the scale" loading="lazy"><figcaption>The Great Pyramid at Giza, built for King Khufu, whom Herodotus calls Kheops; visitors at its base give the scale — <span class="cr">Photo: Nina Aldin Thune · CC BY 2.5</span></figcaption></figure></div>
+    <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="Review: five questions and a writing item" data-kind="intro practice">
+<div class="wrap u5l07-dense">
+  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <h2>Five questions and a writing item</h2>
+  <ol class="rq" data-answers>
+    <li>Which two earlier writers does Arrian trust most, and why?
+      <span class="sol reveal"><b>Ptolemy and Aristobulus.</b> Aristobulus served under Alexander on the expedition; Ptolemy accompanied him, and as a king afterwards he had more to lose by falsifying the facts (Arrian, <i>Anabasis</i>, Preface, trans. Chinnock 1884).</span></li>
+    <li>You find a web page with no author. Name two moves of lateral reading.
+      <span class="sol reveal">Any two: leave the page after a quick scan; open new tabs and search the organisation’s or author’s name, not the page’s claims; read what others say about them; come back and decide what the page is reliable for.</span></li>
+    <li>What does <span class="nq">‘n.d.’</span> mean in a reference, and when do you use it?
+      <span class="sol reveal"><b>No date:</b> use it when the page shows no date. A © year in the footer belongs to the whole site, not to the page. Example: Ancient Egypt Research Associates (n.d.).</span></li>
+    <li>Where does Wikipedia sit on the reliability ladder, and what is it good for?
+      <span class="sol reveal"><b>Rung 4: a lead.</b> Use it to find the scholars it cites (for example Tallet’s edition of Merer’s papyri), then read and cite them, not Wikipedia.</span></li>
+    <li>What is an interpretation, and how does it differ from a representation?
+      <span class="sol reveal">An <b>interpretation</b> is a historian’s evidence-based explanation of the past. A <b>representation</b> is a depiction of the past (a painting, a film, a reconstruction) shaped by its maker’s time and purpose.</span></li>
+    <li>Writing · paraphrase or patchwrite? <span class="nq">“Khufu forced all the Egyptians to toil for him.”</span>
+      <span class="sol reveal"><b>Patchwriting.</b> It keeps Godley’s sentence and swaps in synonyms (<i>compelled</i> → <i>forced</i>, <i>work</i> → <i>toil</i>), and it has no citation. A paraphrase changes the structure as well as the words, then cites the source (Lesson 5). <i>Forced</i> is also stronger than the Greek verb, which means ‘ordered’.</span></li>
+  </ol>
+  <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>examine differing interpretations of the past</li>
+        <li>attribute each view precisely</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>explain the difference between an interpretation and a representation</li>
+        <li>identify a historian’s claim and the evidence behind it</li>
+        <li>attribute views with precise reporting verbs and the right tense</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u5l07-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-09 identifies different interpretations of the past · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U5 L7 · Historians disagree: examining interpretations</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; n.d. = no date)</span></div></div>
+      <div class="row"><div class="cq">What is lateral reading?</div><div class="nts">leave the page → new tabs → what others say about who made it</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A new lesson, a new page</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while views are laid side by side. Phrases, not sentences, and write who said each one.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at the ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, examine, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Your interpretation cards are separate</span><span class="d">Notes hold what you learn; an interpretation card records one view in your own topic: claim, evidence, assumptions, when and why written. One checkpoint today.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 7" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u5l07-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for examining interpretations</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Research terms</th><th>Meaning</th></tr>
+      <tr><td>Interpretation</td><td>A historian’s evidence-based explanation of the past.</td></tr>
+      <tr><td>Representation</td><td>A depiction of the past shaped by its maker’s time and purpose.</td></tr>
+      <tr><td>Contestability</td><td>The idea that interpretations are debated and can change with new evidence.</td></tr>
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Slavery</td><td>Cambridge Dictionary: <span class="nq">‘the condition of being legally owned by someone else and forced to work for or obey them’</span>.</td></tr>
+      <tr><td>Corvée</td><td>Wikipedia: <span class="nq">‘a form of unpaid forced labour that is intermittent in nature, lasting for limited periods of time’</span>: work owed to a ruler.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Writing terms</th><th>Meaning</th></tr>
+      <tr><td>Examine (NESA)</td><td>‘Inquire into.’ Look closely at an interpretation: its claim, evidence and assumptions.</td></tr>
+      <tr><td>Reporting verb</td><td>A verb that says who claims what, and how: states, claims, confirms, presents … as.</td></tr>
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Attribute</td><td>To say whose view it is, by name, with a verb that fits how sure they are.</td></tr>
+      <tr><td>Interpretation card</td><td>A card that records a view: claim, evidence, assumptions, when and why it was written.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Why accounts differ" data-title="Why two accounts of the same builders can differ" data-kind="notes">
+<div class="wrap u5l07-dense">
+  <p class="eyebrow">1 · Why accounts differ · I do — interpretation or representation, and five reasons · then cold call</p>
+  <h2>Why two accounts of the same past can differ</h2>
+  <div class="split" style="--cols:.8fr 1.2fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">An interpretation</div>
+        <p class="body">A historian’s <b>evidence-based explanation</b> of the past: Lehner’s or Tallet’s reading of what the excavated town and the papyri show.</p></div>
+      <div class="card quiet"><div class="k">A representation</div>
+        <p class="body">A <b>depiction</b> of the past (a painting, a film, a reconstruction), shaped by its maker’s time and purpose.</p></div>
+      <p class="qprompt">Two historians study the same evidence and still disagree. Which of the five reasons could explain it?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body"><b>Questions, values and methods.</b> They may ask different questions, weigh the same evidence differently, or value different things. The evidence and the time of writing can differ too, but they do not have to.</p></div>
+    </div>
+    <div class="tbl-scroll"><table class="tbl compact u5l07-ic">
+      <tr><th>Reason</th><th>On our class question</th></tr>
+      <tr class="reveal"><td>Different evidence</td><td>Herodotus used what Egyptian informants told him (the chapter opens <span class="nq">“They said”</span>). The excavators use a town, its animal bones and Merer’s papyri.</td></tr>
+      <tr class="reveal"><td>Different methods</td><td>Listening and retelling, against digging, studying bones and reading papyri.</td></tr>
+      <tr class="reveal"><td>Different questions</td><td>Herodotus tells how a king ruled, setting Khufu against a well-governed Egypt; the excavators ask where the workers lived and what they ate.</td></tr>
+      <tr class="reveal"><td>Different values</td><td>In Godley’s translation, Herodotus passes on his informants’ claim that Khufu brought the people to “utter misery”; Lehner says his respect for the builders keeps growing (NOVA 1997).</td></tr>
+      <tr class="reveal"><td>Different times of writing</td><td>Herodotus wrote about 430 BCE, more than 2,000 years after Khufu. The excavations began in 1988, and Tallet’s edition of the papyri appeared in 2017.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Why accounts differ" data-title="Finding the debate in your topic" data-kind="notes">
+<div class="wrap u5l07-dense">
+  <p class="eyebrow">1 · Why accounts differ · I do — where to look for a debate in your own topic · then cold call</p>
+  <h2>Finding the debate in your topic</h2>
+  <div class="split" style="--cols:1.1fr .9fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · the abstract of a research article on the Assyrian practice question</div>
+        <p class="quote sm"><span class="match" data-step="m1">Earlier explanations</span> for the Assyrian collapse focused on the roles of internal politico-economic conflicts, territorial overextension, and military defeat.</p>
+        <p class="quote sm">… we present a high-resolution and precisely dated speleothem record of climate change … which <span class="match" data-step="m2">suggests</span> that … megadroughts … <span class="match" data-step="m3">contributed to its eventual political and economic collapse</span>.</p>
+        <p class="prov">A. Sinha et al., ‘Role of climate in the rise and fall of the Neo-Assyrian Empire’, <i>Science Advances</i> 5(11), 2019 · open access, peer reviewed · an excerpt of the abstract; the ellipses mark cuts</p>
+      </div>
+      <div class="u5l07-wfkey">
+        <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>The old view</b>, named as such</span></p>
+        <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>How sure</b> the authors are</span></p>
+        <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>Their own claim</b></span></p>
+      </div>
+      <p class="qprompt">Which words show there is a debate, and what are its two sides?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body"><b>‘Earlier explanations’ against the authors’ own</b>: the earlier view is internal conflicts, overextension and military defeat; the authors’ climate record <i>suggests</i> that megadroughts contributed. Notice their verb: <i>suggests</i>, not <i>proves</i>.</p></div>
+    </div>
+    <div class="stack">
+      <ol class="keylist">
+        <li class="reveal"><span class="num">1</span><span class="t">Review articles</span><span class="d">They survey the views on a question: who argues what.</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">Book reviews</span><span class="d">A reviewer says what the author argues, and where they agree or disagree.</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">Signal words in abstracts</span><span class="d">‘However’, ‘but’, ‘earlier explanations’, ‘challenges’: the writer is turning against another view.</span></li>
+        <li class="reveal"><span class="num">4</span><span class="t">Then name both sides</span><span class="d">Who holds each view, and on what evidence? That is your interpretation card.</span></li>
+      </ol>
+      <p class="small">Search move from Lesson 3: add <span class="nq">debate OR interpretation OR historiography</span> to your topic.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Why accounts differ" data-title="I do: the card for Herodotus’s picture" data-kind="notes">
+<div class="wrap u5l07-dense">
+  <p class="eyebrow">1 · Why accounts differ · I do — the interpretation card: claim, evidence, assumptions, when and why · then cold call</p>
+  <h2>I do: the first view, Herodotus’s picture of Khufu’s reign</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Herodotus on King Khufu (Kheops)</div>
+        <p class="quote sm"><span class="match" data-step="m1">They said</span> that Egypt until the time of King Rhampsinitus was altogether well-governed and prospered greatly, but that Kheops, who was the next king, brought the people to utter misery.</p>
+        <p class="quote sm">… he <span class="match" data-step="m2">compelled</span> all the Egyptians to work for him.</p>
+        <p class="quote sm">They worked in gangs of a hundred thousand men, each gang for three months.</p>
+        <p class="prov">Herodotus, <i>Histories</i> 2.124 · a Greek writer, about 430 BCE, more than 2,000 years after Khufu · trans. A. D. Godley (Loeb, 1920–22), as revised by the Perseus Digital Library · <i>compelled</i> is Godley’s word: the Greek verb means ‘ordered’</p>
+      </div>
+      <div class="u5l07-wfkey">
+        <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Whose claim</b>: they said</span></p>
+        <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Godley’s word</b>, not the Greek verb’s</span></p>
+      </div>
+      <p class="qprompt">Whose picture of Khufu’s reign is this: Herodotus’s own, or someone else’s?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body"><b>His informants’, passed on by him.</b> The chapter opens <i>They said</i>, so the claims about the gangs and the misery are what Egyptians told him. Attribute them that way: Herodotus reports them.</p></div>
+    </div>
+    <div class="stack">
+      <p class="small">An interpretation card, filled in · class model on the class question</p>
+      <div class="tbl-scroll"><table class="tbl compact u5l07-ic">
+        <tr class="reveal"><td>Claim</td><td>Khufu compelled all the Egyptians to work for him, in gangs of a hundred thousand men serving three months each, and brought the people to utter misery. <span class="small">(Godley’s wording)</span></td></tr>
+        <tr class="reveal"><td>Evidence</td><td>What Egyptian informants told him: the chapter opens <i>They said</i>. Nothing in the chapter shows what they based it on.</td></tr>
+        <tr class="reveal"><td>Assumptions <span class="small">(our reading)</span></td><td>That informants speaking more than 2,000 years after Khufu knew what had happened; that an order to work meant misery; that “a hundred thousand” is a count.</td></tr>
+        <tr class="reveal"><td>When and why</td><td>About 430 BCE. The chapter sets Khufu against the well-governed Egypt before him, so the story seems to serve a picture of a bad king.</td></tr>
+      </table></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Why accounts differ" data-title="I do: the card for the excavators’ picture" data-kind="notes">
+<div class="wrap u5l07-dense">
+  <p class="eyebrow">1 · Why accounts differ · I do — the second view, the excavators’ picture · then cold call</p>
+  <h2>I do: the second view, the excavators’ picture</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack u5l07-kind">
+      <div class="src">
+        <div class="k">Source · the excavators’ own page</div>
+        <p class="quote sm">Purpose-built by the crown, this city served as the base of operations for constructing the great pyramid complexes of kings Menkaure, Khafre, and probably Khufu.</p>
+        <p class="quote sm">Massive royal silos stood in a large compound where the grain was distributed to create the beer and bread used to help feed this massive workforce.</p>
+        <p class="prov">Ancient Egypt Research Associates (n.d.), ‘The Lost City of the Pyramids (Heit el-Ghurab)’ · the team that has excavated the town since 1988: its own summary</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · Egypt’s Ministry of Tourism and Antiquities</div>
+        <p class="quote sm">An enormous amount of fish, bird, cattle, sheep, goat, and pig bones were found, revealing that the state ensured that the workers were in good health so they could fulfill their physically demanding responsibilities.</p>
+        <p class="prov">Ministry of Tourism and Antiquities (Egypt) (n.d.), ‘Workers’ Town and Cemetery’ · a government page; it does not name who dug the town</p>
+      </div>
+    </div>
+    <div class="stack">
+      <p class="small">An interpretation card, filled in · class model on the class question</p>
+      <div class="tbl-scroll"><table class="tbl compact u5l07-ic">
+        <tr class="reveal"><td>Claim</td><td>The crown built a town for the pyramid workforce, and housed and fed its crews.</td></tr>
+        <tr class="reveal"><td>Evidence</td><td>Royal grain silos, beer and bread (AERA); animal bones (the Ministry); Merer’s logbooks (Tallet, as reported by Weiss 2022).</td></tr>
+        <tr class="reveal"><td>Assumptions <span class="small">(our reading)</span></td><td>That the town’s people were the pyramid crews; that regular food means good treatment, not only a need to keep people working; that a later reign’s town tells us about Khufu’s.</td></tr>
+        <tr class="reveal"><td>When and why</td><td>Dug since 1988; the AERA page is the team’s own summary. Tallet’s edition of the papyri appeared in 2017.</td></tr>
+      </table></div>
+      <p class="qprompt">The town is dated to which kings, and why does that matter for Herodotus’s claim about Khufu?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body"><b>Mainly Khafre and Menkaure.</b> The Ministry says an older settlement beneath <i>may date to Khufu’s reign</i>, and Weiss (2022) reports that these deeper layers have yet to be explored. So the best-excavated town is evidence for Khafre’s and Menkaure’s crews, and only probably for Khufu’s.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Why accounts differ" data-title="Modern voices: who says what, and how sure they sound" data-kind="notes">
+<div class="wrap u5l07-dense">
+  <p class="eyebrow">1 · Why accounts differ · I do — four modern voices, in their own words · then cold call</p>
+  <h2>Modern voices: who says what, and how sure they sound</h2>
+  <div class="veil-parts" data-veil="Judge how sure each sounds first — then show our reading">
+    <div class="tbl-scroll"><table class="tbl compact u5l07-voices">
+      <tr><th>Who</th><th>In their own words</th><th>How sure they sound (our reading)</th></tr>
+      <tr><td>Lehner, in a NOVA Online interview (page dated 1997)</td><td>“We don’t know if it was entirely coercive, or if, in fact, part of it was a natural community donation …”</td><td class="vp reveal">Admits a limit on the evidence: he <b>concedes</b> that it is not known.</td></tr>
+      <tr><td>Lehner, in the same interview</td><td>“… it may not have been entirely coercion, but it seems that everybody owed a labor tax.”</td><td class="vp reveal">Tentative (<i>may</i>, <i>seems</i>): he <b>suggests</b> a labour tax.</td></tr>
+      <tr><td>Hawass, in the page’s other interview</td><td>“Really it was love—they were not really pushed to do it.”</td><td class="vp reveal">Almost no hedge (only “not really”): he <b>contends</b> that the workers were not pushed.</td></tr>
+      <tr><td>Tallet, quoted by Weiss (2022), on Merer’s boatmen</td><td>“I think the monarchy had an interest in being fair to them because it was essential to have them working well.”</td><td class="vp reveal">Hedged by <i>I think</i>: he <b>suggests</b> the crown had a reason to treat them fairly.</td></tr>
+    </table></div>
+  </div>
+  <div class="split" style="--cols:1.2fr .8fr">
+    <div class="src">
+      <div class="k">Source · the article’s author adds a caution of his own</div>
+      <p class="quote sm">It’s difficult to say whether workers such as those who quarried stone for use in the pyramid and those who lifted the stones and placed them on the structure itself received similarly favorable treatment.</p>
+      <p class="prov">D. Weiss, ‘Journeys of the Pyramid Builders’, <i>Archaeology</i>, July/August 2022 · these are Weiss’s words, not Tallet’s</p>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Which of the four sounds most sure of itself, and which words tell you?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body"><b>Hawass:</b> he states it as fact (“Really it was love”), with no <i>may</i>, <i>seems</i> or <i>I think</i>. Lehner’s “We don’t know”, “may” and “seems”, and Tallet’s “I think”, each mark a limit.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Why accounts differ" data-title="Slavery or corvée? A middle reading and what would test it" data-kind="notes">
+<div class="wrap u5l07-dense">
+  <p class="eyebrow">1 · Why accounts differ · I do — think aloud: the middle reading, and what would test it · then cold call</p>
+  <h2>Slavery or corvée? A middle reading, and what would test it</h2>
+  <div class="split" style="--cols:1.05fr .95fr">
+    <div class="stack">
+      <div class="cols c2">
+        <div class="src"><div class="k">Slavery</div>
+          <p class="quote sm">the condition of being legally owned by someone else and forced to work for or obey them</p>
+          <p class="prov">Cambridge Dictionary, ‘slavery’</p></div>
+        <div class="src"><div class="k">Corvée</div>
+          <p class="quote sm">… a form of unpaid forced labour that is intermittent in nature, lasting for limited periods of time …</p>
+          <p class="prov">Wikipedia, ‘Corvée’ (a lead)</p></div>
+      </div>
+      <div class="card accent"><div class="k">The middle reading · a hypothesis to test, close to Lehner’s own hedged view</div>
+        <p class="body">Herodotus’s “gangs of a hundred thousand men, each gang for three months” could describe <b>service owed to the king, in rotation</b>, which is not the same as slavery. Lehner suggests something close to this, with his own hedges: “it seems that everybody owed a labor tax”, and “There’s some evidence to suggest that people were rotated in and out of the raw labor force” (NOVA Online, page dated 1997). Weiss reports that Tallet <b>believes</b> January to March, when the papyri are silent, <b>may have been</b> a season when Merer’s workers could go home.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">What would test the middle reading?</div>
+        <ol class="keylist">
+          <li class="reveal"><span class="num">1</span><span class="t">Records of service</span><span class="d">A text or list showing who owed work to the king, and for how many months.</span></li>
+          <li class="reveal"><span class="num">2</span><span class="t">What the crews received</span><span class="d">Pay, rations or both, and whether it rose with the work done.</span></li>
+          <li class="reveal"><span class="num">3</span><span class="t">What happened to those who did not come</span><span class="d">If there was a penalty, the service was owed; if not, it may have been a gift.</span></li>
+        </ol></div>
+      <p class="small">Today’s sources touch the second (the papyri record rations of bread and beer fetched for Merer’s team) but none settles the first or the third.</p>
+      <p class="qprompt">On these definitions, which fits the middle reading better, slavery or corvée? What does your choice not settle?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body"><b>Corvée fits better:</b> none of today’s sources says the crews were owned, and a “labor tax” is work owed for a time. But corvée is still forced labour, so the choice does not settle how coercive it was, or whether crews were paid: Hawass says the permanent workmen were, and Lehner says “We don’t know”.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · We do: which view?" data-title="We do: which view does the evidence so far support best?" data-kind="notes">
+<div class="wrap u5l07-dense">
+  <p class="eyebrow">2 · We do · gesture vote · 1 to 4 fingers on <span class="nq">“3, 2, 1, show”</span> · then cold call each camp · 5 minutes</p>
+  <h2>Which view does the evidence so far support best?</h2>
+  <ol class="opts u5l07-vote">
+    <li><span class="n">1</span><span>Herodotus’s picture: Khufu compelled the Egyptians to work for him, in gangs.</span></li>
+    <li><span class="n">2</span><span>The excavators’ picture: crews housed and fed by the crown.</span></li>
+    <li><span class="n">3</span><span>The middle reading: service owed to the king, in rotation.</span></li>
+    <li><span class="n">4</span><span>Not enough evidence yet to choose between them.</span></li>
+  </ol>
+  <p class="qprompt">Cold call one student from each camp: give your best reason, name the source it comes from, and name one limit.</p>
+  <div class="veil-parts" data-veil="Vote and argue first — then show the best reason for each camp, and its limit">
+    <div class="tbl-scroll"><table class="tbl compact u5l07-camps">
+      <tr><th>Camp</th><th>A reason that holds up</th><th>Its limit</th></tr>
+      <tr class="vp reveal"><td>1 · Herodotus</td><td>The gangs serving three months each may fit Lehner’s “labor tax” and rotation.</td><td>A claim passed on more than 2,000 years later; <i>compelled</i> is Godley’s word for a verb meaning ‘ordered’; “utter misery” sits uneasily with the fed crews the excavators describe.</td></tr>
+      <tr class="vp reveal"><td>2 · The excavators</td><td>A town with royal silos, bread and beer, and bones of fish, birds and cattle.</td><td>Mostly Khafre’s and Menkaure’s day; food is not proof that the work was willing.</td></tr>
+      <tr class="vp reveal"><td>3 · The middle reading</td><td>It fits Herodotus’s three-month gangs and Lehner’s hedged “it seems that everybody owed a labor tax”.</td><td>It is a hypothesis: no record of service has been shown to test it.</td></tr>
+      <tr class="vp reveal"><td>4 · Not enough yet</td><td>The older layers beneath the town, which may date to Khufu’s reign, are largely unexplored, and Weiss says it is difficult to say how the stone-lifters were treated.</td><td>The question still asks <i>how far</i>: “not enough” has to become a degree.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · We do: which view?" data-title="We do: interpretation or representation?" data-kind="notes">
+<div class="wrap u5l07-dense">
+  <p class="eyebrow">2 · We do · sort a picture: interpretation or representation? · 3 minutes · cold call</p>
+  <h2>Interpretation or representation? Give your reason</h2>
+  <div class="split u5l07-paint" style="--cols:1.7fr .9fr">
+    <figure class="figure contain"><img src="images/u5l07-poynter-israel-in-egypt-1867.jpg" alt="Israel in Egypt, a Victorian history painting by Edward Poynter, 1867 (oil on canvas, Guildhall Art Gallery, London), named after the Bible’s story of the Israelites in Egypt: a crowd hauls a colossal lion statue on a wheeled platform while overseers with whips and sticks drive them on, with a pyramid in the distance" loading="lazy"><figcaption>Israel in Egypt, a Victorian history painting by Edward Poynter, 1867 (oil on canvas, Guildhall Art Gallery, London), named after the Bible’s story of the Israelites in Egypt: a crowd hauls a colossal lion statue on a wheeled platform while overseers with whips and sticks drive them on, with a pyramid in the distance — <span class="cr">Painting: Edward Poynter (1836–1919), reproduced via the Art Renewal Center · Public domain</span></figcaption></figure>
+    <div class="stack">
+      <p class="qprompt">Is this painting an interpretation or a representation of the past? Give the reason from today’s definitions.</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body"><b>A representation.</b> It is a painter’s depiction of the past, shaped by Poynter’s time and purpose, not a historian’s evidence-based explanation. Its title points to the Bible’s story of the Israelites in Egypt, so it is not a picture of Khufu’s builders at all. It is good evidence of how a Victorian painter imagined that story, and no evidence of how Khufu’s builders worked.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · We do: which view?" data-title="Notes — Examining interpretations" data-kind="notes">
+<div class="wrap u5l07-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint</p>
+  <h2>Examining interpretations</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U5 L7 · Historians disagree: examining interpretations</b></span><span>1–2 · Examining interpretations</span></div>
+    <div class="row"><div class="cq">What is the difference between an interpretation and a representation?</div>
+      <div class="nts reveal">interpretation = a historian’s evidence-based explanation <span class="sep">·</span> representation = a depiction (film, painting, reconstruction) shaped by its maker’s time and purpose <span class="sep">·</span> Poynter’s 1867 painting = a representation</div></div>
+    <div class="row"><div class="cq">Why do accounts of the same past differ?</div>
+      <div class="nts reveal">different evidence · methods · questions · values · times of writing <span class="sep">·</span> e.g. Herodotus (informants, about 430 BCE) vs excavators (a town, papyri, dug since 1988)</div></div>
+    <div class="row"><div class="cq">Examine two views of how the Great Pyramid’s builders were treated.</div>
+      <div class="nts reveal">Herodotus (Godley): <i>compelled</i>; gangs of 100,000, 3 months each; <i>They said</i> <span class="sep">·</span> excavators (AERA): town built by the crown; silos, bread, beer; bones <span class="sep">·</span> limit: town mostly Khafre and Menkaure; older layers that may be Khufu’s still unexplored</div></div>
+    <div class="row"><div class="cq">How far do ‘slavery’ and ‘corvée’ fit?</div>
+      <div class="nts reveal">slavery = legally owned; corvée = unpaid forced labour for limited periods <span class="sep">·</span> Lehner (1997): “a labor tax”, people “rotated in and out”, “We don’t know” if entirely coercive <span class="sep">·</span> corvée fits better than slavery but is still forced</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Writing focus: reporting verbs and attribution; present tense" data-kind="notes">
+<div class="wrap u5l07-dense u5l07-wf">
+  <p class="eyebrow">3 · You do · Writing focus · 7 minutes · I do → We do → apply</p>
+  <h2>Writing focus: say whose view it is, and how sure they are</h2>
+  <div class="split" style="--cols:.9fr 1.1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">I do · watch</div>
+        <p class="body"><b>Examine</b>: ‘Inquire into.’ <span class="small">(NESA, <i>Glossary of key words</i>)</span> Name whose view it is, choose a reporting verb that says how sure they are, and write it in the <b>present tense</b>: the article still says it. What happened stays in the past.</p>
+        <p class="small">Worked example · written for this lesson, on the class question</p>
+        <p class="quote sm model" data-booklet="model">In Godley’s translation, <span class="match" data-step="m1">Herodotus reports</span> <span class="match" data-step="m2">his Egyptian informants’ claim</span> that Khufu <span class="match" data-step="m3">“compelled all the Egyptians to work for him”</span> (Herodotus 2.124), <span class="match" data-step="m4">whereas</span> the excavators of Heit el-Ghurab <span class="match" data-step="m5">present the builders as crews whom the crown housed and fed</span> (Ancient Egypt Research Associates n.d.).</p>
+        <div class="u5l07-wfkey">
+          <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Who</b> + a neutral verb: he passes it on</span></p>
+          <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Whose claim</b> it really is</span></p>
+          <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>Exact words</b>, short, with a citation</span></p>
+          <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>whereas</b> turns to the other view</span></p>
+          <p class="mq reveal" data-c="m5" data-hl="[data-step=m5]"><span class="sw"></span><span><b>present … as</b>, with author and date</span></p>
+        </div>
+      </div>
+      <div class="card quiet"><div class="k">Apply · in today’s task</div>
+        <p class="body" style="max-width:none">Write your first attributed sentence now, about one view in your own topic: <span class="nq">‘[Name] [verb] that …, whereas [name] [verb] …’</span> Your Writing toolkit (booklet pages 3–4): attribution verbs.</p></div>
+    </div>
+    <div class="card"><div class="k">We do · hinge: A, B, C or D on <span class="nq">“3, 2, 1, show”</span></div>
+      <p class="body">Herodotus 2.124 (Godley’s translation) opens <i>They said</i>. Which verb fits what Herodotus does with this claim?</p>
+      <div class="veil-parts u5l07-hinge" data-veil="Vote first — then show the answer">
+        <ol class="opts">
+          <li><span class="n">A</span><span>Herodotus proves that Khufu “compelled all the Egyptians to work for him”.</span></li>
+          <li id="u5l07-hqB"><span class="n">B</span><span>Herodotus reports that Khufu “compelled all the Egyptians to work for him”.</span></li>
+          <li><span class="n">C</span><span>Herodotus claims that Khufu “compelled all the Egyptians to work for him”.</span></li>
+          <li><span class="n">D</span><span>Herodotus presents Khufu as having “compelled all the Egyptians to work for him”.</span></li>
+        </ol>
+        <i class="reveal" data-mark="#u5l07-hqB" hidden></i>
+        <div class="note vp reveal" data-code="evidence"><div class="k">B: he passes on what Egyptians told him</div>
+          <p class="body"><b>A</b>: one report, passed on more than 2,000 years later, proves nothing. <b>C</b>: <i>claims</i> makes it sound like Herodotus’s own assertion and puts your doubt on it; but the chapter opens <i>They said</i>: the claim is his informants’, and he passes it on (a historian who doubts the figure may still choose <i>claims</i>: Lehner says Herodotus “just claims he was told that”). <b>D</b>: <i>presents … as</i> credits Herodotus with shaping the picture; here he is passing his informants’ picture on.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="u5l07-verbs" aria-label="Reporting verbs, by what they say about the writer">
+    <div><b>reports · states · records</b><span>neutral: passes it on</span></div>
+    <div><b>suggests</b><span>tentative: they hedge</span></div>
+    <div><b>argues · contends</b><span>makes a case with reasons</span></div>
+    <div><b>concedes</b><span>admits a limit on their own case</span></div>
+    <div><b>claims · alleges</b><span>doubtful: you keep your distance</span></div>
+    <div><b>confirms · presents … as</b><span>supportive · interpretive</span></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: two interpretations in your own topic">
+<div class="wrap u5l07-dense">
+  <p class="eyebrow">3 · You do · 24 minutes, including the Writing focus apply · check first · press K for the timer</p>
+  <h2>You do: find two interpretations in your own topic, and attribute them</h2>
+  <div class="split" style="--cols:1.1fr .9fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body">
+          <li>Find <b>two interpretations</b> of your topic: a review article, a book review, or an abstract with ‘however’ or ‘earlier explanations’.</li>
+          <li>Complete an <b>interpretation card</b> for each, and note whose words each claim is.</li>
+          <li>Write <b>two attributed sentences</b>: name the person, a verb that fits how sure they are, the present tense, an author–date citation.</li>
+          <li>Check: does each verb match how sure they sound?</li>
+        </ol></div>
+      <dl class="u5l07-tpl" aria-label="The interpretation card template">
+        <dt>Claim</dt><dd>What exactly does this writer say? Their own words, or yours?</dd>
+        <dt>Evidence</dt><dd>What is it based on?</dd>
+        <dt>Assumptions</dt><dd>What must be true for the claim to hold?</dd>
+        <dt>When and why</dt><dd>When was it written, and what was its purpose?</dd>
+        <dt>Attributed</dt><dd>[Name] [verb] that …, with an author–date citation.</dd>
+      </dl>
+      <p class="small">Only one view so far? Write it down with the question it leaves open, and show your teacher.</p>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Check first: what must each attributed sentence do?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">Name the person or group, use a reporting verb that fits how sure they are, in the <b>present tense</b>, and cite them with author and date. Quote exactly only where the wording matters, and never give a reporter’s words to the person reported.</p></div>
+      <div class="cols c2">
+        <div class="card quiet sm"><div class="k">Support</div><p class="body">The interpretation card with prompts, the reporting-verb bank (neutral · doubtful · supportive · interpretive), the model and the frame.</p></div>
+        <div class="card quiet sm"><div class="k">Extension</div><p class="body">Explain why a writer’s time and purpose produced their interpretation, and judge which view is better supported.</p></div>
+      </div>
+      <div class="card accent"><div class="k">While you work · conferences</div>
+        <p class="body">Your teacher meets the second half of the class today, with your log and notes in hand: be ready to say which two views you found and where.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 6 minutes · before you leave</p>
+  <h2>The main disagreement in my topic</h2>
+  <div class="card accent"><p class="lead">Finish the sentence, naming the two sides by who holds each view, and giving a reason they differ.</p>
+    <p class="body nq">“The main disagreement in my topic is … because …”</p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">the two sides named by who holds them (a person, a team or a book), not “some people”; a reason from the five (evidence, methods, questions, values or time of writing); a verb that fits how sure each side is; and the present tense for what they say.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> synthesis: making sources talk to each other.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Summary" data-kind="notes">
+<div class="wrap u5l07-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What is the difference between an interpretation and a representation?</li>
+          <li>Why can two accounts of the same past differ? Use the builders of the Great Pyramid as your example.</li>
+          <li>How do you choose a reporting verb, and what tense do you use?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">An interpretation is a historian’s evidence-based explanation of the past, whereas a representation, such as a painting, is a depiction shaped by its maker’s time and purpose. Herodotus reports his informants’ claim that Khufu “compelled” the Egyptians to work for him (Godley’s word), whereas the excavators present crews that the crown housed and fed, partly because Herodotus wrote more than 2,000 years after Khufu and the excavators study the town itself. The verb should match how sure the writer is, in the present tense: Hawass contends that the workers were not really pushed, whereas Lehner concedes that it is not known whether the labour was entirely coercive.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Interpretation and representation</label></li>
+        <li><label><input type="checkbox"> Five reasons accounts differ</label></li>
+        <li><label><input type="checkbox"> Finding the debate</label></li>
+        <li><label><input type="checkbox"> Herodotus and the excavators, on a card</label></li>
+        <li><label><input type="checkbox"> Slavery and corvée</label></li>
+        <li><label><input type="checkbox"> Reporting verbs and the present tense</label></li>
+        <li><label><input type="checkbox"> Two interpretation cards, started</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u5l07-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>An interpretation and a representation are the same thing.</span>
+      <span class="sol no reveal">False <span class="why">— an interpretation is a historian’s evidence-based explanation; a representation is a depiction shaped by its maker’s time and purpose, such as Poynter’s painting.</span></span></li>
+    <li><span class="n">2</span><span>In Godley’s translation, <i>compelled</i> means exactly what Herodotus’s Greek verb means.</span>
+      <span class="sol no reveal">False <span class="why">— <i>compelled</i> is Godley’s English and suggests force; the Greek verb means ‘ordered’. A quotation from a translation quotes the translator.</span></span></li>
+    <li><span class="n">3</span><span>In Weiss’s article, the words about “the popular notion” of oppressed slaves are Tallet’s.</span>
+      <span class="sol no reveal">False <span class="why">— they are Weiss’s own words, reporting what Tallet believes. Tallet’s own words are the ones in quotation marks and attributed to him, such as “I think the monarchy …”.</span></span></li>
+    <li><span class="n">4</span><span>Merer’s papyri show how every worker on the Great Pyramid was treated.</span>
+      <span class="sol no reveal">False <span class="why">— they record the work of one phyle of about 40 men, and Weiss says it is difficult to say whether the stone-quarriers and stone-lifters were treated as favourably.</span></span></li>
+    <li><span class="n">5</span><span>In the NOVA Online interview (page dated 1997), Lehner stated that the builders were certainly willing workers.</span>
+      <span class="sol no reveal">False <span class="why">— he said it “may not have been entirely coercion”, and “We don’t know if it was entirely coercive”. Hawass was the one without a hedge.</span></span></li>
+    <li><span class="n">6</span><span>In NOVA’s 2019 documentary, “a proud and willing nation” is the narrator’s phrase, not Lehner’s.</span>
+      <span class="sol reveal">True <span class="why">— the transcript gives those words to the narrator. When you quote a film, name who speaks.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — choose the verb; the Assyrian practice question" data-kind="practice">
+<div class="wrap prac u5l07-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing the attribution</p>
+  <h2>Choose the verb, and attribute a debate on the Assyrian question</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · Match the verb to the writer</div>
+        <p class="body">For each, write one sentence in the present tense with a verb that fits, and an author–date citation:</p>
+        <ol class="body">
+          <li>Lehner: <span class="nq">“We don’t know if it was entirely coercive …”</span></li>
+          <li>Hawass: <span class="nq">“Really it was love—they were not really pushed to do it.”</span></li>
+          <li>Lehner: <span class="nq">“There’s some evidence to suggest that people were rotated in and out of the raw labor force.”</span></li>
+        </ol></div>
+      <div class="src reveal" data-veil="Show model answers"><div class="k">Models · written for this lesson</div>
+        <p class="quote sm model">1. Lehner <b>concedes</b> that it is not known whether the labour was “entirely coercive” (Lehner 1997).</p>
+        <p class="quote sm model">2. Hawass <b>contends</b> that the workers “were not really pushed to do it” (Hawass 1997).</p>
+        <p class="quote sm model">3. Lehner <b>suggests</b> that people “were rotated in and out of the raw labor force” (Lehner 1997).</p>
+        <p class="small u5l07-ref nq">Hawass, Z. (1997) ‘Interview with Zahi Hawass’, in ‘Who Built the Pyramids?’, NOVA Online, 4 February, viewed [date], https://www.pbs.org/wgbh/nova/article/who-built-the-pyramids/ <br>Lehner, M. (1997) ‘Interview with Mark Lehner’, in ‘Who Built the Pyramids?’, NOVA Online, 4 February, viewed [date], https://www.pbs.org/wgbh/nova/article/who-built-the-pyramids/</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 2 · The Assyrian practice question</div>
+        <p class="body">For <i>Why did the Assyrian Empire collapse in the late 7th century BCE?</i>, use the Sinha et al. (2019) abstract from <span class="nq">‘Finding the debate in your topic’</span>. Write one sentence that attributes the earlier explanations and the authors’ own view, with a different reporting verb for each. Cite Sinha et al. (2019).</p></div>
+      <div class="src reveal" data-veil="Show a model answer"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Sinha et al. (2019) <b>report</b> that earlier explanations focused on “internal politico-economic conflicts, territorial overextension, and military defeat”, whereas their own climate record <b>suggests</b> that megadroughts “contributed to <span class="ed">[the empire’s]</span> eventual political and economic collapse”.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u5l07-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>What is the difference between an interpretation and a representation?
+      <span class="sol reveal">An interpretation is a historian’s evidence-based explanation; a representation is a depiction (film, painting, reconstruction) shaped by its maker’s time and purpose.</span></li>
+    <li>Name the five reasons accounts of the same past differ.
+      <span class="sol reveal">Different evidence, methods, questions, values and times of writing.</span></li>
+    <li>What does an interpretation card record?
+      <span class="sol reveal">The claim, the evidence, the assumptions, and when and why it was written; and whose words the claim is.</span></li>
+    <li>In Weiss (2022), how can you tell which words are Tallet’s own?
+      <span class="sol reveal">They are in quotation marks and spoken by him (“I think the monarchy …”). A sentence such as ‘Tallet believes …’ is Weiss reporting his view.</span></li>
+    <li>What is the difference between slavery and corvée?
+      <span class="sol reveal">Slavery: a person is legally owned and forced to work. Corvée: unpaid forced labour owed to a ruler for limited periods. Neither makes the work willing.</span></li>
+    <li>Which reporting verb says a writer admits a limit on their own case, and which keeps your distance from a claim?
+      <span class="sol reveal"><b>Concedes</b> admits a limit; <b>claims</b> (or <i>alleges</i>) keeps your distance, so say why. And use the present tense for what they say.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u5l07-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u5l07-cite"><div class="k">Written sources</div>
+      <p class="small">Herodotus, <i>The Histories</i> 2.124, A. D. Godley’s translation (Loeb, 1920–22), as revised by the <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=2:chapter=124">Perseus Digital Library</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 US</a>). Ancient Egypt Research Associates (n.d.), <a href="https://aeraweb.org/projects/lost-city/"><span class="nq">“The Lost City of the Pyramids (Heit el-Ghurab)”</span></a>. Egypt, Ministry of Tourism and Antiquities (n.d.), <a href="https://egymonuments.gov.eg/en/monuments/workers-town-and-cemetery/"><span class="nq">“Workers’ Town and Cemetery”</span></a>. NOVA Online, <a href="https://www.pbs.org/wgbh/nova/article/who-built-the-pyramids/"><span class="nq">“Who Built the Pyramids?”</span></a> (page dated 4 February 1997), with its interviews of Mark Lehner and Zahi Hawass. D. Weiss, <a href="https://archaeology.org/issues/july-august-2022/features/egypt-wadi-el-jarf-port-papyri/"><span class="nq">“Journeys of the Pyramid Builders”</span></a>, <i>Archaeology</i> (July/August 2022), quoting Pierre Tallet and Mark Lehner. A. Sinha et al., <a href="https://doi.org/10.1126/sciadv.aax6656"><span class="nq">“Role of climate in the rise and fall of the Neo-Assyrian Empire”</span></a>, <i>Science Advances</i> 5(11) (2019), open access (<a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a>), quoted briefly. <a href="https://dictionary.cambridge.org/dictionary/english/slavery">Cambridge Dictionary, ‘slavery’</a>. Wikipedia, <a href="https://en.wikipedia.org/wiki/Corv%C3%A9e">‘Corvée’</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>; a lead, for the term only). NOVA, <a href="https://www.pbs.org/wgbh/nova/video/decoding-the-great-pyramid/">“Decoding the Great Pyramid”</a> (2019), from the PBS transcript. Arrian, <i>Anabasis of Alexander</i>, Preface, trans. E. J. Chinnock (1884; public domain), as in Unit 2, Lesson 12. All checked 27 November 2026.</p>
+      <p class="small">Further reading, not quoted here: M. Lehner and Z. Hawass, <i>Giza and the Pyramids: The Definitive History</i> (University of Chicago Press, 2017). The interviews give no date of their own, so they are cited by the date of the NOVA Online page.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA. NESA, <i>Glossary of key words</i> (definition quoted word for word).</p></div>
+      <div class="card quiet u5l07-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>The Great Pyramid of Giza, built for King Khufu (Kheops in Herodotus)</b> · Photo: Nina Aldin Thune · <a href="https://creativecommons.org/licenses/by/2.5/">CC BY 2.5</a> · <a href="https://commons.wikimedia.org/wiki/File:Kheops-Pyramid.jpg">source</a></li><li><b>Israel in Egypt, a painting by Edward Poynter, 1867 (Guildhall Art Gallery, London)</b> · Painting: Edward Poynter (1836–1919), reproduced via the Art Renewal Center · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:1867_Edward_Poynter_-_Israel_in_Egypt.jpg">source</a></li></ul>
+        <p class="small">All images are public domain or openly licensed, and were resized or cropped for the web. Each is shared under the licence shown. No film stills or posters are shown (copyright): a painting stands in as the representation.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

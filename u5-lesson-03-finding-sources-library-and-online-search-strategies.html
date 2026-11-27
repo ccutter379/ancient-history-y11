@@ -1,0 +1,1704 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U5 L3 · Finding sources: library and online search strategies</title>
+<meta name="description" content="Year 11 Ancient History, the historical investigation: where to find reliable, free sources (library catalogues, the State Library of NSW, Trove, Perseus, LacusCurtius, Livius, museum collections, Google Scholar and JSTOR&#x27;s free content), search moves that find them, how to read a URL, what to do at a paywall, why a chatbot is not a source, and how to keep a research log.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#384656; --bright:#5B6E84; --tint:#E9EDF2; --statement:#384656;
+  --solid:#384656; --soft:#DCE3EB; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#C2CEDB; --bright:#93A6BC; --tint:#1C252E; --statement:#2E3A47; --soft:#DCE3EB; } }
+:root[data-theme="dark"]{ --deep:#C2CEDB; --bright:#93A6BC; --tint:#1C252E; --statement:#2E3A47; --soft:#DCE3EB; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 5 Lesson 3 only (every class starts u5l03-) */
+
+/* title picture; goals slide syllabus line; credits links */
+.u5l03-cover img{max-height:50vh;}
+.u5l03-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u5l03-cite a{color:var(--deep);}
+
+/* a search string, exactly as typed */
+.u5l03-str{font-family:var(--mono); font-size:.86em; background:var(--surface-2); border:1px solid var(--rule);
+  border-radius:5px; padding:.02em .38em; white-space:normal; overflow-wrap:anywhere; color:var(--ink);}
+
+/* the practice question, set large */
+.u5l03-bigq{margin:0; padding:.5em .9em; border-left:6px solid var(--deep); background:var(--tint); border-radius:0 10px 10px 0;
+  font-family:var(--disp); font-size:calc(var(--fs-body)*1.0); line-height:1.3; color:var(--ink);}
+.u5l03-bigq .k{display:block; font-family:var(--ui); font-size:.62em; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--deep); margin-bottom:.2em;}
+
+/* where to look; search moves; primary or secondary */
+.u5l03-where td:first-child{width:24%; font-weight:600;}
+.u5l03-where td:nth-child(2){width:46%;}
+.u5l03-where a, .u5l03-urls a, .u5l03-trail a, .u5l03-pay a{color:var(--deep);}
+.u5l03-strs td:first-child{width:42%;}
+.u5l03-moves td:first-child{width:19%; font-weight:600;}
+.u5l03-moves td:nth-child(2){width:33%;}
+.u5l03-sort td:first-child{width:34%; font-weight:600;}
+
+/* read the URL */
+.u5l03-urls{list-style:none; margin:0; padding:0; display:grid; gap:.45em;}
+.u5l03-urls li{border:1px solid var(--rule); border-radius:8px; background:var(--surface); padding:.35em .7em;
+  font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+.u5l03-urls .u5l03-url{display:block; font-family:var(--mono); font-size:.86em; color:var(--slate); overflow-wrap:anywhere;
+  margin-bottom:.15em;}
+.u5l03-urls .u5l03-url b{color:var(--deep);}
+.u5l03-ends{display:flex; flex-wrap:wrap; gap:.35em;}
+.u5l03-ends span{border:1px solid var(--rule); border-radius:999px; padding:.1em .65em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.74);}
+.u5l03-ends b{font-family:var(--mono); color:var(--deep);}
+
+/* the trail */
+.u5l03-trail li .d{overflow-wrap:anywhere;}
+.u5l03-pay{margin:.2em 0 0; padding-left:1.15em; font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+.u5l03-pay li{margin:.18em 0;}
+
+/* a museum database result beside the sort */
+.u5l03-rel .figure img{max-height:26vh;}
+
+/* an invented reference (chatbot slide) */
+.u5l03-fake{border:2px dashed var(--c-keyterm); border-radius:10px; padding:.5em .85em; background:var(--surface);}
+.u5l03-fake .k{color:var(--c-keyterm);}
+.u5l03-fake p{margin:.2em 0 0; font-size:calc(var(--fs-body)*.82); line-height:1.36;}
+
+/* the research log template and the AI log model */
+.u5l03-tpl{display:grid; grid-template-columns:auto 1fr; margin:0; border:1px solid var(--rule); border-radius:10px;
+  overflow:hidden; background:var(--surface);}
+.u5l03-tpl dt{padding:.3em .7em; font-weight:700; color:var(--deep); background:var(--tint); border-bottom:1px solid var(--rule);
+  font-size:calc(var(--fs-body)*.78);}
+.u5l03-tpl dd{margin:0; padding:.3em .7em; border-bottom:1px solid var(--rule); font-size:calc(var(--fs-body)*.78);
+  line-height:1.34; color:var(--slate);}
+.u5l03-tpl dt:last-of-type, .u5l03-tpl dd:last-of-type{border-bottom:0;}
+
+/* paragraphs inside a card need a little air */
+.card .body + .body, .card .body + .u5l03-tpl, .card .u5l03-tpl + .body, .card .veil-parts, .card .body + .quote{margin-top:.4em;}
+
+/* a frame or word bank */
+.u5l03-bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.u5l03-bank span{border:1px solid var(--c-keyterm); color:var(--c-keyterm); border-radius:999px; padding:.1em .7em;
+  background:var(--w-keyterm); font-size:calc(var(--fs-body)*.8); font-weight:600;}
+
+/* the Writing focus key: four labels in two columns */
+.u5l03-wfkey{display:grid; grid-template-columns:1fr 1fr; gap:.2em .8em; margin-top:.35em;}
+.u5l03-contrast{display:grid; grid-template-columns:auto 1fr; gap:.15em .6em; margin:.35em 0 0;
+  font-size:calc(var(--fs-body)*.78); line-height:1.34;}
+.u5l03-contrast dt{font-weight:700; color:var(--deep);}
+.u5l03-contrast dd{margin:0; color:var(--slate);}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u5l03-where td:first-child, .u5l03-where td:nth-child(2), .u5l03-moves td:first-child, .u5l03-moves td:nth-child(2),
+  .u5l03-sort td:first-child, .u5l03-strs td:first-child{width:auto;}
+  .u5l03-wfkey{grid-template-columns:1fr;}
+  /* three-column tables stack on phones: each row becomes a small card */
+  .u5l03-where tr, .u5l03-moves tr, .u5l03-strs tr{display:block; border-bottom:1px solid var(--rule); padding:.3em 0;}
+  .u5l03-where td, .u5l03-moves td, .u5l03-strs td{display:block; border:0; padding:.12em .5em;}
+  .u5l03-where tr:first-child, .u5l03-moves tr:first-child, .u5l03-strs tr:first-child{display:none;}
+  .u5l03-where td:first-child, .u5l03-moves td:first-child, .u5l03-strs td:first-child{font-weight:700; color:var(--deep);}
+  .u5l03-rel .figure img{max-height:220px;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u5l03-dense{gap:10px;}
+  html:not(.read) .u5l03-dense h2{font-size:calc(var(--fs-h2)*.82);}
+  html:not(.read) .u5l03-dense .quote.sm{font-size:calc(var(--fs-body)*.76); line-height:1.4;}
+  html:not(.read) .u5l03-dense .quote{font-size:calc(var(--fs-body)*.88);}
+  html:not(.read) .u5l03-dense .src{padding:9px 15px;}
+  html:not(.read) .u5l03-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u5l03-dense .note{padding:.42em .8em;}
+  html:not(.read) .u5l03-dense .note .body, html:not(.read) .u5l03-dense .card .body,
+  html:not(.read) .u5l03-dense .qprompt{font-size:calc(var(--fs-body)*.76); line-height:1.34;}
+  html:not(.read) .u5l03-dense .card{padding:9px 15px;}
+  html:not(.read) .u5l03-dense .card .k{margin-bottom:.22em;}
+  html:not(.read) .u5l03-dense .keylist{gap:5px;}
+  html:not(.read) .u5l03-dense .keylist li{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u5l03-dense .tbl.compact{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u5l03-dense .tbl.compact td{padding:.28em .5em;}
+  html:not(.read) .u5l03-dense .tbl th{padding:.35em .55em;}
+  html:not(.read) .u5l03-dense .figure img{max-height:28vh;}
+  html:not(.read) .u5l03-dense .u5l03-rel .figure img{max-height:20vh;}
+  html:not(.read) .u5l03-dense .u5l03-bigq{font-size:calc(var(--fs-body)*.9); padding:.32em .8em;}
+  html:not(.read) .u5l03-dense .u5l03-urls li{font-size:calc(var(--fs-body)*.72); padding:.26em .6em;}
+  html:not(.read) .u5l03-dense .u5l03-urls{gap:.3em;}
+  html:not(.read) .u5l03-dense .u5l03-ends span{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u5l03-dense .u5l03-pay{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u5l03-dense .u5l03-fake p{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u5l03-dense .u5l03-tpl dt, html:not(.read) .u5l03-dense .u5l03-tpl dd{font-size:calc(var(--fs-body)*.7); padding:.22em .6em;}
+  html:not(.read) .u5l03-dense .u5l03-contrast{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u5l03-dense .mq{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u5l03-dense .u5l03-wfkey .mq{font-size:calc(var(--fs-body)*.68); line-height:1.3;}
+  html:not(.read) .u5l03-dense .tf li, html:not(.read) .u5l03-dense .rq{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u5l03-dense .tf li{padding:.24em .6em;}
+  html:not(.read) .u5l03-dense .prac{gap:6px;}
+  html:not(.read) .u5l03-dense .cornell .cq, html:not(.read) .u5l03-dense .cornell .nts{font-size:calc(var(--fs-body)*.74); padding:.32em .75em;}
+  html:not(.read) .u5l03-dense .u5l03-bank span{font-size:calc(var(--fs-body)*.7);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 3" data-title="Finding sources: library and online search strategies" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.05fr .95fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 5 · Historical investigation · Lesson 3</p>
+      <h1>Finding sources: library and online search strategies</h1>
+      <p class="lead">Where do historians find reliable sources, how do they search, and how do they keep track of what they found?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u5l03-cover"><figure class="figure contain"><img src="images/u5l03-state-library-nsw-mitchell-reading-room.jpg" alt="The reading room of the Mitchell Building at the State Library of New South Wales, Sydney, in 2023. NSW residents can join the Library free, online" loading="lazy"><figcaption>The reading room of the Mitchell Building at the State Library of New South Wales, Sydney, in 2023. NSW residents can join the Library free, online — <span class="cr">Photo: Geoff Barker · CC BY-SA 4.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 3" data-title="Review: Lessons 1–2 and earlier units" data-kind="intro practice">
+<div class="wrap u5l03-dense">
+  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <h2>Five questions and a writing item</h2>
+  <ol class="rq" data-answers>
+    <li>Write the five parts of OVPRL, in order.
+      <span class="sol reveal">Origin, Value, Purpose, Reliability, Limitations (the OVPRL routine on page 2 of your booklet).</span></li>
+    <li>Name one thing Tacitus’s account of Boudicca’s revolt (<i>Annals</i> 14) is reliable evidence for, and one thing it is not.
+      <span class="sol reveal">Reliable for the outline of the revolt and for a Roman senator’s view of it; not for the Britons’ side, because no British account survives (Unit 4, Lesson 4).</span></li>
+    <li>Name two of the eight topic areas an investigation can come from.
+      <span class="sol reveal">Any two of the eight (NESA syllabus, p. 46), for example ‘the causes and impacts of a historical event’ and ‘the role of a significant historical individual’.</span></li>
+    <li>What is a hypothesis?
+      <span class="sol reveal">A provisional, testable answer to your question; research may confirm, modify or reject it.</span></li>
+    <li>What does NESA’s <i>investigate</i> mean?
+      <span class="sol reveal">‘Plan, inquire into and draw conclusions about.’ (NESA, <i>Glossary of key words</i>) A question, sources and a conclusion.</span></li>
+    <li>Writing · fix this question: <span class="nq">“Tell me about the pyramids.”</span>
+      <span class="sol reveal">It names a topic, not a question to investigate: <i>tell me about</i> asks for a description, with no judgement, and <i>the pyramids</i> has no limits (which pyramids, and when?). Add a judgement stem, one focus and an issue the evidence can settle, as our class question does: <b>How far</b> does the evidence support Herodotus’s account of who built the Great Pyramid?</span></li>
+  </ol>
+  <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 3" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>locate a range of sources for an investigation</li>
+        <li>record the research process accurately</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>tell primary from secondary sources for my question</li>
+        <li>use at least three search moves to find reliable sources</li>
+        <li>write a log entry that records what I searched, found and decided</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u5l03-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-08 plans and conducts historical investigations and presents conclusions, using evidence from a range of sources. <b>Life Skills:</b> AH-LS-08 uses sources to form conclusions about the past · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 3" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U5 L3 · Finding sources: library and online search strategies</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = Before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Where can I find an ancient text in translation?</div><div class="nts">Perseus · LacusCurtius · Livius → each names its translator</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A new lesson, a new page</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences; write search strings exactly as typed.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at the ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: describe, explain, assess. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Your research log is separate</span><span class="d">Notes hold what you learn; the log records what you searched, found and decided. One checkpoint today: finding sources.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 3" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u5l03-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for finding and recording sources</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Research terms</th><th>Meaning</th></tr>
+      <tr><td>Primary / secondary source</td><td>A source from the time studied (an inscription, a papyrus, an object) / a later work about it (a historian’s book, an excavation report). Which one it is depends on your question.</td></tr>
+      <tr><td>Research log</td><td>A dated record of what you searched, found, read and decided.</td></tr>
+      <tr><td>Peer review</td><td>Checking of a scholarly article by other experts before publication.</td></tr>
+      <tr><td>Open access</td><td>Free to read online, without a subscription.</td></tr>
+      <tr><th>Writing terms</th><th>Meaning</th></tr>
+      <tr><td>Procedural recount</td><td>A past-tense record of steps taken, like a research log entry: <span class="nq">‘I searched … and found …’</span></td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Search string</td><td>The exact words and symbols you type into a search box, such as <code class="u5l03-str nq">"Wadi al-Jarf" papyri</code>.</td></tr>
+      <tr><td>Boolean operators</td><td>Words that combine search terms in catalogues and databases: AND (all of these words), OR (any of them: use it for synonyms) and NOT (leave this out; in Google, a minus sign).</td></tr>
+      <tr><td>Database</td><td>A searchable collection of records: articles (Google Scholar, JSTOR), texts (Perseus) or objects (a museum’s collection).</td></tr>
+      <tr><td>Paywall</td><td>A page that asks you to pay or log in before you can read the full text.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Finding sources" data-title="Where to look" data-kind="notes">
+<div class="wrap u5l03-dense">
+  <p class="eyebrow">1 · Finding sources · I do — where to look, with the teacher-librarian</p>
+  <h2>Where to look: free places with reliable sources</h2>
+  <div class="tbl-scroll"><table class="tbl compact u5l03-where">
+    <tr><th>Where</th><th>What you find there</th><th>Use it for</th></tr>
+    <tr class="reveal"><td>Your library catalogue and teacher-librarian</td><td>The school’s books and ebooks. Search by keyword, then open a good record and follow its subject links. Ancient Egypt shelves at Dewey 932; Mesopotamia at 935.</td><td>A reliable overview to start from</td></tr>
+    <tr class="reveal"><td><a href="https://www.sl.nsw.gov.au/join/become-library-member">State Library of NSW</a></td><td>A free card, online, for NSW residents. Members can log in from home to <a href="https://eresources.sl.nsw.gov.au/">eresources</a> such as JSTOR and the Loeb Classical Library.</td><td>Articles and translations you can’t read free elsewhere</td></tr>
+    <tr class="reveal"><td><a href="https://trove.nla.gov.au/">Trove</a> (National Library of Australia)</td><td>Books held in libraries around Australia; digitised Australian newspapers.</td><td>Finding where a book is held</td></tr>
+    <tr class="reveal"><td><a href="https://www.perseus.tufts.edu/hopper/">Perseus</a> · <a href="https://penelope.uchicago.edu/Thayer/E/Roman/home.html">LacusCurtius</a> · <a href="https://www.livius.org/">Livius.org</a></td><td>Ancient texts in translation, each with a named translator; Livius adds articles and photographs.</td><td>Primary sources</td></tr>
+    <tr class="reveal"><td>Museum collections: <a href="https://www.metmuseum.org/art/collection/search">The Met</a> · <a href="https://collections.louvre.fr/en/">the Louvre</a>; excavation teams’ websites, such as <a href="https://aeraweb.org/">AERA</a></td><td>Objects, each with a museum number and a date, and a find-place where it is known; excavators report their own sites.</td><td>Objects and sites (check each record’s date)</td></tr>
+    <tr class="reveal"><td><a href="https://scholar.google.com/">Google Scholar</a> · <a href="https://about.jstor.org/oa-and-free/">JSTOR’s free content</a></td><td>Scholarly articles and books. Most abstracts are free; on JSTOR, old journals and open-access articles are free to all, and a free account reads up to 10 articles every 30 days, where the publisher allows.</td><td>Peer-reviewed scholarship</td></tr>
+  </table></div>
+  <p class="cue reveal"><b>Wikipedia is a lead, not a source:</b> read it for an overview, then follow its references.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Finding sources" data-title="Search moves" data-kind="notes">
+<div class="wrap u5l03-dense">
+  <p class="eyebrow">1 · Finding sources · I do — six search moves on our class question, named as I use them · then cold call</p>
+  <h2>Search moves: type less, find better</h2>
+  <div class="tbl-scroll"><table class="tbl compact u5l03-moves">
+    <tr><th>Move</th><th>What it does</th><th>On our class question</th></tr>
+    <tr class="reveal"><td>Keywords and synonyms · OR</td><td>Search every name and spelling at once; OR (in capitals) means either word.</td><td><code class="u5l03-str nq">Khufu OR Cheops</code> · <code class="u5l03-str nq">"Wadi al-Jarf" OR "Wadi el-Jarf"</code></td></tr>
+    <tr class="reveal"><td>AND · NOT (minus)</td><td>AND keeps all the words (in Google, a space between words does this); a minus sign leaves a word out.</td><td><code class="u5l03-str nq">Merer AND papyri</code> (a catalogue) · <code class="u5l03-str nq">"pyramid builders" Giza -tour</code></td></tr>
+    <tr class="reveal"><td>"Exact phrase"</td><td>Quotation marks keep the words together, in that order.</td><td><code class="u5l03-str nq">"Lost City of the Pyramids"</code></td></tr>
+    <tr class="reveal"><td>site:</td><td>Searches one site, or one kind of site. No space after the colon.</td><td><code class="u5l03-str nq">site:aeraweb.org Merer</code> · <code class="u5l03-str nq">"pyramid builders" site:edu.au</code></td></tr>
+    <tr class="reveal"><td>filetype:pdf</td><td>Finds reports and articles saved as PDFs.</td><td><code class="u5l03-str nq">"Wadi el-Jarf" papyri filetype:pdf</code></td></tr>
+    <tr class="reveal"><td>Reference trail</td><td>Follow a good source’s references back, and its <i>Cited by</i> link forward.</td><td>Wikipedia → Tallet and Marouard (2014) → <i>Cited by</i></td></tr>
+  </table></div>
+  <div class="split" style="--cols:1fr 1.2fr">
+    <p class="qprompt">Perseus’s Herodotus spells the king Kheops; the same translation on LacusCurtius, and The Met, spell him Cheops. Which move finds sources that use any of his names, and how?</p>
+    <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body"><b>Synonyms joined with OR:</b> <code class="u5l03-str nq">Khufu OR Cheops OR Kheops</code>. One spelling alone misses every source that uses another; the spelling a source uses is itself a search term.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Finding sources" data-title="Read the URL" data-kind="notes">
+<div class="wrap u5l03-dense">
+  <p class="eyebrow">1 · Finding sources · I do — read the address before you trust the page · then cold call</p>
+  <h2>Read the URL: who is behind this page?</h2>
+  <div class="split" style="--cols:1.25fr .75fr">
+    <ul class="u5l03-urls">
+      <li class="reveal"><span class="u5l03-url">www.perseus.<b>tufts.edu</b>/hopper/text?doc=Perseus:text:1999.01.0126:<b>book=2:chapter=124</b></span>A university’s digital library (.edu: a US university). The rest of the address names the text, the book and the chapter, so you can cite the exact passage.</li>
+      <li class="reveal"><span class="u5l03-url">penelope.<b>uchicago.edu</b>/<b>Thayer</b>/E/Roman/Texts/Herodotus/home.html</span>A university’s server, but the path names one person: this is Bill Thayer’s site, LacusCurtius. A university address does not always mean the university wrote it.</li>
+      <li class="reveal"><span class="u5l03-url"><b>aeraweb.org</b>/projects/lost-city/</span>Anyone can register a .org address, so the ending tells you nothing. Here it is the excavation team’s own site: read its About page.</li>
+      <li class="reveal"><span class="u5l03-url">en.<b>wikipedia.org</b>/wiki/Diary_of_Merer</span>An encyclopedia anyone can edit: a lead to sources, not a source to cite.</li>
+      <li class="reveal"><span class="u5l03-url"><b>doi.org</b>/10.5615/neareastarch.77.1.0004</span>A DOI: a permanent link to one published article. It opens the publisher’s page, which may have a paywall.</li>
+    </ul>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Endings to know</div>
+        <div class="u5l03-ends"><span><b>.gov.au</b> government</span><span><b>.edu.au</b> Australian education</span><span><b>.edu</b> US universities</span><span><b>.org</b> anyone</span><span><b>.com</b> anyone</span></div></div>
+      <p class="qprompt">Two addresses end in <i>.edu</i>. Why might you trust them differently?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">Perseus is the university’s own library. LacusCurtius sits on a university server, but <i>/Thayer/</i> shows it is one scholar’s site. Both can be useful: just know whose work you are reading, and check whose translation it uses.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Finding sources" data-title="Follow the trail, and get past a paywall" data-kind="notes">
+<div class="wrap u5l03-dense">
+  <p class="eyebrow">1 · Finding sources · I do — from Wikipedia to the article, live · then cold call</p>
+  <h2>Follow the trail to the article, and get past the paywall</h2>
+  <div class="split" style="--cols:1.1fr .9fr">
+    <ol class="keylist u5l03-trail">
+      <li class="reveal"><span class="num">1</span><span class="t">An overview, then its sources</span><span class="d"><a href="https://en.wikipedia.org/wiki/Diary_of_Merer">Wikipedia, ‘Diary of Merer’</a>: read it, then scroll to its references. News sites and popular websites sit beside the scholars.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Pick the scholarly reference</span><span class="d">Tallet, P. and Marouard, G. (2014) <span class="nq">‘The Harbor of Khufu on the Red Sea Coast at Wadi al-Jarf, Egypt’</span>, <i>Near Eastern Archaeology</i>, 77(1), pp. 4–14: the excavators themselves, in a journal.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Find it in Google Scholar</span><span class="d"><code class="u5l03-str nq">"Wadi al-Jarf" papyri</code>: the abstract, <i>Cited by</i> and <i>All versions</i>.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">The publisher’s page: a paywall</span><span class="d">Don’t pay. Try the routes past a paywall, and log what you decided.</span></li>
+    </ol>
+    <div class="stack">
+      <div class="card accent"><div class="k">Past a paywall · try in this order</div>
+        <ol class="u5l03-pay">
+          <li class="reveal">Google Scholar’s <i>All versions</i> or a <b>[PDF]</b> link: a free copy, often the author’s. Check who posted it: the publisher, the authors, or someone else?</li>
+          <li class="reveal">The State Library of NSW: log in to its JSTOR with your free card, and check the journal is there.</li>
+          <li class="reveal">A free JSTOR account: up to 10 articles every 30 days, where the publisher allows.</li>
+          <li class="reveal">A reliable free report of the same work, such as D. Weiss, <span class="nq">‘Journeys of the Pyramid Builders’</span>, <a href="https://archaeology.org/issues/july-august-2022/features/egypt-wadi-el-jarf-port-papyri/"><i>Archaeology</i> (2022)</a>.</li>
+          <li class="reveal">Ask the teacher-librarian.</li>
+        </ol></div>
+      <p class="qprompt">Why not just cite Wikipedia’s summary of Merer’s papyri?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">Anyone can edit it, and it summarises other people’s work. Use it to find the sources (here, the excavators’ article), then read and cite those.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Finding sources" data-title="A museum database: primary or secondary?" data-kind="notes">
+<div class="wrap u5l03-dense">
+  <p class="eyebrow">1 · Finding sources · I do — a museum database, then sort for our class question · cold call</p>
+  <h2>A museum database: when was it made, and is it primary for our question?</h2>
+  <div class="split u5l03-rel" style="--cols:.85fr 1.15fr">
+    <div class="stack">
+      <figure class="figure contain"><img src="images/u5l03-relief-with-king-khufus-cattle-met.jpg" alt="A museum database result: a limestone relief with King Khufu’s cattle, dated by The Met to his reign (about 2551–2528 BCE in The Met’s dating), found re-used at Lisht North in The Met’s excavations, 1920–22 (The Met, 22.1.3a, b)" loading="lazy"><figcaption>A museum database result: a limestone relief with King Khufu’s cattle, dated by The Met to his reign (about 2551–2528 BCE in The Met’s dating), found re-used at Lisht North in The Met’s excavations, 1920–22 (The Met, 22.1.3a, b) — <span class="cr">The Metropolitan Museum of Art, Rogers Fund and Edward S. Harkness Gift, 1922 · CC0 1.0</span></figcaption></figure>
+      <div class="card quiet"><div class="k">The Met’s collection, searched for <span class="u5l03-str nq">Khufu</span></div>
+        <p class="body">It finds this relief, dated to Khufu’s reign, <b>and</b> small scarabs inscribed with his name, made more than 1,800 years later. A name in a record is not evidence from his time: read the date.</p></div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">For our class question, is each source primary or secondary, and how useful is it?</p>
+      <div data-veil="Sort first — then show the answers">
+        <div class="tbl-scroll"><table class="tbl compact u5l03-sort">
+          <tr><th>Source</th><th>For our class question</th></tr>
+          <tr class="reveal"><td>Merer’s papyri</td><td>Primary: logbooks kept by an inspector late in Khufu’s reign.</td></tr>
+          <tr class="reveal"><td>Tallet and Marouard (2014)</td><td>Secondary: modern scholars, the excavators, writing about the site and the papyri.</td></tr>
+          <tr class="reveal"><td>The relief with Khufu’s cattle</td><td>Primary for his reign, but its cattle are probably offerings for his cult: it does not show who built the pyramid, so it is of little use here.</td></tr>
+          <tr class="reveal"><td>A scarab with Khufu’s name</td><td>Primary for how Egyptians remembered him much later; not evidence from his reign.</td></tr>
+          <tr class="reveal"><td>Herodotus 2.124</td><td>An ancient source, written more than 2,000 years after Khufu: for our question it is the claim we test.</td></tr>
+        </table></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Finding sources" data-title="Check a chatbot’s ‘sources’" data-kind="notes">
+<div class="wrap u5l03-dense">
+  <p class="eyebrow">1 · Finding sources · I do — checking a chatbot’s references in Google Scholar · then cold call</p>
+  <h2>A chatbot is not a source: check every reference it gives</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · a 2023 study of the references a chatbot gave</div>
+        <p class="quote">Within this set of documents, 55% of the GPT-3.5 citations but just 18% of the GPT-4 citations are fabricated.</p>
+        <p class="prov">W. H. Walters and E. I. Wilder, <i>Scientific Reports</i> 13 (2023), article 14045 · the researchers searched databases for 636 references that two versions of ChatGPT wrote</p>
+      </div>
+      <div class="u5l03-fake"><div class="k">What a made-up reference can look like · invented for this lesson</div>
+        <p class="nq">Harrow, J. (2016) ‘Free workers at Giza: the crews of King Khufu’, <i>Journal of Old Kingdom Labour Studies</i>, 12(2), pp. 41–63.</p>
+        <p>A plausible author, title, journal, volume and pages. No such article or journal exists.</p></div>
+    </div>
+    <div class="stack">
+      <ol class="keylist">
+        <li class="reveal"><span class="num">1</span><span class="t">Search the exact title</span><span class="d">In quotation marks, in Google Scholar and the library catalogue.</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">Check the journal</span><span class="d">Does it exist, and does that volume hold the article on those pages?</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">Follow the DOI</span><span class="d">If one is given, does it open this article?</span></li>
+      </ol>
+      <p class="qprompt">The title finds nothing in Google Scholar or the catalogue. What do you do?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">Treat it as fabricated: don’t cite it, and log it as rejected. Cite only sources you have found and read yourself. Even real references from a chatbot can carry wrong details, so check them too.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · AI for a set purpose" data-title="AI for a set purpose: log it and acknowledge it" data-kind="notes">
+<div class="wrap u5l03-dense">
+  <p class="eyebrow">2 · AI for a set purpose · 3 minutes · watch, then test two terms together</p>
+  <h2>When your teacher permits AI for a purpose, log and acknowledge it like this</h2>
+  <div class="split" style="--cols:.9fr 1.1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">The rules</div>
+        <ul class="body">
+          <li>AI is not a source: it can invent facts and references.</li>
+          <li>Use it only for the purpose your teacher permits, such as suggesting search terms.</li>
+          <li>Check everything it suggests in a real catalogue or database.</li>
+          <li>Log the tool, your exact prompt and what you kept, and acknowledge the use.</li>
+          <li>AI never writes, paraphrases or summarises for you.</li>
+        </ul></div>
+      <p class="qprompt">Why test the AI’s search terms before you keep them?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">A chatbot can invent a name or term, or suggest one that assumes the answer. A term earns its place in your log only when real sources use it.</p></div>
+    </div>
+    <div class="card"><div class="k">A model log entry for one acknowledged use · written for this lesson, on the class question</div>
+      <dl class="u5l03-tpl">
+        <dt>Date</dt><dd>[date]</dd>
+        <dt>Tool</dt><dd>[name and version]</dd>
+        <dt>Purpose</dt><dd>suggesting search terms, as my teacher permitted</dd>
+        <dt>Exact prompt</dt><dd class="nq">“Suggest ten search terms, including other spellings and names, for researching who built the Great Pyramid of Giza.”</dd>
+        <dt>Tested</dt><dd>two terms in Google Scholar, <span class="u5l03-str nq">Cheops</span> and <span class="u5l03-str nq">Heit el-Ghurab</span>: both found scholarly articles</dd>
+        <dt>Kept · rejected</dt><dd>kept both (another name for Khufu; the builders’ town) · rejected <span class="nq">‘pyramid slaves’</span>: it assumes an answer Herodotus never gives</dd>
+      </dl>
+      <p class="body"><b>Acknowledgement:</b> <span class="nq">“I used [tool, version] on [date] only to suggest search terms, as my teacher permitted. My prompt, its output and the terms I kept are in my research log, and I checked each kept term in Google Scholar. AI did not write, paraphrase or summarise any of my work.”</span></p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Practice: search strings" data-title="Practice: three search strings for the Assyrian question" data-kind="notes">
+<div class="wrap u5l03-dense">
+  <p class="eyebrow">3 · Practice: search strings · We do — pairs try three strings, then agree the best move · then cold call</p>
+  <h2>Practice: three search strings for the Assyrian question</h2>
+  <p class="u5l03-bigq"><span class="k">The practice question · closed: no one may choose it</span>Why did the Assyrian Empire collapse in the late 7th century BCE?</p>
+  <div class="split" style="--cols:.85fr 1.15fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">We do · in pairs</div>
+        <ol class="body">
+          <li>Write <b>three search strings</b>, each using a different move.</li>
+          <li>Run each in Google, Google Scholar, the catalogue or a text collection.</li>
+          <li>Agree which string found the best sources, and why.</li>
+        </ol></div>
+      <div class="card quiet"><div class="k">Keywords from Lesson 2’s background reading</div>
+        <div class="u5l03-bank"><span>Assyria</span><span>Neo-Assyrian (the scholars’ term)</span><span>Nineveh</span><span>612 BCE</span><span>Nabopolassar</span><span>Medes</span><span>Babylonian chronicle</span><span>drought</span></div></div>
+    </div>
+    <div data-veil="Try yours first — then show our best strings">
+      <div class="tbl-scroll"><table class="tbl compact u5l03-strs">
+        <tr><th>String</th><th>Why it works, or doesn’t</th></tr>
+        <tr class="reveal"><td><code class="u5l03-str nq">"Neo-Assyrian Empire" collapse</code></td><td><b>Best for scholarship</b> (Google Scholar): the scholars’ own term as a phrase, plus the question’s key idea. It should find articles such as Sinha et al. (2019), ‘Role of climate in the rise and fall of the Neo-Assyrian Empire’.</td></tr>
+        <tr class="reveal"><td><code class="u5l03-str nq">site:livius.org "Fall of Nineveh"</code></td><td><b>Best for a primary source:</b> one reliable site and an exact phrase find the chronicle’s translation (ABC 3).</td></tr>
+        <tr class="reveal"><td><code class="u5l03-str nq">why did assyria collapse</code></td><td><b>Weakest:</b> a whole question typed in brings up popular answer pages first, not scholars or sources.</td></tr>
+      </table></div>
+      <div class="note reveal" data-code="judgement"><p class="body"><b>The best move</b> depends on what you need: the scholars’ term as a phrase for articles; <i>site:</i> for a trusted text collection.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Practice: search strings" data-title="Notes — Finding sources" data-kind="notes">
+<div class="wrap u5l03-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint</p>
+  <h2>Finding sources</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U5 L3 · Finding sources: library and online search strategies</b></span><span>1–3 · Finding sources</span></div>
+    <div class="row"><div class="cq">Where can I look, for each kind of source?</div>
+      <div class="nts reveal">overview: library catalogue, teacher-librarian <span class="sep">·</span> ancient texts in translation: Perseus, LacusCurtius, Livius <span class="sep">·</span> objects and sites: museum collections, excavation teams’ websites <span class="sep">·</span> scholarship: Google Scholar, JSTOR’s free content, State Library eresources <span class="sep">·</span> Wikipedia = a lead</div></div>
+    <div class="row"><div class="cq">Explain three search moves.</div>
+      <div class="nts reveal">OR joins synonyms (Khufu OR Cheops) <span class="sep">·</span> “exact phrase” keeps words together <span class="sep">·</span> site: one site or kind of site <span class="sep">·</span> also minus, filetype:pdf, reference trails</div></div>
+    <div class="row"><div class="cq">Primary or secondary: how do I decide?</div>
+      <div class="nts reveal">depends on my question <span class="sep">·</span> from the time studied = primary; later work about it = secondary <span class="sep">·</span> read the record’s date (a name is not a date)</div></div>
+    <div class="row"><div class="cq">What can I do at a paywall?</div>
+      <div class="nts reveal">All versions / [PDF] → a free copy (who posted it?) <span class="sep">·</span> State Library JSTOR (free NSW card) <span class="sep">·</span> free JSTOR account <span class="sep">·</span> a reliable free report <span class="sep">·</span> teacher-librarian <span class="sep">·</span> log it</div></div>
+    <div class="row"><div class="cq">Why is a chatbot not a source?</div>
+      <div class="nts reveal">can invent facts and references (2023 study) <span class="sep">·</span> check every reference <span class="sep">·</span> if permitted: log tool, prompt, what I kept; acknowledge</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · Research and the log" data-title="Writing focus: the research log entry, a procedural recount" data-kind="notes">
+<div class="wrap u5l03-dense">
+  <p class="eyebrow">4 · Research and the log · Writing focus · 6 minutes · I do → We do → apply</p>
+  <h2>Writing focus: a log entry records what you did, in order</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+    <div class="card accent"><div class="k">I do · watch</div>
+      <p class="body">A log entry is a <b>procedural recount</b>: past tense · first person · time words · the <b>exact</b> search terms · a decision and its reason. Your report is the opposite: formal, with no <i>I</i>.</p>
+      <dl class="u5l03-contrast">
+        <dt>Log</dt><dd class="nq">“I searched … and found …; I decided …”</dd>
+        <dt>Report</dt><dd class="nq">“Tallet and Marouard (2014) describe Khufu’s harbour at Wadi al-Jarf.”</dd>
+      </dl>
+      <p class="small">Worked example · written for this lesson, on the class question</p>
+      <p class="quote sm model" data-booklet="model"><span class="match" data-step="m1">In Lesson 3</span> <span class="match" data-step="m2">I searched</span> Google Scholar for <span class="match" data-step="m3">“Wadi al-Jarf” papyri</span> and found Tallet and Marouard (2014), which Wikipedia had cited; I recorded its details and <span class="match" data-step="m4">decided to read it for how the crews were organised</span>.</p>
+      <div class="u5l03-wfkey">
+        <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Time:</b> when</span></p>
+        <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>I + past tense</b></span></p>
+        <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>Exact terms:</b> as typed</span></p>
+        <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>Decision:</b> what next, and why</span></p>
+      </div>
+    </div>
+    <div class="card quiet"><div class="k">Apply · in today’s research</div>
+      <p class="body" style="max-width:none">Write your first log entry with the frame <span class="nq">“I searched [where] for [exact terms] and found …; I decided … because …”</span> Your Writing toolkit (booklet pages 3–4): connectives by function.</p></div>
+    </div>
+    <div class="card"><div class="k">We do · fix it together</div>
+      <p class="body">Fix this log entry for the search you just did on the Assyrian question: <span class="nq">‘Looked stuff up, found good sites.’</span></p>
+      <div class="veil-parts" data-veil="Fix it first — then show the answer">
+        <div class="note vp reveal" data-code="evidence"><div class="k">Four problems</div><p class="body">No <i>I</i> and no time · no place and no search terms (where, and which words?) · vague: <i>stuff</i> and <i>good sites</i> (which, and good for what?) · no decision.</p></div>
+        <p class="small vp reveal">A model fix · written for this lesson, on the practice question</p>
+        <p class="quote sm model vp reveal">First I searched Google Scholar for “Neo-Assyrian Empire” collapse and found Sinha et al. (2019) on climate and Assyria’s fall; then I searched Google for site:livius.org “Fall of Nineveh” and found a translation of the chronicle (ABC 3). I decided to read the chronicle first, because it is a Babylonian record of the siege.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="4 · Research and the log" data-title="Research: search for your own question, and log every search">
+<div class="wrap u5l03-dense">
+  <p class="eyebrow">4 · Research and the log · 24 minutes, including the Writing focus apply · check first · press K for the timer</p>
+  <h2>Research: search for your own question, and log every search</h2>
+  <div class="split" style="--cols:1.1fr .9fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body">
+          <li>Write your first log entry with the frame.</li>
+          <li>Search with your proposal’s keywords: at least <b>three moves</b>, in at least <b>two places</b>.</li>
+          <li>Log every search as you go.</li>
+          <li>For each promising source, record who made it, the date, the title, where you found it, the URL and the date you viewed it.</li>
+          <li>Aim for at least four promising sources, each with the move that found it.</li>
+        </ol></div>
+      <dl class="u5l03-tpl" aria-label="The research log template">
+        <dt>Date</dt><dd>When you searched.</dd>
+        <dt>Where</dt><dd>The catalogue, a text collection, a museum database, Google Scholar …</dd>
+        <dt>Exact string</dt><dd>Exactly as typed, quotation marks and all.</dd>
+        <dt>Found</dt><dd>Author, date, title, URL: or “nothing useful”.</dd>
+        <dt>Decided</dt><dd>What next, and why.</dd>
+      </dl>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Check first: what must every log entry record?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">The date, where you searched, the exact string, what you found (or that you found nothing), and what you decided and why: in the past tense, first person.</p></div>
+      <div class="cols c2">
+        <div class="card quiet sm"><div class="k">Support</div><p class="body">The search-moves card, the log template with sentence starters, and the teacher-librarian’s group.</p></div>
+        <div class="card quiet sm"><div class="k">Extension</div><p class="body">Run one search in Google, Google Scholar and the catalogue. In your log, explain why the results differ and which tool serves your question best.</p></div>
+      </div>
+      <div class="card accent"><div class="k">While you research · proposal conferences</div>
+        <p class="body">Your teacher meets the rest of the class today, for about two minutes each. Bring your proposal: your teacher approves your question, or asks for one change.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 6 minutes · before you leave</p>
+  <h2>Today’s log entry</h2>
+  <div class="card accent"><p class="lead">Copy your best log entry from today: the exact search terms, the best source you found, and one decision with its reason.</p>
+    <p class="body nq">“I searched [where] for [exact terms] and found …; I decided … because …”</p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">the place and the exact string, as typed; a real source named precisely (author, date, title); one decision with a reason that comes from your question or a sub-question; past tense and first person throughout.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> judging sources: OVPRL for modern and online sources.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Summary" data-kind="notes">
+<div class="wrap u5l03-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>Where do you look for each kind of source?</li>
+          <li>Which search moves find reliable sources, and what do you do at a paywall?</li>
+          <li>What does a log entry record, and why keep one? Use our class search as your example.</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">I look for an overview in the library catalogue, ancient texts in translation on Perseus, LacusCurtius or Livius, objects in museum databases, and scholarship in Google Scholar, JSTOR’s free content and the State Library’s eresources, using Wikipedia only as a lead. Search moves such as OR for synonyms, an exact phrase and site: find reliable sources faster, and at a paywall I look for a free copy from the author or publisher, the State Library or a reliable free report instead of paying. A log entry records the date, the place, the exact string, what I found and what I decided, as when I followed Wikipedia’s reference to Tallet and Marouard (2014) and decided to read it for how Khufu’s crews were organised.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Where to look</label></li>
+        <li><label><input type="checkbox"> Six search moves</label></li>
+        <li><label><input type="checkbox"> Reading a URL</label></li>
+        <li><label><input type="checkbox"> The trail and the paywall</label></li>
+        <li><label><input type="checkbox"> Primary or secondary, for my question</label></li>
+        <li><label><input type="checkbox"> Chatbots: check every reference</label></li>
+        <li><label><input type="checkbox"> My research log, started</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u5l03-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Wikipedia is a reliable source to cite in your report.</span>
+      <span class="sol no reveal">False <span class="why">— anyone can edit it, and it summarises other people’s work: use it as a lead and follow its references to the sources.</span></span></li>
+    <li><span class="n">2</span><span>Quotation marks make a search engine find the words together, in that order.</span>
+      <span class="sol reveal">True <span class="why">— an exact-phrase search, such as <code class="u5l03-str nq">"Lost City of the Pyramids"</code>.</span></span></li>
+    <li><span class="n">3</span><span>A website ending in .org must be run by a reliable organisation.</span>
+      <span class="sol no reveal">False <span class="why">— anyone can register a .org address: find out who is behind the site.</span></span></li>
+    <li><span class="n">4</span><span>A reference from a chatbot is safe to cite if it gives an author and a journal.</span>
+      <span class="sol no reveal">False <span class="why">— in a 2023 study, many chatbot references were fabricated; find and read the source yourself before you cite it.</span></span></li>
+    <li><span class="n">5</span><span>Whether a source is primary or secondary depends on your question.</span>
+      <span class="sol reveal">True <span class="why">— a scarab with Khufu’s name is primary for how later Egyptians remembered him, but not evidence from his reign.</span></span></li>
+    <li><span class="n">6</span><span>A research log entry should be written in the same formal register as your report.</span>
+      <span class="sol no reveal">False <span class="why">— a log entry is a procedural recount (past tense, first person, the exact search terms); the report is formal, with no <i>I</i>.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — better searches; a better log entry" data-kind="practice">
+<div class="wrap prac u5l03-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · searching and writing</p>
+  <h2>Write better searches, and a better log entry</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · Improve three searches</div>
+        <p class="body">A question on Unit 4’s evidence: <b>Why</b> did Boudicca’s revolt break out? Rewrite each search with a named move.</p>
+        <ol class="body small">
+          <li><code class="u5l03-str nq">boudicca</code></li>
+          <li><code class="u5l03-str nq">why did boudicca rebel against the romans</code></li>
+          <li><code class="u5l03-str nq">tacitus boudicca</code></li>
+        </ol></div>
+      <div class="src reveal" data-veil="Show a model answer"><div class="k">A model · written for this lesson</div>
+        <ol class="body small">
+          <li>Synonyms with OR: <code class="u5l03-str nq">Boudicca OR Boudica OR Boadicea revolt</code></li>
+          <li>The scholars’ term as a phrase: <code class="u5l03-str nq">"Boudican revolt" causes</code></li>
+          <li>site: a text collection: <code class="u5l03-str nq">Tacitus Annals site:perseus.tufts.edu</code></li>
+        </ol></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 2 · Fix a log entry</div>
+        <p class="body">Rewrite this entry for the museum-database search on our class question (The Met’s collection, searched for Khufu): <span class="nq">‘Googled it. Some stuff was useful.’</span></p></div>
+      <div class="src reveal" data-veil="Show a model answer"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Then I searched The Met’s online collection for Khufu and found a relief with his cattle, dated to his reign (22.1.3a, b), and scarabs with his name made more than 1,800 years later; I decided to record only the relief as evidence from his reign, because the scarabs were made much later.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u5l03-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Name three places to find an ancient text in translation.
+      <span class="sol reveal">Perseus, LacusCurtius and Livius.org; each names its translator.</span></li>
+    <li>What do quotation marks do in a search?
+      <span class="sol reveal">They keep the words together, in that order: an exact-phrase search.</span></li>
+    <li>What does <i>site:</i> do? Give an example.
+      <span class="sol reveal">It searches one site, or one kind of site, such as <code class="u5l03-str nq">site:livius.org "Fall of Nineveh"</code> or <code class="u5l03-str nq">site:edu.au</code>.</span></li>
+    <li>What can you do at a paywall?
+      <span class="sol reveal">Look for a free copy (<i>All versions</i> or a [PDF] link) and check who posted it, use the State Library’s eresources with a free NSW card, use a free JSTOR account, read a reliable free report of the same work, or ask the teacher-librarian; then log what you decided.</span></li>
+    <li>Why is a chatbot not a source?
+      <span class="sol reveal">It can invent facts and references: in a 2023 study, 55% of the references from one version of ChatGPT, and 18% from a newer version, were fabricated. Check every reference in a real database.</span></li>
+    <li>What does a research log entry record?
+      <span class="sol reveal">The date, where you searched, the exact string, what you found, and what you decided and why, in the past tense and first person.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u5l03-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u5l03-cite"><div class="k">Written sources</div>
+      <p class="small">W. H. Walters and E. I. Wilder, <a href="https://www.nature.com/articles/s41598-023-41032-5"><span class="nq">“Fabrication and errors in the bibliographic citations generated by ChatGPT”</span></a>, <i>Scientific Reports</i> 13, 14045 (2023), open access (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>), quoted briefly. P. Tallet and G. Marouard (2014), <i>Near Eastern Archaeology</i> 77(1), pp. 4–14, <a href="https://doi.org/10.5615/neareastarch.77.1.0004">doi:10.5615/neareastarch.77.1.0004</a>. D. Weiss, <a href="https://archaeology.org/issues/july-august-2022/features/egypt-wadi-el-jarf-port-papyri/"><span class="nq">“Journeys of the Pyramid Builders”</span></a>, <i>Archaeology</i> (July/August 2022). Herodotus 2.124, A. D. Godley’s translation (Loeb, 1920), as revised by the <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=2:chapter=124">Perseus Digital Library</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 US</a>), quoted briefly in the teacher notes. Wikipedia, <a href="https://en.wikipedia.org/wiki/Diary_of_Merer">“Diary of Merer”</a> (a lead only). The Met’s collection records <a href="https://www.metmuseum.org/art/collection/search/543890">22.1.3a, b</a> and <a href="https://www.metmuseum.org/art/collection/search/555206">10.130.2</a>. Livius.org, <a href="https://www.livius.org/sources/content/mesopotamian-chronicles-content/abc-3-fall-of-nineveh-chronicle/"><span class="nq">“ABC 3 (Fall of Nineveh Chronicle)”</span></a>; A. Sinha et al., <i>Science Advances</i> 5(11) (2019), <a href="https://doi.org/10.1126/sciadv.aax6656">open access</a>.</p>
+      <p class="small">Places and search help (all free, checked 27 November 2026): <a href="https://www.sl.nsw.gov.au/join/become-library-member">State Library of NSW</a> and its <a href="https://eresources.sl.nsw.gov.au/">eresources</a>; <a href="https://trove.nla.gov.au/">Trove</a>; <a href="https://about.jstor.org/oa-and-free/">JSTOR, open and free content</a>; <a href="https://www.perseus.tufts.edu/hopper/">Perseus Digital Library</a>; <a href="https://penelope.uchicago.edu/Thayer/E/Roman/home.html">LacusCurtius</a>; <a href="https://www.livius.org/">Livius.org</a>; <a href="https://www.metmuseum.org/art/collection/search">The Met collection</a>; <a href="https://collections.louvre.fr/en/">Louvre collections</a>; <a href="https://scholar.google.com/">Google Scholar</a> and its <a href="https://scholar.google.com/intl/en/scholar/help.html">Search Help</a>; Google Search Help, <a href="https://support.google.com/websearch/answer/2466433">“Refine Google searches”</a>; OCLC, <a href="https://www.oclc.org/content/dam/oclc/dewey/resources/summaries/deweysummaries.pdf">Dewey Decimal Classification summaries</a>.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA. NESA, <i>Glossary of key words</i> (definition quoted word for word).</p></div>
+      <div class="card quiet u5l03-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>The reading room of the Mitchell Building, State Library of New South Wales, photographed in 2023</b> · Photo: Geoff Barker · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Mitchell_Building_Reading_Room_State_Library_NSW_2023.jpg">source</a></li><li><b>Relief fragment with King Khufu’s cattle, limestone, reign of Khufu (The Met, 22.1.3a, b)</b> · The Metropolitan Museum of Art, Rogers Fund and Edward S. Harkness Gift, 1922 · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://www.metmuseum.org/art/collection/search/543890">source</a></li></ul>
+        <p class="small">All images are public domain or openly licensed, and were resized or cropped for the web. Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>
