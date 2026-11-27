@@ -772,6 +772,38 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u2l09-credpage .small{font-size:calc(var(--fs-chrome)*.8); line-height:1.3; margin:.15em 0;}
   html:not(.read) .u2l09-credpage .card .k{margin-bottom:.25em;}
 }
+
+/* Writing focus card (writing retrofit, 27 November 2026): I do and Apply on the left, We do on the right;
+   on phones the order is I do → We do → Apply */
+.split.u2l09-wf{grid-template-areas:"i w" "a w";}
+.u2l09-wf > .u2l09-wf-i{grid-area:i;} .u2l09-wf > .u2l09-wf-w{grid-area:w;} .u2l09-wf > .u2l09-wf-a{grid-area:a;}
+.u2l09-wf .quote.sm{font-size:var(--fs-body); line-height:1.45;}
+.u2l09-wf .opts{gap:.4em;}
+.u2l09-wf .opts li{font-size:calc(var(--fs-body)*.86); line-height:1.36; padding:.38em .8em; margin:0;}
+.u2l09-wf .note{margin-top:.4em;}
+@media (max-width:900px){.split.u2l09-wf{grid-template-areas:"i" "w" "a";}}
+@media (max-height:820px){
+  html:not(.read) .u2l09-wf .opts{gap:.3em;}
+  html:not(.read) .u2l09-wf .opts li{font-size:calc(var(--fs-body)*.74); padding:.24em .6em;}
+  html:not(.read) .u2l09-wf .small{font-size:calc(var(--fs-chrome)*.9);}
+}
+
+/* Practice — writing: the added sentence exercise (its model sits inside the card) */
+.u2l09-ex .quote.sm{font-size:calc(var(--fs-body)*.9); line-height:1.42; margin-top:.4em;}
+.u2l09-why{font-family:var(--ui); font-style:normal; font-size:.86em; color:var(--slate);}
+@media (max-height:820px){
+  html:not(.read) .u2l09-pw .quote.sm{font-size:calc(var(--fs-body)*.64); line-height:1.34;}
+  html:not(.read) .u2l09-pw .card .body{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u2l09-pw .stack{gap:8px;}
+  html:not(.read) .u2l09-pw .src .k, html:not(.read) .u2l09-pw .card .k{margin-bottom:.25em;}
+  html:not(.read) .u2l09-pw .card{padding:8px 14px;}
+  html:not(.read) .u2l09-pw .src{padding:8px 14px;}
+}
+
+/* the task question's directive verb, boxed in the directive colours (writing retrofit QA, 27 November 2026;
+   not the shared .code span, which switches on the colour legend over the foot of the slide) */
+.u2l09-verb{color:var(--c-directive); background:var(--w-directive); box-shadow:inset 0 0 0 2px var(--c-directive);
+  border-radius:4px; padding:0 .18em;}
 </style>
 </head>
 <body>
@@ -811,7 +843,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide" data-sec="Lesson 9" data-title="Review: Lessons 1–8" data-kind="intro practice">
 <div class="wrap u2l09-dense">
-  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <p class="eyebrow">Review · books closed · 5 minutes · press K for the timer</p>
   <h2>Six questions from Lessons 1–8</h2>
   <ol class="rq" data-answers>
     <li>Name three kingdoms Cyrus II conquered, with a date for each.
@@ -820,8 +852,8 @@ html:not(.read) .read-only{display:none !important;}
       <span class="sol reveal">Four wings like the winged figures of Assyrian palaces, an Elamite-style robe and an Egyptian-style crown: already under Cyrus, one carving mixed the traditions of different lands. Today asks how far Persepolis did the same.</span></li>
     <li>Name two finds made at Persepolis in 1933 and what each is evidence for.
       <span class="sol reveal">The gold and silver foundation tablets of the Apadana (DPh), found by Herzfeld’s architect Krefter: Darius’s own claim about the size of his kingdom. The Fortification Tablets, found in the fortification wall: records of rations for workers, officials and travellers in the region run from Persepolis (Lesson 11).</span></li>
-    <li>Name three zones of the terrace, with one building in each.
-      <span class="sol reveal">Ceremonial and audience (north): the Apadana · royal residences (south): the Tachara · storage and administration (south-east): the Treasury · defence: the walls and towers.</span></li>
+    <li>Writing · <span class="nq">“Herodotus described Ecbatana about 120 years after Cyrus took it.”</span> Which next sentence links back better, and why? A: <span class="nq">“This shows that he was wrong about it.”</span> B: <span class="nq">“This distance in time means his seven walls may be a story he heard.”</span>
+      <span class="sol reveal">B. <i>This distance in time</i> (this + a summary noun) says exactly what <i>this</i> points back to and builds the next idea on it, with a hedge (<i>may</i>). A’s bare <i>This shows</i> is vague, and claims more than the date can show.</span></li>
     <li>What do the Apadana stairway reliefs show, and what are they reliable evidence for?
       <span class="sol reveal">Twenty-three delegations bringing gifts, led by Persian and Median ushers. Reliable for how the king wanted his empire to be seen; less reliable for a real ceremony on a particular day, and some delegations’ identities are debated.</span></li>
     <li>What survives of glazed brick at Persepolis, and where are the best-preserved panels?
@@ -1161,7 +1193,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide" data-sec="3 · You do" data-title="You do: spot the influence">
 <div class="wrap u2l09-dense">
-  <p class="eyebrow">3 · You do · ‘Spot the influence’ card sort in pairs · 5 minutes · press K for the timer</p>
+  <p class="eyebrow">3 · You do · ‘Spot the influence’ card sort in pairs · 4 minutes · press K for the timer</p>
   <h2>Where did each idea come from?</h2>
   <div class="u2l09-cards">
     <figure class="u2l09-card"><span class="l">A</span><img class="u2l09-top" src="images/u2l09-double-bull-capital.jpg" alt="A capital of two bulls back to back" loading="lazy"><figcaption><b>A capital of two bulls</b>on columns of the great halls</figcaption></figure>
@@ -1205,18 +1237,46 @@ html:not(.read) .read-only{display:none !important;}
   <p class="eyebrow">3 · You do · check first · gesture vote: one finger = A · two fingers = B</p>
   <h2>Which sentence explains <i>why</i>, not just <i>what</i>?</h2>
   <div class="stack veil-parts" data-veil="Vote first — then show the answer">
-    <div class="u2l09-sent"><span class="l">A</span><span class="nq">The Gate of All Nations had human-headed winged bulls like those of Assyrian palaces, Darius’s palace had Egyptian-style doorways, and the great halls had Ionian-style fluted columns.</span></div>
-    <div class="u2l09-sent"><span class="l">B</span><span class="nq">By combining Assyrian guardian bulls, Egyptian-style doorways and Ionian-style columns in one style, the Persian kings’ builders made the buildings themselves suggest an empire built by, and ruling over, many peoples.</span></div>
-    <div class="note vp reveal" data-code="evidence"><div class="k">B: it explains</div><p class="body">B links the features to a reason (<i>by combining … made the buildings suggest …</i>) and keeps a hedge (<i>suggest</i>). A only lists what was borrowed: it is a good start, but it never says why.</p></div>
+    <div class="u2l09-sent"><span class="l">A</span><span class="nq">The winged figure on Gate R at Pasargadae has four wings like the figures of Assyrian palaces, an Elamite-style robe and an Egyptian-style crown.</span></div>
+    <div class="u2l09-sent"><span class="l">B</span><span class="nq">By giving one guardian figure Assyrian-style wings, an Elamite-style robe and an Egyptian-style crown, Cyrus’s builders made it suggest a ruler who drew on the traditions of many lands.</span></div>
+    <div class="note vp reveal" data-code="evidence"><div class="k">B: it explains</div><p class="body">B links the features to a reason (<i>by giving … made it suggest …</i>) and keeps a hedge (<i>suggest</i>). A only lists what was combined: a good start, but it never says why.</p></div>
   </div>
   <div class="bank u2l09-bank" aria-label="Causal and comparative language"><span>because</span><span>so that</span><span>in order to</span><span>which suggests that</span><span>like</span><span>unlike</span><span>whereas</span><span>while</span><span>rather than</span></div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Writing focus: integrating a quotation" data-kind="notes">
+<div class="wrap u2l09-dense">
+  <p class="eyebrow">3 · You do · Writing focus · 6 minutes · I do → We do → apply</p>
+  <h2>Writing focus: weave a short quotation into your own sentence</h2>
+  <div class="split u2l09-wf" style="--cols:1fr 1.2fr">
+    <div class="card accent u2l09-wf-i"><div class="k">I do · watch</div>
+      <p class="body">Integrate a quotation in three parts: a <b>signal phrase</b> (who says it, in what), a <b>short quotation</b> woven into your own sentence (only the words that matter), and the <b>reference</b>. Then say what it suggests.</p>
+      <p class="quote sm model" data-booklet="model">Little glazed brick survives at Persepolis itself: in the Encyclopaedia Iranica, Oscar Muscarella writes that its only examples “consisted of a frieze of cloisonné palmettes”, apart from two other bricks (‘Achaemenid glazed brick decoration’, 2017).</p>
+      <p class="small">A worked example, written for this lesson, on what survives of glazed brick. Not this (a dropped quotation, standing alone): <i>Glazed brick has mostly gone.</i> “The only examples of glazed bricks from Persepolis consisted of a frieze of cloisonné palmettes.”</p></div>
+    <div class="card u2l09-wf-w"><div class="k">We do · together · hinge: A, B, C or D on <span class="nq">“3, 2, 1, show”</span></div>
+      <p class="body">Which sentence integrates Muscarella’s words best?</p>
+      <div class="veil-parts" data-veil="Vote first — then show the answer">
+        <ol class="opts">
+          <li><span class="n">A</span><span>Persepolis has yielded only “a frieze of cloisonné palmettes” and two other bricks, which suggests that to picture its glazed brick we must look to Susa.</span></li>
+          <li><span class="n">B</span><span>As Margaret Cool Root argues, Persepolis has yielded only “a frieze of cloisonné palmettes” and two other bricks, which suggests that we must look to Susa.</span></li>
+          <li id="u2l09-wfC"><span class="n">C</span><span>As Muscarella notes in the Encyclopaedia Iranica, Persepolis has yielded only “a frieze of cloisonné palmettes” and two other bricks, which suggests that we must look to Susa.</span></li>
+          <li><span class="n">D</span><span>As Muscarella notes in the Encyclopaedia Iranica, “The only examples of glazed bricks from Persepolis consisted of a frieze of cloisonné palmettes, and two bricks with circular bands.”</span></li>
+        </ol>
+        <i class="reveal" data-mark="#u2l09-wfC" hidden></i>
+        <div class="note vp reveal" data-code="evidence"><div class="k">C: signal phrase, short quotation, reference</div><p class="body">C says who and in what, weaves in only the words that matter and says what it suggests. <b>A</b> has no provenance: who says so? <b>B</b> gives Muscarella’s words to the wrong speaker. <b>D</b> lets a long quotation do the work: nothing is analysed.</p></div>
+      </div></div>
+    <div class="card quiet sm u2l09-wf-a"><div class="k">Apply · in today’s task</div>
+      <p class="body">Write your DSf sentence first: <i>As Darius’s Susa charter records, …</i> + a short quotation woven in + (DSf) + what it suggests. Use it as evidence in your short answer.</p></div>
+  </div>
 </div>
 </section>
 
 <section class="slide" data-sec="3 · You do" data-title="You do: your short answer">
 <div class="wrap u2l09-dense">
   <p class="eyebrow">3 · You do · 8 minutes · press K for the timer</p>
-  <h2>Explain how the design and ornamentation of Persepolis combined traditions from across the empire, and why.</h2>
+  <h2><span class="u2l09-verb">Explain</span> how the design and ornamentation of Persepolis combined traditions from across the empire, and why.</h2>
+  <div class="note reveal" data-code="directive" data-veil="Deconstruct the question first — then show the four steps"><p class="body"><b>Verb</b> explain: how (trace each feature to a tradition) and why (the reason, with the links stated) · <b>Topic</b> design and ornamentation · <b>Limits</b> Persepolis; DSf as evidence, though it is about Susa · <b>Do</b> three features traced, a DSf quotation, a reason, one limit.</p></div>
   <div class="split" style="--cols:1.15fr 1fr">
     <div class="stack">
       <div class="card accent"><div class="k">Everyone</div>
@@ -1311,7 +1371,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
 <div class="wrap">
-  <p class="eyebrow">Exit ticket · 5 minutes · before you leave</p>
+  <p class="eyebrow">Exit ticket · 4 minutes · before you leave</p>
   <h2>Two sentences</h2>
   <div class="cols c2">
     <div class="card accent"><div class="k">1</div><p class="lead">One feature of Persepolis, the tradition it came from, and one thing that changed.</p></div>
@@ -1344,10 +1404,10 @@ html:not(.read) .read-only{display:none !important;}
 </section>
 
 <section class="slide" data-sec="Practice and review" data-title="Practice — writing" data-kind="practice">
-<div class="wrap prac u2l09-dense">
+<div class="wrap prac u2l09-dense u2l09-pw">
   <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
   <h2>Write it as a historian</h2>
-  <div class="split" style="--cols:1fr 1.25fr">
+  <div class="split" style="--cols:.85fr 1.35fr">
     <div class="stack">
       <div class="card accent"><div class="k">1 · Compare and explain</div><p class="body">One sentence on one feature, using <i>unlike</i> or <i>whereas</i>, and <span class="nq">“which suggests that …”</span>.</p></div>
       <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
@@ -1357,7 +1417,9 @@ html:not(.read) .read-only{display:none !important;}
         <p class="quote sm model">DSf is reliable for how Darius wanted his building work to be seen, as the work of his whole empire, but not as an exact record of who built Persepolis, because it is his own claim and it describes his palace at Susa.</p></div>
     </div>
     <div class="stack">
-      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Assess Margaret Cool Root’s argument that Achaemenid art was a deliberate new creation rather than a borrowing: what evidence supports it, and what challenges it?</p></div>
+      <div class="card accent u2l09-ex"><div class="k">3 · Sentence work: integrate the quotation</div><p class="body">Make it one sentence: signal phrase, short quotation woven in, reference. <i>Darius used ivory from far away.</i> “The ivory which was wrought here, was brought from Kush and from India and from Arachosia.”</p>
+        <p class="quote sm model reveal" data-veil="Show a model sentence">As Darius’s Susa charter records, the ivory for his palace “was brought from Kush and from India and from Arachosia” (DSf), which suggests that he wanted the palace to display materials from distant lands. <span class="u2l09-why">(A model, written for this lesson: who says it, only the words that matter, the reference, then what it suggests.)</span></p></div>
+      <div class="card quiet"><div class="k">4 · Extension</div><p class="body">Assess Margaret Cool Root’s argument that Achaemenid art was a deliberate new creation rather than a borrowing: what evidence supports it, and what challenges it?</p></div>
       <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
         <p class="quote sm model">Margaret Cool Root argues that Achaemenid art was a deliberate creation: the court chose images from many older traditions and repeated them as an official program, so the themes came from the centre rather than from individual craftsmen. She does not deny the borrowing: her point is that the borrowed images were chosen and combined on purpose. Much of the evidence supports her. The style was set under Darius and kept with very little change by his successors; borrowed parts were reworked, as the Gate’s four-legged guardian bulls show; and the Apadana stairways took only the Assyrian theme of foreign peoples bringing gifts, without the battles. Darius’s Susa charter also presents the mixture as planned, listing the peoples who worked each material. However, Michael Roaf points out that the borrowed motifs are “hardly modified from their original forms”, and the charter is Darius’s own claim about Susa, which Rémy Boucharlat, following Carl Nylander, calls more propaganda than record. On balance, Root is convincing about the combination and its message, which were new, even though many single parts were borrowed almost unchanged.</p></div>
     </div>

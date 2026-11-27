@@ -750,6 +750,39 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u2l12-dense .bank span{font-size:calc(var(--fs-body)*.74);}
   html:not(.read) .u2l12-dense .opts li{font-size:calc(var(--fs-body)*.8);}
 }
+
+/* Writing focus card (writing retrofit, 27 November 2026): I do and Apply on the left, We do on the right;
+   on phones the order is I do → We do → Apply */
+.split.u2l12-wf{grid-template-areas:"i w" "a w";}
+.u2l12-wf > .u2l12-wf-i{grid-area:i;} .u2l12-wf > .u2l12-wf-w{grid-area:w;} .u2l12-wf > .u2l12-wf-a{grid-area:a;}
+.u2l12-wf .quote.sm{font-size:var(--fs-body); line-height:1.45;}
+.u2l12-wf .opts{gap:.4em;}
+.u2l12-wf .opts li{font-size:calc(var(--fs-body)*.86); line-height:1.36; padding:.38em .8em; margin:0;}
+.u2l12-wf .note{margin-top:.4em;}
+@media (max-width:900px){.split.u2l12-wf{grid-template-areas:"i" "w" "a";}}
+@media (max-height:820px){
+  html:not(.read) .u2l12-wf .opts{gap:.3em;}
+  html:not(.read) .u2l12-wf .opts li{font-size:calc(var(--fs-body)*.74); padding:.24em .6em;}
+  html:not(.read) .u2l12-wf .small{font-size:calc(var(--fs-chrome)*.9);}
+}
+
+/* Practice — writing: the added sentence exercise (its model sits inside the card) */
+.u2l12-ex .quote.sm{font-size:calc(var(--fs-body)*.9); line-height:1.42; margin-top:.4em;}
+.u2l12-why{font-family:var(--ui); font-style:normal; font-size:.86em; color:var(--slate);}
+@media (max-height:820px){
+  html:not(.read) .u2l12-pw .quote.sm{font-size:calc(var(--fs-body)*.66); line-height:1.34;}
+  html:not(.read) .u2l12-pw .stack{gap:8px;}
+  html:not(.read) .u2l12-pw .card .body{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l12-pw .card{padding:8px 14px;}
+  html:not(.read) .u2l12-pw .src{padding:8px 14px;}
+}
+
+/* the deconstruct-the-question line above a task (writing retrofit) */
+.u2l12-dq .body{max-width:none;}
+@media (max-height:820px){
+  html:not(.read) .u2l12-dq{padding:.35em .85em;}
+  html:not(.read) .u2l12-dq .body{font-size:calc(var(--fs-body)*.76); line-height:1.35;}
+}
 </style>
 </head>
 <body>
@@ -789,7 +822,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide" data-sec="Lesson 12" data-title="Connect: the Fortification Tablets" data-kind="intro">
 <div class="wrap">
-  <p class="eyebrow">Connect · 3 minutes · everyone writes one line · press K for the timer</p>
+  <p class="eyebrow">Connect · 2 minutes · everyone writes one line · press K for the timer</p>
   <h2>Name one thing the Fortification Tablets tell us that the reliefs do not.</h2>
   <div class="split" style="--cols:1fr 1.1fr">
     <figure class="figure short"><img src="images/u2l04-fortification-tablets-chicago.jpg" alt="Fortification Tablets and fragments from Persepolis in study boxes, with their catalogue labels, at the Oriental Institute (now ISAC), University of Chicago, in 2017" loading="lazy"><figcaption>Fortification Tablets and fragments from Persepolis in study boxes, with their catalogue labels, at the Oriental Institute (now ISAC), University of Chicago, in 2017 — <span class="cr">Photo: Pfa16 · CC BY-SA 4.0</span></figcaption></figure>
@@ -1164,13 +1197,42 @@ html:not(.read) .read-only{display:none !important;}
 </div>
 </section>
 
+<section class="slide" data-sec="3 · Comparing the accounts" data-title="Writing focus: attribution verbs" data-kind="notes">
+<div class="wrap u2l12-dense">
+  <p class="eyebrow">3 · Comparing the accounts · Writing focus · 6 minutes · I do → We do → apply</p>
+  <h2>Writing focus: say exactly what each writer does</h2>
+  <div class="split u2l12-wf" style="--cols:1fr 1.2fr">
+    <div class="card accent u2l12-wf-i"><div class="k">I do · watch</div>
+      <p class="body"><i>Says</i> tells us nothing. Choose the verb for what the writer is doing, in the <b>present tense</b>; the events stay in the past. <b>Neutral:</b> states, records, reports · <b>doubtful</b> (only when you have reason to doubt): claims, alleges · <b>interpretive:</b> presents … as, portrays, attributes … to.</p>
+      <p class="small">Not: <span class="nq">“Plutarch said Alexander stayed four months because it was winter.”</span></p>
+      <p class="quote sm model" data-booklet="model">Plutarch attributes Alexander’s long stay at Persepolis to the season, reporting that he wished “to refresh his soldiers (for it was winter time)”.</p>
+      <p class="small">A worked example, written for this lesson, on the four-month stay (Plutarch 37.6, Perrin’s translation, from the time line), not on the fire.</p></div>
+    <div class="card u2l12-wf-w"><div class="k">We do · together · hinge: A, B, C or D on <span class="nq">“3, 2, 1, show”</span></div>
+      <p class="body">Plutarch, <i>Life of Alexander</i> 1.2: “… it is not Histories that I am writing, but Lives …”. Which sentence attributes it accurately?</p>
+      <div class="veil-parts" data-veil="Vote first — then show the answer">
+        <ol class="opts">
+          <li><span class="n">A</span><span>Plutarch proves that he is writing Lives rather than Histories.</span></li>
+          <li><span class="n">B</span><span>Plutarch claims that he is writing Lives rather than Histories.</span></li>
+          <li id="u2l12-wfC"><span class="n">C</span><span>Plutarch states that he is writing Lives rather than Histories.</span></li>
+          <li><span class="n">D</span><span>Plutarch said that he writes Lives rather than Histories.</span></li>
+        </ol>
+        <i class="reveal" data-mark="#u2l12-wfC" hidden></i>
+        <div class="note vp reveal" data-code="evidence"><div class="k">C: a neutral verb, in the present tense</div><p class="body">C reports what Plutarch tells his readers about his own book, neutrally, in the present tense. <b>A</b>: a statement of a writer’s aim proves nothing. <b>B</b>: <i>claims</i> signals doubt, and we have no reason to doubt Plutarch about his own book. <b>D</b> uses the vague <i>said</i> and the past tense for a source that still says it.</p></div>
+      </div></div>
+    <div class="card quiet sm u2l12-wf-a"><div class="k">Apply · in today’s task</div>
+      <p class="body">Open your difference sentence with a precise verb for each writer, in the present tense: <i>Arrian presents … as …</i>, <i>Diodorus attributes … to …</i>, <i>Plutarch reports …</i>, <i>Curtius condemns …</i>. Your Writing toolkit (booklet pages 3–4): attribution verbs.</p></div>
+  </div>
+</div>
+</section>
+
 <section class="slide" data-sec="3 · Comparing the accounts" data-title="You do: the difference sentence">
 <div class="wrap u2l12-dense">
   <p class="eyebrow">3 · Comparing the accounts · You do · 5 minutes · press K for the timer</p>
   <h2>One sentence: the biggest difference, and one possible reason for it</h2>
+  <div class="note reveal u2l12-dq" data-code="directive" data-veil="Deconstruct the question first — then show the four steps"><p class="body"><b>Verb</b> explain: say what differs and why (a possible reason) · <b>Topic</b> how the burning happened · <b>Limits</b> the four accounts; a reason from the origin or purpose of the sources · <b>Do</b> one sentence: the difference, a precise verb for each writer, then a hedged reason.</p></div>
   <div class="split" style="--cols:1fr 1.1fr">
     <div class="stack">
-      <div class="card accent sm"><div class="k">Everyone · one sentence</div><p class="body">Explain the biggest difference between the accounts, and one possible reason for it, using the origin or purpose of the sources.</p></div>
+      <div class="card accent sm"><div class="k">Everyone · one sentence</div><p class="body"><b>Explain</b> the biggest difference between the accounts, and one possible reason for it, using the origin or purpose of the sources.</p></div>
       <div class="card quiet sm"><div class="k">Compare and attribute precisely</div><div class="bank"><span>whereas</span><span>unlike</span><span>both</span><span>while</span><span>Arrian presents …</span><span>Diodorus attributes … to …</span><span>Plutarch reports …</span><span>Curtius condemns …</span><span>this may be because …</span></div></div>
       <div class="card quiet sm"><div class="k">Support</div><p class="body nq">“Whereas Arrian presents the burning as …, Diodorus, Plutarch and Curtius describe …; this may be because …”</p></div>
       <div class="card quiet sm"><div class="k">Extension</div><p class="body">Write a second sentence that explains why Arrian, who admired Alexander, criticises the burning.</p></div>
@@ -1246,7 +1308,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
 <div class="wrap">
-  <p class="eyebrow">Exit ticket · 4 minutes · before you leave</p>
+  <p class="eyebrow">Exit ticket · 3 minutes · before you leave</p>
   <h2>One question, two sentences</h2>
   <div class="card accent"><div class="k">Plutarch, <i>Life of Alexander</i> 38</div><p class="body">“This is the way the deed was done, according to some writers; but others say it was premeditated.”</p><p class="lead">What does this tell a historian about the sources Plutarch had?</p></div>
   <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">Plutarch had more than one earlier account, and they disagreed: some told the feast story, others said the burning was planned. So the disagreement is older than Plutarch: it goes back to the lost histories he read. He reports both, though he tells the feast story at length.</p></div>
@@ -1276,7 +1338,7 @@ html:not(.read) .read-only{display:none !important;}
 </section>
 
 <section class="slide" data-sec="Practice and review" data-title="Practice — write it as a historian" data-kind="practice">
-<div class="wrap prac u2l12-dense">
+<div class="wrap prac u2l12-dense u2l12-pw">
   <p class="eyebrow">Practice and review · 2 of 4 · writing</p>
   <h2>Write it as a historian</h2>
   <div class="split" style="--cols:1fr 1fr">
@@ -1289,7 +1351,9 @@ html:not(.read) .read-only{display:none !important;}
         <p class="quote sm model">Arrian 3.18 is reliable for the reason Alexander gave for the burning, revenge for Greece, as men who served with him probably recorded it, because Arrian followed Ptolemy and Aristobulus, but it is less reliable for what happened at any feast, because his sources may have left out a story that embarrassed one of them.</p></div>
     </div>
     <div class="stack">
-      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Why might Arrian, who admired Alexander, report a deliberate burning but criticise it, while the other three tell the Thaïs story? Consider each writer’s sources and purpose.</p></div>
+      <div class="card accent u2l12-ex"><div class="k">3 · Sentence work: fix the verb and the tense</div><p class="body"><span class="nq">“Plutarch said that Thaïs makes a speech, which proves the fire was revenge for Greece.”</span> Fix the verb, the tenses and the overclaim.</p>
+        <p class="quote sm model reveal" data-veil="Show a model sentence">Plutarch reports that Thaïs made a speech at the drinking party, urging that the palace be burned to punish the Persians “in behalf of Hellas”. <span class="u2l12-why">(A model, written for this lesson.)</span></p></div>
+      <div class="card quiet"><div class="k">4 · Extension</div><p class="body">Why might Arrian, who admired Alexander, report a deliberate burning but criticise it, while the other three tell the Thaïs story? Consider each writer’s sources and purpose.</p></div>
       <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
         <p class="quote sm model">Arrian’s version may reflect both his sources and his purpose. He followed Ptolemy and Aristobulus, and Plutarch calls Thaïs “the mistress of Ptolemy, who was afterwards king”, so a history by her partner may have left out a story in which she led a drunken king to burn the palace. Arrian also wrote to judge Alexander honestly: he says he was compelled to censure some of Alexander’s acts, but was “not ashamed to admire Alexander himself”, so a deliberate decision that he could criticise as lacking prudence fits his history. Diodorus and Curtius probably followed Cleitarchus, whose lost history told vivid stories, and Plutarch and Curtius wanted to show Alexander’s character, so the feast, the wine and the regret suited all three. The difference may therefore tell us as much about the writers and their sources as about what happened that night.</p></div>
     </div>

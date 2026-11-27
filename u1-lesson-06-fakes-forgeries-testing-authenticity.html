@@ -749,6 +749,29 @@ html:not(.read) .u1l06-dense .u1l06-bigfig .figure img{max-height:46vh;}
   html:not(.read) .u1l06-dense .checks label{font-size:calc(var(--fs-body)*.76);}
   html:not(.read) .u1l06-dense .u1l06-vote{font-size:calc(var(--fs-body)*.76);}
 }
+
+/* ---- Writing retrofit (27 November 2026): the Writing focus card, and a practice slide with one more exercise */
+.u1l06-wf .card > * + *{margin-top:.45em;}
+.u1l06-wf [data-booklet] > * + *{margin-top:.3em;}
+.u1l06-wf .quote.sm{font-size:var(--fs-body); line-height:1.45;}
+@media (max-width:900px){
+  .u1l06-wf .split > .stack{display:contents;}
+  .u1l06-wf .split > .stack > .card.quiet{order:3;}
+}
+@media (max-height:820px){
+  html:not(.read) .u1l06-wf .card{padding:9px 16px;}
+  html:not(.read) .u1l06-wf .card > * + *{margin-top:.35em;}
+  html:not(.read) .u1l06-wf .card .body{font-size:calc(var(--fs-body)*.76); line-height:1.32;}
+  html:not(.read) .u1l06-wf .opts li{padding:.32em .7em; font-size:calc(var(--fs-body)*.76); line-height:1.3;}
+  html:not(.read) .u1l06-wf .opts{gap:.4em;}
+  html:not(.read) .u1l06-tight .card, html:not(.read) .u1l06-tight .src{padding:7px 14px;}
+  html:not(.read) .u1l06-tight .card .k, html:not(.read) .u1l06-tight .src .k{margin-bottom:.2em;}
+  html:not(.read) .u1l06-tight .card .body{font-size:calc(var(--fs-body)*.7); line-height:1.3;}
+  html:not(.read) .u1l06-tight .quote.sm{font-size:calc(var(--fs-body)*.66); line-height:1.3;}
+  html:not(.read) .u1l06-tight .stack{gap:7px;}
+  html:not(.read) .u1l06-tight .note{padding:.35em .8em;}
+  html:not(.read) .u1l06-tight .note .body{font-size:calc(var(--fs-body)*.7); line-height:1.3;}
+}
 </style>
 </head>
 <body>
@@ -1093,7 +1116,7 @@ html:not(.read) .u1l06-dense .u1l06-bigfig .figure img{max-height:46vh;}
 
 <section class="slide" data-sec="2 · Authentication lab" data-title="Home groups: the completed grid" data-kind="notes">
 <div class="wrap u1l06-dense">
-  <p class="eyebrow">2 · Authentication lab · We do — home groups · 12 minutes · each expert teaches their case</p>
+  <p class="eyebrow">2 · Authentication lab · We do — home groups · 10 minutes · each expert teaches their case</p>
   <h2>Home groups: complete the grid for all four cases</h2>
   <div class="tbl-scroll" data-veil="Share first — then show one completed grid"><table class="tbl compact u1l06-grid">
     <tr><th>Case</th><th>Claim</th><th>Who doubted it, and why?</th><th>Methods used</th><th>Verdict</th><th>How certain?</th></tr>
@@ -1156,16 +1179,51 @@ html:not(.read) .u1l06-dense .u1l06-bigfig .figure img{max-height:46vh;}
 </div>
 </section>
 
+<section class="slide" data-sec="3 · You do: short answer" data-title="Writing focus: the explanation paragraph" data-kind="notes">
+<div class="wrap u1l06-dense u1l06-wf">
+  <p class="eyebrow">3 · You do · Writing focus · 4 minutes · I do → We do → apply it in the short answer</p>
+  <h2>Writing focus: open with the answer, then explain each example</h2>
+  <div class="split" style="--cols:1.05fr 1fr">
+    <div class="stack">
+    <div class="card accent"><div class="k">I do · watch · a parallel question</div>
+      <div data-booklet="model">
+        <p class="small">Worked example · written for this lesson</p>
+        <p class="body nq"><b>Explain</b> why Piltdown Man fooled experts for about 40 years.</p>
+        <p class="body"><b>Topic sentence</b> (answers the question, main point first):</p>
+        <p class="quote sm model">Piltdown Man fooled experts for about 40 years mainly because it matched what they expected to find, although few of them could examine the original specimens.</p>
+        <p class="body"><b>Then each point</b> → evidence → what it meant · <b>last sentence:</b> what the points show together.</p>
+      </div>
+      <p class="body nq">Not a story (<i>In 1912, Dawson …</i>) and not a definition (<i>A forgery is …</i>).</p></div>
+    <div class="card quiet"><div class="k">Apply · in today’s task</div>
+      <p class="body">Your topic sentence first: it answers <b>how</b>. Then your first example: claim → test → result → how certain. Use at least one case from the lab. Your Writing toolkit (booklet pages 3–4): the explanation paragraph.</p></div>
+    </div>
+    <div class="card"><div class="k">We do · hinge · A, B, C or D</div>
+      <p class="body">A second question: <i>Explain why people make fakes of ancient objects.</i> Which opening answers it?</p>
+      <div class="veil-parts" data-veil="Vote first — then show the answer">
+        <ol class="opts">
+          <li><span class="n">A</span><span>People such as the goldsmith Israel Rouchomovsky have made fakes: in 1903 he made part of the Louvre’s tiara again.</span></li>
+          <li><span class="n">B</span><span>People call an object a forgery when it was deliberately made to deceive others into thinking it genuine.</span></li>
+          <li id="u1l06-wfC"><span class="n">C</span><span>People make fakes for money from collectors and museums, for fame, and for national pride.</span></li>
+          <li><span class="n">D</span><span>People have made fakes of ancient objects for a very long time, and fakes are a big problem.</span></li>
+        </ol>
+        <i class="reveal" data-mark="#u1l06-wfC" hidden></i>
+        <div class="note vp reveal" data-code="evidence"><div class="k">C: it answers why</div><p class="body">It names the reasons the paragraph will explain. A tells one forger’s story. B defines a word the question takes for granted. D says fakes exist but gives no reason.</p></div>
+      </div></div>
+  </div>
+</div>
+</section>
+
 <section class="slide" data-sec="3 · You do: short answer" data-title="You do: the short answer">
-<div class="wrap u1l06-dense">
+<div class="wrap u1l06-dense u1l06-tight">
   <p class="eyebrow">3 · You do · 13 minutes · press K for the timer · write in full sentences</p>
   <h2>Short answer: how do historians test authenticity?</h2>
   <div class="split" style="--cols:1fr 1.1fr">
     <div class="stack">
       <div class="card accent"><div class="k">Everyone</div>
-        <ol class="body"><li><b>Explain how historians and archaeologists test the authenticity of sources. Use two examples.</b></li>
+        <ol class="body"><li><b>Explain</b> how historians and archaeologists test the authenticity of sources. Use two examples.</li>
           <li>Name at least two methods with precise terms: provenance, thermoluminescence, stylistic comparison, fluorine, stratigraphy …</li>
           <li>For each example: what was claimed, what test was used, what it showed, and how certain the verdict is.</li></ol></div>
+      <div class="note reveal" data-code="directive" data-veil="Deconstruct the question first — then show the four steps"><p class="body"><b>Deconstructed:</b> verb <i>explain</i>, here <i>how</i> · topic: how historians and archaeologists test authenticity · limits: two examples from today’s cases · do: a topic sentence that answers how, then for each example claim → test → result → how certain, and a last sentence on what the examples show together.</p></div>
       <div class="card quiet sm"><div class="k">Support</div>
         <p class="body">Start with: <span class="nq">“Historians test authenticity by …”</span> · <span class="nq">“For example, in the case of …, … showed that …”</span> · <span class="nq">“Another method is …, which …”</span> · <span class="nq">“However, some cases are still contested because …”</span> Use your grid and the vocabulary slide.</p></div>
       <div class="card quiet sm"><div class="k">Extension</div>
@@ -1215,7 +1273,7 @@ html:not(.read) .u1l06-dense .u1l06-bigfig .figure img{max-height:46vh;}
 
 <section class="slide" data-sec="Close" data-title="Check: gesture vote" data-kind="intro">
 <div class="wrap u1l06-dense">
-  <p class="eyebrow">Check · gesture vote · 4 minutes · vote together on “3, 2, 1”</p>
+  <p class="eyebrow">Check · gesture vote · 2 minutes · vote together on “3, 2, 1”</p>
   <h2>Gesture vote: is the Getty kouros a fake?</h2>
   <div class="split" style="--cols:1.4fr .6fr">
     <div class="stack">
@@ -1264,7 +1322,7 @@ html:not(.read) .u1l06-dense .u1l06-bigfig .figure img{max-height:46vh;}
 </section>
 
 <section class="slide" data-sec="Practice and review" data-title="Practice — writing" data-kind="practice">
-<div class="wrap prac u1l06-dense">
+<div class="wrap prac u1l06-dense u1l06-tight">
   <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
   <h2>Write it as a historian</h2>
   <div class="split" style="--cols:1fr 1fr">
@@ -1277,7 +1335,10 @@ html:not(.read) .u1l06-dense .u1l06-bigfig .figure img{max-height:46vh;}
         <p class="quote sm model">Radiocarbon dating placed the papyrus in the 7th to 9th centuries CE, but it dated the material, not the writing on it. Textual comparison showed that its words appear to be copied from a 2002 PDF edition of the Gospel of Thomas, typing error included, and research into its provenance led even Karen King to say that the evidence tipped the balance towards forgery.</p></div>
     </div>
     <div class="stack">
-      <div class="card quiet"><div class="k">3 · Extension · debate</div><p class="body">Prepare both sides: <span class="nq">‘A museum should never display an object whose authenticity is uncertain.’</span></p></div>
+      <div class="card accent"><div class="k">3 · Fix the opening</div><p class="body">This opening tells a story but does not answer the question. Rewrite it so that it answers <span class="nq"><i>Explain how historians test authenticity</i></span>: <span class="nq">“In 1949, Kenneth Oakley tested the Piltdown bones for fluorine.”</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Historians test authenticity with independent tests, such as the fluorine test that Kenneth Oakley used in 1949 to show that the Piltdown bones were far too young for an early human ancestor.</p></div>
+      <div class="card quiet"><div class="k">4 · Extension · debate</div><p class="body">Prepare both sides: <span class="nq">‘A museum should never display an object whose authenticity is uncertain.’</span></p></div>
       <div class="src reveal" data-veil="Show a model of both sides"><div class="k">A model · written for this lesson</div>
         <p class="quote sm model">For the motion, displaying a doubtful object risks teaching visitors a falsehood, and a museum’s authority can make a fake seem genuine, as the Louvre’s did for the Tiara of Saitaphernes. A museum that displays it may also reward the market that produces forgeries. Against the motion, uncertainty is itself something visitors can learn from: the Getty kouros, labelled as possibly a modern forgery, shows how authentication works and how experts disagree. Hiding every uncertain object would remove many genuine ones too, because certainty is rare. On balance, a museum may display an uncertain object if its label states the doubt honestly, as the Getty’s catalogue entry does.</p></div>
     </div>

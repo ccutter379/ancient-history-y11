@@ -778,6 +778,37 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u2l06-dense .u2l06-cite .small{font-size:calc(var(--fs-chrome)*.9);}
   html:not(.read) .u2l06-dense .checks label{font-size:calc(var(--fs-body)*.8);}
 }
+
+/* Writing focus card (writing retrofit, 27 November 2026): I do and Apply on the left, We do on the right;
+   on phones the order is I do → We do → Apply */
+.split.u2l06-wf{grid-template-areas:"i w" "a w";}
+.u2l06-wf > .u2l06-wf-i{grid-area:i;} .u2l06-wf > .u2l06-wf-w{grid-area:w;} .u2l06-wf > .u2l06-wf-a{grid-area:a;}
+.u2l06-wf .quote.sm{font-size:var(--fs-body); line-height:1.45;}
+.u2l06-wf .opts{gap:.4em;}
+.u2l06-wf .opts li{font-size:calc(var(--fs-body)*.86); line-height:1.36; padding:.38em .8em; margin:0;}
+.u2l06-wf .note{margin-top:.4em;}
+.u2l06-wf .u2l06-bank{margin:.5em 0 .2em;}
+@media (max-width:900px){.split.u2l06-wf{grid-template-areas:"i" "w" "a";}}
+@media (max-height:820px){
+  html:not(.read) .u2l06-wf .opts{gap:.3em;}
+  html:not(.read) .u2l06-wf .opts li{font-size:calc(var(--fs-body)*.74); padding:.24em .6em;}
+  html:not(.read) .u2l06-wf .small{font-size:calc(var(--fs-chrome)*.9);}
+}
+
+/* Practice — writing: the added sentence exercise (its model sits inside the card) */
+.u2l06-ex .quote.sm{font-size:calc(var(--fs-body)*.9); line-height:1.42; margin-top:.4em;}
+.u2l06-why{font-family:var(--ui); font-style:normal; font-size:.86em; color:var(--slate);}
+@media (max-height:820px){
+  html:not(.read) .u2l06-pw .quote.sm{font-size:calc(var(--fs-body)*.68); line-height:1.36;}
+  html:not(.read) .u2l06-pw .card .body{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l06-pw .card{padding:8px 14px;}
+  html:not(.read) .u2l06-pw .src{padding:8px 14px;}
+}
+
+/* the task question's directive verb, boxed in the directive colours (writing retrofit QA, 27 November 2026;
+   not the shared .code span, which switches on the colour legend over the foot of the slide) */
+.u2l06-verb{color:var(--c-directive); background:var(--w-directive); box-shadow:inset 0 0 0 2px var(--c-directive);
+  border-radius:4px; padding:0 .18em;}
 </style>
 </head>
 <body>
@@ -1031,7 +1062,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide" data-sec="2 · Delegation detectives" data-title="Delegation detectives">
 <div class="wrap u2l06-dense">
-  <p class="eyebrow">2 · Delegation detectives · We do — pairs · 6 minutes · press K for the timer</p>
+  <p class="eyebrow">2 · Delegation detectives · We do — pairs · 4 minutes · press K for the timer</p>
   <h2>Match each delegation to its land</h2>
   <div class="split" style="--cols:1.55fr 1fr">
     <div class="u2l06-cards">
@@ -1133,7 +1164,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide" data-sec="3 · Your analysis" data-title="You do: OVPRL notes on the stairway relief">
 <div class="wrap u2l06-dense">
-  <p class="eyebrow">3 · Your analysis · You do · 8 minutes · press K for the timer</p>
+  <p class="eyebrow">3 · Your analysis · You do · 7 minutes · press K for the timer</p>
   <h2>OVPRL notes on the eastern stairway relief</h2>
   <div class="split" style="--cols:1fr 1.1fr">
     <div class="stack">
@@ -1172,15 +1203,35 @@ html:not(.read) .read-only{display:none !important;}
 </div>
 </section>
 
+<section class="slide" data-sec="3 · Your analysis" data-title="Writing focus: This Does That" data-kind="notes">
+<div class="wrap u2l06-dense">
+  <p class="eyebrow">3 · Your analysis · Writing focus · 6 minutes · I do → We do → apply</p>
+  <h2>Writing focus: building a ‘This Does That’ sentence</h2>
+  <div class="split u2l06-wf" style="--cols:1fr 1.2fr">
+    <div class="card accent u2l06-wf-i"><div class="k">I do · watch</div>
+      <p class="body"><b>This</b> (a precise detail) → <b>does</b> (a precise verb, not <i>shows</i>) → <b>that</b> (its effect or meaning) → extend with <b>which may suggest that …</b> and a hedge. From <span class="nq">“The Apadana had 72 tall columns”</span> to:</p>
+      <p class="quote sm model" data-booklet="model">The Apadana’s seventy-two columns, about 20–24 metres high, present the hall as vast and overpowering, which may suggest that visitors were meant to feel small before the king.</p>
+      <p class="small">A worked example, written for this lesson, on the hall itself (not the reliefs): this = the seventy-two columns · does = present … as · that = vast and overpowering · which may suggest = the hedged meaning.</p></div>
+    <div class="card u2l06-wf-w"><div class="k">We do · together · cold call one part at a time</div>
+      <p class="body">Build a sentence on the hall’s <b>double-animal capitals</b> (two bull or lion fronts, back to back, with the roof beams resting between the heads): which detail exactly (<b>this</b>)? Which verb (<b>does</b>)? What effect (<b>that</b>)? Then extend it with a hedge.</p>
+      <div class="u2l06-bank" aria-label="Verb bank"><span>presents … as</span><span>emphasises</span><span>conveys</span><span>idealises</span><span>implies</span></div>
+      <div class="note reveal" data-code="evidence" data-veil="Try it first — then show an answer"><div class="k">One answer</div><p class="body nq">The double-animal capitals, which carry the roof beams between the heads of bulls or lions, present the king’s hall as held up by powerful beasts, which may suggest that it was meant to look as strong as the animals that bore it.</p></div></div>
+    <div class="card quiet sm u2l06-wf-a"><div class="k">Apply · in today’s task</div>
+      <p class="body">Now turn to the stairway reliefs. Write your first ‘This Does That’ sentence on one detail of the reliefs: choose the detail and the verb before you write the sentence.</p></div>
+  </div>
+</div>
+</section>
+
 <section class="slide" data-sec="3 · Your analysis" data-title="You do: two ‘This Does That’ sentences">
 <div class="wrap u2l06-dense">
   <p class="eyebrow">3 · Your analysis · You do · 10 minutes · press K for the timer</p>
-  <h2>Two ‘This Does That’ sentences about the reliefs</h2>
+  <h2><span class="u2l06-verb">Analyse</span> the reliefs in two ‘This Does That’ sentences</h2>
+  <div class="note reveal" data-code="directive" data-veil="Deconstruct the task first — then show the four steps"><p class="body"><b>Verb</b> analyse: “Identify components and the relationship between them. Draw out and relate implications.” (NESA, <i>Glossary of key words</i>) · <b>Topic</b> what the reliefs present about the empire · <b>Limits</b> the Apadana reliefs (and DPh) · <b>Do</b> two sentences, this → does → that, each with a hedge.</p></div>
   <div class="split" style="--cols:1fr 1.1fr">
     <div class="stack">
       <div class="card accent"><div class="k">Everyone · two sentences</div>
         <p class="body"><b>This</b> (a precise detail) <b>does</b> (a precise verb) <b>that</b> (its effect or meaning), then extend with a hedge.</p>
-        <p class="body nq">e.g. “The orderly procession of delegations presents the empire as harmonious and willingly obedient, which suggests …”</p></div>
+        <p class="body nq">e.g. the Writing focus sentence on the hall (“The Apadana’s seventy-two columns present the hall as vast …”); now choose a detail of the reliefs.</p></div>
       <div class="u2l06-bank" aria-label="Verb bank"><span>presents</span><span>conveys</span><span>emphasises</span><span>idealises</span><span>implies</span></div>
       <div class="u2l06-bank mod" aria-label="Modality"><span>may suggest</span><span>is likely to</span><span>probably</span><span>appears to</span></div>
       <div class="card quiet sm"><div class="k">Support</div><p class="body nq">“The [detail] [verb] the empire as …, which may suggest that …”</p></div>
@@ -1233,7 +1284,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
 <div class="wrap">
-  <p class="eyebrow">Exit ticket · 7 minutes · before you leave</p>
+  <p class="eyebrow">Exit ticket · 6 minutes · before you leave</p>
   <h2>Finish the sentence</h2>
   <div class="card accent"><p class="lead nq">“The Apadana reliefs are reliable for … but not for … because …”</p></div>
   <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">Reliable <b>for</b> how the king wanted his empire to be seen (orderly, willing, vast), or for the dress and goods of its peoples · <b>not for</b> one real event, or for what the subject peoples thought · <b>because</b> it was made for the king as royal display: no date, no names, an idealised scene.</p></div>
@@ -1263,7 +1314,7 @@ html:not(.read) .read-only{display:none !important;}
 </section>
 
 <section class="slide" data-sec="Practice and review" data-title="Practice — the foundation tablets" data-kind="practice">
-<div class="wrap prac u2l06-dense">
+<div class="wrap prac u2l06-dense u2l06-pw">
   <p class="eyebrow">Practice and review · 2 of 4 · writing</p>
   <h2>Write it as a historian: the foundation tablets</h2>
   <div class="cols c2">
@@ -1276,6 +1327,8 @@ html:not(.read) .read-only{display:none !important;}
       <div class="card accent"><div class="k">Exercise 2 · Reliable for what?</div><p class="body nq">Finish: “The DPh tablets are reliable for … but not for … because …”</p></div>
       <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
         <p class="quote sm model">The DPh tablets are reliable for the extent of the kingdom Darius claimed to rule and for how he wanted future kings to see him, but not, on their own, for how firmly he controlled those distant lands, because the text was written for the king to glorify his own rule.</p></div>
+      <div class="card accent u2l06-ex"><div class="k">Exercise 3 · Sentence work: a precise verb and its effect</div><p class="body">Replace <i>shows</i> with a precise verb, add what it means, and hedge it: <span class="nq">“Herodotus 3.97 shows the Ethiopians nearest Egypt bringing gifts.”</span></p>
+        <p class="quote sm model reveal" data-veil="Show a model sentence">Herodotus 3.97 records that some lands, such as the Ethiopians nearest Egypt, gave gifts instead of a fixed tribute, which may suggest that the king did not demand the same from every people. <span class="u2l06-why">(A model, written for this lesson: <i>records</i> suits a written source; <i>which may suggest</i> adds the hedged meaning.)</span></p></div>
     </div>
   </div>
 </div>
@@ -1288,7 +1341,7 @@ html:not(.read) .read-only{display:none !important;}
   <div class="split" style="--cols:1fr 1.1fr">
     <div class="stack">
       <figure class="figure contain short"><img src="images/u2l06-lachish-relief-captives.jpg" alt="After the capture of Lachish (701 BCE): Assyrian soldiers carry off booty and Judean families leave as captives. Relief from Sennacherib’s South-West Palace at Nineveh, about 700–692 BCE (British Museum)" loading="lazy"><figcaption>After the capture of Lachish (701 BCE): Assyrian soldiers carry off booty and Judean families leave as captives. Relief from Sennacherib’s South-West Palace at Nineveh, about 700–692 BCE (British Museum) — <span class="cr">Photo: Zunkir · CC BY-SA 4.0</span></figcaption></figure>
-      <div class="card quiet"><div class="k">Exercise 3 · one paragraph</div><p class="body">Compare the Apadana’s peaceful procession with this Assyrian relief of the capture of Lachish. What does the contrast suggest about Achaemenid royal ideology? Use modality, and say what the contrast cannot tell us.</p></div>
+      <div class="card quiet"><div class="k">Exercise 4 · one paragraph</div><p class="body">Compare the Apadana’s peaceful procession with this Assyrian relief of the capture of Lachish. What does the contrast suggest about Achaemenid royal ideology? Use modality, and say what the contrast cannot tell us.</p></div>
     </div>
     <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
       <p class="quote sm model">Both reliefs show foreign peoples before a king, but they present empire in opposite ways. At Nineveh, Sennacherib’s sculptors carved the capture of Lachish in 701 BCE: Judean families leave their city as captives while Assyrian soldiers carry off its goods. At Persepolis, by contrast, twenty-three delegations climb the Apadana stairs in orderly rows, each led in by a court usher and carrying gifts. This contrast may suggest that Achaemenid royal ideology chose to present empire as willing cooperation rather than conquest, under a king whose kingdom, the DPh tablets claim, was “bestowed” on him by Ahuramazda. However, the contrast is more likely to reveal how each king wanted his rule to be seen than how subject peoples lived under it: Darius’s own Behistun relief shows bound captives standing before him, so Persian rule was also held by force.</p></div>

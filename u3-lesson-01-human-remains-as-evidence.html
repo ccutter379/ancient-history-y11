@@ -688,6 +688,11 @@ html:not(.read) .read-only{display:none !important;}
 .u3l01-model .k{display:block; font-weight:700; color:var(--c-evidence); font-size:.8em; letter-spacing:.06em;
   text-transform:uppercase; margin-bottom:.15em;}
 
+/* Writing focus card (writing retrofit, 27 Nov 2026): hinge options a little smaller, the worked example one line per step */
+.u3l01-wf .opts{gap:.4em;}
+.u3l01-wf .opts li{font-size:calc(var(--fs-body)*.8); line-height:1.34; padding:.4em .75em;}
+.u3l01-wf .model{font-size:calc(var(--fs-body)*.92); line-height:1.45;}
+
 /* phones (Read mode): fewer columns, natural picture heights */
 @media (max-width:900px){
   .u3l01-ways{grid-template-columns:repeat(2,minmax(0,1fr));}
@@ -741,6 +746,9 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u3l01-dense .u3l01-voc .tbl.compact{font-size:calc(var(--fs-body)*.64); line-height:1.3;}
   html:not(.read) .u3l01-dense .u3l01-voc .tbl.compact td{padding:.24em .5em;}
   html:not(.read) .u3l01-dense .u3l01-voc .tbl th{padding:.3em .5em;}
+  html:not(.read) .u3l01-dense .u3l01-wf .opts li{font-size:calc(var(--fs-body)*.7); padding:.28em .6em;}
+  html:not(.read) .u3l01-dense .u3l01-wf .opts{gap:.3em;}
+  html:not(.read) .u3l01-dense .u3l01-wf .note .body{font-size:calc(var(--fs-body)*.7);}
 }
 </style>
 </head>
@@ -985,6 +993,34 @@ html:not(.read) .read-only{display:none !important;}
 </div>
 </section>
 
+<section class="slide" data-sec="1 · How bodies survive" data-title="Writing focus: register" data-kind="notes">
+<div class="wrap u3l01-dense">
+  <p class="eyebrow">1 · How bodies survive · Writing focus · I do 2 · We do 2 · then apply it in the exit ticket</p>
+  <h2>Writing focus: the same fact, from spoken to academic</h2>
+  <div class="split u3l01-wf" style="--cols:1fr 1.2fr .72fr">
+    <div class="card accent"><div class="k">I do · watch</div>
+      <p class="body"><b>Register</b> is how formal your language is for its reader and purpose. History writing sits at the academic end: <b>formal</b> (no ‘I think’, no slang), <b>precise</b> (the exact person, place and date) and <b>respectful</b> (a person, never ‘it’; no horror-film words).</p>
+      <p class="small">Worked example · written for this lesson · one fact, spoken → academic</p>
+      <p class="quote sm model" data-booklet="model">1 · Spoken: So this creepy ice mummy guy got found in a glacier in like 1991.<br>2 · Casual: Ötzi is a really old mummy that they found frozen in the ice.<br>3 · Closer: Ötzi is a body that was preserved naturally in ice for a very long time.<br>4 · Academic: Ötzi, a man who died about 3300 BCE, was mummified naturally in glacier ice, which preserved his skin, organs and stomach contents.</p></div>
+    <div class="card"><div class="k">We do · together</div>
+      <p class="body">Which sentence about Tollund Man is the most formal, precise and respectful? Hold up A, B, C or D.</p>
+      <div class="veil-parts" data-veil="Vote first — then show the answer">
+        <ol class="opts">
+          <li><span class="n">A</span><span>The creepy bog man, found in a peat bog near Silkeborg in 1950, had a horrible rope around his neck.</span></li>
+          <li><span class="n">B</span><span>The specimen, found in a peat bog near Silkeborg in 1950, had a leather rope lying around its neck.</span></li>
+          <li id="u3l01-wfC"><span class="n">C</span><span>Tollund Man, found in a peat bog near Silkeborg in 1950, had a leather rope lying around his neck.</span></li>
+          <li><span class="n">D</span><span>Tollund Man, found in some bog in Denmark ages ago, basically had this rope thing around his neck.</span></li>
+        </ol>
+        <i class="reveal" data-mark="#u3l01-wfC" hidden></i>
+        <div class="note vp reveal" data-code="evidence"><div class="k">C: formal, precise, respectful</div><p class="body"><b>A</b> uses horror-film words (creepy, horrible). <b>B</b> is precise but calls a person a specimen and ‘it’. <b>D</b> is spoken register and vague (some bog, ages ago, basically).</p></div>
+      </div></div>
+    <div class="card quiet"><div class="k">Apply · in today’s exit ticket</div>
+      <p class="body">Write your exit-ticket sentence at the academic end: a person, not ‘it’; the exact evidence (a name, a place, a date); no ‘I think’; no horror-film words.</p>
+      <p class="body">Keep the same rule for our class respect rules (rule 1: language).</p></div>
+  </div>
+</div>
+</section>
+
 <section class="slide" data-sec="1 · How bodies survive" data-title="Notes 1 — How bodies survive" data-kind="notes">
 <div class="wrap u3l01-dense">
   <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
@@ -1005,7 +1041,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide" data-sec="2 · Can tell, can’t tell" data-title="Card sort: six cases">
 <div class="wrap u3l01-dense">
-  <p class="eyebrow">2 · Can tell, can’t tell · We do — card sort in pairs · 8 minutes · press K for the timer</p>
+  <p class="eyebrow">2 · Can tell, can’t tell · We do — card sort in pairs · 6 minutes · press K for the timer</p>
   <h2>Six cases: what can each tell us, and what can’t it?</h2>
   <div class="u3l01-cards">
     <figure class="u3l01-card"><span class="l">A</span><img class="u3l01-top" src="images/roman-burial-lead-coffin-wels.jpg" alt="A skeleton in a lead coffin in a museum case"><figcaption><b>A skeleton</b>A Roman burial: a skeleton in a lead coffin, displayed in the city museum at Wels, Austria. Only bones and teeth survive.</figcaption></figure>
@@ -1061,7 +1097,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide" data-sec="3 · These were people" data-title="You do: Cornell notes from the sort">
 <div class="wrap u3l01-dense">
-  <p class="eyebrow">3 · These were people · You do · 7 minutes · press K for the timer</p>
+  <p class="eyebrow">3 · These were people · You do · 6 minutes · press K for the timer</p>
   <h2>Your Cornell notes from the sort</h2>
   <div class="split" style="--cols:1.1fr 1fr">
     <div class="stack">
@@ -1158,9 +1194,10 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
 <div class="wrap">
-  <p class="eyebrow">Exit ticket · 8 minutes · before you leave</p>
+  <p class="eyebrow">Exit ticket · 7 minutes · before you leave</p>
   <h2>Finish the sentence</h2>
-  <div class="card accent"><p class="lead nq">“Human remains are valuable evidence because … but historians must …”</p></div>
+  <div class="card accent"><p class="lead nq">“Human remains are valuable evidence because … but historians must …”</p>
+    <p class="small reveal" data-veil="Deconstruct it first — then show the answer"><b>Verb</b> no directive verb: the frame does the work · <b>Topic</b> why human remains are valuable evidence · <b>Limits</b> one sentence; today’s cases · <b>Do</b> <b>because</b> = a reason, with evidence · <b>but</b> = a limit or a responsibility · at the academic end of the register</p></div>
   <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">A precise thing remains can reveal, with an example (Ötzi’s last meal; Tollund Man’s cause of death), and a precise responsibility or limit (respectful words and pictures; the Custodians’ decisions; no names, feelings or beliefs from the body alone).</p></div>
   <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model sentence · written for this lesson</div>
     <p class="quote sm model">Human remains are valuable evidence because they can reveal how people lived and died, such as the meal Ötzi ate shortly before he died and the arrowhead in his shoulder, but historians must treat them with respect, because they were people, and must not claim that a body alone shows a name, a feeling or a belief.</p></div>
@@ -1198,9 +1235,12 @@ html:not(.read) .read-only{display:none !important;}
       <div class="card accent"><div class="k">Exercise 1 · A different case</div><p class="body">You wrote the sentence in class. Now write it for one case card: <span class="nq">“Tollund Man’s body is valuable evidence because …, but …”</span></p></div>
       <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
         <p class="quote sm model">Tollund Man’s body is valuable evidence because the bog preserved his skin, hair and stomach contents, which show his last meal and that he was hanged, but it cannot tell us his name or why he was killed, which his own museum says “we shall never know”.</p></div>
+      <div class="card"><div class="k">Exercise 2 · Fix the register</div><p class="body">Rewrite this sentence at the academic end of the register: formal, precise and respectful. <span class="nq">“The Stonehenge cremation stuff is kind of useless, because it’s basically just burnt bits.”</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">The cremated remains from Stonehenge are still valuable evidence, because burnt bone from at least 25 people can be counted, dated and tested.</p></div>
     </div>
     <div class="stack">
-      <div class="card quiet"><div class="k">Exercise 2 · Extension</div><p class="body">Explain why a cremation, which seems to destroy the body, can still be significant evidence. Use Mungo Lady (text only) and the Stonehenge cremations.</p></div>
+      <div class="card quiet"><div class="k">Exercise 3 · Extension</div><p class="body">Explain why a cremation, which seems to destroy the body, can still be significant evidence. Use Mungo Lady (text only) and the Stonehenge cremations.</p></div>
       <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
         <p class="quote sm model">A cremation seems to destroy the evidence, because the fire burns away skin and organs and breaks the bones into fragments. Yet burnt bone can still answer important questions. At Stonehenge, burnt bone that excavators had dug up in the 1920s and reburied together came from at least 25 people, radiocarbon dates placed them between about 3200 and 2400 BCE, and isotopes suggested that at least 10 had not spent all their last years on the local chalk. The way a cremation was carried out is evidence too: Mungo Lady was cremated, her bones crushed, burned again and buried about 40,000 years ago, among the earliest evidence of cremation anywhere. A cremation can therefore be significant evidence, although the remains cannot tell historians what her burial meant, and the Custodians decide what is shared, following ICIP protocols.</p></div>
     </div>

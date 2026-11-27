@@ -758,6 +758,43 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u2l07-dense .u2l07-cite .small, html:not(.read) .u2l07-dense .u2l07-cite .credits{font-size:calc(var(--fs-chrome)*.86); line-height:1.36;}
   html:not(.read) .u2l07-dense .u2l07-cite p{margin:.15em 0 .3em;}
 }
+
+/* Writing focus card (writing retrofit, 27 November 2026): I do and Apply on the left, We do on the right;
+   on phones the order is I do → We do → Apply */
+.split.u2l07-wf{grid-template-areas:"i w" "a w";}
+.u2l07-wf > .u2l07-wf-i{grid-area:i;} .u2l07-wf > .u2l07-wf-w{grid-area:w;} .u2l07-wf > .u2l07-wf-a{grid-area:a;}
+.u2l07-wf .quote.sm{font-size:var(--fs-body); line-height:1.45;}
+.u2l07-wf .opts{gap:.4em;}
+.u2l07-wf .opts li{font-size:calc(var(--fs-body)*.86); line-height:1.36; padding:.38em .8em; margin:0;}
+.u2l07-wf .note{margin-top:.4em;}
+.u2l07-wf .u2l07-bank{margin:.5em 0 .2em;}
+@media (max-width:900px){.split.u2l07-wf{grid-template-areas:"i" "w" "a";}}
+@media (max-height:820px){
+  html:not(.read) .u2l07-wf .opts{gap:.3em;}
+  html:not(.read) .u2l07-wf .opts li{font-size:calc(var(--fs-body)*.74); padding:.24em .6em;}
+  html:not(.read) .u2l07-wf .small{font-size:calc(var(--fs-chrome)*.9);}
+}
+
+/* Practice — writing: the added sentence exercise (its model sits inside the card) */
+.u2l07-ex .quote.sm{font-size:calc(var(--fs-body)*.9); line-height:1.42; margin-top:.4em;}
+.u2l07-why{font-family:var(--ui); font-style:normal; font-size:.86em; color:var(--slate);}
+@media (max-height:820px){
+  html:not(.read) .u2l07-pw .quote.sm{font-size:calc(var(--fs-body)*.68); line-height:1.36;}
+  html:not(.read) .u2l07-pw .card .body{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l07-pw .card{padding:8px 14px;}
+  html:not(.read) .u2l07-pw .src{padding:8px 14px;}
+}
+
+/* the deconstruct-the-question line above a writing task (writing retrofit): one or two lines on the projector */
+.u2l07-dq{padding:.4em .9em;}
+.u2l07-dq .body{max-width:none; font-size:calc(var(--fs-body)*.8); line-height:1.35;}
+@media (max-height:820px){
+  html:not(.read) .u2l07-dq .body{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l07-dq ~ .split .bank{gap:.3em;}
+  html:not(.read) .u2l07-dq ~ .split .bank span{font-size:calc(var(--fs-body)*.68); padding:.06em .6em;}
+  html:not(.read) .u2l07-dq ~ .split .card.sm .body{font-size:calc(var(--fs-body)*.7); line-height:1.32;}
+  html:not(.read) .u2l07-dq ~ .split .card.sm{padding:8px 14px;}
+}
 </style>
 </head>
 <body>
@@ -808,8 +845,8 @@ html:not(.read) .read-only{display:none !important;}
       <span class="sol reveal">That he built a palace on this terrace, “on a place where no palace had been built before”, by the grace of Ahuramazda. Strong evidence of how Darius wanted the terrace to be seen; weak evidence of why he chose the site.</span></li>
     <li>What did Herzfeld’s expedition find in 1933?
       <span class="sol reveal">The gold and silver foundation tablets of the Apadana (found by his architect Krefter), and the Fortification Tablets: tens of thousands of clay tablets and fragments in the fortification wall.</span></li>
-    <li>Name three zones of the terrace, with one building in each.
-      <span class="sol reveal">Ceremonial and audience halls in the north (the Apadana); royal residences in the south (the Tachara); storage and administration in the south-east (the Treasury).</span></li>
+    <li>Writing · fix this opening sentence for the question <span class="nq">“How did the Apadana stairway reliefs present the empire?”</span> — <span class="nq">“The Apadana stairway shows twenty-three delegations climbing the stairs.”</span>
+      <span class="sol reveal">For example: <span class="nq">“The Apadana stairway reliefs present the empire as orderly and willingly obedient: twenty-three delegations, each led in by an usher, bring gifts to the king.”</span> It answers the question first, and turns <i>shows</i> into <i>presents … as</i> (This Does That).</span></li>
     <li>What does DPh list, and who was it written for?
       <span class="sol reveal">The extent of Darius’s kingdom, “from the Sacae who are beyond Sogdia to Kush, and from Sind to Lydia”. Buried in the Apadana’s foundations, it was addressed to the gods and to future kings, not to visitors.</span></li>
   </ol>
@@ -1110,7 +1147,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide" data-sec="3 · What survives?" data-title="You do: the What survives? sort">
 <div class="wrap u2l07-dense">
-  <p class="eyebrow">3 · What survives? · You do — sort in pairs · 6 minutes · press K for the timer</p>
+  <p class="eyebrow">3 · What survives? · You do — sort in pairs · 4 minutes · press K for the timer</p>
   <h2>Sort the eight cards: what is left of Persepolis, and why?</h2>
   <div class="u2l07-cards">
     <div class="u2l07-card"><span class="l">A</span><b>Stone columns and doorways</b>bases, door and window frames, some whole columns</div>
@@ -1149,16 +1186,44 @@ html:not(.read) .read-only{display:none !important;}
 </div>
 </section>
 
+<section class="slide" data-sec="3 · What survives?" data-title="Writing focus: this + summary noun" data-kind="notes">
+<div class="wrap u2l07-dense">
+  <p class="eyebrow">3 · What survives? · Writing focus · 6 minutes · I do → We do → apply</p>
+  <h2>Writing focus: linking sentences with <i>this</i> + a summary noun</h2>
+  <div class="split u2l07-wf" style="--cols:1fr 1.2fr">
+    <div class="card accent u2l07-wf-i"><div class="k">I do · watch</div>
+      <p class="body">Turn what the last sentence described into a noun (<i>is Darius’s own inscription</i> → <i>reliance</i>), then point back to it with <b>this</b>: <b>this + summary noun</b> links the new sentence to the last one. The new idea at the end of one sentence starts the next.</p>
+      <p class="quote sm model" data-booklet="model">Our main account of Gaumata is Darius’s own Behistun inscription, carved for the man who gained most from the story. This reliance on the winner’s version means that historians cannot be sure who Darius really overthrew in 522 BCE.</p>
+      <p class="small">A worked example, written for this lesson, from today’s Review (Gaumata). Summary nouns: <i>this reliance · this claim · this limitation · this loss · this gap</i>.</p></div>
+    <div class="card u2l07-wf-w"><div class="k">We do · together · hinge: A, B, C or D on <span class="nq">“3, 2, 1, show”</span></div>
+      <p class="body">First sentence (from today’s Review): <span class="nq">“Radiocarbon dating works only on once-living material such as wood, charcoal or bone.”</span> Which second sentence links back to it best?</p>
+      <div class="veil-parts" data-veil="Vote first — then show the answer">
+        <ol class="opts">
+          <li><span class="n">A</span><span>This shows that it cannot date a carved stone relief directly for us.</span></li>
+          <li><span class="n">B</span><span>However, it cannot directly date a carved stone relief for archaeologists.</span></li>
+          <li id="u2l07-wfC"><span class="n">C</span><span>This limitation means that it cannot date a carved stone relief directly.</span></li>
+          <li><span class="n">D</span><span>Although it works on wood, but it cannot date a carved stone relief directly.</span></li>
+        </ol>
+        <i class="reveal" data-mark="#u2l07-wfC" hidden></i>
+        <div class="note vp reveal" data-code="evidence"><div class="k">C: this + a summary noun</div><p class="body"><i>This limitation</i> names exactly what the last sentence described. <b>A</b>’s bare <i>this</i> points at nothing in particular. <b>B</b>’s <i>however</i> signals a contrast that isn’t there. <b>D</b> uses <i>although</i> and <i>but</i> together.</p></div>
+      </div></div>
+    <div class="card quiet sm u2l07-wf-a"><div class="k">Apply · in today’s task</div>
+      <p class="body">Write your opening judgement, then your first limitation of the reliefs or the glazed brick, and link the next sentence to it with <i>this</i> + a summary noun of your own.</p></div>
+  </div>
+</div>
+</section>
+
 <section class="slide" data-sec="3 · What survives?" data-title="You do: the value-and-limitations paragraph">
 <div class="wrap u2l07-dense">
   <p class="eyebrow">3 · What survives? · You do · 12 minutes · press K for the timer</p>
-  <h2>Paragraph: how useful are the reliefs and glazed brick?</h2>
+  <h2>Paragraph: <b>how useful</b> are the reliefs and glazed brick?</h2>
+  <div class="note reveal u2l07-dq" data-code="directive" data-veil="Deconstruct the question first — then show the four steps"><p class="body"><b>Verb</b> how useful: value for a stated purpose · <b>Topic</b> the surviving reliefs and glazed brick · <b>Limits</b> how Persepolis looked (Achaemenid) · <b>Do</b> judgement → value → limitations → useful for … not for ….</p></div>
   <div class="split" style="--cols:1.1fr 1.1fr">
     <div class="stack">
       <div class="card accent sm"><div class="k">Everyone · 5–7 sentences</div>
         <p class="body"><b class="nq">‘How useful are the surviving reliefs and glazed brick for understanding how Persepolis looked in the Achaemenid period?’</b></p>
         <ul class="body"><li>value: what the reliefs and bricks <i>can</i> show, with evidence</li><li>limitations: what is lost, and why</li><li>end with a judgement: useful for what, and not for what?</li></ul></div>
-      <div class="bank" aria-label="Language to use"><span class="u2l07-banklab">Language to use</span><span class="nq">Surviving only as fragments, …</span><span class="nq">the loss of the painted surfaces</span><span class="nq">the destruction of the cedar roofs</span><span class="nq">the absence of glazed-brick panels</span></div>
+      <div class="bank" aria-label="Language to use"><span class="u2l07-banklab">Language to use</span><span class="nq">Surviving only as fragments, …</span><span class="nq">the loss of …</span><span class="nq">the destruction of …</span><span class="nq">the absence of …</span><span class="nq">This loss means that …</span></div>
       <div class="cols c2">
         <div class="card quiet sm"><div class="k">Support</div><p class="body">Use your T-chart and the starters: <span class="nq">“The reliefs are useful because …” · “However, they are limited because …” · “Overall, they are most useful for …”</span></p></div>
         <div class="card quiet sm"><div class="k">Extension</div><p class="body">Can evidence from Susa or Tol-e Ajori fairly fill the gaps at Persepolis? What are the risks of using one site to reconstruct another?</p></div>
@@ -1259,7 +1324,7 @@ html:not(.read) .read-only{display:none !important;}
 </section>
 
 <section class="slide" data-sec="Practice and review" data-title="Practice — writing" data-kind="practice">
-<div class="wrap prac u2l07-dense">
+<div class="wrap prac u2l07-dense u2l07-pw">
   <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
   <h2>Write it as a historian</h2>
   <div class="split" style="--cols:1fr 1fr">
@@ -1275,6 +1340,8 @@ html:not(.read) .read-only{display:none !important;}
       <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Can evidence from Susa or Tol-e Ajori fairly fill the gaps at Persepolis? What are the risks of using one site to reconstruct another?</p></div>
       <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
         <p class="quote sm model">Evidence from Susa and Tol-e Ajori can suggest, but not prove, how Persepolis looked. Both show that Achaemenid builders made brilliant moulded and glazed brick: guards, lions and griffins in Darius’s palace at Susa, and bulls and mušḫuššu dragons on the gate at Tol-e Ajori, only about 3.5 km from the terrace. Using them to fill the gaps at Persepolis is risky, however. Susa lies about 500 km away, and even there most of the bricks were found scattered and reused, so their original places are mostly unknown. Tol-e Ajori is a separate gate that its excavators date before the terrace, so it may show an earlier style. At Persepolis itself, Muscarella records only “a frieze of cloisonné palmettes, and two bricks with circular bands”. A reconstruction that borrows Susa’s archers for Persepolis therefore shows what was possible, not what is known, and should say so.</p></div>
+      <div class="card accent u2l07-ex"><div class="k">4 · Sentence work: link with <i>this</i> + a summary noun</div><p class="body">Start the second sentence with <i>this</i> + a summary noun: <span class="nq">“In DPf Darius claims that he built his palace where no palace had stood before. It tells us how he wanted the terrace to be seen, not why he chose the site.”</span></p>
+        <p class="quote sm model reveal" data-veil="Show a model sentence">This claim by the builder himself tells us how he wanted the terrace to be seen, but not why he chose the site. <span class="u2l07-why">(A model, written for this lesson.)</span></p></div>
     </div>
   </div>
 </div>

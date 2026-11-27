@@ -744,6 +744,36 @@ html:not(.read) .u2l02-cmp-sm{font-size:calc(var(--fs-body)*.7);}
 }
 .u2l02-badge{fill:var(--solid); stroke:var(--surface); stroke-width:2;}
 .u2l02-svg .u2l02-badgetx{fill:#fff; font-size:17px; font-weight:700;}
+
+/* Writing focus card (writing retrofit, 27 November 2026): I do and Apply on the left, We do on the right;
+   on phones the order is I do → We do → Apply */
+.split.u2l02-wf{grid-template-areas:"i w" "a w";}
+.u2l02-wf > .u2l02-wf-i{grid-area:i;} .u2l02-wf > .u2l02-wf-w{grid-area:w;} .u2l02-wf > .u2l02-wf-a{grid-area:a;}
+.u2l02-wf .quote.sm{font-size:var(--fs-body); line-height:1.45;}
+.u2l02-wf .opts{gap:.4em;}
+.u2l02-wf .opts li{font-size:calc(var(--fs-body)*.86); line-height:1.36; padding:.38em .8em; margin:0;}
+.u2l02-wf .note{margin-top:.4em;}
+@media (max-width:900px){.split.u2l02-wf{grid-template-areas:"i" "w" "a";}}
+@media (max-height:820px){
+  html:not(.read) .u2l02-wf .opts{gap:.3em;}
+  html:not(.read) .u2l02-wf .opts li{font-size:calc(var(--fs-body)*.74); padding:.24em .6em;}
+  html:not(.read) .u2l02-wf .small{font-size:calc(var(--fs-chrome)*.9);}
+}
+
+/* Practice — writing: the added sentence exercise (its model sits inside the card) */
+.u2l02-ex .quote.sm{font-size:calc(var(--fs-body)*.9); line-height:1.42; margin-top:.4em;}
+.u2l02-why{font-family:var(--ui); font-style:normal; font-size:.86em; color:var(--slate);}
+@media (max-height:820px){
+  html:not(.read) .u2l02-pw .quote.sm{font-size:calc(var(--fs-body)*.65); line-height:1.34;}
+  html:not(.read) .u2l02-pw .card .body{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l02-pw .card{padding:8px 14px;}
+  html:not(.read) .u2l02-pw .src{padding:8px 14px;}
+}
+
+/* the task question's directive verb, boxed in the directive colours (writing retrofit QA, 27 November 2026;
+   not the shared .code span, which switches on the colour legend over the foot of the slide) */
+.u2l02-verb{color:var(--c-directive); background:var(--w-directive); box-shadow:inset 0 0 0 2px var(--c-directive);
+  border-radius:4px; padding:0 .18em;}
 </style>
 </head>
 <body>
@@ -1195,7 +1225,7 @@ html:not(.read) .u2l02-cmp-sm{font-size:calc(var(--fs-body)*.7);}
 
 <section class="slide" data-sec="3 · Continuity and change" data-title="You do: finish the grid">
 <div class="wrap u2l02-dense">
-  <p class="eyebrow">3 · Continuity and change · You do · 8 minutes · press K for the timer</p>
+  <p class="eyebrow">3 · Continuity and change · You do · 6 minutes · press K for the timer</p>
   <h2>Finish the grid: rows 3–6</h2>
   <div class="cols c3">
     <div class="card accent sm"><div class="k">Everyone</div><p class="body">Rows 3–6, every column. Use the Persepolis plan and fact file and your notes.</p></div>
@@ -1215,10 +1245,38 @@ html:not(.read) .u2l02-cmp-sm{font-size:calc(var(--fs-body)*.7);}
 </div>
 </section>
 
+<section class="slide" data-sec="3 · Continuity and change" data-title="Writing focus: the topic sentence" data-kind="notes">
+<div class="wrap u2l02-dense">
+  <p class="eyebrow">3 · Continuity and change · Writing focus · 6 minutes · I do → We do → apply</p>
+  <h2>Writing focus: a topic sentence that answers the question</h2>
+  <div class="split u2l02-wf" style="--cols:1fr 1.2fr">
+    <div class="card accent u2l02-wf-i"><div class="k">I do · watch</div>
+        <p class="body">A <b>topic sentence</b> answers the question in one sentence, so everything after it is evidence for it. For continuity and change: <b>from … to …, … continued, but … changed.</b></p>
+        <p class="quote sm model" data-booklet="model">From the Medes to the Persians, Ecbatana remained a royal city, but its role changed: the capital of the Medes became one of several Persian royal residences, and a treasury.</p>
+        <p class="small">A worked example, written for this lesson, on Ecbatana. Connectives by function · similarity: <i>similarly, both, also</i> · difference: <i>but, whereas, in contrast, unlike</i> · concession: <i>although, even if, yet</i>.</p></div>
+    <div class="card u2l02-wf-w"><div class="k">We do · together · hinge: A, B, C or D on <span class="nq">“3, 2, 1, show”</span></div>
+      <p class="body">Which opening sentence answers <b class="nq">“Explain the continuity and change in the evidence for Ecbatana, from Herodotus to today”</b>?</p>
+      <div class="veil-parts" data-veil="Vote first — then show the answer">
+        <ol class="opts">
+          <li><span class="n">A</span><span>Herodotus wrote about Ecbatana in about 430 BCE, and much later, from 1983, Iranian teams began to dig at Tepe Hegmataneh.</span></li>
+          <li><span class="n">B</span><span>Herodotus describes seven circles of coloured walls, and the digs at Tepe Hegmataneh lie under the modern city of Hamadan.</span></li>
+          <li id="u2l02-wfC"><span class="n">C</span><span>From Herodotus to today, the Median city has stayed hard to see, but the evidence has changed from a Greek story to excavation.</span></li>
+          <li><span class="n">D</span><span>This paragraph will explain the continuity and change in the evidence for Ecbatana, using Herodotus and the modern digs.</span></li>
+        </ol>
+        <i class="reveal" data-mark="#u2l02-wfC" hidden></i>
+        <div class="note vp reveal" data-code="evidence"><div class="k">C: it answers the question</div><p class="body">C names what continued and what changed, joined by <i>but</i>: a claim to prove. <b>A</b> narrates a timeline. <b>B</b> describes the evidence but never says what continued or changed. <b>D</b> announces instead of answering.</p></div>
+      </div></div>
+    <div class="card quiet sm u2l02-wf-a"><div class="k">Apply · in today’s task</div>
+        <p class="body">Write your topic sentence first: what continued, what changed. Then use a connective that does the right job for each pair, and end with which matters more, and why. Your Writing toolkit (booklet pages 3–4): connectives by function.</p></div>
+  </div>
+</div>
+</section>
+
 <section class="slide" data-sec="3 · Continuity and change" data-title="You do: the paragraph">
 <div class="wrap u2l02-dense">
   <p class="eyebrow">3 · Continuity and change · You do — write · 12 minutes · press K for the timer</p>
-  <h2>Explain the continuity and change from Pasargadae to Persepolis.</h2>
+  <h2><span class="u2l02-verb">Explain</span> the continuity and change from Pasargadae to Persepolis.</h2>
+  <div class="note reveal" data-code="directive" data-veil="Deconstruct the question first — then show the four steps"><p class="body"><b>Verb</b> explain: make the links evident (what continued, what changed, and why) · <b>Topic</b> royal building · <b>Limits</b> Pasargadae (Cyrus) → Persepolis (Darius and later kings) · <b>Do</b> a topic sentence, two continuities and two changes with evidence, then which matters more.</p></div>
   <div class="split" style="--cols:1fr 1.15fr">
     <div class="stack">
       <div class="card accent"><div class="k">Everyone · one paragraph</div>
@@ -1322,7 +1380,7 @@ html:not(.read) .u2l02-cmp-sm{font-size:calc(var(--fs-body)*.7);}
 </section>
 
 <section class="slide" data-sec="Practice and review" data-title="Practice — write it as a historian" data-kind="practice">
-<div class="wrap prac u2l02-dense">
+<div class="wrap prac u2l02-dense u2l02-pw">
   <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
   <h2>Write it as a historian</h2>
   <div class="split" style="--cols:1fr 1fr">
@@ -1335,7 +1393,9 @@ html:not(.read) .u2l02-cmp-sm{font-size:calc(var(--fs-body)*.7);}
         <p class="quote sm model">Whereas Cyrus’s buildings at Pasargadae stood apart in a walled garden, by the reign of Darius the main buildings of Persepolis stood together on one terrace.</p></div>
     </div>
     <div class="stack">
-      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Assess why Darius built a new capital rather than enlarging Pasargadae: legitimacy after 522 BCE, practicality or ideology?</p></div>
+      <div class="card accent u2l02-ex"><div class="k">3 · Sentence work: fix the connective</div><p class="body"><span class="nq">“Cyrus’s audience hall had tall stone columns; however, the Apadana also had columns.”</span> The connective does the wrong job: rewrite the sentence with one that does the right job.</p>
+        <p class="quote sm model reveal" data-veil="Show a model sentence">Cyrus’s audience hall at Pasargadae was a hall of tall stone columns, one of which, re-erected, stands more than 13 metres high; similarly, the Apadana at Persepolis was built around 72 columns. <span class="u2l02-why">(A model, written for this lesson: <i>however</i> marks a difference; these halls are alike.)</span></p></div>
+      <div class="card quiet"><div class="k">4 · Extension</div><p class="body">Assess why Darius built a new capital rather than enlarging Pasargadae: legitimacy after 522 BCE, practicality or ideology?</p></div>
       <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
         <p class="quote sm model">Darius probably built Persepolis more for legitimacy and ideology than for practical reasons. After 522 BCE his right to rule was open to doubt: he was not Cyrus’s son, and some historians think the king he killed was Cyrus’s real son, Bardiya. If, as seems likely, it was Darius who added the inscriptions at Pasargadae that call Cyrus an Achaemenid, he was tying his own family to the founder, but Pasargadae remained Cyrus’s monument, with Cyrus’s tomb nearby. A new capital let Darius present his own vision of kingship: one terrace, a more uniform court style and his own inscriptions. Practical reasons, such as room for a larger court and treasury, may also have mattered, but the evidence we have seen so far is weaker for them, so legitimacy and ideology are the stronger explanation.</p></div>
     </div>

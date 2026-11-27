@@ -793,6 +793,25 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u2l08-dense .cornell .cq, html:not(.read) .u2l08-dense .cornell .nts{font-size:calc(var(--fs-body)*.72); padding:.32em .75em;}
   html:not(.read) .u2l08-dense .checks label{font-size:calc(var(--fs-body)*.74);}
 }
+
+/* the deconstruct-the-question line above a writing task (writing retrofit, 27 November 2026) */
+.u2l08-dq{padding:.4em .9em;}
+.u2l08-dq .body{max-width:none; font-size:calc(var(--fs-body)*.8); line-height:1.35;}
+@media (max-height:820px){
+  html:not(.read) .u2l08-dq .body{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l08-dq ~ .split .card .body{font-size:calc(var(--fs-body)*.72); line-height:1.32;}
+  html:not(.read) .u2l08-dq ~ .split .card{padding:8px 14px;}
+}
+
+/* Practice — writing: the added sentence exercise (its model sits inside the card) */
+.u2l08-ex .quote.sm{font-size:calc(var(--fs-body)*.9); line-height:1.42; margin-top:.4em;}
+.u2l08-why{font-family:var(--ui); font-style:normal; font-size:.86em; color:var(--slate);}
+@media (max-height:820px){
+  html:not(.read) .u2l08-pw .quote.sm{font-size:calc(var(--fs-body)*.68); line-height:1.36;}
+  html:not(.read) .u2l08-pw .card .body{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l08-pw .card{padding:8px 14px;}
+  html:not(.read) .u2l08-pw .src{padding:8px 14px;}
+}
 </style>
 </head>
 <body>
@@ -984,6 +1003,7 @@ html:not(.read) .read-only{display:none !important;}
   <h2>One paragraph, written live</h2>
   <div class="card accent"><div class="k">Inquiry question</div>
     <p class="u2l08-iq">How useful is the Audience relief for understanding the Achaemenid royal court?</p></div>
+  <div class="note reveal u2l08-dq" data-code="directive" data-veil="Deconstruct the question first — then show the four steps"><p class="body"><b>Verb</b> how useful: a judgement of value for a stated purpose · <b>Topic</b> the Audience relief · <b>Limits</b> for understanding the Achaemenid royal court · <b>Do</b> one OVPRL paragraph, judged for that question, ending decisively.</p></div>
   <p class="cue">One connected paragraph: Origin → Value → Purpose → Reliability → Limitations, then a decisive judgement. While you watch, note one choice the writer makes, and why.</p>
   <div class="u2l08-dpgrid veil-parts" data-veil="Think first — then show the choices">
     <div class="u2l08-dp"><span class="n">1</span><div><p class="q">How should it begin?</p>
@@ -1007,7 +1027,7 @@ html:not(.read) .read-only{display:none !important;}
   <p class="eyebrow">2 · I do — a prepared model (Band 6 standard) and its five moves · one press per move</p>
   <h2>What a strong OVPRL paragraph on site evidence does</h2>
   <div class="annot" data-veil="Show the model paragraph and its five moves">
-    <div class="ans long">
+    <div class="ans long" data-booklet="model">
       <span class="match" data-step="m1">Carved for the centre of an Apadana stairway in the late sixth or early fifth century BCE, to a design probably made under Darius I, and later moved to the Treasury, where Erich Schmidt’s team uncovered it in the 1930s,</span><span class="mk u2l08-m1">1</span>
       the Audience relief is an official image of the Achaemenid court. Its value lies in the detail with which it <span class="match" data-step="m2">presents</span> the court <span class="match" data-step="m2">as</span><span class="mk u2l08-m2">2</span> a strict order centred on the king: he alone is seated, his feet raised on a footstool, while an official raises his hand to his mouth in respect, two incense burners stand between them, and the figure often identified as the crown prince, an attendant, the royal weapon-bearer and guards stand behind. <span class="match" data-step="m3">Because the panel once faced the visitors who climbed to the great audience hall,</span><span class="mk u2l08-m3">3</span> its purpose was <span class="match" data-step="m5">probably</span> to show every visitor how the king was to be approached before they met him. <span class="match" data-step="m4">This idealised ceremony</span><span class="mk u2l08-m4">4</span>, however, is not a record of a particular day: the faces are not portraits and the figures are not named, so even the king’s identity is debated. <span class="match" data-step="m5">The relief is therefore reliable evidence of how the court wished royal audience to be seen, and of court dress and ceremonial objects, but not of how often audiences took place or what was said at them.</span><span class="mk u2l08-m5">5</span> Ultimately, it is most useful as a statement of royal ideology: a picture of the order the king expected, not of the court as it was lived.
       <span class="u2l08-meta">A model written for this lesson · about 235 words</span>
@@ -1191,16 +1211,17 @@ html:not(.read) .read-only{display:none !important;}
 <div class="wrap u2l08-dense">
   <p class="eyebrow">4 · You do · 12 minutes · press K for the timer · your paragraph is collected</p>
   <h2>Write your OVPRL paragraph on the doorway relief</h2>
+  <div class="note reveal u2l08-dq" data-code="directive" data-veil="Deconstruct the question first — then show the four steps"><p class="body"><b>Verb</b> how useful: value for a stated purpose · <b>Topic</b> the doorway relief · <b>Limits</b> for understanding Persian kingship · <b>Do</b> one OVPRL paragraph: provenance phrase → value → purpose → reliable for … not for … → a decisive judgement.</p></div>
   <div class="split" style="--cols:1fr 1.1fr">
     <div class="stack">
       <div class="card accent"><div class="k">Everyone</div>
-        <ol class="body"><li>Answer: <b>How useful is this relief for understanding Persian kingship?</b></li>
-          <li>One connected paragraph: Origin → Value → Purpose → Reliability → Limitations.</li>
-          <li>Use the five moves, bring in your own knowledge, and end with a decisive judgement.</li></ol></div>
+        <ol class="body"><li>Answer: <b>How useful</b> is this relief for understanding Persian kingship?</li>
+          <li>One connected paragraph (Origin → Value → Purpose → Reliability → Limitations), with your own knowledge.</li>
+          <li>Use two details the Audience relief lacks: the canopy, the five rows of guards, the bull-guarded porch, the scene on both doorways.</li></ol></div>
       <div class="card quiet sm"><div class="k">Support · paragraph frame</div>
         <p class="body"><span class="nq">Carved on … in …, this relief …</span> · <span class="nq">Its value for understanding Persian kingship lies in …</span> · <span class="nq">The relief presents the king as …</span> · <span class="nq">Because it stood …, its purpose was probably …</span> · <span class="nq">It is reliable for … but not for … because …</span> · <span class="nq">It cannot tell us …</span> · <span class="nq">Overall, …</span> Use the OVPRL routine on page 2 of your booklet.</p></div>
       <div class="card quiet sm"><div class="k">Extension · a second paragraph</div>
-        <p class="body">Compare the Audience relief with DPh: which better reveals how Darius wanted his rule to be understood, and by whom (subjects, gods or future kings)?</p></div>
+        <p class="body">Compare the Audience relief with DPh: which better reveals how Darius wanted his rule understood, and by whom?</p></div>
     </div>
     <div class="src reveal" data-veil="Write yours first — then show a model paragraph">
       <div class="k">A model paragraph · written for this lesson</div>
@@ -1291,7 +1312,7 @@ html:not(.read) .read-only{display:none !important;}
 </section>
 
 <section class="slide" data-sec="Practice and review" data-title="Practice — writing moves" data-kind="practice">
-<div class="wrap prac u2l08-dense">
+<div class="wrap prac u2l08-dense u2l08-pw">
   <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
   <h2>Practise the moves</h2>
   <div class="split" style="--cols:1fr 1.15fr">
@@ -1302,9 +1323,11 @@ html:not(.read) .read-only{display:none !important;}
       <div class="card accent"><div class="k">2 · Reliable for what?</div><p class="body">Finish for DPh: <span class="nq">It is reliable for … but not for … because …</span></p></div>
       <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
         <p class="quote sm model">DPh is reliable for how Darius wished his kingship to be understood, but not for how firmly he controlled the lands it names, because it is the king’s own claim, buried where no subject could read or answer it.</p></div>
+      <div class="card accent u2l08-ex"><div class="k">3 · Sentence work: fix the tenses</div><p class="body">Present for what a source does, past for events: <span class="nq">“The relief presented the king on his throne, and Schmidt’s team finds it in the Treasury in the 1930s.”</span></p>
+        <p class="quote sm model reveal" data-veil="Show a model sentence">The relief presents the king on his throne, and Schmidt’s team found it in the Treasury in the 1930s. <span class="u2l08-why">(A model, written for this lesson.)</span></p></div>
     </div>
     <div class="stack">
-      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Compare the Audience relief with DPh: which better reveals how Darius wanted his rule to be understood, and by whom (subjects, gods or future kings)?</p></div>
+      <div class="card quiet"><div class="k">4 · Extension</div><p class="body">Compare the Audience relief with DPh: which better reveals how Darius wanted his rule to be understood, and by whom (subjects, gods or future kings)?</p></div>
       <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
         <p class="quote sm model">Both sources present Darius’s rule as ordered and god-given, but they speak to different audiences. The Audience relief, whose design probably goes back to Darius, was made for the centre of an Apadana stairway to be seen: it showed everyone climbing to the audience hall a king seated above his court and approached with a gesture of respect, so it suggests how Darius wanted his subjects and the representatives of his empire to understand his rule. DPh, by contrast, was buried in gold and silver beneath the hall’s corners where no visitor could read it, so its claim to a kingdom ‘from the Sacae who are beyond Sogdia to Kush, and from Sind to Lydia’, given by Ahuramazda, was probably addressed to the gods and to future kings. The relief therefore probably better reveals how Darius wished to be seen by his subjects, while DPh better reveals how he wished to stand before the gods and the kings after him; together they show a kingship presented as both displayed on earth and approved in heaven.</p></div>
     </div>

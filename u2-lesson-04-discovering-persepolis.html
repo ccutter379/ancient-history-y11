@@ -759,6 +759,42 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u2l04-dense .u2l04-key td{padding:.16em .5em;}
   html:not(.read) .u2l04-dense .u2l04-key th{padding:.26em .5em;}
 }
+
+/* Writing focus card (writing retrofit, 27 November 2026): I do and Apply on the left, We do on the right;
+   on phones the order is I do → We do → Apply */
+.split.u2l04-wf{grid-template-areas:"i w" "a w";}
+.u2l04-wf > .u2l04-wf-i{grid-area:i;} .u2l04-wf > .u2l04-wf-w{grid-area:w;} .u2l04-wf > .u2l04-wf-a{grid-area:a;}
+.u2l04-wf .quote.sm{font-size:var(--fs-body); line-height:1.45;}
+.u2l04-wf .opts{gap:.4em;}
+.u2l04-wf .opts li{font-size:calc(var(--fs-body)*.86); line-height:1.36; padding:.38em .8em; margin:0;}
+.u2l04-wf .note{margin-top:.4em;}
+@media (max-width:900px){.split.u2l04-wf{grid-template-areas:"i" "w" "a";}}
+@media (max-height:820px){
+  html:not(.read) .u2l04-wf .opts{gap:.3em;}
+  html:not(.read) .u2l04-wf .opts li{font-size:calc(var(--fs-body)*.74); padding:.24em .6em;}
+  html:not(.read) .u2l04-wf .small{font-size:calc(var(--fs-chrome)*.9);}
+}
+
+/* Practice — writing: the added sentence exercise (its model sits inside the card) */
+.u2l04-ex .quote.sm{font-size:calc(var(--fs-body)*.9); line-height:1.42; margin-top:.4em;}
+.u2l04-why{font-family:var(--ui); font-style:normal; font-size:.86em; color:var(--slate);}
+@media (max-height:820px){
+  html:not(.read) .u2l04-pw .quote.sm{font-size:calc(var(--fs-body)*.66); line-height:1.34;}
+  html:not(.read) .u2l04-pw .card .body{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u2l04-pw .stack{gap:8px;}
+  html:not(.read) .u2l04-pw .card{padding:8px 14px;}
+  html:not(.read) .u2l04-pw .src{padding:8px 14px;}
+}
+
+/* deconstruct-the-question line on the short-answer slide (writing retrofit) */
+.u2l04-dq{padding:.4em .8em;}
+.u2l04-dq .body{font-size:calc(var(--fs-body)*.82); line-height:1.36;}
+@media (max-height:820px){html:not(.read) .u2l04-dense .u2l04-dq .body{font-size:calc(var(--fs-body)*.72);}}
+
+/* the task question's directive verb, boxed in the directive colours (writing retrofit QA, 27 November 2026;
+   not the shared .code span, which switches on the colour legend over the foot of the slide) */
+.u2l04-verb{color:var(--c-directive); background:var(--w-directive); box-shadow:inset 0 0 0 2px var(--c-directive);
+  border-radius:4px; padding:0 .18em;}
 </style>
 </head>
 <body>
@@ -1098,7 +1134,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide" data-sec="3 · What changed?" data-title="You do: the timeline cards">
 <div class="wrap u2l04-dense">
-  <p class="eyebrow">3 · What changed? · You do · 8 minutes · press K for the timer</p>
+  <p class="eyebrow">3 · What changed? · You do · 6 minutes · press K for the timer</p>
   <h2>Put the eight cards in order. What changed, and what stayed the same?</h2>
   <div class="u2l04-tl">
     <div class="u2l04-tlc"><span class="l">A</span><b>The Oriental Institute digs</b>the terrace cleared; tablets found; aerial photographs</div>
@@ -1130,10 +1166,37 @@ html:not(.read) .read-only{display:none !important;}
 </div>
 </section>
 
+<section class="slide" data-sec="3 · What changed?" data-title="Writing focus: voice and agency" data-kind="notes">
+<div class="wrap u2l04-dense">
+  <p class="eyebrow">3 · What changed? · Writing focus · 6 minutes · I do → We do → apply</p>
+  <h2>Writing focus: active or passive? Name who acted when it matters</h2>
+  <div class="split u2l04-wf" style="--cols:1fr 1.2fr">
+    <div class="card accent u2l04-wf-i"><div class="k">I do · watch</div>
+      <p class="body">Use the <b>active</b> voice when who acted matters: the person is the subject. Use the <b>passive</b> when the process matters more than any person, but never to hide someone whose actions changed the evidence.</p>
+      <p class="quote sm model" data-booklet="model"><i>Hides who acted:</i> In the 1870s the later layers of the mound at Troy were destroyed. <i>Names who acted:</i> In the 1870s Schliemann cut a great trench through the mound of Troy, destroying the later layers above the level he wanted.</p>
+      <p class="small">A worked example, written for this lesson, on Schliemann’s trench (Unit 1). A passive that is fine, because the process matters: <i>unless a layer is recorded as it is dug, its evidence is lost for ever.</i></p></div>
+    <div class="card u2l04-wf-w"><div class="k">We do · together · hinge: A, B, C or D on <span class="nq">“3, 2, 1, show”</span></div>
+      <p class="body">Which sentence hides an agent whose actions matter?</p>
+      <div class="veil-parts" data-veil="Vote first — then show the answer">
+        <ol class="opts">
+          <li><span class="n">A</span><span>Excavation destroys each layer as it is dug, so every layer must be recorded.</span></li>
+          <li><span class="n">B</span><span>Without its provenance, an object loses its context and may even be a fake.</span></li>
+          <li id="u2l04-wfC"><span class="n">C</span><span>At Troy a great trench was cut through the mound to reach the level that was wanted.</span></li>
+          <li><span class="n">D</span><span>Schliemann wanted an early level of Troy, so his trench cut through the later ones.</span></li>
+        </ol>
+        <i class="reveal" data-mark="#u2l04-wfC" hidden></i>
+        <div class="note vp reveal" data-code="evidence"><div class="k">C: it hides who cut the trench</div><p class="body">Schliemann chose the level and cut the trench, and that action destroyed the layers above it. <b>A</b> has a passive too (<i>must be recorded</i>), but it states a rule for any digger, so no one is hidden. <b>B</b> is a general rule. <b>D</b> names who acted.</p></div>
+      </div></div>
+    <div class="card quiet sm u2l04-wf-a"><div class="k">Apply · in today’s task</div>
+      <p class="body">In your short answer, write at least one active sentence of your own that names who acted and what their action did to the evidence. Use the passive only where the process matters more than the person. Your Writing toolkit (booklet pages 3–4): the tense and voice rule.</p></div>
+  </div>
+</div>
+</section>
+
 <section class="slide" data-sec="3 · What changed?" data-title="You do: the short answer">
 <div class="wrap u2l04-dense">
   <p class="eyebrow">3 · What changed? · You do · 10 minutes · press K for the timer</p>
-  <h2>Short answer: explain how the investigation of Persepolis changed between 1602 and today</h2>
+  <h2>Short answer: <span class="u2l04-verb">explain</span> how the investigation of Persepolis changed between 1602 and today</h2>
   <div class="split" style="--cols:1fr 1.2fr">
     <div class="stack">
       <div class="card accent"><div class="k">Everyone · 5–6 sentences</div>
@@ -1142,9 +1205,12 @@ html:not(.read) .read-only{display:none !important;}
       <div class="card quiet sm"><div class="k">Support</div><p class="body">Start: <span class="nq">“Early visitors …, whereas the Oriental Institute …”</span> Use your timeline sentences and Notes 1.</p></div>
       <div class="card quiet sm"><div class="k">Extension</div><p class="body">Research the 2018 United States court case over the Fortification Tablets lent to Chicago (<i>Rubin v. Islamic Republic of Iran</i>). What does it show about who owns and controls archaeological evidence?</p></div>
     </div>
+    <div class="stack">
+      <div class="note reveal u2l04-dq" data-code="directive" data-veil="Deconstruct the question first — then show the four steps"><p class="body"><b>Verb</b> explain how: show each change and what it did to the evidence · <b>Topic</b> how Persepolis was investigated · <b>Limits</b> 1602 → today · <b>Do</b> three or more stages in order, named people, one thing that stayed the same.</p></div>
     <div class="src reveal" data-veil="Write yours first — then show a model answer">
       <div class="k">A model answer · written for this lesson</div>
       <p class="quote sm model">In the seventeenth and eighteenth centuries, European travellers recorded only what they could see: in 1618 García de Silva y Figueroa compared the ruins with Diodorus’ account. Published in 1711 by the Dutch artist Cornelis de Bruijn after a stay of about three months in 1704–05, a set of engraved views showed what still stood above ground. By 1802, careful copies of the inscriptions made by Carsten Niebuhr in 1765 allowed Georg Grotefend to begin deciphering Old Persian, so the builders could speak in their own words. In the early nineteenth century, however, collectors such as James Morier took fallen reliefs, breaking up blocks to carry them, and sent them to England, removing them from their context. From 1931 to 1939 the Oriental Institute of Chicago, under Ernst Herzfeld and then Erich Schmidt, cleared most of the terrace and recorded it with plans and aerial photographs, finding the Fortification Tablets, although the layers it removed now survive only in its records. Since then, Iranian archaeologists have gone on excavating, while Italian restorers from 1964 and teams using geophysical survey and digital imaging have turned more to conserving the site and studying it with as little digging as possible. What has stayed the same is that each generation could study only what had survived, and its methods decided what was recorded and what was lost.</p>
+    </div>
     </div>
   </div>
 </div>
@@ -1187,7 +1253,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide" data-sec="Close" data-title="Check: finds taken abroad" data-kind="intro">
 <div class="wrap u2l04-dense">
-  <p class="eyebrow">Check · 5 minutes · cold call</p>
+  <p class="eyebrow">Check · 3 minutes · cold call</p>
   <h2>Early excavators often took finds abroad. Was that acceptable in the 1930s? Is it now?</h2>
   <div class="split" style="--cols:1.15fr 1fr">
     <div class="stack">
@@ -1237,7 +1303,7 @@ html:not(.read) .read-only{display:none !important;}
 </section>
 
 <section class="slide" data-sec="Practice and review" data-title="Practice — write it as a historian" data-kind="practice">
-<div class="wrap prac u2l04-dense">
+<div class="wrap prac u2l04-dense u2l04-pw">
   <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
   <h2>Write it as a historian</h2>
   <div class="split" style="--cols:1fr 1fr">
@@ -1250,7 +1316,9 @@ html:not(.read) .read-only{display:none !important;}
         <p class="quote sm model">Morier’s account is reliable for how one collector removed sculpture from Persepolis in 1811, because he describes his own actions, but it is limited evidence for how the sculptures were arranged on the buildings, because his main aim was choosing pieces to take away, not making a full record of the site.</p></div>
     </div>
     <div class="stack">
-      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Using the 2018 court case over the Fortification Tablets (<i>Rubin v. Islamic Republic of Iran</i>), explain who owns and controls archaeological evidence, and why it matters for historians.</p></div>
+      <div class="card accent u2l04-ex"><div class="k">3 · Sentence work: name the agent</div><p class="body"><span class="nq">“In 1811 fallen sculptures were taken from Persepolis and one block was split.”</span> Rewrite it in the active voice, so the reader knows who acted.</p>
+        <p class="quote sm model reveal" data-veil="Show a model sentence">In 1811 the British diplomat James Morier took fallen sculptures from Persepolis for England, splitting one block so that mules could carry it. <span class="u2l04-why">(A model, written for this lesson: the damage now has a named cause.)</span></p></div>
+      <div class="card quiet"><div class="k">4 · Extension</div><p class="body">Using the 2018 court case over the Fortification Tablets (<i>Rubin v. Islamic Republic of Iran</i>), explain who owns and controls archaeological evidence, and why it matters for historians.</p></div>
       <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
         <p class="quote sm model">The Fortification Tablets show that archaeological evidence can be owned by one country but held by another. Found by the Oriental Institute team in 1933, the tablets were lent by Iran to the Oriental Institute in Chicago for study in the 1930s. In 2018 the United States Supreme Court ruled that people holding a court judgment against Iran could not seize them, so the tablets remained protected as Iran’s property. The case matters for historians because whoever controls evidence decides who can study it, where, and for how long; digital images now allow scholars anywhere to read the tablets without moving them.</p></div>
     </div>

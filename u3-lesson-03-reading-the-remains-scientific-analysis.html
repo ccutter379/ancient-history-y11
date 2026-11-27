@@ -696,6 +696,13 @@ html:not(.read) .read-only{display:none !important;}
 .u3l03-cite a{color:var(--deep);}
 
 /* phones (Read mode): one column, natural picture heights */
+/* Writing focus card (writing retrofit, 27 Nov 2026): the worked example one line per claim; the gesture-vote claims */
+.u3l03-wf .model{font-size:calc(var(--fs-body)*.92); line-height:1.45;}
+.u3l03-wfv{margin:0; padding-left:1.3em; display:flex; flex-direction:column; gap:.5em;
+  font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.u3l03-wfv li > span{display:block;}
+.u3l03-wfv .u3l03-a{margin-top:.25em; font-size:calc(var(--fs-body)*.8);}
+
 @media (max-width:900px){
   .u3l03-step{grid-template-columns:1fr; gap:.2em;}
   .u3l03-mini img{height:auto; aspect-ratio:4/3;}
@@ -744,6 +751,12 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u3l03-dense .u3l03-plants img{height:10vh;}
   html:not(.read) .u3l03-dense .u3l03-tollund .figure.short img{height:19vh;}
   html:not(.read) .u3l03-dense .u3l03-tollund{gap:8px;}
+  html:not(.read) .u3l03-dense .u3l03-wfv{font-size:calc(var(--fs-body)*.76); gap:.35em;}
+  html:not(.read) .u3l03-dense .u3l03-wfv .u3l03-a{font-size:calc(var(--fs-body)*.7); padding:.25em .6em;}
+  html:not(.read) .u3l03-dense.u3l03-pw .quote.sm{font-size:calc(var(--fs-body)*.68); line-height:1.36;}
+  html:not(.read) .u3l03-dense.u3l03-pw .card .body{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u3l03-dense.u3l03-pw .card, html:not(.read) .u3l03-dense.u3l03-pw .src{padding:7px 14px;}
+  html:not(.read) .u3l03-dense.u3l03-pw .stack{gap:7px;}
 }
 </style>
 </head>
@@ -787,8 +800,8 @@ html:not(.read) .read-only{display:none !important;}
   <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
   <h2>Five questions from Units 1–2 and Lessons 1–2</h2>
   <ol class="rq" data-answers>
-    <li>What do the five letters of OVPRL stand for, in order?
-      <span class="sol reveal">Origin, Value, Purpose, Reliability, Limitations.</span></li>
+    <li>Writing: fix this sentence so it judges <i>how far</i>, with a reason: <span class="nq">“Human remains tell historians everything about a person.”</span>
+      <span class="sol reveal">For example: Human remains can tell historians a great deal about how a person lived and died, but only to a limited extent who they were: on their own they show age, sex, health, diet and injuries, not a name, feelings or beliefs. (A degree word, then the reason for it.)</span></li>
     <li>What can radiocarbon dating date, and what is one of its limits?
       <span class="sol reveal">Once-living (organic) material, such as bone, wood or charcoal, back to about 50,000 years. Limits: it cannot date stone or metal directly, and it gives a range that must be calibrated.</span></li>
     <li>Name four ways the bodies of the dead can survive.
@@ -1110,7 +1123,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide" data-sec="3 · Tollund Man’s last meal" data-title="You do: OVPRL notes on the study" data-kind="notes">
 <div class="wrap u3l03-dense">
-  <p class="eyebrow">3 · Tollund Man’s last meal · You do · 6 minutes · use the OVPRL routine on page 2 of your booklet</p>
+  <p class="eyebrow">3 · Tollund Man’s last meal · You do · 5 minutes · use the OVPRL routine on page 2 of your booklet</p>
   <h2>OVPRL notes on the 2021 study</h2>
   <div class="split u3l03-ovgrid" style="--cols:.8fr 1.2fr">
     <div class="src">
@@ -1134,6 +1147,34 @@ html:not(.read) .read-only{display:none !important;}
 </div>
 </section>
 
+<section class="slide" data-sec="3 · Tollund Man’s last meal" data-title="Writing focus: the modality scale for evidence" data-kind="notes">
+<div class="wrap u3l03-dense">
+  <p class="eyebrow">3 · Tollund Man’s last meal · Writing focus · I do 2 · We do 2 · then apply it in your paragraph</p>
+  <h2>Writing focus: match the verb to the strength of the evidence</h2>
+  <div class="split u3l03-wf" style="--cols:1.1fr 1.1fr .72fr">
+    <div class="card accent"><div class="k">I do · watch</div>
+      <p class="body">The <b>modality scale</b> from Unit 1, for evidence verbs. Strongest to weakest: <b>proves</b> (almost never) · <b>shows</b> · <b>indicates</b> · <b>suggests</b> · <b>may hint at</b>. Match the verb to the evidence: one hedge per claim.</p>
+      <p class="small">Worked example · written for this lesson · three claims on the scale</p>
+      <p class="quote sm model" data-booklet="model">shows (high): An X-ray shows a flint arrowhead in Ötzi’s left shoulder, and it is still in his body.<br>indicates (medium): Ötzi’s 2023 genome indicates that his ancestors were mainly early farmers whose families had come from Anatolia, though new genomes could refine this.<br>may hint at (low): The traces of toxic bracken in Ötzi’s stomach may hint that he took it as medicine, but he may simply have wrapped his food in it.</p></div>
+    <div class="card"><div class="k">We do · together</div>
+      <p class="body">Gesture vote on each claim: one finger = too weak · two = about right · three = too strong.</p>
+      <div class="veil-parts" data-veil="Vote first — then show the answers">
+        <ol class="u3l03-wfv">
+          <li><span>Ötzi’s 2023 genome proves that he was bald when he died.</span>
+            <span class="u3l03-a vp reveal"><b>Too strong.</b> It shows genes linked to baldness, not whether he was bald: <span class="nq">“indicates that he carried genes linked to baldness”</span>.</span></li>
+          <li><span>The steppe ancestry found in Ötzi’s 2012 genome might possibly suggest that the sample may have been contaminated.</span>
+            <span class="u3l03-a vp reveal"><b>Too weak</b> (three hedges stacked). The same sample, read again with far less contamination, showed no steppe ancestry, so the 2023 study says it “is likely the result of modern human contamination”.</span></li>
+          <li><span>Samples from Ötzi’s stomach suggest that his last meal was rich in fat.</span>
+            <span class="u3l03-a vp reveal"><b>About right.</b> The scientists hedge too: he “seems” to have eaten a lot of fat.</span></li>
+        </ol>
+      </div></div>
+    <div class="card quiet"><div class="k">Apply · in your paragraph</div>
+      <p class="body">For each of your two This Does That sentences, choose the verb from the scale: how strong is <i>this</i> evidence?</p>
+      <p class="body">One hedge per claim. The modality scale is in your writing toolkit (booklet pages 3–4).</p></div>
+  </div>
+</div>
+</section>
+
 <section class="slide" data-sec="3 · Tollund Man’s last meal" data-title="You do: your paragraph">
 <div class="wrap u3l03-dense">
   <p class="eyebrow">3 · Tollund Man’s last meal · You do · 9 minutes · press K for the timer</p>
@@ -1143,7 +1184,8 @@ html:not(.read) .read-only{display:none !important;}
       <div class="card accent"><div class="k">Everyone</div>
         <ol class="body"><li>Answer: <b>How useful is this study for understanding Tollund Man’s life and death?</b></li>
           <li>One paragraph, in OVPRL order, ending with a judgement.</li>
-          <li>Include two <b>This Does That</b> sentences: the evidence (this) → a precise verb (does) → what it shows (that), with modality.</li></ol></div>
+          <li>Include two <b>This Does That</b> sentences: the evidence (this) → a precise verb (does) → what it shows (that), with modality.</li></ol>
+        <p class="small reveal" data-veil="Deconstruct it first — then show the answer"><b>Verb</b> how useful: value, reliability and limitations, all for this question · <b>Topic</b> the 2021 study · <b>Limits</b> for Tollund Man’s life and death only · <b>Do</b> an OVPRL paragraph that ends with how useful, for what</p></div>
       <div class="card quiet sm"><div class="k">Support · paragraph frame</div>
         <p class="body"><span class="nq">Published in … by …, this study …</span> · <span class="nq">Its value lies in …</span> · <span class="nq">It was written to …</span> · <span class="nq">It is reliable for … but not for … because …</span> · <span class="nq">It cannot tell us …</span> · <span class="nq">Overall, …</span> · verbs: suggests, indicates, reveals · modality: may, probably, is likely to</p></div>
       <div class="card quiet sm"><div class="k">Extension</div>
@@ -1151,7 +1193,7 @@ html:not(.read) .read-only{display:none !important;}
     </div>
     <div class="stack">
     <div class="card quiet sm"><div class="k">How a This Does That sentence works</div>
-      <p class="body nq">The barley porridge in Tollund Man’s gut suggests an ordinary Iron Age meal, although its threshing waste may hint at ritual.</p></div>
+      <p class="body nq">The isotopes in Ötzi’s tooth enamel suggest that he grew up in one of a few valleys within about 60 km south or south-east of where he was found, although they cannot show which one.</p></div>
     <div class="src reveal" data-veil="Write yours first — then show a model paragraph">
       <div class="k">A model paragraph · written for this lesson</div>
       <p class="quote sm model">Published in 2021 in the peer-reviewed journal <i>Antiquity</i> by Nina Nielsen of Museum Silkeborg and six specialists from Danish museums and Aarhus University, this study re-examined Tollund Man’s gut contents with methods far better than those used when he was found in 1950. Its value for understanding his life and death lies in its detail: the barley porridge in his gut suggests an ordinary Iron Age meal, eaten 12–24 hours before he was killed, although its threshing waste may hint at ritual. The worm eggs in his gut indicate that he carried parasites, which suggests that some of his food or water was contaminated. The study was written to report new results to other scientists, so its claims are carefully hedged. It is therefore reliable for what he ate in his last day, because it combines several kinds of evidence and other experts checked the work, but not for why he died, because the link to ritual is only a possibility. It cannot tell us his everyday diet, or who killed him. Overall, the study is highly useful for Tollund Man’s last day, but only partly useful for explaining his death.</p>
@@ -1207,7 +1249,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
 <div class="wrap">
-  <p class="eyebrow">Exit ticket · 5 minutes · before you leave</p>
+  <p class="eyebrow">Exit ticket · 4 minutes · before you leave</p>
   <h2>Two sentences</h2>
   <div class="cols c2">
     <div class="card accent"><div class="k">1</div><p class="lead">One scientific result for Ötzi or Tollund Man is …, found by …, and it is (almost certain / likely / possible) because …</p></div>
@@ -1240,10 +1282,10 @@ html:not(.read) .read-only{display:none !important;}
 </section>
 
 <section class="slide" data-sec="Practice and review" data-title="Practice — writing with modality" data-kind="practice">
-<div class="wrap prac u3l03-dense">
+<div class="wrap prac u3l03-dense u3l03-pw">
   <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
   <h2>Write it as a historian</h2>
-  <div class="split" style="--cols:1fr 1fr">
+  <div class="split" style="--cols:1.15fr .85fr">
     <div class="stack">
       <div class="card accent"><div class="k">Exercise 1 · This Does That</div><p class="body">Write one sentence about Ötzi’s last meal: the evidence → a precise verb → what it shows, with modality.</p></div>
       <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
@@ -1251,9 +1293,12 @@ html:not(.read) .read-only{display:none !important;}
       <div class="card accent"><div class="k">Exercise 2 · Reliable for what?</div><p class="body nq">Finish: “The 2023 genome study is reliable for … but not for … because …”</p></div>
       <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
         <p class="quote sm model">The 2023 genome study is reliable for Ötzi’s ancestry, because newer methods gave a genome with very little modern contamination, but less reliable for exactly how he looked, because genes show only likelihoods, such as a risk of balding.</p></div>
+      <div class="card"><div class="k">Exercise 3 · Up the scale</div><p class="body">Too weak for the evidence. Rewrite with one hedge or none: <span class="nq">“The 2005 CT scans might possibly suggest that the arrow may have injured an artery.”</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">CT scans in 2005 showed that the arrow had injured a large artery under Ötzi’s left collarbone.</p></div>
     </div>
     <div class="stack">
-      <div class="card quiet"><div class="k">Exercise 3 · Extension</div><p class="body">How does Ötzi’s 2023 genome study (darker skin, probable baldness) challenge the museum’s 2011 reconstruction, which it kept, and what does that show about museum reconstructions?</p></div>
+      <div class="card quiet"><div class="k">Exercise 4 · Extension</div><p class="body">How does Ötzi’s 2023 genome study (darker skin, probable baldness) challenge the museum’s 2011 reconstruction, which it kept, and what does that show about museum reconstructions?</p></div>
       <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
         <p class="quote sm model">Ötzi’s 2023 genome study challenges the museum’s 2011 reconstruction because it found that he “likely had darker skin than present-day Europeans” and carried genes linked to male-pattern baldness, and the Max Planck Society’s press release said that the earlier image of Ötzi was “incorrect regarding his hair”. Yet the museum kept its figure. Its director called it “an attempt at interpretation”, and the museum pointed out that the study cannot show whether the balding was visible in his lifetime, especially as locks of dark hair were found near his body. This disagreement shows that a museum reconstruction is not a picture of the past: it is evidence of what its makers imagined from the research of their time, and a museum may keep it after new results question it, as long as it presents it as an interpretation.</p></div>
     </div>

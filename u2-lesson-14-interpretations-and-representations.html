@@ -760,6 +760,43 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u2l14-dense .tf li{padding:.24em .65em;}
   html:not(.read) .u2l14-dense .cornell .cq, html:not(.read) .u2l14-dense .cornell .nts{font-size:calc(var(--fs-body)*.72); padding:.32em .8em;}
 }
+
+/* Writing focus card (writing retrofit, 27 November 2026): I do and Apply on the left, We do on the right;
+   on phones the order is I do → We do → Apply */
+.split.u2l14-wf{grid-template-areas:"i w" "a w";}
+.u2l14-wf > .u2l14-wf-i{grid-area:i;} .u2l14-wf > .u2l14-wf-w{grid-area:w;} .u2l14-wf > .u2l14-wf-a{grid-area:a;}
+.u2l14-wf .quote.sm{font-size:var(--fs-body); line-height:1.45;}
+.u2l14-wf .opts{gap:.4em;}
+.u2l14-wf .opts li{font-size:calc(var(--fs-body)*.86); line-height:1.36; padding:.38em .8em; margin:0;}
+.u2l14-wf .note{margin-top:.4em;}
+@media (max-width:900px){.split.u2l14-wf{grid-template-areas:"i" "w" "a";}}
+@media (max-height:820px){
+  html:not(.read) .u2l14-wf .opts{gap:.3em;}
+  html:not(.read) .u2l14-wf .opts li{font-size:calc(var(--fs-body)*.74); padding:.24em .6em;}
+  html:not(.read) .u2l14-wf .small{font-size:calc(var(--fs-chrome)*.9);}
+}
+
+/* Practice — writing: the added sentence exercise (its model sits inside the card) */
+.u2l14-ex .quote.sm{font-size:calc(var(--fs-body)*.9); line-height:1.42; margin-top:.4em;}
+.u2l14-why{font-family:var(--ui); font-style:normal; font-size:.86em; color:var(--slate);}
+@media (max-height:820px){
+  html:not(.read) .u2l14-pw .quote.sm{font-size:calc(var(--fs-body)*.68); line-height:1.36;}
+  html:not(.read) .u2l14-pw .card .body{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l14-pw .card{padding:8px 14px;}
+  html:not(.read) .u2l14-pw .src{padding:8px 14px;}
+}
+
+/* the deconstruct-the-question line above a task (writing retrofit) */
+.u2l14-dq .body{max-width:none;}
+@media (max-height:820px){
+  html:not(.read) .u2l14-dq{padding:.35em .85em;}
+  html:not(.read) .u2l14-dq .body{font-size:calc(var(--fs-body)*.76); line-height:1.35;}
+}
+
+/* the task question's directive verb, boxed in the directive colours (writing retrofit QA, 27 November 2026;
+   not the shared .code span, which switches on the colour legend over the foot of the slide) */
+.u2l14-verb{color:var(--c-directive); background:var(--w-directive); box-shadow:inset 0 0 0 2px var(--c-directive);
+  border-radius:4px; padding:0 .18em;}
 </style>
 </head>
 <body>
@@ -1096,14 +1133,41 @@ html:not(.read) .read-only{display:none !important;}
 </div>
 </section>
 
+<section class="slide" data-sec="3 · You do" data-title="Writing focus: explain as a causal judgement" data-kind="notes">
+<div class="wrap u2l14-dense">
+  <p class="eyebrow">3 · You do · Writing focus · 6 minutes · I do → We do → apply</p>
+  <h2>Writing focus: an “explain why” Judge ranks the causes</h2>
+  <div class="split u2l14-wf" style="--cols:1fr 1.2fr">
+    <div class="card accent u2l14-wf-i"><div class="k">I do · watch</div>
+      <p class="body"><b>Explain</b> asks how or why, with the links made clear. At Stage 6, our department’s advice is that a strong answer also says <b>which cause mattered most</b>, so even an <i>explain</i> question gets a judgement: <b>… mainly because …, although ….</b></p>
+      <p class="quote sm model" data-booklet="model">The two totals for the cost of the 1971 celebration differ mainly because they probably count different things (the 2026 review counts only the building of the tent city), although TIME’s own “more or less” shows that its figure was an estimate.</p>
+      <p class="small">A worked example, written for this lesson, on <span class="nq">“Explain why the cost of the 1971 celebration is given so differently.”</span> (TIME, 1971, and the 2026 review, from the critics slide).</p></div>
+    <div class="card u2l14-wf-w"><div class="k">We do · together · hinge: A, B, C or D on <span class="nq">“3, 2, 1, show”</span></div>
+      <p class="body">Which Judge best answers <b class="nq">“Explain why historians disagree about whether the burning of Persepolis was planned”</b>?</p>
+      <div class="veil-parts" data-veil="Vote first — then show the answer">
+        <ol class="opts">
+          <li><span class="n">A</span><span>Historians disagree about the burning mainly because of Arrian, Diodorus, Curtius and Plutarch, although the treasure matters too.</span></li>
+          <li><span class="n">B</span><span>Historians disagree about the burning mainly because some ancient accounts are biased, although others are reliable.</span></li>
+          <li><span class="n">C</span><span>Historians disagree about the burning mainly because every ancient writer invented his version, although some agree.</span></li>
+          <li id="u2l14-wfD"><span class="n">D</span><span>Historians disagree about the burning mainly because the ancient accounts conflict, although the archaeology cannot settle it either.</span></li>
+        </ol>
+        <i class="reveal" data-mark="#u2l14-wfD" hidden></i>
+        <div class="note vp reveal" data-code="evidence"><div class="k">D: it explains, and ranks the causes</div><p class="body">D gives the main cause (<i>mainly because</i>) and a second one (<i>although</i>). <b>A</b> lists sources, but never says why they lead to disagreement. <b>B</b> judges reliability instead of explaining the disagreement. <b>C</b> overclaims (<i>every</i>, <i>invented</i>).</p></div>
+      </div></div>
+    <div class="card quiet sm u2l14-wf-a"><div class="k">Apply · in today’s task</div>
+      <p class="body">Write your Judge first: <i>Persepolis has been represented differently over time mainly because …, although ….</i> Then give each representation its maker and purpose, and end by saying again which cause mattered most. Your Writing toolkit (booklet pages 3–4): the frames.</p></div>
+  </div>
+</div>
+</section>
+
 <section class="slide" data-sec="3 · You do" data-title="You do: check first" data-kind="notes">
 <div class="wrap u2l14-dense">
   <p class="eyebrow">3 · You do · check first · gesture vote: one finger = A · two fingers = B</p>
   <h2>Which sentence explains a representation by its maker and purpose?</h2>
   <div class="stack veil-parts" data-veil="Vote first — then show the answer">
-    <div class="u2l14-sent"><span class="l">A</span><span class="nq">In 1971 the celebration at Persepolis used the ruins as the stage for 2,500 years of Iranian monarchy, with a parade of soldiers dressed as Iran’s many dynasties.</span></div>
-    <div class="u2l14-sent"><span class="l">B</span><span class="nq">For the Pahlavi state in 1971, Persepolis served as the stage for 2,500 years of Iranian monarchy since Cyrus, which suggests that the Shah wanted to be seen as Cyrus’s heir.</span></div>
-    <div class="note vp reveal" data-code="evidence"><div class="k">B: it names the maker and the purpose</div><p class="body">Both sentences describe the same representation. Only B says <i>whose</i> it was (<i>For the Pahlavi state</i>), what Persepolis <i>served as</i>, and why (<i>which suggests that</i>), with a hedge (<i>suggests</i>). A describes the event; it does not explain it.</p></div>
+    <div class="u2l14-sent"><span class="l">A</span><span class="nq">In June 1971 Ayatollah Khomeini, in exile in Najaf, gave a speech saying that ‘the crimes of the kings of Iran have blackened the pages of history’.</span></div>
+    <div class="u2l14-sent"><span class="l">B</span><span class="nq">For Ayatollah Khomeini, speaking from exile in 1971, Iran’s kings had ‘blackened the pages of history’, which suggests that he used their past to attack the monarchy of his own day.</span></div>
+    <div class="note vp reveal" data-code="evidence"><div class="k">B: it names the maker and the purpose</div><p class="body">Both quote the same speech. Only B says whose view it was (<i>For Ayatollah Khomeini</i>) and why he gave it (<i>which suggests that</i>), with a hedge. A reports the speech; it does not explain it.</p></div>
   </div>
 </div>
 </section>
@@ -1111,7 +1175,8 @@ html:not(.read) .read-only{display:none !important;}
 <section class="slide" data-sec="3 · You do" data-title="You do: your paragraph">
 <div class="wrap u2l14-dense">
   <p class="eyebrow">3 · You do · 17 minutes · press K for the timer · paragraphs are collected</p>
-  <h2>Explain why Persepolis has been represented differently over time.</h2>
+  <h2><span class="u2l14-verb">Explain</span> why Persepolis has been represented differently over time.</h2>
+  <div class="note reveal u2l14-dq" data-code="directive" data-veil="Deconstruct the question first — then show the four steps"><p class="body"><b>Verb</b> explain why: the causes, and which mattered most · <b>Topic</b> why representations of Persepolis differ · <b>Limits</b> over time: at least three representations from different periods · <b>Do</b> J → E → A → E → R, with a Judge that ranks the causes (mainly because …, although …).</p></div>
   <div class="u2l14-moves" aria-label="The five moves"><span><b>Judge</b>your answer, qualified</span><span><b>Evidence</b>with who made it, and when</span><span><b>Analyse</b>what it shows, and how</span><span><b>Evaluate</b>a limit, or another explanation</span><span><b>Resolve</b>a sharper final judgement</span></div>
   <div class="split" style="--cols:1.1fr 1fr">
     <div class="stack">
@@ -1189,7 +1254,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
 <div class="wrap">
-  <p class="eyebrow">Exit ticket · 8 minutes · before you leave</p>
+  <p class="eyebrow">Exit ticket · 6 minutes · before you leave</p>
   <h2>Finish the sentence</h2>
   <div class="card accent"><div class="k">Everyone · one sentence</div><p class="lead nq">“Every representation of Persepolis says something about … because …”</p></div>
   <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">… its maker: their time, their purpose and their audience, because each maker chose what to show and how to show it. It names one example: for instance, the 1971 celebration says more about the Pahlavi monarchy than about the ancient city.</p></div>
@@ -1219,7 +1284,7 @@ html:not(.read) .read-only{display:none !important;}
 </section>
 
 <section class="slide" data-sec="Practice and review" data-title="Practice — writing" data-kind="practice">
-<div class="wrap prac u2l14-dense">
+<div class="wrap prac u2l14-dense u2l14-pw">
   <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
   <h2>Write it as a historian</h2>
   <div class="split" style="--cols:1fr 1.3fr">
@@ -1229,7 +1294,9 @@ html:not(.read) .read-only{display:none !important;}
         <p class="quote sm model">For European travellers such as Cornelis de Bruijn, whose drawings were published in 1711, Persepolis served as a famous ruin to measure and describe for readers at home, who already knew it from the Greek writers as the city Alexander burned.</p></div>
     </div>
     <div class="stack">
-      <div class="card quiet"><div class="k">Exercise 2 · Extension</div><p class="body">Compare the 1971 celebration’s use of Cyrus and Persepolis with the Cyrus Cylinder’s modern use as a ‘charter of human rights’ (Unit 1, Lesson 8): how do modern states use the ancient past?</p></div>
+      <div class="card accent u2l14-ex"><div class="k">Exercise 2 · Sentence work: rank the causes</div><p class="body">Turn this list into a Judge that ranks the causes: <span class="nq">“Persepolis was represented differently because of Alexander, because of De Bruijn and because of the Pahlavi state.”</span></p>
+        <p class="quote sm model reveal" data-veil="Show a model sentence">Persepolis has been represented differently mainly because each maker, from Alexander to the Pahlavi state, used it for a purpose of their own, although De Bruijn’s half-buried ruin also reflects what could be seen before excavation. <span class="u2l14-why">(A model, written for this lesson.)</span></p></div>
+      <div class="card quiet"><div class="k">Exercise 3 · Extension</div><p class="body">Compare the 1971 celebration’s use of Cyrus and Persepolis with the Cyrus Cylinder’s modern use as a ‘charter of human rights’ (Unit 1, Lesson 8): how do modern states use the ancient past?</p></div>
       <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
         <p class="quote sm model">Both uses show a modern state choosing an ancient past that fits its own needs. In 1971 the Pahlavi state celebrated 2,500 years of monarchy at Persepolis and at Cyrus’s tomb, presenting the Shah as the heir of Cyrus, and, according to John Curtis of the British Museum, the Cyrus Cylinder became “the official symbol of the 2,500th anniversary of Persian monarchy in 1971”. The ‘charter of human rights’ reading did the same work with a different message: it presented Cyrus, and so his heir, as an enlightened ruler, although the Cylinder itself is a Babylonian foundation inscription that says nothing of human rights. Persepolis offered grandeur and continuity; the Cylinder offered moral approval. Neither use is simply false, since both rest on real ancient objects, but each reveals more about the needs of the state in the twentieth century than about the Persian kings themselves.</p></div>
     </div>

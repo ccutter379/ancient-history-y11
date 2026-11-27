@@ -803,6 +803,51 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u2l13-dense .checks label{font-size:calc(var(--fs-body)*.76);}
   html:not(.read) .u2l13-dense .u2l13-side img{max-height:40vh;}
 }
+
+/* Writing focus card (writing retrofit, 27 November 2026): I do and Apply on the left, We do on the right;
+   on phones the order is I do → We do → Apply */
+.split.u2l13-wf{grid-template-areas:"i w" "a w";}
+.u2l13-wf > .u2l13-wf-i{grid-area:i;} .u2l13-wf > .u2l13-wf-w{grid-area:w;} .u2l13-wf > .u2l13-wf-a{grid-area:a;}
+.u2l13-wf .quote.sm{font-size:var(--fs-body); line-height:1.45;}
+.u2l13-wf .opts{gap:.4em;}
+.u2l13-wf .opts li{font-size:calc(var(--fs-body)*.86); line-height:1.36; padding:.38em .8em; margin:0;}
+.u2l13-wf .note{margin-top:.4em;}
+@media (max-width:900px){.split.u2l13-wf{grid-template-areas:"i" "w" "a";}}
+@media (max-height:820px){
+  html:not(.read) .u2l13-wf .opts{gap:.3em;}
+  html:not(.read) .u2l13-wf .opts li{font-size:calc(var(--fs-body)*.74); padding:.24em .6em;}
+  html:not(.read) .u2l13-wf .small{font-size:calc(var(--fs-chrome)*.9);}
+}
+
+/* Practice — writing: the added sentence exercise (its model sits inside the card) */
+.u2l13-ex .quote.sm{font-size:calc(var(--fs-body)*.9); line-height:1.42; margin-top:.4em;}
+.u2l13-why{font-family:var(--ui); font-style:normal; font-size:.86em; color:var(--slate);}
+@media (max-height:820px){
+  html:not(.read) .u2l13-pw .quote.sm{font-size:calc(var(--fs-body)*.68); line-height:1.36;}
+  html:not(.read) .u2l13-pw .card .body{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u2l13-pw .card{padding:8px 14px;}
+  html:not(.read) .u2l13-pw .src{padding:8px 14px;}
+}
+
+/* the deconstruct-the-question line above a task (writing retrofit) */
+.u2l13-dq .body{max-width:none;}
+.u2l13-wfj{font-family:var(--serif); font-style:italic; margin:.3em 0 .5em;}
+.u2l13-wf .bank{margin:.35em 0 .45em;}
+@media (max-height:820px){
+  html:not(.read) .u2l13-dq{padding:.35em .85em;}
+  html:not(.read) .u2l13-dq .body{font-size:calc(var(--fs-body)*.76); line-height:1.35;}
+}
+@media (max-height:820px){
+  html:not(.read) .u2l13-yd .quote.sm{font-size:calc(var(--fs-body)*.67); line-height:1.36;}
+  html:not(.read) .u2l13-yd .card .body{font-size:calc(var(--fs-body)*.76); line-height:1.34;}
+  html:not(.read) .u2l13-yd .card{padding:9px 15px;}
+  html:not(.read) .u2l13-yd .stack{gap:8px;}
+}
+
+/* the task question's directive verb, boxed in the directive colours (writing retrofit QA, 27 November 2026;
+   not the shared .code span, which switches on the colour legend over the foot of the slide) */
+.u2l13-verb{color:var(--c-directive); background:var(--w-directive); box-shadow:inset 0 0 0 2px var(--c-directive);
+  border-radius:4px; padding:0 .18em;}
 </style>
 </head>
 <body>
@@ -842,7 +887,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide" data-sec="Lesson 13" data-title="Review: Lessons 1–12" data-kind="intro practice">
 <div class="wrap u2l13-dense">
-  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <p class="eyebrow">Review · books closed · 5 minutes · press K for the timer</p>
   <h2>Six questions from Lessons 1–12</h2>
   <ol class="rq" data-answers>
     <li>According to the Behistun inscription, how did Darius I become king, and why do historians question it?
@@ -855,8 +900,8 @@ html:not(.read) .read-only{display:none !important;}
       <span class="sol reveal">Deliberate: Alexander burned the palace although Parmenio advised him to preserve it, saying he wanted vengeance for the Persian invasion of Greece. Arrian adds that he does not think Alexander acted with prudence: it was not “any retributive penalty at all on the ancient Persians”.</span></li>
     <li>What is Diodorus’s version of the burning?
       <span class="sol reveal">At a drunken feast the Athenian courtesan Thaïs urged Alexander to set fire to the palaces; he led a revel (the comus) and threw the first torch, and she threw the second.</span></li>
-    <li>When was the battle of Gaugamela, and why does it matter here?
-      <span class="sol reveal">331 BCE (1 October 331, Livius): Alexander defeated Darius III, opening the way to Babylon, Susa and Persepolis.</span></li>
+    <li>Writing · which is the better sentence, and why? A: <span class="nq">“Herodotus proved that the Persians called Darius ‘the merchant’.”</span> B: <span class="nq">“Herodotus reports that the Persians called Darius ‘the merchant’.”</span>
+      <span class="sol reveal">B. <i>Reports</i> is the precise, neutral verb, in the present tense for what a source does. A’s <i>proved</i> overstates what one Greek writer, about 90 years later, can do, and puts the source in the past tense.</span></li>
   </ol>
   <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
 </div>
@@ -1074,7 +1119,7 @@ html:not(.read) .read-only{display:none !important;}
   <p class="eyebrow">3 · I do — a model paragraph and its five moves · colour-code your copy · one press per move</p>
   <h2>Was the burning of Persepolis deliberate?</h2>
   <div class="annot" data-veil="Show the model paragraph and its five moves">
-    <div class="ans long">
+    <div class="ans long" data-booklet="model">
       <span class="match" data-step="m1">The burning of Persepolis in about May 330 BCE was most probably a deliberate act of policy, even if the night itself began as a drinking party.</span><span class="mk u2l13-m1">J</span>
       <span class="match" data-step="m2">Arrian, who based his history mainly on Ptolemy and Aristobulus, two men who served with Alexander, records that the king burned the palace ‘though Parmenio advised him to preserve it’, saying that he ‘wished to take vengeance on the Persians’; and Erich Schmidt’s excavations of the 1930s showed that the Apadana, the Hall of a Hundred Columns and the Treasury were destroyed by fire, and that before the Treasury burned the Macedonians ‘were thorough in cleaning out the treasure house’.</span><span class="mk u2l13-m2">E</span>
       <span class="match" data-step="m3">This combination suggests calculation rather than impulse: an army that, by Plutarch’s account, stayed about four months and removed the treasure first had time to choose what to destroy, and Arrian presents the fire as a decision of state taken against advice, which supports Pierre Briant’s reading of it as ‘a signal to the Persians that their days of imperial glory were over’.</span><span class="mk u2l13-m3">A</span>
@@ -1187,6 +1232,26 @@ html:not(.read) .read-only{display:none !important;}
 </div>
 </section>
 
+<section class="slide" data-sec="5 · You do" data-title="Writing focus: a judgement of degree" data-kind="notes">
+<div class="wrap u2l13-dense">
+  <p class="eyebrow">5 · You do · Writing focus · 6 minutes · I do → We do → apply</p>
+  <h2>Writing focus: “to what extent” asks how far, not yes or no</h2>
+  <div class="split u2l13-wf" style="--cols:1fr 1.15fr">
+    <div class="card accent u2l13-wf-i"><div class="k">I do · watch</div>
+      <p class="body"><b>To what extent</b> is not a glossary key word: NESA calls it a self-explanatory term. It asks for a <b>judgement of degree</b>; our department’s advice is to treat it like <b>assess</b>: “Make a judgement of value, quality, outcomes, results or size.” (NESA, <i>Glossary of key words</i>).</p>
+      <div class="bank" aria-label="The degree scale"><span>entirely</span><span>largely</span><span>to a significant extent</span><span>partly</span><span>only to a limited extent</span><span>not at all</span></div>
+      <p class="quote sm model" data-booklet="model">Darius’s Behistun account can be trusted only to a limited extent: it records how he says he became king in 522 BCE, but it is the winner’s account, and historians cannot rule out that the man he killed was the real Bardiya.</p>
+      <p class="small">A worked example, written for this lesson, on <span class="nq">“To what extent can Darius’s Behistun account be trusted?”</span> (from today’s Review: Lesson 1 and Unit 1).</p></div>
+    <div class="card u2l13-wf-w"><div class="k">We do · together · gesture vote, then rewrite</div>
+      <p class="body">Is the degree right for the evidence? <b>One finger</b> = too weak · <b>two</b> = about right · <b>three</b> = too strong. Then we rewrite it together.</p>
+      <p class="body nq u2l13-wfj">“The Apadana stairway reliefs are entirely reliable evidence of the Persian Empire.”</p>
+      <div class="note reveal" data-code="evidence" data-veil="Vote first — then show the answer"><div class="k">Too strong: three fingers</div><p class="body"><i>Entirely</i> leaves no room for what the reliefs cannot show. One rewrite: <span class="nq">“The Apadana reliefs are only partly reliable evidence of the empire: they show how the king wanted it to be seen, orderly and willing, but not how the subject peoples felt.”</span> Adding <i>probably</i> would change how sure the sentence is (modality), not how far (degree).</p></div></div>
+    <div class="card quiet sm u2l13-wf-a"><div class="k">Apply · in today’s task</div>
+      <p class="body">Write your Judge first, with a degree word: <i>Modern historians agree [largely / only partly …] about why Persepolis was burned, because …, although ….</i> Your Resolve keeps that degree. Your Writing toolkit (booklet pages 3–4): the degree scale.</p></div>
+  </div>
+</div>
+</section>
+
 <section class="slide" data-sec="5 · You do" data-title="Check before you write: hinge question">
 <div class="wrap u2l13-dense">
   <p class="eyebrow">5 · You do · check first · hinge question · hold up A, B, C or D on <span class="nq">“3, 2, 1, show”</span></p>
@@ -1230,21 +1295,22 @@ html:not(.read) .read-only{display:none !important;}
 </section>
 
 <section class="slide" data-sec="5 · You do" data-title="You do: write your paragraph">
-<div class="wrap u2l13-dense">
+<div class="wrap u2l13-dense u2l13-yd">
   <p class="eyebrow">5 · You do · 16 minutes of writing · the 20-minute timer is running · your paragraph may be read aloud</p>
-  <h2>To what extent was the burning of Persepolis a deliberate act?</h2>
+  <h2><span class="u2l13-verb">To what extent</span> do modern historians agree about why Persepolis was burned?</h2>
+  <div class="note reveal u2l13-dq" data-code="directive" data-veil="Deconstruct the question first — then show the four steps"><p class="body"><b>Verb</b> to what extent: a judgement of degree, close to assess · <b>Topic</b> how far modern historians agree about why it burned · <b>Limits</b> modern views, and the ancient accounts and archaeology they rest on · <b>Do</b> J → E → A → E → R, the same degree in the Judge and the Resolve.</p></div>
   <div class="split" style="--cols:1fr 1.15fr">
     <div class="stack">
       <div class="card accent"><div class="k">Everyone</div>
         <ol class="body"><li>One paragraph: Judge → Evidence → Analyse → Evaluate → Resolve.</li>
-          <li>Use one ancient account, one piece of archaeological evidence and one modern interpretation, each with its provenance.</li>
-          <li>Weigh a rival view, then resolve with <span class="nq">on balance …</span></li></ol></div>
-      <div class="card quiet sm"><div class="k">Support · paragraph frame</div><p class="body nq">J: The burning of Persepolis was, to a large extent / only partly, … · E: According to …, who … · The excavations of … showed that … · A: This suggests that … · E: However, … ; yet … · R: On balance, it is more likely that … because …</p></div>
+          <li>Use two modern interpretations and the ancient account or archaeology each rests on, with provenance.</li>
+          <li>Weigh why the historians differ (the sources they trust); resolve with <span class="nq">on balance …</span></li></ol></div>
+      <div class="card quiet sm"><div class="k">Support · paragraph frame</div><p class="body nq">J: Modern historians agree, to a large extent / only partly, about why …, because … · E: [Historian] ([year]) argues that … · This rests on … · A: This suggests … · E: However, [historian] …; yet … · R: On balance, … because …</p></div>
       <div class="card quiet sm"><div class="k">Extension</div><p class="body">Why have interpretations changed over time? What do Farr (1850), Woodcock (1967) and Iranian historians today, such as Ansari (2012), reveal about their own times?</p></div>
     </div>
     <div class="src reveal" data-veil="Write yours first — then show a model paragraph">
       <div class="k">A model paragraph · written for this lesson</div>
-      <p class="quote sm model">To a large extent the burning of Persepolis was deliberate, although its timing may have owed something to a night of drinking. The strongest evidence is archaeological: Erich Schmidt, who directed the Persepolis excavations of 1935–39, found that the Macedonians ‘were thorough in cleaning out the treasure house’ before fire destroyed it, and that the Tripylon was at least partly untouched while the Apadana and the Hall of a Hundred Columns burned. Such a pattern suggests a destruction prepared in advance rather than a blaze that spread at random, which fits Arrian’s account, drawn from officers who served with Alexander, of a king who burned the palace ‘though Parmenio advised him to preserve it’. George Woodcock (1967) likewise thought it ‘conceivable’ that the destruction was meant to remove a royal centre around which Persian resistance might gather. Yet Diodorus, Curtius and Plutarch all place the fire at a feast urged on by Thaïs, and Curtius even suggests that the Macedonians later ‘forced themselves to believe that it was right’, so the language of policy may partly be a later justification. Since Diodorus and Curtius probably depend on Cleitarchus, however, and Plutarch knew that ‘others say it was premeditated’, their agreement adds less weight than it seems. On balance, the decision to destroy the royal buildings was most likely deliberate, while the feast may explain only the night on which it was carried out.</p>
+      <p class="quote sm model">Modern historians agree only partly about why Persepolis was burned: several see a planned act, but they give it different purposes, and others still follow the drunken story. Pierre Briant (2010) reads the fire as ‘a signal to the Persians that their days of imperial glory were over’, while George Woodcock (1967) thought it ‘conceivable’ that it was meant to ‘remove a royal centre around which Persian feeling might rise again’, and Lendering, on Livius.org, concludes that ‘The fire was planned’. These readings rest on Arrian’s account of a deliberate act and on the archaeology: Erich Schmidt found the Treasury emptied before it burned, and parts of the Tripylon show no traces of burning. Edward Farr (1850) and Ali Ansari (2012), by contrast, follow the Thaïs story told by Diodorus, Curtius and Plutarch, and Joshua J. Mark (2019) leaves the question open. The disagreement partly reflects which ancient accounts each historian trusts: the feast story is weaker than it looks, since Diodorus and Curtius probably go back to Cleitarchus, yet the archaeology cannot show who lit the fire or why, so no view can be proved. On balance, modern historians agree only partly: three of the six views here see a planned destruction, but even they differ on what it was for.</p>
     </div>
   </div>
 </div>
@@ -1287,7 +1353,7 @@ html:not(.read) .read-only{display:none !important;}
 
 <section class="slide" data-sec="Close" data-title="Check: deliberate, drunken or both?" data-kind="intro">
 <div class="wrap u2l13-dense">
-  <p class="eyebrow">Check · 8 minutes · gesture vote · then check your own paragraph</p>
+  <p class="eyebrow">Check · 6 minutes · gesture vote · then check your own paragraph</p>
   <h2>Deliberate, drunken or both?</h2>
   <div class="split" style="--cols:.7fr 1.3fr">
     <div class="u2l13-side"><figure class="figure contain"><img src="images/u2l13-carracci-alexander-and-thais.jpg" alt="Lodovico Carracci, Alexander and Thaïs Setting Fire to Persepolis, pen and ink, probably about 1592 (National Gallery of Art, Washington): the feast story, imagined more than 1,900 years later" loading="lazy"><figcaption>Lodovico Carracci, Alexander and Thaïs Setting Fire to Persepolis, pen and ink, probably about 1592 (National Gallery of Art, Washington): the feast story, imagined more than 1,900 years later — <span class="cr">Lodovico Carracci; National Gallery of Art, Washington · CC0 1.0</span></figcaption></figure></div>
@@ -1331,7 +1397,7 @@ html:not(.read) .read-only{display:none !important;}
 </section>
 
 <section class="slide" data-sec="Practice and review" data-title="Practice — writing" data-kind="practice">
-<div class="wrap prac u2l13-dense">
+<div class="wrap prac u2l13-dense u2l13-pw">
   <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
   <h2>Practise the hardest moves</h2>
   <div class="split" style="--cols:1fr 1.25fr">
@@ -1344,7 +1410,9 @@ html:not(.read) .read-only{display:none !important;}
         <p class="quote sm model">On balance, the emptied Treasury makes it more likely that the destruction was planned, although the archaeology cannot show whether the order was given in cold blood or at a feast.</p></div>
     </div>
     <div class="stack">
-      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Why have interpretations of the burning changed over time? What do Farr (1850), Woodcock (1967) and Iranian historians today, such as Ansari (2012), reveal about their own times?</p></div>
+      <div class="card accent u2l13-ex"><div class="k">3 · Sentence work: keep the degree</div><p class="body">Judge: <span class="nq">“The burning was largely deliberate.”</span> Resolve: <span class="nq">“In the end, it was just a drunken accident.”</span> The degree drifts. Rewrite the Resolve so it keeps, or sharpens, the Judge’s degree.</p>
+        <p class="quote sm model reveal" data-veil="Show a model sentence">On balance, the destruction was largely deliberate, even if the fire itself may have begun at a feast. <span class="u2l13-why">(A model, written for this lesson.)</span></p></div>
+      <div class="card quiet"><div class="k">4 · Extension</div><p class="body">Why have interpretations of the burning changed over time? What do Farr (1850), Woodcock (1967) and Iranian historians today, such as Ansari (2012), reveal about their own times?</p></div>
       <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
         <p class="quote sm model">Each interpretation reveals the questions of its own time as much as the events of 330 BCE. Edward Farr, writing in 1850, retold the ancient drunken story as a moral tale, condemning ‘the maddened rage of the conqueror’ and his ‘bacchanals’. George Woodcock, writing in 1967, read Arrian for a political purpose instead, suggesting that the sack of the city was ‘deterrent terror’ and the burning a way to remove a centre of Persian resistance. Ali Ansari, a historian of Iran writing for the BBC in 2012, accepted the drunken version but used it for a different purpose: to show Alexander ‘through Persian eyes’ and to stress what Persian culture lost. Interpretations have therefore changed less because new evidence appeared than because each writer asked new questions of the same ancient story: a moral one in 1850, a political one in 1967 and, in 2012, how Iranians themselves remember Alexander.</p></div>
     </div>

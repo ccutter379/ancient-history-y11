@@ -644,6 +644,7 @@ html:not(.read) .read-only{display:none !important;}
 .u3l08-rt{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1.1vw,16px);}
 .u3l08-rt .card{padding:clamp(8px,1.3vh,16px) clamp(12px,1.2vw,18px);}
 .u3l08-rt .q{font-weight:700; font-size:calc(var(--fs-body)*.84); line-height:1.32;}
+.u3l08-rt .u3l08-rtopt{margin:.3em 0 0; font-size:calc(var(--fs-body)*.78); line-height:1.34;}
 .u3l08-rt .vp{display:block; margin-top:.35em; font-size:calc(var(--fs-body)*.8); line-height:1.38; color:var(--ink);}
 
 /* the ten checkpoint questions, two columns */
@@ -741,9 +742,9 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u3l08-dense .u3l08-facts{font-size:calc(var(--fs-body)*.72);}
   html:not(.read) .u3l08-dense .u3l08-quiz{font-size:calc(var(--fs-body)*.9);}
   html:not(.read) .u3l08-dense .u3l08-quiz li{margin-bottom:.8em;}
-  html:not(.read) .u3l08-dense .u3l08-rt .q{font-size:calc(var(--fs-body)*.76);}
-  html:not(.read) .u3l08-dense .u3l08-rt .vp{font-size:calc(var(--fs-body)*.72);}
-  html:not(.read) .u3l08-dense .u3l08-rt .card{padding:7px 12px;}
+  html:not(.read) .u3l08-dense .u3l08-rt .q{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u3l08-dense .u3l08-rt .vp{font-size:calc(var(--fs-body)*.68); line-height:1.33;}
+  html:not(.read) .u3l08-dense .u3l08-rt .card{padding:6px 12px;}
   html:not(.read) .u3l08-dense .u3l08-iq{font-size:calc(var(--fs-body)*.86);}
   html:not(.read) .u3l08-dense .u3l08-plan li{font-size:calc(var(--fs-body)*.76);}
   html:not(.read) .u3l08-dense .u3l08-legend{font-size:calc(var(--fs-body)*.7);}
@@ -779,6 +780,17 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u3l08-dense .u3l08-ex .quote.sm .gap{height:.2em;}
   html:not(.read) .u3l08-dense .u3l08-qcard{padding:6px 14px; margin-top:0;}
   html:not(.read) .u3l08-dense .u3l08-qcard .body{font-size:calc(var(--fs-body)*.78);}
+  /* writing retrofit (27 Nov 2026): the practice slide now has four exercises */
+  html:not(.read) .u3l08-dense.u3l08-prac4 .stack{gap:7px;}
+  html:not(.read) .u3l08-dense.u3l08-prac4 .card .body{font-size:calc(var(--fs-body)*.68); line-height:1.3;}
+  html:not(.read) .u3l08-dense.u3l08-prac4 .quote.sm{font-size:calc(var(--fs-body)*.64); line-height:1.34;}
+  html:not(.read) .u3l08-dense.u3l08-prac4 .card, html:not(.read) .u3l08-dense.u3l08-prac4 .src{padding:6px 12px;}
+  html:not(.read) .u3l08-dense.u3l08-prac4 .card .k, html:not(.read) .u3l08-dense.u3l08-prac4 .src .k{margin-bottom:.2em;}
+  html:not(.read) .u3l08-dense .u3l08-rt .u3l08-rtopt{font-size:calc(var(--fs-body)*.64); line-height:1.3;}
+  html:not(.read) .u3l08-dense .u3l08-rt{gap:7px;}
+  html:not(.read) .u3l08-dense .u3l08-rt .vp{margin-top:.2em;}
+  html:not(.read) .u3l08-dense .u3l08-rt .q{line-height:1.26;}
+  html:not(.read) .u3l08-dense .u3l08-rt .u3l08-rtopt{margin-top:.15em;}
 }
 </style>
 </head>
@@ -828,8 +840,9 @@ html:not(.read) .read-only{display:none !important;}
       <p class="vp">The bog’s acid dissolves the minerals in bone, while the cold, waterlogged, oxygen-poor peat preserves skin and soft tissue.</p></div>
     <div class="card quiet"><div class="k">3 · Methods and results</div><p class="q">Name one non-invasive and one minimally invasive method, each with a result from this unit.</p>
       <p class="vp">Non-invasive: X-ray or CT scanning, for example the arrowhead in Ötzi’s left shoulder, identified in 2001. Minimally invasive: a small sample for DNA, isotopes, radiocarbon or gut contents, for example Tollund Man’s last meal, a porridge of barley, pale persicaria and flax, and probably some fish (2021 study).</p></div>
-    <div class="card quiet"><div class="k">4 · Ötzi today</div><p class="q">How is Ötzi preserved and displayed today?</p>
-      <p class="vp">In a cold cell at about −6 °C and very high humidity (99%) at the South Tyrol Museum of Archaeology, Bolzano; visitors see him through a small window.</p></div>
+    <div class="card quiet"><div class="k">4 · Writing: an assess opening</div><p class="q">Which opening better answers Lesson 5’s question, <i>Assess the significance of human remains …</i>, and why?</p>
+      <p class="u3l08-rtopt nq">(a) Tollund Man ate a porridge of barley, pale persicaria and flax, and probably some fish, shortly before he died.<br>(b) Human remains are most significant for understanding how individuals lived and died, but less significant, on their own, for understanding beliefs.</p>
+      <p class="vp">(b). <i>Assess</i> asks for a judgement of how much: (b) says what remains are most and less significant for. (a) is accurate, but it judges nothing: it belongs later, as evidence.</p></div>
     <div class="card quiet"><div class="k">5 · Tacitus</div><p class="q">What is Tacitus’s <i>Germania</i> 12 most useful as evidence of, and what is one limit?</p>
       <p class="vp">Roman views of Germanic customs in about 98 CE. It is weaker for bog bodies from other places or centuries: Tollund Man died about 500 years earlier, and Lindow Man lived in Britain, not Germania.</p></div>
     <div class="card quiet"><div class="k">6 · Stakeholders</div><p class="q">Name three stakeholders in decisions about human remains, and one interest of each.</p>
@@ -1014,15 +1027,15 @@ html:not(.read) .read-only{display:none !important;}
   <div class="split" style="--cols:1fr 1fr">
     <div class="stack">
       <div class="card accent"><div class="k">The question</div>
-        <p class="u3l08-iq">How should museums weigh the scientific value of human remains against the wishes of descendants?</p></div>
-      <p class="qprompt">What does ‘weigh’ ask you to do?</p>
-      <div class="note reveal" data-code="analysis" data-veil="Answer first — then show a model answer"><p class="body">Judge how much each should count, and when: not simply “science” or “descendants”, but a judgement of degree (more, less, under what conditions), after giving the strongest case on each side.</p></div>
+        <p class="u3l08-iq">How should museums <b>weigh</b> the scientific value of human remains against the wishes of descendants?</p></div>
+      <p class="qprompt">What does ‘weigh’ ask you to do? Deconstruct the question: verb · topic · limits · do.</p>
+      <div class="note reveal" data-code="analysis" data-veil="Answer first — then show a model answer"><p class="body"><b>Verb:</b> <i>weigh</i>, not a glossary word: treat it as an assess question (department advice): judge how much each should count, and when, not simply “science” or “descendants”. <b>Topic:</b> scientific value against descendants’ wishes. <b>Limits:</b> museums; the two sources, plus evidence from the unit. <b>Do:</b> Judge → Evidence → Analyse → Evaluate → Resolve, opening with a degree or a condition (more weight to …, unless …), giving the strongest case on each side, and resolving with the same degree.</p></div>
       <div class="card quiet sm"><div class="k">Respect while you write</div><p class="body">Attribute every view to the person or body that stated it. Say ‘Ancestral Remains’ or ‘Ancestors’. The Custodians decide what is shared, following ICIP protocols.</p></div>
     </div>
     <div class="stack">
       <div class="card quiet"><div class="k">Your 25 minutes</div>
         <ol class="u3l08-plan">
-          <li><span class="t">0–5</span><span><b>Read and plan.</b> Annotate the source sheet; jot J E A E R in the margin, with one piece of evidence for each move.</span></li>
+          <li><span class="t">0–5</span><span><b>Read and plan.</b> Deconstruct the question first (verb · topic · limits · do); annotate the source sheet; jot J E A E R in the margin, with one piece of evidence for each move.</span></li>
           <li><span class="t">clock 20–18</span><span><b>Write:</b> your Judge, a judgement of degree.</span></li>
           <li><span class="t">clock 18–10</span><span>Evidence and Analyse: both sources, with provenance and short quotations.</span></li>
           <li><span class="t">clock 10–3</span><span>Evaluate: the strongest case for science, and the limits of each source.</span></li>
@@ -1241,6 +1254,7 @@ html:not(.read) .read-only{display:none !important;}
       </ul>
       <p class="qprompt">Whose voices survive about the revolt, and whose may be missing?</p>
       <div class="note reveal" data-code="analysis" data-veil="Answer first — then show a model answer"><p class="body">Mostly Roman voices: the written accounts are by two Roman historians, one of them writing more than a century later. The Britons’ own side survives, if at all, through those Roman writers and through archaeology. Unlike Ötzi or Tollund Man, no grave or remains of Boudicca are known, so the evidence is mainly texts, archaeology and later representations, like this statue.</p></div>
+      <div class="card quiet sm"><div class="k">Your writing, next unit</div><p class="body">Today’s Judge sentence becomes your <b>thesis</b>: the judgement your introduction states, which every paragraph then argues and the conclusion refines.</p></div>
     </div>
   </div>
 </div>
@@ -1268,7 +1282,7 @@ html:not(.read) .read-only{display:none !important;}
 </section>
 
 <section class="slide" data-sec="Practice and review" data-title="Practice — sharpen the argument" data-kind="practice">
-<div class="wrap prac u3l08-dense">
+<div class="wrap prac u3l08-dense u3l08-prac4">
   <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
   <h2>Sharpen the argument</h2>
   <div class="split" style="--cols:1fr 1fr">
@@ -1281,7 +1295,10 @@ html:not(.read) .read-only{display:none !important;}
         <p class="quote sm model">Scientific value can deserve considerable weight when no descendant community can yet be identified, provided that the research is approved by an Indigenous advisory group and damages the remains as little as possible.</p></div>
     </div>
     <div class="stack">
-      <div class="card quiet"><div class="k">3 · Extension</div><p class="body">Assess the National Museum of Australia’s policy as evidence of how museums treat Ancestral Remains. Reliable for what?</p></div>
+      <div class="card accent"><div class="k">3 · Keep the degree</div><p class="body">This Resolve drifts from its Judge. Rewrite the Resolve so that it refines the Judge without changing its degree. <b>Judge:</b> <span class="nq">Museums should give the wishes of descendants more weight than scientific value, unless no descendant community can yet be identified.</span> <b>Resolve:</b> <span class="nq">On balance, science matters most, so museums should keep remains for research.</span></p></div>
+      <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">On balance, the wishes of descendants should usually outweigh scientific value; research can be justified only when no descendant community can yet be identified, and even then only with an Indigenous advisory group’s approval and as little damage to the remains as possible.</p></div>
+      <div class="card quiet"><div class="k">4 · Extension</div><p class="body">Assess the National Museum of Australia’s policy as evidence of how museums treat Ancestral Remains. Reliable for what?</p></div>
       <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
         <p class="quote sm model">The policy is reliable evidence of how the National Museum of Australia says it will treat Ancestral Remains, because it is the Museum’s own approved document, revised several times since 1996. It is not, however, evidence of what this Museum or any other actually does, since a policy states intentions; and its phrase “where this is possible” shows that even its central rule on consent has limits. To test it, a historian would need reports of real returns, such as the SBS NITV account of the Kaurna repatriation, and the views of the communities concerned.</p></div>
     </div>

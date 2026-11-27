@@ -768,6 +768,22 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u2l11-credpage .card .k{margin-bottom:.25em;}
   html:not(.read) .u2l11-credpage .credits li{margin:.04em 0;}
 }
+
+/* Writing retrofit (27 November 2026): the contrast-or-concession line, and the added practice exercise */
+.u2l11-cc{font-size:calc(var(--fs-body)*.88); line-height:1.4; margin:0; padding:.35em .8em; border-left:4px solid var(--bright);
+  background:var(--surface); border-radius:0 6px 6px 0;}
+.u2l11-cc .nq{font-style:italic;}
+.u2l11-ex .quote.sm{font-size:calc(var(--fs-body)*.9); line-height:1.42; margin-top:.4em;}
+.u2l11-why{font-family:var(--ui); font-style:normal; font-size:.86em; color:var(--slate);}
+@media (max-height:820px){
+  html:not(.read) .u2l11-dense .u2l11-cc{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u2l11-dense .u2l11-ex .quote.sm{font-size:calc(var(--fs-body)*.7); line-height:1.36;}
+}
+
+/* the task question's directive verb, boxed in the directive colours (writing retrofit QA, 27 November 2026;
+   not the shared .code span, which switches on the colour legend over the foot of the slide) */
+.u2l11-verb{color:var(--c-directive); background:var(--w-directive); box-shadow:inset 0 0 0 2px var(--c-directive);
+  border-radius:4px; padding:0 .18em;}
 </style>
 </head>
 <body>
@@ -814,8 +830,8 @@ html:not(.read) .read-only{display:none !important;}
       <span class="sol reveal">Fars was the homeland of the Persians and of the Achaemenid royal family (Cyrus’s capital, Pasargadae, is nearby), so a capital there tied the king’s power to his own people’s land.</span></li>
     <li>What does the Audience relief show, and where was it found?
       <span class="sol reveal">An enthroned king (often identified as Darius I) receives an official, with a figure often identified as the crown prince behind him. Made for the Apadana stairways, it was found in the Treasury.</span></li>
-    <li>According to DSf, Darius’s building inscription from Susa, who worked on his palace?
-      <span class="sol reveal">Peoples and materials from across the empire: for example, “The stone-cutters who wrought the stone, those were Yaunâ and Lydians” (Livius translation; Yaunâ = Greeks).</span></li>
+    <li>Writing · integrate this dropped quotation from DSf, Darius’s building inscription from Susa, into one sentence with a signal phrase and the reference: <i>Many peoples worked on the palace.</i> “The stone-cutters who wrought the stone, those were Yaunâ and Lydians.”
+      <span class="sol reveal">For example: As Darius’s Susa charter records, the stone was worked by “Yaunâ and Lydians” (DSf), which suggests that he presented his palace as the work of many peoples. (Signal phrase · only the words that matter, woven into your sentence · the reference · what it suggests. Yaunâ = Greeks.)</span></li>
     <li>In DPd, what does Darius ask Ahuramazda to protect Persia from?
       <span class="sol reveal">“from invaders, from famine, and from the Lie” (Livius translation).</span></li>
     <li>Who are the throne-bearers, and where can you see them?
@@ -1156,11 +1172,12 @@ html:not(.read) .read-only{display:none !important;}
 <section class="slide" data-sec="3 · What was Persepolis for?" data-title="You do: check first" data-kind="notes">
 <div class="wrap u2l11-dense">
   <p class="eyebrow">3 · What was Persepolis for? · You do — check first · gesture vote: one finger = A · two fingers = B</p>
-  <h2>Which sentence compares the two kinds of evidence?</h2>
+  <h2>Which sentence compares the two sources?</h2>
+  <p class="u2l11-cc"><b>Contrast or concession?</b> <i>whereas</i> sets two sources side by side as different; <i>although</i> gives ground on one point, then makes your main one: <span class="nq" data-booklet="model">“Although the Audience relief was made for the Apadana stairways, it was found in the Treasury.”</span></p>
   <div class="stack veil-parts" data-veil="Vote first — then show the answer">
-    <div class="u2l11-sent"><span class="l">A</span><span class="nq">The Fortification Tablets were written in Elamite between 509 and 493 BCE. The Audience relief shows the king sitting on his throne with an official in front of him.</span></div>
-    <div class="u2l11-sent"><span class="l">B</span><span class="nq">Whereas the Audience relief displays a king whose power is simply accepted, the Fortification Tablets show that power at work, as rations were authorised, sealed and checked at Persepolis.</span></div>
-    <div class="note vp reveal" data-code="evidence"><div class="k">B: it compares, and says what each shows about power</div><p class="body">B links the two sources with a comparative connective (<i>whereas</i>), uses precise terms (<i>authorised</i>, <i>sealed</i>) and says what each source shows about power. A puts two facts side by side without comparing them.</p></div>
+    <div class="u2l11-sent"><span class="l">A</span><span class="nq">Herodotus wrote in about 430 BCE and calls Susa the city where the great king lives. In 1850 the historian Edward Farr thought that the Persian kings never lived at Persepolis.</span></div>
+    <div class="u2l11-sent"><span class="l">B</span><span class="nq">Whereas Herodotus, writing while Persepolis was in use, names only Susa as the king’s city, Farr, writing in 1850 before the tablets were found, reads that silence as a sign that the kings never lived there.</span></div>
+    <div class="note vp reveal" data-code="evidence"><div class="k">B: it compares the two sources</div><p class="body">B links the two sources with a comparative connective (<i>whereas</i>), says when each writer wrote, and says what each makes of the silence. A puts two facts side by side without comparing them.</p></div>
   </div>
   <p class="u2l11-banklabel">Comparative connectives and precise terms</p>
   <div class="bank u2l11-bank" aria-label="Comparative connectives and precise terms"><span>whereas</span><span>by contrast</span><span>while</span><span>unlike</span><span>however</span><span>similarly</span><span>archive</span><span>ration</span><span>authorisation</span><span>seal</span><span>administrative</span><span>ideology</span></div>
@@ -1170,7 +1187,8 @@ html:not(.read) .read-only{display:none !important;}
 <section class="slide" data-sec="3 · What was Persepolis for?" data-title="You do: your paragraph">
 <div class="wrap u2l11-dense">
   <p class="eyebrow">3 · What was Persepolis for? · You do · 8 minutes · press K for the timer</p>
-  <h2>What do the tablets reveal about Persepolis as a centre of Persian power?</h2>
+  <h2><span class="u2l11-verb">What</span> do the tablets <b>reveal</b> about Persepolis as a centre of Persian power?</h2>
+  <div class="note reveal" data-code="directive" data-veil="Deconstruct the question first — then show the four steps"><p class="body"><b>Verb</b> what … reveal: analyse what the tablets show and how · <b>Topic</b> Persepolis as a centre of power · <b>Limits</b> the tablets, compared with one royal source · <b>Do</b> an answer first, two tablet texts by number, a comparison, one limit.</p></div>
   <div class="split" style="--cols:1.1fr 1fr">
     <div class="stack">
       <div class="card accent"><div class="k">Everyone</div>
@@ -1306,14 +1324,16 @@ html:not(.read) .read-only{display:none !important;}
         <p class="quote sm">(To) Shakka speak, Baradkama says: 3 karsha and 2 shekels (and) a half of a shekel, silver, (to) Haradkama, his name, an Egyptian wood-worker (and) chief-of-hundred, (who) is earning wages at Parsa … give him. Sheep and wine (serve) as the equivalent (of the money): 1 sheep for 3 shekels, 1 jug (of wine) for 1 (of) the same. … 1 man, per month, 6 shekels and a half of a shekel is to receive.</p>
         <p class="prov">PT 1 · Elamite · for the 8th to 12th months of the 32nd year of Darius I (about 490/489 BCE) · trans. G. G. Cameron, <i>Persepolis Treasury Tablets</i> (1948), p. 83 · Shakka = the treasurer · Parsa = Persepolis · 1 karsha = 10 shekels</p>
       </div>
-    </div>
-    <div class="stack">
       <div class="card accent"><div class="k">Exercise 1 · What does it show?</div><p class="body">In one or two sentences: what does PT 1 show about how workers at Persepolis were paid?</p></div>
       <div class="src reveal" data-veil="Show a model answer"><div class="k">A model · written for this lesson</div>
         <p class="quote sm model">PT 1 shows that a skilled worker at Persepolis, an Egyptian woodworker in charge of a hundred men, was owed wages counted in silver (6½ shekels a month for five months), but was to be paid in sheep and wine at fixed rates. Silver measured the value, while payment in kind went on.</p></div>
+    </div>
+    <div class="stack">
       <div class="card accent"><div class="k">Exercise 2 · Reliable for what?</div><p class="body nq">Finish: “PT 1 is reliable for … but not for … because …”</p></div>
       <div class="src reveal" data-veil="Show a model sentence"><div class="k">A model · written for this lesson</div>
         <p class="quote sm model">PT 1 is reliable for how one worker’s pay was calculated and authorised at Persepolis in about 490 BCE, but not for how typical his pay was or how he lived, because it is a single order kept for the treasury’s accounts.</p></div>
+      <div class="card accent u2l11-ex"><div class="k">Exercise 3 · Sentence work: contrast or concession?</div><p class="body">Join these into one sentence with <i>whereas</i> or <i>although</i>, and say which job your connective does: <i>PT 1 records one worker’s pay at Persepolis. It cannot show how typical his pay was.</i></p>
+        <p class="quote sm model reveal" data-veil="Show a model sentence">Although PT 1 records one worker’s pay at Persepolis, it cannot show how typical his pay was. <span class="u2l11-why">(A model, written for this lesson: <i>although</i> grants one point, what PT 1 does record, then makes the main one, its limit: that is concession; <i>whereas</i> would set two different things side by side.)</span></p></div>
     </div>
   </div>
 </div>
@@ -1325,7 +1345,7 @@ html:not(.read) .read-only{display:none !important;}
   <h2>Evaluate the Nowruz theory</h2>
   <div class="split" style="--cols:1fr 1.3fr">
     <div class="stack">
-      <div class="card accent"><div class="k">Exercise 3 · one paragraph</div><p class="body">Evaluate the Nowruz theory. Why might scholars between the 1930s and 1970s have found it attractive, and what would count as evidence for or against it?</p></div>
+      <div class="card accent"><div class="k">Exercise 4 · one paragraph</div><p class="body">Evaluate the Nowruz theory. Why might scholars between the 1930s and 1970s have found it attractive, and what would count as evidence for or against it?</p></div>
       <div class="card quiet sm"><div class="k">Think about</div><p class="body">what the Apadana reliefs look like · what had been published, and when · what kind of text or tablet would settle it · what the tablets do record</p></div>
     </div>
     <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
