@@ -1,0 +1,1676 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U6 L2 · Where did Rome’s enslaved people come from? An independent investigation</title>
+<meta name="description" content="Year 11 Ancient History, slavery in ancient Rome: a self-paced investigation of how people became enslaved between about 200 BCE and 200 CE (war captives, pirates and the Delos market, birth, exposure, self-sale and debt, and the trade), with ancient numbers read as claims and a modern historian’s estimates attributed and hedged.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#8A3A12; --bright:#C2561E; --tint:#FAEBE2; --statement:#8A3A12;
+  --solid:#8A3A12; --soft:#F6D9C8; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#F2B796; --bright:#E07A45; --tint:#3A1D10; --statement:#6E2E0E; --soft:#F6D9C8; } }
+:root[data-theme="dark"]{ --deep:#F2B796; --bright:#E07A45; --tint:#3A1D10; --statement:#6E2E0E; --soft:#F6D9C8; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 6 Lesson 2 only (every class starts u6l02-) */
+
+/* title picture; goals slide syllabus line; credits links */
+.u6l02-cover img{max-height:50vh;}
+.u6l02-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u6l02-cite a{color:var(--deep);}
+
+/* the "Start here" instruction sheet: step minutes stand out */
+.u6l02-steps .t{display:flex; flex-wrap:wrap; gap:.15em .6em; align-items:baseline;}
+.u6l02-min{font-family:var(--mono); font-size:.78em; font-weight:700; color:var(--deep); white-space:nowrap;}
+
+/* where-am-I strip on each source set: step, set number, the grid row to fill */
+.u6l02-row{display:inline-block; border:1px solid var(--c-keyterm); color:var(--c-keyterm); background:var(--w-keyterm);
+  border-radius:999px; padding:.1em .75em; font-size:calc(var(--fs-body)*.78); font-weight:700;}
+
+/* the grid layout on the notes slide */
+.u6l02-grid{font-size:calc(var(--fs-body)*.8);}
+.u6l02-grid td{height:1.6em;}
+
+/* a modern historian's view, set apart from the ancient sources */
+.u6l02-hist .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+
+/* the coin, shown small */
+.u6l02-coin img{max-height:24vh; object-fit:contain; background:var(--surface);}
+
+/* the deconstruction strip above a question (verb · topic · limits · do) */
+.u6l02-dq{display:grid; grid-template-columns:auto 1fr; gap:.2em .8em; margin:0; padding:.5em .9em;
+  border-left:5px solid var(--c-directive); background:var(--w-directive); border-radius:0 8px 8px 0;
+  font-size:calc(var(--fs-body)*.82); line-height:1.36;}
+.u6l02-dq dt{font-weight:700; color:var(--c-directive);}
+.u6l02-dq dd{margin:0;}
+
+/* the moves on the back of the writing card */
+.u6l02-moves{margin:0; padding-left:1.3em; display:flex; flex-direction:column; gap:.3em;
+  font-size:calc(var(--fs-body)*.84); line-height:1.38;}
+
+/* paragraphs inside a card need a little air */
+.card .body + .body, .card .body + .u6l02-dq, .card .u6l02-dq + .small, .card .veil-parts,
+.card .small + .quote, .card .body + .checks, .card .body + ol.body{margin-top:.4em;}
+
+/* a word bank */
+.u6l02-bank{display:flex; flex-wrap:wrap; gap:.4em; margin-top:.35em;}
+.u6l02-bank span{border:1px solid var(--c-keyterm); color:var(--c-keyterm); border-radius:999px; padding:.1em .7em;
+  background:var(--w-keyterm); font-size:calc(var(--fs-body)*.8); font-weight:600;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u6l02-coin img{max-height:none;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u6l02-dense{gap:10px;}
+  html:not(.read) .u6l02-dense h2{font-size:calc(var(--fs-h2)*.8);}
+  html:not(.read) .u6l02-dense .eyebrow{margin-bottom:.1em;}
+  html:not(.read) .u6l02-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.4;}
+  html:not(.read) .u6l02-dense .quote{font-size:calc(var(--fs-body)*.88);}
+  html:not(.read) .u6l02-dense .src{padding:9px 15px;}
+  html:not(.read) .u6l02-dense .src .k{margin-bottom:.25em;}
+  html:not(.read) .u6l02-dense .src .prov{margin-top:.35em; font-size:calc(var(--fs-chrome)*.92);}
+  html:not(.read) .u6l02-dense .note{padding:.4em .8em;}
+  html:not(.read) .u6l02-dense .note .body, html:not(.read) .u6l02-dense .card .body,
+  html:not(.read) .u6l02-dense .qprompt{font-size:calc(var(--fs-body)*.76); line-height:1.34;}
+  html:not(.read) .u6l02-dense .card{padding:9px 15px;}
+  html:not(.read) .u6l02-dense .card .k{margin-bottom:.2em;}
+  html:not(.read) .u6l02-dense .stack{gap:8px;}
+  html:not(.read) .u6l02-dense .keylist{gap:5px;}
+  html:not(.read) .u6l02-dense .keylist li{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u6l02-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u6l02-dense .tbl.compact td{padding:.3em .55em;}
+  html:not(.read) .u6l02-dense .tbl th{padding:.35em .6em;}
+  html:not(.read) .u6l02-dense .figure img{max-height:28vh;}
+  html:not(.read) .u6l02-dense .figure figcaption{font-size:calc(var(--fs-chrome)*.85); margin-top:.3em;}
+  html:not(.read) .u6l02-dense .u6l02-coin img{max-height:17vh;}
+  html:not(.read) .u6l02-dense .u6l02-hist .body{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u6l02-dense .u6l02-dq{font-size:calc(var(--fs-body)*.72); padding:.35em .8em;}
+  html:not(.read) .u6l02-dense .u6l02-moves{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u6l02-dense .opts li{font-size:calc(var(--fs-body)*.74); padding:.3em .7em;}
+  html:not(.read) .u6l02-dense .opts{gap:.35em;}
+  html:not(.read) .u6l02-dense .tf li, html:not(.read) .u6l02-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u6l02-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u6l02-dense .prac{gap:6px;}
+  html:not(.read) .u6l02-dense .cornell .cq, html:not(.read) .u6l02-dense .cornell .nts{font-size:calc(var(--fs-body)*.72); padding:.32em .8em;}
+  html:not(.read) .u6l02-dense .checks label{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u6l02-dense .u6l02-row{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u6l02-dense .u6l02-bank span{font-size:calc(var(--fs-body)*.7);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 2" data-title="Where did Rome’s enslaved people come from?" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1fr 1fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 6 · Slavery in ancient Rome · Lesson 2</p>
+      <h1>Where did Rome’s enslaved people come from? An independent investigation</h1>
+      <p class="lead">War, pirates, birth, abandoned babies, sale and debt: how did people become enslaved between about 200 BCE and 200 CE, and how sure can we be about which way mattered most?</p>
+      <p class="small">Year 11 Ancient History · Today you work at your own pace: every step is on screen and in your booklet · On a phone or tablet, use Read mode (the <b>Read</b> button)</p>
+    </div>
+    <div class="u6l02-cover"><figure class="figure"><img src="images/u6l02-delos-from-mount-kynthos.jpg" alt="Delos, an island in the Aegean Sea, seen from Mount Kynthos: the ruins of the ancient town and the harbour. Strabo names Delos as the market where the pirates’ captives were sold (Geography 14.5.2)" loading="lazy"><figcaption>Delos, an island in the Aegean Sea, seen from Mount Kynthos: the ruins of the ancient town and the harbour. Strabo names Delos as the market where the pirates’ captives were sold (<i>Geography</i> 14.5.2) — <span class="cr">Photo: Olaf Tausch · CC BY 3.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 2" data-title="Start here: how today works" data-kind="intro">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow">Start here · read this first · 2 minutes</p>
+  <h2>Start here: how today works</h2>
+  <div class="split" style="--cols:1.25fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Today you work on your own</div>
+        <p class="body">Work through the five steps in order, at your own pace. Every instruction is on this page and in your booklet. The minutes are a guide, not a race.</p></div>
+      <ol class="keylist u6l02-steps">
+        <li><span class="num">1</span><span class="t">Get ready <span class="u6l02-min">5 minutes</span></span><span class="d">Open your booklet at today’s pages: the grid, a Cornell notes page and the writing card. Read today’s goals and the key words.</span></li>
+        <li><span class="num">2</span><span class="t">Read and note <span class="u6l02-min">25 minutes</span></span><span class="d">Seven short source sets, in order. For each: read the sources, fill that row of your grid (evidence · date · what it cannot show), answer the check question, then check your answer.</span></li>
+        <li><span class="num">3</span><span class="t">Writing card <span class="u6l02-min">6 minutes</span></span><span class="d">Read the model paragraph, cover it, rewrite it from memory, then check it against the model.</span></li>
+        <li><span class="num">4</span><span class="t">Your paragraph <span class="u6l02-min">17 minutes</span></span><span class="d">Deconstruct the question (verb · topic · limits · do), check it, then write one explanation paragraph.</span></li>
+        <li><span class="num">5</span><span class="t">Check and hand in <span class="u6l02-min">7 minutes</span></span><span class="d">Tick the three points on the checklist, write your exit ticket, then hand in your grid, your paragraph and your exit ticket together.</span></li>
+      </ol>
+    </div>
+    <div class="stack">
+      <div class="card"><div class="k">How to check yourself</div>
+        <p class="body">Write your own answer first. Then check it. <b>On a device:</b> use Read mode (tap the <b>Read</b> button, or press R on a keyboard), then tap the button under the question (<span class="nq">“… then check your answer”</span>). <b>On paper:</b> ask your teacher for the answer sheet, or to show that answer on the screen. Mark your answer in a second colour.</p></div>
+      <div class="card quiet"><div class="k">If you get stuck</div>
+        <p class="body">Re-read the source and use the key words. Write your best answer, check it, and move on.</p></div>
+      <div class="card quiet"><div class="k">If you are interrupted</div>
+        <p class="body">Mark where you stopped, and carry on from there.</p></div>
+      <div class="card quiet"><div class="k">Finished early?</div>
+        <p class="body">Write the three-sentence summary, then try the Extension card next to your paragraph.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 2" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 1 minute · read them yourself</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>analyse the evidence for how people became enslaved in the Roman world</li>
+        <li>work independently with sources</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>explain four ways people became enslaved, each with a source</li>
+        <li>say what each source can and cannot show</li>
+        <li>write an explanation paragraph that names the main way and qualifies it</li>
+      </ul>
+    </div>
+  </div>
+  <p class="body">Today’s grid has five rows: choose four of the five, each with a source, to meet the first “I can”.</p>
+  <p class="small u6l02-syl"><b>Syllabus outcomes:</b> AH-11-02 proposes ideas about the varying causes and effects of events and developments · AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-04 recognises causes and effects of events or developments · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 2" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · today your grid is your notes · 1 minute</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <div class="tbl-scroll"><table class="tbl compact u6l02-grid" aria-label="Layout of today’s grid">
+        <tr><th>Way into slavery</th><th>Evidence (source, number)</th><th>Date</th><th>Cannot show</th></tr>
+        <tr><td>1 · War captives</td><td></td><td></td><td></td></tr>
+        <tr><td>2 · Pirates and the trade</td><td></td><td></td><td></td></tr>
+        <tr><td>3 · Birth (vernae)</td><td></td><td></td><td></td></tr>
+        <tr><td>4 · Exposure</td><td></td><td></td><td></td></tr>
+        <tr><td>5 · Self-sale and debt</td><td></td><td></td><td></td></tr>
+      </table></div>
+      <div class="cornell" aria-label="Layout of a Cornell notes page">
+        <div class="ch"><span><b>U6 L2 · Where did enslaved people come from?</b></span><span>date</span></div>
+        <div class="row"><div class="cq">What can this source not tell us?</div><div class="nts">the cue question for every source today</div></div>
+        <div class="sum"><span class="k">Summary</span>three sentences, if you finish early</div>
+      </div>
+    </div>
+    <ol class="keylist">
+      <li><span class="num">1</span><span class="t">One row per way</span><span class="d">Fill each row as you finish its source set. Phrases, not sentences.</span></li>
+      <li><span class="num">2</span><span class="t">Evidence means a source</span><span class="d">Who wrote it and when, plus any number it gives. Write a number as a claim: “Caesar says …”.</span></li>
+      <li><span class="num">3</span><span class="t">The last column matters most</span><span class="d">It answers the cue question: what can this source not tell us?</span></li>
+      <li><span class="num">4</span><span class="t">Check at the ✎ checkpoint</span><span class="d">After the last source set, compare your grid with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li><span class="num">5</span><span class="t">Summary if you finish early</span><span class="d">Three sentences at the bottom of your Cornell page (its cue question is your grid’s last column).</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 2" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow">Key vocabulary · 1 minute · use these words in your paragraph</p>
+  <h2>Words for today</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Verb (NESA)</th><th>Meaning · what the answer does</th></tr>
+      <tr><td>Explain</td><td>‘Relate cause and effect. Make the relationships between things evident. Provide why and/or how.’ Department advice: show how and why, and which reason mattered most.</td></tr>
+      <tr><th>Content terms</th><th>Meaning</th></tr>
+      <tr><td>Captive</td><td>A person taken in war and often sold into slavery, e.g. 150,000 from Epirus (Polybius’s figure, as Strabo 7.7.3 reports it; the sack was in 167 BCE).</td></tr>
+      <tr><td>Verna</td><td>An enslaved person born in the owner’s household.</td></tr>
+      <tr><td>Exposure</td><td>Leaving a newborn baby to die or be found; some foundlings were raised in slavery (Pliny’s question, Letters 10.65, and Trajan’s reply, 10.66).</td></tr>
+      <tr><td>Delos</td><td>An Aegean island and great slave market of the 2nd–1st centuries BCE (Strabo 14.5.2).</td></tr>
+      <tr><td>Jus gentium</td><td><span class="nq">‘The law of nations’</span>: rules Romans thought all peoples shared, under which they classed slavery.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Foundling</td><td>A baby who was exposed and then found and raised by someone else.</td></tr>
+      <tr><td>Pirates</td><td>Sea raiders who seized people and goods; Strabo’s pirates came from Cilicia, in modern southern Turkey.</td></tr>
+      <tr><td>Slave dealer</td><td>A trader who bought and sold enslaved people (Latin <i>venalicius</i> or <i>mango</i>).</td></tr>
+      <tr><td>Self-sale</td><td>A free adult letting himself be sold.</td></tr>
+      <tr><td>Tax farmers</td><td>Private contractors who bid for the right to collect a province’s taxes for Rome (<i>publicani</i>).</td></tr>
+      <tr><td>Claim · count · estimate</td><td>A number a source states · a number someone recorded by counting · a modern historian’s calculated guess.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Read and note" data-title="War captives under the Republic" data-kind="notes">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow">Step 2 · Read and note · source set 1 of 7 · about 4 minutes · <span class="u6l02-row">grid row 1: war captives</span></p>
+  <h2>War captives under the Republic: whole peoples sold</h2>
+  <div class="split" style="--cols:1.2fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · a Greek geographer, citing an earlier historian</div>
+        <p class="quote sm">Polybius says that Paulus, after his subjection of Perseus and the Macedonians, destroyed seventy cities of the Epeirotes … and reduced to slavery one hundred and fifty thousand people.</p>
+        <p class="prov">Strabo (born about 64 BCE), <i>Geography</i> 7.7.3, early 1st century CE, citing the historian Polybius on the Roman general Paulus in Epirus (north-western Greece), 167 BCE · trans. H. L. Jones (Loeb, 1924)</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · a Roman general’s own account</div>
+        <p class="quote sm">… then Caesar sold as one lot the booty of the town. The purchasers furnished a return to him of three-and-fifty thousand persons.</p>
+        <p class="prov">Julius Caesar, <i>Gallic War</i> 2.33, written in the 50s BCE, on a town of the Aduatuci, a people of northern Gaul, captured in 57 BCE · trans. H. J. Edwards (Loeb, 1917)</p>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card quiet u6l02-hist"><div class="k">A modern historian · Walter Scheidel (2011)</div>
+        <p class="body">He calls Polybius’s 150,000 “the largest recorded tally for a single operation that may bear some resemblance to reality”, and warns that while such reports “may well be exaggerated, they nevertheless cumulatively understate the actual scale of slave-making”: many wars were never counted at all.</p></div>
+      <p class="qprompt">Is each number a count, a claim or an estimate? What can these sources not tell us?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then check your answer"><p class="body">Both are ancient <b>claims</b>. Caesar’s 53,000 comes from the buyers’ return, so it is closer to a count, but it reaches us through his own account of his victories. Polybius’s 150,000 reaches us second-hand, through Strabo. Neither can tell us how many people Rome enslaved in all, or who the captives were and what happened to them after the sale.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Read and note" data-title="War captives under the emperors" data-kind="notes">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow">Step 2 · Read and note · source set 2 of 7 · about 3 minutes · <span class="u6l02-row">grid row 1: war captives</span></p>
+  <h2>War captives under the emperors: fewer wars, still captives</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · a Jewish commander who went over to Rome</div>
+        <p class="quote sm">… the number of those that were carried captive during this whole war was collected to be ninety-seven thousand …</p>
+        <p class="prov">Josephus, who fought the Romans in Galilee, surrendered, and saw the siege of Jerusalem from the Roman side, <i>Jewish War</i> 6.420 (6.9.3), written about 75 CE, on the war in Judaea that began in 66 CE · trans. W. Whiston (1895 printing), Perseus Digital Library</p>
+      </div>
+      <div class="u6l02-coin"><figure class="figure contain"><img src="images/u6l02-vespasian-judaea-capta-sestertius.jpg" alt="A bronze coin of the emperor Vespasian, about 71 CE: his head (left), and (right) a captive man with his hands tied and a mourning woman under a palm tree, with the words IVDEA CAPTA, ‘Judaea captured’" loading="lazy"><figcaption>A bronze coin of the emperor Vespasian, about 71 CE: his head (left), and (right) a captive man with his hands tied and a mourning woman under a palm tree, with the words IVDEA CAPTA, ‘Judaea captured’ — <span class="cr">Photo: Classical Numismatic Group, Inc. (cngcoins.com) · CC BY-SA 2.5</span></figcaption></figure></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet u6l02-hist"><div class="k">A modern historian · Walter Scheidel (2011)</div>
+        <p class="body">Under the emperors, he argues, “the average annual intake must have dropped significantly below late Republican levels”, because big wars of conquest were rarer, yet “military endeavours continued to make a substantial contribution to the Roman slave supply.”</p></div>
+      <p class="qprompt">Did war stop supplying enslaved people once emperors ruled? Use the coin and Josephus.</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then check your answer"><p class="body">No. A war could still enslave very large numbers: Josephus reports 97,000 captives from the war in Judaea, and Rome celebrated that victory on its coins. But Scheidel argues that the yearly number taken in war must have fallen well below late Republican levels, because large wars of conquest were less frequent, even though no ancient statistics allow it to be counted.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Read and note" data-title="Pirates and the Delos market" data-kind="notes">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow">Step 2 · Read and note · source set 3 of 7 · about 4 minutes · <span class="u6l02-row">grid row 2: pirates and the trade</span></p>
+  <h2>Pirates and the Delos market</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · a Greek geographer on the pirates of Cilicia</div>
+        <p class="quote sm">The exportation of slaves induced them most of all to engage in their evil business, since it proved most profitable; for not only were they easily captured, but the market, which was large and rich in property, was not extremely far away, I mean Delos, which could both admit and send away ten thousand slaves on the same day; whence arose the proverb, “Merchant, sail in, unload your ship, everything has been sold.” The cause of this was the fact that the Romans, having become rich after the destruction of Carthage and Corinth, used many slaves …</p>
+        <p class="prov">Strabo, <i>Geography</i> 14.5.2, early 1st century CE, on pirates from Cilicia (modern southern Turkey) after Rome destroyed Carthage and Corinth in 146 BCE · trans. H. L. Jones (Loeb, 1929)</p>
+      </div>
+      <div class="card quiet u6l02-hist"><div class="k">A modern historian · Walter Scheidel (2011)</div>
+        <p class="body">This is “a single hyperbolic passage” (an exaggerated one), and “ten thousand” translates a Greek word that could simply mean “very many”. Piracy “undoubtedly contributed”, but “it is hard to assess the relative significance of this source.”</p></div>
+    </div>
+    <div class="card"><div class="k">Check · A, B, C or D?</div>
+      <p class="body">Strabo says Delos “could both admit and send away ten thousand slaves on the same day”. What kind of number is this?</p>
+      <div class="veil-parts" data-veil="Choose first — then check your answer">
+        <ol class="opts">
+          <li><span class="n">A</span><span>a count of the people sold at the market on one day</span></li>
+          <li id="u6l02-delosB"><span class="n">B</span><span>a boast about how many people the market could handle</span></li>
+          <li><span class="n">C</span><span>a total taken from a Roman record of the market’s sales</span></li>
+          <li><span class="n">D</span><span>a modern historian’s estimate of the market’s trade</span></li>
+        </ol>
+        <i class="reveal" data-mark="#u6l02-delosB" hidden></i>
+        <div class="note vp reveal" data-code="evidence"><div class="k">B: a boast of capacity, not a count</div><p class="body">Strabo says the market <i>could</i> handle that many: a claim about its size, not a record of any day’s sales. <b>A</b> misreads “could”. <b>C</b>: no such record survives; the number is Strabo’s. <b>D</b>: Strabo is an ancient writer, not a modern estimate.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Read and note" data-title="The trade: how people were moved and sold" data-kind="notes">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow">Step 2 · Read and note · source set 4 of 7 · about 2½ minutes · <span class="u6l02-row">grid row 2: pirates and the trade</span></p>
+  <h2>The trade: how captives became merchandise</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <ol class="keylist">
+      <li><span class="num">1</span><span class="t">Dealers followed the armies</span><span class="d">Scheidel (2011): “It appears that merchants often followed Roman armies and bought up newly captured slaves on the spot.”</span></li>
+      <li><span class="num">2</span><span class="t">Markets in great cities</span><span class="d">People were sold in “established centres of exchange”, “such as Rome, Ephesus and, perhaps most famously, the island of Delos” (Scheidel), and in small local sales.</span></li>
+      <li><span class="num">3</span><span class="t">How many reached Italy?</span><span class="d">Scheidel’s own estimate, offered “for what it is worth”: perhaps 10,000–20,000 people a year were brought into Italy in the 2nd and 1st centuries BCE. No ancient source counts them.</span></li>
+      <li><span class="num">4</span><span class="t">Demand drove supply</span><span class="d">Strabo’s proverb, “Merchant, sail in, unload your ship, everything has been sold”: buyers in a rich Rome paid, so raiders and traders supplied.</span></li>
+    </ol>
+    <div class="stack">
+      <p class="qprompt">Is the trade itself a way of becoming enslaved? Explain.</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then check your answer"><p class="body">Not on its own. The trade moved people who had already been enslaved, by war, pirates, birth or exposure, to buyers far from home. But it mattered to most routes, because the money buyers paid made raiding and selling people profitable (Strabo 14.5.2).</p></div>
+      <div class="card quiet sm"><div class="k">In your grid</div><p class="body">Add the trade to row 2: dealers, markets (Rome, Ephesus, Delos), and Scheidel’s hedged estimate for Italy.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Read and note" data-title="Born into slavery: vernae" data-kind="notes">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow">Step 2 · Read and note · source set 5 of 7 · about 3½ minutes · <span class="u6l02-row">grid row 3: birth (vernae)</span></p>
+  <h2>Born into slavery: the child follows the mother</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · a Roman law textbook</div>
+        <p class="quote sm">Consistently herewith the offspring of a female slave and a freeman is by jus gentium a slave, the offspring of a freewoman and a slave is free.</p>
+        <p class="prov">Gaius, a Roman legal expert, <i>Institutes</i> 1.82, a textbook of Roman law, about 160 CE · trans. E. Poste, rev. E. A. Whittuck (Oxford, 1904). <i>Jus gentium</i>: <span class="nq">“the law of nations”</span>, rules Romans thought all peoples shared.</p>
+      </div>
+      <div class="card quiet u6l02-hist"><div class="k">A modern historian · Walter Scheidel (2011)</div>
+        <p class="body">No source counts <i>vernae</i>, so he calculates. Over time, he argues, “the relative significance of capture in war had to be gradually eclipsed by natural reproduction”: for “mathematical reasons alone, it is hard to imagine that it was not at least as important as all other sources of slaves combined.” But he warns: “The nature of the evidence rules out more precise estimates.”</p></div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Gaius says a child’s status follows the mother’s. Why does that matter for how many people were born enslaved, and what can his law not show?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then check your answer"><p class="body">As a rule, a child born to an enslaved woman was enslaved, whoever the father was, so slavery could renew itself without any war: the more enslaved women there were, the more children were born into slavery. But Gaius states a rule, not a number: he cannot show how many <i>vernae</i> there were, and Scheidel’s view rests on calculation, not records.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Read and note" data-title="Exposure: babies raised in slavery" data-kind="notes">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow">Step 2 · Read and note · source set 6 of 7 · about 3½ minutes · <span class="u6l02-row">grid row 4: exposure</span></p>
+  <h2>Exposure: free-born babies raised in slavery</h2>
+  <div class="split" style="--cols:1.2fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · a governor asks the emperor</div>
+        <p class="quote sm">A very considerable question, Sir, in which the whole province is interested, has been lately started, concerning the state and maintenance of what are called foundlings.</p>
+        <p class="prov">Pliny the Younger, governor of Bithynia (north-western Turkey) for the emperor Trajan, <i>Letters</i> 10.65, probably about 111–113 CE: an official letter, probably published after Pliny’s death · trans. W. Melmoth, rev. W. M. L. Hutchinson (Loeb, 1915)</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · the emperor’s reply</div>
+        <p class="quote sm">The question concerning free-born persons who have been exposed as infants and reared in slavery by those who took them up, has been frequently discussed … I am of opinion therefore, that those who desire emancipation upon this ground should not be debarred from publicly asserting their freedom, nor be obliged to purchase it by repaying the cost of their maintenance.</p>
+        <p class="prov">Trajan to Pliny, <i>Letters</i> 10.66 · same translation</p>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card quiet u6l02-hist"><div class="k">A modern historian · Walter Scheidel (2011)</div>
+        <p class="body">“While impossible to quantify, this practice may conceivably have been the leading domestic source of freeborn slaves in the mature empire”: that is, of people born free and then enslaved inside the empire (not children born to enslaved mothers), once its wars of conquest had slowed.</p></div>
+      <p class="qprompt">What does Trajan’s reply show, and what can it not show?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then check your answer"><p class="body">It shows that free-born babies were exposed and then raised in slavery often enough for the question to be “frequently discussed”, and that Trajan let them claim freedom without repaying their upkeep. It cannot show how many there were, how many ever won their freedom, or how the foundlings felt, and Trajan’s ruling covers only one province.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Read and note" data-title="Self-sale and debt" data-kind="notes">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow">Step 2 · Read and note · source set 7 of 7 · about 3 minutes · <span class="u6l02-row">grid row 5: self-sale and debt</span></p>
+  <h2>Self-sale and debt: free people losing their freedom</h2>
+  <div class="split" style="--cols:1.2fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Roman law</div>
+        <p class="quote sm">… by the civil law, a man over twenty years of age becomes a slave by allowing himself to be sold in order to have a share in the purchase-money; by the jus gentium, people own as slaves those who are captured from their enemies or who are born from their female slaves.</p>
+        <p class="prov">Marcianus, a Roman legal expert writing in the early 3rd century CE (just after our period), quoted in Justinian’s <i>Digest</i> 1.5.5.1 (compiled 533 CE) · trans. C. H. Monro (Cambridge, 1904)</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · a Greek historian, on 104 BCE</div>
+        <p class="quote sm">… Marius sent to Nicomedes, the king of Bithynia, requesting assistance. The king replied that the majority of the Bithynians had been seized by tax farmers and were now in slavery in the Roman provinces.</p>
+        <p class="prov">Diodorus of Sicily, <i>Library of History</i> 36.3.1–2, written about 60–30 BCE; Book 36 survives only in excerpts. The senate then decreed that “no citizen of an allied state should be held in slavery in a Roman province” · trans. F. R. Walton (Loeb, 1967)</p>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card quiet u6l02-hist"><div class="k">A modern historian · Walter Scheidel (2011)</div>
+        <p class="body">The law aimed at fraud: a free man who pretended to be enslaved, let a dealer sell him, then reclaimed his freedom and took a share of the price, was punished by being enslaved in fact. Genuine self-sale may have happened, for a career and later freedom, but its weight “was presumably minimal”. Enslavement for debt “is a particularly shadowy issue”: he reads the Bithynian complaint as a hint that it may have mattered more than our sources show.</p></div>
+      <p class="qprompt">How much do self-sale and debt add to the picture?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then check your answer"><p class="body">They show that free people inside Rome’s world could also lose their freedom, through the law or through seizure by tax farmers, perhaps over unpaid taxes or debts. But no source shows how common either was: Scheidel calls self-sale “presumably minimal”, while debt is “a particularly shadowy issue” that may have been larger than the sources record. Diodorus reports a king’s reply to a request for troops, and the king may have had reason to exaggerate.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Read and note" data-title="Notes: check your grid" data-kind="notes">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint · about 1½ minutes · cue: what can this source not tell us?</p>
+  <h2>Check your grid: five ways, and what each source cannot show</h2>
+  <div class="cornell veil-parts" data-veil="Fill your grid first — then show the model notes">
+    <div class="ch"><span><b>U6 L2 · Where did enslaved people come from?</b></span><span>evidence · date · cannot show</span></div>
+    <div class="row"><div class="cq">1 · War captives: what can these sources not tell us?</div>
+      <div class="nts reveal">Polybius in Strabo 7.7.3: 150,000 from Epirus, 167 BCE <span class="sep">·</span> Caesar 2.33: 53,000 Aduatuci by the buyers’ return, 57 BCE <span class="sep">·</span> Josephus: 97,000 from the war in Judaea, from 66 CE <span class="sep">·</span> cannot show: the total, or the captives’ own lives; the numbers are claims</div></div>
+    <div class="row"><div class="cq">2 · Pirates and the trade: what can these sources not tell us?</div>
+      <div class="nts reveal">Strabo 14.5.2: Cilician pirates sold captives at Delos after 146 BCE; “ten thousand … on the same day” = a boast of capacity <span class="sep">·</span> Scheidel: dealers followed armies; markets at Rome, Ephesus, Delos; perhaps 10,000–20,000 a year into Italy <span class="sep">·</span> cannot show: how many, or how much piracy mattered</div></div>
+    <div class="row"><div class="cq">3 · Birth (vernae): what can this source not tell us?</div>
+      <div class="nts reveal">Gaius 1.82, about 160 CE: a child follows the mother’s status <span class="sep">·</span> Scheidel: by calculation, probably at least as important as all other sources together, and more important over time <span class="sep">·</span> cannot show: any count of <i>vernae</i></div></div>
+    <div class="row"><div class="cq">4 · Exposure: what can these sources not tell us?</div>
+      <div class="nts reveal">Pliny 10.65 and Trajan 10.66, early 2nd century CE: free-born foundlings raised in slavery in Bithynia may claim freedom without repaying their upkeep <span class="sep">·</span> cannot show: how many, or how other provinces ruled; Scheidel: “impossible to quantify”</div></div>
+    <div class="row"><div class="cq">5 · Self-sale and debt: what can these sources not tell us?</div>
+      <div class="nts reveal">Digest 1.5.5.1 (Marcianus, early 3rd century CE): a man over twenty sold to share the price <span class="sep">·</span> Diodorus 36.3: Bithynians seized by tax farmers, 104 BCE <span class="sep">·</span> cannot show: how common; Scheidel: self-sale “presumably minimal”, debt “a particularly shadowy issue”</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Write" data-title="Writing focus: the explanation paragraph" data-kind="notes">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow">Step 3 · Writing focus · self-directed card · 6 minutes · read → cover and rewrite → check</p>
+  <h2>Writing focus: the explanation paragraph</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+    <div class="card accent"><div class="k">I do · read the card (1 minute)</div>
+      <p class="body">The rule in one line: <b>answer</b> → <b>reason + evidence</b> → <b>reason + evidence</b> → <b>weigh</b> (which reason mattered most, and why).</p>
+      <p class="small">Worked example · written for this lesson · on a different question: why did Delos grow into a great slave market?</p>
+      <p class="quote sm model" data-booklet="model">Delos probably grew into a great slave market mainly because Rome’s wealth after 146 BCE created demand, although the pirates’ raiding supplied it (Strabo 14.5.2). Strabo explains that the Romans, ‘having become rich after the destruction of Carthage and Corinth, used many slaves’, which meant that buyers with money were ready to pay. At the same time, Cilician pirates found that selling captives ‘proved most profitable’, and Delos was near enough for them to sell the people they seized. Of these reasons, demand mattered more, because, as Strabo tells it, the profit from selling captives was what ‘induced them most of all’ to turn to piracy.</p>
+    </div>
+      <div class="card quiet"><div class="k">Apply · in today’s task</div>
+        <p class="body">Begin your paragraph with the frame <span class="nq">“Between about 200 BCE and 200 CE, people became enslaved mainly through …, although …”</span> Your Writing toolkit (booklet pages 3–4): the explanation paragraph.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card"><div class="k">We do · cover it and rewrite it (3½ minutes)</div>
+        <p class="body">Cover the model. In your booklet, rewrite it from memory: not word for word, but all four moves in order. Then uncover the model and check that yours has all four moves (on a device, the back of the card lists them).</p>
+        <div class="note reveal" data-code="evidence" data-veil="Rewrite it first — then show the back of the card"><div class="k">The back of the card · the four moves</div>
+          <ol class="u6l02-moves">
+            <li><b>Answer</b>, with “mainly because … although …”: demand, qualified by supply.</li>
+            <li><b>Reason 1 + evidence</b>: Rome’s wealth, with a short quotation from Strabo.</li>
+            <li><b>Reason 2 + evidence</b>: the pirates’ profits and the short distance to Delos.</li>
+            <li><b>Weigh</b>: <span class="nq">“Of these reasons, demand mattered more, because …”</span></li>
+          </ol>
+          <p class="body">Did yours keep all four moves, in order? Keep its hedge (<i>probably</i>), and quote briefly and exactly.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Write" data-title="You do: deconstruct the question">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow">Step 4 · Your paragraph · 3 minutes · deconstruct the question first, then check</p>
+  <h2><b>Explain</b> the main ways people became enslaved in the Roman world, c. 200 BCE – 200 CE.</h2>
+  <div class="split" style="--cols:1.2fr 1fr">
+    <div class="card accent"><div class="k">Everyone · fill the four steps in your booklet</div>
+      <div class="veil-parts" data-veil="Fill the four steps first — then check them">
+        <dl class="u6l02-dq">
+          <dt>Verb</dt><dd><span class="vp reveal"><b>explain</b>: NESA, ‘Relate cause and effect. Make the relationships between things evident. Provide why and/or how.’ Department advice: show how people became enslaved, and which way mattered most</span></dd>
+          <dt>Topic</dt><dd><span class="vp reveal">the main ways people became enslaved: how free people lost their freedom, and how children were born into slavery</span></dd>
+          <dt>Limits</dt><dd><span class="vp reveal">the Roman world; about 200 BCE to 200 CE (so: when?); the <i>main</i> ways, not every way</span></dd>
+          <dt>Do</dt><dd><span class="vp reveal">one explanation paragraph: answer (the main way, qualified) → way + evidence → way + evidence → weigh which mattered most, and when</span></dd>
+        </dl>
+      </div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Check first: what does this question ask you to do?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then check your answer"><p class="body">Explain <i>how</i> people became enslaved and say <i>which way mattered most</i>, with a qualification (when, or how sure we can be), using evidence with its source for at least two ways. Not a list of all five ways, and not a story.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Write" data-title="You do: write your paragraph">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow">Step 4 · Your paragraph · 14 minutes · press K for a timer, or watch the clock</p>
+  <h2><b>Explain</b> the main ways people became enslaved in the Roman world, c. 200 BCE – 200 CE.</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · one explanation paragraph, in your booklet</div>
+        <ol class="body">
+          <li><b>Answer:</b> name the way that mattered most, and qualify it with “although …” (when? how sure?).</li>
+          <li><b>Way + evidence:</b> explain it with a source from your grid, naming who wrote it and when.</li>
+          <li><b>Another way + evidence:</b> the same, for a second way.</li>
+          <li><b>Weigh:</b> which mattered most, and when? “Of these, … mattered most, because …”</li>
+        </ol>
+        <p class="body">Say ‘enslaved people’; use ‘slave’ only inside a quotation. Treat every ancient number as a claim.</p></div>
+      <div class="card quiet sm"><div class="k">Extension · if you finish</div><p class="body">Compare Strabo’s “ten thousand … on the same day” with the buyers’ return of 53,000 in Caesar: what kind of number is each, and how should a historian use it?</p></div>
+    </div>
+    <div class="card quiet sm"><div class="k">Support</div>
+      <p class="body">Frame for your first sentence: <span class="nq">“Between about 200 BCE and 200 CE, people became enslaved mainly through …, although …”</span></p>
+      <p class="body">Frame for your weigh: <span class="nq">“Of these, … mattered most, because …”</span></p>
+      <p class="body">Word bank:</p>
+      <div class="u6l02-bank"><span>captive</span><span>pirate</span><span>verna</span><span>exposed</span><span>foundling</span></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Write" data-title="Summary" data-kind="notes">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each, at the bottom of your Cornell page</div>
+        <ol class="body">
+          <li>What were the ways people became enslaved, and what moved them to buyers?</li>
+          <li>Why must ancient numbers be read as claims?</li>
+          <li>How does one modern historian weigh the ways, and how sure can he be?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Write yours first — then show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Between about 200 BCE and 200 CE, people became enslaved through capture in war, seizure by pirates, birth to an enslaved mother, exposure as babies, and, in ways the sources barely record, self-sale or debt, while dealers and markets such as Delos moved them to buyers. Ancient writers give large figures, such as Polybius’s 150,000 from Epirus and Strabo’s ‘ten thousand’ at Delos, but these are claims, not counts. The modern historian Walter Scheidel argues that birth gradually overtook war as the main source, but he stresses that the evidence rules out precise estimates.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> War: three numbers, three claims</label></li>
+        <li><label><input type="checkbox"> Pirates, Delos and the trade</label></li>
+        <li><label><input type="checkbox"> Birth: the child follows the mother</label></li>
+        <li><label><input type="checkbox"> Exposure: Pliny and Trajan</label></li>
+        <li><label><input type="checkbox"> Self-sale and debt</label></li>
+        <li><label><input type="checkbox"> What each source cannot show</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Check: self-check and hand in" data-kind="intro">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow">Step 5 · Check and hand in · 3 minutes</p>
+  <h2>Check your paragraph against the card’s three points</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="card accent"><div class="k">Tick each one you can find in your paragraph</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> <span>My first sentence names the way that mattered most, and qualifies it (when, or how sure).</span></label></li>
+        <li><label><input type="checkbox"> <span>I explain at least two ways, each with a source and who wrote it, and when.</span></label></li>
+        <li><label><input type="checkbox"> <span>I weigh them: which mattered most, and why.</span></label></li>
+      </ul>
+      <p class="body">Then underline one place to improve. Write your exit ticket next, then <b>hand in your grid, your paragraph and your ticket together</b>.</p></div>
+    <div class="note reveal" data-code="evidence" data-veil="After you have written — show what a strong paragraph includes"><div class="k">A strong paragraph includes</div><p class="body">one main way and a real qualification (a period, or a limit of the evidence); evidence with provenance for each way it uses; ancient numbers written as claims (<span class="nq">“Caesar reports …”</span>), and any modern estimate given its owner and its hedge (<span class="nq">“Scheidel argues that perhaps …”</span>); a weigh sentence that says why one way mattered more; ‘enslaved people’ throughout.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 3 minutes · then 1 minute on your “I can” statements</p>
+  <h2>Finish the sentence</h2>
+  <div class="card accent"><p class="lead nq">“The way of becoming enslaved I am least sure about is … because …”</p></div>
+  <div class="note reveal" data-code="evidence" data-veil="After you hand it in — show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">one way, and a reason tied to the evidence: for example, that no source counts it, that the only ruling is for one province, or that the number is a boast. Then tick the “I can” statements you can do and circle the one you are least sure of.</p></div>
+  <p class="small"><b>Next lesson:</b> how many enslaved people were there, and why can no one count them?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u6l02-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Strabo says that 10,000 enslaved people were sold at Delos every day.</span>
+      <span class="sol no reveal">False <span class="why">— he says Delos “could” admit and send away ten thousand on the same day: a boast of capacity, not a count.</span></span></li>
+    <li><span class="n">2</span><span>Under Roman law, the child of an enslaved mother was born enslaved, even if the father was free.</span>
+      <span class="sol reveal">True <span class="why">— Gaius 1.82 (about 160 CE): the child follows the mother’s status.</span></span></li>
+    <li><span class="n">3</span><span>Caesar’s 53,000 Aduatuci is his own guess.</span>
+      <span class="sol no reveal">False <span class="why">— he says “the purchasers” furnished the figure: closer to a count, but it reaches us through his own account.</span></span></li>
+    <li><span class="n">4</span><span>Trajan ruled that foundlings raised in slavery had to repay the cost of their upbringing before they could claim freedom.</span>
+      <span class="sol no reveal">False <span class="why">— they were not to be obliged to repay “the cost of their maintenance” (Letters 10.66).</span></span></li>
+    <li><span class="n">5</span><span>Wars stopped producing enslaved people once emperors ruled.</span>
+      <span class="sol no reveal">False <span class="why">— Josephus reports 97,000 captives from the war in Judaea; Scheidel argues the yearly intake fell but stayed “substantial”.</span></span></li>
+    <li><span class="n">6</span><span>Scheidel thinks self-sale was a major source of enslaved people.</span>
+      <span class="sol no reveal">False <span class="why">— he calls its weight “presumably minimal”.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — numbers: claims, counts and estimates" data-kind="practice">
+<div class="wrap prac u6l02-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing · numbers</p>
+  <h2>Claims, counts and estimates</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · Two ancient numbers (extension)</div>
+        <p class="body">Compare Strabo’s “ten thousand … on the same day” with the buyers’ return of 53,000 in Caesar: what kind of number is each, and how should a historian use it?</p></div>
+      <div class="src reveal" data-veil="Write yours first — then show a model answer"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Strabo’s ‘ten thousand’ is a boast about what the Delos market could handle, written long after the market’s heyday and, as Scheidel notes, in a word that could simply mean ‘very many’, so a historian can use it only as evidence that Delos was famous for a very large trade. Caesar’s 53,000 is a figure for one sale, which he says came from the buyers’ own return: it is closer to a count, but it reaches us through his account of his own victories, so a historian should treat it as one reported total for one town, not as a guide to how many people were enslaved in Gaul.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 2 · Attribute and hedge an estimate</div>
+        <p class="body">Rewrite this sentence so that it names its owner and matches its certainty to the evidence: <span class="nq">“Every year 15,000 slaves were brought to Italy.”</span></p></div>
+      <div class="src reveal" data-veil="Write yours first — then show a model answer"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Walter Scheidel has argued that perhaps 10,000–20,000 enslaved people a year were brought into Italy in the 2nd and 1st centuries BCE, an estimate he offers only ‘for what it is worth’.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u6l02-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Name the five ways people became enslaved in this lesson, with one source for each.
+      <span class="sol reveal">War (Caesar 2.33; Polybius in Strabo 7.7.3; Josephus) · pirates (Strabo 14.5.2) · birth (Gaius 1.82) · exposure (Pliny 10.65 and Trajan 10.66) · self-sale and debt (Digest 1.5.5.1; Diodorus 36.3).</span></li>
+    <li>Why is Strabo’s Delos figure not a count?
+      <span class="sol reveal">He says the market “could” handle ten thousand on the same day: a boast of capacity, in a word that could mean “very many” (Scheidel).</span></li>
+    <li>What does Gaius 1.82 say, and why does it matter?
+      <span class="sol reveal">A child followed the mother’s status, so, as a rule, a child born to an enslaved woman was enslaved: slavery could renew itself without war.</span></li>
+    <li>What did Trajan decide about foundlings in Bithynia?
+      <span class="sol reveal">Free-born people exposed as babies and raised in slavery could claim their freedom without repaying the cost of their upbringing.</span></li>
+    <li>What does the trade explain that the five ways cannot?
+      <span class="sol reveal">How enslaved people were moved and sold: dealers following armies, and markets at Rome, Ephesus and Delos. Buyers’ money made raiding profitable.</span></li>
+    <li>On Scheidel’s hedged view, how did the balance between war and birth change over the period?
+      <span class="sol reveal">Birth gradually overtook war as the main source, though the evidence “rules out more precise estimates”.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u6l02-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u6l02-cite"><div class="k">Written sources</div>
+      <p class="small">Strabo, <i>Geography</i> 7.7.3 and 14.5.2: trans. H. L. Jones (Loeb, vol. III, 1924, and vol. VI, 1929), LacusCurtius (<a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/7G*.html">Book 7</a>, <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/14E*.html">Book 14</a>; public domain). Caesar, <i>Gallic War</i> 2.33: trans. H. J. Edwards (Loeb, 1917), <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Caesar/Gallic_War/2*.html">LacusCurtius</a> (public domain). Josephus, <i>Jewish War</i> 6.420: trans. W. Whiston (1895 printing), <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0148">Perseus Digital Library</a> (CC BY-SA 3.0 US). Gaius, <i>Institutes</i> 1.82: trans. E. Poste, 4th edn rev. E. A. Whittuck (Oxford, 1904), <a href="https://archive.org/details/gaiinstitutiones00gaiuuoft">Internet Archive</a> (public domain). <i>Digest</i> 1.5.5.1: trans. C. H. Monro, <i>The Digest of Justinian</i>, vol. 1 (Cambridge, 1904), <a href="https://archive.org/details/digestofjustinia01monruoft">Internet Archive</a> (public domain). Pliny the Younger, <i>Letters</i> 10.65–66: trans. W. Melmoth, rev. W. M. L. Hutchinson (Loeb, vol. II, 1915), <a href="https://archive.org/details/letterswithengli02plinuoft">Internet Archive</a> (public domain). Diodorus of Sicily, <i>Library of History</i> 36.3.1–2: trans. F. R. Walton (Loeb, vol. XII, 1967), quoted briefly.</p>
+      <p class="small">W. Scheidel, <span class="nq">“The Roman slave supply”</span>, in K. Bradley and P. Cartledge (eds), <i>The Cambridge World History of Slavery</i>, vol. 1 (Cambridge University Press, 2011), pp. 287–310, quoted briefly. Facts: Wikipedia (“Strabo”, “The Jewish War”, “Aelius Marcianus”, “Publicani”); the coin’s date from the dealer’s record (Classical Numismatic Group, Triton V, lot 1914). The NESA <i>Glossary of key words</i> (definitions quoted word for word).</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet u6l02-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>The island of Delos from Mount Kynthos: the ruins of the ancient town and the harbour (photographed 2013)</b> · Photo: Olaf Tausch · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Delos_Arch%C3%A4ologische_Ausgrabungsst%C3%A4tte_01.jpg">source</a></li><li><b>Bronze sestertius of the emperor Vespasian, ‘Judaea Capta’ issue, about 71 CE</b> · Photo: Classical Numismatic Group, Inc. (cngcoins.com) · <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a> · <a href="https://commons.wikimedia.org/wiki/File:Sestertius_-_Vespasiano_-_Iudaea_Capta-RIC_0424.jpg">source</a></li></ul>
+        <p class="small">All images are openly licensed, and were resized or cropped for the web. Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

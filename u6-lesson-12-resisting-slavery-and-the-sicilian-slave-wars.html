@@ -1,0 +1,1768 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U6 L12 · Resisting slavery and the Sicilian slave wars</title>
+<meta name="description" content="Year 11 Ancient History, slavery in ancient Rome: how enslaved people resisted, from hidden sabotage and flight to open revolt, what one Greek writer’s summary of a lost book can and cannot tell us about the First Sicilian slave war, and how to propose causes in sentences that are ranked and hedged to match the evidence.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#8A3A12; --bright:#C2561E; --tint:#FAEBE2; --statement:#8A3A12;
+  --solid:#8A3A12; --soft:#F6D9C8; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#F2B796; --bright:#E07A45; --tint:#3A1D10; --statement:#6E2E0E; --soft:#F6D9C8; } }
+:root[data-theme="dark"]{ --deep:#F2B796; --bright:#E07A45; --tint:#3A1D10; --statement:#6E2E0E; --soft:#F6D9C8; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 6 Lesson 12 only (every class starts u6l12-) */
+
+/* title picture; goals slide syllabus line; credits links */
+.u6l12-cover img{max-height:56vh;}
+.u6l12-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u6l12-cite a{color:var(--deep);}
+
+/* the deconstruction strip above a question (verb · topic · limits · do) */
+.u6l12-dq{display:grid; grid-template-columns:auto 1fr; gap:.2em .8em; margin:0; padding:.5em .9em;
+  border-left:5px solid var(--c-directive); background:var(--w-directive); border-radius:0 8px 8px 0;
+  font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+.u6l12-dq dt{font-weight:700; color:var(--c-directive);}
+.u6l12-dq dd{margin:0;}
+
+/* paragraphs inside a card need a little air */
+.card .body + .body, .card .body + .u6l12-dq, .card .small + .quote, .card .quote + .mq,
+.card .body + .note, .card .body + .small, .card .small + .u6l12-plan, .card .body + .veil-parts{margin-top:.4em;}
+
+/* a word bank */
+.u6l12-bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.u6l12-bank span{border:1px solid var(--c-keyterm); color:var(--c-keyterm); border-radius:999px; padding:.1em .7em;
+  background:var(--w-keyterm); font-size:calc(var(--fs-body)*.8); font-weight:600;}
+
+/* the model plan: five short lines inside the I do card */
+.u6l12-plan{padding:.5em .8em; border-left:4px solid var(--c-keyterm); background:var(--surface); border-radius:0 8px 8px 0;
+  font-style:normal;}
+.u6l12-plan p{margin:.28em 0; line-height:1.38;}
+
+/* tables of voices and answers */
+.u6l12-map td:first-child{font-weight:700;}
+.u6l12-pmap{table-layout:fixed; width:100%;}
+.u6l12-pmap th:nth-child(1){width:17%} .u6l12-pmap th:nth-child(2){width:58%} .u6l12-pmap th:nth-child(3){width:25%}
+.u6l12-gloss{margin:.5em 0 .3em; color:var(--slate);}
+.u6l12-tacnote{margin:.5em 0 0; font-size:calc(var(--fs-body)*.74); color:var(--slate); line-height:1.35;}
+
+
+/* the degree ladder: six rungs, strongest first */
+.u6l12-ladder{list-style:none; margin:.35em 0 .5em; padding:0; display:flex; flex-wrap:wrap; gap:.3em .35em; counter-reset:rung;}
+.u6l12-ladder li{counter-increment:rung; border:1px solid var(--rule); background:var(--surface); border-radius:8px; padding:.15em .6em;
+  font-size:calc(var(--fs-body)*.8); font-weight:600;}
+.u6l12-ladder-v{flex-direction:column; flex-wrap:nowrap;}
+.u6l12-ladder li::before{content:counter(rung) " "; color:var(--slate); font-weight:800; margin-right:.2em;}
+
+/* three sample Judges (the We do vote) and their answers */
+.u6l12-judges{list-style:none; margin:.4em 0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.u6l12-judges li{display:grid; grid-template-columns:1.7em 1fr; gap:.5em; align-items:start; padding:.35em .6em; border:1px solid var(--rule);
+  border-radius:8px; background:var(--surface); font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.u6l12-judges .n{display:inline-grid; place-items:center; width:1.6em; height:1.6em; border-radius:6px; background:var(--solid); color:#fff; font-weight:800;}
+.u6l12-keyrows{margin-top:.4em; display:flex; flex-direction:column; gap:.3em;}
+.u6l12-keyrows .body{margin:0; font-size:calc(var(--fs-body)*.78); line-height:1.36;}
+
+/* the evidence sort */
+.u6l12-sort td:first-child{font-weight:700; white-space:nowrap;}
+.u6l12-sort th:nth-child(1){width:15%} .u6l12-sort th:nth-child(2){width:28%}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u6l12-dense{gap:10px;}
+  html:not(.read) .u6l12-dense h2{font-size:calc(var(--fs-h2)*.84);}
+  html:not(.read) .u6l12-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.38;}
+  html:not(.read) .u6l12-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u6l12-dense .src{padding:10px 16px;}
+  html:not(.read) .u6l12-dense .src .prov{margin-top:.4em; font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u6l12-dense .note{padding:.45em .85em;}
+  html:not(.read) .u6l12-dense .note .body, html:not(.read) .u6l12-dense .card .body,
+  html:not(.read) .u6l12-dense .qprompt{font-size:calc(var(--fs-body)*.78); line-height:1.36;}
+  html:not(.read) .u6l12-dense .card{padding:10px 16px;}
+  html:not(.read) .u6l12-dense .card .k{margin-bottom:.25em;}
+  html:not(.read) .u6l12-dense .keylist{gap:6px;}
+  html:not(.read) .u6l12-dense .keylist li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u6l12-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u6l12-dense .tbl.compact td{padding:.32em .55em;}
+  html:not(.read) .u6l12-dense .tbl th{padding:.4em .6em;}
+  html:not(.read) .u6l12-dense .figure img{max-height:30vh;}
+  html:not(.read) .u6l12-dense .u6l12-dq{font-size:calc(var(--fs-body)*.72); padding:.35em .8em;}
+  html:not(.read) .u6l12-dense .mq{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u6l12-dense .tf li, html:not(.read) .u6l12-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u6l12-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u6l12-dense .prac{gap:6px;}
+  html:not(.read) .u6l12-dense .cornell .cq, html:not(.read) .u6l12-dense .cornell .nts{font-size:calc(var(--fs-body)*.76); padding:.35em .8em;}
+  html:not(.read) .u6l12-dense .checks label{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u6l12-dense .u6l12-bank span{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u6l12-dense .u6l12-plan{font-size:calc(var(--fs-body)*.7); padding:.35em .7em;}
+  html:not(.read) .u6l12-dense .u6l12-tacnote, html:not(.read) .u6l12-dense .u6l12-gloss{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u6l12-dense .opts li{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u6l12-dense .u6l12-ladder li{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u6l12-dense .u6l12-judges li{font-size:calc(var(--fs-body)*.7); padding:.25em .5em;}
+  html:not(.read) .u6l12-dense .u6l12-keyrows .body{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u6l12-dense .u6l12-map{max-height:46vh;}
+}
+
+/* two long extracts on one slide: tighten the answers and sources a little further */
+@media (max-height:820px){
+  html:not(.read) .u6l12-tight .quote.sm{font-size:calc(var(--fs-body)*.68); line-height:1.34;}
+  html:not(.read) .u6l12-tight .note .body{font-size:calc(var(--fs-body)*.72); line-height:1.32;}
+  html:not(.read) .u6l12-tight .qprompt{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u6l12-tight .note{padding:.35em .8em;}
+}
+
+/* the hinge options on the Writing focus card sit closer together */
+@media (max-height:820px){
+  html:not(.read) .u6l12-dense .opts{gap:5px;}
+  html:not(.read) .u6l12-dense .opts li{padding:.28em .6em; line-height:1.28;}
+  html:not(.read) .u6l12-dense .note.vp .body{font-size:calc(var(--fs-body)*.7);}
+}
+
+/* phones (Read mode): the model plan reads at body size */
+@media (max-width:900px){
+  .u6l12-plan{font-size:calc(var(--fs-body)*.8);}
+}
+
+/* the Writing focus slide is the busiest: tighter still */
+@media (max-height:820px){
+  html:not(.read) .u6l12-wf .card .body, html:not(.read) .u6l12-wf .note .body{font-size:calc(var(--fs-body)*.7); line-height:1.3;}
+  html:not(.read) .u6l12-wf .u6l12-plan{font-size:calc(var(--fs-body)*.66);}
+  html:not(.read) .u6l12-wf .u6l12-judges li{font-size:calc(var(--fs-body)*.66);}
+  html:not(.read) .u6l12-wf .u6l12-keyrows .body{font-size:calc(var(--fs-body)*.64);}
+  html:not(.read) .u6l12-wf .mq{font-size:calc(var(--fs-body)*.66);}
+  html:not(.read) .u6l12-wf .u6l12-ladder li{font-size:calc(var(--fs-body)*.64); padding:.08em .5em;}
+  html:not(.read) .u6l12-wf .small{font-size:calc(var(--fs-body)*.62);}
+  html:not(.read) .u6l12-wf .card{padding:8px 14px;}
+}
+
+/* the map with its two numbered pins (the pins are HTML placed on the picture; positions are fractions of the picture) */
+.u6l12-mapwrap{position:relative; display:inline-block; max-width:100%; line-height:0;}
+.u6l12-mapwrap img{width:auto; max-width:100%; height:auto; display:block; max-height:50vh;}
+.u6l12-pin{position:absolute; transform:translate(-50%,-50%); display:grid; place-items:center; width:1.5em; height:1.5em; border-radius:50%;
+  background:var(--solid); color:#fff; font-weight:800; font-size:calc(var(--fs-body)*.8); line-height:1; border:2px solid #fff; box-shadow:0 1px 4px rgba(0,0,0,.45);}
+.u6l12-mapfig{margin:0;}
+@media (max-height:820px){ html:not(.read) .u6l12-dense .u6l12-mapwrap img{max-height:40vh;} }
+@media (max-width:900px){ .u6l12-mapwrap img{max-height:none;} }
+
+/* the spectrum of resistance: four stops from hidden to open */
+.u6l12-spec{list-style:none; margin:.2em 0 .3em; padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:.45em; counter-reset:stop;}
+.u6l12-spec li{counter-increment:stop; border:1px solid var(--rule); border-top:5px solid var(--solid); background:var(--surface); border-radius:8px;
+  padding:.4em .6em; font-size:calc(var(--fs-body)*.78); line-height:1.34;}
+.u6l12-spec li b{display:block; margin-bottom:.15em;}
+.u6l12-arrow{display:flex; justify-content:space-between; font-size:calc(var(--fs-body)*.7); font-weight:700; color:var(--slate); letter-spacing:.04em; text-transform:uppercase; margin:0 .2em;}
+@media (max-width:900px){ .u6l12-spec{grid-template-columns:1fr;} }
+@media (max-height:820px){
+  html:not(.read) .u6l12-dense .u6l12-spec li{font-size:calc(var(--fs-body)*.68); padding:.3em .5em;}
+  html:not(.read) .u6l12-dense .u6l12-arrow{font-size:calc(var(--fs-body)*.6);}
+}
+
+/* the four cause cards (a heading, one line from Diodorus, its section) */
+.u6l12-cards{display:grid; grid-template-columns:1fr 1fr; gap:.5em;}
+.u6l12-cards .card{margin:0;}
+.u6l12-cards .k{text-transform:none; letter-spacing:0;}
+@media (max-width:900px){ .u6l12-cards{grid-template-columns:1fr;} }
+@media (max-height:820px){
+  html:not(.read) .u6l12-dense .u6l12-cards .card .body, html:not(.read) .u6l12-dense .u6l12-cards .quote.sm{font-size:calc(var(--fs-body)*.68); line-height:1.32;}
+  html:not(.read) .u6l12-dense .u6l12-cards .card{padding:7px 12px;}
+}
+
+/* two extracts in one source card, or two lines in one evidence card: a little air between them */
+.u6l12-dense .src .quote.sm + .quote.sm, .u6l12-cards .quote.sm + .quote.sm{margin-top:.55em;}
+
+/* the Writing focus slide: the We do column holds a vote and its answer, so everything in it is a little smaller on short projectors */
+@media (max-height:820px){
+  html:not(.read) .u6l12-wf .opts{gap:3px;}
+  html:not(.read) .u6l12-wf .opts li{font-size:calc(var(--fs-body)*.62); padding:.18em .5em; line-height:1.25;}
+  html:not(.read) .u6l12-wf .quote.sm{font-size:calc(var(--fs-body)*.62); line-height:1.3;}
+  html:not(.read) .u6l12-wf .note.vp{padding:.3em .7em;}
+  html:not(.read) .u6l12-wf .note.vp .body{font-size:calc(var(--fs-body)*.62);}
+  html:not(.read) .u6l12-wf .note.vp .k{font-size:calc(var(--fs-body)*.6); margin-bottom:.1em;}
+  html:not(.read) .u6l12-wf .card .small{font-size:calc(var(--fs-body)*.56);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 12" data-title="Resisting slavery and the Sicilian slave wars" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.05fr .95fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 6 · Slavery in ancient Rome · Lesson 12</p>
+      <h1>Resisting slavery and the Sicilian slave wars</h1>
+      <p class="lead">How did enslaved people resist, from hidden ways to open revolt, and what can a Greek writer’s summary of a lost book tell us about why a war began?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u6l12-cover"><figure class="figure contain"><img src="images/u6l12-ancient-sicily-map.jpg" alt="Sicily on a modern map with ancient place names in Latin: Henna is Enna. The relief and coastline are today’s, so the map shows where places are, not how the island looked in the 130s BCE" loading="lazy"><figcaption>Sicily on a modern map with ancient place names in Latin: Henna is Enna. The relief and coastline are today’s, so the map shows where places are, not how the island looked in the 130s BCE — <span class="cr">Map: Tomisti · CC BY-SA 4.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="Connect: how a freed person presented a new status" data-kind="intro">
+<div class="wrap u6l12-dense">
+  <p class="eyebrow">Connect · 3 minutes · books closed · everyone writes</p>
+  <h2>One way a freed person presented a new status, with evidence</h2>
+  <div class="split" style="--cols:.95fr 1.05fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · two sentences</div>
+        <p class="body">Name <b>one way</b> a freed person presented their new status, and give <b>one piece of evidence</b> from Lesson 11’s Roman reliefs. Say who tells us.</p>
+        <p class="body nq">Frame: “A freed person … by … . The evidence is … , and it comes from …”</p></div>
+      <p class="cue">Today moves from freedom to resistance. Keep asking: who is speaking, when, and from whose sources?</p>
+    </div>
+    <div class="veil-parts" data-veil="Write yours first — then check your sentences">
+      <div class="note vp reveal" data-code="evidence"><div class="k">Check your sentences</div>
+        <ul class="checks">
+          <li><label><input type="checkbox"> <span>It names <b>one</b> way: for example the rods and axes of the freeing ceremony, as the museum label reads them (Philonicus and Demetrius), a married couple shown together (Hermia and Philematium), or a relief dedicated to a patron and patroness (Sarculo and Plutia).</span></label></li>
+          <li><label><input type="checkbox"> <span>It names the relief and says who tells us: the museum’s gallery label, as transcribed on Wikimedia Commons, or the tomb’s own inscription.</span></label></li>
+          <li><label><input type="checkbox"> <span>Its hedges are straight: the label says the tools on the first relief are those of “a smith or moneyer” and of “a carpenter”, only <i>probably</i> their trades, and the stone is broken after <i>patrono</i>.</span></label></li>
+          <li><label><input type="checkbox"> <span>It says what the tomb cannot show: how others saw them, or people too poor for a carved tomb.</span></label></li>
+        </ul></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>analyse everyday resistance and the causes of the Sicilian slave wars</li>
+        <li>propose causes with modality matched to the evidence</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>describe three forms of everyday resistance, with evidence</li>
+        <li>explain Diodorus’s causes of the First Sicilian war and the problems with his account</li>
+        <li>propose causes in hedged, ranked sentences</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u6l12-syl"><b>Syllabus outcomes:</b> AH-11-02 proposes ideas about the varying causes and effects of events and developments · AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-04 recognises causes and effects of events or developments · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U6 L12 · Resisting slavery and the Sicilian slave wars</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; ↔ = compared with)</span></div></div>
+      <div class="row"><div class="cq">Who tells us?</div><div class="nts">flight → Cato 2.2, an owner’s handbook (about 160 BCE) …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A new page</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Phrases, not sentences. Today, for every source: who wrote it, when, and from whose sources.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at the ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: describe, explain, account for. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">One checkpoint today, after the map and Diodorus. The evidence cards in your booklet are your notes for the rest.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u6l12-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for resistance, sources and proposals</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>From the unit list</th><th>Meaning</th></tr>
+      <tr><td>Propose (NESA)</td><td>NESA, <i>Glossary of key words</i>: ‘Put forward (for example a point of view, idea, argument, suggestion) for consideration or action.’ Department advice: put forward causes, ranked and hedged.</td></tr>
+      <tr><td>Hedge</td><td>A word that matches certainty to the evidence: perhaps, probably, on one estimate.</td></tr>
+      <tr><td>Slave wars (servile wars)</td><td>The three large revolts of enslaved people: two in Sicily (ended 132 BCE; 104 to about 100 BCE) and Spartacus’s in Italy (73–71 BCE).</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Everyday resistance</td><td>Ways of resisting slavery that did not need open revolt: working badly on purpose, running away and, more rarely, violence.</td></tr>
+      <tr><td>Round figure</td><td>A number given in round thousands, such as ‘two hundred thousand’. It may be an estimate, a boast or a guess, not a count.</td></tr>
+      <tr><td>Summary (of a lost book)</td><td>A later writer’s short account or copied passages of a book that no longer survives. Diodorus’s books on the slave wars survive only this way.</td></tr>
+      <tr><td>Anachronism</td><td>Something placed in the wrong time, such as describing a later arrangement as if it already existed.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Resistance and the war" data-title="Resistance, from hidden to open" data-kind="notes">
+<div class="wrap u6l12-dense">
+  <p class="eyebrow">1 · Everyday resistance · I do — think aloud · a spectrum, our own way of sorting · 2 minutes</p>
+  <h2>Resistance, from hidden to open</h2>
+  <p class="u6l12-arrow"><span>← hidden</span><span>open →</span></p>
+  <ol class="u6l12-spec">
+    <li class="reveal"><b>1 · Petty sabotage</b>Working badly on purpose or wasting an owner’s goods. No Roman source on our list shows a case. Bradley (1989, p. 33) says the evidence in modern slave societies is “sufficiently extensive” to show it was “a form of resistance to oppression”.</li>
+    <li class="reveal"><b>2 · Flight</b>Owners expected it. Cato lists “slaves have run away” among an overseer’s excuses (2.2); the market edict has the seller declare “a runaway or a vagabond” (Gellius 4.2.1). Bradley (p. 38): “a direct form of resistance”.</li>
+    <li class="reveal"><b>3 · Violence against an owner</b>Rarer in our sources. Pliny 3.14 (Lesson 8) tells of an attack on Larcius Macedo; the reason Pliny gives, “malice”, is his word, not theirs.</li>
+    <li class="reveal"><b>4 · Open revolt</b>The slave wars: two in Sicily (ended 132 BCE; 104 to about 100 BCE) and, next lesson, Spartacus (73–71 BCE).</li>
+  </ol>
+  <div class="split" style="--cols:1fr 1.2fr">
+    <p class="qprompt reveal">Choose one stop. Whose account is it, written when, from whose sources?</p>
+    <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">For flight: Cato wrote a handbook for owners about 160 BCE, and the excuse is the overseer’s as an owner reports it; Gellius, writing in the later 2nd century CE, quotes the market officials’ edict. Both are the words of owners and officials, so we learn what they expected, not how many ran or why. Nothing is in the words of the people who ran.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Resistance and the war" data-title="Flight: Cato 2.2 and the sale edict" data-kind="notes">
+<div class="wrap u6l12-dense u6l12-tight">
+  <p class="eyebrow">1 · Everyday resistance · I do — think aloud · two Roman texts on flight · 1½ minutes</p>
+  <h2>What do two texts say about people running away?</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="src">
+      <div class="k">Source · a farming handbook, on a master’s visit to his farm</div>
+      <p class="quote sm">If the amount of work does not seem satisfactory, the overseer claims that he has done his best, but that the slaves have not been well, the weather has been bad, slaves have run away, he has had public work to do; when he has given these and many other excuses, call the overseer back to your estimate of the work done and the hands employed.</p>
+      <p class="prov">Cato, <i>De Agri Cultura</i> 2.2, about 160 BCE, a handbook of advice to an owner · trans. W. D. Hooper and H. B. Ash (Loeb, 1934)</p>
+    </div>
+    <div class="src">
+      <div class="k">Source · an edict for market officials, quoted by a later writer</div>
+      <p class="quote sm">See to it that the sale ticket of each slave be so written that it can be known exactly what disease or defect each one has, which one is a runaway or a vagabond, or is still under condemnation for some offence.</p>
+      <p class="prov">The edict of the curule aediles (the officials who supervised markets), as Aulus Gellius quotes it in <i>Attic Nights</i> 4.2.1, later 2nd century CE · trans. J. C. Rolfe (Loeb, 1927, rev. 1946)</p>
+    </div>
+  </div>
+  <div class="split" style="--cols:1fr 1.2fr">
+    <p class="qprompt reveal">What does each text show about flight, and what can neither show?</p>
+    <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">Cato shows that an owner expected an overseer to name runaways among his excuses; the edict shows that a seller had to say if a person was “a runaway or a vagabond”. Neither says how many people ran, why, where to, or what happened to them, and neither is in the words of the people who ran.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Resistance and the war" data-title="The First Sicilian war on a map" data-kind="notes">
+<div class="wrap u6l12-dense">
+  <p class="eyebrow">1 · The First Sicilian war · I do — where, and when? · 1½ minutes</p>
+  <h2>Enna and Tauromenium: where the war began and where Rome struck</h2>
+  <div class="split" style="--cols:1.25fr 1fr">
+    <div class="stack">
+      <figure class="figure u6l12-mapfig"><div class="u6l12-mapwrap"><img src="images/u6l12-ancient-sicily-map.jpg" alt="A topographic map of Sicily with ancient place names in Latin. Pin 1 marks Henna, near the middle of the island, and pin 2 marks Tauromenium, on the east coast." loading="lazy"><span class="u6l12-pin" style="left:58.6%; top:39.6%">1</span><span class="u6l12-pin" style="left:83.2%; top:21.8%">2</span></div>
+        <figcaption>Pins 1 and 2 are the lesson’s own. Sicily on a modern map with ancient place names in Latin: Henna is Enna. The relief and coastline are today’s, so the map shows where places are, not how the island looked in the 130s BCE — <span class="cr">Map: Tomisti · CC BY-SA 4.0</span></figcaption></figure>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Enna (Henna on the map)</span><span class="d">Diodorus places the revolt’s beginning here (34/35.2.10), among the people enslaved by Damophilus and by Antigenes.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Tauromenium</span><span class="d">Rupilius, the Roman commander, besieges it and takes it when its citadel is betrayed (2.20–21), then takes Enna “also by betrayal” (2.21). Rupilius was consul in 132 BCE (Walton’s note).</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">The end: 132 BCE</span><span class="d">Bradley (1989, p. 59): “it is certain that the war … came to an end in 132 B.C.”, after “five years or so”.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">The start: unknown</span><span class="d">Bradley: “the very year in which the revolt at Enna took place is unknown”, with every year from 141 to 135 BCE “a possibility”.</span></li>
+    </ol>
+  </div>
+  <div class="split" style="--cols:1fr 1.2fr">
+    <p class="qprompt reveal">Which dates can we be sure of, and which can’t we?</p>
+    <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">The end, 132 BCE, is certain on Bradley’s account. The start is not: any year from 141 to 135 BCE is possible, because Diodorus’s account lacks dates. So “five years or so” is Bradley’s estimate, not a record.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Resistance and the war" data-title="Diodorus on the war’s course: a king, a number and three more revolts" data-kind="notes">
+<div class="wrap u6l12-dense u6l12-tight">
+  <p class="eyebrow">1 · The First Sicilian war · I do — think aloud · the course of the war, in a summary · 2 minutes</p>
+  <h2>Eunus “chosen king”, “two hundred thousand” and revolts elsewhere</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="src">
+      <div class="k">Source · a history of Rome’s empire, as a later writer summarised it</div>
+      <p class="quote sm">Thereupon Eunus was chosen king, not for his manly courage or his ability as a military leader, but solely for his marvels and his setting of the revolt in motion …</p>
+      <p class="quote sm">Before long their band reached a total of two hundred thousand, and in numerous battles with the Romans they acquitted themselves well, and failed but seldom. As word of this was bruited about, a revolt of one hundred and fifty slaves, banded together, flared up in Rome, of more than a thousand in Attica, and of yet others in Delos and many other places.</p>
+      <p class="prov">Diodorus of Sicily, <i>Library of History</i> 34/35.2.14 and 2.18–19, written about 60–30 BCE; the books survive only in summaries, here Photius’s (9th century CE) · trans. F. R. Walton (Loeb vol. XII, 1967)</p>
+    </div>
+    <div class="stack">
+      <ol class="keylist">
+        <li class="reveal"><span class="num">1</span><span class="t">The rebels’ king</span><span class="d">Eunus, a Syrian enslaved at Enna, is “chosen king”. Diodorus gives his reasons, not the rebels’.</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">A round number</span><span class="d">“two hundred thousand” comes after “Before long”, with no date and no count.</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">Revolts elsewhere</span><span class="d">At Rome, in Attica and on Delos, the magistrates “at once disposed of the rebels”.</span></li>
+      </ol>
+      <p class="qprompt reveal">How sure can we be of “two hundred thousand”?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">Not very. It is a round figure in a summary of a lost book. Bradley (1989, p. 64) calls it “the highest figure given by Diodorus”, far above the 70,000 and 60,000 other sources give, and a rebellion of that size “very unlikely”, though “tens of thousands” seems “relatively safe”.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Resistance and the war" data-title="Notes: resistance, the war and the number" data-kind="notes">
+<div class="wrap u6l12-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint · I do · 1 minute · cue: what do the sources say, and how sure are we?</p>
+  <h2>What do the spectrum, the map and Diodorus show?</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U6 L12 · Resisting slavery and the Sicilian slave wars</b></span><span>resistance and the war</span></div>
+    <div class="row"><div class="cq">Describe three forms of everyday resistance, with evidence.</div>
+      <div class="nts reveal">petty sabotage (Bradley: modern evidence) <span class="sep">·</span> flight (Cato 2.2 “slaves have run away”, an overseer’s excuse; the edict “a runaway or a vagabond”) <span class="sep">·</span> violence, rarer (Pliny 3.14: Macedo)</div></div>
+    <div class="row"><div class="cq">Explain what is certain and uncertain about the war’s dates.</div>
+      <div class="nts reveal">ended 132 BCE (certain: Bradley) <span class="sep">·</span> start unknown: any year 141–135 BCE <span class="sep">·</span> Rupilius, consul 132 BCE</div></div>
+    <div class="row"><div class="cq">Explain how sure we can be of “two hundred thousand”.</div>
+      <div class="nts reveal">round figure <span class="sep">·</span> in Photius’s summary of Diodorus <span class="sep">·</span> Bradley: “very unlikely”; “tens of thousands”</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Diodorus" data-title="Diodorus 34/35.2.1–4: the opening" data-kind="notes">
+<div class="wrap u6l12-dense u6l12-tight">
+  <p class="eyebrow">2 · Diodorus · We do — supported reading (1 of 3) · 4 minutes · underline who acts, circle what is done to the enslaved, box what happens next</p>
+  <h2>Diodorus on how the war began: 34/35.2.1–4</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="src">
+      <div class="k">Source · the opening of the account, in a summary</div>
+      <p class="quote sm">The Sicilians, having shot up in prosperity and acquired great wealth, began to purchase a vast number of slaves, to whose bodies, as they were brought in droves from the slave markets, they at once applied marks and brands. … But they treated them with a heavy hand in their service, and granted them the most meagre care, the bare minimum for food and clothing. As a result most of them made their livelihood by brigandage, and there was bloodshed everywhere, since the brigands were like scattered bands of soldiers.</p>
+      <p class="quote sm">The governors (praetores) attempted to repress them, but since they did not dare to punish them because of the power and prestige of the gentry who owned the brigands, they were forced to connive at the pillaging of the province. … The slaves, distressed by their hardships, and frequently outraged and beaten beyond all reason, could not endure their treatment. Getting together as opportunity offered, they discussed the possibility of revolt, until at last they put their plans into action.</p>
+      <p class="prov">Diodorus of Sicily, <i>Library of History</i> 34/35.2.1–4, written about 60–30 BCE; in Photius’s summary (9th century CE) · trans. F. R. Walton (Loeb vol. XII, 1967)</p>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Fill in the table in your booklet: who does Diodorus say acts in each part, and what do they do?</p>
+      <div data-veil="Fill in your table first — then show the answers">
+      <div class="tbl-scroll"><table class="tbl compact u6l12-map">
+        <tr><th>Who acts</th><th>What Diodorus says they do</th></tr>
+        <tr class="reveal"><td>The Sicilian owners</td><td>Buy “a vast number of slaves”, brand them, work them hard and give “the bare minimum for food and clothing”.</td></tr>
+        <tr class="reveal"><td>The enslaved, as brigands</td><td>Most of them “made their livelihood by brigandage”.</td></tr>
+        <tr class="reveal"><td>The governors</td><td>Attempt to repress the brigands, but “did not dare to punish them”.</td></tr>
+        <tr class="reveal"><td>The enslaved, as a group</td><td>Are “distressed by their hardships”, discuss the possibility of revolt and then act.</td></tr>
+      </table></div>
+      </div>
+      <p class="small u6l12-gloss">Diodorus does not quote any of the enslaved people: their feelings and their talk are his report.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Diodorus" data-title="Whose account? Walton’s warning and Bradley" data-kind="notes">
+<div class="wrap u6l12-dense u6l12-tight">
+  <p class="eyebrow">2 · Diodorus · We do — supported reading (2 of 3) · 2 minutes · find the editor’s warning, then follow the chain from the war to us</p>
+  <h2>Whose account, written when, from whose sources?</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · the editor’s note on one sentence of Diodorus</div>
+        <p class="quote sm">Actually, equestrian control of the courts could not have existed before the Gracchan Lex iudiciaria of 122 B.C. The anachronism may derive from the bias of Poseidonius but perhaps goes back to his Roman sources.</p>
+        <p class="prov">F. R. Walton, note to Diodorus 34/35.2.3 (the sentence that the Roman knights judged the governors, so “the magistrates stood in awe of them”), Loeb vol. XII (1967), p. 57</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · a modern historian, on where the account comes from</div>
+        <p class="quote sm">Scholars agree that the source Diodorus followed for the slave wars was Posidonius of Apamea …</p>
+        <p class="quote sm">… his account in turn relied on sources no longer available and not even positively identifiable.</p>
+        <p class="quote sm">… the relevant Diodoran books survive today only in excerpted form …</p>
+        <p class="prov">K. R. Bradley, <i>Slavery and Rebellion in the Roman World, 140 B.C.–70 B.C.</i> (Indiana University Press, 1989), Appendix I, pp. 133–134</p>
+      </div>
+    </div>
+    <div class="stack">
+      <ol class="keylist">
+        <li class="reveal"><span class="num">1</span><span class="t">The war: began 141–135 BCE, ended 132 BCE</span><span class="d">The start year is unknown (Bradley); Rupilius ends it in 132 BCE.</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">Posidonius: about 135–51 BCE</span><span class="d">Bradley’s “probable dates”; his history is lost.</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">Diodorus: wrote about 60–30 BCE</span><span class="d">Some 70 to 100 years after the war, following Posidonius.</span></li>
+        <li class="reveal"><span class="num">4</span><span class="t">Photius: 9th century CE</span><span class="d">His summary is how this book survives.</span></li>
+        <li class="reveal"><span class="num">5</span><span class="t">Walton: 1967</span><span class="d">The translation we read, with the editor’s note.</span></li>
+      </ol>
+      <p class="qprompt reveal">What does the editor warn us about, and how many hands lie between the war and us?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">That Diodorus’s sentence about the knights as judges is an anachronism, which “may derive from the bias of Poseidonius” but “perhaps goes back to his Roman sources”. At least four hands lie between the war and us: Posidonius, Diodorus, Photius and the translator. No enslaved person’s account survives.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Diodorus" data-title="The four evidence cards" data-kind="notes">
+<div class="wrap u6l12-dense u6l12-tight">
+  <p class="eyebrow">2 · Diodorus · We do — evidence cards (3 of 3) · 4 minutes · for each card: “This line says … and leaves out …”</p>
+  <h2>Four things Diodorus describes, line by line</h2>
+  <div class="split" style="--cols:1.35fr 1fr">
+    <div class="u6l12-cards">
+      <div class="card accent"><div class="k">Card 1 · Economic change</div>
+        <p class="quote sm">The Sicilians, having shot up in prosperity and acquired great wealth, began to purchase a vast number of slaves …</p>
+        <p class="small">Diodorus 34/35.2.1</p></div>
+      <div class="card accent"><div class="k">Card 2 · Treatment</div>
+        <p class="quote sm">… granted them the most meagre care, the bare minimum for food and clothing.</p>
+        <p class="quote sm">… distressed by their hardships, and frequently outraged and beaten beyond all reason …</p>
+        <p class="small">Diodorus 34/35.2.2 and 2.4</p></div>
+      <div class="card accent"><div class="k">Card 3 · Leadership and religion</div>
+        <p class="quote sm">Going to Eunus they asked him whether their resolve had the favour of the gods.</p>
+        <p class="small">Diodorus 34/35.2.10</p></div>
+      <div class="card accent"><div class="k">Card 4 · Roman weakness</div>
+        <p class="quote sm">… they did not dare to punish them because of the power and prestige of the gentry who owned the brigands …</p>
+        <p class="small">Diodorus 34/35.2.3</p></div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">For each card, write one sentence: “This line says … and leaves out …”. Then check yours.</p>
+      <div data-veil="Write yours first — then show what each line says and leaves out">
+      <div class="tbl-scroll"><table class="tbl compact u6l12-map">
+        <tr><th>Card</th><th>What the line says, and what it leaves out</th></tr>
+        <tr class="reveal"><td>1</td><td>Newly rich owners bought many enslaved people. It leaves out how many (“a vast number” is no count) and which owners.</td></tr>
+        <tr class="reveal"><td>2</td><td>Harsh treatment, and the enslaved people’s distress. It leaves out their own words: Diodorus reports feelings, and quotes no one.</td></tr>
+        <tr class="reveal"><td>3</td><td>People who had resolved to revolt asked Eunus whether the gods favoured it; Diodorus calls his reply “his usual mummery”. It leaves out whether the plan began with him.</td></tr>
+        <tr class="reveal"><td>4</td><td>Governors did not dare to punish the brigands, because of the owners’ power. It is about the brigandage before the revolt, and Walton’s note says the explanation Diodorus adds next (the knights as judges) is an anachronism.</td></tr>
+      </table></div>
+      </div>
+      <p class="small u6l12-gloss">Nothing here ranks the cards. Whether any of them helped start the war, and how far, is for your own answer.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Writing focus: proposing causes with ranked, hedged claims" data-kind="notes">
+<div class="wrap u6l12-dense u6l12-wf">
+  <p class="eyebrow">3 · You do · Writing focus · 7 minutes · I do → We do → apply</p>
+  <h2>Writing focus: propose a cause, support it, say what would test it</h2>
+  <div class="split" style="--cols:1.4fr 1.4fr .55fr">
+    <div class="card accent"><div class="k">I do · watch</div>
+      <p class="body">NESA, <i>Glossary of key words</i>: <b>propose</b> is ‘Put forward (for example a point of view, idea, argument, suggestion) for consideration or action.’ Moves: <b>claim → support → limit</b>; rank the causes; match each hedge to the evidence.</p>
+      <p class="small">Written for this lesson · a different event (Pedanius, Lesson 8)</p>
+      <div class="quote sm model u6l12-plan" data-booklet="model">
+        <p><b>Question:</b> <i>Propose reasons for the murder of Pedanius Secundus in 61 CE.</i></p>
+        <p><span class="match" data-step="m1">One possible cause</span> was a broken bargain, since Tacitus says the murderer had been “refused his freedom, for which he had made a bargain”; <span class="match" data-step="m2">a second, less certain cause</span> was jealousy, “the jealousy of a love in which he could not brook his master’s rivalry”. <span class="match" data-step="m3">Tacitus offers the two only as alternatives (“either … or”) and does not rank them, so I put the bargain first only because he names it first and gives it a concrete detail, a bargain for freedom; that ranking is my own proposal</span>, and <span class="match" data-step="m4">a source from the enslaved household itself would test it</span>.</p>
+      </div>
+      <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Claim</b>: <span class="nq">‘possible’</span>, not <span class="nq">‘likely’</span></span></p>
+      <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Rank, with a reason</b>: <span class="nq">‘less certain’</span>; named first, with a detail</span></p>
+      <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>Limit</b>: Tacitus does not rank them, so the order is mine</span></p>
+      <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>Limit</b>: what would test it</span></p>
+    </div>
+    <div class="card"><div class="k">We do · vote</div>
+      <p class="body">Pliny 3.14: one student proposes a cause of the attack on Larcius Macedo aloud. Then vote: which hedge best matches the evidence?</p>
+      <p class="quote sm">… there was a haughtiness and severity in his treatment of them …</p>
+      <p class="quote sm">… it is malice, and not reflection that arms such ruffians against their masters.</p>
+      <p class="small">Pliny, <i>Letters</i> 3.14 · trans. Melmoth, rev. Hutchinson</p>
+      <div class="veil-parts" data-veil="Vote first — then show the answer">
+        <ol class="opts">
+          <li><span class="n">A</span><span>Macedo’s severity certainly caused the attack, since Pliny admits it.</span></li>
+          <li id="u6l12-wB"><span class="n">B</span><span>Macedo’s severity may have been one cause, since Pliny admits it.</span></li>
+          <li><span class="n">C</span><span>Macedo’s severity may possibly perhaps be a cause, since Pliny admits it.</span></li>
+          <li><span class="n">D</span><span>Macedo’s severity was not a cause, since Pliny blames “malice”.</span></li>
+        </ol>
+        <i class="reveal" data-mark="#u6l12-wB" hidden></i>
+        <div class="note vp reveal"><div class="k">B: the hedge matches the evidence</div><p class="body">Pliny admits severity but names <b>malice</b>, so <span class="nq">“may have been one cause”</span> fits. <b>A</b> overclaims. <b>C</b> stacks hedges. <b>D</b> overclaims the other way: “malice” is an owner’s word, not proof.</p></div>
+      </div>
+    </div>
+    <div class="card quiet"><div class="k">Apply · in your answer</div>
+      <p class="body">Write your first sentence now: a cause, a hedge and its support.</p>
+      <p class="body nq">One [hedge] cause was …, since …</p>
+      <p class="body nq">Your Writing toolkit (booklet pages 3–4): the modality scale.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: propose reasons for the outbreak">
+<div class="wrap u6l12-dense">
+  <p class="eyebrow">3 · You do · 21 minutes · check the deconstruction 2 · write 19</p>
+  <h2><b>Propose</b> reasons for the outbreak of the First Sicilian slave war.</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <p class="qprompt">What does this question ask you to do? Check your deconstruction.</p>
+      <div class="veil-parts" data-veil="Check yours first — then show the answers">
+        <dl class="u6l12-dq">
+          <dt>Verb</dt><dd><span class="vp reveal"><b>propose</b>: NESA, <i>Glossary of key words</i>: ‘Put forward (for example a point of view, idea, argument, suggestion) for consideration or action.’ Department advice: put forward an idea or explanation, support it, and say what would test it</span></dd>
+          <dt>Topic</dt><dd><span class="vp reveal">the reasons the First Sicilian slave war <i>broke out</i> (reasons means causes), not how it was fought or how it ended</span></dd>
+          <dt>Limits</dt><dd><span class="vp reveal">the First Sicilian war only, not the second war and not Spartacus; the evidence on your four cards and in Diodorus 34/35.2; ‘outbreak’ means the start</span></dd>
+          <dt>Do</dt><dd><span class="vp reveal">two causes, each as claim → support from Diodorus → limit (what would test it); ranked, with hedges matched to the evidence; evaluate Diodorus as you go: who wrote it, when, from whose sources</span></dd>
+        </dl>
+      </div>
+      <div class="card quiet sm"><div class="k">No reading time today</div>
+        <p class="body">Write straight away. Your four evidence cards, your notes and the extracts in your booklet are open. Mark the cards in a second colour as you use them.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · 19 minutes</div>
+        <ol class="body">
+          <li><b>First sentence (the apply):</b> your first cause, with a hedge and its support.</li>
+          <li><b>Each cause:</b> a claim with a hedge matched to the evidence, support from Diodorus (section number, a short quotation or a close paraphrase) and a limit: what would test it.</li>
+          <li><b>Rank:</b> say which cause you put first and why, and keep each hedge honest. Evaluate Diodorus as you go.</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Frame for the target sentence only: <span class="nq">“One [hedge] cause was …, since …; a second, less certain cause was …, since …”</span> Modality bank: <b>may · might · possibly</b> (low) · <b>probably · is likely to · suggests</b> (medium) · <b>shows · demonstrates</b> (high). Your four evidence cards. Your Writing toolkit (booklet pages 3–4): the modality scale.</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Diodorus’s editor notes an anachronism that “may derive from the bias of Poseidonius”. <b>Evaluate</b> how Diodorus’s reliance on an earlier writer affects his reliability on causes.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: which claim is best matched to the evidence?" data-kind="notes">
+<div class="wrap u6l12-dense">
+  <p class="eyebrow">Check · hinge · 4 minutes · on the murder of Pedanius Secundus</p>
+  <h2>Which claim is best matched to the evidence?</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · a history, on the murder of a city prefect in 61 CE</div>
+        <p class="quote sm">Soon afterwards one of his own slaves murdered the city-prefect, Pedanius Secundus, either because he had been refused his freedom, for which he had made a bargain, or in the jealousy of a love in which he could not brook his master’s rivalry.</p>
+        <p class="prov">Tacitus, <i>Annals</i> 14.42, early 2nd century CE · trans. A. J. Church and W. J. Brodribb (1876)</p>
+      </div>
+      <p class="cue">Vote on <span class="nq">“3, 2, 1, show”</span>: A, B, C or D.</p>
+    </div>
+    <div class="veil-parts" data-veil="Vote first — then show the answer">
+      <ol class="opts">
+        <li><span class="n">A</span><span>On Tacitus’s account, a broken bargain was certainly the cause.</span></li>
+        <li id="u6l12-hqB"><span class="n">B</span><span>On Tacitus’s account, a broken bargain was one possible cause.</span></li>
+        <li><span class="n">C</span><span>On Tacitus’s account, jealousy was proved to be the cause.</span></li>
+        <li><span class="n">D</span><span>On Tacitus’s account, a broken bargain may possibly perhaps be a cause.</span></li>
+      </ol>
+      <i class="reveal" data-mark="#u6l12-hqB" hidden></i>
+      <div class="note vp reveal"><div class="k">B: Tacitus gives alternatives</div><p class="body">Tacitus offers the bargain and the jealousy as alternatives (“either … or”) and does not choose, so “one possible cause” fits. <b>A</b> overclaims: “certainly” ignores the alternative. <b>C</b> overclaims the other way: nothing is “proved”. <b>D</b> stacks hedges (“may possibly perhaps”), so it says almost nothing.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 4 minutes · before you leave</p>
+  <h2>Your strongest proposed cause</h2>
+  <div class="card accent"><p class="lead">Finish the sentence: <span class="nq">“The cause I proposed that I can support best was …, which I held with the hedge … because …”</span></p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">A cause in your own words, not only a heading from a card. A hedge from the modality scale that matches the evidence you used, and a reason for it (for example how many writers or hands lie behind it), not “proves” for one writer’s summary. A reference to what Diodorus says (a section number or a short quotation). One thing that would test your claim. A strong answer is specific about the evidence; it does not need to match anyone else’s cause.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> Lesson 13, Spartacus I: from Capua to the final battle, 73–71 BCE.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Summary" data-kind="notes">
+<div class="wrap u6l12-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What are three forms of everyday resistance, and what does one source say about one of them?</li>
+          <li>What is certain and what is uncertain about the First Sicilian war’s dates, and why is “two hundred thousand” a round figure?</li>
+          <li>What are the three moves of a proposed cause, and what does a hedge do?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Enslaved people probably resisted in hidden ways such as petty sabotage, which Bradley expects from modern slave societies, and by flight, which Cato’s handbook lists among an overseer’s excuses; in our sources violence is rarer, as in Pliny’s letter on Larcius Macedo, and open revolt came in the slave wars. The First Sicilian war certainly ended in 132 BCE, but its start is unknown, any year from 141 to 135 BCE being possible, and Diodorus’s “two hundred thousand” is a round figure in a summary of a lost book, which Bradley thinks very unlikely. A proposed cause has three moves, a claim, its support and a limit that says what would test it, and a hedge matches how sure the evidence lets us be.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> The spectrum, hidden to open, with evidence</label></li>
+        <li><label><input type="checkbox"> The map and the dates: certain and uncertain</label></li>
+        <li><label><input type="checkbox"> Whose account Diodorus’s is, and the editor’s warning</label></li>
+        <li><label><input type="checkbox"> Claim, support, limit, and the modality scale</label></li>
+        <li><label><input type="checkbox"> Your own answer and one thing to improve</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u6l12-dense">
+  <p class="eyebrow">Practice and review · 1 of 4 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>In Cato 2.2, Cato reports that enslaved people ran away from his own farm.</span>
+      <span class="sol no reveal">False <span class="why">— “slaves have run away” is one of the excuses Cato says an overseer gives; it shows what an owner expected, not a case of flight.</span></span></li>
+    <li><span class="n">2</span><span>Historians know the year the First Sicilian war began.</span>
+      <span class="sol no reveal">False <span class="why">— Bradley says the year is unknown, with every year from 141 to 135 BCE a possibility; the end, in 132 BCE, is certain.</span></span></li>
+    <li><span class="n">3</span><span>“Two hundred thousand” is a reliable count of the rebels.</span>
+      <span class="sol no reveal">False <span class="why">— it is a round figure, preserved in Photius’s summary of Diodorus’s lost book, and Bradley calls a rebellion of that size “very unlikely”.</span></span></li>
+    <li><span class="n">4</span><span>Walton says the mistake about the Roman knights as judges is certainly Posidonius’s bias.</span>
+      <span class="sol no reveal">False <span class="why">— he says it “may derive from the bias of Poseidonius” but “perhaps goes back to his Roman sources”: two hedges.</span></span></li>
+    <li><span class="n">5</span><span>Diodorus says the rebels at Enna chose Eunus as their king.</span>
+      <span class="sol reveal">True <span class="why">— “Eunus was chosen king”; Diodorus also gives his own view of why, which is the writer’s reading, not the rebels’.</span></span></li>
+    <li><span class="n">6</span><span>In claim → support → limit, the limit says what would test the claim.</span>
+      <span class="sol reveal">True <span class="why">— for example the kind of evidence that would settle it, or what the source cannot show.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — fix an overclaim and propose a cause" data-kind="practice">
+<div class="wrap prac u6l12-dense">
+  <p class="eyebrow">Practice and review · 2 of 4 · hedges</p>
+  <h2>Fix one hedge, write one proposal</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · Fix this sentence</div>
+        <p class="body">A student writes: <span class="nq">“Tacitus proves that Pedanius’s murderer acted out of jealousy.”</span> Tacitus 14.42 gives the motive as “either … or”. Rewrite it so the hedge matches the evidence.</p></div>
+      <div class="src reveal" data-veil="Write yours first — then show a fixed sentence"><div class="k">A fixed sentence · written for this lesson</div>
+        <p class="quote sm model">Tacitus offers jealousy as one possible motive, alongside a refused bargain for freedom, and does not choose between them.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 2 · Propose a cause</div>
+        <p class="body">Propose one cause of the attack on Larcius Macedo (Pliny 3.14, Lesson 8). Write it as claim → support → limit, with a hedge from the modality scale.</p></div>
+      <div class="card quiet sm"><div class="k">Check yourself</div>
+        <ul class="checks">
+          <li><label><input type="checkbox"> <span>a claim with one hedge, not a stack</span></label></li>
+          <li><label><input type="checkbox"> <span>support: a short quotation from Pliny, with its source</span></label></li>
+          <li><label><input type="checkbox"> <span>a limit: what the letter cannot show, or what would test the claim</span></label></li>
+          <li><label><input type="checkbox"> <span>Pliny’s own reason for the attack acknowledged, as his word</span></label></li>
+        </ul></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — extension: Diodorus and his earlier source" data-kind="practice">
+<div class="wrap prac u6l12-dense">
+  <p class="eyebrow">Practice and review · 3 of 4 · extension</p>
+  <h2>How far does relying on an earlier writer matter?</h2>
+  <div class="split" style="--cols:1fr 1.3fr">
+    <div class="stack">
+      <div class="card quiet"><div class="k">Exercise 3 · a short paragraph</div><p class="body">Diodorus’s editor notes an anachronism that “may derive from the bias of Poseidonius”. <b>Evaluate</b> how Diodorus’s reliance on an earlier writer affects his reliability on causes.</p></div>
+      <div class="src">
+        <div class="k">Two sources · from the earlier slides</div>
+        <p class="quote sm">The anachronism may derive from the bias of Poseidonius but perhaps goes back to his Roman sources.</p>
+        <p class="quote sm">… his account in turn relied on sources no longer available and not even positively identifiable.</p>
+        <p class="prov">F. R. Walton (Loeb vol. XII, 1967), p. 57; K. R. Bradley (1989), p. 134</p>
+      </div>
+    </div>
+    <div class="note reveal" data-code="judgement" data-veil="Write yours first — then show what a strong answer does"><div class="k">What a strong answer does</div><p class="body">It names a criterion (reliable for what? for the causes of the war) and weighs both sides: what a writer who follows an earlier one can still offer, against what may be lost or bent along the way (an earlier writer’s bias, his unknown sources, a later summary). It uses the editor’s two hedges rather than a flat claim, says what evidence is missing, and ends with a degree, not a yes or no.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u6l12-dense">
+  <p class="eyebrow">Practice and review · 4 of 4 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>What do Cato 2.2 and the sale edict each tell us about flight, and what can’t they tell us?
+      <span class="sol reveal">Cato lists “slaves have run away” among an overseer’s excuses; the edict has a seller declare “a runaway or a vagabond”. Both show what owners expected and officials required. Neither says how many ran, why, or what happened to them.</span></li>
+    <li>When did the First Sicilian war end, and what is uncertain about its start?
+      <span class="sol reveal">It ended in 132 BCE (certain, on Bradley’s account). The year of its start is unknown: any year from 141 to 135 BCE is a possibility.</span></li>
+    <li>How sure can we be of “two hundred thousand”?
+      <span class="sol reveal">Not very: it is a round figure in a summary of a lost book. Bradley calls it the highest figure given by Diodorus and a rebellion of that size very unlikely, though tens of thousands seems relatively safe.</span></li>
+    <li>Why is Diodorus’s account not a first-hand record?
+      <span class="sol reveal">He wrote about 60–30 BCE, perhaps 70 to 100 years after the war, following Posidonius, whose own sources are unknown; and his books survive only in summaries such as Photius’s.</span></li>
+    <li>What are the three moves of a proposed cause, and what does the third do?
+      <span class="sol reveal">Claim, support, limit. The limit says what would test the claim, or what the source cannot show.</span></li>
+    <li>Give one low, one medium and one high modality word, and say when to use each.
+      <span class="sol reveal">Low: may, might, possibly (for thin or one-sided evidence). Medium: probably, suggests (for good but not certain evidence). High: shows, demonstrates (only when the evidence is firm). One hedge per claim.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u6l12-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u6l12-cite"><div class="k">Written sources</div>
+      <p class="small">Diodorus of Sicily, <i>Library of History</i> 34/35.2 and 36.10, with the editor’s notes: trans. F. R. Walton (Loeb Classical Library vol. XII, 1967; copyright, quoted briefly), read in the <a href="https://archive.org/details/diodorus-of-sicily-in-twelve-volumes.-vol.-12-loeb-423">archive.org scan</a>. Cato, <i>De Agri Cultura</i> 2.2: trans. W. D. Hooper and H. B. Ash (Loeb, 1934, public domain), <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cato/De_Agricultura/A*.html">LacusCurtius</a>. Aulus Gellius, <i>Attic Nights</i> 4.2.1: trans. J. C. Rolfe (Loeb, 1927, rev. 1946, public domain), <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Gellius/4*.html">LacusCurtius</a>. Pliny the Younger, <i>Letters</i> 3.14: trans. W. Melmoth, revised by W. M. L. Hutchinson (Loeb, 1915, public domain), <a href="https://archive.org/details/letterswithengli01plinuoft">archive.org</a>. Tacitus, <i>Annals</i> 14.42: trans. A. J. Church and W. J. Brodribb (1876, public domain), <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0078:book=14:chapter=42">Perseus Digital Library</a> (Perseus text CC BY-SA 3.0 US).</p>
+      <p class="small">Modern historian, quoted briefly: K. R. Bradley, <i>Slavery and Rebellion in the Roman World, 140 B.C.–70 B.C.</i> (Indiana University Press, 1989), pp. 33, 38, 59, 64 and 133–134. The gallery labels of three British Museum reliefs (Lesson 11), as transcribed on Wikimedia Commons by Mike Peel (CC BY-SA 4.0). The NESA <i>Glossary of key words</i> (definitions quoted word for word) and NESA’s 2027 HSC student guide, p. 19 (step 3, “Reading time”).</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet u6l12-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>Map of Sicily with ancient place names in Latin, including Henna (Enna) and Tauromenium</b> · Map: Tomisti · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Ancient_Sicily_map_la.svg">source</a></li></ul>
+        <p class="small">The map’s data, as its Commons page lists them: Digital Atlas of the Roman Empire (DARE) and Pleiades (cities and roads); OpenMapTiles and OpenStreetMap contributors (topographic map). The map was drawn by Tomisti as a vector file; it was rendered, cropped and resized for the web, small fragments of sea labels at its edges were painted out, and the two numbered pins are this lesson’s own. Shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

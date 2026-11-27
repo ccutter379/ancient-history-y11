@@ -1,0 +1,1727 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U7 L5 · Masculinity and Femininity in Stone and Paint: The Stelai of Hegeso and Dexileos</title>
+<meta name="description" content="Year 11 Ancient History, women in ancient Greece: how two Athenian grave stelai and two painted vases present a man and a woman, why they are best read as ideals chosen by families, and how to compare and contrast two depictions.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#6A5D0E; --bright:#9A8716; --tint:#F5F1DC; --statement:#6A5D0E;
+  --solid:#6A5D0E; --soft:#EFE7C2; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#E3D58A; --bright:#C9B53A; --tint:#2E2A0E; --statement:#4F450A; --soft:#EFE7C2; } }
+:root[data-theme="dark"]{ --deep:#E3D58A; --bright:#C9B53A; --tint:#2E2A0E; --statement:#4F450A; --soft:#EFE7C2; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 7 Lesson 5 only (every class starts u7l05-) */
+
+/* title picture; goals slide syllabus line; credits links */
+.u7l05-cover{margin:0;}
+.u7l05-cover img{display:block; width:100%; height:58vh; object-fit:contain; background:var(--surface-2); border-radius:10px;}
+.u7l05-cover figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.4em; line-height:1.35;}
+.u7l05-cover figcaption b{color:var(--deep);}
+.u7l05-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u7l05-cite a{color:var(--deep);}
+
+/* glossed words under an extract; the case in brief */
+.u7l05-gloss{font-size:calc(var(--fs-body)*.8); line-height:1.38; margin:.35em 0 0; padding:.35em .8em;
+  border-left:4px solid var(--c-keyterm); background:var(--w-keyterm); border-radius:0 8px 8px 0;}
+.u7l05-gloss b{color:var(--c-keyterm);}
+.u7l05-case{font-size:calc(var(--fs-body)*.84); line-height:1.4; margin:0; padding:.45em .85em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);}
+.u7l05-case b{color:var(--deep);}
+.src .ed{white-space:nowrap;}
+
+/* the attitude grid */
+.u7l05-grid td, .u7l05-grid th{vertical-align:top;}
+.u7l05-grid td:first-child{font-weight:700; color:var(--deep);}
+.u7l05-grid td.later{color:var(--slate); font-style:italic;}
+.u7l05-grid th{white-space:normal;}
+
+/* the question line and the deconstruction table */
+.u7l05-q{font-weight:700; font-size:calc(var(--fs-body)*.92); line-height:1.38; margin:0;}
+.u7l05-q .mk2{display:inline-block; margin-left:.4em; padding:0 .5em; border:1px solid var(--deep); border-radius:999px;
+  font-size:.82em; color:var(--deep); font-weight:700; white-space:nowrap;}
+.u7l05-dqt td:first-child{font-weight:700; color:var(--c-directive); white-space:nowrap;}
+.u7l05-dqt th{white-space:normal;}
+
+/* Writing focus: the kernel and its extensions, labelled */
+.u7l05-kernel{font-weight:700;}
+.u7l05-ext{margin:.25em 0 0; padding-left:.7em; border-left:4px solid var(--rule);}
+.u7l05-ext .lab{display:inline-block; min-width:4.6em; font-style:normal; font-weight:800; font-size:.8em;
+  letter-spacing:.04em; text-transform:uppercase; color:var(--deep);}
+.u7l05-app{text-decoration:underline; text-decoration-thickness:2px; text-underline-offset:3px;
+  text-decoration-color:var(--c-keyterm);}
+
+/* paragraphs inside a card need a little air */
+.card .body + .body, .card .veil-parts, .card .body + .small, .card .small + .quote,
+.card .body + .note, .card .body + .u7l05-ext{margin-top:.4em;}
+
+/* a word bank */
+.u7l05-bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.u7l05-bank span{border:1px solid var(--c-keyterm); color:var(--c-keyterm); border-radius:999px; padding:.1em .7em;
+  background:var(--w-keyterm); font-size:calc(var(--fs-body)*.8); font-weight:600;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u7l05-cover img{height:auto; max-height:50vh;}
+  .u7l05-grid td:first-child, .u7l05-dqt td:first-child{white-space:normal;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u7l05-dense{gap:10px;}
+  html:not(.read) .u7l05-dense h2{font-size:calc(var(--fs-h2)*.84);}
+  html:not(.read) .u7l05-dense .quote.sm{font-size:calc(var(--fs-body)*.76); line-height:1.4;}
+  html:not(.read) .u7l05-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u7l05-dense .src{padding:10px 16px;}
+  html:not(.read) .u7l05-dense .src .prov{margin-top:.4em;}
+  html:not(.read) .u7l05-dense .note{padding:.45em .85em;}
+  html:not(.read) .u7l05-dense .note .body, html:not(.read) .u7l05-dense .card .body,
+  html:not(.read) .u7l05-dense .qprompt{font-size:calc(var(--fs-body)*.78); line-height:1.36;}
+  html:not(.read) .u7l05-dense .card{padding:10px 16px;}
+  html:not(.read) .u7l05-dense .card .k{margin-bottom:.25em;}
+  html:not(.read) .u7l05-dense .keylist{gap:6px;}
+  html:not(.read) .u7l05-dense .keylist li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u7l05-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u7l05-dense .tbl.compact td{padding:.3em .55em;}
+  html:not(.read) .u7l05-dense .tbl th{padding:.38em .6em;}
+  html:not(.read) .u7l05-dense .u7l05-gloss{font-size:calc(var(--fs-body)*.72); padding:.3em .7em;}
+  html:not(.read) .u7l05-dense .u7l05-case{font-size:calc(var(--fs-body)*.76); padding:.35em .75em;}
+  html:not(.read) .u7l05-dense .tf li, html:not(.read) .u7l05-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u7l05-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u7l05-dense .prac{gap:6px;}
+  html:not(.read) .u7l05-dense .cornell .cq, html:not(.read) .u7l05-dense .cornell .nts{font-size:calc(var(--fs-body)*.76); padding:.35em .8em;}
+  html:not(.read) .u7l05-dense .u7l05-q{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u7l05-dense .checks label{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u7l05-dense .opts li{font-size:calc(var(--fs-body)*.76);}
+  /* the Writing focus card is the fullest slide */
+  html:not(.read) .u7l05-wf .quote.sm.u7l05-ext{font-size:calc(var(--fs-body)*.66); line-height:1.32; margin-top:.12em;}
+  html:not(.read) .u7l05-wf .card .body{font-size:calc(var(--fs-body)*.7); line-height:1.32;}
+  html:not(.read) .u7l05-wf .card .small{font-size:calc(var(--fs-body)*.64);}
+  html:not(.read) .u7l05-wf .note .body, html:not(.read) .u7l05-wf .note .quote.sm{font-size:calc(var(--fs-body)*.66);}
+  html:not(.read) .u7l05-wf h2{margin-bottom:0;}
+  html:not(.read) .u7l05-wf .card{padding:8px 14px;}
+  /* the exit ticket carries the Lesson 4 notice */
+  html:not(.read) .u7l05-exit .card .lead{font-size:calc(var(--fs-body)*.86); line-height:1.35;}
+  html:not(.read) .u7l05-exit .note .body{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u7l05-exit .small{margin:0;}
+}
+
+/* phones: let grid columns shrink below their widest table */
+.u7l05-dense .split > *, .u7l05-dense .stack > *, .u7l05-dense .cols > *{min-width:0;}
+
+/* ---- Lesson 5 additions */
+
+/* See-Think-Wonder: two uncaptioned stelai side by side, then the prompt cards */
+.u7l05-stwgrid{display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1.25fr); gap:clamp(12px,1.6vw,26px); align-items:start;}
+.u7l05-pair{display:grid; grid-template-columns:1fr 1fr; gap:clamp(8px,1vw,14px); margin:0;}
+.u7l05-pair img{display:block; width:100%; height:58vh; object-fit:contain; background:var(--surface-2); border-radius:10px; box-shadow:var(--shadow);}
+.u7l05-stw{display:flex; flex-direction:column; gap:clamp(8px,1.2vh,14px);}
+.u7l05-stw .card{padding:clamp(8px,1.3vh,16px) clamp(14px,1.4vw,22px);}
+.u7l05-stw .body{color:var(--slate); font-size:calc(var(--fs-body)*.85);}
+.u7l05-eg{margin-top:.4em; padding-top:.4em; border-top:1px dashed var(--rule); font-style:italic;
+  font-size:calc(var(--fs-body)*.8); line-height:1.38;}
+.u7l05-eg::before{content:"For example: "; font-style:normal; font-weight:700; color:var(--deep);}
+
+/* a monument beside its think-aloud */
+.u7l05-mono{margin:0;}
+.u7l05-mono img{display:block; width:100%; height:60vh; object-fit:contain; background:var(--surface-2); border-radius:10px; box-shadow:var(--shadow);}
+.u7l05-mono figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.4em; line-height:1.35;}
+
+/* the reveal: two monument cards */
+.u7l05-two{display:grid; grid-template-columns:1fr 1fr; gap:clamp(10px,1.4vw,22px); align-items:start;}
+.u7l05-facts{list-style:none; margin:.5em 0 0; padding:0; display:flex; flex-direction:column; gap:.25em;
+  font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+.u7l05-facts b{color:var(--deep);}
+
+/* the comparison grid */
+.u7l05-grid td, .u7l05-grid th{vertical-align:top;}
+.u7l05-grid td:first-child{font-weight:700; color:var(--deep); white-space:nowrap;}
+.u7l05-grid td.later{color:var(--slate); font-style:italic;}
+.u7l05-grid th{white-space:normal;}
+
+/* the vases slide: pyxis picture, two source cards */
+.u7l05-vases{display:grid; grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr); gap:clamp(12px,1.6vw,26px); align-items:start;}
+.u7l05-vases figure img{max-height:52vh;}
+
+/* Writing focus: the model's labelled moves */
+.u7l05-mv{margin:.25em 0 0; padding-left:.7em; border-left:4px solid var(--rule);}
+.u7l05-mv .lab{display:inline-block; min-width:5.2em; font-style:normal; font-weight:800; font-size:.78em;
+  letter-spacing:.04em; text-transform:uppercase; color:var(--deep);}
+
+/* exit-ticket pictures */
+.u7l05-exitpair{display:grid; grid-template-columns:1fr 1fr; gap:10px; max-width:34vh;}
+.u7l05-exitpair img{display:block; width:100%; height:26vh; object-fit:contain; background:var(--surface-2); border-radius:8px;}
+
+@media (max-width:900px){
+  .u7l05-stwgrid, .u7l05-vases, .u7l05-two{grid-template-columns:1fr;}
+  .u7l05-pair img, .u7l05-mono img{height:auto; max-height:56vh;}
+  .u7l05-grid td:first-child{white-space:normal;}
+  .u7l05-exitpair{max-width:none;}
+}
+@media (max-height:820px){
+  html:not(.read) .u7l05-dense .u7l05-eg{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u7l05-dense .u7l05-facts{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u7l05-dense .u7l05-pair img{height:50vh;}
+  html:not(.read) .u7l05-dense .u7l05-mono img{height:52vh;}
+  html:not(.read) .u7l05-wf .u7l05-mv{font-size:calc(var(--fs-body)*.66); line-height:1.32; margin-top:.12em;}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 5" data-title="Masculinity and femininity in stone and paint" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.3fr 1fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 7 · Women in ancient Greece · Lesson 5</p>
+      <h1>Masculinity and femininity in stone and paint</h1>
+      <p class="lead">Two grave stelai and two painted vases from Classical Athens: what do they show a man and a woman should be, and how do the depictions compare?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div>
+      <figure class="u7l05-cover"><img src="images/u7l02-red-figure-pyxis-women-at-home.jpg" alt="A round painted pot with a lid and a knob, decorated with standing women in long robes in orange on a black ground" loading="lazy"><figcaption><b>Classical Athens</b> · a painted pyxis, a lidded box, 430–420 BCE</figcaption></figure>
+      <p class="small credline">Images: Art Institute of Chicago (CC0 1.0). Full details on the last slide.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Review: Lessons 3–4" data-kind="intro practice">
+<div class="wrap u7l05-dense">
+  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <h2>Five questions from Lessons 3–4</h2>
+  <ol class="rq" data-answers>
+    <li>What did Pericles say about the best woman, in his advice to the widows?
+      <span class="sol reveal">The widows’ glory is not to fall short of their natural character, and greatest is hers “who is least talked of among the men whether for good or for bad” (Thucydides 2.45.2, as Thucydides reports him).</span></li>
+    <li>How does Ischomachus divide the work of a husband and a wife?
+      <span class="sol reveal">God, he says (“I think”), fitted the woman’s nature “to the indoor and man’s to the outdoor tasks and cares” (Xenophon, <i>Oeconomicus</i> 7.22).</span></li>
+    <li>What does Medea say she would rather do than give birth once?
+      <span class="sol reveal">“I would gladly take my stand in battle array three times o’er, than once give birth,” she says: childbirth is worse than battle (Euripides, <i>Medea</i>, Coleridge’s translation).</span></li>
+    <li>In which year was Aristophanes’s <i>Lysistrata</i> first produced?
+      <span class="sol reveal">At the start of 411 BCE (the festival is not known), in an Athenian comedy written by a man for an Athenian audience.</span></li>
+    <li>Writing · which sentence accounts for an attitude? <span class="nq">Question: “<b>Account for</b> Ischomachus’s attitude that a wife belongs indoors.” A · “Ischomachus tells his wife to stay indoors because Athenian men of his day were sexist and wanted to control women.” B · “Ischomachus tells his wife to stay indoors, but he also describes his house, his stores and the servants who work for him.” C · “Ischomachus tells his wife to stay indoors because the dialogue is about running a wealthy estate, and the wife has a part in it.” D · “Ischomachus tells his wife to stay indoors, so every Athenian wife of his day must have stayed in the house all day.”</span>
+      <span class="sol reveal"><b>C</b>. <b>Account for</b> asks for reasons (NESA: ‘state reasons for, report on.’), and C gives one from the writer’s context. A is a modern judgement; B adds a point but gives no reason; D draws a conclusion about every wife from one speaker.</span></li>
+  </ol>
+  <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>analyse how masculinity and femininity are depicted in Athenian funerary art and vase painting</li>
+        <li>compare and contrast the two depictions</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>describe what each stele shows and says</li>
+        <li>explain the ideal of a man and of a woman each depiction presents</li>
+        <li>write a comparison answer with whereas and both</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u7l05-syl"><b>Syllabus outcomes:</b> AH-11-04 accounts for the different perspectives of individuals and groups in their historical context · AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-05 describes features of places or societies in the ancient world · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U7 L5 · Masculinity and femininity in stone and paint</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = Before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Who said the best woman is “least talked of”?</div><div class="nts">Pericles, as Thucydides reports him (Lesson 3) → to whom? → what ideal?</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A new page for each lesson</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences; a source for every claim.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at the ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: describe, explain, compare, contrast. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">One checkpoint today: the two stelai and the two vases.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u7l05-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for monuments, ideals and comparing</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Writing terms</th><th>Meaning</th></tr>
+      <tr><td>Contrast</td><td>‘Show how things are different or opposite.’ (NESA) — Differences only, point by point.</td></tr>
+      <tr><td>Compare</td><td>‘Show how things are similar or different.’ (NESA) — Similarities and differences, then which matters most.</td></tr>
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Ideal</td><td>What a writer, artist or family presents a person as being or doing, which may differ from how people actually lived.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Content terms</th><th>Meaning</th></tr>
+      <tr><td>Stele (plural stelai)</td><td>An upright stone slab, often a grave marker with a relief and an inscription.</td></tr>
+      <tr><td>Pyxis / lebes gamikos</td><td>A lidded box for cosmetics or jewellery / a wedding vessel; both often painted with women’s scenes.</td></tr>
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Relief</td><td>A carving that stands out from a flat background, as on a grave stele.</td></tr>
+      <tr><td>Masculinity / femininity</td><td>The qualities and roles a society expects of men / of women, as shown in its words and its art.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Two grave monuments" data-title="See – Think – Wonder" data-kind="intro">
+<div class="wrap u7l05-dense">
+  <p class="eyebrow">1 · Two grave monuments · We do — See – Think – Wonder · 6 minutes · press K for the timer</p>
+  <h2>Look closely. What is being shown, and why?</h2>
+  <div class="u7l05-stwgrid">
+    <div class="u7l05-pair">
+      <img src="images/u7l05-grave-relief-seated-woman-and-attendant.jpg" alt="A tall marble slab with a triangular top and a line of Greek letters along the top beam: a woman sits on a chair and holds up one hand, while a standing young woman holds an open box" loading="lazy">
+      <img src="images/u7l05-grave-relief-horseman-and-fallen-man.jpg" alt="A tall marble slab with a triangular top and a line of Greek letters on the base: a young man on a rearing horse leans over a man lying on the ground" loading="lazy">
+    </div>
+    <div class="u7l05-stw veil-parts" data-veil="Try it first — then show some examples">
+      <div class="card"><div class="k">I see …</div><p class="body">only what is really there</p>
+        <p class="u7l05-eg vp reveal">two upright marble slabs with triangular tops and writing carved on them · a seated woman and a standing woman holding a box · a young man on a rearing horse above a man on the ground · long robes on the women; a short tunic and a cloak flying behind the horseman</p></div>
+      <div class="card"><div class="k">I think …</div><p class="body">what it might mean, and how sure you are</p>
+        <p class="u7l05-eg vp reveal">both are grave markers (fairly sure: the shape and the writing) · the horseman is a soldier and is winning (fairly sure) · the seated woman is rich (a guess: the chair and the attendant) · the standing figure is a servant (a guess: she waits on the seated woman)</p></div>
+      <div class="card"><div class="k">I wonder …</div><p class="body">questions you want answered</p>
+        <p class="u7l05-eg vp reveal">Who are they, and who paid for them? · Is the horseman a real soldier? · What is in the box? · What does the writing say?</p></div>
+    </div>
+  </div>
+  <p class="small credline">Images: George E. Koronaios (CC BY-SA 4.0) · George E. Koronaios (CC BY-SA 4.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Two grave monuments" data-title="The reveal: names, dates and inscriptions" data-kind="notes">
+<div class="wrap u7l05-dense">
+  <p class="eyebrow">1 · Two grave monuments · We do — the reveal: names, dates and inscriptions</p>
+  <h2>Two family grave monuments from the Kerameikos, Athens</h2>
+  <div class="u7l05-two">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · the stele of Hegeso · National Archaeological Museum, Athens, 3624</div>
+        <p class="quote sm">According to the inscription on the epistyle, the deceased is Hegeso, daughter of Proxenos.</p>
+        <p class="prov">The museum’s gallery label, as transcribed on Wikimedia Commons · found west of Athens, in the ancient cemetery of Kerameikos · marble · about 410–400 BCE</p>
+      </div>
+      <ul class="u7l05-facts">
+        <li><b>Shows:</b> a seated woman looking at an object held in her raised hand, which the museum says was “originally rendered in paint”, and a standing attendant holding an open box</li>
+        <li><b>Says:</b> her name and her father’s, and nothing else</li>
+      </ul>
+    </div>
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · the stele of Dexileos · Kerameikos Museum, P 1130 · inscription IG II² 6217</div>
+        <p class="quote sm">Dexileos son of Lysanias of Thorikos. He was born in the archonship of Teisandros (414/3); he died in that of Euboulides (394/3), at Corinth, one of the five cavalrymen.</p>
+        <p class="prov">Inscription on the base · trans. S. Lambert, F. Schuddeboom and R. Osborne, Attic Inscriptions Online (CC BY-SA 3.0) · he died in 394/3 BCE; the museum dates the relief about 390 BCE</p>
+      </div>
+      <ul class="u7l05-facts">
+        <li><b>Shows:</b> “a mounted warrior striking a fallen enemy”, above the inscription (Attic Inscriptions Online)</li>
+        <li><b>Set up by:</b> his relatives, says the museum, in the place where the family grave enclosure was later built</li>
+      </ul>
+    </div>
+  </div>
+  <p class="u7l05-gloss"><b>Words:</b> <i>archonship</i> the year named after one of Athens’s chief officials, the archon · <i>cavalryman</i> a soldier who fights on horseback · <i>Thorikos</i> a village in Attica, the land around Athens · <i>Kerameikos</i> the cemetery of ancient Athens</p>
+  <p class="qprompt">Cold call: what do the two inscriptions have in common?</p>
+  <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">Both name the person through a father: Proxenos and Lysanias. Dexileos’s also gives his village, and the archon years of his birth and death, which Attic Inscriptions Online calls “very unusual in Athenian commemorative practice”; Hegeso’s gives only her name and her father’s.</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · What each monument says" data-title="Think aloud: the Dexileos stele" data-kind="notes">
+<div class="wrap u7l05-dense">
+  <p class="eyebrow">2 · What each monument says · I do — think aloud: what does it say a good man was, and who chose the picture?</p>
+  <h2>A cavalryman killed at Corinth, shown striking a fallen enemy</h2>
+  <div class="split" style="--cols:.62fr 1.38fr">
+    <figure class="u7l05-mono"><img src="images/u7l05-grave-relief-horseman-and-fallen-man.jpg" alt="Marble grave relief of a young horseman on a rearing horse leaning over a fallen man, above a base with a carved inscription" loading="lazy"><figcaption><b>Dexileos stele</b> · Kerameikos Museum, P 1130 · about 390 BCE</figcaption><p class="small credline">Images: George E. Koronaios (CC BY-SA 4.0). Full details on the last slide.</p></figure>
+    <div class="stack">
+      <ol class="keylist">
+        <li class="reveal"><span class="num">1</span><span class="t">What does it show?</span><span class="d">A young horseman, his cloak flying, strikes a fallen opponent. The weapons and reins, “made of bronze and attached in ancient times”, are now missing (museum label).</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">What does it say a good man was?</span><span class="d">An Athenian cavalryman: active, winning, in the service of his city. The inscription calls him “one of the five cavalrymen”, though what “the five” means is unclear (Attic Inscriptions Online).</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">Who chose the picture?</span><span class="d">Probably his family: the museum says it was “dedicated by his relatives” in the place where the family grave enclosure was later built. The city honoured him too: the museum says his ashes were placed in the public burial ground, and his name is on the public list of cavalrymen who fell (Attic Inscriptions Online).</span></li>
+      </ol>
+      <p class="qprompt">Cold call: he died at Corinth. Why would his family show him winning?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">A family chooses the picture. This one presents a young cavalryman as active and victorious, not as a man who was killed. So it is probably an ideal of a man, not a record of what happened to him.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · What each monument says" data-title="Think aloud: the Hegeso stele" data-kind="notes">
+<div class="wrap u7l05-dense">
+  <p class="eyebrow">2 · What each monument says · I do — think aloud: what does it say a good woman was, and why is she named through her father?</p>
+  <h2>A seated woman, her attendant and a box: probably jewellery</h2>
+  <div class="split" style="--cols:.62fr 1.38fr">
+    <figure class="u7l05-mono"><img src="images/u7l05-grave-relief-seated-woman-and-attendant.jpg" alt="Marble grave relief of a woman seated on a chair with a footstool, holding up one hand, facing a standing young woman who holds an open box" loading="lazy"><figcaption><b>Hegeso stele</b> · National Archaeological Museum, Athens, 3624 · about 410–400 BCE</figcaption><p class="small credline">Images: George E. Koronaios (CC BY-SA 4.0). Full details on the last slide.</p></figure>
+    <div class="stack">
+      <ol class="keylist">
+        <li class="reveal"><span class="num">1</span><span class="t">What does it show, and what is in the box?</span><span class="d">A woman on a chair with a footstool looks at an object in her raised hand; an attendant holds an open box. The object was “originally rendered in paint” and the paint has gone, so “jewellery” is the museum’s reading: probably jewellery.</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">What does it say a good woman was?</span><span class="d">Still, quiet and adorned, with an attendant to wait on her, probably at home (the chair and the attendant suggest a household): being looked after, not acting. The museum reads her “imposing appearance” and “the magnificence of the family grave plot” as signs of her “noble origin”.</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">Why is she named through her father, and who chose?</span><span class="d">The inscription gives “Hegeso, daughter of Proxenos”: the usual way to name an Athenian, as with “Dexileos son of Lysanias”, tying her to her father’s family. It says nothing about a husband, and the label doesn’t say whether she was married. Probably her family chose the picture and the wording, as the family grave plot suggests.</span></li>
+      </ol>
+      <p class="qprompt">Cold call: Pericles said the best woman is “least talked of among the men”. Her family named and showed Hegeso. Does the stele contradict him?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">Not simply. The stele shows her still and quiet, attended and adorned, not acting. But her family chose to name her and to show her to everyone passing the cemetery, so it only partly fits Pericles’s ideal. It is a family’s picture of an ideal woman.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · What each monument says" data-title="The comparison grid" data-kind="notes">
+<div class="wrap u7l05-dense">
+  <p class="eyebrow">2 · What each monument says · I do — complete the comparison grid in your booklet</p>
+  <h2>The comparison grid: what each stele shows and says</h2>
+  <div class="veil-parts" data-veil="Complete your grid first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u7l05-grid">
+    <tr><th>Feature</th><th>Dexileos stele</th><th>Hegeso stele</th></tr>
+    <tr><td>Pose</td><td>on a rearing horse, leaning forward over a fallen man</td><td>seated on a chair with a footstool, looking at her raised hand</td></tr>
+    <tr><td>Action</td><td><span class="vp reveal">strikes a fallen opponent</span></td><td><span class="vp reveal">looks at an object in her hand while an attendant holds the box; she does nothing else</span></td></tr>
+    <tr><td>Objects</td><td><span class="vp reveal">a horse and a cloak; bronze weapons and reins, now missing</span></td><td><span class="vp reveal">a chair, a footstool, an open box and an object in her hand, probably jewellery (once painted)</span></td></tr>
+    <tr><td>Setting</td><td><span class="vp reveal">no background; an action scene above the inscription, set up where the family’s grave enclosure was later built</span></td><td><span class="vp reveal">no background; a chair and an attendant suggest the household; in a family grave plot</span></td></tr>
+    <tr><td>Inscription</td><td><span class="vp reveal">name, father (Lysanias of Thorikos), the archon years of his birth and death, “one of the five cavalrymen”</span></td><td><span class="vp reveal">her name and her father’s (Proxenos), nothing else</span></td></tr>
+    <tr><td>Ideal</td><td class="later">You decide, in your own words, in today’s writing</td><td class="later">You decide, in your own words, in today’s writing</td></tr>
+  </table></div>
+  </div>
+  <p class="cue">The last row is your thinking: what does each depiction present a man or a woman as being?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · What each monument says" data-title="Two painted vases" data-kind="notes">
+<div class="wrap u7l05-dense">
+  <p class="eyebrow">2 · What each monument says · I do — the program’s two painted vases, in the museums’ own words</p>
+  <h2>Women on painted vases: a pyxis and some wedding-vase fragments</h2>
+  <div class="u7l05-vases">
+    <figure class="figure contain"><img src="images/u7l02-red-figure-pyxis-women-at-home.jpg" alt="A red-figure pyxis, a lidded box probably used for personal things, terracotta, 13.3 cm high, Athens, 430–420 BCE. This side shows three of the nine women painted around it; the one on the left holds a lyre. Art Institute of Chicago, 1892.126a-b" loading="lazy"><figcaption>A red-figure pyxis, a lidded box probably used for personal things, terracotta, 13.3 cm high, Athens, 430–420 BCE. This side shows three of the nine women painted around it; the one on the left holds a lyre. Art Institute of Chicago, 1892.126a-b — <span class="cr">Photo: Art Institute of Chicago · CC0 1.0</span></figcaption></figure>
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · the Art Institute of Chicago on its pyxis, 1892.126a-b · Athens, 430–420 BCE</div>
+        <p class="quote sm">Nine women are depicted in the figured scene that runs right around the vase. The women are presumably in the gynaikeion or women's quarters, and include a seated woman with a book roll … a woman with a mirror … a woman with a lyre …</p>
+        <p class="prov">The museum’s description (CC BY 4.0) · the photograph shows three of the nine women</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · the Royal Ontario Museum on its lebes gamikos fragments, ROM2001.80.13.1</div>
+        <p class="quote sm">The ROM has a group of painted red-figure pottery fragments from a lebes gamikos that preserves scenes of women preparing two brides for their big day. The fragments are attributed to the Washing Painter, active in Athens around 420 BCE.</p>
+        <p class="quote sm">Aphrodite and Paitho embracing behind a seated bride as Eros flies above.</p>
+        <p class="prov">Paul Denis, Assistant Curator, “A Greek Wedding”, ROM Magazine, 29 September 2021 (the last line is a picture caption) · no photograph here: the ROM’s page has no open licence (link on the credits slide)</p>
+      </div>
+      <p class="qprompt">Cold call: which words in these descriptions are hedges, and why do they matter?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">“Presumably” (the museum can’t be sure where the scene is set), “attributed” (the painter’s name is a scholar’s judgement) and “around” (the date is approximate). They separate what we can see, the objects and figures, from what the museums infer.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · What each monument says" data-title="Notes 1 — the monuments and the vases" data-kind="notes">
+<div class="wrap u7l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 1</p>
+  <h2>Two stelai and two vases: what each shows and says</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U7 L5 · Masculinity and femininity in stone and paint</b></span><span>2 · What each monument says</span></div>
+    <div class="row"><div class="cq">What does the Dexileos stele show and say?</div>
+      <div class="nts reveal">a young horseman strikes a fallen enemy <span class="sep">·</span> inscription: Dexileos son of Lysanias of Thorikos, born 414/3, died 394/3 at Corinth, “one of the five cavalrymen” <span class="sep">·</span> dedicated by his relatives; relief about 390 BCE</div></div>
+    <div class="row"><div class="cq">What does the Hegeso stele show and say?</div>
+      <div class="nts reveal">a seated woman looks at an object in her hand (probably jewellery, once painted); an attendant holds an open box <span class="sep">·</span> inscription: Hegeso, daughter of Proxenos <span class="sep">·</span> family grave plot; about 410–400 BCE</div></div>
+    <div class="row"><div class="cq">What do the two vases show, and how sure are the museums?</div>
+      <div class="nts reveal">Chicago pyxis (430–420 BCE): nine women, presumably in the women’s quarters, with a mirror, a lyre, a book roll <span class="sep">·</span> ROM fragments (attributed to the Washing Painter, around 420 BCE): women preparing two brides, with Aphrodite, Paitho and Eros <span class="sep">·</span> chosen images, hedged by the museums</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Writing focus: compare and contrast — whereas and both" data-kind="notes">
+<div class="wrap u7l05-dense u7l05-wf">
+  <p class="eyebrow">3 · You do · Writing focus · 7 minutes · I do → We do → apply</p>
+  <h2>Writing focus: compare and contrast with whereas and both</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="card accent"><div class="k">I do · watch</div>
+      <p class="body"><b>Contrast</b>: ‘Show how things are different or opposite.’ <b>Compare</b>: ‘Show how things are similar or different.’ <span class="small">NESA, <i>Glossary of key words</i></span> So (department advice): <b>contrast</b> = differences only; <b>compare</b> = similarities and differences, then which matters most. <b>Whereas</b> marks a difference; <b>both</b> marks a likeness.</p>
+      <p class="small">Worked example · written for this lesson · on the two vases, not the stelai</p>
+      <div data-booklet="model">
+        <p class="quote sm model u7l05-mv"><span class="lab">Judge</span> The two vases are alike in showing femininity as adornment among women, but they differ in what the women are doing.</p>
+        <p class="quote sm model u7l05-mv"><span class="lab">Differ</span> Whereas the Art Institute describes nine women on the pyxis, presumably in the women’s quarters, with a mirror, a lyre and a book roll, the Royal Ontario Museum says its fragments show women preparing two brides, with Aphrodite and Paitho among the figures.</p>
+        <p class="quote sm model u7l05-mv"><span class="lab">Alike</span> Both present a woman’s world as adornment and the company of other women, through a mirror on the pyxis and jewellery offered to a bride on the fragments.</p>
+        <p class="quote sm model u7l05-mv"><span class="lab">Matters most</span> Of these, the likeness matters more, because both are painters’ pictures of women among women, with the things of adornment, so they probably show an ideal of femininity, not the whole of women’s lives.</p>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card"><div class="k">We do · together</div>
+        <p class="body">Euripides, <i>Medea</i> (trans. Coleridge), from Lesson 4: “And yet they say we live secure at home, while they are at the wars … I would gladly take my stand in battle array three times o’er, than once give birth.” In pairs, write <b>one sentence</b> that <b>contrasts</b> what the men say with what Medea says. Start with <span class="nq">Whereas</span> or <span class="nq">Unlike</span>; then cold call.</p>
+        <div class="veil-parts" data-veil="Try it first — then show the answers">
+          <p class="quote sm model u7l05-mv vp reveal"><span class="lab">Whereas</span> Whereas the men say that women “live secure at home” while they fight, Medea says, “I would gladly take my stand in battle array three times o’er, than once give birth”.</p>
+          <p class="quote sm model u7l05-mv vp reveal"><span class="lab">Unlike</span> Unlike the men who say that women live secure at home, Medea ranks childbirth as worse than battle.</p>
+          <div class="note vp reveal" data-code="counter"><p class="body"><b>Not a contrast:</b> <span class="nq">“Both Medea and the men talk about danger.”</span> That is a likeness, and <b>contrast</b> asks for differences only.</p></div>
+        </div>
+      </div>
+      <div class="card quiet"><div class="k">Apply · in today’s task</div>
+        <p class="body" style="max-width:none">Write the first sentence of your answer on the two stelai: your judgement of the main similarity or difference. <span class="nq">“Whereas …, …; both …”</span> Your Writing toolkit (booklet pages 3–4): connectives by function.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: deconstruct the question">
+<div class="wrap u7l05-dense">
+  <p class="eyebrow">3 · You do · 19 minutes in all · deconstruct the question first</p>
+  <h2>Your comparison answer: deconstruct it first</h2>
+  <p class="u7l05-q"><b>Compare</b> the depictions of masculinity and femininity on the stelai of Dexileos and Hegeso. <span class="mk2">6 marks</span></p>
+  <p class="qprompt">Deconstruct it: what does this question ask you to do?</p>
+  <div data-veil="Deconstruct it first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u7l05-dqt">
+    <tr><th>Step</th><th>This question</th></tr>
+    <tr class="reveal"><td>Verb</td><td><b>Compare</b>: ‘Show how things are similar or different.’ (NESA). Give similarities <i>and</i> differences, then say which matters most (department advice)</td></tr>
+    <tr class="reveal"><td>Topic</td><td>how each stele depicts masculinity and femininity: what it presents a man and a woman as being and doing</td></tr>
+    <tr class="reveal"><td>Limits</td><td>two monuments only: the Dexileos stele and the Hegeso stele, what each shows and says; “depictions” means what each presents, so hedge what you infer</td></tr>
+    <tr class="reveal"><td>Do</td><td>a developed paragraph for 6 marks (department advice): your judgement of the main similarity or difference; point by point, with evidence from each stele joined by <i>whereas</i> and <i>both</i>; end with which matters most</td></tr>
+  </table></div>
+  </div>
+  <div class="split" style="--cols:1fr 1.5fr">
+    <p class="qprompt">Check first: if the question said <b>contrast</b> instead of <b>compare</b>, what would change?</p>
+    <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">You would give differences only. <b>Compare</b> also asks for similarities, and for which matters most.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: write your comparison answer">
+<div class="wrap u7l05-dense">
+  <p class="eyebrow">3 · You do · writing 12 minutes · then check it · press K for the timer</p>
+  <h2>Write your comparison answer</h2>
+  <p class="u7l05-q"><b>Compare</b> the depictions of masculinity and femininity on the stelai of Dexileos and Hegeso. <span class="mk2">6 marks</span></p>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body">
+          <li>Open with your judgement: the main similarity or the main difference between the two depictions.</li>
+          <li>Go point by point (pose, action, objects, inscription): evidence from each stele, joined by whereas and both.</li>
+          <li>Hedge what you infer (probably, suggests), and name each stele.</li>
+          <li>End with which matters most.</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body"><b>Assess</b> how far funerary art can show what Athenians thought about men and women, rather than what families wanted remembered.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Use your comparison grid and Notes 1. Word bank:</p>
+        <div class="u7l05-bank"><span>pose</span><span>adornment</span><span>warrior</span><span>household</span><span>ideal</span></div>
+        <p class="body">Frame: <span class="nq">“Whereas …, …; both …”</span> The worked example on the Writing focus card shows the shape.</p></div>
+      <div class="card quiet"><div class="k">Check yours: does it …</div>
+        <ul class="checks">
+          <li><label><input type="checkbox"> <span>give at least one similarity and one difference (compare)?</span></label></li>
+          <li><label><input type="checkbox"> <span>use evidence from both stelai, point by point, with whereas and both?</span></label></li>
+          <li><label><input type="checkbox"> <span>say “probably” or “suggests” for what it infers?</span></label></li>
+          <li><label><input type="checkbox"> <span>end with which matters most?</span></label></li>
+        </ul></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="A model answer" data-kind="notes">
+<div class="wrap u7l05-dense">
+  <p class="eyebrow">3 · You do · after you write · compare yours with a model</p>
+  <h2>A model comparison answer: the two stelai</h2>
+  <div class="split" style="--cols:1.7fr 1fr">
+    <div class="src reveal" data-veil="Write yours first — then show a model answer">
+      <div class="k">6 marks · a model written for this lesson, to read after you write</div>
+      <p class="quote sm model">The two stelai probably present ideals chosen by families rather than portraits, but they differ sharply in what that ideal is for a man and for a woman. Whereas the Dexileos relief shows a young cavalryman in action, striking a fallen opponent, the Hegeso relief shows a woman seated and still, looking at an object, probably jewellery, in her raised hand while an attendant holds the box. The man is placed in war, as ‘one of the five cavalrymen’; the woman, it seems, in the household, adorned and attended. Both inscriptions name the person through a father, Lysanias and Proxenos, and both monuments belong, the museums say, to family grave plots. Of these, the difference matters most, because Dexileos is shown winning although his inscription says that he died at Corinth, which suggests that a family chose to present masculinity as action and war, and femininity as stillness, adornment and the household.</p>
+    </div>
+    <div class="card quiet"><div class="k">Check yours: does it …</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> <span>open with a judgement of the main similarity or difference?</span></label></li>
+        <li><label><input type="checkbox"> <span>use whereas for a difference, with evidence from each stele?</span></label></li>
+        <li><label><input type="checkbox"> <span>use both for a similarity?</span></label></li>
+        <li><label><input type="checkbox"> <span>hedge what it infers?</span></label></li>
+        <li><label><input type="checkbox"> <span>end with which matters most?</span></label></li>
+      </ul></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Summary" data-kind="notes">
+<div class="wrap u7l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What does each stele show and say?</li>
+          <li>What do the two painted vases add?</li>
+          <li>Why are these ideals chosen by families and painters, not portraits?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">The Dexileos stele shows a young cavalryman striking a fallen enemy and names him through his father, Lysanias; the Hegeso stele shows a seated woman, an attendant and a box, probably of jewellery, and names her through her father, Proxenos. The Chicago pyxis and the ROM fragments, as their museums describe them, show women together, adorned, and brides being prepared. All four are chosen images, probably an ideal of a man in war and of a woman at home, so they show what families and painters wanted shown rather than how people lived or died.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> <span>Dexileos stele: what it shows, its inscription</span></label></li>
+        <li><label><input type="checkbox"> <span>Hegeso stele: what it shows, its inscription</span></label></li>
+        <li><label><input type="checkbox"> <span>The comparison grid, five rows</span></label></li>
+        <li><label><input type="checkbox"> <span>The pyxis and the ROM fragments, with the hedges</span></label></li>
+        <li><label><input type="checkbox"> <span>Compare vs contrast: whereas and both</span></label></li>
+        <li><label><input type="checkbox"> <span>Ideals, not portraits</span></label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Hinge: which statement is best supported?" data-kind="practice">
+<div class="wrap u7l05-dense">
+  <p class="eyebrow">Check for understanding · hinge question · hold up your A, B, C or D card on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2>Which statement about the two stelai is best supported by the evidence?</h2>
+  <div class="veil-parts" data-veil="Vote first — then show the answer">
+  <ol class="opts">
+    <li><span class="n">A</span><span>Both show the dead person in action</span></li>
+    <li id="u7l05-hqB"><span class="n">B</span><span>Both show ideals chosen by families</span></li>
+    <li><span class="n">C</span><span>Only Hegeso’s inscription names a father</span></li>
+    <li><span class="n">D</span><span>Only Dexileos’s stele is a grave monument</span></li>
+  </ol>
+  <i class="reveal" data-mark="#u7l05-hqB" hidden></i>
+  <div class="note vp reveal" data-code="evidence"><div class="k">B: both show ideals chosen by families (probably: the museums say who dedicated or owned them, not why the image was chosen)</div><p class="body">Dexileos’s relief was “dedicated by his relatives”, and the Hegeso stele belongs to a family grave plot; Dexileos is shown winning although his inscription says that he died at Corinth. <b>A</b> is wrong: Hegeso is seated and still, not in action. <b>C</b> is wrong: both inscriptions name a father, Proxenos and Lysanias. <b>D</b> is wrong: both are funerary monuments in the Kerameikos (Dexileos’s, the museum says, is a family memorial; his ashes were placed in the public burial ground).</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 4 minutes · before you leave</p>
+  <h2>One difference and one similarity</h2>
+  <div class="split" style="--cols:.4fr 1.6fr; align-items:center">
+    <div>
+      <div class="u7l05-exitpair"><img src="images/u7l05-grave-relief-seated-woman-and-attendant.jpg" alt="Marble grave relief of a seated woman and a standing attendant holding a box" loading="lazy"><img src="images/u7l05-grave-relief-horseman-and-fallen-man.jpg" alt="Marble grave relief of a horseman striking a fallen man" loading="lazy"></div>
+      <p class="small credline">Images: George E. Koronaios (CC BY-SA 4.0) · George E. Koronaios (CC BY-SA 4.0). Full details on the last slide.</p>
+    </div>
+    <div class="stack">
+      <div class="card accent"><p class="lead">Write one difference and one similarity between the stelai of Dexileos and Hegeso.</p></div>
+      <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer gives one of each</div><p class="body"><b>Difference:</b> action and war against stillness and adornment: a horseman striking a fallen opponent, against a seated woman with an attendant and a box. <b>Similarity:</b> both probably present an ideal chosen by the family, not a portrait, and both inscriptions name the father. Not <span class="nq">“both are just gravestones”</span>: that is true but says nothing about masculinity and femininity.</p></div>
+    </div>
+  </div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> wife, mother, heiress: women in the Athenian family.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u7l05-dense">
+  <p class="eyebrow">Practice and review · 1 of 4 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>The Hegeso stele was found in the Kerameikos, a cemetery of Athens.</span>
+      <span class="sol reveal">True <span class="why">— the museum’s label says “Found west of Athens, in the ancient cemetery of Kerameikos”.</span></span></li>
+    <li><span class="n">2</span><span>The inscription on the Dexileos stele gives only his name.</span>
+      <span class="sol no reveal">False <span class="why">— it also gives his father, Lysanias, his village, Thorikos, the archon years of his birth and death, and “one of the five cavalrymen”.</span></span></li>
+    <li><span class="n">3</span><span>The relief on the Dexileos stele shows how he died.</span>
+      <span class="sol no reveal">False <span class="why">— the inscription says that he died at Corinth, but the relief shows a horseman striking a fallen opponent: a chosen image, probably an ideal, not a record of his death.</span></span></li>
+    <li><span class="n">4</span><span>The museum says the object Hegeso looks at was originally painted on the stone.</span>
+      <span class="sol reveal">True <span class="why">— it was “originally rendered in paint”; the paint has gone, so “jewellery” is the museum’s reading: probably jewellery.</span></span></li>
+    <li><span class="n">5</span><span><b>Compare</b> means show only how things are similar.</span>
+      <span class="sol no reveal">False <span class="why">— NESA: ‘Show how things are similar or different.’ <b>Contrast</b> is the verb for differences only.</span></span></li>
+    <li><span class="n">6</span><span>The Royal Ontario Museum says its lebes gamikos fragments show women preparing two brides.</span>
+      <span class="sol reveal">True <span class="why">— “scenes of women preparing two brides”, attributed to the Washing Painter, who was active around 420 BCE; the museum’s hedges are “attributed” and “around”.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — fix it, then deconstruct" data-kind="practice">
+<div class="wrap prac u7l05-dense">
+  <p class="eyebrow">Practice and review · 2 of 4 · writing · whereas and both</p>
+  <h2>Fix the sentence, then deconstruct a new question</h2>
+  <div class="card accent"><div class="k">Exercise 1 · each sentence has one fault: name it, then rewrite the sentence</div></div>
+  <ol class="rq" data-answers>
+    <li><span class="nq">“The pyxis and the lebes gamikos are both vases.”</span>
+      <span class="sol reveal">A likeness that says nothing about femininity, the topic. <span class="nq">“Both present a woman’s world as adornment and the company of other women: a mirror on the pyxis, jewellery offered to a bride on the fragments.”</span></span></li>
+    <li><span class="nq">“Whereas the pyxis shows women, the fragments show women.”</span>
+      <span class="sol reveal">The <i>whereas</i> has no difference on either side. <span class="nq">“Whereas the pyxis shows nine women, presumably in the women’s quarters, the fragments show women preparing two brides.”</span></span></li>
+    <li><span class="nq">“The pyxis shows what Athenian women were really like at home.”</span>
+      <span class="sol reveal">It overclaims and drops the hedge: a painter’s picture is not a record of how women lived. <span class="nq">“The pyxis, as the museum describes it, shows nine women, presumably in the women’s quarters; it presents a painter’s picture of women, not how they lived.”</span></span></li>
+    <li>Exercise 2 · deconstruct: <span class="nq">“<b>Contrast</b> the inscriptions on the stelai of Dexileos and Hegeso. (4 marks)”</span> What is the verb, the topic, the limits, and what must the answer do?
+      <span class="sol reveal">Verb: <b>contrast</b>, ‘Show how things are different or opposite.’ (NESA). Topic: what each inscription says. Limits: the two inscriptions only, not the reliefs. Do: differences only, point by point, with <i>whereas</i> or <i>unlike</i>; three to five sentences for 4 marks (department advice).</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — extension: how far can funerary art show what Athenians thought?" data-kind="practice">
+<div class="wrap prac u7l05-dense">
+  <p class="eyebrow">Practice and review · 3 of 4 · extension · assess</p>
+  <h2>What Athenians thought, or what families wanted remembered?</h2>
+  <div class="split" style="--cols:1fr 1.6fr">
+    <div class="card quiet"><div class="k">Exercise 3 · one paragraph</div><p class="body"><b>Assess</b> how far funerary art can show what Athenians thought about men and women, rather than what families wanted remembered.</p>
+      <p class="body">Use both stelai. Shape: Judge → Evidence → Analyse → Evaluate → Resolve, with the same degree in the Judge and the Resolve.</p>
+      <p class="body"><b>Assess</b>: ‘Make a judgement of value, quality, outcomes, results or size.’ <span class="small">NESA, <i>Glossary of key words</i></span></p></div>
+    <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+      <p class="quote sm model">Funerary art can show only to a limited extent what Athenians thought about men and women, because it shows chiefly what families wanted remembered. The Dexileos relief shows a young cavalryman striking a fallen opponent although his inscription says that he died at Corinth, and the museum says that his relatives dedicated it, so it presents the man his family chose to remember. The Hegeso stele belongs to a family grave plot, and the museum reads her appearance and the plot as signs of noble origin, which suggests that it presents one family’s ideal of a woman, not women in general. Yet families chose images that passers-by would recognise, and the two stelai agree with the painted vases, which the museums describe as women together, with mirrors and jewellery, and brides being prepared, so the monuments probably also reflect ideas that many wealthy Athenians shared. On balance, funerary art can show only to a limited extent what Athenians thought, because every image was chosen by a family, although its shared patterns suggest an ideal recognised more widely.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u7l05-dense">
+  <p class="eyebrow">Practice and review · 4 of 4 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>What does the Dexileos stele show and say?
+      <span class="sol reveal">A young cavalryman striking a fallen opponent; the inscription names Dexileos son of Lysanias of Thorikos, born in 414/3 BCE and dead in 394/3 BCE at Corinth, “one of the five cavalrymen”. His relatives dedicated it.</span></li>
+    <li>What does the Hegeso stele show and say?
+      <span class="sol reveal">A seated woman looking at an object in her raised hand, probably jewellery that was painted, and a standing attendant holding an open box; the inscription names Hegeso, daughter of Proxenos. It belongs to a family grave plot, about 410–400 BCE.</span></li>
+    <li>What do the pyxis and the ROM fragments show, and how sure are the museums?
+      <span class="sol reveal">The pyxis: nine women, “presumably” in the women’s quarters, with a mirror, a lyre and a book roll (430–420 BCE). The fragments: women preparing two brides, with Aphrodite and Paitho, “attributed” to the Washing Painter, “around” 420 BCE.</span></li>
+    <li>Why are the stelai better described as ideals than as portraits?
+      <span class="sol reveal">Families probably chose the image: Dexileos’s relatives dedicated his, and it shows him winning although his inscription says that he died at Corinth; Hegeso, in a family grave plot, is shown still and adorned, with nothing she did. So they show what a family wanted remembered, not what each person was like.</span></li>
+    <li>What does each of <b>compare</b> and <b>contrast</b> ask for?
+      <span class="sol reveal">NESA: compare is ‘Show how things are similar or different.’ and contrast is ‘Show how things are different or opposite.’ So compare gives likenesses and differences, then which matters most; contrast gives differences only.</span></li>
+    <li>What do <i>whereas</i> and <i>both</i> do in a comparison answer?
+      <span class="sol reveal"><i>Whereas</i> sets a difference side by side, with evidence from each; <i>both</i> names a likeness, again with evidence from each.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u7l05-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u7l05-cite"><div class="k">Written sources and museum records</div>
+      <p class="small">Thucydides 2.45.2: trans. R. Crawley (Dent, 1910; public domain), <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0200:book=2:chapter=45">Perseus Digital Library</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 US</a>). Xenophon, <i>Oeconomicus</i> 7.22: trans. E. C. Marchant (Loeb, 1923), <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0212:text=Ec.:chapter=7:section=22">Perseus Digital Library</a>. Euripides, <i>Medea</i>: trans. E. P. Coleridge, <i>The Plays of Euripides</i> I (Bell, 1891; public domain), <a href="https://archive.org/details/playseuripides01colegoog">archive.org</a>. Aristophanes, <i>Lysistrata</i>, translator’s introduction (review answer): B. B. Rogers (Loeb, 1924; public domain), <a href="https://archive.org/details/aristophanes0003unse">archive.org</a>.</p>
+      <p class="small">Dexileos: Attic Inscriptions Online, <a href="https://www.atticinscriptions.com/inscription/IGII2/6217">IG II² 6217</a>, translation by S. Lambert, F. Schuddeboom and R. Osborne (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>); the Kerameikos Museum’s label for P 1130 and the National Archaeological Museum’s gallery label for 3624, as transcribed on Wikimedia Commons with the photographs credited below (the <a href="https://commons.wikimedia.org/wiki/File:The_Grave_Stele_of_Dexileos_(4th_cent._B.C.)_at_the_Archaeological_Museum_of_Kerameikos_on_27_June_2018.jpg">Dexileos</a> and <a href="https://commons.wikimedia.org/wiki/File:The_Grave_Stele_of_Hegeso_(5th_cent._B.C.)_at_the_National_Archaeological_Museum_on_3_April_2018.jpg">Hegeso</a> pages). Hegeso: Museum of Classical Archaeology, University of Cambridge, <a href="https://museum.classics.cam.ac.uk/collections/casts/grave-stele-hegeso">cast record</a>.</p>
+      <p class="small">Vases: Art Institute of Chicago, <a href="https://www.artic.edu/artworks/616">pyxis 1892.126a-b</a> (the museum’s description is licensed CC BY 4.0). Royal Ontario Museum, Paul Denis, “A Greek Wedding”, <i>ROM Magazine</i>, 29 September 2021, <a href="https://www.rom.on.ca/magazine/greek-wedding">rom.on.ca</a> (© Royal Ontario Museum; quoted briefly for study, and the ROM’s photographs are not reproduced here: open the page to see the fragments).</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA. Directive verbs: NESA, <a href="https://www.nsw.gov.au/education-and-training/nesa/hsc/student-guide/glossary"><i>Glossary of key words</i></a>.</p></div>
+      <div class="card quiet u7l05-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>Red-figure pyxis with women in the household, Athens, 430–420 BCE (Art Institute of Chicago, 1892.126a-b)</b> · Photo: Art Institute of Chicago · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://www.artic.edu/artworks/616">source</a></li><li><b>Grave stele of Hegeso, Athens, about 410–400 BCE (National Archaeological Museum, Athens, 3624)</b> · Photo: George E. Koronaios · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:The_Grave_Stele_of_Hegeso_(5th_cent._B.C.)_at_the_National_Archaeological_Museum_on_3_April_2018.jpg">source</a></li><li><b>Grave stele of Dexileos, Athens, about 390 BCE (Kerameikos Museum, P 1130)</b> · Photo: George E. Koronaios · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:The_Grave_Stele_of_Dexileos_(4th_cent._B.C.)_at_the_Archaeological_Museum_of_Kerameikos_on_27_June_2018.jpg">source</a></li></ul>
+        <p class="small">All images are public domain or openly licensed, and were resized or cropped for the web. Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1828 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U7 L14 · Two Women at the Festival: Theocritus, Herodas and Alexandria</title>
+<meta name="description" content="Year 11 Ancient History, women in ancient Greece: two Alexandrian poems that put Greek women on the page, what a literary source is reliable for, and how to pace two timed source answers by their marks.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#6A5D0E; --bright:#9A8716; --tint:#F5F1DC; --statement:#6A5D0E;
+  --solid:#6A5D0E; --soft:#EFE7C2; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#E3D58A; --bright:#C9B53A; --tint:#2E2A0E; --statement:#4F450A; --soft:#EFE7C2; } }
+:root[data-theme="dark"]{ --deep:#E3D58A; --bright:#C9B53A; --tint:#2E2A0E; --statement:#4F450A; --soft:#EFE7C2; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 7 Lesson 14 only (every class starts u7l14-) */
+
+/* title picture; goals slide syllabus line; credits links */
+.u7l14-cover{margin:0;}
+.u7l14-cover img{display:block; width:100%; height:58vh; object-fit:contain; background:var(--surface-2); border-radius:10px;}
+.u7l14-cover figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.4em; line-height:1.35;}
+.u7l14-cover figcaption b{color:var(--deep);}
+.u7l14-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u7l14-cite a{color:var(--deep);}
+
+/* tables */
+.u7l14-dqt td:first-child{font-weight:700; color:var(--c-directive); white-space:nowrap;}
+
+/* the question line */
+.u7l14-q{font-weight:700; font-size:calc(var(--fs-body)*.98); line-height:1.38; margin:0;}
+.u7l14-q .mk2{display:inline-block; margin-left:.4em; padding:0 .5em; border:1px solid var(--deep); border-radius:999px;
+  font-size:.82em; color:var(--deep); font-weight:700; white-space:nowrap;}
+
+/* Writing focus: the worked question and the model's moves */
+.u7l14-wq{margin:.35em 0 .15em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.u7l14-wq b{color:var(--deep);}
+.u7l14-moves{display:flex; flex-direction:row; flex-wrap:wrap; gap:.15em 1.1em; margin-top:.35em;}
+.u7l14-moves .mq{font-size:calc(var(--fs-body)*.78); line-height:1.3; margin:0;}
+
+/* paragraphs inside a card need a little air */
+.card .body + .body, .card .veil-parts, .card .body + .tbl-scroll, .card .tbl-scroll + .small,
+.card .body + .note, .card .quote + .u7l14-moves{margin-top:.4em;}
+
+/* a word bank */
+.u7l14-bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.u7l14-bank span{border:1px solid var(--c-keyterm); color:var(--c-keyterm); border-radius:999px; padding:.1em .7em;
+  background:var(--w-keyterm); font-size:calc(var(--fs-body)*.8); font-weight:600;}
+
+/* Writing focus: the hinge options (one per line, all four fit) */
+.u7l14-wf .opts{gap:.3em;}
+.u7l14-wf .opts li{padding:.2em .6em;}
+.u7l14-wf .veil-parts > .body{margin:.4em 0 .25em;}
+.u7l14-wf .veil-parts .note{margin-top:.3em;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u7l14-cover img{height:auto; max-height:46vh;}
+
+  .u7l14-dqt td:first-child{white-space:normal;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u7l14-dense{gap:10px;}
+  html:not(.read) .u7l14-dense h2{font-size:calc(var(--fs-h2)*.84);}
+  html:not(.read) .u7l14-dense .quote.sm{font-size:calc(var(--fs-body)*.76); line-height:1.4;}
+  html:not(.read) .u7l14-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u7l14-dense .src{padding:10px 16px;}
+  html:not(.read) .u7l14-dense .src .prov{margin-top:.4em;}
+  html:not(.read) .u7l14-dense .note{padding:.45em .85em;}
+  html:not(.read) .u7l14-dense .note .body, html:not(.read) .u7l14-dense .card .body,
+  html:not(.read) .u7l14-dense .qprompt{font-size:calc(var(--fs-body)*.78); line-height:1.36;}
+  html:not(.read) .u7l14-dense .card{padding:10px 16px;}
+  html:not(.read) .u7l14-dense .card .k{margin-bottom:.25em;}
+  html:not(.read) .u7l14-dense .keylist{gap:6px;}
+  html:not(.read) .u7l14-dense .keylist li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u7l14-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u7l14-dense .tbl.compact td{padding:.3em .55em;}
+  html:not(.read) .u7l14-dense .tbl th{padding:.38em .6em;}
+  html:not(.read) .u7l14-dense .figure img{max-height:44vh;}
+  html:not(.read) .u7l14-dense .tf li, html:not(.read) .u7l14-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u7l14-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u7l14-dense .prac{gap:6px;}
+  html:not(.read) .u7l14-dense .cornell .cq, html:not(.read) .u7l14-dense .cornell .nts{font-size:calc(var(--fs-body)*.76); padding:.35em .8em;}
+  html:not(.read) .u7l14-dense .u7l14-wq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u7l14-dense .u7l14-q{font-size:calc(var(--fs-body)*.82);}
+  html:not(.read) .u7l14-dense .u7l14-moves .mq{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u7l14-dense .checks label{font-size:calc(var(--fs-body)*.76);}
+
+  html:not(.read) .u7l14-wf .opts li{font-size:calc(var(--fs-body)*.72); padding:.12em .5em;}
+  html:not(.read) .u7l14-wf .veil-parts .body{font-size:calc(var(--fs-body)*.72); margin:.25em 0 .15em;}
+}
+
+/* grid columns may shrink below their widest table; table headings wrap */
+.u7l14-dense .split > *, .u7l14-dense .stack > *, .u7l14-dense .cols > *{min-width:0;}
+.u7l14-dqt th{white-space:normal;}
+
+/* Lesson 14 additions: a source with a picture beside it, the paper's source slides, the reading-time steps */
+.u7l14-two{display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.5fr); gap:clamp(12px,1.8vw,28px); align-items:start;}
+.u7l14-two .figure img{max-height:36vh; object-fit:contain; background:var(--surface-2);}
+.u7l14-gloss{font-size:calc(var(--fs-body)*.74); line-height:1.4; color:var(--slate); margin:.3em 0 0;}
+.u7l14-paper .quote{font-size:calc(var(--fs-body)*.95);}
+
+@media (max-width:900px){
+  .u7l14-two{grid-template-columns:1fr;}
+  .u7l14-two .figure img{max-height:40vh;}
+}
+@media (max-height:820px){
+  html:not(.read) .u7l14-dense .u7l14-two .figure img{max-height:30vh;}
+  html:not(.read) .u7l14-dense .u7l14-gloss{font-size:calc(var(--fs-body)*.66);}
+}
+
+/* the writing plan (countdown times) */
+.u7l14-plan{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.u7l14-plan li{display:grid; grid-template-columns:9.6em 1fr; gap:.7em; align-items:start; font-size:calc(var(--fs-body)*.86); line-height:1.36;}
+.u7l14-plan .t{font-family:var(--mono); font-weight:700; color:var(--deep); text-align:right;}
+@media (max-width:900px){ .u7l14-plan li{grid-template-columns:8.4em 1fr;} }
+@media (max-height:820px){ html:not(.read) .u7l14-dense .u7l14-plan li{font-size:calc(var(--fs-body)*.76);} }
+.u7l14-wq .mk2, .u7l14-q .mk2{display:inline-block; margin-left:.4em; padding:0 .5em; border:1px solid var(--deep); border-radius:999px; font-size:.82em; color:var(--deep); font-weight:700; white-space:nowrap;}
+
+/* Lesson 14: the perspective grid (key column labels, blank cells) and the time card */
+.u7l14-pg td:first-child, .u7l14-pg th:first-child{font-weight:700; white-space:nowrap; color:var(--deep);}
+.u7l14-pg td{vertical-align:top;}
+.u7l14-pg th{white-space:normal;}
+.u7l14-pg .keep{color:var(--slate); font-style:italic;}
+.u7l14-ex td{height:2.2em;}
+.u7l14-rate{font-family:var(--mono); font-weight:700; color:var(--deep);}
+@media (max-width:900px){ .u7l14-pg td:first-child, .u7l14-pg th:first-child{white-space:normal;} }
+@media (max-height:820px){
+  html:not(.read) .u7l14-dense .u7l14-pg{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u7l14-dense .u7l14-pg td{padding:.22em .5em;}
+  html:not(.read) .u7l14-dense .u7l14-ex td{height:1.7em;}
+}
+
+/* the paper: four extracts in two columns */
+.u7l14-three{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 14px;}
+.u7l14-three .src{margin:0;}
+.u7l14-three .src .k{font-size:calc(var(--fs-body)*.78);}
+.u7l14-pp{font-size:calc(var(--fs-body)*.76); line-height:1.4; margin:.3em 0;}
+@media (max-width:900px){ .u7l14-three{grid-template-columns:1fr;} }
+@media (max-height:820px){
+  html:not(.read) .u7l14-dense .u7l14-three{gap:8px 12px;}
+  html:not(.read) .u7l14-dense .u7l14-three .src{padding:8px 14px;}
+  html:not(.read) .u7l14-dense .u7l14-three .quote.sm{font-size:calc(var(--fs-body)*.7); line-height:1.35;}
+  html:not(.read) .u7l14-dense .u7l14-pp{font-size:calc(var(--fs-body)*.64);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 14" data-title="Two women at the festival" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.25fr 1fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 7 · Women in ancient Greece · Lesson 14</p>
+      <h1>Two women at the festival</h1>
+      <p class="lead">Two poems, both by men, put Greek women on the page in Alexandria. What do they show, how far can we trust them, and how do you pace two timed answers by their marks?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div>
+      <figure class="u7l14-cover"><img src="images/u7l14-marble-head-ptolemaic-queen.jpg" alt="A marble head of a woman with wavy hair drawn back and a broken nose, seen from the left against a dark background" loading="lazy"><figcaption><b>A Ptolemaic queen?</b> A marble head of about 270–250 BCE, at the Met. Which queen is not recorded in its title.</figcaption></figure>
+      <p class="small credline">Images: The Met (CC0 1.0). Full details on the last slide.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 14" data-title="Connect: continuity and change" data-kind="intro">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow">Connect · 3 minutes · books closed · everyone writes one line · press K for the timer</p>
+  <h2>Greek women in Ptolemaic Egypt: what continued, what changed?</h2>
+  <div class="split" style="--cols:1fr 1.3fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · one line each</div><p class="body">Name <b>one thing that continued</b> and <b>one thing that changed</b> for Greek women in Ptolemaic Egypt, with its document.</p></div>
+      <p class="qprompt">Cold call two students: what continued, what changed, and which document?</p>
+    </div>
+    <div class="stack" data-veil="Write yours first — then show some answers">
+      <div class="note reveal" data-code="evidence"><div class="k">Continued · a guardian</div><p class="body">A Greek woman still acted with a guardian: in a loan of 221–220 BCE (Select Papyri I 65) Demetria is the lender, and her guardian Apollophanes is named beside her.</p></div>
+      <div class="note reveal" data-code="evidence"><div class="k">Changed · in writing, and to the king</div><p class="body">Marriage and money were put in written documents, and some women wrote to the king in their own names: P. Eleph. 1 sets out duties on both sides (311/310 BCE), and Philista, who describes herself as a working woman, petitions about a scalding (P. Enteux. 82, about 221 BCE).</p></div>
+    </div>
+  </div>
+  <p class="cue reveal">A limit: papyrus survives in Egypt’s dry climate, so a “change” may partly be a change in what survives. Today: poems about Greek women in Alexandria.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 14" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>analyse attitudes towards women in Alexandrian poetry</li>
+        <li>pace source answers by their marks</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>explain how Theocritus and Herodas depict women, and why</li>
+        <li>judge what a poem is reliable for</li>
+        <li>work out minutes per mark and pace my answers</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u7l14-syl"><b>Syllabus outcomes:</b> AH-11-04 accounts for the different perspectives of individuals and groups in their historical context · AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-07 identifies different perspectives of the past · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 14" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U7 L14 · Two women at the festival</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Who made Idyll 15, and for whom?</div><div class="nts">poet → court? → ready for readers → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A new page for each lesson</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences; a source for every claim.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: identify, describe, explain. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: Idyll 15 · Herodas and the perspectives. Your timed answers go in your answer booklet, not your notes.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 14" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for the poems and for pacing</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Writing terms</th><th>Meaning</th></tr>
+      <tr><td>Time by marks</td><td>Writing minutes ÷ total marks = minutes per mark. Department advice, not a NESA rule.</td></tr>
+      <tr><td>Reading time</td><td>Time before writing: deconstruct each question, read the sources, plan, in your head (in the HSC you may not write or mark the paper).</td></tr>
+      <tr><td>Perspective</td><td>The point of view a source presents, shaped by its maker, audience and purpose.</td></tr>
+      <tr><td>Usefulness / reliability</td><td>What a source can tell us for a question / how far we can trust it for that question: <span class="nq">“reliable for … but not for … because …”</span></td></tr>
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Literary source</td><td>A poem, play or story. It can show what its maker and audience found believable or funny, but it was not written as a record.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Content terms</th><th>Meaning</th></tr>
+      <tr><td>Alexandria</td><td>The Greek city on Egypt’s coast, founded by Alexander the Great, which later became the Ptolemies’ capital.</td></tr>
+      <tr><td>Adonis festival</td><td>A festival of Adonis, the young lover of the goddess Aphrodite, whose death women mourned. In Idyll 15 it is held at the palace in Alexandria, and its song celebrates Adonis with Aphrodite before the next day’s mourning.</td></tr>
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Mime</td><td>A short scene in verse about everyday people, often comic. Idyll 15 and Herodas’s <i>Mimes</i> are both mimes.</td></tr>
+      <tr><td>Court poet</td><td>A poet who wrote under the support of a royal court, and so had reasons to please it.</td></tr>
+      <tr><td>Doric</td><td>A group of Greek dialects spoken across much of the Peloponnese and in many Greek colonies. The women of Idyll 15 are proud of speaking it.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · I do: Idyll 15" data-title="Idyll 15: who made it, and for whom?" data-kind="notes">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow">1 · I do · supported reading of Idyll 15 · think aloud: who made it, and for whom?</p>
+  <h2>A poem about a queen’s festival</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Provenance · read this first</div>
+        <p class="body"><b>Who:</b> Theocritus, a Greek poet from Sicily who probably lived in Alexandria for a time.</p>
+        <p class="body"><b>When:</b> about the 270s BCE (an estimate from the queen the poem names).</p>
+        <p class="body"><b>What:</b> Idyll 15, a poem in the form of a mime, set in Alexandria. Gorgo and Praxinoa, two Syracusan women, go to a festival of Adonis at the palace of Ptolemy II.</p></div>
+      <div class="src">
+        <div class="k">Source · Idyll 15, lines 110–111 · the song at the festival · trans. A. Lang (1880)</div>
+        <p class="quote sm">… doth the daughter of Berenice, even Arsinoe, lovely as Helen, cherish Adonis with all things beautiful.</p>
+        <p class="prov">Arsinoe II, Ptolemy II’s wife and sister, is the queen the song names · prose translation · the poem is our evidence for this festival in this lesson</p></div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Who made this evidence, and for whom? What does that make us ask? Think first.</p>
+      <ol class="keylist veil-parts" data-veil="Think first — then show the points">
+        <li><span class="num">1</span><span class="t">A poet’s evidence</span><span class="d vp reveal">The festival reaches us in a poem by a man, not in a record of the festival. He tells it the way he chooses.</span></li>
+        <li><span class="num">2</span><span class="t">Written for the court</span><span class="d vp reveal">The song names the queen as the host, and (in the street) a woman thanks the king. A poet who names his rulers like this was probably writing for their court and for Greek readers in Alexandria.</span></li>
+        <li><span class="num">3</span><span class="t">So ask</span><span class="d vp reveal">Whose view of the women is this? What did the poet want his audience to feel? Keep those two questions for every extract.</span></li>
+      </ol>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · I do: Idyll 15" data-title="Idyll 15: in the street" data-kind="notes">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow">1 · I do · supported reading · Praxinoa at home, then in the street</p>
+  <h2>Reading the extracts: who is she talking about?</h2>
+  <div class="u7l14-two">
+    <div class="stack">
+      <figure class="figure contain"><img src="images/u7l14-terracotta-statuette-draped-woman.jpg" alt="Terracotta statuette of a woman wrapped in a mantle, with a flat round hat: Greek, Hellenistic, 2nd century BCE, perhaps from Asia Minor, 29.8 cm high. It is later than the poem and probably not from Alexandria, so it shows how a maker pictured a woman, not the women of Idyll 15. Metropolitan Museum of Art, 30.117" loading="lazy"><figcaption>Terracotta statuette of a woman wrapped in a mantle, with a flat round hat: Greek, Hellenistic, 2nd century BCE, perhaps from Asia Minor, 29.8 cm high. It is later than the poem and probably not from Alexandria, so it shows how a maker pictured a woman, not the women of Idyll 15. Metropolitan Museum of Art, 30.117 — <span class="cr">Photo: The Metropolitan Museum of Art · CC0 1.0</span></figcaption></figure>
+    </div>
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Idyll 15, lines 8–10 (shortened) · Praxinoa, when Gorgo arrives at her house</div>
+        <p class="quote sm">That’s my lunatic; came and took one at the end of the world, … just to prevent you and me being neighbours, out of sheer spite, the jealous old wretch!</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · Idyll 15, lines 46–48 · Praxinoa, in the crowded street</div>
+        <p class="quote sm">I must say, you’ve done us many a good turn, my good Ptolemy, since your father went to heaven. We have no villains sneaking up to murder us in the streets nowadays in the good old Egyptian style.</p>
+        <p class="prov">trans. J. M. Edmonds, Loeb Classical Library (1912) · “one” = a house; “my lunatic” is her husband, named Dinon a few lines later · Ptolemy = King Ptolemy II; his father, Ptolemy I, was worshipped as a god after his death</p>
+      </div>
+      <div data-veil="Read it first — then show the answers">
+        <div class="tbl-scroll"><table class="tbl compact u7l14-pg">
+          <tr><th>Read for</th><th>Answer</th></tr>
+          <tr class="reveal"><td>Who is “my lunatic”?</td><td>Praxinoa’s husband: she complains that he took a far-off house “just to prevent you and me being neighbours”.</td></tr>
+          <tr class="reveal"><td>Whom does she address in the street?</td><td>King Ptolemy (II), as if he were there: it is a speech for the audience as well as for Gorgo.</td></tr>
+        </table></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · I do: Idyll 15" data-title="Idyll 15: the stranger" data-kind="notes">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow">1 · I do · supported reading · a stranger interrupts</p>
+  <h2>Reading the third extract, then thinking aloud</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Idyll 15, lines 89–93 · a woman answers a stranger who has told them to stop their chatter</div>
+        <p class="quote sm">You’re giving your orders to Syracusans. If you must know, we’re Corinthians by extraction, like Bellerophon himself. What we talk’s Peloponnesian. I suppose Dorians may speak Doric, mayn’t they?</p>
+        <p class="prov">trans. J. M. Edmonds, Loeb Classical Library (1912) · Syracusans = people of Syracuse, a Greek city in Sicily · “Corinthians by extraction” = descended from people of Corinth · Bellerophon = a hero of Greek myth · Peloponnesian = from the Peloponnese, the southern part of mainland Greece · Doric = the dialect of Greek they speak</p>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">I do · think aloud, step by step</div>
+        <ol class="body">
+          <li class="reveal"><b>Who made it?</b> A man, probably a court poet.</li>
+          <li class="reveal"><b>For whom?</b> Probably the palace and Greek readers.</li>
+          <li class="reveal"><b>What do we see?</b> Women crossing the city to a royal festival.</li>
+          <li class="reveal"><b>So I ask, before I judge:</b> whose view of them is this?</li>
+        </ol></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · I do: Idyll 15" data-title="Notes 1 — Idyll 15" data-kind="notes">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>Who made Idyll 15, and what do we see?</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U7 L14 · Two women at the festival</b></span><span>1 · Idyll 15</span></div>
+    <div class="row"><div class="cq">Who made Idyll 15, when, and for whom?</div>
+      <div class="nts reveal">Theocritus, a Greek poet from Sicily, probably living in Alexandria <span class="sep">·</span> about the 270s BCE (estimated from the queen it names) <span class="sep">·</span> names Arsinoe II and has a woman thank King Ptolemy <span class="sep">·</span> so probably for the court and Greek readers</div></div>
+    <div class="row"><div class="cq">What happens in the extracts?</div>
+      <div class="nts reveal">two Syracusan women in Alexandria, Gorgo and Praxinoa <span class="sep">·</span> Praxinoa speaks of her husband, then thanks the king in a crowded street <span class="sep">·</span> a stranger tells them to stop chattering and a woman answers him <span class="sep">·</span> all on the way to a festival of Adonis at the palace</div></div>
+    <div class="row"><div class="cq">What kind of evidence is it, and what must I ask?</div>
+      <div class="nts reveal">a poem (a mime), by a man <span class="sep">·</span> the women’s words are the poet’s <span class="sep">·</span> our evidence for the festival is a poet’s, probably written for the court <span class="sep">·</span> ask: whose view, and for whom?</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · We do: Herodas and the grid" data-title="Herodas, Mime 1: the go-between" data-kind="notes">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow">2 · We do · the Herodas extract · read it aloud, then say who is speaking, to whom, and about what</p>
+  <h2>A go-between talks about Egypt</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Herodas, <i>Mime</i> 1, “The Go-between” · Gyllis, an old woman, to Metriche, a wife</div>
+        <p class="quote sm">Ten months have flown since Mandris went away<br>To Egypt, and no syllable from that day<br>To this he’s sent you; he’s forgotten you, …<br>In the land of Egypt: wealth, power, fame, repose,<br>Gymnasium, gold, young men, philosophers, shows,<br>The shrine of Brother and Sister, the Good King,<br>Wine, the Museum, — every pleasant thing<br>The heart of man can wish for; …</p>
+        <p class="prov">verse translation by Hugo Sharpley, <i>A Realist of the Aegean</i> (1906) · Mandris is Metriche’s husband · the Museum = Alexandria’s centre of learning · “Brother and Sister”: in the Greek, “the Sibling Gods”, Ptolemy II and his sister-wife Arsinoe II, worshipped together (Headlam and Knox, 1922)</p>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Provenance · read this first</div>
+        <p class="body"><b>Who:</b> Herodas, a Greek poet, probably writing in Alexandria in the 3rd century BCE.</p>
+        <p class="body"><b>When:</b> probably 270–250 BCE; the date is contested. Sharpley’s heading says “Not earlier than 270 B.C.”</p>
+        <p class="body"><b>What:</b> a mime, like Idyll 15. Sharpley’s heading for the scene: “Unknown, but very possibly Kos”.</p></div>
+      <p class="qprompt">In pairs: who is speaking, to whom, and what is she trying to do?</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · We do: Herodas and the grid" data-title="We do: the perspective grid" data-kind="notes">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow">2 · We do · in pairs · 3 minutes · complete the grid for both poems · rows 1–4 for both, rows 5–7 for Mime 1 only</p>
+  <h2>Two poems, two perspectives on women</h2>
+  <p class="small">Keep the Idyll 15 cells in rows 5–7 for your timed answers: they are today’s two questions. Complete the other cells in your notes, then show the key.</p>
+  <div data-veil="Complete the grid first — then show the key">
+    <div class="tbl-scroll"><table class="tbl compact u7l14-pg">
+      <tr><th>Ask</th><th>Idyll 15 (Theocritus)</th><th>Mime 1 (Herodas)</th></tr>
+      <tr class="reveal"><td>1 · Maker and date</td><td>A Greek poet from Sicily; about the 270s BCE</td><td>A Greek poet; probably 270–250 BCE (contested)</td></tr>
+      <tr class="reveal"><td>2 · Written for</td><td>Probably the court and Greek readers in Alexandria (it names the queen and thanks the king)</td><td>Probably readers in Alexandria (an editors’ view, not certain)</td></tr>
+      <tr class="reveal"><td>3 · Setting and speakers</td><td>Alexandria; Gorgo and Praxinoa, two Syracusan women, on the way to a festival at the palace</td><td>Scene unknown (Sharpley: “very possibly Kos”); Gyllis, an old go-between, and Metriche, a wife whose husband is in Egypt</td></tr>
+      <tr class="reveal"><td>4 · Who wrote the women’s words?</td><td>A man: the poet</td><td>A man: the poet</td></tr>
+      <tr class="reveal"><td>5 · What the women are shown doing</td><td class="keep">Question 1: leave for your timed answer</td><td>Gyllis presses a lonely wife to take a new friend while her husband is away; Metriche jokes with her at first, then refuses outright and defends her husband</td></tr>
+      <tr class="reveal"><td>6 · What the poet makes of them</td><td class="keep">Question 1: leave for your timed answer</td><td>A stock comic figure, the old go-between, set against a wife who refuses her</td></tr>
+      <tr class="reveal"><td>7 · What the poem cannot show</td><td class="keep">Question 2: leave for your timed answer</td><td>What a real wife chose, or how many go-betweens there were: it is a scene, and Egypt’s wealth is a sales pitch</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · We do: Herodas and the grid" data-title="We do: comedy or record?" data-kind="notes">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow">2 · We do · cold call · 3 minutes · about Mime 1 only</p>
+  <h2>Comedy or record?</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Cold call</div>
+        <p class="body">Is Mime 1 <b>comedy</b> or <b>record</b>? Say what you would use as evidence for each, and what you would need to see to say “record”.</p></div>
+      <div class="card quiet"><div class="k">Use today’s grid</div>
+        <ul class="body">
+          <li>Who made it, and for whom? (rows 1–2)</li>
+          <li>Whose voice speaks? (row 4)</li>
+          <li>What kind of scene is it? (rows 3 and 6)</li>
+        </ul></div>
+      <p class="qprompt">Pairs argue for 30 seconds, then two cold calls from different camps.</p>
+    </div>
+    <div class="note reveal" data-code="judgement" data-veil="Decide first — then show what a strong answer includes"><div class="k">Mostly comedy: record only of what a poet thought readers would find believable</div><p class="body">A strong answer weighs both. For <b>comedy</b>: a bawd and a lonely wife are stock figures, and the scene is built to amuse. For <b>record</b>: its Egypt (the Museum, the shrine, the wealth) probably reflects what its readers in Alexandria would recognise. It is not a record of a real wife’s choices, and the praise of Egypt is a go-between’s sales talk. Hold the same question for Idyll 15: it is part of today’s timed questions, so do not answer it yet.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · We do: Herodas and the grid" data-title="Notes 2 — Herodas and the perspectives" data-kind="notes">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>Mime 1, and two poems compared</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U7 L14 · Two women at the festival</b></span><span>2 · Herodas and the grid</span></div>
+    <div class="row"><div class="cq">Who made Mime 1, when, and what happens?</div>
+      <div class="nts reveal">Herodas, a Greek poet, probably in Alexandria <span class="sep">·</span> probably 270–250 BCE (contested) <span class="sep">·</span> Gyllis, a go-between, sells Egypt’s wealth and pleasures to Metriche, whose husband has been away ten months <span class="sep">·</span> Metriche refuses</div></div>
+    <div class="row"><div class="cq">What do the two poems share?</div>
+      <div class="nts reveal">both mimes, by men <span class="sep">·</span> both probably for readers in Alexandria <span class="sep">·</span> both name Egypt’s rulers or their cult (the king; “Brother and Sister”)</div></div>
+    <div class="row"><div class="cq">Comedy or record?</div>
+      <div class="nts reveal">comedy first: stock figures in a scene built to amuse <span class="sep">·</span> record only of what a poet thought readers would find believable <span class="sep">·</span> not of a real wife’s choices</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Writing focus and timed questions" data-title="Writing focus: time by marks" data-kind="notes">
+<div class="wrap u7l14-dense u7l14-wf">
+  <p class="eyebrow">3 · Writing focus · 7 minutes · I do → We do → apply</p>
+  <h2>Writing focus: time by marks</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+    <div class="card accent"><div class="k">I do · watch</div>
+      <p class="body"><b>Minutes per mark = writing minutes ÷ total marks</b> (department advice, not a NESA rule). A <b>sample paper</b> (our own example, not the HSC’s format): 60 marks in 90 minutes = 90 ÷ 60 = <span class="u7l14-rate">1.5</span> minutes a mark. So a 3-mark answer gets 3 × 1.5 = <b>4½ minutes</b>, and a 5-mark answer about 7½. For the new-syllabus HSC paper (first set in 2028 — the one you will sit), NESA says “3 hours plus 10 minutes reading time” and 100 marks: 180 ÷ 100 = 1.8 minutes a mark on average.</p>
+      <p class="u7l14-wq"><b>How reliable</b> is Herodas, <i>Mime</i> 1, as evidence of Ptolemaic Egypt? <span class="mk2">3 marks · 4½ minutes</span> <span class="small">Practice source, from today · written for this lesson: the plan as one sentence; a full answer develops each point</span></p>
+      <p class="quote sm model" data-booklet="model"><span class="match" data-step="m1">Written by a poet probably for Alexandrian readers,</span> <span class="match" data-step="m2">Herodas’s Mime 1 is reliable for how a Greek poet imagined Egypt’s lure, “wealth, power, fame”,</span> <span class="match" data-step="m3">but not for what Egypt was really like,</span> <span class="match" data-step="m4">because the list is a go-between’s sales talk.</span></p>
+      <div class="u7l14-moves">
+        <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Provenance</b> phrase: who, for whom, what kind</span></p>
+        <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Reliable for</b> what, with a few exact words</span></p>
+        <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>But not for</b> what</span></p>
+        <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>Because</b>: the reason</span></p>
+      </div>
+    </div>
+    <div class="card quiet"><div class="k">Apply · in today’s task</div>
+      <p class="body" style="max-width:none">Your timed task has <b>10 marks</b> (4 + 6), so <b>15 minutes</b> at 1.5 a mark: <b>6 minutes</b> for Question 1 and <b>9</b> for Question 2. The marking and planning minute comes out of Question 1’s 6. Your Writing toolkit (booklet pages 3–4): the modality scale.</p></div>
+    </div>
+    <div class="stack">
+    <div class="card"><div class="k">We do · together</div>
+      <p class="body">Use <b>marks × 1.5</b>. Say your numbers, then check.</p>
+      <ol class="body">
+        <li>How long for a <b>3-mark</b> answer?</li>
+        <li>How long for an <b>8-mark</b> answer?</li>
+      </ol>
+      <div class="note reveal" data-code="judgement" data-veil="Work it out first — then show the answers"><div class="k">The answers (department advice)</div><p class="body"><b>3 marks:</b> 3 × 1.5 = <b>4½ minutes</b>. <b>8 marks:</b> 8 × 1.5 = <b>12 minutes</b>. Ten marks use 15 minutes.</p></div>
+      <p class="qprompt">Cold call: what would you do in 4½ minutes for 3 marks?</p>
+    </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Writing focus and timed questions" data-title="We do: deconstruct today’s two questions">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow">3 · Writing focus · We do · check your deconstruction · 2 minutes</p>
+  <h2>Today’s two questions: what does each ask you to do?</h2>
+  <p class="u7l14-q"><span class="nq">1 · <b>What</b> attitudes towards women are <b>revealed</b> in Theocritus’s Idyll 15?</span> <span class="mk2">4 marks</span></p>
+  <p class="u7l14-q"><span class="nq">2 · <b>How reliable</b> is Idyll 15 as evidence of the lives of Greek women in Alexandria?</span> <span class="mk2">6 marks</span></p>
+  <div data-veil="Deconstruct them first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u7l14-dqt">
+    <tr><th>Step</th><th>Question 1</th><th>Question 2</th></tr>
+    <tr class="reveal"><td>Verb</td><td><b>What … revealed</b>: not a glossary word, but a self-explanatory question. It asks what this poem shows (its value for the question), not what all Greeks thought</td><td><b>How reliable … as evidence of</b>: also self-explanatory. It asks you to judge the poem for this question: reliable for what, and not for what</td></tr>
+    <tr class="reveal"><td>Topic</td><td>attitudes towards women: how women are shown and regarded, and by whom</td><td>the lives of Greek women in Alexandria: what they did and said, not only how a poet pictured them</td></tr>
+    <tr class="reveal"><td>Limits</td><td>Idyll 15 only, the extracts on the paper; “revealed” means what the words show, not every poet</td><td>Idyll 15 only; Greek women in Alexandria (not Egyptian women, not Athens); judged for this question</td></tr>
+    <tr class="reveal"><td>Do</td><td>4 marks: about four points (department advice), each tied to the poem’s own words</td><td>6 marks: a developed paragraph (department advice): provenance, value, purpose, a judgement of “reliable for … but not for …”, a limit; use the OVPRL routine on page 2 of your booklet</td></tr>
+  </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Writing focus and timed questions" data-title="You do: reading time">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow">3 · Timed source questions · reading time · 3 minutes · press K, click 3, then Start · think only: no writing, no marking</p>
+  <h2>Reading time: think now, write later</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <ol class="keylist">
+        <li class="reveal"><span class="num">1</span><span class="t">Deconstruct both questions</span><span class="d">Deconstruct each question first: verb · topic · limits · what your answer must do. Say each step in your head.</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">Read the extracts for their provenance</span><span class="d">Who made it, when, where and for whom. Then notice the words that answer each question.</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">Plan one point per mark (department advice)</span><span class="d">Four points for the 4-mark question, six for the 6-mark question. Decide the order and your time: 6 minutes, then 9.</span></li>
+      </ol>
+      <p class="small">NESA’s 2027 HSC student guide says: “You must not write on or mark your exam in any way or use any equipment (including highlighters).” So practise it today: think only. In the first minute of writing time, mark the extracts and jot your plan.</p>
+      <div class="card accent sm"><div class="k">The paper · one poem, two questions</div>
+        <p class="body"><b>1</b> · What attitudes towards women are revealed in Theocritus’s Idyll 15? <b>(4 marks)</b></p>
+        <p class="body"><b>2</b> · How reliable is Idyll 15 as evidence of the lives of Greek women in Alexandria? <b>(6 marks)</b></p></div>
+    </div>
+    <div class="card quiet sm"><div class="k">Support · a planning grid (fill it in in the first minute of writing time)</div>
+      <div class="tbl-scroll"><table class="tbl compact u7l14-ex">
+        <tr><th></th><th>Question 1 · 4 marks</th></tr>
+        <tr><td>Point 1</td><td></td></tr>
+        <tr><td>Point 2</td><td></td></tr>
+        <tr><td>Point 3</td><td></td></tr>
+        <tr><td>Point 4</td><td></td></tr>
+      </table></div>
+      <div class="tbl-scroll"><table class="tbl compact u7l14-ex">
+        <tr><th></th><th>Question 2 · 6 marks</th></tr>
+        <tr><td>Origin</td><td>Who made it, when, and for whom?</td></tr>
+        <tr><td>Value</td><td>What does it show that helps?</td></tr>
+        <tr><td>Purpose</td><td>Why was it written?</td></tr>
+        <tr><td>Reliability</td><td>Reliable for … but not for … because …</td></tr>
+        <tr><td>Limitations</td><td>What can it not show?</td></tr>
+      </table></div>
+      <p class="body">Use the OVPRL routine on page 2 of your booklet.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Writing focus and timed questions" data-title="You do: the paper — Idyll 15">
+<div class="wrap u7l14-dense u7l14-paper">
+  <p class="eyebrow">3 · Timed source questions · the paper · both questions</p>
+  <h2>The paper: Theocritus, Idyll 15</h2>
+  <div class="u7l14-three">
+    <div class="src">
+      <div class="k">Extract 1 · lines 8–10 · Praxinoa to her friend Gorgo</div>
+      <p class="quote sm">That’s my lunatic; came and took one at the end of the world, … just to prevent you and me being neighbours, out of sheer spite, the jealous old wretch!</p>
+    </div>
+    <div class="src">
+      <div class="k">Extract 2 · lines 46–48 · Praxinoa, in the street</div>
+      <p class="quote sm">I must say, you’ve done us many a good turn, my good Ptolemy, since your father went to heaven. We have no villains sneaking up to murder us in the streets nowadays in the good old Egyptian style.</p>
+    </div>
+    <div class="src">
+      <div class="k">Extract 3 · lines 89–93 · a woman to a stranger</div>
+      <p class="quote sm">You’re giving your orders to Syracusans. If you must know, we’re Corinthians by extraction, like Bellerophon himself. What we talk’s Peloponnesian. I suppose Dorians may speak Doric, mayn’t they?</p>
+    </div>
+    <div class="src">
+      <div class="k">Extract 4 · lines 110–111 · the song at the festival</div>
+      <p class="quote sm">… doth the daughter of Berenice, even Arsinoe, lovely as Helen, cherish Adonis with all things beautiful.</p>
+    </div>
+  </div>
+  <p class="prov u7l14-pp">Theocritus, a Greek poet from Sicily who probably lived in Alexandria, wrote Idyll 15, a poem in the form of a mime (a short comic scene), about the 270s BCE. Two Syracusan women living in Alexandria, Gorgo and Praxinoa, go to a festival of Adonis at the palace of King Ptolemy II. Extracts 1–3: trans. J. M. Edmonds (Loeb, 1912); extract 4: trans. A. Lang (1880), who names Arsinoe II, Ptolemy II’s wife and sister, as the queen of the festival. The poem is our evidence for this festival here.</p>
+  <div class="cols c2">
+    <div class="card accent sm"><div class="k">Question 1 · 4 marks</div><p class="body">What attitudes towards women are revealed in Theocritus’s Idyll 15?</p></div>
+    <div class="card accent sm"><div class="k">Question 2 · 6 marks</div><p class="body">How reliable is Idyll 15 as evidence of the lives of Greek women in Alexandria?</p></div>
+  </div>
+  <p class="u7l14-gloss">Words to know: <b>Syracusans</b> = people of Syracuse, a Greek city in Sicily · <b>Doric</b> = a Greek dialect · <b>mime</b> = a short comic scene in verse · <b>stranger</b> = someone the women do not know.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Writing focus and timed questions" data-title="You do: write your two answers">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow">3 · Timed source questions · writing · 15 minutes, then 4 to check · press K, click 20, then Start · answer booklet · paced at 1.5 minutes a mark</p>
+  <h2>Write your two answers</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <p class="body"><b>Question 1 · 4 marks</b> · What attitudes towards women are revealed in Theocritus’s Idyll 15?</p>
+        <p class="body"><b>Question 2 · 6 marks</b> · How reliable is Idyll 15 as evidence of the lives of Greek women in Alexandria?</p>
+        <ol class="body">
+          <li>In the first minute, mark the extracts and jot your plan: one point per mark (department advice).</li>
+          <li>Question 1: use the poem’s own words as evidence for each attitude.</li>
+          <li>Question 2: provenance first; then <span class="nq">“reliable for … but not for … because …”</span></li>
+          <li>Match each claim to its evidence: <i>probably</i>, <i>suggests</i>, <i>shows</i>.</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Extension · after both answers</div><p class="body"><b>Analyse</b> what Idyll 15 reveals about Greek identity in Alexandria, and whose: think about the “Egyptian style” jibe and the women’s Dorian pride.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Fill in your planning grid in the first minute. Word bank:</p>
+        <div class="u7l14-bank"><span>poet</span><span>court</span><span>festival</span><span>mime</span><span>provenance</span></div>
+        <p class="body">Frames: <span class="nq">“The poem shows the women as …, because it says …”</span> · <span class="nq">“Idyll 15 is reliable for … but not for … because …”</span> Modality: <i>may · probably · suggests · shows</i></p>
+        <p class="body"><b>Time card, example done:</b> a 5-mark answer = 5 × 1.5 = 7½ minutes. Yours: Question 1 = 4 × 1.5 = ___ minutes; Question 2 = 6 × 1.5 = ___ minutes.</p></div>
+      <div class="card quiet"><div class="k">Your 15 minutes · time by marks (department advice)</div>
+        <ol class="u7l14-plan">
+          <li><span class="t">minute 0 → 1</span><span><b>Mark</b> the extracts and <b>jot</b> your plan (part of Question 1’s 6 minutes)</span></li>
+          <li><span class="t">minute 1 → 6</span><span><b>Question 1</b> · 4 marks · 6 minutes in all</span></li>
+          <li><span class="t">minute 6 → 15</span><span><b>Question 2</b> · 6 marks · about 9 minutes</span></li>
+          <li><span class="t">time checks</span><span>I call “6 minutes” and “15 minutes”. At each call, mark in your margin where you have got to.</span></li>
+        </ol></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Writing focus and timed questions" data-title="Check your own answers" data-kind="notes">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow">3 · You do · 4 minutes · after the timer · check your own answers · then mark in another colour</p>
+  <h2>Check your answers against what a strong answer includes</h2>
+  <div class="card accent"><div class="k">Everyone · 4 minutes</div>
+    <p class="body"><b>1</b> Read both answers through, in a different colour. <b>2</b> Question 1: underline each attitude and tick the quotation that supports it. <b>3</b> Question 2: circle your “reliable for … but not for …” and check the OVPRL order. <b>4</b> Add one missing point in the margin.</p></div>
+  <div class="cols c2">
+      <div class="note reveal" data-code="evidence" data-veil="Write first — then show what a strong answer to Question 1 includes"><div class="k">Question 1 · 4 marks · about four points, each tied to the poem’s words</div>
+        <ul class="body">
+          <li>Complaining about husbands: the wife calls hers “the jealous old wretch” (8–10), a comic grievance.</li>
+          <li>Moving about the city: two women cross a crowded city with their maids to a royal festival.</li>
+          <li>Pride in origin: “I suppose Dorians may speak Doric, mayn’t they?” (89–93), a quick answer to a stranger.</li>
+          <li>Gratitude to the king: Ptolemy has stopped “villains sneaking up to murder us” (46–48), and crime is presented as “Egyptian”: a Greek prejudice.</li>
+          <li>A very strong answer says whose attitudes these are: the poet’s, in the women’s mouths, and mostly comic.</li>
+        </ul></div>
+      <div class="note reveal" data-code="evidence" data-veil="Write first — then show what a strong answer to Question 2 includes"><div class="k">Question 2 · 6 marks · OVPRL, in order, ending with a judgement</div>
+        <ul class="body">
+          <li><b>Origin:</b> Theocritus, a Greek poet from Sicily who probably lived in Alexandria, about the 270s BCE; nothing shows he was at a festival.</li>
+          <li><b>Value:</b> how a poet pictured Greek women in Alexandria: crowds, husbands, Dorian pride, a queen’s festival.</li>
+          <li><b>Purpose:</b> to amuse, and probably to please a court it names and thanks (46–48, 110–111).</li>
+          <li><b>Reliability:</b> reliable for how a court poet pictured Greek women’s talk and outings; not for what real women said or did, because Gorgo and Praxinoa are his characters.</li>
+          <li><b>Limitations:</b> one poem, two characters, one festival, through a man’s eyes. (A very strong answer sets it beside the papyri of Lessons 12–13.)</li>
+        </ul></div>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: where were you at each time check?" data-kind="practice">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow">Check · 5 minutes · pens down · your margin marks show your pacing</p>
+  <h2>Where were you at each time check?</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · 3 minutes</div>
+        <ol class="body">
+          <li>Look at your margin marks. At the <b>6-minute</b> call, had you finished Question 1?</li>
+          <li>At the <b>15-minute</b> call, had you finished Question 2?</li>
+          <li>Write <b>one change to your pacing</b> for next time.</li>
+        </ol></div>
+      <p class="qprompt">Cold call two students: where were you at each call, and what will you change?</p>
+    </div>
+    <div class="card quiet"><div class="k">Common changes (department advice)</div>
+      <ol class="keylist">
+        <li><span class="num">1</span><span class="t">Question 1 ran over</span><span class="d">Cut a point you cannot tie to the poem’s words; keep the plan to one point per mark.</span></li>
+        <li><span class="num">2</span><span class="t">Question 2 felt rushed</span><span class="d">Make the marking and planning minute shorter by reading for provenance in reading time.</span></li>
+        <li><span class="num">3</span><span class="t">I finished early</span><span class="d">Check each claim against its evidence, and add a limit.</span></li>
+        <li><span class="num">4</span><span class="t">I wrote too little for the marks</span><span class="d">Count the points against the marks: one developed point per mark.</span></li>
+      </ol></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Exit ticket: minutes for a 5-mark question" data-kind="practice">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow">Check · exit ticket · 3 minutes · one sentence · collected</p>
+  <h2>Exit ticket: a 5-mark question</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · 2 minutes</div>
+        <p class="body">Finish the sentence, with a number and a reason:</p>
+        <p class="body nq">“For a 5-mark question I will spend about … minutes because …”</p></div>
+      <div class="note reveal" data-code="judgement" data-veil="Write yours first — then show what a strong answer includes"><div class="k">A strong answer includes (department advice)</div>
+        <ul class="body">
+          <li>A number from the rate: about <b>7–8 minutes</b> at 1.5 minutes a mark (5 × 1.5 = 7½), or about <b>9</b> at the new-syllabus HSC paper’s average of 1.8 minutes a mark (3 hours ÷ 100 marks).</li>
+          <li>A reason that is the marks: the marks set the time, so a 5-mark answer gets about five points, not a long essay’s time.</li>
+        </ul></div>
+    </div>
+    <div class="card quiet"><div class="k">Then · 1 minute · tick your “I can” statements</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> <span>I can explain how Theocritus and Herodas depict women, and why</span></label></li>
+        <li><label><input type="checkbox"> <span>I can judge what a poem is reliable for</span></label></li>
+        <li><label><input type="checkbox"> <span>I can work out minutes per mark and pace my answers</span></label></li>
+      </ul>
+      <p class="small">Circle the one you are least sure of.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Summary" data-kind="notes">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>Who made Idyll 15 and Mime 1, when, and for whom?</li>
+          <li>What is a literary source like these reliable for, and what is it not?</li>
+          <li>How does time by marks set the length of your answers?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Theocritus’s Idyll 15 (about the 270s BCE) and Herodas’s Mime 1 (probably 270–250 BCE, contested) are mimes by men, probably written for readers in Alexandria (Idyll 15 probably also for the court), and both show Greek women only as the poets chose to write them. Such a poem is reliable for what a poet imagined and expected his audience to recognise, but not for what real women said or chose, because its women are the poet’s characters. At 1.5 minutes a mark, a 4-mark answer gets about 6 minutes and a 6-mark answer about 9, because the marks set the time.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> <span>Idyll 15: who, when, for whom</span></label></li>
+        <li><label><input type="checkbox"> <span>Mime 1 and the perspective grid</span></label></li>
+        <li><label><input type="checkbox"> <span>Comedy or record?</span></label></li>
+        <li><label><input type="checkbox"> <span>Reliable for what, and not for what</span></label></li>
+        <li><label><input type="checkbox"> <span>Minutes per mark = minutes ÷ marks</span></label></li>
+        <li><label><input type="checkbox"> <span>Reading time: think, don’t write</span></label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u7l14-dense">
+  <p class="eyebrow">Practice and review · 1 of 4 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Theocritus and Herodas were women.</span>
+      <span class="sol no reveal">False <span class="why">— both poems are by men, so the women’s words reach us only as the poets wrote them.</span></span></li>
+    <li><span class="n">2</span><span>Idyll 15 is an eyewitness report of Arsinoe II’s festival.</span>
+      <span class="sol no reveal">False <span class="why">— it is a poem in the form of a mime; nothing shows the poet was there. It is a poet’s evidence, written probably for the court.</span></span></li>
+    <li><span class="n">3</span><span>At 1.5 minutes a mark, a 6-mark answer gets about 9 minutes.</span>
+      <span class="sol reveal">True <span class="why">— 6 × 1.5 = 9 (department advice).</span></span></li>
+    <li><span class="n">4</span><span>A paper of 60 marks in 90 minutes is the format of the HSC paper.</span>
+      <span class="sol no reveal">False <span class="why">— it is a sample paper used as an example. For the new-syllabus HSC paper (first set in 2028 — the one you will sit), NESA says 100 marks, 3 hours plus 10 minutes reading time.</span></span></li>
+    <li><span class="n">5</span><span>In HSC reading time you should mark the sources and write your plan.</span>
+      <span class="sol no reveal">False <span class="why">— it is for thinking: deconstruct, read for provenance, plan. In the HSC you may not write on or mark the paper during reading time.</span></span></li>
+    <li><span class="n">6</span><span>A poem that is reliable for how a poet imagined Egypt is reliable for what a real wife chose.</span>
+      <span class="sol no reveal">False <span class="why">— reliability is judged for a question: reliable for … but not for … because …</span></span></li>
+    <li><span class="n">7</span><span>Herodas’s Mime 1 is certainly dated 270–250 BCE.</span>
+      <span class="sol no reveal">False <span class="why">— the date is “probably 270–250 BCE” and contested; Sharpley’s heading says “not earlier than 270 B.C.”.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — time by marks and fix" data-kind="practice">
+<div class="wrap prac u7l14-dense">
+  <p class="eyebrow">Practice and review · 2 of 4 · time by marks, and a sentence to fix</p>
+  <h2>Work out the time, then fix a sentence</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · time by marks (department advice)</div>
+        <p class="body">A sample paper has <b>40 marks in 80 minutes</b>. (a) How many minutes a mark? (b) How long for a 3-mark answer? (c) How long for a 5-mark answer?</p></div>
+      <div class="src reveal" data-veil="Show the answers"><div class="k">The answers · written for this lesson</div>
+        <p class="quote sm model">(a) 80 ÷ 40 = 2 minutes a mark. (b) 3 × 2 = 6 minutes. (c) 5 × 2 = 10 minutes.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 2 · fix the sentence: match the modality to the evidence</div>
+        <p class="body"><span class="nq">“Herodas proves that Greek wives in Egypt were left alone for years.”</span></p>
+        <p class="body">Mime 1 has an old woman tell Metriche that her husband Mandris has been in Egypt for ten months without a word. Rewrite the sentence so that its strength matches what the evidence can show.</p></div>
+      <div class="src reveal" data-veil="Show a model answer"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Herodas’s Mime 1 suggests that a poet could picture a wife left without word from her husband in Egypt; it cannot show how often this happened to real women.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — extension: whose Greek identity?" data-kind="practice">
+<div class="wrap prac u7l14-dense">
+  <p class="eyebrow">Practice and review · 3 of 4 · extension · analyse</p>
+  <h2>Greek identity in Alexandria, and whose?</h2>
+  <div class="split" style="--cols:1fr 1.4fr">
+    <div class="stack">
+      <div class="card quiet"><div class="k">Exercise 3 · one paragraph</div><p class="body"><span class="nq"><b>Analyse</b> what Idyll 15 reveals about Greek identity in Alexandria, and whose.</span></p>
+        <p class="body">Shape: Judge → Evidence → Analyse → Evaluate → Resolve. NESA: <i>analyse</i> means ‘Identify components and the relationship between them. Draw out and relate implications.’ (<i>Glossary of key words</i>)</p></div>
+      <div class="src"><div class="k">Source · Idyll 15, lines 89–93 · a woman to a stranger · trans. Edmonds</div>
+        <p class="quote sm">If you must know, we’re Corinthians by extraction, like Bellerophon himself. What we talk’s Peloponnesian. I suppose Dorians may speak Doric, mayn’t they?</p></div>
+    </div>
+    <div class="src reveal" data-veil="Show a model analysis"><div class="k">A model analysis · written for this lesson</div>
+      <p class="quote sm model">Idyll 15 shows Greek identity in Alexandria as something its women assert and its poet shapes. A woman answers a stranger who complains of their chatter with “we’re Corinthians by extraction” and “Dorians may speak Doric”, claiming a Dorian, Peloponnesian descent as a Syracusan’s pride; and the other speech thanks King Ptolemy for streets free of villains “in the good old Egyptian style”, which sets Greek order against an Egyptian past. These are the views of a man writing, probably, for a Greek court, so the identity shown is the one a court poet expected Greek readers to recognise, not necessarily what Greek women in Alexandria said of themselves. On balance, the poem reveals a Greek identity built on origin, dialect and loyalty to the king, but it is chiefly the poet’s identity, and the court’s, put into women’s mouths.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u7l14-dense">
+  <p class="eyebrow">Practice and review · 4 of 4 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Who made Idyll 15, when, and for whom?
+      <span class="sol reveal">Theocritus, a Greek poet from Sicily who probably lived in Alexandria, about the 270s BCE; probably for the court (it names Arsinoe II and thanks the king) and Greek readers.</span></li>
+    <li>What do lines 110–111 tell us about the festival, and what is the limit?
+      <span class="sol reveal">It names Queen Arsinoe II as the host (Lang’s translation). The limit: the festival reaches us in a poem by a man, so it is a poet’s evidence, probably written for the court.</span></li>
+    <li>Who are Gorgo and Praxinoa?
+      <span class="sol reveal">Two Syracusan women living in Alexandria: the poet’s characters in a mime. The poem gives us no way to check them as real individuals.</span></li>
+    <li>Comedy or record: what is Herodas’s Mime 1?
+      <span class="sol reveal">Mostly comedy: stock figures in a scene built to amuse. It records, at most, what a poet thought his readers would find believable; not a real wife’s choices.</span></li>
+    <li>How do you work out minutes per mark?
+      <span class="sol reveal">Writing minutes ÷ total marks (department advice). On a sample paper of 60 marks in 90 minutes that is 1.5 a mark, so a 4-mark answer gets about 6 minutes.</span></li>
+    <li>What is reading time for?
+      <span class="sol reveal">Thinking, not writing: deconstruct each question, read each source for its provenance, and plan one point per mark, in your head (in the HSC you may not write on or mark the paper during reading time).</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u7l14-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u7l14-cite"><div class="k">Written sources</div>
+      <p class="small">Theocritus, <i>Idyll</i> 15, lines 8–10, 46–48 and 89–93: trans. J. M. Edmonds, <i>The Greek Bucolic Poets</i>, Loeb Classical Library (London: Heinemann; New York: Putnam, 1912), checked on the <a href="https://archive.org/details/greekbucolicpo00theo">Internet Archive scan</a>. Lines 110–111 and the note on the festival: trans. Andrew Lang, <i>Theocritus, Bion and Moschus rendered into English prose</i> (London: Macmillan, 1880), <a href="https://archive.org/details/theocritusbionmo00theouoft">Internet Archive scan</a>. Herodas, <i>Mime</i> 1: trans. Hugo Sharpley, <i>A Realist of the Aegean: being a verse-translation of the Mimes of Herodas</i> (London: David Nutt, 1906), <a href="https://archive.org/details/cu31924026669642">Internet Archive scan</a> (Cornell University Library copy). Short extracts for study; these translations are old and are out of copyright in the United States.</p>
+      <p class="small">NESA, <a href="https://www.nsw.gov.au/sites/default/files/2026-08/nesa-2027-hsc-rules-and-procedures-guide.pdf">2027 Higher School Certificate Rules and Procedures: Student guide</a>, p. 19, “3 Reading time”; NESA, <a href="https://curriculum.nsw.edu.au/learning-areas/hsie/ancient-history-11-12-2024/assessment/hsc-examinations">Ancient History HSC examination specifications</a>. Background summaries (not quoted at length): Wikipedia, <a href="https://en.wikipedia.org/wiki/Theocritus">“Theocritus”</a>, <a href="https://en.wikipedia.org/wiki/Herodas">“Herodas”</a>, <a href="https://en.wikipedia.org/wiki/Adonia">“Adonia”</a>, <a href="https://en.wikipedia.org/wiki/Doric_Greek">“Doric Greek”</a> and <a href="https://en.wikipedia.org/wiki/Ptolemy_II_Philadelphus">“Ptolemy II Philadelphus”</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>). Connect: Lessons 12 and 13 (Select Papyri I 65 and II 269; P. Eleph. 1; Hunt and Edgar, Loeb).</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA. Directive verbs: NESA, <a href="https://www.nsw.gov.au/education-and-training/nesa/hsc/student-guide/glossary"><i>Glossary of key words</i></a>.</p></div>
+      <div class="card quiet u7l14-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>Marble head of a Ptolemaic queen, Greek, about 270–250 BCE (Metropolitan Museum of Art, 2002.66)</b> · Photo: The Metropolitan Museum of Art · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://www.metmuseum.org/art/collection/search/257603">source</a></li><li><b>Terracotta statuette of a draped woman, Greek, 2nd century BCE (Metropolitan Museum of Art, 30.117)</b> · Photo: The Metropolitan Museum of Art · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://www.metmuseum.org/art/collection/search/253135">source</a></li></ul>
+        <p class="small">Both images are from the Metropolitan Museum of Art’s Open Access collection (CC0), and were resized for the web.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

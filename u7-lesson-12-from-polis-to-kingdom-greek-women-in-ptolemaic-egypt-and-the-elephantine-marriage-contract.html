@@ -1,0 +1,1826 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U7 L12 · From Polis to Kingdom: Greek Women in Ptolemaic Egypt and the Elephantine Marriage Contract</title>
+<meta name="description" content="Year 11 Ancient History, women in ancient Greece: who the Greek women of Ptolemaic Egypt were, why papyri matter, what a marriage contract of 311/310 BCE puts in writing, and how to write a This Does That sentence about a document.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#6A5D0E; --bright:#9A8716; --tint:#F5F1DC; --statement:#6A5D0E;
+  --solid:#6A5D0E; --soft:#EFE7C2; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#E3D58A; --bright:#C9B53A; --tint:#2E2A0E; --statement:#4F450A; --soft:#EFE7C2; } }
+:root[data-theme="dark"]{ --deep:#E3D58A; --bright:#C9B53A; --tint:#2E2A0E; --statement:#4F450A; --soft:#EFE7C2; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 7 Lesson 12 only (every class starts u7l12-) */
+
+/* title picture; goals slide syllabus line; credits links */
+.u7l12-cover{margin:0;}
+.u7l12-cover img{display:block; width:100%; height:58vh; object-fit:contain; background:var(--surface-2); border-radius:10px;}
+.u7l12-cover figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.4em; line-height:1.35;}
+.u7l12-cover figcaption b{color:var(--deep);}
+.u7l12-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u7l12-cite a{color:var(--deep);}
+
+/* tables */
+.u7l12-link td:first-child{font-weight:700; color:var(--deep);}
+.u7l12-link td{vertical-align:top;}
+.u7l12-dqt td:first-child{font-weight:700; color:var(--c-directive); white-space:nowrap;}
+.u7l12-link th, .u7l12-dqt th, .u7l12-cards th{white-space:normal;}
+.u7l12-cards td:first-child{font-weight:700; color:var(--deep); white-space:nowrap; vertical-align:top;}
+.u7l12-cards td{vertical-align:top;}
+.u7l12-cards td.u7l12-empty{height:3.2em;}
+
+/* the question line */
+.u7l12-q{font-weight:700; font-size:calc(var(--fs-body)*.98); line-height:1.38; margin:0;}
+.u7l12-q .mk2, .u7l12-wq .mk2{display:inline-block; margin-left:.4em; padding:0 .5em; border:1px solid var(--deep); border-radius:999px;
+  font-size:.82em; color:var(--deep); font-weight:700; white-space:nowrap;}
+
+/* the three historians' cards */
+.u7l12-hist{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(8px,1.2vw,18px); align-items:start;}
+.u7l12-hc{border:1px solid var(--rule); border-top:5px solid var(--c-keyterm); border-radius:8px; background:var(--surface);
+  padding:.55em .8em; font-size:calc(var(--fs-body)*.78); line-height:1.36; box-shadow:var(--shadow);}
+.u7l12-hc .who{font-family:var(--ui); font-weight:700; color:var(--c-keyterm); font-size:.95em; margin:0 0 .2em;}
+.u7l12-hc p{margin:.3em 0 0;}
+.u7l12-hc .ext{margin:.4em 0 0; padding:.35em .6em; border-left:4px solid var(--rule); background:var(--surface-2); border-radius:0 6px 6px 0;}
+.u7l12-hc .prov2{font-family:var(--ui); font-size:.84em; color:var(--slate); margin:.25em 0 0;}
+.u7l12-hc .short{margin-top:.45em; padding-top:.35em; border-top:1px dashed var(--rule); color:var(--slate);}
+.u7l12-hc .short b{color:var(--ink);}
+
+/* Writing focus: the worked question and the model's moves */
+.u7l12-wq{margin:.35em 0 .15em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.u7l12-wq b{color:var(--deep);}
+.u7l12-moves{display:flex; flex-direction:row; flex-wrap:wrap; gap:.15em 1.1em; margin-top:.35em;}
+.u7l12-moves .mq{font-size:calc(var(--fs-body)*.78); line-height:1.3; margin:0;}
+.u7l12-ev{margin:.35em 0 0; padding:.4em .7em; border-left:4px solid var(--rule); background:var(--surface-2);
+  border-radius:0 6px 6px 0; font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+.u7l12-ev .src-n{display:block; font-family:var(--ui); font-size:.86em; color:var(--slate); font-weight:600;}
+
+/* paragraphs inside a card need a little air */
+.card .body + .body, .card .veil-parts, .card .body + .tbl-scroll, .card .tbl-scroll + .small,
+.card .body + .note, .card .quote + .u7l12-moves{margin-top:.4em;}
+
+/* a word bank */
+.u7l12-bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.u7l12-bank span{border:1px solid var(--c-keyterm); color:var(--c-keyterm); border-radius:999px; padding:.1em .7em;
+  background:var(--w-keyterm); font-size:calc(var(--fs-body)*.8); font-weight:600;}
+
+/* hinge options: one per line, all four fit */
+.u7l12-wf .opts{gap:.3em;}
+.u7l12-wf .opts li{padding:.2em .6em;}
+.u7l12-wf .veil-parts > .body{margin:.4em 0 .25em;}
+.u7l12-wf .veil-parts .note{margin-top:.3em;}
+
+/* the writing plan (countdown times) */
+.u7l12-plan{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.u7l12-plan li{display:grid; grid-template-columns:9.6em 1fr; gap:.7em; align-items:start; font-size:calc(var(--fs-body)*.86); line-height:1.36;}
+.u7l12-plan .t{font-family:var(--mono); font-weight:700; color:var(--deep); text-align:right;}
+
+/* the continuum line */
+.u7l12-line{display:grid; grid-template-columns:1fr 1fr; gap:.6em; margin:.3em 0;}
+.u7l12-line .end{padding:.5em .8em; border:2px solid var(--deep); border-radius:10px; font-weight:700; color:var(--deep); background:var(--surface);
+  font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.u7l12-line .end.r{text-align:right;}
+.u7l12-bar{height:10px; border-radius:6px; background:linear-gradient(90deg,var(--deep),var(--c-keyterm)); margin:0 0 .4em;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u7l12-cover img{height:auto; max-height:46vh;}
+  .u7l12-hist{grid-template-columns:1fr;}
+  .u7l12-line{grid-template-columns:1fr;}
+  .u7l12-line .end.r{text-align:left;}
+  .u7l12-plan li{grid-template-columns:8.4em 1fr;}
+  .u7l12-link td:first-child, .u7l12-link th:first-child, .u7l12-dqt td:first-child, .u7l12-cards td:first-child{white-space:normal;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u7l12-dense{gap:10px;}
+  html:not(.read) .u7l12-dense h2{font-size:calc(var(--fs-h2)*.84);}
+  html:not(.read) .u7l12-dense .quote.sm{font-size:calc(var(--fs-body)*.76); line-height:1.4;}
+  html:not(.read) .u7l12-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u7l12-dense .src{padding:10px 16px;}
+  html:not(.read) .u7l12-dense .src .prov{margin-top:.4em;}
+  html:not(.read) .u7l12-dense .note{padding:.45em .85em;}
+  html:not(.read) .u7l12-dense .note .body, html:not(.read) .u7l12-dense .card .body,
+  html:not(.read) .u7l12-dense .qprompt{font-size:calc(var(--fs-body)*.78); line-height:1.36;}
+  html:not(.read) .u7l12-dense .card{padding:10px 16px;}
+  html:not(.read) .u7l12-dense .card .k{margin-bottom:.25em;}
+  html:not(.read) .u7l12-dense .keylist{gap:6px;}
+  html:not(.read) .u7l12-dense .keylist li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u7l12-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u7l12-dense .tbl.compact td{padding:.3em .55em;}
+  html:not(.read) .u7l12-dense .tbl th{padding:.38em .6em;}
+  html:not(.read) .u7l12-dense .figure img{max-height:44vh;}
+  html:not(.read) .u7l12-dense .tf li, html:not(.read) .u7l12-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u7l12-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u7l12-dense .prac{gap:6px;}
+  html:not(.read) .u7l12-dense .cornell .cq, html:not(.read) .u7l12-dense .cornell .nts{font-size:calc(var(--fs-body)*.76); padding:.35em .8em;}
+  html:not(.read) .u7l12-dense .u7l12-wq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u7l12-dense .u7l12-q{font-size:calc(var(--fs-body)*.82);}
+  html:not(.read) .u7l12-dense .u7l12-moves .mq{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u7l12-dense .checks label{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u7l12-dense .u7l12-hc{font-size:calc(var(--fs-body)*.7); padding:.4em .65em;}
+  html:not(.read) .u7l12-dense .u7l12-ev{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u7l12-dense .u7l12-plan li{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u7l12-dense .u7l12-line .end{font-size:calc(var(--fs-body)*.78); padding:.35em .6em;}
+  html:not(.read) .u7l12-wf .opts li{font-size:calc(var(--fs-body)*.72); padding:.12em .5em;}
+  html:not(.read) .u7l12-wf .veil-parts .body{font-size:calc(var(--fs-body)*.72); margin:.25em 0 .15em;}
+}
+
+/* grid columns may shrink below their widest table; table headings wrap */
+.u7l12-dense .split > *, .u7l12-dense .stack > *, .u7l12-dense .cols > *{min-width:0;}
+
+/* ---- added for Lesson 12: map, timeline, clause strips, grids */
+.u7l12-map{margin:0;}
+.u7l12-map img{display:block; width:100%; max-height:58vh; object-fit:contain; background:var(--surface-2); border-radius:8px;}
+.u7l12-map figcaption{font-size:calc(var(--fs-chrome)*.92); color:var(--slate); margin-top:.3em; line-height:1.32;}
+.u7l12-tl{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.u7l12-tl li{display:grid; grid-template-columns:7.2em 1fr; gap:.7em; align-items:start; font-size:calc(var(--fs-body)*.82); line-height:1.34;
+  padding:.35em .7em; border:1px solid var(--rule); border-left:5px solid var(--c-keyterm); border-radius:8px; background:var(--surface);}
+.u7l12-tl .yr{font-family:var(--mono); font-weight:700; color:var(--deep);}
+.u7l12-tl li.now{border-left-color:var(--deep); background:var(--surface-2);}
+.u7l12-strips{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:clamp(6px,.9vw,12px);}
+.u7l12-strip{display:grid; grid-template-columns:1.9em 1fr; gap:.5em; align-items:start; border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+  padding:.35em .65em; font-size:calc(var(--fs-body)*.74); line-height:1.34; box-shadow:var(--shadow);}
+.u7l12-strip .n{font-family:var(--ui); font-weight:700; color:#fff; background:var(--solid); border-radius:50%; width:1.55em; height:1.55em; display:grid; place-items:center; font-size:.9em;}
+.u7l12-strip p{margin:0;}
+.u7l12-grid{table-layout:fixed; width:100%;}
+.u7l12-grid th:nth-child(1){width:3.6em;}
+.u7l12-grid th{white-space:normal;}
+.u7l12-grid td.u7l12-empty{height:2.3em;}
+.u7l12-grid td, .u7l12-key td{overflow-wrap:anywhere;}
+.u7l12-grid td:first-child{font-weight:700; color:var(--deep); white-space:nowrap; vertical-align:top;}
+.u7l12-grid td{vertical-align:top;}
+.u7l12-fact{margin:.25em 0 0; padding:.35em .65em; border-left:4px solid var(--rule); background:var(--surface-2); border-radius:0 6px 6px 0;
+  font-size:calc(var(--fs-body)*.74); line-height:1.34;}
+.u7l12-fact b{color:var(--deep);}
+.u7l12-key td:first-child{font-weight:700; color:var(--deep); white-space:nowrap; vertical-align:top;}
+.u7l12-key td{vertical-align:top;}
+.u7l12-gloss{font-size:calc(var(--fs-body)*.72); color:var(--slate); margin:.3em 0 0;}
+@media (max-width:900px){
+  .u7l12-map img{max-height:40vh;}
+  .u7l12-strips{grid-template-columns:1fr;}
+  .u7l12-tl li{grid-template-columns:6.2em 1fr;}
+  .u7l12-grid td:first-child, .u7l12-key td:first-child{white-space:normal;}
+}
+@media (max-height:820px){
+  html:not(.read) .u7l12-dense .u7l12-tl li{font-size:calc(var(--fs-body)*.72); padding:.25em .55em;}
+  html:not(.read) .u7l12-dense .u7l12-strip{font-size:calc(var(--fs-body)*.68); padding:.28em .55em;}
+  html:not(.read) .u7l12-dense .u7l12-fact{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u7l12-dense .u7l12-map img{max-height:52vh;}
+  html:not(.read) .u7l12-dense .u7l12-grid td.u7l12-empty{height:2.7em;}
+  html:not(.read) .u7l12-dense .u7l12-grid td{padding:.2em .5em;}
+}
+.u7l12-dense .split > *, .u7l12-dense .stack > *, .u7l12-dense .cols > *{min-width:0;}
+
+/* a note that must fit beside a source on a short projector */
+html:not(.read) .u7l12-dense .u7l12-tight{padding:.4em .8em;}
+html:not(.read) .u7l12-dense .u7l12-tight .k{font-size:.72em; margin-bottom:.2em;}
+html:not(.read) .u7l12-dense .u7l12-tight .body{font-size:calc(var(--fs-body)*.68); line-height:1.3;}
+html:not(.read) .u7l12-dense .u7l12-key.tbl.compact{font-size:calc(var(--fs-body)*.64);}
+html:not(.read) .u7l12-dense .u7l12-key.tbl.compact td{padding:.22em .5em;}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 12" data-title="From polis to kingdom" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.2fr 1fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 7 · Women in ancient Greece · Lesson 12</p>
+      <h1>From polis to kingdom</h1>
+      <p class="lead">Greek women in Ptolemaic Egypt and the Elephantine marriage contract. Who were these women, why do papyri matter, and what does one marriage contract reveal?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div>
+      <figure class="u7l12-cover"><img src="images/u7l12-p-eleph-1-papyrus.jpg" alt="A sheet of papyrus covered in rows of Greek capital letters in dark ink, with the lower half torn into strips" loading="lazy"><figcaption><b>A Greek marriage contract on papyrus</b> · Elephantine, Egypt, 311/310 BCE · Berlin</figcaption></figure>
+      <p class="small credline">Images: SMB, Ägyptisches Museum und Papyrussammlung (CC BY-SA 4.0). Full details on the last slide.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="Connect: one historian on Aspasia" data-kind="intro">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow">Connect · 3 minutes · books closed · everyone writes one line · press K for the timer</p>
+  <h2>One historian, one view, one piece of evidence</h2>
+  <div class="split" style="--cols:1fr 1.25fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · one line</div><p class="body">Name <b>one historian’s view of Aspasia</b> and <b>the evidence it rests on</b>.</p></div>
+      <p class="qprompt">Cold call: whose view did you choose, and what evidence does it rest on?</p>
+    </div>
+    <div class="stack" data-veil="Write yours first — then show some answers">
+      <div class="note reveal" data-code="evidence"><div class="k">Glenn (1994) · the idea, not her words</div><p class="body">Aspasia belongs in the history of rhetoric (the idea; her argument’s words were not seen). Evidence: her article opens with a nineteenth-century print that shows Aspasia as an odalisque; the rest is not in the extract.</p></div>
+      <div class="note reveal" data-code="evidence"><div class="k">Henry (1995) · p. 127, as Wallace quotes it</div><p class="body">“We can say remarkably little about Aspasia of Miletus.” Evidence: the traditions about her, from Old Comedy and fourth-century dialogue to modern fiction (Wallace’s description of her book).</p></div>
+      <div class="note reveal" data-code="evidence"><div class="k">Wallace (1996)</div><p class="body">The ancient portrait of Aspasia as Pericles’s wise counsellor was “a parody” (of the tradition of the wise counsellor to statesmen). Evidence: texts such as the Pedetai and the Menexenos, which he says were “not meant seriously”; Henry mostly agrees. He also suggests that she came from an aristocratic family.</p></div>
+    </div>
+  </div>
+  <p class="cue reveal">Today we leave Athens for Egypt, and for a document that Greek settlers made on papyrus.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>explain who the Greek women of Ptolemaic Egypt were, and why papyri matter</li>
+        <li>analyse what a marriage contract reveals</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>explain why these women are studied as part of Greek society</li>
+        <li>analyse the clauses of P. Eleph. 1 for evidence of marriage</li>
+        <li>write This Does That sentences about a document</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u7l12-syl"><b>Syllabus outcomes:</b> AH-11-02 proposes ideas about the varying causes and effects of events and developments · AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-08 uses sources to form conclusions about the past · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U7 L12 · Polis to kingdom</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; BCE = Before the Common Era)</span></div></div>
+      <div class="row"><div class="cq">Who? When? Where?</div><div class="nts">Heracleides + Demetria → Elephantine → 311/310 BCE → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A new page for each lesson</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences; a name and a date for every document.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: identify, describe, explain, analyse. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: the setting and the papyrus · after you write. Your timed answer goes in your answer booklet, not your notes.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 12" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for the document</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Writing terms</th><th>Meaning</th></tr>
+      <tr><td>Analyse</td><td>NESA: “Identify components and the relationship between them. Draw out and relate implications.” Break the evidence into parts and say what follows.</td></tr>
+      <tr><td>This Does That</td><td>Evidence → a precise verb → its effect: <span class="nq">‘The clause… puts… in writing, which suggests…’</span></td></tr>
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Date formula</td><td>The opening words of an ancient document that say when it was made, here by a king’s regnal year and a governor’s year in office.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Content terms</th><th>Meaning</th></tr>
+      <tr><td>Hellenistic</td><td>The Greek world from Alexander’s death (323 BCE) to the end of the Ptolemies (30 BCE).</td></tr>
+      <tr><td>Ptolemies</td><td>The Macedonian Greek dynasty that ruled Egypt from Ptolemy I to Cleopatra VII.</td></tr>
+      <tr><td>Papyrus</td><td>Writing material made from a reed; documents survive in Egypt’s dry climate.</td></tr>
+      <tr><td>Demotic</td><td>The everyday Egyptian script, used for Egyptian-law contracts.</td></tr>
+      <tr><td>Drachma</td><td>A Greek unit of money: a silver coin in Classical Athens; in Ptolemaic Egypt also reckoned in copper, worth far less.</td></tr>
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Satrap</td><td>A governor of a province. Ptolemy governed Egypt as a satrap before he became king.</td></tr>
+    </table></div>
+  </div>
+  <p class="u7l12-gloss">From Lessons 6 and 7, still in use: <b>kyrios</b>, <b>dowry</b>, <b>engyē</b>, <b>polis</b>.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · From polis to kingdom" data-title="From polis to kingdom: the map and the dates" data-kind="notes">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow">1 · From polis to kingdom · I do — the map, then four dates</p>
+  <h2>Where and when: Egypt after Alexander</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div>
+    <figure class="u7l12-map">
+      <img src="images/u7l12-map-ptolemaic-egypt-270-bce.jpg" alt="A relief map of Egypt and its neighbours with place names: Alexandria on the Mediterranean coast, the Nile running south through Memphis and Oxyrhynchos to Syene, and a dashed red line marking the approximate edge of Ptolemaic control" loading="lazy">
+      <figcaption><b>Ptolemaic Egypt about 270 BCE</b> (later than the contract). Alexandria is on the coast; Lake Moeris, in the Fayum, is labelled Moirios Limne; Elephantine, an island at the First Cataract, is next to Syene in the far south. The red line is approximate.</figcaption>
+    </figure>
+    <p class="small credline">Images: Tom Elliott, Ancient World Mapping Center (CC BY-SA 4.0). Full details on the last slide.</p>
+    </div>
+    <ol class="u7l12-tl">
+      <li class="reveal"><span class="yr">332/1 BCE</span><span>Alexander the Great takes Egypt from the Persian Empire and founds Alexandria, which later became the Ptolemies’ capital.</span></li>
+      <li class="reveal"><span class="yr">323 BCE</span><span>Alexander dies. His friend Ptolemy becomes <b>satrap</b>, the governor, of Egypt.</span></li>
+      <li class="reveal now"><span class="yr">311/310 BCE</span><span>Our contract is written at Elephantine. Ptolemy is still a satrap, not yet a king.</span></li>
+      <li class="reveal"><span class="yr">about 305 BCE</span><span>Ptolemy takes the title of king. Sources date it between 306 and 304 BCE.</span></li>
+    </ol>
+  </div>
+  <p class="cue reveal"><b>From polis to kingdom:</b> a polis is a self-governing city, like Athens. A kingdom is ruled by a king. Greek settlers now lived in Alexandria and across the countryside, keeping the Greek language and Greek law under the rule of a king.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · From polis to kingdom" data-title="Why these women are Greeks" data-kind="notes">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow">1 · From polis to kingdom · I do — Greeks living in Egypt, and a question to keep</p>
+  <h2>Why are these women studied as Greeks?</h2>
+  <div class="split" style="--cols:1.25fr 1fr">
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">The language</span><span class="d">Our contract is written in Greek, by and for Greek settlers.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">The names</span><span class="d">Demetria and her father Leptines are both called “Coan”, from the island of Kos. Three of the six witnesses are “Temnian”; the others are “Gelan”, “Cyrenaean” and “Coan”: home cities across the Greek world.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">The law</span><span class="d">The Berlin Papyrus Database calls it a contract “based on Greek legal concepts”: Greek law, carried to Egypt.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">The gods</span><span class="d">The unit’s frame says Greek settlers kept Greek gods. This contract names no god, so it is no evidence for that: we meet the queens’ cults later.</span></li>
+    </ol>
+    <div class="stack">
+      <div class="card accent"><div class="k">A question to keep</div>
+        <p class="body">Women in Egypt also made marriage contracts under <b>Egyptian law</b>, written in <b>Demotic</b>, the everyday Egyptian script.</p>
+        <p class="body"><b>How did those contracts differ from this Greek one?</b></p>
+        <p class="body small">We test the question at the end of the lesson, with a historian’s own words (after you write).</p></div>
+      <div class="card quiet sm"><div class="k">Our words</div><p class="body">We say <b>Greek women in Ptolemaic Egypt</b>, never “Egyptian women”: the unit studies the society <b>Greece</b>, in two settings.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · From polis to kingdom" data-title="The papyrus and its date formula" data-kind="notes">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow">1 · From polis to kingdom · I do — the document and its first line</p>
+  <h2>P. Eleph. 1: a marriage contract, and how it dates itself</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · P. Eleph. 1, the date formula</div>
+        <p class="quote sm">In the 7th year of the reign of Alexander son of Alexander, the 14th year of the satrapship of Ptolemy, in the month Dius. Marriage contract of Heracleides and Demetria.</p>
+        <p class="prov">P. Eleph. 1, a papyrus marriage contract written at Elephantine, Egypt, 311/310 BCE · trans. A. S. Hunt and C. C. Edgar, <i>Select Papyri</i> I (Loeb, 1932), no. 1</p>
+      </div>
+      <p class="u7l12-gloss"><b>Words:</b> <i>Dius</i> (Dios) a month of the Macedonian calendar · <i>satrapship</i> the time in office of a satrap · <i>Elephantine</i> an island in the Nile at the First Cataract</p>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A date formula</span><span class="d">This contract dates itself by two rulers, not by a number of years from a fixed starting point.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">“Alexander son of Alexander”</span><span class="d">Alexander IV, the young son of Alexander the Great. Livius: people in Egypt “continued to date letters according to the regnal years of the boy-king Alexander IV”.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Ptolemy</span><span class="d">The satrap of Egypt. The Berlin Papyrus Database: “not yet a king here”.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">The date</span><span class="d">311 BCE in Hunt and Edgar; 17 July – 15 August 310 BCE in the museum’s record. So we write <b>311/310 BCE</b>.</span></li>
+    </ol>
+  </div>
+  <p class="cue reveal">Found in 1906 on Elephantine, in a jar with five other papyri. The Berlin papyrus collection calls it “the oldest securely dated Greek papyrus”.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · From polis to kingdom" data-title="Notes 1 — the setting and the papyrus" data-kind="notes">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>Greek women in Egypt, and one papyrus</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U7 L12 · From polis to kingdom</b></span><span>1 · The setting</span></div>
+    <div class="row"><div class="cq">Who were the women of Ptolemaic Egypt in this unit?</div>
+      <div class="nts reveal">Greeks living in Egypt, not Egyptians <span class="sep">·</span> Greek language, law, names (Demetria “Coan”) <span class="sep">·</span> Alexander took Egypt 332/1 BCE → Ptolemy satrap 323 → king about 305 BCE</div></div>
+    <div class="row"><div class="cq">What is a papyrus, and why do papyri matter?</div>
+      <div class="nts reveal">writing material from a reed <span class="sep">·</span> survives in Egypt’s dry climate <span class="sep">·</span> documents written for Greek women: contracts, loans, petitions, wills <span class="sep">·</span> P. Eleph. 1, 311/310 BCE, Elephantine</div></div>
+    <div class="row"><div class="cq">What does the date formula name?</div>
+      <div class="nts reveal">Alexander son of Alexander (Alexander IV, a boy) and Ptolemy, the satrap, not yet a king <span class="sep">·</span> 311 in Hunt and Edgar, 310 in the museum → 311/310 BCE</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · We do" data-title="We do: the clause strips" data-kind="notes">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow">2 · We do · in pairs · 7 minutes with the analysis grid · read the contract strip by strip</p>
+  <h2>P. Eleph. 1 as eight clause strips</h2>
+  <div class="u7l12-strips">
+    <div class="u7l12-strip"><span class="n">A</span><p class="quote sm">Heracleides takes as his lawful wife Demetria, Coan, both being freeborn, from her father Leptines, Coan, and her mother Philotis …</p></div>
+    <div class="u7l12-strip"><span class="n">B</span><p class="quote sm">… bringing clothing and ornaments to the value of 1000 drachmas …</p></div>
+    <div class="u7l12-strip"><span class="n">C</span><p class="quote sm">… and Heracleides shall supply to Demetria all that is proper for a freeborn wife, and we shall live together wherever it seems best to Leptines and Heracleides consulting in common.</p></div>
+    <div class="u7l12-strip"><span class="n">D</span><p class="quote sm">If Demetria is discovered doing any evil to the shame of her husband Heracleides, she shall be deprived of all that she brought, but Heracleides shall prove whatever he alleges against Demetria before three men whom they both accept.</p></div>
+    <div class="u7l12-strip"><span class="n">E</span><p class="quote sm">It shall not be lawful for Heracleides to bring home another wife in insult of Demetria nor to have children by another woman nor to do any evil against Demetria on any pretext.</p></div>
+    <div class="u7l12-strip"><span class="n">F</span><p class="quote sm">If Heracleides is discovered doing any of these things and Demetria proves it before three men whom they both accept, Heracleides shall give back to Demetria the dowry of 1000 drachmas which she brought and shall moreover forfeit 1000 drachmas of the silver coinage of Alexander.</p></div>
+    <div class="u7l12-strip"><span class="n">G</span><p class="quote sm">Demetria and those aiding Demetria to exact payment shall have the right of execution, as if derived from a legally decided action, upon the person of Heracleides and upon all the property of Heracleides both on land and on water.</p></div>
+    <div class="u7l12-strip"><span class="n">H</span><p class="quote sm">Heracleides and Demetria shall have the right to keep the contracts severally in their own custody and to produce them against each other.</p></div>
+  </div>
+  <p class="u7l12-gloss"><b>Source:</b> P. Eleph. 1, Elephantine, 311/310 BCE · trans. A. S. Hunt and C. C. Edgar, <i>Select Papyri</i> I (Loeb, 1932), no. 1 · cuts marked …. <b>Words:</b> <i>alleges</i> claims · <i>forfeit</i> lose as a penalty · <i>right of execution</i> the right to enforce payment against a person and his goods · <i>severally</i> each separately · <i>in insult of</i> to shame.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · We do" data-title="We do: the analysis grid" data-kind="notes">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow">2 · We do · in pairs · place each strip on the grid · then a cold call</p>
+  <h2>Sort the strips: who is bound, what is protected, and Athens?</h2>
+  <div class="split" style="--cols:1.45fr 1fr">
+    <div class="tbl-scroll"><table class="tbl compact u7l12-grid">
+      <tr><th>Strip</th><th>Binds whom?</th><th>Protects what?</th><th>Athens: same or different?</th></tr>
+      <tr><td>A</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td></tr>
+      <tr><td>B</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td></tr>
+      <tr><td>C</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td></tr>
+      <tr><td>D</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td></tr>
+      <tr><td>E</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td></tr>
+      <tr><td>F</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td></tr>
+      <tr><td>G</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td></tr>
+      <tr><td>H</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td><td class="u7l12-empty">&nbsp;</td></tr>
+    </table></div>
+    <div class="stack">
+      <div class="card quiet sm"><div class="k">Athens, as Lessons 2–6 settled it</div>
+        <p class="u7l12-fact"><b>Marriage:</b> a spoken pledge, the <i>engyē</i>, between the bride’s kyrios and the groom (Lesson 6).</p>
+        <p class="u7l12-fact"><b>Kyrios:</b> her father, then her husband, who acted for her in law (Lesson 6).</p>
+        <p class="u7l12-fact"><b>Betrothal:</b> by her father, her brother or her grandfather: her children are legitimate if she is “betrothed for lawful marriage by her father or by a brother begotten of the same father or by her grandfather on her father’s side” ([Demosthenes] 46.18, as quoted in the speech).</p>
+        <p class="u7l12-fact"><b>Dowry:</b> a husband who sent his wife away “must pay back the marriage portion” or pay interest; her guardian could sue “on the woman’s behalf” ([Demosthenes] 59.52, the speaker describing a law).</p>
+        <p class="body small nq">If Lessons 2–6 did not settle it, write “not settled yet”.</p></div>
+      <p class="qprompt">Cold call: what does the contract put in writing that an Athenian spoken pledge (the <i>engyē</i>) left unwritten?</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Writing focus and the timed answer" data-title="Writing focus: This Does That for a document" data-kind="notes">
+<div class="wrap u7l12-dense u7l12-wf">
+  <p class="eyebrow">3 · Writing focus · 6 minutes · I do → We do → apply</p>
+  <h2>Writing focus: This Does That for a document</h2>
+  <div class="split" style="--cols:1.25fr 1fr">
+    <div class="stack">
+    <div class="card accent"><div class="k">I do · watch</div>
+      <p class="body"><b>Analyse</b> a document with one sentence: the <b>evidence</b> (this) → a <b>precise verb</b> (does) → its <b>effect</b> (that), extended with “which suggests …”.</p>
+      <p class="u7l12-wq">Worked example, written for this lesson, on the <b>date formula</b>, not on the marriage clauses.</p>
+      <p class="quote sm model" data-booklet="model"><span class="match" data-step="m1">The date formula, “the 7th year of the reign of Alexander son of Alexander, the 14th year of the satrapship of Ptolemy”,</span> <span class="match" data-step="m2">dates a Greek marriage by a young Macedonian king and by his satrap,</span> <span class="match" data-step="m3">which suggests that these settlers lived under royal rule rather than in a self-governing city.</span></p>
+      <div class="u7l12-moves">
+        <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>This</b> · the evidence, quoted exactly</span></p>
+        <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Does</b> · a precise verb, not “shows”</span></p>
+        <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>That</b> · its effect, hedged</span></p>
+      </div>
+    </div>
+    <div class="card quiet"><div class="k">Apply · in today’s task</div>
+      <p class="body">Open your timed answer with <b>one This Does That sentence</b> about <b>one marriage clause</b> (not the date formula): a few words of the clause in quotation marks, a precise verb, then “which suggests …”.</p>
+      <p class="body nq">“The clause … [protects / binds / limits] …, which suggests …”</p>
+      <p class="body">Your Writing toolkit (booklet pages 3–4): attribution verbs.</p></div>
+    </div>
+    <div class="stack">
+    <div class="card"><div class="k">We do · together</div>
+      <p class="body">In pairs, write <b>one sentence</b> on this extract, then cold call. Verbs: <i>presents · describes · implies · assumes</i>.</p>
+      <div class="src"><div class="k">Source · Lysias 1.9 · Euphiletus on his house</div>
+        <p class="quote sm">… my dwelling is on two floors, the upper being equal in space to the lower, with the women’s quarters above and the men’s below.</p>
+        <p class="prov">Lysias 1, written for Euphiletus to deliver in his own defence, Athens, about 400 BCE (uncertain) · trans. W. R. M. Lamb (Loeb, 1930), Perseus</p></div>
+      <div class="note reveal" data-code="judgement" data-veil="Try it first — then show a model sentence"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Euphiletus’s account of a house with “the women’s quarters above and the men’s below”, in a speech Lysias wrote for him to give in his own defence, describes separate quarters as a plain fact of his household, which suggests that he expected the jurors to find the arrangement believable, although his wife’s words reach us only through his defence.</p></div>
+    </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Writing focus and the timed answer" data-title="You do: deconstruct the question">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow">3 · You do · 21 minutes in all · deconstruct the question first</p>
+  <h2>Your timed answer: deconstruct it first</h2>
+  <p class="u7l12-q"><b>What</b> does P. Eleph. 1 <b>reveal</b> about marriage among Greeks in early Ptolemaic Egypt? <span class="mk2">4 marks</span></p>
+  <p class="qprompt">Deconstruct it: what does this question ask you to do?</p>
+  <div data-veil="Deconstruct it first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u7l12-dqt">
+    <tr><th>Step</th><th>This question</th></tr>
+    <tr class="reveal"><td>Verb</td><td><b>What … reveal</b>: not a word in NESA’s glossary, but a self-explanatory question. Treat it as <b>analyse</b> (department advice): NESA, “Identify components and the relationship between them. Draw out and relate implications.”</td></tr>
+    <tr class="reveal"><td>Topic</td><td>marriage among Greeks in early Ptolemaic Egypt, as this one document shows it</td></tr>
+    <tr class="reveal"><td>Limits</td><td>this document only (P. Eleph. 1, 311/310 BCE); <i>marriage</i>, not Egypt in general; “reveal” means what the document points to, not what happened in every marriage</td></tr>
+    <tr class="reveal"><td>Do</td><td>three to five sentences for 4 marks (department advice): take the clauses as parts, say what each does with a precise verb, and draw out what follows with “which suggests …”, hedged</td></tr>
+  </table></div>
+  </div>
+  <div class="split" style="--cols:1fr 1.5fr">
+    <p class="qprompt">Check first: what should you not do with the contract?</p>
+    <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">Don’t retell it or list its clauses one after another. Choose clauses as evidence, say what each does, and say what follows from them.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Writing focus and the timed answer" data-title="You do: write your timed answer">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow">3 · You do · timed 10 minutes · press K, click 12 and start; call time at 2:00</p>
+  <h2>Write your timed answer</h2>
+  <p class="u7l12-q"><b>What</b> does P. Eleph. 1 <b>reveal</b> about marriage among Greeks in early Ptolemaic Egypt? <span class="mk2">4 marks</span></p>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body">
+          <li>Open with your This Does That sentence on one clause: a few words quoted, a precise verb, “which suggests …”.</li>
+          <li>Add a second clause and do the same, or link it to the first.</li>
+          <li>End by saying what this one document cannot show.</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body"><b>Both spouses are bound, but unequally: evaluate</b> how far the contract protects Demetria, and for whom it was written.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Use your grid and the clause strips. Word bank:</p>
+        <div class="u7l12-bank"><span>binds</span><span>protects</span><span>limits</span><span>requires</span><span>assumes</span><span>suggests</span></div>
+        <p class="body">Frames (form only): <span class="nq">“The clause … [protects / binds / limits] …, which suggests …”</span> · <span class="nq">“However, one document cannot show …”</span></p></div>
+      <div class="card quiet"><div class="k">Check yours: does it …</div>
+        <ul class="checks">
+          <li><label><input type="checkbox"> <span>quote a few words of a clause, exactly?</span></label></li>
+          <li><label><input type="checkbox"> <span>use a precise verb, not “shows” plus a retelling?</span></label></li>
+          <li><label><input type="checkbox"> <span>say what follows, with a hedge?</span></label></li>
+          <li><label><input type="checkbox"> <span>stay on marriage, in this one document?</span></label></li>
+        </ul></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Writing focus and the timed answer" data-title="Check your timed answer" data-kind="notes">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow">3 · You do · 3 minutes · after the timer · check your own answer</p>
+  <h2>Check your answer against what a strong answer includes</h2>
+  <div class="split" style="--cols:1.2fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · 3 minutes</div>
+        <p class="body">Read your answer through with a different-coloured pen. Tick each point you can find. Add one missing point in the margin, then underline your best This Does That sentence.</p></div>
+      <p class="qprompt">Cold call: which of these points did you miss, and which verb did you use?</p>
+    </div>
+    <div class="note reveal" data-code="judgement" data-veil="Check yours first — then show what a strong answer includes"><div class="k">A strong answer includes (note form, not a model)</div>
+      <ul class="body">
+        <li><b>Marriage</b> as the topic, in this one document, not Egypt in general.</li>
+        <li><b>Clauses used as evidence</b>, with a few words quoted exactly from the contract.</li>
+        <li><b>A precise verb</b> in each This Does That sentence, not “shows” plus a retelling.</li>
+        <li><b>An effect</b> with “which suggests …” or “which implies …”, hedged to match one document.</li>
+        <li><b>Heracleides and Demetria kept straight</b>: who is bound, and who is protected.</li>
+        <li><b>A limit</b>: one couple, one document, one setting.</li>
+      </ul></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · Writing focus and the timed answer" data-title="You do: compare one clause with Athens">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow">3 · You do · 6 minutes · one paragraph · deconstruct, then press K, click 5 and start; stop at 1:00 to check</p>
+  <h2>Compare one clause with the Athenian family</h2>
+  <p class="u7l12-q"><b>Compare</b> one clause of P. Eleph. 1 with the Athenian family as you studied it in Lesson 6. <span class="mk2">one paragraph</span></p>
+  <div class="split" style="--cols:1.2fr 1fr">
+    <div class="stack">
+      <p class="qprompt">Deconstruct it: what does this question ask you to do?</p>
+      <div data-veil="Deconstruct it first — then show the answers">
+      <div class="tbl-scroll"><table class="tbl compact u7l12-dqt">
+        <tr><th>Step</th><th>This question</th></tr>
+        <tr class="reveal"><td>Verb</td><td><b>Compare</b>: NESA, “Show how things are similar or different.” Similarities <i>and</i> differences, then which matters more (department advice)</td></tr>
+        <tr class="reveal"><td>Topic</td><td>one clause of the contract, set beside the Athenian family</td></tr>
+        <tr class="reveal"><td>Limits</td><td>one clause only; Athens as Lessons 2–6 settled it (the grid’s boxes); a paragraph, not an essay</td></tr>
+        <tr class="reveal"><td>Do</td><td>name the clause, say one similarity and one difference point by point (<i>whereas</i>, <i>both</i>), and end by judging which matters more</td></tr>
+      </table></div>
+      </div>
+      <div class="card quiet sm"><div class="k">Frames (form only) · Your Writing toolkit (booklet pages 3–4): connectives by function</div>
+        <p class="body"><span class="nq">“Whereas …, …; both …”</span> · <span class="nq">“Unlike …, …”</span> · <span class="nq">“This difference matters more because …”</span></p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet sm"><div class="k">Athens, as Lessons 2–6 settled it</div>
+        <p class="u7l12-fact"><b>Marriage:</b> a spoken pledge, the <i>engyē</i>, between the bride’s kyrios and the groom.</p>
+        <p class="u7l12-fact"><b>Kyrios:</b> her father, then her husband, who acted for her in law.</p>
+        <p class="u7l12-fact"><b>Dowry:</b> a husband who sent his wife away “must pay back the marriage portion” or pay interest; her guardian could sue “on the woman’s behalf”.</p></div>
+      <div class="card quiet"><div class="k">Check yours: does it …</div>
+        <ul class="checks">
+          <li><label><input type="checkbox"> <span>name one clause and quote a few words?</span></label></li>
+          <li><label><input type="checkbox"> <span>give a similarity and a difference?</span></label></li>
+          <li><label><input type="checkbox"> <span>use only Athens facts from Lessons 2–6?</span></label></li>
+          <li><label><input type="checkbox"> <span>end by judging which matters more?</span></label></li>
+        </ul></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: hinge on the missing Athenian contract" data-kind="practice">
+<div class="wrap u7l12-dense u7l12-wf">
+  <p class="eyebrow">Check · 4 minutes · pens down · vote with your A, B, C or D card on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2>Why does P. Eleph. 1 have no Athenian equivalent?</h2>
+  <div class="veil-parts" data-veil="Vote first — then show the answer">
+    <ol class="opts">
+      <li><span class="n">A</span><span>Athenian women could not marry, so no Athenian couple ever needed to agree any terms.</span></li>
+      <li id="u7l12-hd"><span class="n">B</span><span>Athenian marriage was a spoken pledge, and papyrus rarely survives outside Egypt’s dry desert.</span></li>
+      <li><span class="n">C</span><span>Greeks in Egypt copied Egyptian marriage contracts, because they had none of their own.</span></li>
+      <li><span class="n">D</span><span>Athens banned all written contracts, so any marriage document would have been destroyed there.</span></li>
+    </ol>
+    <i class="reveal" data-mark="#u7l12-hd" hidden></i>
+    <div class="note vp reveal" data-code="evidence"><div class="k">B: a spoken pledge, and papyrus survives in Egypt</div>
+      <p class="body">In Athens a marriage was made by a spoken pledge between the bride’s kyrios and the groom (Lesson 6), and Lesson 6’s evidence has no Athenian marriage contract; and papyrus survives chiefly in Egypt’s dry desert (Lesson 1). <b>A</b> is wrong: Athenian women did marry, through a kyrios’s pledge. <b>C</b> is wrong: the Berlin Papyrus Database calls this a contract “based on Greek legal concepts”. <b>D</b> is wrong: nothing in Lessons 2–6 says Athens banned written contracts.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Exit ticket: one thing the contract put in writing" data-kind="practice">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow">Check · exit ticket · 4 minutes · one sentence · collected</p>
+  <h2>Exit ticket: what did the contract put in writing?</h2>
+  <div class="split" style="--cols:1.2fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · 3 minutes</div>
+        <p class="body">Write <b>one thing the contract put in writing</b>. Name the clause and quote a few of its words exactly.</p>
+        <p class="body">Hand it in with your answer. Then tick the “I can” statements you can do, and circle the one you are least sure of (1 minute).</p></div>
+    </div>
+    <div class="stack">
+      <div class="note reveal" data-code="evidence" data-veil="Write first — then show what a strong answer includes"><div class="k">A strong answer includes</div>
+        <ul class="body">
+          <li><b>A clause named exactly</b>, for example the dowry’s value: “clothing and ornaments to the value of 1000 drachmas”.</li>
+          <li><b>Or Heracleides’s promise</b>: he may not “bring home another wife in insult of Demetria”.</li>
+          <li><b>Or the arbitration</b>: a dispute goes “before three men whom they both accept”.</li>
+        </ul></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="After you write: the grid, checked" data-kind="notes">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow">After you write · the grid, checked <span class="optional">If time · or at home</span></p>
+  <h2>The clause grid, with possible answers</h2>
+  <div class="tbl-scroll" data-veil="Fill in your grid first — then show the possible answers"><table class="tbl compact u7l12-key">
+    <tr><th>Strip</th><th>Binds whom?</th><th>Protects what?</th><th>Athens: same or different?</th></tr>
+    <tr class="reveal"><td>A</td><td>No one yet: it says who marries whom, and who gives her</td><td>Her standing as a freeborn lawful wife, with both parents named</td><td>Same: her father acts for her (the kyrios). Different: the law as quoted names her father, brother or grandfather, not her mother</td></tr>
+    <tr class="reveal"><td>B</td><td>Her side supplies it; Heracleides must return it if he breaks strip E (strip F)</td><td>Her property</td><td>Same: a dowry goes with the bride. Different: here its value is written down</td></tr>
+    <tr class="reveal"><td>C</td><td>Heracleides, to supply what a freeborn wife needs; both, to live where Leptines and Heracleides agree</td><td>Her standing; her father keeps a say</td><td>Probably the same idea: a man acts for her (the kyrios), but here it is in writing</td></tr>
+    <tr class="reveal"><td>D</td><td>Demetria (she loses what she brought if she shames him); Heracleides (he must prove it)</td><td>His honour; her against an unproven charge</td><td>Not settled yet</td></tr>
+    <tr class="reveal"><td>E</td><td>Heracleides: no second wife, no children by another woman, no harm</td><td>Her place as his wife</td><td>Not settled yet</td></tr>
+    <tr class="reveal"><td>F</td><td>Heracleides: he repays the dowry and forfeits a further 1000 drachmas</td><td>Her dowry, with a penalty</td><td>Same idea: the dowry comes back ([Demosthenes] 59.52). Different: the trigger and the extra penalty</td></tr>
+    <tr class="reveal"><td>G</td><td>Heracleides, his person and property</td><td>Her power to collect, with helpers</td><td>Partly: in Athens her guardian could sue on her behalf. The rest is not settled yet</td></tr>
+    <tr class="reveal"><td>H</td><td>Both: each may keep a copy and use it against the other</td><td>Both, by proof in a dispute</td><td>Not settled yet</td></tr>
+  </table></div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="After you write: the cold call and Egyptian-law contracts" data-kind="notes">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow">After you write · back to the question we kept <span class="optional">If time · or at home</span></p>
+  <h2>The cold call answered, and Egyptian-law contracts</h2>
+  <div class="split" style="--cols:1.2fr 1fr">
+    <div class="stack">
+      <div class="src"><div class="k">Source · Roger Bagnall on Egyptian-law marriage settlements</div>
+        <p class="quote sm">Egyptian women were free of the legal disabilities found in much of the Greek world.</p>
+        <p class="quote sm">Demotic marriage settlements were interested only in the property rights resulting from a marriage: what gift a husband had to pay to his wife, what goods a wife brought into a marriage, and what proprietary rights she might enforce in case of divorce.</p>
+        <p class="prov">Roger S. Bagnall, in Jane Rowlandson (ed.), <i>Women and Society in Greek and Roman Egypt: A Sourcebook</i> (Cambridge University Press, 1998), pp. 156–157 · his own words; one historian’s view</p></div>
+      <p class="u7l12-gloss"><b>Words:</b> <i>Demotic</i> the everyday Egyptian script · <i>settlement</i> an agreement fixing a couple’s property</p>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Which strips of P. Eleph. 1 are about <b>property</b>, and which are about something else?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show the answer"><div class="k">One document against one historian</div>
+        <p class="body">Strips B, F and G are about property (the dowry, its return, enforcing payment). Strips C, D and E are about more: where the couple live, the husband’s duty to supply a wife’s needs, her conduct, and the promise about another wife. Bagnall’s contrast is about Egyptian-law settlements in general; one Greek contract cannot test all of it.</p></div>
+    </div>
+  </div>
+  <div class="split" style="--cols:1fr 1.5fr">
+    <p class="qprompt">Back to the cold call from the grid: what does the contract put in writing that an Athenian spoken pledge left unwritten?</p>
+    <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">The terms: the dowry’s value and its return, with a further 1000 drachmas, if Heracleides breaks any of his promises (another wife, children by another woman, harm to Demetria); the three men who judge; each side’s right to keep a copy. Lesson 6 has a speaker describing a law that returns a dowry, but no Athenian marriage contract.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Notes 2 — what the contract reveals" data-kind="notes">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2 · after you write <span class="optional">If time · or at home</span></p>
+  <h2>P. Eleph. 1: what it puts in writing, and how it compares</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U7 L12 · From polis to kingdom</b></span><span>2 · After you write</span></div>
+    <div class="row"><div class="cq">What does P. Eleph. 1 put in writing?</div>
+      <div class="nts reveal">the dowry: “clothing and ornaments to the value of 1000 drachmas” <span class="sep">·</span> his duties and hers <span class="sep">·</span> disputes “before three men whom they both accept” <span class="sep">·</span> a penalty: the dowry back, and 1000 drachmas more <span class="sep">·</span> each keeps a copy</div></div>
+    <div class="row"><div class="cq">Who is bound, and who is protected?</div>
+      <div class="nts reveal">both are bound, differently: she loses what she brought if she shames him; he repays the dowry and pays a penalty if he breaks his promises (another wife, children by another woman, harm) <span class="sep">·</span> one couple, one document</div></div>
+    <div class="row"><div class="cq">Continuity and change from Athens?</div>
+      <div class="nts reveal">continuity: dowry, husband’s authority <span class="sep">·</span> change: written, mutual terms with penalties <span class="sep">·</span> Bagnall: Egyptian-law settlements “interested only in the property rights”</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Summary" data-kind="notes">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>Who were the Greek women of Ptolemaic Egypt, and why do papyri matter?</li>
+          <li>What does the date formula of P. Eleph. 1 name, and what does it suggest?</li>
+          <li>What does one marriage contract let a historian say, and what can it not say?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary (it does not cover the clauses)"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">The women studied in Ptolemaic Egypt are Greeks living in Egypt, and papyri matter because Egypt’s dry climate kept documents written for them. P. Eleph. 1 dates itself by Alexander son of Alexander and by Ptolemy the satrap, which suggests that these settlers lived under royal rule rather than in a self-governing city. A single contract can be analysed clause by clause for what it does, but it cannot show how every Greek couple lived.</p></div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> <span>Greeks living in Egypt, not Egyptians</span></label></li>
+        <li><label><input type="checkbox"> <span>Why papyri survive in Egypt</span></label></li>
+        <li><label><input type="checkbox"> <span>The date formula and 311/310 BCE</span></label></li>
+        <li><label><input type="checkbox"> <span>This Does That for a document</span></label></li>
+        <li><label><input type="checkbox"> <span>Your grid, checked</span></label></li>
+        <li><label><input type="checkbox"> <span>One contract, one couple: its limit</span></label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u7l12-dense">
+  <p class="eyebrow">Practice and review · 1 of 4 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>In 311/310 BCE Ptolemy was already king of Egypt.</span>
+      <span class="sol no reveal">False <span class="why">— the date formula calls it “the 14th year of the satrapship of Ptolemy”, and the Berlin Papyrus Database says he is “not yet a king here”. He took the royal title about 305 BCE (sources date it between 306 and 304 BCE).</span></span></li>
+    <li><span class="n">2</span><span>The women studied in this part of the unit are Egyptian women.</span>
+      <span class="sol no reveal">False <span class="why">— they are Greeks living in Egypt: they used Greek language and law, and their names give Greek home cities (Demetria, “Coan”).</span></span></li>
+    <li><span class="n">3</span><span>Every source dates P. Eleph. 1 to 311 BCE.</span>
+      <span class="sol no reveal">False <span class="why">— Hunt and Edgar give 311; the Heidelberg papyrus database and the Berlin museum give 310 (17 July – 15 August). So we write 311/310 BCE.</span></span></li>
+    <li><span class="n">4</span><span>A This Does That sentence needs a precise verb and a hedge.</span>
+      <span class="sol reveal">True <span class="why">— for example <i>dates … by</i> or <i>describes</i>, then “which suggests …”: a verb that says what the evidence does, and a hedge that matches one document.</span></span></li>
+    <li><span class="n">5</span><span>Heracleides is bound by the contract, but Demetria is not.</span>
+      <span class="sol no reveal">False <span class="why">— she “shall be deprived of all that she brought” if she shames him, and he “shall give back to Demetria the dowry of 1000 drachmas” if he breaks his promises to her (another wife, children by another woman, any harm).</span></span></li>
+    <li><span class="n">6</span><span>One marriage contract shows how every Greek couple in Egypt lived.</span>
+      <span class="sol no reveal">False <span class="why">— it is one couple’s document. The Berlin Papyrus Database says its dowry “corresponds to the average income of several years”, so it comes from a well-off couple.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — exercises" data-kind="practice">
+<div class="wrap prac u7l12-dense">
+  <p class="eyebrow">Practice and review · 2 of 4 · identify, This Does That, evaluate</p>
+  <h2>Three exercises</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · identify</div>
+        <p class="body"><b>Identify</b> how many men judge a dispute under P. Eleph. 1. (1 mark)</p></div>
+      <div class="src reveal" data-veil="Show a model answer"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Three: “three men whom they both accept”.</p></div>
+      <div class="card accent"><div class="k">Exercise 2 · This Does That</div>
+        <p class="body">Write one This Does That sentence about this clause: <span class="nq">“Heracleides and Demetria shall have the right to keep the contracts severally in their own custody and to produce them against each other.”</span></p></div>
+      <div class="src reveal" data-veil="Show a model answer"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">The clause that lets each spouse “keep the contracts severally in their own custody” equips both of them to use the document against the other, which suggests that each side expected the agreement might have to be enforced.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Exercise 3 · extension</div>
+        <p class="body"><b>Both spouses are bound, but unequally: evaluate</b> how far the contract protects Demetria, and for whom it was written. NESA: <i>evaluate</i> means ‘Make a judgement based on criteria. Determine the value of.’ (<i>Glossary of key words</i>)</p></div>
+      <div class="src"><div class="k">Source · the Berlin Papyrus Database on the dowry</div>
+        <p class="quote sm">The amount of the dowry indicates that the lifeworld from which the marriage contract originates is that of wealthy persons: the amount of money mentioned corresponds to the average income of several years at that time.</p>
+        <p class="prov">Patrick Sänger, “Marriage, mobility and migration at the beginning of Hellenism”, Berlin Papyrus Database (2024) · his own words</p></div>
+      <div class="note reveal u7l12-tight" data-code="judgement" data-veil="Write first — then show what a strong answer includes"><div class="k">A strong answer includes (note form, not a model)</div>
+        <ul class="body">
+          <li>A <b>judgement of degree</b> on how far she is protected.</li>
+          <li><b>Criteria named</b>: protection of her property, of her position, and of her ability to enforce.</li>
+          <li><b>Clauses quoted</b>, and who must prove what.</li>
+          <li><b>For whom</b>: a well-off couple, a father and a husband, with a limit: one document.</li>
+        </ul></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u7l12-dense">
+  <p class="eyebrow">Practice and review · 3 of 4 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>What two rulers does the date formula of P. Eleph. 1 name, and was either of them a king?
+      <span class="sol reveal">Alexander son of Alexander (Alexander IV, the young son of Alexander the Great), a king, and Ptolemy, who was the satrap of Egypt and “not yet a king”.</span></li>
+    <li>Why do papyrus documents about Greek women survive from Egypt?
+      <span class="sol reveal">Papyrus survives in Egypt’s dry climate; nearly all papyri are found in the Egyptian desert, and very little survives anywhere else.</span></li>
+    <li>What are the three parts of a This Does That sentence?
+      <span class="sol reveal">The evidence (this), a precise verb (does) and its effect (that), extended with “which suggests …”.</span></li>
+    <li>What was the dowry in P. Eleph. 1, and what happens to it if Heracleides breaks his promises to Demetria?
+      <span class="sol reveal">“clothing and ornaments to the value of 1000 drachmas”; he “shall give back to Demetria the dowry of 1000 drachmas which she brought” and forfeit another 1000 drachmas.</span></li>
+    <li>Why do we write 311/310 BCE?
+      <span class="sol reveal">Hunt and Edgar date the contract to 311 BCE, but the Heidelberg papyrus database and the Berlin museum date it to 310 (17 July – 15 August), so we give both.</span></li>
+    <li>Why can one contract not tell us about every Greek marriage in Egypt?
+      <span class="sol reveal">It is one couple’s document, and the size of the dowry suggests a well-off couple; a historian needs more documents to say what was usual.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u7l12-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u7l12-cite"><div class="k">Written sources</div>
+      <p class="small">P. Eleph. 1 (Berlin, P 13500), the marriage contract of Heracleides and Demetria, Elephantine, 311/310 BCE: trans. A. S. Hunt and C. C. Edgar, <i>Select Papyri</i> I (Loeb, 1932), no. 1 (public domain in Australia), checked at <a href="https://www.attalus.org/docs/select1/p1.html">attalus.org</a>; the papyrus record: <a href="https://papyri.info/hgv/5836">papyri.info, HGV 5836</a> (TM 5836). Lysias 1.9: trans. W. R. M. Lamb (Loeb, 1930), <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0154:speech=1:section=9">Perseus Digital Library</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 US</a>). [Demosthenes] 46.18 and 59.52: trans. A. T. Murray (Loeb, 1939), Perseus. Short extracts for study.</p>
+      <p class="small">Berlin Papyrus Database, Staatliche Museen zu Berlin: Anna Monte, <a href="https://berlpap.smb.museum/ehevertrag/?lang=en">“Marriage contract”</a> (2017), and Patrick Sänger, <a href="https://berlpap.smb.museum/ehe-mobilitaet-und-migration/?lang=en">“Marriage, mobility and migration at the beginning of Hellenism”</a> (2024): brief quotations for study. Livius.org (Jona Lendering): <a href="https://www.livius.org/articles/person/alexander-iv/">Alexander IV</a>, <a href="https://www.livius.org/articles/dynasty/ptolemies/">Ptolemies</a>, <a href="https://www.livius.org/articles/place/alexandria/">Alexandria</a> and <a href="https://www.livius.org/articles/person/ptolemy-i-soter/">Ptolemy I Soter</a>. Pleiades: <a href="https://pleiades.stoa.org/places/786021">Elephantine</a> and <a href="https://pleiades.stoa.org/places/736967">Moeris (lake)</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>). Roger S. Bagnall, in Jane Rowlandson (ed.), <i>Women and Society in Greek and Roman Egypt: A Sourcebook</i> (Cambridge University Press, 1998), pp. 156–157, “The Egyptian background”: brief quotations for study.</p>
+      <p class="small">For the Connect: Robert Wallace, review of Madeleine M. Henry, <i>Prisoner of History: Aspasia of Miletus and Her Biographical Tradition</i> (Oxford University Press, 1995), <a href="https://bmcr.brynmawr.edu/1996/1996.04.07/">Bryn Mawr Classical Review 1996.04.07</a> (including Henry’s p. 127 sentence as Wallace quotes it); Cheryl Glenn, <span class="nq">“Sex, Lies, and Manuscript: Refiguring Aspasia in the History of Rhetoric”</span>, <i>College Composition and Communication</i> 45.2 (1994), named, not quoted. NESA, <a href="https://www.nsw.gov.au/education-and-training/nesa/hsc/student-guide/glossary"><i>Glossary of key words</i></a>.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet u7l12-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>P. Eleph. 1, a Greek marriage contract on papyrus, Elephantine, 311/310 BCE (Berlin, P 13500)</b> · Photo: Staatliche Museen zu Berlin, Ägyptisches Museum und Papyrussammlung · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Papyrus_Berlin_13500_(recto).jpg">source</a></li><li><b>Map of Ptolemaic Egypt about 270 BCE (Ancient World Mapping Center)</b> · Map by Tom Elliott, Ancient World Mapping Center (uploaded by Awmcstaff) · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Ptolemaic_Egypt,_circa_270_BCE.pdf">source</a></li></ul>
+        <p class="small">All images are public domain or openly licensed, and were resized for the web. Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

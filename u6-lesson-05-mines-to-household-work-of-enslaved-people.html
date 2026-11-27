@@ -1,0 +1,1680 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U6 L5 · From mines to the household: the work of enslaved people</title>
+<meta name="description" content="Year 11 Ancient History, slavery in ancient Rome: what the sources show about the work of enslaved people in Spanish mines, on farms, in towns and in households, whose voice each source carries, and how to write a thesis that makes an arguable judgement and names its reasons.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#8A3A12; --bright:#C2561E; --tint:#FAEBE2; --statement:#8A3A12;
+  --solid:#8A3A12; --soft:#F6D9C8; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#F2B796; --bright:#E07A45; --tint:#3A1D10; --statement:#6E2E0E; --soft:#F6D9C8; } }
+:root[data-theme="dark"]{ --deep:#F2B796; --bright:#E07A45; --tint:#3A1D10; --statement:#6E2E0E; --soft:#F6D9C8; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 6 Lesson 5 only (every class starts u6l05-) */
+
+/* title picture; goals slide syllabus line; credits links */
+.u6l05-cover img{max-height:56vh; object-fit:contain;}
+.u6l05-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u6l05-cite a{color:var(--deep);}
+
+/* a station: the sources on the left, the picture and the three prompts on the right */
+.u6l05-station{display:grid; grid-template-columns:1.55fr 1fr; gap:clamp(12px,1.6vw,22px); align-items:start;}
+.u6l05-station .src .quote.sm{font-size:calc(var(--fs-body)*.84);}
+.u6l05-fig .figure img{max-height:34vh; object-fit:contain; background:var(--surface);}
+.u6l05-fig-tall .figure img{max-height:50vh;}
+.u6l05-gloss{font-size:calc(var(--fs-body)*.8); line-height:1.38; margin-top:.45em;}
+.u6l05-ask{margin:0; padding-left:1.2em; font-size:calc(var(--fs-body)*.86); line-height:1.4;}
+.u6l05-ask li + li{margin-top:.3em;}
+
+/* the grids: blank (briefing) and completed (check) */
+.u6l05-grid{font-size:calc(var(--fs-body)*.8);}
+.u6l05-grid td:first-child{font-weight:700; white-space:nowrap;}
+.u6l05-grid-blank{table-layout:fixed;}
+.u6l05-grid-blank th{font-size:calc(var(--fs-body)*.58); padding:.5em .5em; letter-spacing:.01em; white-space:normal; overflow-wrap:break-word; vertical-align:bottom;}
+.u6l05-grid-blank th:first-child, .u6l05-grid-blank td:first-child{width:19%;}
+.u6l05-grid-blank td.u6l05-fill{height:3.4em;}
+.u6l05-grid td.u6l05-fill{height:2.6em; background:var(--surface);}
+
+/* the deconstruction strip above a question (verb · topic · limits · do) */
+.u6l05-dq{display:grid; grid-template-columns:auto 1fr; gap:.2em .8em; margin:0; padding:.5em .9em;
+  border-left:5px solid var(--c-directive); background:var(--w-directive); border-radius:0 8px 8px 0;
+  font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+.u6l05-dq dt{font-weight:700; color:var(--c-directive);}
+.u6l05-dq dd{margin:0;}
+
+/* three theses, one under another, on the Writing focus card */
+.u6l05-theses{display:flex; flex-direction:column; gap:.4em; margin:.2em 0 .4em;}
+.u6l05-theses .quote.sm{margin:0;}
+.u6l05-theses b.n{color:var(--deep);}
+
+/* paragraphs inside a card need a little air */
+.card .body + .body, .card .body + .u6l05-dq, .card .small + .quote, .card .quote + .mq,
+.card .body + .note, .card .body + .small, .card .u6l05-theses + .mq{margin-top:.4em;}
+
+/* a word bank */
+.u6l05-bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.u6l05-bank span{border:1px solid var(--c-keyterm); color:var(--c-keyterm); border-radius:999px; padding:.1em .7em;
+  background:var(--w-keyterm); font-size:calc(var(--fs-body)*.8); font-weight:600;}
+
+/* the sticky-note line: a bar with a mark for each degree */
+.u6l05-line{margin:.8em 0 .4em; padding:0 .4em;}
+.u6l05-line .bar{height:10px; border-radius:6px; background:linear-gradient(90deg, var(--w-keyterm), var(--bright));}
+.u6l05-line .ends{display:flex; justify-content:space-between; margin-top:.5em; font-weight:700; font-size:calc(var(--fs-body)*.9);}
+.u6l05-line .marks{display:flex; justify-content:space-between; margin-top:.2em; color:var(--slate); font-size:calc(var(--fs-body)*.72);}
+.u6l05-line .marks span{flex:1; text-align:center;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u6l05-station{grid-template-columns:1fr;}
+  .u6l05-fig .figure img, .u6l05-fig-tall .figure img{max-height:none;}
+  .u6l05-line .ends{flex-direction:column; gap:.2em;}
+  .u6l05-line .marks{display:none;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u6l05-dense{gap:10px;}
+  html:not(.read) .u6l05-dense h2{font-size:calc(var(--fs-h2)*.84);}
+  html:not(.read) .u6l05-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.38;}
+  html:not(.read) .u6l05-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u6l05-dense .src{padding:8px 14px;}
+  html:not(.read) .u6l05-dense .src .prov{margin-top:.35em; font-size:calc(var(--fs-body)*.66);}
+  html:not(.read) .u6l05-dense .note{padding:.45em .85em;}
+  html:not(.read) .u6l05-dense .note .body, html:not(.read) .u6l05-dense .card .body,
+  html:not(.read) .u6l05-dense .qprompt{font-size:calc(var(--fs-body)*.78); line-height:1.36;}
+  html:not(.read) .u6l05-dense .card{padding:10px 16px;}
+  html:not(.read) .u6l05-dense .card .k{margin-bottom:.25em;}
+  html:not(.read) .u6l05-dense .keylist{gap:6px;}
+  html:not(.read) .u6l05-dense .keylist li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u6l05-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u6l05-dense .tbl.compact td{padding:.3em .5em;}
+  html:not(.read) .u6l05-dense .tbl th{padding:.38em .55em;}
+  html:not(.read) .u6l05-dense .figure img{max-height:30vh;}
+  html:not(.read) .u6l05-dense .u6l05-fig .figure img{max-height:24vh;}
+  html:not(.read) .u6l05-dense .u6l05-fig-tall .figure img{max-height:38vh;}
+  html:not(.read) .u6l05-dense .u6l05-gloss{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u6l05-dense .u6l05-ask{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u6l05-dense .u6l05-grid{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u6l05-dense .u6l05-dq{font-size:calc(var(--fs-body)*.72); padding:.35em .8em;}
+  html:not(.read) .u6l05-dense .mq{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u6l05-dense .tf li, html:not(.read) .u6l05-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u6l05-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u6l05-dense .prac{gap:6px;}
+  html:not(.read) .u6l05-dense .cornell .cq, html:not(.read) .u6l05-dense .cornell .nts{font-size:calc(var(--fs-body)*.76); padding:.35em .8em;}
+  html:not(.read) .u6l05-dense .checks label{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u6l05-dense .u6l05-bank span{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u6l05-dense .u6l05-theses .quote.sm{font-size:calc(var(--fs-body)*.72);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 5" data-title="From mines to the household" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.15fr .85fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 6 · Slavery in ancient Rome · Lesson 5</p>
+      <h1>From mines to the household: the work of enslaved people</h1>
+      <p class="lead">An enslaved miner, a farm worker, a builder and a household attendant all lived under the same law. What do our sources show about the work each one did, and whose words are they?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u6l05-cover"><figure class="figure contain"><img src="images/u6l05-noria-riotinto-huelva.jpg" alt="A restored Roman-period wooden wheel for lifting water out of a mine, from the Riotinto mines in Spain, found in 1928. Museo de Huelva" loading="lazy"><figcaption>A restored Roman-period wooden wheel for lifting water out of a mine, from the Riotinto mines in Spain, found in 1928. Museo de Huelva — <span class="cr">Photo: Ángel M. Felicísimo · CC BY 2.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Review: Lessons 1–4" data-kind="intro practice">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <h2>Five questions from Lessons 1–4, and one sentence to fix</h2>
+  <ol class="rq" data-answers>
+    <li>What range does Scheidel (2011) give for Italy’s enslaved population at its peak, and how sure is he?
+      <span class="sol reveal">Between 1 and 1.5 million, some 15–25 per cent of the population, from a model that, he says, ‘entails huge margins of error’ (2011, p. 289): an estimate, not a count.</span></li>
+    <li>What is a <i>verna</i>, and why does it matter?
+      <span class="sol reveal">An enslaved person born in the owner’s household. As a rule a child followed its mother’s status (Gaius, <i>Institutes</i> 1.82), so slavery could renew itself without war.</span></li>
+    <li>What does Columella say he gave to the mothers of many children?
+      <span class="sol reveal">Exemption from work for a mother of three sons; freedom as well for a mother of more (<i>On Agriculture</i> 1.8.19). It is his own account (‘I have granted’): we do not know how often others did the same.</span></li>
+    <li>Name the staff of Cato’s model olive-yard.
+      <span class="sol reveal">An overseer, a housekeeper, 5 labourers, 3 teamsters, 1 muleteer, 1 swineherd and 1 shepherd: ‘a total of 13 persons’ (Cato 10.1). It is a model list, not one real farm.</span></li>
+    <li>Where was Delos, and what did Strabo claim about it?
+      <span class="sol reveal">An island in the Aegean and a great market for enslaved people. Strabo says it ‘could both admit and send away ten thousand slaves on the same day’ (14.5.2): a claim about capacity, not a count of sales.</span></li>
+    <li>Writing · fix this sentence: <span class="nq">“Italy had three million slaves.”</span>
+      <span class="sol reveal">Four faults: no owner, no year, no hedge, and ‘slaves’ outside a quotation. For example: <span class="nq">Brunt (1971), as Bradley (1989) reports him, calculated that about three million of Italy’s seven and a half million people were enslaved at the end of the 1st century BCE, whereas Scheidel (2011) estimates perhaps 15–25 per cent: both are estimates, not counts.</span></span></li>
+  </ol>
+  <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>analyse the range of work done by enslaved people</li>
+        <li>write a thesis that makes an arguable judgement and previews the argument</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>describe work in mines, farms, towns and households, with evidence</li>
+        <li>explain how the kind of work shaped an enslaved person’s life</li>
+        <li>write a thesis someone could disagree with that names my reasons</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u6l05-syl"><b>Syllabus outcomes:</b> AH-11-02 proposes ideas about the varying causes and effects of events and developments · AH-11-03 explains the role and significance of forces, features, events, individuals and groups in shaping the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-05 describes features of places or societies in the ancient world · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U6 L5 · From mines to the household</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; ref. = reference)</span></div></div>
+      <div class="row"><div class="cq">Whose voice?</div><div class="nts">Diodorus = Greek outsider, c. 60–30 BCE → not a miner’s own words …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A new page</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Phrases, not sentences. Today: every source with its writer, and whose voice it is.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at the ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: describe, explain. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">One checkpoint today: what the grid shows. The work-and-experience grid in your booklet is your notes for the stations.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for talking about work and evidence</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>From the unit list</th><th>Meaning</th></tr>
+      <tr><td>Explain (NESA)</td><td>NESA, <i>Glossary of key words</i>: ‘Relate cause and effect. Make the relationships between things evident. Provide why and/or how.’ Department advice: show how and why, and which reason mattered most.</td></tr>
+      <tr><td>Arguable thesis</td><td>A judgement someone could disagree with, which names its main reasons.</td></tr>
+      <tr><td>Vilicus / vilica</td><td>The enslaved overseer and housekeeper of a farm.</td></tr>
+      <tr><td>Familia</td><td>A Roman household, including the enslaved people in it.</td></tr>
+      <tr><td>Enslaved person / slave</td><td>‘Enslaved person’ (the syllabus’s term) keeps the person in view; ‘slave’ is used when quoting sources and in established terms (‘slave wars’).</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Voice (of a source)</td><td>Whose view a source gives: an owner, an outsider, or an enslaved person (or their fellow-enslaved).</td></tr>
+      <tr><td>Skilled work</td><td>Work that took training, such as building or silversmithing; training, Bodel says, ‘raised the value of a slave’.</td></tr>
+      <tr><td>‘Chain-gang’</td><td>Hooper and Ash’s translation of the workers Cato lists as kept in chains (Cato 56).</td></tr>
+      <tr><td>Columbarium</td><td>A Roman burial chamber with rows of niches for urns, where whole households, free, freed and enslaved, were commemorated.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The stations" data-title="Four stations, one grid" data-kind="notes">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> 1 · We do — station rotation in pairs · 1 minute to set up, then 3 minutes a station</p>
+  <h2>Four stations, one grid: complete the work-and-experience grid in your booklet</h2>
+  <div class="split" style="--cols:.8fr 1.7fr">
+    <ol class="keylist">
+      <li><span class="num">1</span><span class="t">Start at your station</span><span class="d">Mines, farms, towns or households. Pairs read the sources together.</span></li>
+      <li><span class="num">2</span><span class="t">Fill in that row</span><span class="d">Work · evidence · conditions · chance of freedom. Short phrases only.</span></li>
+      <li><span class="num">3</span><span class="t">Evidence means a writer</span><span class="d">Name the source, who wrote it, and what kind of text it is.</span></li>
+      <li><span class="num">4</span><span class="t">Rotate at the timer</span><span class="d">Three minutes a station (press K, then click 3). If a source says nothing about freedom, write “not mentioned”.</span></li>
+    </ol>
+    <div class="tbl-scroll"><table class="tbl compact u6l05-grid u6l05-grid-blank">
+      <tr><th>Station</th><th>Work</th><th>Evidence (who wrote it?)</th><th>Conditions</th><th>Chance of freedom</th></tr>
+      <tr><td>1 · Mines</td><td class="u6l05-fill"></td><td class="u6l05-fill"></td><td class="u6l05-fill"></td><td class="u6l05-fill"></td></tr>
+      <tr><td>2 · Farms</td><td class="u6l05-fill"></td><td class="u6l05-fill"></td><td class="u6l05-fill"></td><td class="u6l05-fill"></td></tr>
+      <tr><td>3 · Towns</td><td class="u6l05-fill"></td><td class="u6l05-fill"></td><td class="u6l05-fill"></td><td class="u6l05-fill"></td></tr>
+      <tr><td>4 · Households</td><td class="u6l05-fill"></td><td class="u6l05-fill"></td><td class="u6l05-fill"></td><td class="u6l05-fill"></td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The stations" data-title="Station 1: mines" data-kind="notes">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow">1 · We do · Station 1 of 4 · mines · 3 minutes · fill in the Mines row</p>
+  <h2>Station 1 · Mines: Diodorus on the silver mines of Spain</h2>
+  <div class="u6l05-station">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · a Greek historian, on who worked the mines</div>
+        <p class="quote sm">For they purchase a multitude of slaves whom they turn over to the overseers of the working of the mines; and these men, opening shafts in a number of places and digging deep into the ground, seek out the seams of earth which are rich in silver and gold …</p>
+        <p class="prov">Diodorus of Sicily, <i>Library of History</i> 5.36.4, written about 60–30 BCE, on the silver mines of Spain (‘Iberia’), where, he says, Italians had ‘swarmed’ after Rome took Spain · trans. C. H. Oldfather (Loeb, 1939)</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · the same writer, on the miners</div>
+        <p class="quote sm">… the slaves who are engaged in the working of them produce for their masters revenues in sums defying belief, but they themselves wear out their bodies both by day and by night in the diggings under the earth, dying in large numbers because of the exceptional hardships they endure. For no respite or pause is granted them in their labours, but compelled beneath blows of the overseers to endure the severity of their plight …</p>
+        <p class="prov">Diodorus of Sicily, <i>Library of History</i> 5.38.1 · trans. C. H. Oldfather (Loeb, 1939)</p>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">At this station</div>
+        <ol class="u6l05-ask">
+          <li>What work does Diodorus describe?</li>
+          <li>What conditions does he report? Whose voice is this: an owner’s, an outsider’s, or a miner’s?</li>
+          <li>What does he say about any chance of freedom?</li>
+        </ol>
+        <p class="body u6l05-gloss">Early finisher: what would you need to see to be surer?</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The stations" data-title="Station 2: farms" data-kind="notes">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow">1 · We do · Station 2 of 4 · farms · 3 minutes · fill in the Farms row</p>
+  <h2>Station 2 · Farms: Cato’s lists and Columella’s reward</h2>
+  <div class="u6l05-station">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · an owner’s handbook, a model staff</div>
+        <p class="quote sm">This is the proper equipment for an oliveyard of 240 iugera: An overseer, a housekeeper, 5 labourers, 3 teamsters, 1 muleteer, 1 swineherd, 1 shepherd — a total of 13 persons;</p>
+        <p class="prov">Cato, <i>On Agriculture</i> 10.1, about 160 BCE: a handbook for estate owners in Campania and Latium. A list of what a farm should have, not a record of one farm · trans. W. D. Hooper and H. B. Ash (Loeb, 1934)</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · the same handbook, rations</div>
+        <p class="quote sm">The chain-gang should have a ration of four pounds of bread through the winter, increasing to five when they begin to work the vines, and dropping back to four when the figs ripen.</p>
+        <p class="prov">Cato, <i>On Agriculture</i> 56, same translation. ‘Chain-gang’: the translators’ word for the workers Cato lists as kept in chains</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · another owner, more than two centuries later</div>
+        <p class="quote sm">For to a mother of three sons exemption from work was granted; to a mother of more her freedom as well.</p>
+        <p class="prov">Columella, <i>On Agriculture</i> 1.8.19, about 60–65 CE: an owner describing his own practice · trans. H. B. Ash (Loeb, 1941)</p>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">At this station</div>
+        <ol class="u6l05-ask">
+          <li>What work, and what ranks of workers, do the sources show?</li>
+          <li>What conditions are reported? Whose voice is this?</li>
+          <li>What chance of freedom is mentioned, and for whom?</li>
+        </ol>
+        <p class="body u6l05-gloss">Early finisher: why might an owner write a list like Cato’s?</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The stations" data-title="Station 3: towns" data-kind="notes">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow">1 · We do · Station 3 of 4 · towns · 3 minutes · fill in the Towns row</p>
+  <h2>Station 3 · Towns: skilled work in Rome</h2>
+  <div class="u6l05-station">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · a Greek biographer, on a rich Roman</div>
+        <p class="quote sm">… he proceeded to buy slaves who were architects and builders. Then, when he had over five hundred of these, he would buy houses that were afire, and houses which adjoined those that were afire, and these their owners would let go at a trifling price … so many and so capable were the slaves he possessed, — readers, amanuenses, silversmiths, stewards, table-servants; and he himself directed their education …</p>
+        <p class="prov">Plutarch, <i>Life of Crassus</i> 2.4–6, probably early 2nd century CE, on Marcus Crassus (died 53 BCE) · trans. B. Perrin (Loeb, 1916). Amanuenses: secretaries who wrote what their owner dictated</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · a historian, on a tombstone set up by enslaved people</div>
+        <p class="quote sm">Epitaphs set up by slaves for each other, such as that dedicated to ‘Hilarus, goldsmith’ and depicting the tools of his craft (balance, compass, engraving tool) commissioned by a burial society (collegium) of fellow-slaves from the house of a senator’s daughter …</p>
+        <p class="prov">John Bodel (2011), p. 318, describing an inscription from Rome (CIL 6.9149) · <i>Cambridge World History of Slavery</i>, vol. 1</p>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="u6l05-fig u6l05-fig-tall"><figure class="figure contain"><img src="images/u6l05-haterii-crane-relief.jpg" alt="Relief from the Tomb of the Haterii, a family of builders, Rome, early 2nd century CE: a temple-shaped tomb and, at the left, what the Vatican Museums describe as a crane used in building it, powered by a large wheel that they say was worked by enslaved people. Vatican Museums, Museo Gregoriano Profano" loading="lazy"><figcaption>Relief from the Tomb of the Haterii, a family of builders, Rome, early 2nd century CE: a temple-shaped tomb and, at the left, what the Vatican Museums describe as a crane used in building it, powered by a large wheel that they say was worked by enslaved people. Vatican Museums, Museo Gregoriano Profano — <span class="cr">Photo: Wilfredor · CC0 1.0</span></figcaption></figure></div>
+      <div class="card quiet"><div class="k">At this station</div>
+        <ol class="u6l05-ask">
+          <li>What work, and what skills, do the sources show?</li>
+          <li>What conditions? Whose voice is each source?</li>
+          <li>What chance of freedom is mentioned?</li>
+        </ol></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The stations" data-title="Station 4: households" data-kind="notes">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow">1 · We do · Station 4 of 4 · households · 3 minutes · fill in the Households row</p>
+  <h2>Station 4 · Households: sixteen assistants and a freedman</h2>
+  <div class="u6l05-station">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · a historian, on an epitaph set up by sixteen enslaved assistants</div>
+        <p class="quote sm">… the entourage of Musicus Scurranus comprised two cooks, two chamberlains, two slaves in charge of silver, two attendants, three secretaries, a buying agent, a treasurer, a doctor, a slave in charge of wardrobe, and a woman (the only one in the group), Secunda, who is listed last and without any job title.</p>
+        <p class="prov">John Bodel (2011), p. 322, on CIL 6.5197, set up at Rome by the sixteen enslaved assistants of Musicus Scurranus, an enslaved financial official of the emperor Tiberius (reigned 14–37 CE)</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · an owner’s letter to a friend, about his freedman</div>
+        <p class="quote sm">… the ill state of health of my freedman Zosimus … He is honest and well-educated; but his profession, his certified accomplishment, one might say, is that of comedian, wherein he highly excels … he reads history, oratory, and poetry, as well as if he had singly applied himself to that art.</p>
+        <p class="prov">Pliny the Younger, <i>Letters</i> 5.19, to Valerius Paulinus, written for publication in the late 1st or early 2nd century CE · trans. W. Melmoth, rev. W. M. L. Hutchinson (Loeb, 1915)</p>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">At this station</div>
+        <ol class="u6l05-ask">
+          <li>What work, and what skills, do the sources show?</li>
+          <li>What conditions are reported? Whose voice is each source?</li>
+          <li>What chance of freedom is mentioned, and for whom?</li>
+        </ol>
+        <p class="body u6l05-gloss">Early finisher: why is Secunda ‘listed last and without any job title’? Is there one answer?</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Pulling it together" data-title="The completed grid" data-kind="notes">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> 2 · I do — check your grid, one row at a time · 2 minutes · correct in a second colour</p>
+  <h2>The work-and-experience grid: what the four stations show</h2>
+  <div data-veil="Fill in your grid first — then show the rows">
+    <div class="tbl-scroll"><table class="tbl compact u6l05-grid u6l05-grid-blank">
+      <tr><th>Station</th><th>Work</th><th>Evidence (who wrote it?)</th><th>Conditions</th><th>Chance of freedom</th></tr>
+      <tr class="reveal"><td>Mines</td><td>Digging shafts deep underground for seams of silver and gold, under overseers</td><td>Diodorus (about 60–30 BCE), a Greek outsider reporting on Spain</td><td>‘no respite or pause’; ‘compelled beneath blows of the overseers’; ‘dying in large numbers’</td><td>None mentioned. (Added: Bradley, 2011, enslaved miners ‘probably the smallest chance’)</td></tr>
+      <tr class="reveal"><td>Farms</td><td>Field labour, working the vines, teaming, herding; an overseer and a housekeeper over the labourers</td><td>Cato (about 160 BCE) and Columella (about 60–65 CE): owners advising owners, with models, not records</td><td>Rations set by season: the chain-gang’s bread rises from four to five pounds at vine work</td><td>Cato: none; Columella says mothers of three sons were exempt from work, of more, freed</td></tr>
+      <tr class="reveal"><td>Towns</td><td>Skilled building and crafts: architects, builders, silversmiths, a goldsmith</td><td>Plutarch (probably early 2nd century CE), an outsider; a goldsmith’s epitaph set up by fellow enslaved people</td><td>Costly, trained property: Crassus ‘directed their education’. (Added: Bodel, 2011, training ‘raised the value of a slave’)</td><td>Plutarch: none mentioned; Hilarus was commemorated by ‘fellow-slaves’</td></tr>
+      <tr class="reveal"><td>Households</td><td>Cooks, secretaries, a doctor, a buying agent; a reader and comic actor</td><td>An epitaph set up by sixteen enslaved assistants (Bodel); Pliny’s letter (late 1st or early 2nd century CE), an owner’s voice</td><td>Near the owner, who knows his skills and his health well. (Added: Bodel, 2011, household staff on call ‘at all hours of the night and day’)</td><td>Zosimus is Pliny’s ‘freedman’. (Added: Bradley, 2011, valued household staff ‘perhaps stood the best chance’)</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Pulling it together" data-title="Reading across the grid" data-kind="notes">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow">2 · I do — think aloud · 2 minutes · what varies, and how well do we know it?</p>
+  <h2>Reading across the grid: what varies, and whose voice is it?</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">Work</span><span class="d">What did the person do all day: dig, plough, build, cook, write, perform?</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Place</span><span class="d">Who was watching, and how near was the owner: overseers underground, a farm with an overseer, a workshop, a house?</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Skill</span><span class="d">How costly was the person to buy or train? Crassus ‘directed their education’; training ‘raised the value of a slave’ (Bodel).</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Voice</span><span class="d">Whose words are these? Literary sources, Bodel says, ‘almost without exception’ ‘represent the circumstances of the upper classes’; of today’s sources, only the epitaphs were set up by enslaved people themselves.</span></li>
+    </ol>
+    <div class="stack">
+      <p class="qprompt">Which row of the grid rests on the weakest evidence, and why?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">Probably the mines. Diodorus is one outsider, drawing on earlier writers, and no miner speaks. The farms rest on owners’ models; the towns on a biographer writing long after Crassus and one epitaph that a historian describes; the households on an owner’s letter and an epitaph set up by the assistants themselves, and even then ‘only 10 per cent of all epitaphs from Rome’ name a job (Bodel, 2011, p. 322). Each row therefore needs a hedge.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Pulling it together" data-title="Notes: the work and the sources" data-kind="notes">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint · I do · 2 minutes · cue: describe, with evidence</p>
+  <h2>The work, and whose voice we hear</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U6 L5 · From mines to the household</b></span><span>the work and the sources</span></div>
+    <div class="row"><div class="cq">Describe the work in each place, with one source for each.</div>
+      <div class="nts reveal">mines: shafts, digging for silver seams (Diodorus 5.36, 5.38) <span class="sep">·</span> farms: overseer, housekeeper, labourers; chain-gang rations (Cato 10–11, 56) <span class="sep">·</span> towns: architects, builders, silversmiths (Plutarch, Crassus 2.4–6); Hilarus <span class="sep">·</span> households: Scurranus’s sixteen; Zosimus (Pliny 5.19)</div></div>
+    <div class="row"><div class="cq">Whose voice does each source carry?</div>
+      <div class="nts reveal">Diodorus, Plutarch = outsiders <span class="sep">·</span> Cato, Columella, Pliny = owners <span class="sep">·</span> epitaphs = set up by enslaved people themselves (Bodel)</div></div>
+    <div class="row"><div class="cq">What can the grid not tell us?</div>
+      <div class="nts reveal">models and extreme cases, not typical lives <span class="sep">·</span> only 10% of Rome’s epitaphs name a job <span class="sep">·</span> in today’s sources, no first-hand account by a miner or a farm worker</div></div>
+    <div class="row"><div class="cq">Why does the type of source matter for a judgement?</div>
+      <div class="nts reveal">each row’s evidence is hedged differently: “probably”, <span class="nq">“on one owner’s account”</span> <span class="sep">·</span> a thesis must say how sure the evidence lets us be</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Writing focus: the arguable thesis" data-kind="notes">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow">3 · You do · Writing focus · 8 minutes · I do → We do → apply</p>
+  <h2>Writing focus: a thesis someone could disagree with, that names its reasons</h2>
+  <div class="split" style="--cols:1.2fr 1fr">
+    <div class="card accent"><div class="k">I do · watch</div>
+      <p class="body">Two tests for a thesis: <b>Could someone disagree?</b> · <b>Does it name the reasons?</b></p>
+      <p class="small">Three theses · written for this lesson · on a different question: why did Crassus buy enslaved builders?</p>
+      <div class="u6l05-theses" data-booklet="model">
+        <p class="quote sm model"><b class="n">1</b> <span class="match" data-step="m1">Crassus bought over five hundred enslaved builders and architects.</span></p>
+        <p class="quote sm model"><b class="n">2</b> <span class="match" data-step="m2">Crassus bought enslaved builders because he wanted to make money.</span></p>
+        <p class="quote sm model"><b class="n">3</b> <span class="match" data-step="m3">Although Plutarch’s story may be coloured by his view of Crassus’s greed,</span> Crassus <span class="match" data-step="m4">probably</span> bought enslaved builders <span class="match" data-step="m4">mainly</span> to profit from Rome’s fires, <span class="match" data-step="m5">because he bought burning houses ‘at a trifling price’ and built no house for himself beyond the one he lived in.</span></p>
+      </div>
+      <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>1 fails both tests</b>: it only reports what Plutarch says, so there is nothing to argue, and it gives no reason</span></p>
+      <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>2 is arguable</b>, and names a reason, but one only: no hedge, no sign of the evidence</span></p>
+      <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>3 · a concession</b>: it names the strongest objection first</span></p>
+      <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>3 · a hedge and a degree</b>: ‘probably … mainly’</span></p>
+      <p class="mq reveal" data-c="m5" data-hl="[data-step=m5]"><span class="sw"></span><span><b>3 · two reasons</b> the paragraphs can test</span></p>
+    </div>
+    <div class="stack">
+      <div class="card"><div class="k">We do · together</div>
+        <p class="body">Turn this fact into a thesis that answers the question and previews two reasons: <span class="nq">“Many enslaved people worked in the Spanish silver mines.”</span> Question: <span class="nq">Why did Italian investors buy enslaved miners in such numbers?</span></p>
+        <p class="body">Check it: could someone disagree? · two reasons? · a hedge? · a concession?</p>
+        <div class="note reveal" data-code="evidence" data-veil="Build it first — then show one good thesis"><div class="k">One good thesis</div><p class="quote sm model">Although Diodorus is an outsider who draws on earlier writers, Italian investors probably bought enslaved miners in such numbers mainly because the mines paid ‘revenues in sums defying belief’, and because miners driven with ‘no respite or pause’ were ‘dying in large numbers’ and had to be replaced.</p></div>
+      </div>
+      <div class="card quiet"><div class="k">Apply · in today’s task</div>
+        <p class="body">Write a two-sentence thesis. Sentence 1: your judgement, a degree or hedge and your main reasons (try <span class="nq">“Although …, … largely … because … and …”</span>). Sentence 2: the limit of the evidence, or the qualification you will keep. Your Writing toolkit (booklet pages 3–4): the modality scale.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: a thesis and a first reason">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow">3 · You do · 17 minutes · check first · then write · press K for the timer</p>
+  <h2><b>Explain</b> how the work enslaved people did shaped their lives.</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <p class="qprompt">Check first: what does this question ask you to do?</p>
+      <div class="veil-parts" data-veil="Deconstruct it first — then show the answers">
+        <dl class="u6l05-dq">
+          <dt>Verb</dt><dd><span class="vp reveal"><b>explain</b>: NESA, <i>Glossary of key words</i>, ‘Relate cause and effect. Make the relationships between things evident. Provide why and/or how.’ Department advice: say which reason mattered most</span></dd>
+          <dt>Topic</dt><dd><span class="vp reveal">how the kind of work, and where it was done, shaped what life was like for enslaved people</span></dd>
+          <dt>Limits</dt><dd><span class="vp reveal">Rome, about 200 BCE – 200 CE; the work and the evidence you have met; what the sources can and cannot show</span></dd>
+          <dt>Do</dt><dd><span class="vp reveal">a two-sentence thesis someone could disagree with, which names your reasons; then the topic sentence and first reason, with evidence, of your first paragraph</span></dd>
+        </dl>
+      </div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Write two opposing theses, one that the work decided most and one that legal status as property decided most, and judge which the evidence better supports.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · a thesis, then the start of paragraph 1</div>
+        <ol class="body">
+          <li><b>Thesis</b> (two sentences): sentence 1 gives your judgement, a degree or hedge and your main reasons (begin with a concession if you can); sentence 2 gives the limit of the evidence, or the qualification your argument will keep.</li>
+          <li><b>Topic sentence</b> of body paragraph 1: it answers the question and picks up your first reason.</li>
+          <li><b>First reason with evidence</b> from your grid: the source, its writer, and a hedge.</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Frame for the thesis only: <span class="nq">“Although …, … largely … because … and …”</span> Word bank:</p>
+        <div class="u6l05-bank"><span>conditions</span><span>skill</span><span>chained</span><span>household</span><span>freedom</span><span>evidence</span><span>probably</span><span>mainly</span></div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Check your thesis" data-kind="notes">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow">3 · You do · self-check · 3 minutes</p>
+  <h2>Check your thesis</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="card quiet"><div class="k">Does yours …</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> <span>make a judgement someone could disagree with?</span></label></li>
+        <li><label><input type="checkbox"> <span>name at least two reasons?</span></label></li>
+        <li><label><input type="checkbox"> <span>state a degree or hedge that the evidence allows?</span></label></li>
+        <li><label><input type="checkbox"> <span>begin with a concession, if the evidence invites one?</span></label></li>
+        <li><label><input type="checkbox"> <span>lead to a topic sentence that picks up one reason?</span></label></li>
+        <li><label><input type="checkbox"> <span>name the writer with each piece of evidence, and use ‘enslaved people’ outside quotations?</span></label></li>
+      </ul></div>
+    <div class="stack">
+      <p class="qprompt">Swap with a partner. Say: <span class="nq">“I could disagree because …”</span>. Can they answer you?</p>
+      <div class="note reveal" data-code="counter" data-veil="Think first — then show four slips to look for"><div class="k">Four slips to look for</div><p class="body">A fact (<span class="nq">“Many enslaved people worked in mines”</span>): nobody can disagree. A list of kinds of work, with no judgement. A verdict with no reasons (<span class="nq">“Work mattered a lot”</span>). A degree that changes between the thesis and the body paragraph.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Summary" data-kind="notes">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What work did enslaved people do, and in which places?</li>
+          <li>Whose voices do our sources carry, and what follows for the evidence?</li>
+          <li>What makes a thesis arguable?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Enslaved people dug silver in the mines of Spain (Diodorus 5.36–38), worked and supervised on farms (Cato 10, 11, 56), built and made things in towns (Plutarch, <i>Crassus</i> 2.4–6) and served in households such as Scurranus’s sixteen assistants and Pliny’s freedman Zosimus. Most of our sources are the words of owners or outsiders (Diodorus, Cato, Plutarch, Pliny), and only epitaphs such as Scurranus’s carry the assistants’ own voice, so every row of the grid needs a hedge. A thesis is arguable when someone could disagree with it and it names the reasons that would let a reader test it.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> The grid: four places, four sources</label></li>
+        <li><label><input type="checkbox"> Whose voice each source carries</label></li>
+        <li><label><input type="checkbox"> What the grid cannot show</label></li>
+        <li><label><input type="checkbox"> The two tests for a thesis</label></li>
+        <li><label><input type="checkbox"> Your thesis and first reason</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: where does your thesis sit?" data-kind="intro">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow">Check · sticky notes · 5 minutes · post, read three, name what makes one arguable</p>
+  <h2>Where does your thesis sit on the line?</h2>
+  <div class="u6l05-line" aria-label="A line from work decided little to work decided almost everything">
+    <div class="bar"></div>
+    <div class="ends"><span>work decided little</span><span>work decided almost everything</span></div>
+    <div class="marks"><span>little</span><span>some</span><span>about half</span><span>a lot</span><span>almost everything</span></div>
+  </div>
+  <div class="split" style="--cols:1fr 1fr">
+    <ol class="keylist">
+      <li><span class="num">1</span><span class="t">Write</span><span class="d">The judgement part of your thesis on a sticky note (one sentence).</span></li>
+      <li><span class="num">2</span><span class="t">Post</span><span class="d">Put it where its degree sits on the line, and keep your own reasons in your book.</span></li>
+      <li><span class="num">3</span><span class="t">Listen</span><span class="d">Three are read aloud. Ask of each: could someone disagree? does it name its reasons?</span></li>
+    </ol>
+    <div class="stack">
+      <p class="qprompt">What makes a thesis arguable?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">Someone could disagree with it. It names its reasons, so a reader knows what you will prove. Its degree or hedge is matched to the evidence. A concession can show you know the best objection.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 3 minutes · before you leave</p>
+  <h2>Your thesis</h2>
+  <div class="card accent"><p class="lead">Write your thesis for today’s question, in two sentences. Check it has a judgement someone could disagree with, a degree or hedge, and your main reasons.</p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">a judgement someone could disagree with, not a fact or a list · a degree or hedge matched to the evidence (largely, probably, mainly) · at least two named reasons · for the strongest answers, a concession (‘Although …’) that names the best objection · ‘enslaved people’ outside quotations.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> property and person: the legal status of enslaved people.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u6l05-dense">
+  <p class="eyebrow">Practice and review · 1 of 3 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Diodorus was a miner who described his own work.</span>
+      <span class="sol no reveal">False <span class="why">— he was a Greek historian writing about 60–30 BCE, who drew on many earlier writers; no miner speaks in the extract.</span></span></li>
+    <li><span class="n">2</span><span>Cato’s list of thirteen persons records the staff of a real olive farm.</span>
+      <span class="sol no reveal">False <span class="why">— it is ‘the proper equipment’ for an oliveyard: a model list from a handbook for owners.</span></span></li>
+    <li><span class="n">3</span><span>Cato cuts the chain-gang’s bread ration in winter.</span>
+      <span class="sol no reveal">False <span class="why">— he gives four pounds of bread through the winter, ‘increasing to five when they begin to work the vines’; nothing is reduced.</span></span></li>
+    <li><span class="n">4</span><span>Plutarch says Crassus owned over five hundred enslaved architects and builders.</span>
+      <span class="sol reveal">True <span class="why">— <i>Crassus</i> 2.4: ‘over five hundred of these’. It is Plutarch’s claim, made more than 150 years after Crassus’s death, not a count.</span></span></li>
+    <li><span class="n">5</span><span>Pliny’s letter about Zosimus shows how every Roman owner treated the people he owned.</span>
+      <span class="sol no reveal">False <span class="why">— it is one owner, writing for publication and presenting his own kindness; Zosimus is already his freedman.</span></span></li>
+    <li><span class="n">6</span><span>The sixteen assistants of Musicus Scurranus all had the same job.</span>
+      <span class="sol no reveal">False <span class="why">— cooks, chamberlains, secretaries, a doctor, a buying agent and more; Secunda is ‘listed last and without any job title’ (Bodel, 2011).</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — rank the theses, and fix one" data-kind="practice">
+<div class="wrap prac u6l05-dense">
+  <p class="eyebrow">Practice and review · 2 of 3 · writing</p>
+  <h2>Test the theses, then fix one</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · Rank these three theses with the two tests</div>
+        <p class="body">Question: why did Pliny describe Zosimus’s talents at such length in <i>Letters</i> 5.19?</p>
+        <ol class="body">
+          <li><span class="nq">“Pliny describes the talents of his freedman Zosimus in a letter to Valerius Paulinus.”</span></li>
+          <li><span class="nq">“Pliny describes Zosimus’s talents at length because he wanted Valerius Paulinus to help him.”</span></li>
+          <li><span class="nq">“Although Pliny’s affection for Zosimus may be real, he probably listed his talents so fully mainly to persuade Valerius Paulinus to shelter him, because the letter asks him to take Zosimus into his farm, and because Pliny opens by showing how kindly he treats his household.”</span></li>
+        </ol></div>
+      <div class="note reveal" data-code="evidence" data-veil="Rank them first — then show the answers"><div class="k">Answers</div><p class="body">1 fails both tests: a fact, with no reason. 2 is arguable and names one reason, but has no hedge and no sign of the evidence. 3 passes both: a concession, a hedge and a degree, and two reasons the paragraphs can test against the letter.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 2 · Fix this thesis</div><p class="body"><span class="nq">“Plutarch tells the story of Crassus’s builders.”</span> Make it an arguable thesis that answers: why does Plutarch tell this story? Name two reasons.</p></div>
+      <div class="src reveal" data-veil="Write yours first — then show a model answer"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Although the details of the story may be accurate, Plutarch probably tells it mainly to illustrate Crassus’s avarice, because he introduces it as one of ‘the chief proofs of his avarice’ and because he says Crassus made ‘the public calamities his greatest source of revenue’.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u6l05-dense">
+  <p class="eyebrow">Practice and review · 3 of 3 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Describe the work of enslaved people in a Spanish mine, with a source.
+      <span class="sol reveal">Digging shafts deep underground for seams of silver and gold, under overseers, for investors who ‘swarmed’ to Spain (Diodorus, 5.36–38, writing about 60–30 BCE).</span></li>
+    <li>What does Cato 56 give the chain-gang, and what does Cato’s list at 10.1 show?
+      <span class="sol reveal">A ration of four pounds of bread through the winter, five once vine work begins: nothing is reduced. The list is a model staff of 13 persons: an overseer, a housekeeper and labourers, herders and teamsters.</span></li>
+    <li>Why is Plutarch’s story of Crassus’s builders a claim, not a count?
+      <span class="sol reveal">He wrote more than 150 years later, as a moralist who reports that the Romans saw avarice as Crassus’s ‘sole vice’; ‘over five hundred’ is his figure.</span></li>
+    <li>Whose voices do today’s sources carry, and which are the enslaved people’s own?
+      <span class="sol reveal">Mostly owners and outsiders: Cato, Columella, Pliny, Diodorus, Plutarch. Epitaphs such as Scurranus’s, set up by his sixteen assistants, and Hilarus’s, set up by fellow enslaved people, are the enslaved people’s own.</span></li>
+    <li>What two questions test a thesis, and what else makes it strong?
+      <span class="sol reveal">Could someone disagree? Does it name the reasons? Strong theses add a degree or hedge matched to the evidence, and often a concession (‘Although …’).</span></li>
+    <li>What did Bradley (2011) say about the chances of freedom, and how sure was he?
+      <span class="sol reveal">That household staff in valued roles ‘perhaps stood the best chance’ and rural and mining workers ‘probably the smallest chance’: hedged, because ‘the rate of manumission is unknown’.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u6l05-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u6l05-cite"><div class="k">Written sources</div>
+      <p class="small">Diodorus of Sicily, <i>Library of History</i> 5.36–38: trans. C. H. Oldfather (Loeb, vol. III, 1939, public domain), <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/5B*.html">LacusCurtius</a>. Cato, <i>On Agriculture</i> 10.1 and 56: trans. W. D. Hooper and H. B. Ash (Loeb, 1934, public domain), <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cato/De_Agricultura/A*.html">LacusCurtius</a>. Columella, <i>On Agriculture</i> 1.8.19: trans. H. B. Ash (Loeb, vol. I, 1941, public domain), <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Columella/de_Re_Rustica/1*.html">LacusCurtius</a>. Plutarch, <i>Life of Crassus</i> 2: trans. B. Perrin (Loeb, vol. III, 1916, public domain), <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Crassus*.html">LacusCurtius</a>. Pliny the Younger, <i>Letters</i> 5.19: trans. W. Melmoth, rev. W. M. L. Hutchinson (Loeb, vol. I, 1915, public domain), <a href="https://archive.org/details/letterswithengli01plinuoft">archive.org</a>. Strabo, <i>Geography</i> 14.5.2: trans. H. L. Jones (Loeb, vol. VI, 1929, public domain), <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/14E*.html">LacusCurtius</a>.</p>
+      <p class="small">Modern historians, quoted briefly: J. Bodel, <span class="nq">“Slave labour and Roman society”</span> (pp. 311–36); K. Bradley, <span class="nq">“Slavery in the Roman Republic”</span> (pp. 241–64); N. Morley, <span class="nq">“Slavery under the Principate”</span> (pp. 265–86); and W. Scheidel, <span class="nq">“The Roman slave supply”</span> (pp. 287–310), all in K. Bradley and P. Cartledge (eds), <i>The Cambridge World History of Slavery</i>, vol. 1 (Cambridge University Press, 2011); K. R. Bradley, <i>Slavery and Rebellion in the Roman World</i> (Indiana University Press, 1989), p. 146, reporting K. Hopkins (1978) and P. A. Brunt (1971). Vatican Museums, <a href="https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/museo-gregoriano-profano/Mausoleo-degli-Haterii.html"><span class="nq">“Mausoleum of the Haterii”</span></a> (the crane relief); Wikipedia, “Diodorus Siculus”, “Parallel Lives” and “Tomb of the Haterii” (dates and background). The NESA <i>Glossary of key words</i> (definitions quoted word for word).</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet u6l05-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>A restored Roman-period wooden water-lifting wheel from the Riotinto mines, Spain, found in 1928 (Museo de Huelva)</b> · Photo: Ángel M. Felicísimo · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Noria_romana_(49472498268).jpg">source</a></li><li><b>The crane relief from the Tomb of the Haterii, a family of builders, Rome, early 2nd century CE (Vatican Museums)</b> · Photo: Wilfredor · <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Relief_from_the_Mausoleum_of_the_Haterii,_Gregoriano_Profano_Museum,_Vatican_Museums.jpg">source</a></li></ul>
+        <p class="small">All images are public domain or openly licensed, and were resized or cropped for the web. Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

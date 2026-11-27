@@ -1,0 +1,1684 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U6 L8 · Masters and the enslaved: Pliny the Younger and the murder of Pedanius Secundus</title>
+<meta name="description" content="Year 11 Ancient History, slavery in ancient Rome: how Pliny the Younger presents himself and the people he enslaved in two letters, how Tacitus reports the Senate’s debate, the crowd and the emperor after a murdered owner, whose voices we never hear, and how to make a five-minute plan and write a timed paragraph.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#8A3A12; --bright:#C2561E; --tint:#FAEBE2; --statement:#8A3A12;
+  --solid:#8A3A12; --soft:#F6D9C8; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#F2B796; --bright:#E07A45; --tint:#3A1D10; --statement:#6E2E0E; --soft:#F6D9C8; } }
+:root[data-theme="dark"]{ --deep:#F2B796; --bright:#E07A45; --tint:#3A1D10; --statement:#6E2E0E; --soft:#F6D9C8; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 6 Lesson 8 only (every class starts u6l08-) */
+
+/* title picture; goals slide syllabus line; credits links */
+.u6l08-cover img{max-height:56vh;}
+.u6l08-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u6l08-cite a{color:var(--deep);}
+
+/* the deconstruction strip above a question (verb · topic · limits · do) */
+.u6l08-dq{display:grid; grid-template-columns:auto 1fr; gap:.2em .8em; margin:0; padding:.5em .9em;
+  border-left:5px solid var(--c-directive); background:var(--w-directive); border-radius:0 8px 8px 0;
+  font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+.u6l08-dq dt{font-weight:700; color:var(--c-directive);}
+.u6l08-dq dd{margin:0;}
+
+/* paragraphs inside a card need a little air */
+.card .body + .body, .card .body + .u6l08-dq, .card .small + .quote, .card .quote + .mq,
+.card .body + .note, .card .body + .small, .card .small + .u6l08-plan, .card .body + .veil-parts{margin-top:.4em;}
+
+/* a word bank */
+.u6l08-bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.u6l08-bank span{border:1px solid var(--c-keyterm); color:var(--c-keyterm); border-radius:999px; padding:.1em .7em;
+  background:var(--w-keyterm); font-size:calc(var(--fs-body)*.8); font-weight:600;}
+
+/* the model plan: five short lines inside the I do card */
+.u6l08-plan{padding:.5em .8em; border-left:4px solid var(--c-keyterm); background:var(--surface); border-radius:0 8px 8px 0;
+  font-style:normal;}
+.u6l08-plan p{margin:.28em 0; line-height:1.38;}
+
+/* tables of voices and answers */
+.u6l08-map td:first-child{font-weight:700;}
+.u6l08-pmap{table-layout:fixed; width:100%;}
+.u6l08-pmap th:nth-child(1){width:17%} .u6l08-pmap th:nth-child(2){width:58%} .u6l08-pmap th:nth-child(3){width:25%}
+.u6l08-gloss{margin:.5em 0 .3em; color:var(--slate);}
+.u6l08-tacnote{margin:.5em 0 0; font-size:calc(var(--fs-body)*.74); color:var(--slate); line-height:1.35;}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u6l08-dense{gap:10px;}
+  html:not(.read) .u6l08-dense h2{font-size:calc(var(--fs-h2)*.84);}
+  html:not(.read) .u6l08-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.38;}
+  html:not(.read) .u6l08-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u6l08-dense .src{padding:10px 16px;}
+  html:not(.read) .u6l08-dense .src .prov{margin-top:.4em; font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u6l08-dense .note{padding:.45em .85em;}
+  html:not(.read) .u6l08-dense .note .body, html:not(.read) .u6l08-dense .card .body,
+  html:not(.read) .u6l08-dense .qprompt{font-size:calc(var(--fs-body)*.78); line-height:1.36;}
+  html:not(.read) .u6l08-dense .card{padding:10px 16px;}
+  html:not(.read) .u6l08-dense .card .k{margin-bottom:.25em;}
+  html:not(.read) .u6l08-dense .keylist{gap:6px;}
+  html:not(.read) .u6l08-dense .keylist li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u6l08-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u6l08-dense .tbl.compact td{padding:.32em .55em;}
+  html:not(.read) .u6l08-dense .tbl th{padding:.4em .6em;}
+  html:not(.read) .u6l08-dense .figure img{max-height:30vh;}
+  html:not(.read) .u6l08-dense .u6l08-dq{font-size:calc(var(--fs-body)*.72); padding:.35em .8em;}
+  html:not(.read) .u6l08-dense .mq{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u6l08-dense .tf li, html:not(.read) .u6l08-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u6l08-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u6l08-dense .prac{gap:6px;}
+  html:not(.read) .u6l08-dense .cornell .cq, html:not(.read) .u6l08-dense .cornell .nts{font-size:calc(var(--fs-body)*.76); padding:.35em .8em;}
+  html:not(.read) .u6l08-dense .checks label{font-size:calc(var(--fs-body)*.78);}
+  html:not(.read) .u6l08-dense .u6l08-bank span{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u6l08-dense .u6l08-plan{font-size:calc(var(--fs-body)*.7); padding:.35em .7em;}
+  html:not(.read) .u6l08-dense .u6l08-tacnote, html:not(.read) .u6l08-dense .u6l08-gloss{font-size:calc(var(--fs-body)*.68);}
+  html:not(.read) .u6l08-dense .opts li{font-size:calc(var(--fs-body)*.74);}
+}
+
+/* two long extracts on one slide: tighten the answers and sources a little further */
+@media (max-height:820px){
+  html:not(.read) .u6l08-tight .quote.sm{font-size:calc(var(--fs-body)*.68); line-height:1.34;}
+  html:not(.read) .u6l08-tight .note .body{font-size:calc(var(--fs-body)*.72); line-height:1.32;}
+  html:not(.read) .u6l08-tight .qprompt{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u6l08-tight .note{padding:.35em .8em;}
+}
+
+/* the hinge options on the Writing focus card sit closer together */
+@media (max-height:820px){
+  html:not(.read) .u6l08-dense .opts{gap:5px;}
+  html:not(.read) .u6l08-dense .opts li{padding:.28em .6em; line-height:1.28;}
+  html:not(.read) .u6l08-dense .note.vp .body{font-size:calc(var(--fs-body)*.7);}
+}
+
+/* phones (Read mode): the model plan reads at body size */
+@media (max-width:900px){
+  .u6l08-plan{font-size:calc(var(--fs-body)*.8);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 8" data-title="Masters and the enslaved: Pliny the Younger and the murder of Pedanius Secundus" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.05fr .95fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 6 · Slavery in ancient Rome · Lesson 8</p>
+      <h1>Masters and the enslaved: Pliny the Younger and the murder of Pedanius Secundus</h1>
+      <p class="lead">How did owners write about the people they enslaved when one of their own was killed, and whose voices do we never hear?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u6l08-cover"><figure class="figure contain"><img src="images/u6l08-pliny-letters-malatestiana-ms.jpg" alt="The beginning of Pliny the Younger’s Letters in a 15th-century manuscript, Biblioteca Malatestiana, Cesena (Ms. S.XX.2, fol. 1r). We read Pliny’s letters through copies like this one" loading="lazy"><figcaption>The beginning of Pliny the Younger’s <i>Letters</i> in a 15th-century manuscript, Biblioteca Malatestiana, Cesena (Ms. S.XX.2, fol. 1r). We read Pliny’s letters through copies like this one — <span class="cr">Photo: not named on the file page (Wikimedia Commons) · Public domain</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 8" data-title="Connect: Lesson 7 in one line" data-kind="intro">
+<div class="wrap u6l08-dense">
+  <p class="eyebrow">Connect · 3 minutes · books closed · everyone writes</p>
+  <h2>One Lesson 7 writer, accounted for in one line</h2>
+  <div class="split" style="--cols:.9fr 1.1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · one line</div>
+        <p class="body">Choose one writer from Lesson 7: Cato, a speaker in Varro’s dialogue, Columella or Seneca. Attribute his view, then explain it from his context or purpose.</p>
+        <p class="body nq">Frame if you need it: “[Writer], a … writing for …, presents … as … because …”</p></div>
+      <p class="cue">Today’s writers are owners too. Keep the same question in mind: who is speaking, to whom, and why?</p>
+    </div>
+    <div data-veil="Write yours first — then check your line">
+      <div class="tbl-scroll"><table class="tbl compact u6l08-map">
+        <tr><th>Writer</th><th>What Lesson 7 taught</th></tr>
+        <tr class="reveal"><td>Cato</td><td>An owner advising owners on a farm. In one passage he lists “an old slave, a sickly slave” with worn-out oxen and old tools as things to sell.</td></tr>
+        <tr class="reveal"><td>Varro’s speaker</td><td>A speaker in a dialogue about farming reports a scheme that “others” use, which puts enslaved people with cattle and carts. It is not shown to be Varro’s own view.</td></tr>
+        <tr class="reveal"><td>Columella</td><td>An owner who says he talks and jests with the country workers and asks their advice, and who also plans an underground prison for those in chains.</td></tr>
+        <tr class="reveal"><td>Seneca</td><td>A Stoic philosopher writing to his friend Lucilius, an owner. He urges kinder treatment, but, as Bradley (1989) argues, he did not call for an end to slavery.</td></tr>
+      </table></div>
+      <p class="small reveal">A good line names the writer, gives a piece of context, uses a reporting verb (not “says”), and has a “because” that comes from his position or purpose.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 8" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>analyse the relationships between owners and enslaved people</li>
+        <li>plan in five minutes and write a timed paragraph</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>explain how Pliny presents his relationships with enslaved and freed people</li>
+        <li>explain the Pedanius case and the different reactions to it</li>
+        <li>make a five-minute plan and write a full paragraph in 12 minutes</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u6l08-syl"><b>Syllabus outcomes:</b> AH-11-03 explains the role and significance of forces, features, events, individuals and groups in shaping the past · AH-11-04 accounts for the different perspectives of individuals and groups in their historical context · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-07 identifies different perspectives of the past · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 8" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U6 L8 · Masters and the enslaved</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; ↔ = compared with)</span></div></div>
+      <div class="row"><div class="cq">Whose voice?</div><div class="nts">Annals 14.43 → Cassius’s speech, as Tacitus gives it …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A new page</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Phrases, not sentences. Today, for every source: who wrote it, to whom, and whose voice is missing.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at the ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, account for. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">One checkpoint today: Pliny’s two letters. The perspectives map in your booklet is your notes for the Pedanius case.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 8" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u6l08-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for owners, officials and plans</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>From the unit list</th><th>Meaning</th></tr>
+      <tr><td>Assess (NESA)</td><td>NESA, <i>Glossary of key words</i>: ‘Make a judgement of value, quality, outcomes, results or size.’ Department advice: make and support a judgement.</td></tr>
+      <tr><td>Perspective</td><td>A point of view shaped by a person’s position, purpose and audience.</td></tr>
+      <tr><td>Five-minute plan</td><td>A plan made on the clock: deconstruct the question, make a judgement, choose three points, find evidence for each and name one counter-view.</td></tr>
+      <tr><td>Owner / master</td><td>The person who legally owned an enslaved person; the syllabus says ‘masters’.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Manumit</td><td>To free an enslaved person. The person freed is a freed person.</td></tr>
+      <tr><td>City prefect</td><td>A senior official in charge of the city of Rome. Pedanius Secundus held the post in 61 CE.</td></tr>
+      <tr><td>Senate</td><td>The council of senior Romans, which debated issues and voted on decrees; in 61 CE it voted on this case.</td></tr>
+      <tr><td>Counter-view</td><td>The strongest case against your own judgement, which a plan names so the paragraph can weigh it.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Pliny’s letters" data-title="Pliny, Letters 8.16: a letter about his household" data-kind="notes">
+<div class="wrap u6l08-dense">
+  <p class="eyebrow">1 · Pliny’s letters · I do — think aloud · a letter to a friend, after a sickness in his household · 2 minutes</p>
+  <h2>Pliny, 8.16: what does he say he does?</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · a letter to a friend, on grief and on what Pliny allows</div>
+        <p class="quote sm">One is, that I have always very readily manumitted my slaves (for their death does not seem altogether immature, if they lived long enough to receive their freedom); the other, that I have allowed them to make a kind of will, which I observe as religiously as if it were good in law.</p>
+        <p class="quote sm">Others, I know, describe misfortunes of this kind by no higher term than “a pecuniary loss,” and fancy they thereby shew themselves men of sense and spirit.</p>
+        <p class="prov">Pliny the Younger, <i>Letters</i> 8.16, to Paternus (Pliny’s letters date from about 97–112 CE) · trans. W. Melmoth, revised by W. M. L. Hutchinson (Loeb, 1915)</p>
+      </div>
+    </div>
+    <div class="stack">
+      <ol class="keylist">
+        <li class="reveal"><span class="num">1</span><span class="t">Who wrote it, and to whom</span><span class="d">Pliny, a Roman senator and an owner, to his friend Paternus, after a sickness that carried off several people in his household.</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">What he says he does</span><span class="d">He says he has “always very readily manumitted” them, and lets them “make a kind of will”.</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">What he sets against other owners</span><span class="d">Others, he says, call such deaths “a pecuniary loss”: he does not.</span></li>
+        <li class="reveal"><span class="num">4</span><span class="t">What to be careful of</span><span class="d">This is Pliny’s own account of himself. The letter gives none of their words.</span></li>
+      </ol>
+      <p class="qprompt">How does Pliny present himself here, and whose voice is missing?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">He presents himself as a generous owner who frees people readily, lets them make a kind of will, and grieves when they die, unlike owners who see only “a pecuniary loss”. It is his own account to a friend. The enslaved people’s own words are missing: we learn what he says he allows, not what they thought.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Pliny’s letters" data-title="Pliny, Letters 3.14: Larcius Macedo" data-kind="notes">
+<div class="wrap u6l08-dense">
+  <p class="eyebrow">1 · Pliny’s letters · I do — think aloud · a letter to a friend, on a murdered owner · 2 minutes</p>
+  <h2>Pliny, 3.14: what does he warn owners of?</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · a letter to a friend, on the death of a man of praetorian rank</div>
+        <p class="quote sm">The horrid barbarity which the slaves of Larcius Macedo, a person of Praetorian rank, lately exercised upon their master, is so extremely tragical, that it deserves to be the subject of something more considerable than a private letter; though at the same time it must be acknowledged, there was a haughtiness and severity in his treatment of them, which shewed him little—nay, I should rather say, <i>too</i>—mindful that his own father was once in the same station.</p>
+        <p class="body small u6l08-gloss"><b>In between</b> Pliny tells how Macedo’s enslaved men attacked him as he bathed at his villa near Formiae, and how he died a few days later. The attack is not quoted here.</p>
+        <p class="quote sm">Thus you see to what indignities, outrages, and dangers we are exposed. Nor is lenity and good treatment any security from the villainies of your servants; for it is malice, and not reflection that arms such ruffians against their masters.</p>
+        <p class="prov">Pliny the Younger, <i>Letters</i> 3.14, to Acilius · trans. W. Melmoth, revised by W. M. L. Hutchinson (Loeb, 1915)</p>
+      </div>
+    </div>
+    <div class="stack">
+      <ol class="keylist">
+        <li class="reveal"><span class="num">1</span><span class="t">Who wrote it, and to whom</span><span class="d">Pliny to his friend Acilius, about Larcius Macedo, a man of praetorian rank.</span></li>
+        <li class="reveal"><span class="num">2</span><span class="t">What he admits about Macedo</span><span class="d">“a haughtiness and severity in his treatment of them”.</span></li>
+        <li class="reveal"><span class="num">3</span><span class="t">What he concludes for his readers</span><span class="d">“Nor is lenity and good treatment any security”: he says even good treatment gave owners no safety.</span></li>
+        <li class="reveal"><span class="num">4</span><span class="t">What he says moved the attackers</span><span class="d">“malice, and not reflection”: their reasons are Pliny’s description, not their own words.</span></li>
+      </ol>
+      <p class="qprompt">What does Pliny admit about Macedo, and what does he want his readers to take from the letter?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">He admits Macedo’s “haughtiness and severity”, yet he concludes that “lenity and good treatment” give owners no “security”, because, he says, the attackers acted from “malice, and not reflection”. He wants his readers, fellow owners, to see the danger they face. The attackers’ own reasons are not given.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Pliny’s letters" data-title="Two letters side by side" data-kind="notes">
+<div class="wrap u6l08-dense">
+  <p class="eyebrow">1 · Pliny’s letters · I do — side by side · 1½ minutes</p>
+  <h2>What does each letter reveal about Pliny and his readers?</h2>
+  <p class="qprompt">Compare the two letters in pairs: what picture does each give of Pliny, who are his readers, and whose words are missing?</p>
+  <div data-veil="Compare first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u6l08-map">
+    <tr><th></th><th>8.16 to Paternus</th><th>3.14 to Acilius</th></tr>
+    <tr class="reveal"><td>Pliny’s picture</td><td>A generous owner who says he frees people readily, lets them make a kind of will and grieves.</td><td>An owner who admits Macedo’s severity, and who warns owners of danger.</td></tr>
+    <tr class="reveal"><td>His perspective</td><td>He sees the household through his own generosity and grief, as an owner.</td><td>He sees the attack as a danger to owners, and gives the attackers’ motive as “malice”.</td></tr>
+    <tr class="reveal"><td>His readers</td><td>A friend, probably an owner too. Pliny prepared Books 1–9 for publication, and Joshel calls the letters “meticulously composed”, so he wrote for a wider circle as well.</td><td>A friend, probably an owner too, and the same wider circle of readers.</td></tr>
+    <tr class="reveal"><td>Whose words are missing</td><td>The enslaved and freed people’s: he describes their “wills” but quotes none.</td><td>The attackers’: Pliny gives their motive, not their words.</td></tr>
+  </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Pliny’s letters" data-title="Notes: Pliny’s two letters" data-kind="notes">
+<div class="wrap u6l08-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint · I do · 1½ minutes · cue: what does each letter show?</p>
+  <h2>What do Pliny’s two letters show?</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U6 L8 · Masters and the enslaved</b></span><span>Pliny’s letters</span></div>
+    <div class="row"><div class="cq">Explain how Pliny presents himself in 8.16.</div>
+      <div class="nts reveal">to a friend, after a sickness <span class="sep">·</span> says he has “always very readily manumitted” and lets them “make a kind of will” <span class="sep">·</span> unlike others who say “a pecuniary loss” <span class="sep">·</span> his own account</div></div>
+    <div class="row"><div class="cq">Explain what Pliny warns owners of in 3.14.</div>
+      <div class="nts reveal">admits Macedo’s “haughtiness and severity” <span class="sep">·</span> yet “lenity and good treatment” no “security” <span class="sep">·</span> attackers’ motive = “malice” (Pliny’s word)</div></div>
+    <div class="row"><div class="cq">Account for the way he writes: who are his readers?</div>
+      <div class="nts reveal">friends, probably owners <span class="sep">·</span> Books 1–9 prepared for publication; “meticulously composed” (Joshel, 2011) <span class="sep">·</span> enslaved people’s words missing from both</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The Pedanius case" data-title="Tacitus, Annals 14.42–43: a murdered city prefect" data-kind="notes">
+<div class="wrap u6l08-dense u6l08-tight">
+  <p class="eyebrow">2 · The Pedanius case · We do — supported reading (1 of 2) · 2½ minutes · underline each group’s words, circle what it wants or fears, box who is never quoted</p>
+  <h2>Tacitus on the murder of Pedanius Secundus, 61 CE</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="src">
+      <div class="k">Source · a history, on the murder and the first reaction</div>
+      <p class="quote sm">Soon afterwards one of his own slaves murdered the city-prefect, Pedanius Secundus, either because he had been refused his freedom, for which he had made a bargain, or in the jealousy of a love in which he could not brook his master's rivalry. Ancient custom required that the whole slave-establishment which had dwelt under the same roof should be dragged to execution, when a sudden gathering of the populace, which was for saving so many innocent lives, brought matters to actual insurrection. Even in the Senate there was a strong feeling on the part of those who shrank from extreme rigour, though the majority were opposed to any innovation.</p>
+      <p class="prov">Tacitus, <i>Annals</i> 14.42, early 2nd century CE, on the murder of the city prefect in 61 CE · trans. A. J. Church and W. J. Brodribb (1876)</p>
+    </div>
+    <div class="src">
+      <div class="k">Source · the speech Tacitus gives the senator Gaius Cassius</div>
+      <p class="quote sm">… Who will be kept safe by the number of his slaves when four hundred have not protected Pedanius Secundus? … Was the murderer, as some do not blush to pretend, avenging his wrongs because he had bargained about money from his father or because a family-slave was taken from him? Let us actually decide that the master was justly slain.</p>
+      <p class="prov">Tacitus, <i>Annals</i> 14.43, in the speech he gives Gaius Cassius · trans. A. J. Church and W. J. Brodribb (1876)</p>
+      <p class="u6l08-tacnote">Tacitus calls the rule “Ancient custom” and, in Cassius’s speech, “the Senate’s decree”. He does not name the decree (Lesson 6).</p>
+    </div>
+  </div>
+  <div class="split" style="--cols:1fr 1fr">
+    <p class="qprompt reveal">Whose voice is the speech, and who is reporting it?</p>
+    <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">Cassius’s voice, as Tacitus gives it. Tacitus wrote the <i>Annals</i> in the early 2nd century CE, long after 61 CE, and composed the speech, so “four hundred” is a figure in a speech Tacitus wrote: it may be accurate, or chosen for effect.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The Pedanius case" data-title="Tacitus, Annals 14.44–45: terror, voices, a crowd and soldiers" data-kind="notes">
+<div class="wrap u6l08-dense u6l08-tight">
+  <p class="eyebrow">2 · The Pedanius case · We do — supported reading (2 of 2) · 2½ minutes · underline each group’s words, circle what it wants or fears, box who is never quoted</p>
+  <h2>Cassius’s argument, and what followed</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="src">
+      <div class="k">Source · the speech Tacitus gives Gaius Cassius, on the household</div>
+      <p class="quote sm">… But now that we have in our households nations with different customs to our own, with a foreign worship or none at all, it is only by terror you can hold in such a motley rabble. But, it will be said, the innocent will perish. … There is some injustice in every great precedent, which, though injurious to individuals, has its compensation in the public advantage.</p>
+      <p class="prov">Tacitus, <i>Annals</i> 14.44, in the speech he gives Gaius Cassius · trans. A. J. Church and W. J. Brodribb (1876)</p>
+    </div>
+    <div class="src">
+      <div class="k">Source · a history, on the reaction to Cassius</div>
+      <p class="quote sm">No one indeed dared singly to oppose the opinion of Cassius, but clamorous voices rose in reply from all who pitied the number, age, or sex, as well as the undoubted innocence of the great majority. Still, the party which voted for their execution prevailed. But the sentence could not be obeyed in the face of a dense and threatening mob, with stones and firebrands. Then the emperor reprimanded the people by edict, and lined with a force of soldiers the entire route by which the condemned had to be dragged to execution. Cingonius Varro had proposed that even all the freedmen under the same roof should be transported from Italy. This the emperor forbade, as he did not wish an ancient custom, which mercy had not relaxed, to be strained with cruel rigour.</p>
+      <p class="prov">Tacitus, <i>Annals</i> 14.45 · trans. A. J. Church and W. J. Brodribb (1876)</p>
+    </div>
+  </div>
+  <div class="split" style="--cols:1fr 1fr">
+    <p class="qprompt reveal">Who reacts to Cassius, and how does each react?</p>
+    <div class="note reveal" data-code="evidence" data-veil="Answer first — then show a model answer"><p class="body">Voices “from all who pitied” the household protest; the majority vote prevails; a “dense and threatening mob” stops the sentence being obeyed; the emperor reprimands the people, lines the route with soldiers and refuses to transport the freedmen from Italy. Tacitus reports each group; he gives no words from the enslaved household.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The Pedanius case" data-title="The perspectives map: who speaks, who is silent" data-kind="notes">
+<div class="wrap u6l08-dense u6l08-tight">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> We do — pairs fill in the perspectives map in your booklet · 4 minutes, then who is never heard · 1 minute</p>
+  <h2>The perspectives map: Annals 14.42–45</h2>
+  <p class="qprompt">For each group: what position does Tacitus give it, in his translators’ words, and who is telling us?</p>
+  <div data-veil="Fill in your map first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u6l08-map u6l08-pmap">
+    <tr><th>Group</th><th>Its position, in Tacitus’s words</th><th>Who tells us</th></tr>
+    <tr class="reveal"><td>The owner, Pedanius Secundus</td><td>Killed by “one of his own slaves”; Cassius mocks those who excuse the murderer: accepting his motive would be to decide that “the master was justly slain”.</td><td>Tacitus and Cassius: the owner never speaks.</td></tr>
+    <tr class="reveal"><td>Cassius, a senator</td><td>The household must die: “it is only by terror you can hold in such a motley rabble”.</td><td>Tacitus, in a speech he composed.</td></tr>
+    <tr class="reveal"><td>Senators who pitied them</td><td>“clamorous voices” from “all who pitied the number, age, or sex”; the majority still vote for execution.</td><td>Tacitus; no one is named or counted.</td></tr>
+    <tr class="reveal"><td>The crowd</td><td>“a sudden gathering of the populace, which was for saving so many innocent lives”; later “a dense and threatening mob, with stones and firebrands”.</td><td>Tacitus.</td></tr>
+    <tr class="reveal"><td>The emperor</td><td>Reprimands the people, lines the route with soldiers, and forbids transporting the freedmen from Italy.</td><td>Tacitus.</td></tr>
+  </table></div>
+  <p class="qprompt reveal">Who is never heard, and what do we learn about them instead?</p>
+  <div class="note reveal" data-code="counter"><p class="body">The enslaved household. We have two guesses at the murderer’s motive (“either … or”), a senator’s dismissal of it, and a round figure of “four hundred”. We learn what senators, the crowd and the emperor feared, pitied or decided, not what the household said or wanted.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Writing focus: the five-minute plan" data-kind="notes">
+<div class="wrap u6l08-dense">
+  <p class="eyebrow">3 · You do · Writing focus · 8 minutes · I do → We do → apply</p>
+  <h2>Writing focus: a plan you can make in five minutes</h2>
+  <div class="split" style="--cols:1.3fr 1.15fr .75fr">
+    <div class="card accent"><div class="k">I do · watch</div>
+      <p class="body">A plan has five steps on a five-minute clock: <b>deconstruct → judgement → three points → evidence → one counter-view</b>.</p>
+      <p class="small">Worked plan · written for this lesson · on a different question (Seneca, Epistle 47, a letter of advice to his friend Lucilius)</p>
+      <div class="quote sm model u6l08-plan" data-booklet="model">
+        <p><b>Question:</b> <i>Assess how far Seneca’s Epistle 47 challenged owners’ treatment of enslaved people.</i></p>
+        <p><b>1 · Deconstruct (1 min):</b> <b>assess</b> · “how far” asks for a degree · Epistle 47 only · a judgement against a counter-view</p>
+        <p><b>2 · Judgement (1 min):</b> Epistle 47 challenged owners’ cruelty, but only to a limited extent.</p>
+        <p><b>3 · Points and 4 · evidence (2 min):</b> (1) he calls them men: “Nay, rather they are men” (47.1) · (2) he criticises the rod at dinner: “The slightest murmur is repressed by the rod” (47.3) · (3) he asks for kinder behaviour: “Treat your inferiors as you would be treated by your betters” (47.11), advice, not abolition (Bradley, 1989, p. 102)</p>
+        <p><b>5 · Counter-view (1 min):</b> “we make them enemies” (47.5) blames owners directly</p>
+      </div>
+    </div>
+    <div class="card"><div class="k">We do · together</div>
+      <p class="body">Same question, points and counter-view; step 1 names the verb. Step 2 reads <span class="nq">“Seneca challenged owners’ treatment of enslaved people.”</span> Which step needs fixing first?</p>
+      <div class="veil-parts" data-veil="Vote first — then show the answer">
+        <ol class="opts">
+          <li><span class="n">A</span><span>Step 1: the verb is not named.</span></li>
+          <li id="u6l08-hqB"><span class="n">B</span><span>Step 2: the judgement has no degree.</span></li>
+          <li><span class="n">C</span><span>Step 3: the points have no evidence.</span></li>
+          <li><span class="n">D</span><span>Step 5: the counter-view repeats a point.</span></li>
+        </ol>
+        <i class="reveal" data-mark="#u6l08-hqB" hidden></i>
+        <div class="note vp reveal"><div class="k">B: a judgement needs a degree</div><p class="body">“Challenged” is a yes or no, but the question asks <b>how far</b>. Add a degree (<span class="nq">“only to a limited extent”</span>). <b>A</b>, <b>C</b> and <b>D</b> describe steps the plan already does.</p></div>
+      </div>
+    </div>
+    <div class="card quiet"><div class="k">Apply · on the class question</div>
+      <p class="body">Teacher keeps time: <b>one minute</b>. Do step 1: verb, topic, limits, do.</p>
+      <p class="body"><b>Assess</b> the relationship between owners and enslaved people shown in these sources.</p>
+      <p class="body nq">Your Writing toolkit (booklet pages 3–4): the verb table and the four-step routine.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Your two-case sheet">
+<div class="wrap u6l08-dense u6l08-tight">
+  <p class="eyebrow">3 · You do · your evidence for the timed paragraph · printed in your booklet</p>
+  <h2>Your two-case sheet: Pliny’s household, and Pedanius’s</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="src">
+      <div class="k">Case 1 · Pliny’s letters, written to friends</div>
+      <p class="quote sm">I have always very readily manumitted my slaves</p>
+      <p class="quote sm">I have allowed them to make a kind of will, which I observe as religiously as if it were good in law</p>
+      <p class="quote sm">Others, I know, describe misfortunes of this kind by no higher term than “a pecuniary loss,”</p>
+      <p class="quote sm">there was a haughtiness and severity in his treatment of them</p>
+      <p class="quote sm">Nor is lenity and good treatment any security from the villainies of your servants</p>
+      <p class="prov">Pliny the Younger, <i>Letters</i> 8.16 (to Paternus) and 3.14 (to Acilius), about 97–112 CE · trans. W. Melmoth, revised by W. M. L. Hutchinson (Loeb, 1915)</p>
+    </div>
+    <div class="src">
+      <div class="k">Case 2 · Tacitus on the murder of Pedanius Secundus, 61 CE</div>
+      <p class="quote sm">Ancient custom required that the whole slave-establishment which had dwelt under the same roof should be dragged to execution</p>
+      <p class="quote sm">it is only by terror you can hold in such a motley rabble</p>
+      <p class="quote sm">clamorous voices rose in reply from all who pitied the number, age, or sex</p>
+      <p class="quote sm">a dense and threatening mob, with stones and firebrands</p>
+      <p class="quote sm">Then the emperor reprimanded the people by edict, and lined with a force of soldiers the entire route</p>
+      <p class="prov">Tacitus, <i>Annals</i> 14.42–45, early 2nd century CE (14.44 is in the speech he gives the senator Gaius Cassius) · trans. A. J. Church and W. J. Brodribb (1876)</p>
+    </div>
+  </div>
+  <p class="small">Whose voices are these? Pliny, an owner writing to friends, and Tacitus, a senator writing more than 50 years after the events, reporting a speech he composed. No source on this sheet is written by an enslaved person.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: plan in five minutes, then write">
+<div class="wrap u6l08-dense">
+  <p class="eyebrow">3 · You do · 17 minutes · plan for 5 (press K, click 5) · then write for 12 (press K, click 12)</p>
+  <h2><b>Assess</b> the relationship between owners and enslaved people shown in these sources.</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="stack">
+      <p class="qprompt">What does this question ask you to do? Check your deconstruction.</p>
+      <div class="veil-parts" data-veil="Check yours first — then show the answers">
+        <dl class="u6l08-dq">
+          <dt>Verb</dt><dd><span class="vp reveal"><b>assess</b>: NESA, <i>Glossary of key words</i>: ‘Make a judgement of value, quality, outcomes, results or size.’ Department advice: judge what kind of relationship these sources show, and how far</span></dd>
+          <dt>Topic</dt><dd><span class="vp reveal">the relationship between owners and enslaved people <i>as these sources show it</i>, not how every owner and enslaved person lived</span></dd>
+          <dt>Limits</dt><dd><span class="vp reveal">the two cases on your two-case sheet only: Pliny’s letters 8.16 and 3.14, and Tacitus, <i>Annals</i> 14.42–45</span></dd>
+          <dt>Do</dt><dd><span class="vp reveal">a judgement with a degree; evidence from both cases, with each writer’s position and audience; a counter-view weighed; what these sources cannot show</span></dd>
+        </dl>
+      </div>
+      <div class="card quiet sm"><div class="k">Planning is part of your writing time</div>
+        <p class="body">Write your plan on your planning template in the first 5 minutes of writing time. In the HSC, reading time is for thinking only. NESA’s 2027 HSC student guide says: “You must not write on or mark your exam in any way or use any equipment (including highlighters).”</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · plan 5 minutes · then one paragraph in 12</div>
+        <ol class="body">
+          <li><b>Plan (5 minutes):</b> deconstruct 1 · judgement 1 · three points with evidence 2 · one counter-view 1.</li>
+          <li><b>Write (12 minutes):</b> one paragraph, Judge → Evidence → Analyse → Evaluate → Resolve: your degree, both cases with their writers, what the evidence shows, your counter-view or what the sources cannot show, and your degree again.</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Plan template: a box for each step. Frame for the Judge only: <span class="nq">“These sources show a relationship that was … to a … extent, because …”</span> Quotation bank: your two-case sheet.</p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Pliny prepared Books 1–9 of his letters, including these two, for publication. Using Joshel’s reading, <b>evaluate</b> how far they are evidence of his relationships rather than of the image he wished to project. Joshel (2011, p. 234): Pliny “makes slaves visible only to make disappear important components of their condition”.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: revise your paragraph" data-kind="notes">
+<div class="wrap u6l08-dense">
+  <p class="eyebrow">3 · Check · untimed revision · 6 minutes</p>
+  <h2>Revise your paragraph</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="card quiet"><div class="k">Does yours …</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> <span>open with a judgement with a degree, not a yes or no?</span></label></li>
+        <li><label><input type="checkbox"> <span>use evidence from both cases, each with its writer?</span></label></li>
+        <li><label><input type="checkbox"> <span>say what the evidence shows, with a precise verb and a hedge?</span></label></li>
+        <li><label><input type="checkbox"> <span>weigh one counter-view, or say what the sources cannot show?</span></label></li>
+        <li><label><input type="checkbox"> <span>end with your degree again, not a new one?</span></label></li>
+      </ul></div>
+    <div class="card accent"><div class="k">With a second colour · 6 minutes</div>
+      <ol class="body">
+        <li>Reread your whole paragraph once.</li>
+        <li>Tick the checklist. Where you cannot tick, mark the gap.</li>
+        <li>Improve <b>one</b> move, in your second colour: rewrite one sentence.</li>
+      </ol>
+      <p class="small">Your Writing toolkit (booklet pages 3–4): connectives by function and the modality scale.</p></div>
+  </div>
+  <div class="note reveal" data-code="judgement" data-veil="Revise first — then show what a strong paragraph on this question includes"><div class="k">What a strong paragraph on this question includes</div><p class="body">A judgement of degree on the relationship these sources show, not a yes or no, held from the first sentence to the last. Evidence from both cases, each source named with its writer and audience. The views of owners, a senator, a crowd and an emperor attributed to the people who hold them, not stated as facts about all owners. A counter-view or limit weighed, including that the enslaved people’s own words are missing. A closing sentence that keeps the same degree.</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: warm and cool" data-kind="notes">
+<div class="wrap u6l08-dense">
+  <p class="eyebrow">3 · Check · partner feedback · 4 minutes</p>
+  <h2>One warm comment and one cool comment</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="card accent"><div class="k">Swap paragraphs · read each other’s</div>
+      <ol class="body">
+        <li>Read your partner’s paragraph once, in silence (1 minute).</li>
+        <li>Tell your partner <b>one warm comment</b>: one move they did well, and where (1 minute).</li>
+        <li>Tell your partner <b>one cool comment</b>: one move to improve next time, and how (1 minute).</li>
+        <li>Swap, and write your partner’s cool comment on your own paragraph (1 minute).</li>
+      </ol></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Frames</div>
+        <p class="body nq">Warm: “Your … is strong, because …”</p>
+        <p class="body nq">Cool: “Next time, try … in your …, so that …”</p></div>
+      <div class="card quiet sm"><div class="k">Which move?</div>
+        <div class="u6l08-bank"><span>judgement with a degree</span><span>both cases</span><span>precise verb</span><span>hedge</span><span>counter-view</span><span>same degree at the end</span></div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 2 minutes · before you leave</p>
+  <h2>Your pacing ticket</h2>
+  <div class="card accent"><p class="lead">Finish the sentence: <span class="nq">“In 12 minutes I ran short on … so next time I will …”</span></p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">A specific part of the plan or the paragraph (the judgement, the evidence, the counter-view, the ending), not just “time”. A change you can make: for example, cutting the plan to its five steps, deciding the degree before writing, or leaving the quotation bank closed after planning. A change that matches the problem.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> Lesson 9, treatment: food, punishment, chains and sale.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Summary" data-kind="notes">
+<div class="wrap u6l08-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What does each of Pliny’s two letters say about the people he enslaved or frees, and who are his readers?</li>
+          <li>Whose voices does Tacitus report after the murder of Pedanius Secundus, and whose is missing?</li>
+          <li>What are the five steps of the five-minute plan?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">In 8.16 Pliny, writing to a friend, says he has always readily freed people and lets them make a kind of will, and in 3.14 he warns his readers that even good treatment gave owners no security; both letters are by an owner, for readers who were probably owners too, and neither gives the words of an enslaved person. Tacitus reports a senator arguing for terror, voices of pity, a crowd and an emperor with soldiers, but no word from the enslaved household. A five-minute plan has five steps: deconstruct, make a judgement, choose three points, find evidence for each, and name one counter-view.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Pliny 8.16 and 3.14: what each says and who reads</label></li>
+        <li><label><input type="checkbox"> Tacitus 14.42–45 and the perspectives map</label></li>
+        <li><label><input type="checkbox"> Who is never heard</label></li>
+        <li><label><input type="checkbox"> The five steps of the plan, and the minutes</label></li>
+        <li><label><input type="checkbox"> Your own paragraph and one thing to improve</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u6l08-dense">
+  <p class="eyebrow">Practice and review · 1 of 4 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>In 8.16, Pliny says he has “always very readily manumitted” the people he enslaved.</span>
+      <span class="sol reveal">True <span class="why">— it is his own claim about his habit, in a letter to a friend; it does not tell us what the people thought.</span></span></li>
+    <li><span class="n">2</span><span>In 3.14, Pliny says Larcius Macedo’s treatment of his household was gentle.</span>
+      <span class="sol no reveal">False <span class="why">— he admits “a haughtiness and severity in his treatment of them”, and still concludes that good treatment is no “security”.</span></span></li>
+    <li><span class="n">3</span><span>Tacitus gives us the enslaved household’s own words after the murder of Pedanius Secundus.</span>
+      <span class="sol no reveal">False <span class="why">— he reports a senator, other voices, a crowd and the emperor; the household’s words are missing, and the murderer’s motive is given only as two possibilities (“either … or”).</span></span></li>
+    <li><span class="n">4</span><span>Cassius’s speech is a word-for-word record of what he said in the Senate in 61 CE.</span>
+      <span class="sol no reveal">False <span class="why">— Tacitus wrote the <i>Annals</i> long afterwards and composed the speech; so “four hundred” is a figure in a speech he wrote, which may be accurate or chosen for effect.</span></span></li>
+    <li><span class="n">5</span><span>Tacitus calls the rule “Ancient custom” and, in Cassius’s speech, “the Senate’s decree”.</span>
+      <span class="sol reveal">True <span class="why">— he does not give the decree a name.</span></span></li>
+    <li><span class="n">6</span><span>A five-minute plan has no counter-view, because the paragraph supplies it.</span>
+      <span class="sol no reveal">False <span class="why">— the plan’s fifth step names one counter-view, so the paragraph can weigh it.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — fix a plan and plan another" data-kind="practice">
+<div class="wrap prac u6l08-dense">
+  <p class="eyebrow">Practice and review · 2 of 4 · planning</p>
+  <h2>Plans: fix one, make one</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · Fix this plan</div>
+        <p class="body">Question: <i>Assess how far Seneca’s Epistle 47 challenged owners’ treatment of enslaved people.</i> A student’s plan: <span class="nq">“Judgement: Seneca challenged owners’ treatment. Points: 47.1, 47.3, 47.11. Evidence: none. Counter-view: none.”</span> List what is missing, step by step.</p></div>
+      <div class="src reveal" data-veil="Write yours first — then show what a fixed plan needs"><div class="k">What a fixed plan needs · written for this lesson</div>
+        <p class="quote sm model">Step 2 needs a degree (not “challenged” alone). Step 3 needs each point to say what it shows. Step 4 needs a short quotation for each point. Step 5 needs one counter-view. Step 1, the deconstruction, is not written at all.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 2 · Make a plan on the clock</div>
+        <p class="body">Set a five-minute timer. Make a five-step plan for: <b>Assess</b> how far Columella 1.8.15 shows kindness to enslaved workers. Use your Lesson 7 notes.</p></div>
+      <div class="card quiet sm"><div class="k">Check yourself</div>
+        <ul class="checks">
+          <li><label><input type="checkbox"> <span>a deconstruction: verb, topic, limits, do</span></label></li>
+          <li><label><input type="checkbox"> <span>a judgement with a degree</span></label></li>
+          <li><label><input type="checkbox"> <span>three points, each with a short quotation</span></label></li>
+          <li><label><input type="checkbox"> <span>one counter-view</span></label></li>
+        </ul></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — extension: Pliny’s letters and Joshel" data-kind="practice">
+<div class="wrap prac u6l08-dense">
+  <p class="eyebrow">Practice and review · 3 of 4 · extension</p>
+  <h2>Evidence of his relationships, or of an image?</h2>
+  <div class="split" style="--cols:1fr 1.3fr">
+    <div class="stack">
+      <div class="card quiet"><div class="k">Exercise 3 · a short paragraph</div><p class="body">Pliny prepared Books 1–9 of his letters, including these two, for publication. Using Joshel’s reading, <b>evaluate</b> how far they are evidence of his relationships rather than of the image he wished to project.</p></div>
+      <div class="src">
+        <div class="k">A historian · on Pliny’s letters</div>
+        <p class="quote sm">An instance of Roman self-fashioning, these meticulously composed letters craft a portrait of the self and its world, shaped by a network of unequal power and authority – including the relations of master and slave. … Pliny, like paternalism itself, makes slaves visible only to make disappear important components of their condition, either consuming their agency or rendering it invisible.</p>
+        <p class="prov">S. R. Joshel, <span class="nq">“Slavery and Roman literary culture”</span>, in K. Bradley and P. Cartledge (eds), <i>The Cambridge World History of Slavery</i>, vol. 1 (Cambridge University Press, 2011), p. 234. “Slaves” is her word.</p>
+      </div>
+    </div>
+    <div class="note reveal" data-code="judgement" data-veil="Write yours first — then show what a strong answer does"><div class="k">What a strong answer does</div><p class="body">It names a criterion (evidence of what, for whom?), then weighs both sides: what the letters can show about relationships (a friend, a household and what he says he allows) against what Joshel says they do (craft a portrait of the self, and show enslaved people only on the owner’s terms). It checks the claim against specific wording in 8.16 and 3.14 and notes what no letter shows. It ends with a degree, not a yes or no.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u6l08-dense">
+  <p class="eyebrow">Practice and review · 4 of 4 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>What does Pliny say in 8.16 that he has always done, and what does he let the people he enslaves do?
+      <span class="sol reveal">He says he has “always very readily manumitted” them, and has allowed them to make “a kind of will”. It is his own account, in a letter to a friend.</span></li>
+    <li>What does Pliny admit about Macedo in 3.14, and what does he conclude for owners?
+      <span class="sol reveal">He admits “a haughtiness and severity in his treatment of them”, yet concludes that “lenity and good treatment” are no “security”.</span></li>
+    <li>Whose speech is Annals 14.43–44, and who reports it?
+      <span class="sol reveal">The senator Gaius Cassius’s, as Tacitus gives it; Tacitus composed it, writing in the early 2nd century CE about 61 CE.</span></li>
+    <li>Which groups react to Cassius in 14.45, and who is never heard?
+      <span class="sol reveal">Voices that pitied the household, a crowd, and the emperor. The enslaved household is never heard.</span></li>
+    <li>What are the five steps of the five-minute plan, and how long does each take?
+      <span class="sol reveal">Deconstruct (1 minute), judgement (1), three points with evidence for each (2), one counter-view (1).</span></li>
+    <li>What does Joshel (2011, p. 234) call Pliny’s letters?
+      <span class="sol reveal">“meticulously composed” letters that “craft a portrait of the self and its world”.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u6l08-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u6l08-cite"><div class="k">Written sources</div>
+      <p class="small">Pliny the Younger, <i>Letters</i> 3.14 and 8.16: trans. W. Melmoth, revised by W. M. L. Hutchinson (Loeb Classical Library, 1915, public domain), <a href="https://archive.org/details/letterswithengli01plinuoft">archive.org</a> (vol. I) and <a href="https://archive.org/details/letterswithengli02plinuoft">archive.org</a> (vol. II). Tacitus, <i>Annals</i> 14.42–45: trans. A. J. Church and W. J. Brodribb (1876, public domain), <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0078:book=14:chapter=42">Perseus Digital Library</a> (Perseus text CC BY-SA 3.0 US). Seneca, <i>Letters to Lucilius</i> (Epistle) 47, parts: trans. R. M. Gummere (Loeb, vol. I, 1917, public domain), <a href="https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_47">Wikisource</a> (text CC BY-SA 4.0).</p>
+      <p class="small">Modern historians, quoted briefly: K. R. Bradley, <i>Slavery and Rebellion in the Roman World, 140 B.C.–70 B.C.</i> (Indiana University Press, 1989), p. 102; S. R. Joshel, <span class="nq">“Slavery and Roman literary culture”</span>, pp. 220–221 and 234, in K. Bradley and P. Cartledge (eds), <i>The Cambridge World History of Slavery</i>, vol. 1 (Cambridge University Press, 2011). Wikipedia, “Epistulae (Pliny)”, for the books Pliny prepared for publication. The NESA <i>Glossary of key words</i> (definitions quoted word for word) and the NESA 2027 HSC student guide, p. 19 (step 3, “Reading time”).</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet u6l08-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>The beginning of Pliny’s <i>Letters</i> in a 15th-century manuscript, Biblioteca Malatestiana, Cesena (Ms. S.XX.2, fol. 1r)</b> · Photo: not named on the file page (Wikimedia Commons) · <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public domain</a> · <a href="https://commons.wikimedia.org/wiki/File:Pliny_the_Younger,_Letters,_Biblioteca_Malatestiana.jpg">source</a></li></ul>
+        <p class="small">All images are public domain or openly licensed, and were resized for the web. Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>
