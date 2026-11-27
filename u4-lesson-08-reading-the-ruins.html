@@ -1,0 +1,1789 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U4 L8 · Reading the ruins: the archaeology of the destruction</title>
+<meta name="description" content="Year 11 Ancient History, case study Boudicca: what the burnt layers at Colchester, London and St Albans and the Fenwick hoard show and cannot show, why two Colchester tombstones are debated, and how to evaluate archaeology against Tacitus with modality matched to the evidence.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#2D5F2E; --bright:#3F8A40; --tint:#E6F1E4; --statement:#2D5F2E;
+  --solid:#2D5F2E; --soft:#D3EBCF; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#A8D8A2; --bright:#6FBF68; --tint:#16301A; --statement:#244B25; --soft:#D3EBCF; } }
+:root[data-theme="dark"]{ --deep:#A8D8A2; --bright:#6FBF68; --tint:#16301A; --statement:#244B25; --soft:#D3EBCF; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 4 Lesson 8 only (every class starts u4l08-) */
+
+/* title picture; goals slide syllabus line; credits links */
+.u4l08-cover img{max-height:56vh;}
+.u4l08-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u4l08-cite a{color:var(--deep);}
+
+/* quick facts list */
+.u4l08-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.25em;
+  font-size:calc(var(--fs-body)*.86); line-height:1.36;}
+.u4l08-facts b{color:var(--deep);}
+
+/* tall tombstone photographs */
+.u4l08-stone .figure img{max-height:58vh; object-fit:contain; background:var(--surface-2);}
+
+/* the section through the destruction layer (inline SVG): colours from the shared variables */
+.u4l08-fig{margin:0;}
+.u4l08-svg{display:block; width:100%; height:auto; max-height:58vh;}
+.u4l08-bg{fill:var(--surface-2);}
+.u4l08-modern{fill:var(--surface); stroke:var(--rule);}
+.u4l08-later{fill:var(--w-keyterm);}
+.u4l08-burnt{fill:var(--w-judgement);}
+.u4l08-early{fill:var(--w-evidence);}
+.u4l08-natural{fill:var(--w-keyterm); opacity:.55;}
+.u4l08-floor{stroke:var(--ink); stroke-width:3;}
+.u4l08-thin{stroke-width:1.5; stroke-dasharray:8 5; opacity:.7;}
+.u4l08-stump{fill:var(--c-judgement); opacity:.85;}
+.u4l08-frag{fill:var(--c-judgement); opacity:.6;}
+.u4l08-shelf{stroke:var(--ink); stroke-width:4;}
+.u4l08-char{fill:var(--ink);}
+.u4l08-coin{fill:var(--c-keyterm); stroke:var(--ink); stroke-width:1;}
+.u4l08-pot{fill:var(--c-scope); opacity:.8;}
+.u4l08-pit{fill:var(--surface); stroke:var(--ink); stroke-width:1.5; stroke-dasharray:4 3;}
+.u4l08-gold{fill:var(--c-keyterm);}
+.u4l08-dim{fill:none; stroke:var(--c-judgement); stroke-width:2.5;}
+.u4l08-lead{stroke:var(--slate); stroke-width:1.5;}
+.u4l08-svg text{font-family:var(--ui); fill:var(--ink); font-size:24px;}
+.u4l08-svg .u4l08-lab{font-weight:700;}
+.u4l08-svg .u4l08-sub{font-weight:400; font-size:21px;}
+.u4l08-svg .u4l08-hot{fill:var(--c-judgement);}
+.u4l08-svg .u4l08-mute{fill:var(--slate); font-weight:400;}
+.u4l08-svg .u4l08-scale{font-size:16px; fill:var(--slate);}
+
+/* the dating note under the section */
+.u4l08-date{margin:.45em 0 0; padding:.35em .8em; border-left:4px solid var(--c-directive); background:var(--w-directive);
+  border-radius:0 6px 6px 0; font-size:calc(var(--fs-body)*.8); line-height:1.38;}
+html:not(.read) .u4l08-dense .u4l08-date{font-size:calc(var(--fs-body)*.72);}
+
+/* London and Verulamium: two site cards */
+.u4l08-site .quote.sm{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.u4l08-site .prov{font-size:calc(var(--fs-chrome)*.95); color:var(--slate); margin-top:.3em; line-height:1.35;}
+.u4l08-site .body + .quote, .u4l08-site .prov + .body, .u4l08-site .prov + .quote{margin-top:.45em;}
+
+/* the deconstruction strip above a question (verb · topic · limits · do) */
+.u4l08-dq{display:grid; grid-template-columns:auto 1fr; gap:.2em .8em; margin:0; padding:.5em .9em;
+  border-left:5px solid var(--c-directive); background:var(--w-directive); border-radius:0 8px 8px 0;
+  font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+.u4l08-dq dt{font-weight:700; color:var(--c-directive);}
+.u4l08-dq dd{margin:0;}
+
+/* Writing focus: the ladder line, the key under the worked example, the We do claims and model rewrites */
+.u4l08-ladder{display:block; margin-top:.25em; padding:.3em .7em; border-left:4px solid var(--c-directive);
+  background:var(--w-directive); border-radius:0 6px 6px 0; line-height:1.45;}
+.u4l08-wfkey{display:flex; flex-direction:column; gap:.2em; margin-top:.35em; font-size:calc(var(--fs-body)*.8);}
+.u4l08-wd{margin:.3em 0 0; padding-left:1.3em; display:flex; flex-direction:column; gap:.45em;}
+.u4l08-wd > li{font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.u4l08-mr{margin:.3em 0 0; padding:.3em .7em; border-left:4px solid var(--c-evidence); background:var(--w-evidence);
+  border-radius:0 6px 6px 0; font-size:calc(var(--fs-body)*.92);}
+
+/* Tacitus's account on the You do slide: short, numbered extracts */
+.u4l08-tac .quote.sm{font-size:calc(var(--fs-body)*.84); line-height:1.4;}
+.u4l08-tac .quote.sm + .prov{margin-top:.15em;}
+.u4l08-tac .prov + .quote{margin-top:.5em;}
+
+/* paragraphs inside a card need a little air */
+.card .body + .body, .card .body + .u4l08-dq, .card .u4l08-dq + .small, .card .veil-parts{margin-top:.4em;}
+.card .small + .quote{margin-top:.2em;}
+
+/* a frame or word bank */
+.u4l08-bank{display:flex; flex-wrap:wrap; gap:.4em; margin-top:.35em;}
+.u4l08-bank span{border:1px solid var(--c-keyterm); color:var(--c-keyterm); border-radius:999px; padding:.1em .7em;
+  background:var(--w-keyterm); font-size:calc(var(--fs-body)*.78); font-weight:600;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u4l08-svg{max-height:none;}
+  .u4l08-stone .figure img{max-height:60vh;}
+}
+
+/* the grid columns may shrink below the diagram's width, so only the diagram scrolls on phones */
+.u4l08-colch > *, .u4l08-colch .stack > *{min-width:0;}
+@media (max-width:700px){
+  html.read .u4l08-fig svg{min-width:640px;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u4l08-dense{gap:10px;}
+  html:not(.read) .u4l08-dense h2{font-size:calc(var(--fs-h2)*.84);}
+  html:not(.read) .u4l08-dense .quote.sm{font-size:calc(var(--fs-body)*.76); line-height:1.4;}
+  html:not(.read) .u4l08-dense .quote{font-size:calc(var(--fs-body)*.9);}
+  html:not(.read) .u4l08-dense .src{padding:10px 16px;}
+  html:not(.read) .u4l08-dense .src .prov{margin-top:.4em;}
+  html:not(.read) .u4l08-dense .note{padding:.45em .85em;}
+  html:not(.read) .u4l08-dense .note .body, html:not(.read) .u4l08-dense .card .body,
+  html:not(.read) .u4l08-dense .qprompt{font-size:calc(var(--fs-body)*.78); line-height:1.36;}
+  html:not(.read) .u4l08-dense .card{padding:10px 16px;}
+  html:not(.read) .u4l08-dense .card .k{margin-bottom:.25em;}
+  html:not(.read) .u4l08-dense .keylist{gap:6px;}
+  html:not(.read) .u4l08-dense .keylist li{font-size:calc(var(--fs-body)*.8);}
+  html:not(.read) .u4l08-dense .tbl.compact{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u4l08-dense .tbl.compact td{padding:.32em .55em;}
+  html:not(.read) .u4l08-dense .tbl th{padding:.4em .6em;}
+  html:not(.read) .u4l08-dense .figure img{max-height:30vh;}
+  html:not(.read) .u4l08-dense .u4l08-stone .figure img{max-height:52vh;}
+  html:not(.read) .u4l08-dense .u4l08-facts{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u4l08-dense .u4l08-dq{font-size:calc(var(--fs-body)*.72); padding:.35em .8em;}
+  html:not(.read) .u4l08-dense .u4l08-svg{max-height:52vh;}
+  html:not(.read) .u4l08-dense .u4l08-wfkey{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u4l08-dense .u4l08-wd > li{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u4l08-dense .u4l08-mr{font-size:calc(var(--fs-body)*.74); padding:.25em .6em; line-height:1.36;}
+  html:not(.read) .u4l08-dense .u4l08-ladder{font-size:calc(var(--fs-body)*.74); padding:.2em .6em;}
+  html:not(.read) .u4l08-dense .u4l08-site .quote.sm, html:not(.read) .u4l08-dense .u4l08-tac .quote.sm{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u4l08-dense .tf li, html:not(.read) .u4l08-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u4l08-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u4l08-dense .prac{gap:6px;}
+  html:not(.read) .u4l08-dense .cornell .cq, html:not(.read) .u4l08-dense .cornell .nts{font-size:calc(var(--fs-body)*.76); padding:.35em .8em;}
+  html:not(.read) .u4l08-dense .checks label{font-size:calc(var(--fs-body)*.8);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 8" data-title="Reading the ruins: the archaeology of the destruction" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.25fr .75fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 4 · Boudicca · Lesson 8</p>
+      <h1>Reading the ruins: the archaeology of the destruction</h1>
+      <p class="lead">Tacitus says three towns burned. What can the ground itself tell us, and where does it fall silent?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u4l08-cover"><figure class="figure contain"><img src="images/u4l08-longinus-tombstone.jpg" alt="The tombstone of Longinus Sdapeze, a Thracian cavalry officer, set up in about 55 CE outside Camulodunum (RIB 201); found in 1928 lying on its face; the rider’s face, found in 1996, is now back in place; Colchester Castle Museum" loading="lazy"><figcaption>The tombstone of Longinus Sdapeze, a Thracian cavalry officer, set up in about 55 CE outside Camulodunum (RIB 201); found in 1928 lying on its face; the rider’s face, found in 1996, is now back in place; Colchester Castle Museum — <span class="cr">Photo: Kognos · CC BY 4.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 8" data-title="Connect: three towns" data-kind="intro">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow">Connect · 3 minutes · books closed · everyone writes · press K for the timer</p>
+  <h2>Three towns: in what order, and why London?</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · one line</div><p class="body">Put Camulodunum, Londinium and Verulamium in Tacitus’s order and say why London fell.</p></div>
+      <div class="card quiet"><div class="k">Re-teach · from the Lesson 7 review</div><p class="body">Fix the tense:</p>
+        <p class="body nq"><i>“Tacitus reported that centurions plunder Prasutagus’s kingdom.”</i></p></div>
+    </div>
+    <div class="stack" data-veil="Write yours first — then show the answers">
+      <div class="note reveal" data-code="evidence"><div class="k">Tacitus’s order</div><p class="body">Camulodunum (Colchester) → Londinium (London) → Verulamium (St Albans), <i>Annals</i> 14.32–33.</p></div>
+      <div class="note reveal" data-code="judgement"><div class="k">Why London fell</div><p class="body">Suetonius reached it first, but with too few soldiers he “resolved to save the province at the cost of a single town” and left; those who stayed were killed (14.33).</p></div>
+      <div class="note reveal" data-code="counter"><div class="k">The tense, fixed</div><p class="body nq">Tacitus reports that centurions plundered Prasutagus’s kingdom. (Present for what a writer does; past for what happened.)</p></div>
+    </div>
+  </div>
+  <p class="cue reveal">Today: does the ground agree with Tacitus?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 8" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>analyse archaeological evidence for the destruction of Camulodunum and Londinium</li>
+        <li>evaluate how far archaeology supports Tacitus, with modality matched to the evidence</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>explain what the destruction layers and the hoard reveal</li>
+        <li>explain why the tombstone evidence is debated</li>
+        <li>write an Evaluate paragraph whose modality matches the evidence</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u4l08-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-08 uses sources to form conclusions about the past · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 8" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U4 L8 · Reading the ruins</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; CE = Common Era)</span></div></div>
+      <div class="row"><div class="cq">What does the burnt layer show?</div><div class="nts">a great fire … → but who lit it?</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A new page</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences; a source for every claim.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at each ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: explain, analyse, evaluate. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">Two checkpoints today: the destruction layers and the hoard · the tombstones.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 8" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for reading the ruins</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Verb (NESA)</th><th>Meaning · what the answer does</th></tr>
+      <tr><td>Evaluate</td><td>‘Make a judgement based on criteria. Determine the value of.’ — State the criteria and judge against them.</td></tr>
+      <tr><th>Writing term</th><th>Meaning</th></tr>
+      <tr><td>Modality</td><td>How certain a claim is: certainly, probably, may, cannot confirm.</td></tr>
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>RIB</td><td><i>Roman Inscriptions of Britain</i>: the numbered catalogue of Roman inscriptions found in Britain, with its editors’ notes.</td></tr>
+      <tr><td>Terminus post quem</td><td>From Unit 1: <span class="nq">‘The date after which’</span>: a coin or object gives the earliest possible date for the layer it is found in.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Content terms</th><th>Meaning</th></tr>
+      <tr><td>Destruction layer</td><td>A layer of burnt or broken debris in the ground that marks a fire or attack.</td></tr>
+      <tr><td>Torc / hoard</td><td>A metal neck ring, often of gold and silver; who wore torcs is debated / valuables buried together, for safekeeping or as an offering.</td></tr>
+      <tr><td>Veteran / colonia</td><td>A retired soldier / a town of Roman citizens, often veterans; Camulodunum was the first in Britain.</td></tr>
+      <tr><td>Legion / auxiliaries</td><td>A unit of about 5,000 Roman citizen soldiers / soldiers recruited from non-citizens.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The burnt layers and the hoard" data-title="Colchester: the red and black layer" data-kind="notes">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow">1 · The burnt layers and the hoard · I do — think aloud · then cold call</p>
+  <h2>Camulodunum (Colchester): the red and black layer</h2>
+  <div class="split u4l08-colch" style="--cols:1.05fr 1fr">
+    <div class="stack">
+      <figure class="diagram u4l08-fig"><svg class="u4l08-svg u4l08-section" viewBox="0 0 900 352" role="img" aria-label="A simplified section through the ground under Roman Colchester, not to scale. From the bottom: natural sand; the floors of houses in the early colony, with coins and pottery lying on them, and, at one house, a small pit dug into the floor holding buried jewellery (the Fenwick hoard); above them, a red and black burnt layer made of the stumps of burnt clay walls buried under collapsed clay from the upper walls, with charred food; above that, the floors of the rebuilt Roman town; and the modern town at the top.">
+<rect class="u4l08-bg" x="0" y="0" width="900" height="352" rx="12"/>
+<rect class="u4l08-modern" x="16" y="16" width="484" height="42"/>
+<rect class="u4l08-later" x="16" y="58" width="484" height="70"/>
+<rect class="u4l08-burnt" x="16" y="128" width="484" height="86"/>
+<rect class="u4l08-early" x="16" y="214" width="484" height="52"/>
+<rect class="u4l08-natural" x="16" y="266" width="484" height="56"/>
+<line class="u4l08-floor" x1="16" y1="58" x2="500" y2="58"/>
+<line class="u4l08-floor u4l08-thin" x1="30" y1="96" x2="486" y2="96"/>
+<line class="u4l08-floor u4l08-thin" x1="30" y1="118" x2="486" y2="118"/>
+<line class="u4l08-floor" x1="16" y1="214" x2="500" y2="214"/>
+<rect class="u4l08-stump" x="56" y="164" width="28" height="50"/>
+<rect class="u4l08-stump" x="226" y="164" width="28" height="50"/>
+<rect class="u4l08-stump" x="396" y="164" width="28" height="50"/>
+<rect class="u4l08-frag" x="30" y="138" width="20" height="10" rx="2" transform="rotate(-15 40.0 143.0)"/>
+<rect class="u4l08-frag" x="96" y="150" width="26" height="11" rx="2" transform="rotate(-3 109.0 155.5)"/>
+<rect class="u4l08-frag" x="132" y="136" width="18" height="9" rx="2" transform="rotate(9 141.0 140.5)"/>
+<rect class="u4l08-frag" x="166" y="156" width="24" height="10" rx="2" transform="rotate(7 178.0 161.0)"/>
+<rect class="u4l08-frag" x="200" y="140" width="16" height="9" rx="2" transform="rotate(5 208.0 144.5)"/>
+<rect class="u4l08-frag" x="270" y="148" width="28" height="11" rx="2" transform="rotate(-15 284.0 153.5)"/>
+<rect class="u4l08-frag" x="312" y="134" width="20" height="9" rx="2" transform="rotate(9 322.0 138.5)"/>
+<rect class="u4l08-frag" x="346" y="158" width="22" height="10" rx="2" transform="rotate(7 357.0 163.0)"/>
+<rect class="u4l08-frag" x="440" y="140" width="18" height="9" rx="2" transform="rotate(5 449.0 144.5)"/>
+<rect class="u4l08-frag" x="462" y="160" width="22" height="10" rx="2" transform="rotate(9 473.0 165.0)"/>
+<rect class="u4l08-frag" x="120" y="186" width="20" height="9" rx="2" transform="rotate(-15 130.0 190.5)"/>
+<rect class="u4l08-frag" x="186" y="194" width="18" height="8" rx="2" transform="rotate(-3 195.0 198.0)"/>
+<rect class="u4l08-frag" x="290" y="186" width="22" height="9" rx="2" transform="rotate(5 301.0 190.5)"/>
+<rect class="u4l08-frag" x="350" y="196" width="16" height="8" rx="2" transform="rotate(5 358.0 200.0)"/>
+<rect class="u4l08-frag" x="446" y="188" width="20" height="9" rx="2" transform="rotate(-13 456.0 192.5)"/>
+<rect class="u4l08-frag" x="24" y="194" width="16" height="8" rx="2" transform="rotate(3 32.0 198.0)"/>
+<line class="u4l08-shelf" x1="128" y1="208" x2="190" y2="204"/>
+<circle class="u4l08-char" cx="138" cy="199" r="4.5"/>
+<circle class="u4l08-char" cx="149" cy="199" r="4.5"/>
+<circle class="u4l08-char" cx="160" cy="199" r="4.5"/>
+<circle class="u4l08-char" cx="171" cy="199" r="4.5"/>
+<circle class="u4l08-char" cx="182" cy="199" r="4.5"/>
+<circle class="u4l08-coin" cx="100" cy="209" r="5.5"/>
+<circle class="u4l08-coin" cx="300" cy="209" r="5.5"/>
+<circle class="u4l08-coin" cx="460" cy="209" r="5.5"/>
+<path class="u4l08-pot" d="M204,213 q11,-13 22,0 z"/>
+<path class="u4l08-pot" d="M360,213 q11,-13 22,0 z"/>
+<path class="u4l08-pit" d="M262,214 q2,42 27,46 q25,-4 27,-46 z"/>
+<circle class="u4l08-gold" cx="278" cy="238" r="5"/>
+<circle class="u4l08-gold" cx="289" cy="246" r="5"/>
+<circle class="u4l08-gold" cx="300" cy="236" r="5"/>
+<path class="u4l08-dim" d="M510,128 h8 V214 h-8"/>
+<text class="u4l08-lab" x="530" y="44">Modern town</text>
+<text class="u4l08-lab" x="530" y="86">Rebuilt Roman town:</text>
+<text class="u4l08-lab u4l08-sub" x="530" y="110">new floors on the old plots</text>
+<text class="u4l08-lab u4l08-hot" x="530" y="150">Burnt layer, red and black:</text>
+<text class="u4l08-lab u4l08-sub" x="530" y="174">a few cm to about half a metre;</text>
+<text class="u4l08-lab u4l08-sub" x="530" y="198">burnt clay walls under fallen clay</text>
+<text class="u4l08-lab" x="530" y="236">Early colony floors:</text>
+<text class="u4l08-lab u4l08-sub" x="530" y="260">coins, pottery; at one house,</text>
+<text class="u4l08-lab u4l08-sub" x="530" y="282">a pit of jewellery</text>
+<text class="u4l08-lab u4l08-mute" x="530" y="312">Natural sand</text>
+<text class="u4l08-scale" x="16" y="342">Not to scale · no human remains are shown</text>
+</svg><figcaption>A simplified section through the ground under Roman Colchester, not to scale: drawn for this lesson from the Colchester Heritage Explorer’s and the Colchester Archaeological Trust’s descriptions. <span class="swipe">Swipe to see the whole diagram.</span></figcaption></figure>
+      <p class="u4l08-date"><b>How is a burnt layer dated?</b> If the layers are undisturbed, the latest coins and pottery in and under it give the earliest date the fire could have happened (Unit 1: terminus post quem).</p>
+    </div>
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Colchester’s historic environment record</div>
+        <p class="quote sm">The revolt left behind a remarkable red and black destruction layer which varies in depth from a few centimetres to up to half a metre in some parts of Colchester. This deposit consists of the stumps of burnt clay walls of buildings buried beneath a mass of broken and collapsed fragments of clay from the upper parts of the walls.</p>
+        <p class="prov">Colchester Heritage Explorer (Colchester City Council), <span class="nq">‘The Boudican revolt’</span>, summarising excavations across the town since the 1920s</p>
+      </div>
+      <p class="qprompt">What does the layer show, and what can it not show?</p>
+      <div data-veil="Answer first — then show the answers">
+      <div class="tbl-scroll"><table class="tbl compact">
+        <tr><th>The layer shows</th><th>It cannot show</th></tr>
+        <tr class="reveal"><td>a great fire: VCH Essex finds “few places in the town where there is no evidence of the fire”</td><td>who lit it, or why</td></tr>
+        <tr class="reveal"><td>buildings burned where they stood, with food, a bed and a pottery shop’s stock inside</td><td>how many died: human remains are “very rarely found”</td></tr>
+        <tr class="reveal"><td>is consistent with a date of about 60 or 61 CE, from the coins and pottery in and under it</td><td>on its own, that this fire was the revolt: that link comes from Tacitus</td></tr>
+      </table></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The burnt layers and the hoard" data-title="Colchester: the Fenwick hoard" data-kind="notes">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow">1 · The burnt layers and the hoard · I do — think aloud · then cold call</p>
+  <h2>What people hid: the Fenwick hoard</h2>
+  <div class="split" style="--cols:1.05fr 1fr">
+    <div class="stack">
+      <figure class="figure contain"><img src="images/u4l08-fenwick-treasure.jpg" alt="The Fenwick Treasure: gold and silver jewellery and a small group of coins, found in 2014 by the Colchester Archaeological Trust in a pit under the floor of a burnt house on Colchester High Street; Colchester Museums (photographed on loan to the British Museum, 2021)" loading="lazy"><figcaption>The Fenwick Treasure: gold and silver jewellery and a small group of coins, found in 2014 by the Colchester Archaeological Trust in a pit under the floor of a burnt house on Colchester High Street; Colchester Museums (photographed on loan to the British Museum, 2021) — <span class="cr">Photo: Jamie Heath · CC BY-SA 2.0</span></figcaption></figure>
+      <ul class="u4l08-facts">
+        <li><b>Found:</b> 2014, by the Colchester Archaeological Trust, digging under the Williams &amp; Griffin store on the High Street</li>
+        <li><b>Where:</b> in a small pit dug into the floor of a house, under the burnt debris of that house</li>
+        <li><b>What:</b> gold and silver armlets, bracelets, earrings and finger-rings, and a group of coins, perhaps in a small bag</li>
+      </ul>
+    </div>
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · the excavators’ first interpretation</div>
+        <p class="quote sm">It seems likely that the owner or perhaps one of her slaves buried the jewellery inside her house for safe-keeping during the early stages of the Boudican Revolt, when prospects looked bleak.</p>
+        <p class="prov">Colchester Archaeological Trust, <span class="nq">‘The Fenwick Treasure at Williams &amp; Griffin!’</span>, 3 September 2014 (an early, provisional interpretation)</p>
+      </div>
+      <p class="qprompt">What does the hoard show, and what can it not show?</p>
+      <div data-veil="Answer first — then show the answers">
+      <div class="tbl-scroll"><table class="tbl compact">
+        <tr><th>The hoard shows</th><th>It cannot show</th></tr>
+        <tr class="reveal"><td>someone hid valuables under a floor and never came back for them</td><td>who the owner was, or what happened to her</td></tr>
+        <tr class="reveal"><td>the house above it then burned</td><td>the exact day it was buried</td></tr>
+        <tr class="reveal"><td>suggests, as the excavators think “likely”, that the owner feared an attack</td><td>the attackers’ plans: it is evidence of fear, not of the rebels</td></tr>
+      </table></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The burnt layers and the hoard" data-title="London and Verulamium" data-kind="notes">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow">1 · The burnt layers and the hoard · I do — two more towns · then cold call</p>
+  <h2>Londinium and Verulamium: strong evidence and thin evidence</h2>
+  <div class="cols c2">
+    <div class="card u4l08-site"><div class="k">Londinium (London) · MOLA and the London Museum</div>
+      <p class="body">At 36–39 Poultry, in the City of London, MOLA (Museum of London Archaeology) found a clay and timber building, from the second of two phases of building after about 50 CE, that had burned and was sealed by fire debris. Their report concludes:</p>
+      <p class="quote sm">… cumulatively the dating evidence from Period 2 strongly suggests that this destruction horizon represents the Boudican revolt.</p>
+      <p class="prov">K. Pitt with F. Seeley, excavation report on 36–39 Poultry (MOLA, dug 2005–7), <i>Transactions of the London and Middlesex Archaeological Society</i> 64</p>
+      <p class="quote sm">In central London, archaeologists have found thick layers of burned debris.</p>
+      <p class="prov">London Museum, <span class="nq">‘Boudica: Rebel queen of the Iceni’</span></p>
+    </div>
+    <div class="card u4l08-site"><div class="k">Verulamium (St Albans) · the Verulamium excavations</div>
+      <p class="body">Sheppard Frere’s excavations (1955–61) found a row of timber shops beside Watling Street with a burnt layer that Frere dated to the revolt. Elsewhere in the town, the picture is thinner:</p>
+      <p class="quote sm">… <span class="ed">[the town’s destruction]</span> is harder to identify archaeologically, in contrast to the Boudican destruction levels at Colchester and London …</p>
+      <p class="prov">K. Lockyear (UCL Institute of Archaeology) and E. Shlasko, report on their geophysical survey of Verulamium (<i>Archaeological Prospection</i> 24, 2017), citing R. Niblett (2001)</p>
+      <p class="quote sm">Burn evidence is not as clear as at Londinium and Camulodunum …</p>
+      <p class="prov">University of Warwick, Warwick Classics Network, <span class="nq">‘Boudica’s Revolt’ page</span></p>
+    </div>
+  </div>
+  <p class="qprompt">Does thin evidence at Verulamium mean Tacitus was wrong about it?</p>
+  <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">No. Thin evidence means the archaeology <b>cannot confirm</b> how much of Verulamium burned; it does not prove that the town escaped. The burning may have been patchy (some argue that only some buildings, such as shops with imported goods, were targeted), and Tacitus’s “Like ruin fell” may claim more than the ground can show.</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The burnt layers and the hoard" data-title="Notes 1 — The burnt layers and the hoard" data-kind="notes">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 2</p>
+  <h2>The burnt layers and the hoard</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U4 L8 · Reading the ruins</b></span><span>1 · The burnt layers and the hoard</span></div>
+    <div class="row"><div class="cq">What does Colchester’s burnt layer show, and what can it not show?</div>
+      <div class="nts reveal">red and black, a few cm to ½ m: burnt clay wall stumps (Colchester Heritage Explorer) <span class="sep">·</span> fire across almost the whole town (VCH 1994) <span class="sep">·</span> cannot show who lit it, why, or how many died (remains “very rarely found”)</div></div>
+    <div class="row"><div class="cq">How is a burnt layer dated?</div>
+      <div class="nts reveal">coins and pottery in and under it (undisturbed layers) → earliest possible date (terminus post quem) <span class="sep">·</span> consistent with 60 or 61 CE <span class="sep">·</span> the link to the revolt comes from Tacitus</div></div>
+    <div class="row"><div class="cq">What does the Fenwick hoard suggest?</div>
+      <div class="nts reveal">Colchester Archaeological Trust, 2014 <span class="sep">·</span> gold and silver jewellery + coins in a pit under a house that burned <span class="sep">·</span> “It seems likely” hidden for safe-keeping <span class="sep">·</span> not who, or her fate</div></div>
+    <div class="row"><div class="cq">Explain why the evidence is stronger for London than for Verulamium.</div>
+      <div class="nts reveal">London: MOLA (36–39 Poultry) → “strongly suggests” the revolt; London Museum: thick burned layers <span class="sep">·</span> Verulamium: burnt shops on Watling Street (Frere), but elsewhere “harder to identify”</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The tombstone puzzle" data-title="The tombstone of Longinus Sdapeze" data-kind="notes">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow">2 · The tombstone puzzle · We do — pairs weigh the evidence · then cold call</p>
+  <h2>Who knocked down Longinus?</h2>
+  <div class="split" style="--cols:.62fr 1.38fr">
+    <div class="u4l08-stone"><figure class="figure contain"><img src="images/u4l08-longinus-tombstone.jpg" alt="The tombstone of Longinus Sdapeze, a Thracian cavalry officer, set up in about 55 CE outside Camulodunum (RIB 201); found in 1928 lying on its face; the rider’s face, found in 1996, is now back in place; Colchester Castle Museum" loading="lazy"><figcaption>The tombstone of Longinus Sdapeze, a Thracian cavalry officer, set up in about 55 CE outside Camulodunum (RIB 201); found in 1928 lying on its face; the rider’s face, found in 1996, is now back in place; Colchester Castle Museum — <span class="cr">Photo: Kognos · CC BY 4.0</span></figcaption></figure></div>
+    <div class="stack">
+      <ul class="u4l08-facts">
+        <li class="reveal"><b>The man:</b> Longinus Sdapeze, an officer of the First Thracian cavalry regiment, aged 40, after 15 years’ service; his stone stood beside a road outside the town, set up in about 55 CE (RIB 201).</li>
+        <li class="reveal"><b>1928:</b> workmen found it broken, lying on its face; RIB records the rider’s head as “broken off in antiquity”.</li>
+        <li class="reveal"><b>1996:</b> the Colchester Archaeological Group dug the spot again and found the missing face, with other pieces, beside where the stone had lain.</li>
+        <li class="reveal"><b>Where the pieces lay:</b> as if they had broken off a stone already lying face down; chips of stone lay around it, but not beneath it.</li>
+      </ul>
+      <div class="src reveal">
+        <div class="k">Source · the re-excavators’ conclusion</div>
+        <p class="quote sm">The observations do not preclude the possibility that the stone was felled at that time of the Boudiccan Rebellion, but they are not consistent with the theory that the stone was “defaced”, i.e. deliberately attacked from the front, at that time.</p>
+        <p class="prov">J. Mallinson, S. Benfield, D. Hardy and M. J. Matthews, <i>Notes on the re-excavation of the Longinus site, Beverley Road, Colchester 1996–1999</i> (Colchester Archaeological Group)</p>
+      </div>
+      <p class="qprompt reveal">What can we claim about this tombstone and the revolt, and what can we not?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Weigh it first — then show the answer"><p class="body"><b>Can:</b> the stone fell, or was pulled down, at some time after about 55 CE, and its re-excavators’ evidence strongly suggests that its face broke off after it was already lying down. <b>Cannot:</b> who felled it, or when; the revolt is possible, but the evidence does not fit the story that rebels smashed its face.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The tombstone puzzle" data-title="Facilis, and what can be claimed" data-kind="notes">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow">2 · The tombstone puzzle · We do — RIB’s view of Facilis · then agree what can be claimed</p>
+  <h2>A second stone: Facilis, and what we can claim</h2>
+  <div class="split" style="--cols:.55fr 1.45fr">
+    <div class="u4l08-stone"><figure class="figure contain"><img src="images/u4l08-facilis-tombstone.jpg" alt="The tombstone of Marcus Favonius Facilis, a centurion of the Twentieth Legion, set up by his two freedmen (RIB 200); found in 1868 in two pieces in a burial area west of Colchester; Colchester Museums (photographed on loan to the British Museum, 2024)" loading="lazy"><figcaption>The tombstone of Marcus Favonius Facilis, a centurion of the Twentieth Legion, set up by his two freedmen (RIB 200); found in 1868 in two pieces in a burial area west of Colchester; Colchester Museums (photographed on loan to the British Museum, 2024) — <span class="cr">Photo: Thomas Quine · CC BY 2.0</span></figcaption></figure></div>
+    <div class="stack">
+      <ul class="u4l08-facts">
+        <li><b>The man:</b> Marcus Favonius Facilis, a centurion of the Twentieth Legion; his two freedmen set up the stone (RIB 200)</li>
+        <li><b>Found:</b> 1868, in a Roman burial area west of the town, where it “lay in two portions”; a metre away lay a lead urn of burnt bones, presumably his, with a pottery cup of about 50–60 CE</li>
+      </ul>
+      <div class="src">
+        <div class="k">Source · the editors of <i>Roman Inscriptions of Britain</i></div>
+        <p class="quote sm">The sculpture is hardly weathered; it is probable that it was overthrown in the rising of Boudicca …</p>
+        <p class="prov">RIB 200, the editors’ commentary (RIB Online)</p>
+      </div>
+      <p class="qprompt">Agree as a class: what can be claimed about the two tombstones and the revolt?</p>
+      <div data-veil="Agree yours first — then show the answers">
+      <div class="tbl-scroll"><table class="tbl compact">
+        <tr><th>Can be claimed</th><th>Cannot be claimed</th></tr>
+        <tr class="reveal"><td>both stood beside the road into the town, probably set up before the revolt</td><td>who knocked them down</td></tr>
+        <tr class="reveal"><td>both were found lying down and broken</td><td>when they fell: the revolt is “probable” for Facilis (RIB), possible for Longinus</td></tr>
+        <tr class="reveal"><td>the re-excavators’ evidence strongly suggests that Longinus’s face broke off after the stone was already lying down</td><td>that rebels “defaced” Longinus: the evidence is “not consistent” with it</td></tr>
+        <tr class="reveal"><td>soldiers of the legion and of an auxiliary regiment served and died at Camulodunum</td><td>anything about the size of the revolt or how many died</td></tr>
+      </table></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The tombstone puzzle" data-title="Notes 2 — The tombstone puzzle" data-kind="notes">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 2 of 2</p>
+  <h2>The tombstone puzzle</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U4 L8 · Reading the ruins</b></span><span>2 · The tombstone puzzle</span></div>
+    <div class="row"><div class="cq">Explain why the Longinus tombstone evidence is debated.</div>
+      <div class="nts reveal">c. 55 CE; found 1928 face down, head broken off (RIB 201) <span class="sep">·</span> face found 1996 beside it (CAG) <span class="sep">·</span> CAG: “suggest very strongly” it broke off after the stone lay down → “not consistent” with defacing; felling in the revolt still possible</div></div>
+    <div class="row"><div class="cq">What does RIB say about Facilis?</div>
+      <div class="nts reveal">centurion, Twentieth Legion; found 1868 in two pieces <span class="sep">·</span> “hardly weathered” → “probable” it was overthrown in the revolt <span class="sep">·</span> probable, not proven</div></div>
+    <div class="row"><div class="cq">What can the tombstones not tell us?</div>
+      <div class="nts reveal">who toppled them, or when <span class="sep">·</span> anything about the revolt’s size or the dead</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Writing focus: modality and evaluate" data-kind="notes">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow">3 · You do · Writing focus · 8 minutes · I do → We do → apply</p>
+  <h2>Writing focus: match each claim to its evidence</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="card accent"><div class="k">I do · watch</div>
+      <p class="body"><b>Evaluate</b>: ‘Make a judgement based on criteria. Determine the value of.’ <span class="small">NESA, <i>Glossary of key words</i></span></p>
+      <p class="body">The modality ladder, strongest to weakest: <span class="u4l08-ladder"><b>certainly</b> → <b>strongly suggests</b> → <b>is consistent with</b> → <b>may</b> → <b>cannot confirm</b></span></p>
+      <p class="small">Worked example · written for this lesson, on Lesson 1’s evidence</p>
+      <p class="quote sm model" data-booklet="model">The pellet moulds at Fison Way <span class="match" data-step="m1">show</span> that silver coins were made there, but the enclosure’s layout <span class="match" data-step="m2">only suggests</span> a ritual site, and <span class="match" data-step="m3">nothing in the ground can confirm</span> the 1982 headline’s ‘palace’.</p>
+      <div class="u4l08-wfkey">
+        <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>High:</b> the moulds are direct evidence of coin-making</span></p>
+        <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Medium:</b> the layout fits a ritual site, but no text says so</span></p>
+        <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>Low:</b> no signs of daily life, so the ‘palace’ is unsupported</span></p>
+      </div>
+    </div>
+    <div class="card"><div class="k">We do · together</div>
+      <p class="body">Rewrite each over-certain claim so its strength matches the evidence. One ladder word per claim.</p>
+      <div class="veil-parts" data-veil="Rewrite them first — then show model rewrites">
+        <ol class="u4l08-wd">
+          <li><span class="nq">“The broken face proves that Boudicca’s rebels attacked the Longinus tombstone.”</span>
+            <p class="u4l08-mr vp reveal nq">The Longinus tombstone may have been pulled down during the revolt, but its re-excavators concluded that its face broke off after it was already lying down, so the evidence cannot confirm that rebels attacked it.</p></li>
+          <li><span class="nq">“The Facilis tombstone was certainly overthrown by the rebels.”</span>
+            <p class="u4l08-mr vp reveal nq">Because its carving is hardly weathered, RIB’s editors judge it probable that the Facilis tombstone was overthrown in the revolt: the evidence is consistent with a fall in 60 or 61 CE, but cannot confirm who toppled it.</p></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="card quiet"><div class="k">Apply · in today’s task</div>
+    <p class="body" style="max-width:none">Your Judge sentence: put a degree on <b>how far</b>, and match each claim to its evidence with the frame <span class="nq">“[Evidence] strongly suggests / is consistent with / cannot confirm …”</span> Your Writing toolkit (booklet pages 3–4): the modality scale.</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: deconstruct the question">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow">3 · You do · 2 minutes · deconstruct first · then check · press K for the timer</p>
+  <h2><b>Evaluate</b> how far archaeology supports Tacitus’s account of the destruction of the towns.</h2>
+  <div class="split" style="--cols:1fr 1.05fr">
+    <div class="stack">
+      <p class="qprompt">Deconstruct it: what does this question ask you to do?</p>
+      <div data-veil="Deconstruct it first — then show the answer">
+        <dl class="u4l08-dq reveal">
+          <dt>Verb</dt><dd><b>evaluate</b>, with <b>how far</b>: a judgement based on criteria, given as a degree (largely, partly …)</dd>
+          <dt>Topic</dt><dd>whether the archaeology supports what Tacitus says happened to the towns</dd>
+          <dt>Limits</dt><dd>Camulodunum, Londinium and Verulamium in 60 or 61 CE; Tacitus’s account, not Dio’s; the archaeology you have seen today</dd>
+          <dt>Do</dt><dd>one paragraph, Judge → Evidence → Analyse → Evaluate → Resolve; your criterion is what the ground can test (that the towns burned, and when) and what it cannot (who lit the fires, how many died); Tacitus plus one archaeological source; each claim’s modality matched to its evidence</dd>
+        </dl>
+      </div>
+      <p class="qprompt reveal">Check first: where must your degree word appear?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">In the <b>Judge</b> and again in the <b>Resolve</b>, the same degree: how far the archaeology supports Tacitus, not yes or no.</p></div>
+    </div>
+    <div class="src u4l08-tac">
+      <div class="k">Source · Tacitus’s account, in brief</div>
+      <p class="quote sm">All else was plundered or fired in the onslaught; the temple where the soldiers had assembled, was stormed after a two days’ siege.</p>
+      <p class="prov"><i>Annals</i> 14.32 · Camulodunum</p>
+      <p class="quote sm">Those who were chained to the spot by the weakness of their sex, or the infirmity of age, or the attractions of the place, were cut off by the enemy.</p>
+      <p class="prov"><i>Annals</i> 14.33 · Londinium, after Suetonius left</p>
+      <p class="quote sm">Like ruin fell on the town of Verulamium …</p>
+      <p class="prov"><i>Annals</i> 14.33 · Verulamium</p>
+      <p class="quote sm">About seventy thousand citizens and allies, it appeared, fell in the places which I have mentioned.</p>
+      <p class="prov"><i>Annals</i> 14.33 · Tacitus (about 55–120 CE), writing about 55 years later · trans. A. J. Church and W. J. Brodribb (1876)</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: your Evaluate paragraph">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow">3 · You do · 18 minutes · write · hand it in at the end</p>
+  <h2>Your paragraph: how far does the ground support Tacitus?</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · one paragraph, five moves</div>
+        <ol class="body">
+          <li><b>Judge</b> with a degree: how far does the archaeology support Tacitus?</li>
+          <li><b>Evidence:</b> Tacitus, and one archaeological source from the towns (a destruction layer or the Fenwick hoard), each with who found or wrote it.</li>
+          <li><b>Analyse</b> what the evidence shows; <b>Evaluate</b> what it cannot show; <b>Resolve</b> with the same degree.</li>
+          <li>Match every claim to its evidence: one ladder word per claim.</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Assess why the Longinus tombstone is so often said to have been defaced by Boudicca’s rebels, when its re-excavators found the evidence ‘not consistent with the theory that the stone was “defaced”’: what does the story’s popularity show about how archaeology is interpreted?</p></div>
+    </div>
+    <div class="stack">
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Frame for your Judge: <span class="nq">“Archaeology largely / only partly supports Tacitus’s account of the destruction of the towns, because …”</span> Then open each move with one of these:</p>
+        <div class="u4l08-bank"><span>Tacitus reports that …</span><span>Excavations at … found …</span><span>This strongly suggests …</span><span>is consistent with</span><span>However, … cannot confirm …</span><span>On balance, …</span></div></div>
+      <div class="card quiet sm"><div class="k">Before you hand it in</div><p class="body">Underline your degree word in the Judge and the Resolve. Circle every ladder word: does each one match its evidence?</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Check: the checklist" data-kind="intro">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow">Check · 8 minutes · tick, circle, hand in</p>
+  <h2>Check your paragraph against the class checklist</h2>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="card quiet"><div class="k">Your Lesson 7 checklist, or this one · does your paragraph …</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> <span><b>Judge:</b> answer how far, with a degree word?</span></label></li>
+        <li><label><input type="checkbox"> <span><b>Evidence:</b> use Tacitus and one archaeological source, each with who wrote or found it?</span></label></li>
+        <li><label><input type="checkbox"> <span><b>Analyse:</b> say what the evidence shows, and how?</span></label></li>
+        <li><label><input type="checkbox"> <span><b>Evaluate:</b> weigh what the archaeology cannot show, or a limit of Tacitus?</span></label></li>
+        <li><label><input type="checkbox"> <span><b>Resolve:</b> end with a refined judgement, in the same degree as the Judge?</span></label></li>
+        <li><label><input type="checkbox"> <span><b>Modality:</b> match every claim to its evidence, one hedge per claim?</span></label></li>
+      </ul></div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div><p class="body">Circle the one move you will improve. Under your paragraph, write <span class="nq">“My next step: …”</span> Then hand it in: you get it back next lesson with one strength and one next step.</p></div>
+      <div class="note reveal" data-code="evidence" data-veil="Show what a strong paragraph does"><div class="k">A strong paragraph today</div><p class="body">opens with a degree (<i>largely</i>, <i>only partly</i>); uses Tacitus’s words and an excavation with its excavator; says what the ground shows (<i>shows</i>, <i>strongly suggests</i>) and what it cannot (<i>cannot confirm</i> who lit the fires, or the 70,000); and ends on the same degree, refined.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="A model paragraph" data-kind="notes">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow">After your Lesson 9 rewrite · compare yours with a model</p>
+  <h2>A model paragraph: how far does archaeology support Tacitus?</h2>
+  <div class="split" style="--cols:1.65fr 1fr">
+    <div class="src reveal" data-veil="Rewrite yours in Lesson 9 first — then show a model paragraph">
+      <div class="k">A model paragraph · written for this lesson</div>
+      <p class="quote sm model">Archaeology largely supports Tacitus’s account of the destruction of the towns, but only for what burned, not for who burned it or how many died. Tacitus reports that at Camulodunum ‘All else was plundered or fired in the onslaught’ (<i>Annals</i> 14.32), and excavations across Colchester have found a red and black destruction layer of burnt clay walls buried under collapsed clay. Because the coins and pottery in and under this layer are consistent with a date of about 60 or 61 CE, it strongly suggests that the fire Tacitus describes really happened, and the Fenwick hoard, buried in a pit under a house that then burned, suggests that at least one household feared the attack. In London, too, MOLA’s excavators judge that their dating evidence strongly suggests a burnt layer belongs to the revolt. However, the ground cannot confirm Tacitus’s claim that ‘About seventy thousand citizens and allies, it appeared, fell’ (14.33), since human remains are very rarely found in Colchester’s debris, and at Verulamium the burning is harder to identify than in the other two towns. On balance, archaeology largely supports Tacitus on the fires themselves, but who lit them and how many died rest on the written sources alone.</p>
+    </div>
+    <div class="card quiet"><div class="k">Find each move in the model</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> <span>the Judge and its degree</span></label></li>
+        <li><label><input type="checkbox"> <span>Tacitus’s words, with a reference</span></label></li>
+        <li><label><input type="checkbox"> <span>an excavation, with who dug it</span></label></li>
+        <li><label><input type="checkbox"> <span>three different ladder words</span></label></li>
+        <li><label><input type="checkbox"> <span>the Evaluate: what the ground cannot show</span></label></li>
+        <li><label><input type="checkbox"> <span>the Resolve, in the same degree</span></label></li>
+      </ul></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Summary" data-kind="notes">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What do the burnt layers and the Fenwick hoard show?</li>
+          <li>What can they not show?</li>
+          <li>Why is the tombstone evidence debated?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Burnt layers at Colchester and London show that great fires destroyed large parts of both towns at a time consistent with 60 or 61 CE, burnt shops at Verulamium suggest that it burned too, and the Fenwick hoard suggests that people hid their valuables as the attack approached. The archaeology cannot show who lit the fires, why, or how many people died, because human remains are very rarely found and the link to the revolt comes from Tacitus. The tombstones of Longinus and Facilis were found lying broken, but whether they were pulled down in the revolt is debated: RIB thinks it probable for Facilis, while the Longinus evidence does not fit the story that rebels smashed its face.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Tacitus’s order of the towns</label></li>
+        <li><label><input type="checkbox"> The Colchester layer: shows and cannot show</label></li>
+        <li><label><input type="checkbox"> How a burnt layer is dated</label></li>
+        <li><label><input type="checkbox"> The Fenwick hoard</label></li>
+        <li><label><input type="checkbox"> London and Verulamium</label></li>
+        <li><label><input type="checkbox"> The two tombstones</label></li>
+        <li><label><input type="checkbox"> The modality ladder and evaluate</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u4l08-dense">
+  <p class="eyebrow">Practice and review · 1 of 4 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Human remains are often found in Colchester’s burnt layer.</span>
+      <span class="sol no reveal">False <span class="why">— the Colchester Heritage Explorer says they are “very rarely found”, which is surprising after Tacitus’s death toll.</span></span></li>
+    <li><span class="n">2</span><span>The Fenwick Treasure lay in a pit under the floor of a house that later burned.</span>
+      <span class="sol reveal">True <span class="why">— the Colchester Archaeological Trust found it in 2014, sealed under the burnt debris.</span></span></li>
+    <li><span class="n">3</span><span>Colchester’s burnt layer proves that the rebels lit the fire.</span>
+      <span class="sol no reveal">False <span class="why">— it shows a great fire at a time consistent with 60 or 61 CE; who lit it comes from Tacitus.</span></span></li>
+    <li><span class="n">4</span><span>The burning is as clear at Verulamium as at Colchester and London.</span>
+      <span class="sol no reveal">False <span class="why">— burnt shops were found beside Watling Street, but elsewhere the destruction is harder to identify.</span></span></li>
+    <li><span class="n">5</span><span>The re-excavators of the Longinus site concluded that its face broke off after the stone was already lying down.</span>
+      <span class="sol reveal">True <span class="why">— so the evidence does not fit the story that rebels attacked its face, though a felling in the revolt is still possible.</span></span></li>
+    <li><span class="n">6</span><span>RIB’s editors think it probable that the Facilis tombstone was overthrown in the revolt.</span>
+      <span class="sol reveal">True <span class="why">— because the carving is hardly weathered; probable, not proven.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — the modality ladder" data-kind="practice">
+<div class="wrap prac u4l08-dense">
+  <p class="eyebrow">Practice and review · 2 of 4 · writing · modality</p>
+  <h2>Match each claim to its evidence</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · Fix each claim</div>
+        <ol class="body">
+          <li><span class="nq">“The Fenwick hoard proves that its owner was killed by the rebels.”</span></li>
+          <li><span class="nq">“The burnt shops at Verulamium show that the whole town was destroyed.”</span></li>
+          <li><span class="nq">“The burned debris in London may possibly perhaps suggest a fire.”</span></li>
+        </ol></div>
+      <div class="src reveal" data-veil="Fix them first — then show model answers"><div class="k">Models · written for this lesson</div>
+        <ol class="u4l08-wd nq">
+          <li>The Fenwick hoard suggests that its owner hid her valuables in fear of an attack, but it cannot confirm what happened to her. (Too strong: move down.)</li>
+          <li>The burnt shops beside Watling Street are consistent with Tacitus’s claim that Verulamium was destroyed, but the archaeology cannot confirm that the whole town burned. (Too strong: move down.)</li>
+          <li>Thick layers of burned debris in central London show that a great fire burned there. (Too weak, and stacked hedges: one claim, one level.)</li>
+        </ol></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 2 · One Evaluate sentence</div><p class="body">Write one sentence that evaluates how far MOLA’s London evidence supports Tacitus. Use <b>strongly suggests</b> and <b>cannot confirm</b>.</p></div>
+      <div class="src reveal" data-veil="Write yours first — then show a model"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">MOLA’s excavation at 36–39 Poultry strongly suggests that fire destroyed this part of London at the time of the revolt, which supports Tacitus’s account of the town’s fall, but it cannot confirm his claim that those who stayed behind were ‘cut off by the enemy’.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — extension: the ‘defaced’ tombstone" data-kind="practice">
+<div class="wrap prac u4l08-dense">
+  <p class="eyebrow">Practice and review · 3 of 4 · extension · assess</p>
+  <h2>Why does the ‘defaced by rebels’ story last?</h2>
+  <div class="split" style="--cols:1fr 1.3fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · James Fawn, an unfinished draft in the re-excavation notes</div>
+        <p class="quote sm">The usual assumption is that the stone was thrown down in the Boudiccan revolt … Hull suggested this in his first newspaper report … and he continued to advance the idea with the publication of “Roman Colchester” in 1958. Other authors have followed his proposal …</p>
+        <p class="prov">J. Mallinson and others, <i>Notes on the re-excavation of the Longinus site</i> (Colchester Archaeological Group), Appendix B · M. R. Hull was the new curator of the Colchester museum in 1928</p>
+      </div>
+      <div class="card quiet"><div class="k">Exercise 3 · one paragraph</div><p class="body"><b>Assess</b> why the Longinus tombstone is so often said to have been defaced by Boudicca’s rebels, when its re-excavators found the evidence ‘not consistent with the theory that the stone was “defaced”’: what does the story’s popularity show about how archaeology is interpreted?</p></div>
+    </div>
+    <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+      <p class="quote sm model">The story that rebels defaced the Longinus tombstone has lasted mainly because it was told first and then repeated, not because the evidence requires it. The museum’s new curator, M. R. Hull, suggested in a newspaper report in 1928 that the stone was thrown down in the revolt, and he kept the idea in <i>Roman Colchester</i> (1958); his case, as James Fawn summarised it, was that the missing face ‘must have been knocked off before it fell to the ground, indicating wilful damage’, and, as Fawn noted, ‘Other authors have followed his proposal’. The story also fits a famous text: Tacitus says the colony was ‘plundered or fired’, so a broken Roman tombstone seems to confirm him. Yet when the spot was dug again from 1996, the face and other pieces lay as if they had broken off a stone already lying down, and the re-excavators found the evidence ‘not consistent with the theory that the stone was “defaced”’, though a felling in the revolt remains possible. The story’s popularity therefore suggests that archaeology is often read through the written sources, and that a first interpretation can outlast the evidence for it.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u4l08-dense">
+  <p class="eyebrow">Practice and review · 4 of 4 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>In what order does Tacitus say the three towns fell?
+      <span class="sol reveal">Camulodunum (Colchester), then Londinium (London), then Verulamium (St Albans): <i>Annals</i> 14.32–33.</span></li>
+    <li>What does Colchester’s burnt layer show, and what can it not show?
+      <span class="sol reveal">A great fire across almost the whole town, with burnt clay walls still standing as stumps; not who lit it, why, or how many died (human remains are very rarely found).</span></li>
+    <li>How is a burnt layer dated, and what links it to the revolt?
+      <span class="sol reveal">By the latest coins and pottery in and under it, which, if the layers are undisturbed, give the earliest possible date (terminus post quem); the link to the revolt comes from matching that date to Tacitus.</span></li>
+    <li>What does the Fenwick hoard suggest, and how sure can we be?
+      <span class="sol reveal">That someone hid gold and silver jewellery and coins under a floor, probably fearing an attack; the excavators say “It seems likely”, and nothing names the owner or her fate.</span></li>
+    <li>Why is the evidence weaker for Verulamium than for London?
+      <span class="sol reveal">In London MOLA’s dating evidence “strongly suggests” a burnt layer belongs to the revolt; at Verulamium burnt shops were found beside Watling Street, but elsewhere the destruction is harder to identify.</span></li>
+    <li>What does NESA’s evaluate ask for, and how does modality help?
+      <span class="sol reveal">“Make a judgement based on criteria. Determine the value of.” Modality matches each claim to its evidence: shows, strongly suggests, is consistent with, may, cannot confirm.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u4l08-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u4l08-cite"><div class="k">Written sources</div>
+      <p class="small">Tacitus, <i>Annals</i> 14.32–33: trans. A. J. Church and W. J. Brodribb (1876, public domain), <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0078:book=14:chapter=32">Perseus Digital Library</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 US</a>). Colchester Heritage Explorer (Colchester City Council), <a href="https://colchesterheritage.co.uk/the-boudican-revolt"><span class="nq">“The Boudican revolt”</span></a> and record <a href="https://colchesterheritage.co.uk/Monument/MCC1361">MCC1361</a>. Colchester Archaeological Trust, <a href="https://catuk.org/the-fenwick-treasure-at-williams-griffin/"><span class="nq">“The Fenwick Treasure at Williams &amp; Griffin!”</span></a> (2014). Victoria County History, <i>Essex</i> vol. 9 (1994), <a href="https://www.british-history.ac.uk/vch/essex/vol9/pp2-18"><span class="nq">“Iron-Age and Roman Colchester”</span></a>.</p>
+      <p class="small"><i>Roman Inscriptions of Britain</i>, <a href="https://romaninscriptionsofbritain.org/inscriptions/200">RIB 200</a> and <a href="https://romaninscriptionsofbritain.org/inscriptions/201">RIB 201</a> (RIB Online, text CC BY 4.0). J. Mallinson, S. Benfield, D. Hardy and M. J. Matthews, <a href="https://caguk.net/wp-content/uploads/2013/01/Longinus-Excavation-1928-1996.pdf"><i>Notes on the re-excavation of the Longinus site, Beverley Road, Colchester 1996–1999</i></a> (Colchester Archaeological Group). <i>The Irish Times</i>, 31 October 2000.</p>
+      <p class="small">K. Pitt with F. Seeley, <a href="https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-4072-1/dissemination/pdf/LAMAS_Vol64_13-56_Poultry.pdf"><span class="nq">“Excavations at 36–39 Poultry, London EC2”</span></a> (MOLA), <i>Transactions of the London and Middlesex Archaeological Society</i> 64. London Museum, <a href="https://www.londonmuseum.org.uk/collections/london-stories/boudica-rebel-queen-iceni/"><span class="nq">“Boudica: Rebel queen of the Iceni”</span></a>. K. Lockyear and E. Shlasko, <a href="https://discovery.ucl.ac.uk/id/eprint/1474100/"><span class="nq">“Under the Park”</span></a>, <i>Archaeological Prospection</i> 24 (2017) (authors’ version, UCL Discovery, 2015). University of Warwick, Warwick Classics Network, <a href="https://warwick.ac.uk/fac/arts/classics/warwickclassicsnetwork/romancoventry/resources/boudica/revolt"><span class="nq">“Boudica’s Revolt”</span></a>. S. S. Frere, <i>Verulamium Excavations</i> I (1972), cited through these. M. Millett, <span class="nq">“Boudicca, the first Colchester Potters’ Shop, and the dating of Neronian Samian”</span>, <i>Britannia</i> 18 (1987). Fison Way (the Writing focus example): as in Lesson 1. The NESA <i>Glossary of key words</i> (definitions quoted word for word). All quoted briefly, with credit.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet u4l08-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>The tombstone of Longinus Sdapeze, Colchester (RIB 201), with its face restored after the 1996 find</b> · Photo: Kognos · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Funerary_Stela_of_Longinus,_Colchester_01.jpg">source</a></li><li><b>The Fenwick Treasure: gold and silver jewellery and coins found under a burnt house in Colchester (2014)</b> · Photo: Jamie Heath · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Fenwick_Treasure_02_(51220284542).jpg">source</a></li><li><b>The tombstone of Marcus Favonius Facilis, centurion of the Twentieth Legion, Colchester (RIB 200)</b> · Photo: Thomas Quine · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Gravestone_of_Roman_Legionnaire_Flatonius_Facili.jpg">source</a></li></ul>
+        <p class="small">All images are openly licensed and were resized or cropped for the web. Each is shared under the licence shown. The section through the burnt layer is drawn for this lesson. Photographs of the layer itself: see the <a href="https://colchesterheritage.co.uk/the-boudican-revolt">Colchester Heritage Explorer</a>.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

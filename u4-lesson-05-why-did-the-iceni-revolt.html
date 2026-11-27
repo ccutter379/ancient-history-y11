@@ -1,0 +1,1655 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U4 L5 · Why Did the Iceni Revolt? Prasutagus, Decianus Catus and the Outrages</title>
+<meta name="description" content="Year 11 Ancient History, case study Boudicca: what Tacitus and Cassius Dio say caused the revolt (Prasutagus’s will, the outrages against his family and the procurator Decianus Catus), and how to deconstruct a ‘to what extent’ question and write a thesis that concedes, then judges how far.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#2D5F2E; --bright:#3F8A40; --tint:#E6F1E4; --statement:#2D5F2E;
+  --solid:#2D5F2E; --soft:#D3EBCF; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#A8D8A2; --bright:#6FBF68; --tint:#16301A; --statement:#244B25; --soft:#D3EBCF; } }
+:root[data-theme="dark"]{ --deep:#A8D8A2; --bright:#6FBF68; --tint:#16301A; --statement:#244B25; --soft:#D3EBCF; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 4 Lesson 5 only (every class starts u4l05-) */
+
+/* title picture; content notice; goals slide syllabus line; credits links */
+.u4l05-cover img{max-height:38vh; object-fit:contain;}
+.u4l05-notice{border-left:5px solid var(--c-judgement); background:var(--w-judgement); border-radius:0 8px 8px 0;
+  padding:.5em .9em; font-size:calc(var(--fs-body)*.82); line-height:1.4;}
+.u4l05-notice b{color:var(--c-judgement);}
+.u4l05-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u4l05-cite a{color:var(--deep);}
+
+/* supported reading: extract + questions; glossary line */
+.u4l05-gloss{margin-top:.55em; padding-top:.45em; border-top:1px dashed var(--rule); font-family:var(--ui);
+  font-size:calc(var(--fs-chrome)*.95); color:var(--slate); line-height:1.38;}
+.u4l05-qs{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px); font-size:calc(var(--fs-body)*.88); line-height:1.36;}
+.u4l05-qs .vp{display:block; color:var(--ink); font-weight:400; margin-top:.15em;}
+
+/* the summary extract */
+.u4l05-brief .d{color:var(--ink);}
+
+/* the deconstruction strip (verb · topic · limits · do) */
+.u4l05-dq{display:grid; grid-template-columns:auto 1fr; gap:.25em .8em; margin:0; padding:.55em .9em;
+  border-left:5px solid var(--c-directive); background:var(--w-directive); border-radius:0 8px 8px 0;
+  font-size:calc(var(--fs-body)*.84); line-height:1.38;}
+.u4l05-dq dt{font-weight:700; color:var(--c-directive);}
+.u4l05-dq dd{margin:0;}
+.u4l05-q{font-family:var(--disp); font-size:calc(var(--fs-h2)*.82); line-height:1.25; margin:0;}
+
+/* three theses to rank */
+.u4l05-rank{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.u4l05-rank li{display:grid; grid-template-columns:2em 1fr; gap:.6em; align-items:start; padding:.45em .8em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface); font-size:calc(var(--fs-body)*.86); line-height:1.4;}
+.u4l05-rank .n{width:1.7em; height:1.7em; border-radius:50%; background:var(--solid); color:#fff; font-family:var(--ui);
+  font-weight:700; display:flex; align-items:center; justify-content:center;}
+.u4l05-verdict{display:grid; grid-template-columns:auto 1fr; gap:.25em .7em; margin:0; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.u4l05-verdict dt{font-weight:700;}
+.u4l05-verdict dd{margin:0;}
+
+/* the Writing focus: evidence snippets and the colour key */
+.u4l05-ev{margin:.35em 0 0; padding:.4em .7em; border-left:4px solid var(--rule); background:var(--surface-2);
+  border-radius:0 6px 6px 0; font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.u4l05-ev .src-n{display:block; font-family:var(--ui); font-size:.86em; color:var(--slate); font-weight:600;}
+.u4l05-wfkey{display:flex; flex-direction:column; gap:.2em; margin-top:.35em;}
+.u4l05-wfkey .mq{font-size:calc(var(--fs-body)*.8); line-height:1.3;}
+
+/* the grievance cards */
+.u4l05-gcards{display:grid; grid-template-columns:1fr 1fr; gap:clamp(6px,1vh,10px);}
+.u4l05-gc{display:grid; grid-template-columns:1.7em 1fr; gap:.15em .55em; align-items:start; padding:.4em .65em;
+  border:1px solid var(--rule); border-left:4px solid var(--deep); border-radius:6px; background:var(--surface);
+  font-size:calc(var(--fs-body)*.8); line-height:1.32;}
+.u4l05-gc .n{grid-row:span 2; width:1.6em; height:1.6em; border-radius:50%; background:var(--solid); color:#fff;
+  font-family:var(--ui); font-weight:700; font-size:.9em; display:flex; align-items:center; justify-content:center;}
+.u4l05-gc p{margin:0;}
+.u4l05-gc .s{font-family:var(--ui); font-size:.84em; color:var(--slate); font-weight:600;}
+
+/* a word bank */
+.u4l05-bank{display:flex; flex-wrap:wrap; gap:.4em; margin-top:.35em;}
+.u4l05-bank span{border:1px solid var(--c-keyterm); color:var(--c-keyterm); border-radius:999px; padding:.1em .7em;
+  background:var(--w-keyterm); font-size:calc(var(--fs-body)*.8); font-weight:600;}
+
+/* the sort key */
+.u4l05-key th:first-child, .u4l05-key td:first-child{width:22%; font-weight:700;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u4l05-cover img{max-height:none;}
+  .u4l05-gcards{grid-template-columns:1fr;}
+  .u4l05-key th:first-child, .u4l05-key td:first-child{width:auto;}
+  .u4l05-q{font-size:calc(var(--fs-h2)*.9);}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u4l05-dense{gap:9px;}
+  html:not(.read) .u4l05-dense h2{font-size:calc(var(--fs-h2)*.82);}
+  html:not(.read) .u4l05-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.38;}
+  html:not(.read) .u4l05-dense .quote{font-size:calc(var(--fs-body)*.88);}
+  html:not(.read) .u4l05-dense .src{padding:9px 15px;}
+  html:not(.read) .u4l05-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u4l05-dense .note{padding:.4em .8em;}
+  html:not(.read) .u4l05-dense .note .body, html:not(.read) .u4l05-dense .card .body,
+  html:not(.read) .u4l05-dense .qprompt{font-size:calc(var(--fs-body)*.76); line-height:1.34;}
+  html:not(.read) .u4l05-dense .card{padding:9px 15px;}
+  html:not(.read) .u4l05-dense .card .k{margin-bottom:.2em;}
+  html:not(.read) .u4l05-dense .keylist{gap:5px;}
+  html:not(.read) .u4l05-dense .keylist li{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u4l05-dense .keylist .d{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u4l05-dense .tbl.compact{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u4l05-dense .tbl.compact td{padding:.3em .55em;}
+  html:not(.read) .u4l05-dense .tbl th{padding:.38em .6em;}
+  html:not(.read) .u4l05-dense .figure img{max-height:28vh;}
+  html:not(.read) .u4l05-dense .u4l05-qs{font-size:calc(var(--fs-body)*.74); gap:5px;}
+  html:not(.read) .u4l05-dense .u4l05-gloss{font-size:calc(var(--fs-chrome)*.85);}
+  html:not(.read) .u4l05-dense .u4l05-dq{font-size:calc(var(--fs-body)*.72); padding:.3em .75em;}
+  html:not(.read) .u4l05-dense .u4l05-q{font-size:calc(var(--fs-h2)*.7);}
+  html:not(.read) .u4l05-dense .u4l05-ev{font-size:calc(var(--fs-body)*.72); padding:.3em .6em;}
+  html:not(.read) .u4l05-dense .u4l05-bank span{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u4l05-dense .u4l05-rank li{font-size:calc(var(--fs-body)*.76); padding:.3em .7em;}
+  html:not(.read) .u4l05-dense .u4l05-verdict{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u4l05-dense .u4l05-gc{font-size:calc(var(--fs-body)*.72); padding:.3em .55em;}
+  html:not(.read) .u4l05-dense .u4l05-notice{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u4l05-dense .opts li{font-size:calc(var(--fs-body)*.76); padding:.28em .65em;}
+  html:not(.read) .u4l05-dense .tf li, html:not(.read) .u4l05-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u4l05-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u4l05-dense .prac{gap:6px;}
+  html:not(.read) .u4l05-dense .cornell .cq, html:not(.read) .u4l05-dense .cornell .nts{font-size:calc(var(--fs-body)*.76); padding:.35em .8em;}
+  html:not(.read) .u4l05-dense .checks label{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u4l05-dense .u4l05-wfkey .mq{font-size:calc(var(--fs-body)*.72);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 5" data-title="Why did the Iceni revolt?" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.05fr .95fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 4 · Boudicca · Lesson 5</p>
+      <h1>Why did the Iceni revolt? Prasutagus, Decianus Catus and the outrages</h1>
+      <p class="lead">A king left his kingdom jointly to the emperor and his daughters, hoping to protect his family. Soon after he died, his people were at war with Rome. What do our two Roman writers blame, and how far does each reason explain the revolt?</p>
+      <div class="u4l05-notice"><b>Content notice.</b> Today’s main source names violence against Boudicca and her daughters, including sexual violence. It is read once, briefly and with care, and not discussed in detail. A summary is available instead, and you can talk to your teacher at any time.</div>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u4l05-cover"><figure class="figure contain"><img src="images/u4l05-nero-sestertius.jpg" alt="A sestertius of Nero, emperor when Prasutagus died, struck at Lugdunum (Lyon) in about 65 CE: Nero’s portrait, and the closed doors of the Temple of Janus in Rome. In Cary’s translation of Dio, Seneca’s loan is counted in sesterces" loading="lazy"><figcaption>A sestertius of Nero, emperor when Prasutagus died, struck at Lugdunum (Lyon) in about 65 CE: Nero’s portrait, and the closed doors of the Temple of Janus in Rome. In Cary’s translation of Dio, Seneca’s loan is counted in sesterces — <span class="cr">Photo: Classical Numismatic Group, Inc. (cngcoins.com) · CC BY-SA 2.5</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Review: Lessons 1–4" data-kind="intro practice">
+<div class="wrap u4l05-dense">
+  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <h2>Five questions from Lessons 1–4</h2>
+  <ol class="rq" data-answers>
+    <li>What happened in the revolt of about 47 CE, and what does it show about the Iceni?
+      <span class="sol reveal">When the governor Ostorius “prepared to disarm all whom he suspected”, the Iceni, who had “voluntarily joined our alliance”, were “the first to resist” (Tacitus, <i>Annals</i> 12.31), and they were defeated. So the Iceni had resisted Rome once already, about 13 years before Boudicca’s revolt.</span></li>
+    <li>Governor or procurator: which was Decianus Catus, and what did he control?
+      <span class="sol reveal">The procurator: the official who ran the province’s finances and taxes. The governor, Suetonius Paulinus, commanded the army and was the chief judge.</span></li>
+    <li>What was the colonia at Camulodunum, and whose land was it built on?
+      <span class="sol reveal">A town of Roman citizens, mostly retired soldiers (veterans), founded in about 49 CE “on the conquered lands” (<i>Annals</i> 12.32): usually read as land taken from the Trinovantes.</span></li>
+    <li>Give one difference between Tacitus and Dio as sources for the revolt.
+      <span class="sol reveal">Any one, with its detail: Tacitus published the <i>Annals</i> about 55 years after the revolt, Dio wrote about 150 years after it · Dio’s Book 62 survives mainly in a later summary · Tacitus stresses the outrages against Prasutagus’s family, Dio stresses money and Boudicca’s leadership.</span></li>
+    <li>Writing: join these two sentences with <i>because</i>, <i>but</i> or <i>so</i>: <span class="nq">“The veterans took land. The Trinovantes resented them.”</span>
+      <span class="sol reveal"><span class="nq">“The veterans took land, so the Trinovantes resented them.”</span> (so = the consequence) or <span class="nq">“The Trinovantes resented the veterans because the veterans had taken their land.”</span> (because = the reason). <i>But</i> does not fit: it sets a limit, and there is none here.</span></li>
+  </ol>
+  <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>analyse the reasons for the Iceni’s revolt</li>
+        <li>deconstruct a ‘to what extent’ question and write a thesis on a parallel question</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>explain three grievances of Boudicca and the Iceni, with evidence</li>
+        <li>explain the role of Decianus Catus in two sources</li>
+        <li>write a thesis that concedes, then makes a judgement of degree</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u4l05-syl"><b>Syllabus outcomes:</b> AH-11-02 proposes ideas about the varying causes and effects of events and developments · AH-11-03 explains the role and significance of forces, features, events, individuals and groups in shaping the past · AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-04 recognises causes and effects of events or developments · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U4 L5 · Why did the Iceni revolt?</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (T = Tacitus; D = Dio; P = Prasutagus)</span></div></div>
+      <div class="row"><div class="cq">What did P’s will try to do?</div><div class="nts">emperor co-heir with 2 daughters → to protect kingdom? (T 14.31)</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A new lesson, a new page</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences; a source for every claim.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at the ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Two other places for notes today</span><span class="d">The grievance sort goes on your notes page, in four columns; your thesis goes in your booklet and on a sticky note.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">One checkpoint today: the grievances and the procurator. Write the cue questions afterwards, with exam verbs: explain, analyse, assess.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 5" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u4l05-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for weighing reasons</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Question term</th><th>Meaning, then what the answer must do</th></tr>
+      <tr><td>To what extent</td><td>Not a glossary word: NESA calls it a self-explanatory term. It asks for a judgement of degree (largely, partly, only in part), argued with evidence.</td></tr>
+      <tr><th>Writing terms</th><th>Meaning</th></tr>
+      <tr><td>Thesis</td><td>The overall judgement that answers the question, argued in every paragraph.</td></tr>
+      <tr><td>Connective</td><td>A word that links ideas: time (by 47 CE), cause (as a result), concession (although).</td></tr>
+      <tr><td>Concession</td><td>Admitting the strongest point against your judgement (although, even if), then making the judgement anyway.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Content terms</th><th>Meaning</th></tr>
+      <tr><td>Client king</td><td>A local ruler allowed to keep his kingdom as Rome’s ally, in return for loyalty.</td></tr>
+      <tr><td>Governor / procurator</td><td>The emperor’s army commander and chief judge in a province (Suetonius Paulinus) / the official who ran its finances and taxes (Decianus Catus).</td></tr>
+      <tr><th>Added for this lesson</th><th>Meaning</th></tr>
+      <tr><td>Grievance</td><td>A complaint about treatment people feel is unfair.</td></tr>
+      <tr><td>Heir</td><td>The person who inherits property when its owner dies.</td></tr>
+      <tr><td>Sestertius (plural sesterces)</td><td>A Roman brass coin, and the unit Romans counted large sums in.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The grievances" data-title="Tacitus, Annals 14.31: after Prasutagus died" data-kind="notes">
+<div class="wrap u4l05-dense">
+  <p class="eyebrow">1 · The grievances · I do — read with care, then think aloud: personal, political or economic?</p>
+  <h2>Tacitus: what happened after Prasutagus died</h2>
+  <div class="split veil-parts" style="--cols:1.3fr .7fr" data-veil="Think it through first — then show the answers">
+    <div class="stack">
+    <div class="u4l05-notice"><b>Content notice.</b> The second sentence names violence against Boudicca and her daughters. It is read once; use the summary extract instead if you prefer.</div>
+    <div class="src">
+      <div class="k">Source · Tacitus, <i>Annals</i> 14.31</div>
+      <p class="quote sm">Prasutagus, king of the Iceni, famed for his long prosperity, had made the emperor his heir along with his two daughters, under the impression that this token of submission would put his kingdom and his house out of the reach of wrong. But the reverse was the result, so much so that <span class="match" data-step="m1">his kingdom was plundered by centurions, his house by slaves, as if they were the spoils of war.</span> <span class="match" data-step="m2">First, his wife Boudicea was scourged, and his daughters outraged.</span> <span class="match" data-step="m3">All the chief men of the Iceni, as if Rome had received the whole country as a gift, were stript of their ancestral possessions,</span> <span class="match" data-step="m4">and the king’s relatives were made slaves. Roused by these insults and the dread of worse, reduced as they now were into the condition of a province,</span> they flew to arms and stirred to revolt the Trinobantes and others …</p>
+      <p class="prov">Tacitus, a Roman senator, <i>Annals</i>, published after about 113 CE · trans. A. J. Church and W. J. Brodribb (1876)</p>
+      <p class="u4l05-gloss"><b>Words:</b> token of submission = a sign that he accepted Rome’s power · centurions = Roman army officers · scourged = flogged · outraged = raped (the translators’ 19th-century word) · stript = stripped · ancestral possessions = lands and goods handed down in their families · the condition of a province = ruled directly by Rome, no longer a kingdom</p>
+    </div>
+    </div>
+    <div class="u4l05-qs">
+      <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>The kingdom and the house: what kind of grievance?</b> <span class="vp">Political and economic: Rome’s men treat the kingdom as a prize of war and loot the king’s house.</span></span></p>
+      <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Boudicca and her daughters?</b> <span class="vp">Personal: violence against the king’s family. Tacitus names it in one sentence; so do we.</span></span></p>
+      <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>The chief men?</b> <span class="vp">Economic, and political: they lose their family lands, and with them their rank.</span></span></p>
+      <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>The relatives, and the province?</b> <span class="vp">Political (and personal): the king’s relatives enslaved, and the kingdom ruled directly by Rome.</span></span></p>
+      <p class="mq reveal" data-c="m5"><span class="sw"></span><span><b>Who does Tacitus say did these things?</b> <span class="vp">Only for the plunder: centurions (the kingdom) and slaves (the house). The rest is in the passive (‘was scourged’, ‘were stript’), so he names no one, and no official.</span></span></p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The grievances" data-title="Decianus Catus in two sources" data-kind="notes">
+<div class="wrap u4l05-dense">
+  <p class="eyebrow">1 · The grievances · I do — think aloud: what part does each writer give the procurator?</p>
+  <h2>Decianus Catus, the procurator: two writers, two charges</h2>
+  <div class="split veil-parts" style="--cols:1.3fr .7fr" data-veil="Think it through first — then show the answers">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Tacitus, <i>Annals</i> 14.32 (after the colony at Camulodunum fell)</div>
+        <p class="quote sm">Alarmed by this disaster and by the fury of the province which <span class="match" data-step="m1">he had goaded into war by his rapacity,</span> the procurator Catus crossed over into Gaul.</p>
+        <p class="prov">Tacitus, <i>Annals</i>, published after about 113 CE · trans. Church and Brodribb (1876)</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · Cassius Dio, <i>Roman History</i> 62.2</div>
+        <p class="quote sm"><span class="match" data-step="m2">An excuse for the war was found in the confiscation of the sums of money that Claudius had given to the foremost Britons; for these sums, as Decianus Catus, the procurator of the island, maintained, were to be paid back.</span> This was one reason for the uprising; another was found in the fact that <span class="match" data-step="m3">Seneca, in the hope of receiving a good rate of interest, had lent to the islanders 40,000,000 sesterces that they did not want</span> <span class="ed">[Cary notes that the Greek here is doubtful: another scholar would read “at their request”]</span><span class="match" data-step="m3">, and had afterwards called in this loan all at once</span> and had resorted to severe measures in exacting it.</p>
+        <p class="prov">Cassius Dio, a Greek-speaking Roman senator, <i>Roman History</i>, about 200–222 CE; Book 62 survives mainly in Xiphilinus’s summary · trans. E. Cary (1925)</p>
+        <p class="u4l05-gloss"><b>Words:</b> goaded = provoked, driven · rapacity = greed for money and goods · confiscation = taking property away · maintained = insisted · Seneca = Nero’s adviser · 40,000,000 sesterces = Cary’s conversion: Dio’s Greek says ten million, and names no coin</p>
+      </div>
+    </div>
+    <div class="u4l05-qs">
+      <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>What does Tacitus blame Catus for?</b> <span class="vp">Greed that drove the whole province to war. He says it only as Catus flees to Gaul.</span></span></p>
+      <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>What does Dio say Catus did?</b> <span class="vp">He insisted that Claudius’s gifts to leading Britons were loans, and took the money back: for Dio, ‘an excuse for the war’.</span></span></p>
+      <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>And Dio’s second money grievance?</b> <span class="vp">Seneca’s loan, called in all at once and harshly. Catus has no part in it.</span></span></p>
+      <p class="mq reveal" data-c="m4"><span class="sw"></span><span><b>So what part does each writer give Catus?</b> <span class="vp">Both blame him for money: greed that provoked the war (Tacitus), a demand for repayment (Dio). Neither says he ordered the acts of 14.31.</span></span></p>
+      <p class="mq reveal" data-c="m5"><span class="sw"></span><span><b>Whose grievances are Dio’s?</b> <span class="vp">‘The foremost Britons’ (Claudius’s gifts) and ‘the islanders’ (the loan): Britons more widely, not only the Iceni.</span></span></p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The grievances" data-title="The sources in brief (support)" data-kind="notes">
+<div class="wrap u4l05-dense">
+  <p class="eyebrow">1 · The grievances · Support · a summary extract, for anyone who needs it</p>
+  <h2>The sources in brief</h2>
+  <ol class="keylist u4l05-brief">
+    <li><span class="num">1</span><span class="t">Tacitus, <i>Annals</i> 14.31</span><span class="d">Prasutagus, king of the Iceni, left his kingdom jointly to the emperor and his two daughters, hoping to protect his family. After he died, Roman centurions and slaves looted his kingdom and his house. Boudicca was flogged and her daughters were raped. The leading Iceni lost their family lands, and the king’s relatives were enslaved. The Iceni took up arms and drew the Trinovantes and others into the revolt.</span></li>
+    <li><span class="num">2</span><span class="t">Tacitus, <i>Annals</i> 14.32</span><span class="d">Tacitus says the procurator, Decianus Catus, had driven the province to war by his greed. After the colony at Camulodunum fell, Catus fled to Gaul.</span></li>
+    <li><span class="num">3</span><span class="t">Cassius Dio, <i>Roman History</i> 62.2</span><span class="d">Dio says Catus demanded back money that the emperor Claudius had given to leading Britons, and that Seneca, Nero’s adviser, called in a loan (40 million sesterces in Cary’s translation) all at once and harshly. Dio does not mention Prasutagus or the outrages.</span></li>
+  </ol>
+  <p class="small">A summary in plain words, written for this lesson: it is not a quotation, so quote the sources themselves in your writing.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The grievances" data-title="Notes 1 — The grievances and the procurator" data-kind="notes">
+<div class="wrap u4l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 1</p>
+  <h2>The grievances and the procurator</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U4 L5 · Why did the Iceni revolt?</b></span><span>1 · The grievances</span></div>
+    <div class="row"><div class="cq">What did Prasutagus’s will try to do, and what happened instead?</div>
+      <div class="nts reveal">emperor co-heir with his 2 daughters → to keep kingdom + family safe (T 14.31) <span class="sep">·</span> instead: kingdom plundered by centurions, house by slaves</div></div>
+    <div class="row"><div class="cq">Analyse the grievances Tacitus gives the Iceni.</div>
+      <div class="nts reveal">personal: B flogged, daughters raped <span class="sep">·</span> political: kingdom treated as Rome’s, relatives enslaved, ruled as a province <span class="sep">·</span> economic: chief men lose family lands</div></div>
+    <div class="row"><div class="cq">Explain the role of Decianus Catus in Tacitus and in Dio.</div>
+      <div class="nts reveal">procurator (money, taxes) <span class="sep">·</span> T: his ‘rapacity’ goaded the province into war (14.32); fled to Gaul <span class="sep">·</span> D: Claudius’s gifts to be repaid = ‘an excuse for the war’ (62.2) <span class="sep">·</span> neither: he ordered 14.31</div></div>
+    <div class="row"><div class="cq">What does Dio add that Tacitus does not?</div>
+      <div class="nts reveal">Seneca’s loan: 40m sesterces (Cary’s figure; Dio: 10m, no coin), called in ‘all at once’ (62.2) <span class="sep">·</span> grievances of Britons more widely, not only Iceni <span class="sep">·</span> Greek of ‘did not want’ doubtful</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The question" data-title="Deconstruct the class question" data-kind="notes">
+<div class="wrap u4l05-dense">
+  <p class="eyebrow">2 · The question · We do — deconstruct the class question together · verb · topic · limits · do</p>
+  <p class="u4l05-q"><b>To what extent</b> was the mistreatment of the Iceni the main reason for the revolt of 60 or 61 CE?</p>
+  <p class="qprompt">Deconstruct it: what does this question ask you to do?</p>
+  <div class="veil-parts" data-veil="Deconstruct it first — then show the answers">
+    <dl class="u4l05-dq">
+      <dt>Verb</dt><dd><span class="vp reveal"><b>to what extent</b>: a judgement of degree (how far?), not yes or no. Not a NESA glossary word: a self-explanatory term. Department advice: the closest NESA verb is <b>assess</b>, ‘Make a judgement of value, quality, outcomes, results or size.’</span></dd>
+      <dt>Topic</dt><dd><span class="vp reveal">the mistreatment of the Iceni: what Rome’s men did to the Iceni after Prasutagus died (Tacitus, <i>Annals</i> 14.31)</span></dd>
+      <dt>Limits</dt><dd><span class="vp reveal">the revolt of 60 or 61 CE; <b>the main reason</b>: so weigh the mistreatment against the other reasons, don’t just list it; decide what counts as mistreatment of the Iceni, and say so</span></dd>
+      <dt>Do</dt><dd><span class="vp reveal">a thesis first: concede the strongest point on the other side, then put your degree on ‘the main reason’ and give your reasons.</span></dd>
+    </dl>
+  </div>
+  <div class="card quiet sm"><div class="k">Your Writing toolkit (booklet pages 3–4): directive verbs</div><p class="body">The same four steps for every question: verb · topic · limits · what the answer must do. Today the class models this question; you write your own thesis on a parallel one.</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · The question" data-title="Rank three theses" data-kind="notes">
+<div class="wrap u4l05-dense">
+  <p class="eyebrow">2 · The question · We do — rank three theses on the class question · fingers on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2>Weak, sound or strong? Rank three theses</h2>
+  <p class="u4l05-q"><b>To what extent</b> was the mistreatment of the Iceni the main reason for the revolt of 60 or 61 CE?</p>
+  <div class="split" style="--cols:1.25fr .75fr">
+    <ol class="u4l05-rank">
+      <li><span class="n">A</span><span class="nq">The mistreatment of the Iceni was largely the main reason for the revolt, because Tacitus presents the plunder and the outrages as what roused the Iceni to arms.</span></li>
+      <li><span class="n">B</span><span class="nq">Yes, the mistreatment of the Iceni was the main reason for the revolt, because the Romans treated the Iceni very badly.</span></li>
+      <li><span class="n">C</span><span class="nq">Although the revolt had other causes, such as Seneca’s loan and the veterans’ seizures at Camulodunum, the mistreatment of the Iceni was largely the main reason for it, because Tacitus presents the plunder and the outrages as what roused the Iceni to arms.</span></li>
+    </ol>
+    <div class="note reveal" data-code="judgement" data-veil="Rank them first — then show the answer"><div class="k">Strongest to weakest: C, A, B</div>
+      <dl class="u4l05-verdict">
+        <dt>C · strong</dt><dd>concedes the strongest point against it (<i>although</i>), puts a degree on the question’s claim (<i>largely the main reason</i>) and gives a reason from the source</dd>
+        <dt>A · sound</dt><dd>a degree and a reason, but it ignores the strongest point against it</dd>
+        <dt>B · weak</dt><dd>yes or no, with no degree; and <span class="nq">“treated the Iceni very badly”</span> repeats the question instead of giving evidence</dd>
+      </dl></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Writing focus: to what extent; a thesis that concedes" data-kind="notes">
+<div class="wrap u4l05-dense">
+  <p class="eyebrow">3 · You do · Writing focus · 8 minutes · I do → We do → apply</p>
+  <h2>Writing focus: concede, then judge how far</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="card accent"><div class="k">I do · watch</div>
+      <p class="body"><b>To what extent</b>: not a glossary word. NESA: HSC questions “will continue to incorporate self-explanatory terms like ‘how,’ ‘why,’ or ‘to what extent.’” <span class="small">NESA, <i>Glossary of key words</i></span></p>
+      <p class="body">Your Judge sentence becomes your <b>thesis</b>: concede the strongest point against you, put your <b>degree</b> on the question’s own claim, give your reason.</p>
+      <p class="small">Not <span class="nq">“Yes, the mistreatment was the main reason.”</span> · Worked example on the class question: the other degree from thesis C</p>
+      <p class="quote sm model" data-booklet="model"><span class="match" data-step="m1">Although the outrages against Prasutagus’s family sparked the Iceni’s revolt,</span> they were <span class="match" data-step="m2">only partly its main reason,</span> <span class="match" data-step="m3">because the grievances of other Britons largely explain why it spread.</span></p>
+      <div class="u4l05-wfkey">
+      <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Concession</b>: the strongest point against, with <i>although</i></span></p>
+      <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>Degree</b> on the question’s claim (<i>the main reason</i>)</span></p>
+      <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>Reason</b>, with <i>because</i></span></p>
+      </div>
+    </div>
+    <div class="card"><div class="k">We do · together</div>
+      <p class="body">Rewrite this yes/no thesis as a thesis of degree, with <b>although</b>, <b>whereas</b> or <b>however</b>. <b>To what extent</b> do coins show where the Iceni lived?</p>
+      <p class="body nq">“Yes, the ECEN coins prove where the Iceni lived.”</p>
+      <p class="u4l05-ev"><span class="src-n">Lesson 1 · Talbot (2015)</span>Coin finds show “a distribution incorporating Norfolk, northern Suffolk and parts of fenland Cambridgeshire”. ECEN is “often assumed to be an abbreviation of the tribal name”; others read it as a personal name.</p>
+      <div class="note reveal" data-code="judgement" data-veil="Rewrite it first — then show a model thesis"><div class="k">A model thesis · written for this lesson</div>
+        <p class="quote sm model">Although the coins attributed to the Iceni, some inscribed ECEN, cluster in Norfolk, northern Suffolk and parts of fenland Cambridgeshire, they show only partly where the Iceni lived, because historians still debate whether ECEN is the people’s name or a person’s.</p></div>
+    </div>
+  </div>
+  <div class="card quiet"><div class="k">Apply · in today’s task</div>
+    <p class="body">Your own thesis on a parallel question: <b>To what extent</b> was Decianus Catus responsible for the revolt of 60 or 61 CE? Frame: <span class="nq">“Although …, Decianus Catus was largely / only partly responsible for the revolt, because …”</span> <b>Stage 6:</b> add a sentence with <b>whereas</b> or <b>however</b> naming the other causes. Your Writing toolkit (booklet pages 3–4): connectives by function.</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: sort the grievances">
+<div class="wrap u4l05-dense">
+  <p class="eyebrow">3 · You do · 6 minutes · on your notes page · press K for the timer</p>
+  <h2>Sort the grievances: personal, political, economic or religious?</h2>
+  <div class="split" style="--cols:.72fr 1.28fr">
+    <div class="stack">
+      <div class="card accent sm"><div class="k">Everyone</div>
+        <ol class="body">
+          <li>Rule four columns: personal · political · economic · religious.</li>
+          <li>Sort the ten cards. A card may fit two columns: choose one and write why.</li>
+          <li>Star the grievance you think mattered most, and say why.</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Use the summary extract and your Notes 1. Word bank:</p>
+        <div class="u4l05-bank"><span>largely</span><span>partly</span><span>sparked</span><span>spread</span></div></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Which columns does Tacitus fill, and which does Dio? What might that tell you about each writer?</p></div>
+    </div>
+    <div class="u4l05-gcards">
+      <div class="u4l05-gc"><span class="n">1</span><p>The kingdom plundered by centurions, ‘as if they were the spoils of war’</p><span class="s">Tacitus, <i>Annals</i> 14.31 · the Iceni</span></div>
+      <div class="u4l05-gc"><span class="n">2</span><p>Boudicca flogged; her daughters raped</p><span class="s">Tacitus, <i>Annals</i> 14.31 · the king’s family</span></div>
+      <div class="u4l05-gc"><span class="n">3</span><p>The chief men ‘stript of their ancestral possessions’</p><span class="s">Tacitus, <i>Annals</i> 14.31 · the Iceni</span></div>
+      <div class="u4l05-gc"><span class="n">4</span><p>The king’s relatives made slaves; the kingdom ruled as a province</p><span class="s">Tacitus, <i>Annals</i> 14.31 · the Iceni</span></div>
+      <div class="u4l05-gc"><span class="n">5</span><p>The procurator’s ‘rapacity’ goaded the province into war</p><span class="s">Tacitus, <i>Annals</i> 14.32 · the province</span></div>
+      <div class="u4l05-gc"><span class="n">6</span><p>Catus said Claudius’s gifts to leading Britons ‘were to be paid back’</p><span class="s">Dio, <i>Roman History</i> 62.2 · leading Britons</span></div>
+      <div class="u4l05-gc"><span class="n">7</span><p>Seneca’s loan (40,000,000 sesterces in Cary’s translation) called in all at once</p><span class="s">Dio, <i>Roman History</i> 62.2 · ‘the islanders’</span></div>
+      <div class="u4l05-gc"><span class="n">8</span><p>The veterans at Camulodunum ‘drove people out of their houses’</p><span class="s">Tacitus, <i>Annals</i> 14.31 · near the colony (usually read as the Trinovantes)</span></div>
+      <div class="u4l05-gc"><span class="n">9</span><p>The temple of the Divine Claudius: ‘a citadel, as it seemed, of perpetual tyranny’</p><span class="s">Tacitus, <i>Annals</i> 14.31 · near the colony (usually read as the Trinovantes)</span></div>
+      <div class="u4l05-gc"><span class="n">10</span><p>Men chosen as its priests had to ‘squander their whole fortunes’</p><span class="s">Tacitus, <i>Annals</i> 14.31 · near the colony (usually read as the Trinovantes)</span></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Check your sort" data-kind="practice">
+<div class="wrap u4l05-dense">
+  <p class="eyebrow">3 · You do · check your sort · correct it in a second colour</p>
+  <h2>Check your sort</h2>
+  <div class="tbl-scroll" data-veil="Sort first — then show the answers"><table class="tbl compact u4l05-key">
+    <tr><th>Column</th><th>Cards</th></tr>
+    <tr class="reveal"><td>Personal</td><td>2 (Boudicca and her daughters) · 4 (the king’s relatives)</td></tr>
+    <tr class="reveal"><td>Political</td><td>1 (the kingdom treated as a prize of war) · 3 (land was rank) · 4 (enslaved; ruled as a province) · 8 (people called ‘captives and slaves’) · 9 (the temple as ‘perpetual tyranny’)</td></tr>
+    <tr class="reveal"><td>Economic</td><td>1 (the kingdom looted) · 3 (family lands) · 5 (greed) · 6 (gifts called back) · 7 (the loan) · 8 (houses and farms) · 10 (the priests’ fortunes)</td></tr>
+    <tr class="reveal"><td>Religious</td><td>9 (the temple of the Divine Claudius) · 10 (its priests)</td></tr>
+    <tr class="reveal"><td>Fits two columns</td><td>1 political and economic (looted) · 3 economic and political (land was rank) · 4 personal and political · 8 economic and political (people called ‘captives and slaves’) · 9 religious and political · 10 religious and economic: either column is right with a reason</td></tr>
+    <tr class="reveal"><td>Whose grievance?</td><td>the Iceni: 1–4 · Britons more widely: 5–7 · people near the colony, usually read as the Trinovantes and others: 8–10. Keep this in mind when you weigh any one cause.</td></tr>
+  </table></div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: your thesis on a parallel question">
+<div class="wrap u4l05-dense">
+  <p class="eyebrow">3 · You do · 11 minutes · deconstruct first · then write · press K for the timer</p>
+  <h2><b>To what extent</b> was Decianus Catus responsible for the revolt of 60 or 61 CE?</h2>
+  <p class="qprompt">Deconstruct it: what does this question ask you to do?</p>
+  <div data-veil="Deconstruct it first — then show the answer">
+    <dl class="u4l05-dq reveal">
+      <dt>Verb</dt><dd><b>to what extent</b>: a judgement of degree (how far?), not yes or no</dd>
+      <dt>Topic</dt><dd>Decianus Catus, the procurator: how far his actions caused the revolt</dd>
+      <dt>Limits</dt><dd>the revolt of 60 or 61 CE; Catus as Tacitus and Dio present him; <b>responsible</b>: weigh his part against the other causes</dd>
+      <dt>Do</dt><dd>a thesis: concede the strongest point on the other side, put your degree on <i>responsible for the revolt</i>, give your reason</dd>
+    </dl>
+  </div>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <div class="card accent sm"><div class="k">Everyone · your thesis, 2–3 sentences, in your booklet</div>
+        <ol class="body">
+          <li>Start with the frame: concede, then your degree on <i>responsible for the revolt</i>, then <i>because</i>.</li>
+          <li>Add a sentence with <b>whereas</b> or <b>however</b> naming the other causes you will weigh.</li>
+          <li>Use the evidence: your notes, your sort and the sources’ own words.</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Weigh Dio’s financial explanation against Tacitus’s outrages: why might each writer stress what he does? Write a thesis on this question that uses both.</p></div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Check first: which words in the question does your degree word attach to?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body"><i>Responsible for the revolt</i>. Your thesis says how far Catus was responsible (<i>largely</i>, <i>only partly</i> …), not how greedy he was.</p></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Frame: <span class="nq">“Although …, Decianus Catus was largely / only partly responsible for the revolt, because …”</span></p>
+        <div class="u4l05-bank"><span>largely</span><span>partly</span><span>sparked</span><span>spread</span><span>although</span><span>whereas</span><span>however</span></div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Hinge: the strongest thesis" data-kind="practice">
+<div class="wrap u4l05-dense">
+  <p class="eyebrow">Check for understanding · hinge question · 4 minutes · hold up your A, B, C or D card on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2>Which is the strongest thesis?</h2>
+  <p class="small">For the class question: <b>To what extent</b> was the mistreatment of the Iceni the main reason for the revolt of 60 or 61 CE?</p>
+  <div class="veil-parts" data-veil="Vote first — then show the answer">
+    <ol class="opts">
+      <li id="u4l05-hqA"><span class="n">A</span><span>The Iceni’s mistreatment was only partly the main reason, since other Britons’ grievances spread the revolt.</span></li>
+      <li><span class="n">B</span><span>The revolt had many causes, and every one of them was equally important to the Britons.</span></li>
+      <li><span class="n">C</span><span>Boudicca revolted mainly because she was flogged and her daughters were attacked by Romans.</span></li>
+      <li><span class="n">D</span><span>Tacitus and Dio both discuss the causes of the revolt, but the two writers disagree.</span></li>
+    </ol>
+    <i class="reveal" data-mark="#u4l05-hqA" hidden></i>
+    <div class="note vp reveal" data-code="evidence"><div class="k">A: a degree on the question’s claim, with a reason</div><p class="body"><b>B</b> makes every cause equal, so it never judges how far. <b>C</b> narrows the question to Boudicca and puts no degree on ‘the main reason’. <b>D</b> describes the sources instead of answering. Even A has no concession, so by today’s ranking it is sound, not strong: add <i>Although …</i> to make it strong. A thesis that says <i>largely</i> with its own reason would be just as good: the shape, not the side, makes A the best of the four.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit: your thesis on a sticky note" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit · 3 minutes · before you leave</p>
+  <h2>Your thesis, on a sticky note</h2>
+  <div class="card accent"><div class="k">Everyone</div><p class="body">Copy the first sentence of your thesis on Decianus Catus onto a sticky note, then place it on the line on the board: from <b>not at all</b> responsible to <b>entirely</b> responsible.</p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong thesis includes"><div class="k">A strong thesis includes</div><p class="body">A concession (<i>although</i>, <i>even if</i>) naming the strongest point against it · a degree word on <i>responsible for the revolt</i> (<i>largely</i>, <i>partly</i>, <i>only to a limited extent</i>) · a reason with <i>because</i>, from the sources · no <span class="nq">“This essay will …”</span> · formal words.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> why did others join the Iceni? You will get your thesis back to sharpen it.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Summary" data-kind="notes">
+<div class="wrap u4l05-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>What does Tacitus say happened after Prasutagus died?</li>
+          <li>What does each writer say about Decianus Catus?</li>
+          <li>What must a thesis for a ‘to what extent’ question do?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">According to Tacitus, Prasutagus left his kingdom jointly to the emperor and his daughters to protect it, but after his death centurions and slaves plundered it, Boudicca was flogged and her daughters raped, the leading Iceni lost their family lands and the king’s relatives were enslaved. Both writers blame the procurator, Decianus Catus: Tacitus for the ‘rapacity’ that goaded the province into war, and Dio for demanding back Claudius’s gifts, which Dio sets beside Seneca’s loan. A thesis for a ‘to what extent’ question concedes the strongest point against it, then states how far the question’s claim holds, and why.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Prasutagus’s will</label></li>
+        <li><label><input type="checkbox"> Tacitus’s grievances (14.31)</label></li>
+        <li><label><input type="checkbox"> Catus in Tacitus and in Dio</label></li>
+        <li><label><input type="checkbox"> Seneca’s loan (Dio only)</label></li>
+        <li><label><input type="checkbox"> The question, deconstructed</label></li>
+        <li><label><input type="checkbox"> Your grievance sort</label></li>
+        <li><label><input type="checkbox"> Your thesis</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u4l05-dense">
+  <p class="eyebrow">Practice and review · 1 of 4 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Prasutagus left his whole kingdom to his two daughters.</span>
+      <span class="sol no reveal">False <span class="why">— Tacitus says he made the emperor his heir along with his two daughters (<i>Annals</i> 14.31).</span></span></li>
+    <li><span class="n">2</span><span>Dio describes the flogging of Boudicca and the rape of her daughters.</span>
+      <span class="sol no reveal">False <span class="why">— only Tacitus does (14.31); Dio does not mention Prasutagus or the outrages.</span></span></li>
+    <li><span class="n">3</span><span>Decianus Catus was the governor of Britain.</span>
+      <span class="sol no reveal">False <span class="why">— he was the procurator, in charge of finances and taxes; the governor was Suetonius Paulinus.</span></span></li>
+    <li><span class="n">4</span><span>Tacitus blames the procurator’s greed for driving the province to war.</span>
+      <span class="sol reveal">True <span class="why">— the province “which he had goaded into war by his rapacity” (14.32).</span></span></li>
+    <li><span class="n">5</span><span>For Dio, Seneca’s loan was one of the reasons for the uprising.</span>
+      <span class="sol reveal">True <span class="why">— after Catus’s demand, “This was one reason for the uprising; another was found in the fact that Seneca …” (62.2).</span></span></li>
+    <li><span class="n">6</span><span>A thesis for a ‘to what extent’ question should answer yes or no.</span>
+      <span class="sol no reveal">False <span class="why">— it states how far the question’s claim holds, with a reason; a strong thesis concedes the strongest point against it first.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — theses of degree" data-kind="practice">
+<div class="wrap prac u4l05-dense">
+  <p class="eyebrow">Practice and review · 2 of 4 · writing · concede, then judge how far</p>
+  <h2>Write it as a historian</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · Turn each into a thesis of degree</div>
+        <ol class="body">
+          <li><b>To what extent</b> is Tacitus more reliable than Dio as a source for the revolt? <span class="nq">“Yes, Tacitus is more reliable than Dio.”</span></li>
+          <li><b>To what extent</b> did the colony at Camulodunum do what Rome founded it to do? <span class="nq">“No, the colony did not do what Rome wanted.”</span></li>
+        </ol></div>
+      <div class="src reveal" data-veil="Show model answers"><div class="k">Model answers · written for this lesson</div>
+        <p class="quote sm model">1. Although Dio may preserve details that Tacitus leaves out, such as Seneca’s loan, Tacitus is largely more reliable than Dio for the events of the revolt, because he wrote about 100 years closer to it. 2. Although Rome founded the colony ‘as a defence against the rebels’ (<i>Annals</i> 12.32), it did what Rome intended only to a limited extent, because the veterans ‘drove people out of their houses’ (14.31), so the colony bred the resentment it was meant to prevent.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 2 · Move the degree onto the question’s claim</div>
+        <p class="body"><b>To what extent</b> do coins show where the Iceni lived? <span class="nq">“Although historians debate what ECEN means, the coins are largely found in Norfolk.”</span></p>
+        <p class="small">The degree sits on where the coins are found, not on what the question asks.</p></div>
+      <div class="src reveal" data-veil="Show a model answer"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Although historians still debate what ECEN means, the coins largely show where the Iceni lived, because finds of coins attributed to the Iceni cluster in Norfolk, northern Suffolk and parts of fenland Cambridgeshire.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — extension: two writers, two emphases" data-kind="practice">
+<div class="wrap prac u4l05-dense">
+  <p class="eyebrow">Practice and review · 3 of 4 · extension · analyse</p>
+  <h2>Money or outrage? Why each writer stresses what he does</h2>
+  <div class="split" style="--cols:1fr 1.3fr">
+    <div class="stack">
+      <div class="card quiet"><div class="k">Exercise 3 · one paragraph</div><p class="body">Weigh Dio’s financial explanation against Tacitus’s outrages: why might each writer stress what he does?</p></div>
+      <div class="card quiet sm"><div class="k">Then</div><p class="body">Write a thesis on the Catus question (<b>To what extent</b> was Decianus Catus responsible for the revolt of 60 or 61 CE?) that uses both writers. It is your own: no model is given, because you will keep working on it.</p></div>
+    </div>
+    <div class="src reveal" data-veil="Show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+      <p class="quote sm model">Each writer may stress the causes that suit his purpose. Tacitus, writing a history that judges Rome’s rulers, presents the revolt as provoked by Roman wrongs: he puts the plunder of Prasutagus’s kingdom and the outrages against his family first, has the chief men stripped of their lands ‘as if Rome had received the whole country as a gift’ (<i>Annals</i> 14.31), and blames the procurator’s ‘rapacity’ (14.32). Dio, writing about 150 years later, sets the revolt beside Nero’s ‘child’s play’ in Rome; he gives two money grievances, including a loan from Seneca, Nero’s adviser, calls the procurator’s demand only ‘an excuse for the war’, and makes Buduica herself ‘chiefly instrumental in rousing the natives’ (62.1–2). Neither emphasis can show which grievance the Britons themselves felt most, because no British account survives; and since Dio’s Book 62 survives mainly as a later summary, some of his emphasis may be his summariser’s.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u4l05-dense">
+  <p class="eyebrow">Practice and review · 4 of 4 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>What did Prasutagus’s will say, and why did he make it?
+      <span class="sol reveal">He made the emperor his heir along with his two daughters, hoping to keep his kingdom and his house “out of the reach of wrong” (<i>Annals</i> 14.31).</span></li>
+    <li>According to Tacitus, what happened to the Iceni after Prasutagus died?
+      <span class="sol reveal">His kingdom was plundered by centurions and his house by slaves; Boudicca was flogged and her daughters raped; the chief men lost their family lands; the king’s relatives were enslaved (14.31).</span></li>
+    <li>Explain the role of Decianus Catus in Tacitus’s account.
+      <span class="sol reveal">As procurator, his greed (“rapacity”) goaded the province into war; after Camulodunum fell, he fled to Gaul (14.32).</span></li>
+    <li>Explain the role of Decianus Catus in Dio’s account.
+      <span class="sol reveal">He insisted that Claudius’s gifts to leading Britons were to be paid back: for Dio, “An excuse for the war” and one reason for the uprising (62.2).</span></li>
+    <li>What does Dio add that Tacitus does not mention?
+      <span class="sol reveal">Seneca’s loan, called in all at once (62.2): 40,000,000 sesterces in Cary’s translation (Dio’s Greek says ten million and names no coin). Cary notes that the Greek for “that they did not want” is doubtful.</span></li>
+    <li>What does a thesis for a ‘to what extent’ question do?
+      <span class="sol reveal">It states how far the question’s claim holds (a judgement of degree), with its reason; a strong thesis first concedes the strongest point against it.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u4l05-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u4l05-cite"><div class="k">Written sources</div>
+      <p class="small">Tacitus, <i>Annals</i> 12.31, 12.32, 14.31 and 14.32: trans. A. J. Church and W. J. Brodribb (public domain), <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0078:book=14:chapter=31">Perseus Digital Library</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 US</a>). Cassius Dio, <i>Roman History</i> 62.1–2, with Cary’s note on 62.2: trans. E. Cary (Loeb, vol. VIII, 1925), <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/62*.html">LacusCurtius</a> (public domain in the US; quoted briefly).</p>
+      <p class="small">J. A. Talbot, <i>What is Icenian coinage?</i> (DPhil thesis, University of Oxford, 2015), quoted briefly. Facts: University of Warwick, Warwick Classics Network, <a href="https://warwick.ac.uk/fac/arts/classics/warwickclassicsnetwork/romancoventry/resources/boudica/revolt/">“Boudica’s Revolt”</a>; Classical Numismatic Group, <a href="https://www.cngcoins.com/Coin.aspx?CoinID=163662">Nomos 2, lot 174</a> (the coin). The NESA <i>Glossary of key words</i> (wording quoted exactly). Model sentences and the summary extract were written for this lesson.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet u4l05-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>A brass sestertius of the emperor Nero, struck at Lugdunum (Lyon) in about 65 CE (Classical Numismatic Group)</b> · Photo: Classical Numismatic Group, Inc. (cngcoins.com) · <a href="https://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a> · <a href="https://commons.wikimedia.org/wiki/File:Nero_Sestertius_65_90020174.jpg">source</a></li></ul>
+        <p class="small">All images are public domain or openly licensed, and were resized for the web. Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

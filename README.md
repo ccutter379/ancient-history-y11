@@ -7,7 +7,7 @@ Lesson pages for Year 11 Ancient History (NSW *Ancient History 11–12 Syllabus*
   "Show" button.
 
 Units so far: Unit 1 · The investigation of ancient sites and sources; Unit 2 · Case study: Persepolis; Unit 3 ·
-The treatment and display of human remains.
+The treatment and display of human remains; Unit 4 · Case study: Boudicca.
 
 Every picture is public domain or openly licensed and is credited on its lesson's last slide. Quotations
 are from the editions and translations named on each slide. Outcomes and content: NSW Education Standards

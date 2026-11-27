@@ -1,0 +1,2086 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U4 L9 · The final battle: Celtic fighting methods, Roman weapons and tactics</title>
+<meta name="description" content="Year 11 Ancient History, case study Boudicca: how Tacitus and Cassius Dio describe the final battle of the revolt of 60 or 61 CE, the ground Suetonius chose, Roman weapons and tactics and British fighting methods, what real objects and modern reconstructions can show, and how to analyse why the Romans won while naming who did what.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#2D5F2E; --bright:#3F8A40; --tint:#E6F1E4; --statement:#2D5F2E;
+  --solid:#2D5F2E; --soft:#D3EBCF; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#A8D8A2; --bright:#6FBF68; --tint:#16301A; --statement:#244B25; --soft:#D3EBCF; } }
+:root[data-theme="dark"]{ --deep:#A8D8A2; --bright:#6FBF68; --tint:#16301A; --statement:#244B25; --soft:#D3EBCF; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 4 Lesson 9 only (every class starts u4l09-) */
+
+/* title picture; goals slide syllabus line; credits links */
+.u4l09-cover img{max-height:46vh;}
+.u4l09-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u4l09-cite a{color:var(--deep);}
+
+/* the battle diagram (inline SVG): colours from the shared variables, so it follows the theme */
+.u4l09-fig{margin:0;}
+.u4l09-figcol{min-width:0;}
+.u4l09-svg{display:block; width:100%; height:auto;}
+.u4l09-battle{max-height:58vh;}
+.u4l09-svg text{font-family:var(--ui); fill:var(--ink); font-size:20px;}
+.u4l09-plain{fill:var(--surface);}
+.u4l09-forest-bg{fill:var(--w-evidence);}
+.u4l09-tree{fill:var(--w-evidence); stroke:var(--c-evidence); stroke-width:2.2;}
+.u4l09-side{fill:var(--surface-2); stroke:var(--slate); stroke-width:1.5; stroke-dasharray:5 4;}
+.u4l09-labbg{fill:var(--surface); opacity:.92;}
+.u4l09-svg .u4l09-lab{font-weight:800; font-size:21px; letter-spacing:.03em;}
+.u4l09-svg .u4l09-forest-t{fill:var(--c-evidence);}
+.u4l09-svg .u4l09-sm{font-size:18px;}
+.u4l09-svg .u4l09-xs{font-size:16px;}
+.u4l09-svg .u4l09-xxs{font-size:14px;}
+.u4l09-svg .u4l09-sidet{fill:var(--slate); font-style:italic;}
+.u4l09-leg{fill:var(--c-directive);}
+.u4l09-light{fill:var(--surface); stroke:var(--c-directive); stroke-width:2;}
+.u4l09-cav{fill:var(--c-directive);}
+.u4l09-svg .u4l09-rom-t{fill:var(--c-directive); font-weight:700; paint-order:stroke; stroke:var(--surface); stroke-width:5px;
+  stroke-linejoin:round;}
+.u4l09-svg .u4l09-plain-t{font-style:italic; fill:var(--slate); font-size:20px;}
+.u4l09-svg .u4l09-plain-t2{fill:var(--slate);}
+.u4l09-brit{fill:var(--w-judgement); stroke:var(--c-judgement); stroke-width:1.6;}
+.u4l09-svg .u4l09-brit-t{fill:var(--c-judgement);}
+.u4l09-svg .u4l09-brit-t2{fill:var(--c-judgement); font-weight:600; paint-order:stroke; stroke:var(--surface); stroke-width:4px;}
+.u4l09-wagon{fill:var(--w-counter); stroke:var(--c-counter); stroke-width:2;}
+.u4l09-wheel{fill:var(--surface); stroke:var(--c-counter); stroke-width:2;}
+.u4l09-svg .u4l09-wag-t{fill:var(--c-counter); paint-order:stroke; stroke:var(--surface); stroke-width:5px; stroke-linejoin:round;}
+.u4l09-jav{fill:none; stroke:var(--c-directive); stroke-width:2.5; stroke-dasharray:7 5;}
+.u4l09-jav-head, .u4l09-cavarr-head{fill:var(--c-directive);}
+.u4l09-wedge{fill:var(--c-directive); fill-opacity:.28; stroke:var(--c-directive); stroke-width:2.5;}
+.u4l09-cavarr{fill:none; stroke:var(--c-directive); stroke-width:3;}
+.u4l09-flee{fill:none; stroke:var(--c-judgement); stroke-width:3;}
+.u4l09-flee-head{fill:var(--c-judgement);}
+.u4l09-x{stroke:var(--c-counter); stroke-width:4; stroke-linecap:round;}
+.u4l09-badge{fill:var(--solid); stroke:var(--surface); stroke-width:2.5;}
+.u4l09-svg .u4l09-badgen{fill:#fff; font-weight:800; font-size:18px;}
+
+/* numbered steps beside the diagram: the numbers match its badges */
+.u4l09-steps .num{background:var(--solid);}
+
+/* pictures of weapons and fighting methods */
+.u4l09-pics{display:grid; grid-template-columns:1fr 1fr; gap:clamp(10px,1.4vw,22px); align-items:start;}
+.u4l09-pics .figure img{max-height:27vh; object-fit:contain; background:var(--surface);}
+.u4l09-pics .figure.u4l09-tallimg img{max-height:27vh;}
+.u4l09-side-k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--deep); margin:0 0 .3em;}
+
+/* the comparison grid (Tacitus and Dio) */
+.u4l09-strip{padding:.55em 1em;}
+.u4l09-strip .quote.sm{font-size:calc(var(--fs-body)*.86); line-height:1.4;}
+.u4l09-strip .prov{margin-top:.3em;}
+.u4l09-simdiff .body{max-width:none;}
+.u4l09-grid td:first-child{width:7.2em; font-weight:700;}
+.u4l09-grid td{vertical-align:top;}
+
+/* the deconstruction strip above a question (verb · topic · limits · do) */
+.u4l09-dq{display:grid; grid-template-columns:auto 1fr; gap:.2em .8em; margin:0; padding:.5em .9em;
+  border-left:5px solid var(--c-directive); background:var(--w-directive); border-radius:0 8px 8px 0;
+  font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+.u4l09-dq dt{font-weight:700; color:var(--c-directive);}
+.u4l09-dq dd{margin:0;}
+
+/* before-and-after examples (Feedback in action) and the agency rewrites (Writing focus) */
+.u4l09-ba{display:grid; grid-template-columns:auto 1fr; gap:.15em .7em; margin-top:.4em; font-size:calc(var(--fs-body)*.82);
+  line-height:1.38;}
+.u4l09-ba .l{font-family:var(--ui); font-weight:700; color:var(--slate); font-size:.86em; padding-top:.1em;}
+.u4l09-ba .l.after{color:var(--c-evidence);}
+.u4l09-check{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.35em;}
+.u4l09-check li{display:grid; grid-template-columns:1.7em 1fr; gap:.5em; font-size:calc(var(--fs-body)*.84); line-height:1.34;}
+.u4l09-check .num{width:1.5em; height:1.5em; border-radius:50%; background:var(--solid); color:#fff; display:grid;
+  place-items:center; font-weight:700; font-size:.86em;}
+.u4l09-check .d{display:block; color:var(--slate); font-size:.9em;}
+.u4l09-steps-fia{margin:.2em 0 0; padding-left:1.2em;}
+.u4l09-steps-fia li{margin:.2em 0;}
+.u4l09-sent{margin:.35em 0 0; padding:.35em .7em; border-left:4px solid var(--rule); background:var(--surface-2);
+  border-radius:0 6px 6px 0; font-size:calc(var(--fs-body)*.84); line-height:1.38;}
+.u4l09-sent .n{font-family:var(--ui); font-weight:800; color:var(--deep); margin-right:.4em;}
+.u4l09-sent .fix{display:block; margin-top:.25em; color:var(--ink);}
+
+/* a word bank */
+.u4l09-bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.u4l09-bank span{border:1px solid var(--c-keyterm); color:var(--c-keyterm); border-radius:999px; padding:.1em .7em;
+  background:var(--w-keyterm); font-size:calc(var(--fs-body)*.8); font-weight:600;}
+
+/* paragraphs inside a card need a little air */
+.card .body + .body, .card .body + .u4l09-dq, .card .u4l09-dq + .small, .card .veil-parts, .card .small + .quote{margin-top:.4em;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u4l09-battle{max-height:none;}
+  /* the diagram keeps readable labels on a phone: it scrolls sideways inside its own box, not the page */
+  .u4l09-fig{overflow-x:auto; -webkit-overflow-scrolling:touch; max-width:calc(100vw - 32px);}
+  .u4l09-fig .u4l09-svg{min-width:660px;}
+  .u4l09-fig figcaption{position:sticky; left:0; max-width:calc(100vw - 40px);}
+  .u4l09-pics{grid-template-columns:1fr;}
+  .u4l09-pics .figure img, .u4l09-pics .figure.u4l09-tallimg img{max-height:none;}
+  .u4l09-grid td:first-child{width:auto;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u4l09-dense{gap:9px;}
+  html:not(.read) .u4l09-dense h2{font-size:calc(var(--fs-h2)*.82);}
+  html:not(.read) .u4l09-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.38;}
+  html:not(.read) .u4l09-dense .quote{font-size:calc(var(--fs-body)*.88);}
+  html:not(.read) .u4l09-dense .src{padding:9px 15px;}
+  html:not(.read) .u4l09-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u4l09-dense .note{padding:.4em .8em;}
+  html:not(.read) .u4l09-dense .note .body, html:not(.read) .u4l09-dense .card .body,
+  html:not(.read) .u4l09-dense .qprompt{font-size:calc(var(--fs-body)*.76); line-height:1.34;}
+  html:not(.read) .u4l09-dense .card{padding:9px 15px;}
+  html:not(.read) .u4l09-dense .card .k{margin-bottom:.2em;}
+  html:not(.read) .u4l09-dense .keylist{gap:5px;}
+  html:not(.read) .u4l09-dense .keylist li{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u4l09-dense .keylist .d{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u4l09-dense .tbl.compact{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u4l09-dense .tbl.compact td{padding:.3em .55em;}
+  html:not(.read) .u4l09-dense .tbl th{padding:.38em .6em;}
+  html:not(.read) .u4l09-dense .figure img{max-height:28vh;}
+  html:not(.read) .u4l09-dense .figure figcaption{font-size:calc(var(--fs-chrome)*.9); margin-top:.3em;}
+  html:not(.read) .u4l09-dense .u4l09-pics .figure img{max-height:24vh;}
+  html:not(.read) .u4l09-dense .u4l09-battle{max-height:52vh;}
+  html:not(.read) .u4l09-dense .u4l09-dq{font-size:calc(var(--fs-body)*.7); padding:.3em .75em;}
+  html:not(.read) .u4l09-dense .u4l09-ba{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u4l09-dense .u4l09-check li{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u4l09-dense .u4l09-strip{padding:6px 14px;}
+  html:not(.read) .u4l09-dense .u4l09-strip .quote.sm{font-size:calc(var(--fs-body)*.68); line-height:1.32;}
+  html:not(.read) .u4l09-dense .u4l09-strip .k{margin-bottom:.15em;}
+  html:not(.read) .u4l09-dense .u4l09-grid{font-size:calc(var(--fs-body)*.64);}
+  html:not(.read) .u4l09-dense .u4l09-grid td{padding:.2em .5em; line-height:1.3;}
+  html:not(.read) .u4l09-dense .u4l09-grid th{padding:.28em .5em;}
+  html:not(.read) .u4l09-dense .u4l09-sent{font-size:calc(var(--fs-body)*.72); padding:.28em .6em;}
+  html:not(.read) .u4l09-dense .u4l09-bank span{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u4l09-dense .opts li{font-size:calc(var(--fs-body)*.76); padding:.28em .65em;}
+  html:not(.read) .u4l09-dense .tf li, html:not(.read) .u4l09-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u4l09-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u4l09-dense .prac{gap:6px;}
+  html:not(.read) .u4l09-dense .cornell .cq, html:not(.read) .u4l09-dense .cornell .nts{font-size:calc(var(--fs-body)*.76); padding:.35em .8em;}
+  html:not(.read) .u4l09-dense .checks label{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u4l09-dense .u4l09-steps-fia{font-size:calc(var(--fs-body)*.76);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 9" data-title="The final battle" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:1.1fr .9fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 4 · Boudicca · Lesson 9</p>
+      <h1>The final battle: Celtic fighting methods, Roman weapons and tactics</h1>
+      <p class="lead">A Roman army of about ten thousand faced a far larger British host. How did each side fight, how do our two writers tell it, and how do we analyse why the Romans won?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u4l09-cover"><figure class="figure contain"><img src="images/u4l09-legionary-reenactors.jpg" alt="Modern re-enactors portraying soldiers of the Twentieth Legion, which sent men to the final battle. They carry replica javelins (pila), curved rectangular shields and swords: a reconstruction of Roman equipment, photographed in 2014" loading="lazy"><figcaption>Modern re-enactors portraying soldiers of the Twentieth Legion, which sent men to the final battle. They carry replica javelins (pila), curved rectangular shields and swords: a reconstruction of Roman equipment, photographed in 2014 — <span class="cr">Photo: Muzio58 · CC BY-SA 3.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 9" data-title="Review: Lessons 1–8" data-kind="intro practice">
+<div class="wrap u4l09-dense">
+  <p class="eyebrow">Review · books closed · 6 minutes · press K for the timer</p>
+  <h2>Six questions from Lessons 1–8</h2>
+  <ol class="rq" data-answers>
+    <li>Where did the Iceni live, and how do historians know?
+      <span class="sol reveal">Norfolk, north Suffolk and fenland Cambridgeshire. Tacitus gives their name (<i>Annals</i> 12.31), and the find-spots of their coins give the place.</span></li>
+    <li>What was the procurator’s job, and who held it when the revolt began?
+      <span class="sol reveal">He ran the province’s finances and taxes. Decianus Catus.</span></li>
+    <li>What was a colonia, and which was the first in Britain?
+      <span class="sol reveal">A town of Roman citizens, often veterans. Camulodunum (Colchester).</span></li>
+    <li>Why did Suetonius give up Londinium, according to Tacitus?
+      <span class="sol reveal">His force was too small (“scanty”) and the Ninth’s defeat warned him, so he “resolved to save the province at the cost of a single town” (<i>Annals</i> 14.33).</span></li>
+    <li>What was the Fenwick hoard, and what does it suggest?
+      <span class="sol reveal">Gold and silver jewellery buried in a small pit in the floor of a house in Colchester, found in 2014 under the burnt debris of the revolt. It suggests that someone hid their valuables, <span class="nq">“presumably for safekeeping in anticipation of the revolt”</span> (Colchester Heritage Explorer), and never recovered them.</span></li>
+    <li>Writing · nominalise: <span class="nq">“The Romans seized the Iceni’s estates, and this angered the nobles.”</span>
+      <span class="sol reveal"><span class="nq">“The Romans’ seizure of the Iceni’s estates angered the nobles.”</span> The action (<i>seized</i>) becomes a noun (<i>the seizure</i>), so it can be the subject of the sentence, and the next sentence can build on it (<span class="nq">“This seizure …”</span>).</span></li>
+  </ol>
+  <p class="cue">Mark your own answers in a different colour. Which question did you find hardest?</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 9" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>analyse Celtic fighting methods and Roman weapons and tactics</li>
+        <li>analyse why the Romans won, naming who did what</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>describe three Celtic fighting methods and three Roman weapons or tactics</li>
+        <li>compare Tacitus’s and Dio’s accounts of the battle</li>
+        <li>analyse the reasons for the Roman victory, using active and passive voice deliberately</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u4l09-syl"><b>Syllabus outcomes:</b> AH-11-02 proposes ideas about the varying causes and effects of events and developments · AH-11-03 explains the role and significance of forces, features, events, individuals and groups in shaping the past · AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-05 describes features of places or societies in the ancient world · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 9" data-title="Feedback in action" data-kind="notes">
+<div class="wrap u4l09-dense">
+  <p class="eyebrow">Feedback in action · 6 minutes · press K for the timer · your Lesson 8 paragraph comes back</p>
+  <h2>Rewrite the move your feedback names</h2>
+  <div class="split" style="--cols:1fr 1.15fr">
+    <div class="card quiet"><div class="k">Our class checklist · a strong body paragraph …</div>
+      <ol class="u4l09-check">
+        <li><span class="num">1</span><span><b>Judge</b>: answers the question in the first sentence, with a degree that matches the thesis</span></li>
+        <li><span class="num">2</span><span><b>Evidence</b>: brings in precise evidence with its provenance (who wrote or found it, and when); a source’s exact words short and embedded, with a reference</span></li>
+        <li><span class="num">3</span><span><b>Analyse</b>: says what the evidence shows and how it supports the Judge</span></li>
+        <li><span class="num">4</span><span><b>Evaluate</b>: weighs a limit of the source or a rival view, instead of dismissing it<span class="d">Lesson 8: modality matches the evidence (certainly → strongly suggests → is consistent with → may → cannot confirm)</span></span></li>
+        <li><span class="num">5</span><span><b>Resolve</b>: ends with a sharper judgement, the same degree, linked back to the question</span></li>
+      </ol></div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone</div>
+        <ol class="body u4l09-steps-fia">
+          <li>Read your strength and your next step.</li>
+          <li>Find the sentence your next step points to and underline it.</li>
+          <li>Rewrite it underneath, using that point on the checklist.</li>
+          <li>Check: is it a real change in thinking or language, not just a neater copy?</li>
+          <li>Only after your rewrite: compare your paragraph with the model paragraph at the end of Lesson 8.</li>
+        </ol></div>
+      <div class="note reveal" data-code="evidence" data-veil="Rewrite yours first — then show two examples"><div class="k">Two before-and-after examples · on Lesson 1’s evidence · written for this lesson</div>
+        <div class="u4l09-ba"><span class="l">Point 4</span><span>&nbsp;</span>
+          <span class="l">Before</span><span class="nq">The moulds prove that Fison Way was the Iceni’s royal mint.</span>
+          <span class="l after">After</span><span class="nq">The pellet moulds show that silver coins were made at Fison Way in about 40–50 CE, but they cannot show who controlled the mint.</span></div>
+        <div class="u4l09-ba"><span class="l">Point 5</span><span>&nbsp;</span>
+          <span class="l">Before</span><span class="nq">In conclusion, Fison Way was not a palace.</span>
+          <span class="l after">After</span><span class="nq">On balance, ‘Boudica’s palace’ is best treated as a headline, not a conclusion, although no text tells us for certain what the enclosure was for.</span></div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 9" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U4 L9 · The final battle</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; Ann. = <i>Annals</i>)</span></div></div>
+      <div class="row"><div class="cq">Who wrote about the battle?</div><div class="nts">Tacitus, Ann. 14.34–37 (c. 55 yrs later) · Dio 62.8–12 (c. 150 yrs later) → …</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A new page</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences; a source for every claim.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at the ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Write the cue questions afterwards</span><span class="d">Use exam verbs: describe, compare, analyse. To revise, cover your notes and answer the cues.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">One checkpoint today: the final battle. Then the Writing focus and your analysis.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 9" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u4l09-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for today</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Verb (NESA) and writing term</th><th>Meaning</th></tr>
+      <tr><td>Analyse</td><td>‘Identify components and the relationship between them. Draw out and relate implications.’ — Break the topic into parts and show how they connect.</td></tr>
+      <tr><td>Agency (active and passive voice)</td><td>Who did the action. Active names the doer (<span class="nq">‘Boudicca’s forces burned Londinium’</span>); passive can hide it (‘Londinium was destroyed’).</td></tr>
+      <tr><th>Added today</th><th>Meaning</th></tr>
+      <tr><td>Terret</td><td>A metal ring that guided the reins of a horse-drawn vehicle, such as a chariot.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Content terms</th><th>Meaning</th></tr>
+      <tr><td>Legion / auxiliaries</td><td>A unit of about 5,000 Roman citizen soldiers / soldiers recruited from non-citizens.</td></tr>
+      <tr><td>Pilum / gladius</td><td>The Roman javelin, thrown before the charge / the legionary’s short stabbing sword.</td></tr>
+      <tr><td>Wedge (cuneus)</td><td>A tight, pointed formation used to break into an enemy line; Tacitus’s ‘wedge-like column’.</td></tr>
+      <tr><td>Chariot</td><td>A light two-wheeled war vehicle used by the Britons.</td></tr>
+      <tr><td>Defile</td><td>A narrow pass between hills or woods.</td></tr>
+      <tr><td>Watling Street</td><td>The Roman road running north-west from London; the final battle was probably fought near it.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The battle" data-title="The ground: a defile, a forest, a plain" data-kind="notes">
+<div class="wrap u4l09-dense">
+  <p class="eyebrow">1 · The battle · I do — annotate the diagram from Tacitus’s words · then cold call</p>
+  <h2>The ground: ‘closed in at the rear by a forest’</h2>
+  <div class="split" style="--cols:1.25fr .9fr">
+    <div class="stack u4l09-figcol">
+      <figure class="diagram u4l09-fig"><svg class="u4l09-svg u4l09-battle" viewBox="0 0 900 470" role="img" aria-label="Diagram, drawn from Tacitus's words, not a map: the battle site is unknown. On the left, a forest closes in the rear. In front of it, a narrow defile between two sides that Tacitus does not describe opens to the right onto an open plain. 1: the ground. 2: in the mouth of the defile, the Roman legion in close order, light-armed troops round it, and cavalry on the two wings. 3: across the plain, the great mass of the Britons, infantry and cavalry; behind them, at the far edge of the plain, a line of wagons carrying their wives. 4: the legion holds the defile and throws its javelins. 5: it charges out in a wedge, with the auxiliaries, while the cavalry ride out with lances. 6: the Britons turn to flee, but the wagons behind them block their retreat.">
+<rect class="u4l09-plain" x="0" y="0" width="900" height="470"/>
+<rect class="u4l09-forest-bg" x="0" y="0" width="120" height="470"/>
+<circle class="u4l09-tree" cx="20" cy="22" r="17"/>
+<circle class="u4l09-tree" cx="56" cy="22" r="17"/>
+<circle class="u4l09-tree" cx="92" cy="22" r="17"/>
+<circle class="u4l09-tree" cx="38" cy="69" r="17"/>
+<circle class="u4l09-tree" cx="74" cy="69" r="17"/>
+<circle class="u4l09-tree" cx="110" cy="69" r="17"/>
+<circle class="u4l09-tree" cx="20" cy="116" r="17"/>
+<circle class="u4l09-tree" cx="56" cy="116" r="17"/>
+<circle class="u4l09-tree" cx="92" cy="116" r="17"/>
+<circle class="u4l09-tree" cx="38" cy="163" r="17"/>
+<circle class="u4l09-tree" cx="74" cy="163" r="17"/>
+<circle class="u4l09-tree" cx="110" cy="163" r="17"/>
+<circle class="u4l09-tree" cx="20" cy="210" r="17"/>
+<circle class="u4l09-tree" cx="56" cy="210" r="17"/>
+<circle class="u4l09-tree" cx="92" cy="210" r="17"/>
+<circle class="u4l09-tree" cx="38" cy="257" r="17"/>
+<circle class="u4l09-tree" cx="74" cy="257" r="17"/>
+<circle class="u4l09-tree" cx="110" cy="257" r="17"/>
+<circle class="u4l09-tree" cx="20" cy="304" r="17"/>
+<circle class="u4l09-tree" cx="56" cy="304" r="17"/>
+<circle class="u4l09-tree" cx="92" cy="304" r="17"/>
+<circle class="u4l09-tree" cx="38" cy="351" r="17"/>
+<circle class="u4l09-tree" cx="74" cy="351" r="17"/>
+<circle class="u4l09-tree" cx="110" cy="351" r="17"/>
+<circle class="u4l09-tree" cx="20" cy="398" r="17"/>
+<circle class="u4l09-tree" cx="56" cy="398" r="17"/>
+<circle class="u4l09-tree" cx="92" cy="398" r="17"/>
+<circle class="u4l09-tree" cx="38" cy="445" r="17"/>
+<circle class="u4l09-tree" cx="74" cy="445" r="17"/>
+<circle class="u4l09-tree" cx="110" cy="445" r="17"/>
+<rect class="u4l09-labbg" x="6" y="208" width="110" height="54" rx="6"/>
+<text class="u4l09-t u4l09-lab u4l09-forest-t" x="61" y="230" text-anchor="middle">FOREST</text>
+<text class="u4l09-t u4l09-sm" x="61" y="252" text-anchor="middle">at the rear</text>
+<path class="u4l09-side" d="M120,0 L345,0 C330,60 312,120 310,160 L215,196 L120,192 Z"/>
+<path class="u4l09-side" d="M120,470 L345,470 C330,410 312,350 310,310 L215,274 L120,278 Z"/>
+<text class="u4l09-t u4l09-sm u4l09-sidet" x="222" y="52" text-anchor="middle">side of the defile</text>
+<text class="u4l09-t u4l09-sm u4l09-sidet" x="222" y="432" text-anchor="middle">side of the defile</text>
+<text class="u4l09-t u4l09-xxs u4l09-sidet" x="226" y="74" text-anchor="middle">(Tacitus does not say what)</text>
+<text class="u4l09-t u4l09-xxs u4l09-sidet" x="226" y="454" text-anchor="middle">(Tacitus does not say what)</text>
+<rect class="u4l09-leg" x="196" y="213" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="210" y="213" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="224" y="213" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="238" y="213" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="252" y="213" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="266" y="213" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="196" y="222" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="210" y="222" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="224" y="222" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="238" y="222" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="252" y="222" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="266" y="222" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="196" y="231" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="210" y="231" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="224" y="231" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="238" y="231" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="252" y="231" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="266" y="231" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="196" y="240" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="210" y="240" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="224" y="240" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="238" y="240" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="252" y="240" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="266" y="240" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="196" y="249" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="210" y="249" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="224" y="249" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="238" y="249" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="252" y="249" width="11" height="6" rx="1"/>
+<rect class="u4l09-leg" x="266" y="249" width="11" height="6" rx="1"/>
+<circle class="u4l09-light" cx="300.0" cy="235.0" r="4"/>
+<circle class="u4l09-light" cx="296.3" cy="247.7" r="4"/>
+<circle class="u4l09-light" cx="285.5" cy="258.8" r="4"/>
+<circle class="u4l09-light" cx="269.0" cy="267.0" r="4"/>
+<circle class="u4l09-light" cx="248.8" cy="271.4" r="4"/>
+<circle class="u4l09-light" cx="227.2" cy="271.4" r="4"/>
+<circle class="u4l09-light" cx="207.0" cy="267.0" r="4"/>
+<circle class="u4l09-light" cx="190.5" cy="258.8" r="4"/>
+<circle class="u4l09-light" cx="179.7" cy="247.7" r="4"/>
+<circle class="u4l09-light" cx="176.0" cy="235.0" r="4"/>
+<circle class="u4l09-light" cx="179.7" cy="222.3" r="4"/>
+<circle class="u4l09-light" cx="190.5" cy="211.2" r="4"/>
+<circle class="u4l09-light" cx="207.0" cy="203.0" r="4"/>
+<circle class="u4l09-light" cx="227.2" cy="198.6" r="4"/>
+<circle class="u4l09-light" cx="248.8" cy="198.6" r="4"/>
+<circle class="u4l09-light" cx="269.0" cy="203.0" r="4"/>
+<circle class="u4l09-light" cx="285.5" cy="211.2" r="4"/>
+<circle class="u4l09-light" cx="296.3" cy="222.3" r="4"/>
+<path class="u4l09-cav" d="M312,160 l9,4 l-9,4 Z"/>
+<path class="u4l09-cav" d="M324,160 l9,4 l-9,4 Z"/>
+<path class="u4l09-cav" d="M336,160 l9,4 l-9,4 Z"/>
+<path class="u4l09-cav" d="M348,160 l9,4 l-9,4 Z"/>
+<path class="u4l09-cav" d="M312,172 l9,4 l-9,4 Z"/>
+<path class="u4l09-cav" d="M324,172 l9,4 l-9,4 Z"/>
+<path class="u4l09-cav" d="M336,172 l9,4 l-9,4 Z"/>
+<path class="u4l09-cav" d="M348,172 l9,4 l-9,4 Z"/>
+<path class="u4l09-cav" d="M312,288 l9,4 l-9,4 Z"/>
+<path class="u4l09-cav" d="M324,288 l9,4 l-9,4 Z"/>
+<path class="u4l09-cav" d="M336,288 l9,4 l-9,4 Z"/>
+<path class="u4l09-cav" d="M348,288 l9,4 l-9,4 Z"/>
+<path class="u4l09-cav" d="M312,300 l9,4 l-9,4 Z"/>
+<path class="u4l09-cav" d="M324,300 l9,4 l-9,4 Z"/>
+<path class="u4l09-cav" d="M336,300 l9,4 l-9,4 Z"/>
+<path class="u4l09-cav" d="M348,300 l9,4 l-9,4 Z"/>
+<text class="u4l09-t u4l09-lab u4l09-rom-t" x="330" y="152" text-anchor="start">cavalry</text>
+<text class="u4l09-t u4l09-lab u4l09-rom-t" x="330" y="330" text-anchor="start">cavalry</text>
+<text class="u4l09-t u4l09-plain-t" x="395" y="395" text-anchor="start">open plain</text>
+<text class="u4l09-t u4l09-xs u4l09-plain-t2" x="395" y="417" text-anchor="start">no cover for an ambush</text>
+<circle class="u4l09-brit" cx="625" cy="193" r="4.5"/>
+<circle class="u4l09-brit" cx="537" cy="356" r="4.5"/>
+<circle class="u4l09-brit" cx="502" cy="236" r="4.5"/>
+<circle class="u4l09-brit" cx="650" cy="273" r="4.5"/>
+<circle class="u4l09-brit" cx="511" cy="195" r="4.5"/>
+<circle class="u4l09-brit" cx="690" cy="219" r="4.5"/>
+<circle class="u4l09-brit" cx="696" cy="122" r="4.5"/>
+<circle class="u4l09-brit" cx="564" cy="107" r="4.5"/>
+<circle class="u4l09-brit" cx="637" cy="375" r="4.5"/>
+<circle class="u4l09-brit" cx="659" cy="325" r="4.5"/>
+<circle class="u4l09-brit" cx="604" cy="316" r="4.5"/>
+<circle class="u4l09-brit" cx="527" cy="166" r="4.5"/>
+<circle class="u4l09-brit" cx="682" cy="309" r="4.5"/>
+<circle class="u4l09-brit" cx="614" cy="99" r="4.5"/>
+<circle class="u4l09-brit" cx="572" cy="139" r="4.5"/>
+<circle class="u4l09-brit" cx="576" cy="337" r="4.5"/>
+<circle class="u4l09-brit" cx="554" cy="363" r="4.5"/>
+<circle class="u4l09-brit" cx="602" cy="232" r="4.5"/>
+<circle class="u4l09-brit" cx="506" cy="210" r="4.5"/>
+<circle class="u4l09-brit" cx="661" cy="110" r="4.5"/>
+<circle class="u4l09-brit" cx="656" cy="365" r="4.5"/>
+<circle class="u4l09-brit" cx="523" cy="248" r="4.5"/>
+<circle class="u4l09-brit" cx="634" cy="374" r="4.5"/>
+<circle class="u4l09-brit" cx="613" cy="201" r="4.5"/>
+<circle class="u4l09-brit" cx="672" cy="101" r="4.5"/>
+<circle class="u4l09-brit" cx="657" cy="127" r="4.5"/>
+<circle class="u4l09-brit" cx="664" cy="386" r="4.5"/>
+<circle class="u4l09-brit" cx="515" cy="253" r="4.5"/>
+<circle class="u4l09-brit" cx="664" cy="119" r="4.5"/>
+<circle class="u4l09-brit" cx="690" cy="384" r="4.5"/>
+<circle class="u4l09-brit" cx="564" cy="272" r="4.5"/>
+<circle class="u4l09-brit" cx="512" cy="191" r="4.5"/>
+<circle class="u4l09-brit" cx="682" cy="265" r="4.5"/>
+<circle class="u4l09-brit" cx="709" cy="99" r="4.5"/>
+<circle class="u4l09-brit" cx="594" cy="355" r="4.5"/>
+<circle class="u4l09-brit" cx="658" cy="219" r="4.5"/>
+<circle class="u4l09-brit" cx="609" cy="395" r="4.5"/>
+<circle class="u4l09-brit" cx="655" cy="76" r="4.5"/>
+<circle class="u4l09-brit" cx="716" cy="178" r="4.5"/>
+<circle class="u4l09-brit" cx="617" cy="140" r="4.5"/>
+<circle class="u4l09-brit" cx="620" cy="177" r="4.5"/>
+<circle class="u4l09-brit" cx="524" cy="278" r="4.5"/>
+<circle class="u4l09-brit" cx="528" cy="329" r="4.5"/>
+<circle class="u4l09-brit" cx="718" cy="234" r="4.5"/>
+<circle class="u4l09-brit" cx="692" cy="152" r="4.5"/>
+<circle class="u4l09-brit" cx="699" cy="210" r="4.5"/>
+<circle class="u4l09-brit" cx="608" cy="193" r="4.5"/>
+<circle class="u4l09-brit" cx="732" cy="192" r="4.5"/>
+<circle class="u4l09-brit" cx="680" cy="126" r="4.5"/>
+<circle class="u4l09-brit" cx="728" cy="155" r="4.5"/>
+<circle class="u4l09-brit" cx="766" cy="270" r="4.5"/>
+<circle class="u4l09-brit" cx="556" cy="198" r="4.5"/>
+<circle class="u4l09-brit" cx="665" cy="389" r="4.5"/>
+<circle class="u4l09-brit" cx="596" cy="116" r="4.5"/>
+<circle class="u4l09-brit" cx="652" cy="115" r="4.5"/>
+<circle class="u4l09-brit" cx="523" cy="253" r="4.5"/>
+<circle class="u4l09-brit" cx="688" cy="92" r="4.5"/>
+<circle class="u4l09-brit" cx="622" cy="302" r="4.5"/>
+<circle class="u4l09-brit" cx="706" cy="196" r="4.5"/>
+<circle class="u4l09-brit" cx="740" cy="126" r="4.5"/>
+<circle class="u4l09-brit" cx="693" cy="325" r="4.5"/>
+<circle class="u4l09-brit" cx="738" cy="233" r="4.5"/>
+<circle class="u4l09-brit" cx="643" cy="127" r="4.5"/>
+<circle class="u4l09-brit" cx="670" cy="98" r="4.5"/>
+<circle class="u4l09-brit" cx="711" cy="143" r="4.5"/>
+<circle class="u4l09-brit" cx="623" cy="255" r="4.5"/>
+<circle class="u4l09-brit" cx="605" cy="127" r="4.5"/>
+<circle class="u4l09-brit" cx="630" cy="382" r="4.5"/>
+<circle class="u4l09-brit" cx="645" cy="381" r="4.5"/>
+<circle class="u4l09-brit" cx="740" cy="250" r="4.5"/>
+<circle class="u4l09-brit" cx="641" cy="247" r="4.5"/>
+<circle class="u4l09-brit" cx="674" cy="249" r="4.5"/>
+<circle class="u4l09-brit" cx="581" cy="309" r="4.5"/>
+<circle class="u4l09-brit" cx="695" cy="104" r="4.5"/>
+<circle class="u4l09-brit" cx="689" cy="220" r="4.5"/>
+<circle class="u4l09-brit" cx="632" cy="280" r="4.5"/>
+<circle class="u4l09-brit" cx="514" cy="269" r="4.5"/>
+<circle class="u4l09-brit" cx="601" cy="360" r="4.5"/>
+<circle class="u4l09-brit" cx="562" cy="342" r="4.5"/>
+<circle class="u4l09-brit" cx="697" cy="276" r="4.5"/>
+<circle class="u4l09-brit" cx="661" cy="272" r="4.5"/>
+<circle class="u4l09-brit" cx="683" cy="204" r="4.5"/>
+<circle class="u4l09-brit" cx="519" cy="132" r="4.5"/>
+<circle class="u4l09-brit" cx="664" cy="130" r="4.5"/>
+<circle class="u4l09-brit" cx="518" cy="187" r="4.5"/>
+<circle class="u4l09-brit" cx="627" cy="247" r="4.5"/>
+<circle class="u4l09-brit" cx="507" cy="326" r="4.5"/>
+<circle class="u4l09-brit" cx="590" cy="328" r="4.5"/>
+<circle class="u4l09-brit" cx="659" cy="392" r="4.5"/>
+<circle class="u4l09-brit" cx="529" cy="185" r="4.5"/>
+<circle class="u4l09-brit" cx="562" cy="327" r="4.5"/>
+<circle class="u4l09-brit" cx="552" cy="143" r="4.5"/>
+<circle class="u4l09-brit" cx="601" cy="315" r="4.5"/>
+<circle class="u4l09-brit" cx="626" cy="242" r="4.5"/>
+<circle class="u4l09-brit" cx="600" cy="279" r="4.5"/>
+<circle class="u4l09-brit" cx="564" cy="155" r="4.5"/>
+<circle class="u4l09-brit" cx="640" cy="135" r="4.5"/>
+<circle class="u4l09-brit" cx="619" cy="381" r="4.5"/>
+<circle class="u4l09-brit" cx="716" cy="89" r="4.5"/>
+<circle class="u4l09-brit" cx="568" cy="351" r="4.5"/>
+<circle class="u4l09-brit" cx="663" cy="143" r="4.5"/>
+<circle class="u4l09-brit" cx="516" cy="161" r="4.5"/>
+<circle class="u4l09-brit" cx="581" cy="334" r="4.5"/>
+<circle class="u4l09-brit" cx="586" cy="152" r="4.5"/>
+<circle class="u4l09-brit" cx="663" cy="232" r="4.5"/>
+<circle class="u4l09-brit" cx="594" cy="346" r="4.5"/>
+<circle class="u4l09-brit" cx="608" cy="139" r="4.5"/>
+<circle class="u4l09-brit" cx="575" cy="222" r="4.5"/>
+<circle class="u4l09-brit" cx="665" cy="258" r="4.5"/>
+<circle class="u4l09-brit" cx="619" cy="131" r="4.5"/>
+<circle class="u4l09-brit" cx="609" cy="177" r="4.5"/>
+<circle class="u4l09-brit" cx="546" cy="249" r="4.5"/>
+<circle class="u4l09-brit" cx="551" cy="305" r="4.5"/>
+<circle class="u4l09-brit" cx="678" cy="115" r="4.5"/>
+<circle class="u4l09-brit" cx="669" cy="181" r="4.5"/>
+<circle class="u4l09-brit" cx="621" cy="270" r="4.5"/>
+<circle class="u4l09-brit" cx="706" cy="362" r="4.5"/>
+<circle class="u4l09-brit" cx="698" cy="140" r="4.5"/>
+<circle class="u4l09-brit" cx="646" cy="181" r="4.5"/>
+<circle class="u4l09-brit" cx="505" cy="252" r="4.5"/>
+<circle class="u4l09-brit" cx="627" cy="356" r="4.5"/>
+<circle class="u4l09-brit" cx="587" cy="345" r="4.5"/>
+<circle class="u4l09-brit" cx="639" cy="103" r="4.5"/>
+<circle class="u4l09-brit" cx="694" cy="164" r="4.5"/>
+<circle class="u4l09-brit" cx="644" cy="94" r="4.5"/>
+<circle class="u4l09-brit" cx="544" cy="102" r="4.5"/>
+<circle class="u4l09-brit" cx="675" cy="201" r="4.5"/>
+<circle class="u4l09-brit" cx="740" cy="237" r="4.5"/>
+<circle class="u4l09-brit" cx="536" cy="298" r="4.5"/>
+<circle class="u4l09-brit" cx="597" cy="159" r="4.5"/>
+<circle class="u4l09-brit" cx="587" cy="197" r="4.5"/>
+<circle class="u4l09-brit" cx="549" cy="272" r="4.5"/>
+<circle class="u4l09-brit" cx="734" cy="258" r="4.5"/>
+<circle class="u4l09-brit" cx="503" cy="296" r="4.5"/>
+<circle class="u4l09-brit" cx="505" cy="228" r="4.5"/>
+<circle class="u4l09-brit" cx="734" cy="293" r="4.5"/>
+<circle class="u4l09-brit" cx="745" cy="319" r="4.5"/>
+<circle class="u4l09-brit" cx="574" cy="117" r="4.5"/>
+<circle class="u4l09-brit" cx="622" cy="294" r="4.5"/>
+<circle class="u4l09-brit" cx="563" cy="179" r="4.5"/>
+<circle class="u4l09-brit" cx="702" cy="185" r="4.5"/>
+<circle class="u4l09-brit" cx="662" cy="250" r="4.5"/>
+<circle class="u4l09-brit" cx="550" cy="327" r="4.5"/>
+<circle class="u4l09-brit" cx="681" cy="102" r="4.5"/>
+<circle class="u4l09-brit" cx="536" cy="140" r="4.5"/>
+<circle class="u4l09-brit" cx="647" cy="368" r="4.5"/>
+<circle class="u4l09-brit" cx="558" cy="137" r="4.5"/>
+<circle class="u4l09-brit" cx="685" cy="210" r="4.5"/>
+<circle class="u4l09-brit" cx="753" cy="306" r="4.5"/>
+<circle class="u4l09-brit" cx="634" cy="90" r="4.5"/>
+<circle class="u4l09-brit" cx="718" cy="202" r="4.5"/>
+<circle class="u4l09-brit" cx="625" cy="279" r="4.5"/>
+<circle class="u4l09-brit" cx="760" cy="253" r="4.5"/>
+<circle class="u4l09-brit" cx="523" cy="187" r="4.5"/>
+<circle class="u4l09-brit" cx="740" cy="323" r="4.5"/>
+<circle class="u4l09-brit" cx="643" cy="378" r="4.5"/>
+<circle class="u4l09-brit" cx="646" cy="291" r="4.5"/>
+<circle class="u4l09-brit" cx="657" cy="136" r="4.5"/>
+<circle class="u4l09-brit" cx="725" cy="164" r="4.5"/>
+<circle class="u4l09-brit" cx="535" cy="168" r="4.5"/>
+<circle class="u4l09-brit" cx="510" cy="204" r="4.5"/>
+<circle class="u4l09-brit" cx="710" cy="220" r="4.5"/>
+<circle class="u4l09-brit" cx="547" cy="117" r="4.5"/>
+<circle class="u4l09-brit" cx="655" cy="136" r="4.5"/>
+<circle class="u4l09-brit" cx="680" cy="243" r="4.5"/>
+<circle class="u4l09-brit" cx="657" cy="349" r="4.5"/>
+<circle class="u4l09-brit" cx="713" cy="374" r="4.5"/>
+<circle class="u4l09-brit" cx="541" cy="195" r="4.5"/>
+<circle class="u4l09-brit" cx="759" cy="201" r="4.5"/>
+<circle class="u4l09-brit" cx="577" cy="229" r="4.5"/>
+<circle class="u4l09-brit" cx="549" cy="350" r="4.5"/>
+<circle class="u4l09-brit" cx="672" cy="101" r="4.5"/>
+<circle class="u4l09-brit" cx="760" cy="242" r="4.5"/>
+<circle class="u4l09-brit" cx="569" cy="272" r="4.5"/>
+<circle class="u4l09-brit" cx="756" cy="184" r="4.5"/>
+<circle class="u4l09-brit" cx="516" cy="244" r="4.5"/>
+<circle class="u4l09-brit" cx="584" cy="351" r="4.5"/>
+<circle class="u4l09-brit" cx="625" cy="111" r="4.5"/>
+<circle class="u4l09-brit" cx="584" cy="144" r="4.5"/>
+<circle class="u4l09-brit" cx="548" cy="280" r="4.5"/>
+<circle class="u4l09-brit" cx="753" cy="192" r="4.5"/>
+<circle class="u4l09-brit" cx="672" cy="177" r="4.5"/>
+<circle class="u4l09-brit" cx="747" cy="252" r="4.5"/>
+<circle class="u4l09-brit" cx="508" cy="315" r="4.5"/>
+<circle class="u4l09-brit" cx="692" cy="188" r="4.5"/>
+<circle class="u4l09-brit" cx="651" cy="303" r="4.5"/>
+<circle class="u4l09-brit" cx="520" cy="303" r="4.5"/>
+<circle class="u4l09-brit" cx="691" cy="381" r="4.5"/>
+<circle class="u4l09-brit" cx="516" cy="259" r="4.5"/>
+<circle class="u4l09-brit" cx="637" cy="349" r="4.5"/>
+<rect class="u4l09-labbg" x="527" y="18" width="216" height="40" rx="6"/>
+<text class="u4l09-t u4l09-lab u4l09-brit-t" x="635" y="45" text-anchor="middle">the Britons</text>
+<text class="u4l09-t u4l09-xs u4l09-brit-t2" x="635" y="452" text-anchor="middle">masses of infantry and cavalry</text>
+<rect class="u4l09-wagon" x="825" y="41" width="30" height="16" rx="3"/><circle class="u4l09-wheel" cx="832" cy="59" r="5"/><circle class="u4l09-wheel" cx="848" cy="59" r="5"/>
+<rect class="u4l09-wagon" x="814" y="91" width="30" height="16" rx="3"/><circle class="u4l09-wheel" cx="821" cy="109" r="5"/><circle class="u4l09-wheel" cx="837" cy="109" r="5"/>
+<rect class="u4l09-wagon" x="805" y="141" width="30" height="16" rx="3"/><circle class="u4l09-wheel" cx="812" cy="159" r="5"/><circle class="u4l09-wheel" cx="828" cy="159" r="5"/>
+<rect class="u4l09-wagon" x="800" y="191" width="30" height="16" rx="3"/><circle class="u4l09-wheel" cx="807" cy="209" r="5"/><circle class="u4l09-wheel" cx="823" cy="209" r="5"/>
+<rect class="u4l09-wagon" x="800" y="241" width="30" height="16" rx="3"/><circle class="u4l09-wheel" cx="807" cy="259" r="5"/><circle class="u4l09-wheel" cx="823" cy="259" r="5"/>
+<rect class="u4l09-wagon" x="805" y="291" width="30" height="16" rx="3"/><circle class="u4l09-wheel" cx="812" cy="309" r="5"/><circle class="u4l09-wheel" cx="828" cy="309" r="5"/>
+<rect class="u4l09-wagon" x="814" y="341" width="30" height="16" rx="3"/><circle class="u4l09-wheel" cx="821" cy="359" r="5"/><circle class="u4l09-wheel" cx="837" cy="359" r="5"/>
+<rect class="u4l09-wagon" x="825" y="391" width="30" height="16" rx="3"/><circle class="u4l09-wheel" cx="832" cy="409" r="5"/><circle class="u4l09-wheel" cx="848" cy="409" r="5"/>
+<text class="u4l09-t u4l09-lab u4l09-wag-t" x="846" y="458" text-anchor="middle">wagons</text>
+<path class="u4l09-jav" d="M300.0,214.0 L454.1,197.7"/><path class="u4l09-jav-head" d="M470.0,196.0 L453.2,189.7 L454.9,205.6 Z"/>
+<path class="u4l09-jav" d="M300.0,235.0 L454.0,235.0"/><path class="u4l09-jav-head" d="M470.0,235.0 L454.0,227.0 L454.0,243.0 Z"/>
+<path class="u4l09-jav" d="M300.0,256.0 L454.1,272.3"/><path class="u4l09-jav-head" d="M470.0,274.0 L454.9,264.4 L453.2,280.3 Z"/>
+<text class="u4l09-t u4l09-sm u4l09-rom-t" x="385" y="218" text-anchor="middle">javelins</text>
+<path class="u4l09-wedge" d="M318,248 L500,262 L318,276 Z"/>
+<text class="u4l09-t u4l09-sm u4l09-rom-t" x="405" y="300" text-anchor="middle">wedge</text>
+<path class="u4l09-cavarr" d="M362.0,166.0 L472.6,134.4"/><path class="u4l09-cavarr-head" d="M488.0,130.0 L470.4,126.7 L474.8,142.1 Z"/>
+<path class="u4l09-cavarr" d="M362.0,294.0 L473.0,334.5"/><path class="u4l09-cavarr-head" d="M488.0,340.0 L475.7,327.0 L470.2,342.0 Z"/>
+<path class="u4l09-flee" d="M760.0,150.0 L790.6,135.0"/><path class="u4l09-flee-head" d="M805.0,128.0 L787.1,127.8 L794.1,142.2 Z"/>
+<path class="u4l09-flee" d="M760.0,235.0 L789.0,235.0"/><path class="u4l09-flee-head" d="M805.0,235.0 L789.0,227.0 L789.0,243.0 Z"/>
+<path class="u4l09-flee" d="M760.0,320.0 L790.6,335.0"/><path class="u4l09-flee-head" d="M805.0,342.0 L794.1,327.8 L787.1,342.2 Z"/>
+<path class="u4l09-x" d="M806,119 l14,18 M820,119 l-14,18"/>
+<path class="u4l09-x" d="M806,226 l14,18 M820,226 l-14,18"/>
+<path class="u4l09-x" d="M806,333 l14,18 M820,333 l-14,18"/>
+<circle class="u4l09-badge" cx="160" cy="150" r="15"/><text class="u4l09-t u4l09-badgen" x="160" y="156" text-anchor="middle">1</text>
+<circle class="u4l09-badge" cx="238" cy="186" r="15"/><text class="u4l09-t u4l09-badgen" x="238" y="192" text-anchor="middle">2</text>
+<circle class="u4l09-badge" cx="635" cy="100" r="15"/><text class="u4l09-t u4l09-badgen" x="635" y="106" text-anchor="middle">3</text>
+<circle class="u4l09-badge" cx="430" cy="190" r="15"/><text class="u4l09-t u4l09-badgen" x="430" y="196" text-anchor="middle">4</text>
+<circle class="u4l09-badge" cx="470" cy="300" r="15"/><text class="u4l09-t u4l09-badgen" x="470" y="306" text-anchor="middle">5</text>
+<circle class="u4l09-badge" cx="780" cy="288" r="15"/><text class="u4l09-t u4l09-badgen" x="780" y="294" text-anchor="middle">6</text>
+</svg><figcaption class="small">A diagram drawn for this lesson from Tacitus’s words (<i>Annals</i> 14.34, 14.37), not a map: the site is unknown, probably near the Roman road later called Watling Street (Mancetter, in Warwickshire, is one suggestion). Not to scale.</figcaption></figure>
+      <p class="small"><b>Key:</b> 1 the ground · 2 the Roman lines · 3 the Britons and their wagons · 4 javelins · 5 the wedge · 6 the flight</p>
+    </div>
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Tacitus on the two armies</div>
+        <p class="quote sm">He chose a position approached by a narrow defile, closed in at the rear by a forest, having first ascertained that there was not a soldier of the enemy except in his front, where an open plain extended without any danger from ambuscades. His legions were in close array; round them, the light-armed troops, and the cavalry in dense array on the wings. On the other side, the army of the Britons, with its masses of infantry and cavalry, was confidently exulting, a vaster host than ever had assembled, and so fierce in spirit that they actually brought with them, to witness the victory, their wives riding in waggons, which they had placed on the extreme border of the plain.</p>
+        <p class="prov">Tacitus (about 55–120 CE), <i>Annals</i> 14.34, written about 55 years after the battle · trans. A. J. Church and W. J. Brodribb (1876) · <b>ambuscades</b> = ambushes</p>
+      </div>
+      <p class="qprompt">Why would Suetonius choose a narrow defile with a forest behind it?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show the answer"><p class="body">So his smaller army could be attacked only from the front: the forest closed his rear, the defile narrowed his front, and he made sure the plain hid no ambush.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The battle" data-title="The fight: javelins, the wedge, the flight" data-kind="notes">
+<div class="wrap u4l09-dense">
+  <p class="eyebrow">1 · The battle · I do — how the fight went, in Tacitus · then cold call</p>
+  <h2>Javelins, then the wedge</h2>
+  <div class="split" style="--cols:1.15fr .9fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Tacitus: Suetonius’s orders, in a speech Tacitus wrote for him</div>
+        <p class="quote sm">Only close up the ranks, and having discharged your javelins, then with shields and swords continue the work of bloodshed and destruction, without a thought of plunder.</p>
+        <p class="prov">Tacitus, <i>Annals</i> 14.36 · trans. Church and Brodribb</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · Tacitus: the battle</div>
+        <p class="quote sm">At first, the legion kept its position, clinging to the narrow defile as a defence; when they had exhausted their missiles, which they discharged with unerring aim on the closely approaching foe, they rushed out in a wedge-like column. Similar was the onset of the auxiliaries, while the cavalry with extended lances broke through all who offered a strong resistance. The rest turned their back in flight, and flight proved difficult, because the surrounding waggons had blocked retreat.</p>
+        <p class="prov">Tacitus, <i>Annals</i> 14.37 · trans. Church and Brodribb · <b>onset</b> = attack</p>
+      </div>
+    </div>
+    <div class="stack">
+      <ol class="keylist u4l09-steps">
+        <li class="reveal"><span class="num">4</span><span class="t">Javelins first</span><span class="d">The legion held the defile and threw its javelins as the Britons came close.</span></li>
+        <li class="reveal"><span class="num">5</span><span class="t">The wedge</span><span class="d">Then it charged out “in a wedge-like column”; the auxiliaries did the same; the cavalry rode in “with extended lances”.</span></li>
+        <li class="reveal"><span class="num">6</span><span class="t">The flight</span><span class="d">The Britons fled, but their own wagons, round the edge of the plain, blocked the way.</span></li>
+      </ol>
+      <p class="qprompt reveal">The order to throw javelins, then use shields and swords, is in a speech Tacitus composed. Can we still use it as evidence of Roman tactics?</p>
+      <div class="note reveal" data-code="counter" data-veil="Answer first — then show the answer"><p class="body">Yes, with care. The speech is Tacitus’s own writing, so it is weak evidence of what Suetonius said; but his account of the battle (14.37) describes the same order, missiles then a charge, and the weapons the speech names, <i>pila</i> (javelins) and <i>gladii</i> (swords), were legionaries’ usual weapons, as real finds such as the Strasbourg gladius show.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · The battle" data-title="Weapons and fighting methods: objects and reconstructions" data-kind="notes">
+<div class="wrap u4l09-dense">
+  <p class="eyebrow">1 · The battle · I do — what the objects show · then cold call</p>
+  <h2>Objects from the time, or modern reconstructions?</h2>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="u4l09-pics">
+      <div><p class="u4l09-side-k">Roman</p>
+        <figure class="figure contain"><img src="images/u4l09-gladius-strasbourg.jpg" alt="An iron sword blade with a long tapering point, beside a bronze scabbard decorated with raised and cut-out patterns, in a museum case" loading="lazy"><figcaption>A gladius and its scabbard, 1st century CE, found at Strasbourg in 1904</figcaption></figure></div>
+      <div><p class="u4l09-side-k">Roman</p>
+        <figure class="figure contain"><img src="images/u4l09-legionary-reenactors.jpg" alt="Men dressed as Roman legionaries march along a street, carrying long javelins and curved rectangular shields, with swords on their belts" loading="lazy"><figcaption>Re-enactors with replica javelins (pila), shields and swords, 2014</figcaption></figure></div>
+      <div><p class="u4l09-side-k">British</p>
+        <figure class="figure contain"><img src="images/u4l09-terret-norfolk.jpg" alt="An oval bronze ring with a flat bar across its base, decorated with red enamel, beside a measuring scale" loading="lazy"><figcaption>A terret (rein guide), about 50 BCE – 100 CE, found in Norfolk</figcaption></figure></div>
+      <div><p class="u4l09-side-k">British</p>
+        <figure class="figure contain"><img src="images/u4l09-chariot-reconstruction.jpg" alt="A museum display of a two-wheeled wooden chariot pulled by two model horses, with a model driver and a warrior holding a spear" loading="lazy"><figcaption>A modern museum reconstruction of a Celtic chariot, Austria</figcaption></figure></div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Which two are objects from the time, and which two are modern reconstructions? What can each kind show?</p>
+      <div data-veil="Answer first — then show the answers">
+      <div class="tbl-scroll"><table class="tbl compact">
+        <tr><th>Picture</th><th>What it is</th><th>What it can show, and cannot</th></tr>
+        <tr class="reveal"><td>Gladius</td><td>a real Roman sword, 1st century CE</td><td>the size and shape of a legionary’s sword (blade 53.5 cm); not that it was used in Britain</td></tr>
+        <tr class="reveal"><td>Terret</td><td>a real find from the Iceni area</td><td>that horse-drawn vehicles were probably used there; not that it came from a war chariot</td></tr>
+        <tr class="reveal"><td>Re-enactors</td><td>a modern reconstruction</td><td>how one group imagines the kit was carried; not direct evidence of the past</td></tr>
+        <tr class="reveal"><td>Chariot</td><td>a modern reconstruction</td><td>one museum’s idea of a Celtic chariot; not how British chariots were built</td></tr>
+      </table></div>
+      </div>
+    </div>
+  </div>
+  <p class="small credline">Images: Lyokoï (CC BY-SA 4.0) · Muzio58 (CC BY-SA 3.0) · Norfolk County Council (CC BY-SA 4.0) · Wolfgang Sauber (CC BY-SA 3.0). Full details on the last slide.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Two writers" data-title="Supported reading: Dio on the battle" data-kind="notes">
+<div class="wrap u4l09-dense">
+  <p class="eyebrow">2 · Two writers · We do — supported reading · pause at each question</p>
+  <h2>Dio’s battle: three divisions, chariots and archers</h2>
+  <div class="split" style="--cols:1.3fr .85fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Dio on Paulinus’s choice and the two armies</div>
+        <p class="quote sm">… But as he grew short of food and the barbarians pressed relentlessly upon him, he was compelled, contrary to his judgment, to engage them. Buduica, at the head of an army of about 230,000 men, rode in a chariot herself and assigned the others to their several stations. … so inferior were they in numbers … He therefore separated his army into three divisions, in order to fight at several points at one and the same time, and he made each of the divisions so strong that it could not easily be broken through.</p>
+        <p class="prov">Cassius Dio (about 155–235 CE), <i>Roman History</i> 62.8 · trans. E. Cary (Loeb, 1925) · <b>Paulinus</b> = Suetonius · <b>Buduica</b> = Cary’s spelling of Boudicca</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · Dio on the fighting</div>
+        <p class="quote sm">Thereupon the armies approached each other, the barbarians with much shouting mingled with menacing battle-songs, but the Romans silently and in order until they came within a javelin’s throw of the enemy. … Light-armed troops exchanged missiles with light-armed, heavy-armed were opposed to heavy-armed, cavalry clashed with cavalry, and against the chariots of the barbarians the Roman archers contended. … They contended for a long time, both parties being animated by the same zeal and daring. But finally, late in the day, the Romans prevailed; and they slew many in battle beside the wagons and the forest … In the meantime, however, Buduica fell sick and died.</p>
+        <p class="prov">Dio, <i>Roman History</i> 62.12, about 150 years after the battle; Book 62 survives in a later summary (an epitome) · <b>contended</b> = fought</p>
+      </div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Why does Paulinus fight, in Dio’s account?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show the answer"><p class="body">Not by choice: short of food and pressed by the Britons, he was “compelled, contrary to his judgment”.</p></div>
+      <p class="qprompt">Which Celtic fighting methods does Dio describe?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show the answer"><p class="body">Shouting mingled with “menacing battle-songs”; chariots, which the Roman archers fought; light-armed troops exchanging missiles.</p></div>
+      <p class="qprompt">What question does this source raise?</p>
+      <div class="note reveal" data-code="counter" data-veil="Answer first — then show an example"><p class="body">For example: how could Dio, writing about 150 years later, know the army’s size or the order of the fighting? And how much did the later summary change his words?</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Two writers" data-title="Compare: Tacitus and Dio on the battle" data-kind="notes">
+<div class="wrap u4l09-dense">
+  <p class="eyebrow">2 · Two writers · We do — complete the grid in your booklet · then show it</p>
+  <h2>Same battle, two accounts</h2>
+  <div class="src u4l09-strip"><div class="k">Source · more from Tacitus, for the grid</div><p class="quote sm">Suetonius had … about ten thousand armed men … Boudicea, with her daughters before her in a chariot, went up to tribe after tribe … Some indeed say that there fell little less than eighty thousand of the Britons, with a loss to our soldiers of about four hundred … Boudicea put an end to her life by poison. Pœnius Postumus too, camp-prefect of the second legion … threw himself on his sword.</p><p class="prov">Tacitus, <i>Annals</i> 14.34, 14.35, 14.37 · trans. Church and Brodribb · <b>Boudicea</b> = their spelling of Boudicca</p></div>
+  <div data-veil="Complete your grid first — then show the answers">
+  <div class="tbl-scroll"><table class="tbl compact u4l09-grid">
+    <tr><th>&nbsp;</th><th>Tacitus, <i>Annals</i> 14.34–37 (about 55 years later)</th><th>Dio, <i>Roman History</i> 62.2, 62.8, 62.12 (about 150 years later)</th></tr>
+    <tr class="reveal"><td>Numbers</td><td>Romans “about ten thousand armed men”; Britons “a vaster host than ever had assembled” (no figure). Dead: “Some indeed say” almost 80,000 Britons and about 400 Romans</td><td>Britons about 230,000 (some 120,000 at the start of the rising); Romans “so inferior” in numbers; no figure for the dead</td></tr>
+    <tr class="reveal"><td>Formation</td><td>one position: the legion in close order in the defile, light-armed troops round it, cavalry on the wings</td><td>Paulinus splits his army into “three divisions”, “in order to fight at several points at one and the same time”, each too strong to be broken through easily</td></tr>
+    <tr class="reveal"><td>Chariots</td><td>none in the fighting; Boudicca rides “in a chariot” to the tribes before the battle (14.35)</td><td>Buduica rides in a chariot; Roman archers fight the British chariots</td></tr>
+    <tr class="reveal"><td>Archers</td><td>none named: javelins (“missiles”), then the wedge; cavalry “with extended lances”</td><td>“against the chariots of the barbarians the Roman archers contended”</td></tr>
+    <tr class="reveal"><td>The end</td><td>told briefly: the wagons “blocked retreat”; Boudicca “put an end to her life by poison”; Postumus, whose Second Legion missed the battle, falls on his sword</td><td>long and even until “late in the day”; many killed “beside the wagons and the forest”; Buduica “fell sick and died”</td></tr>
+  </table></div>
+  </div>
+  <p class="qprompt">What is the biggest similarity, and the biggest difference?</p>
+  <div class="note reveal u4l09-simdiff" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">Both: a much smaller, ordered Roman army beat a huge British one. Most different: how it was won (one narrow position, told briefly, in Tacitus; a long, even fight in three divisions, archers against chariots, in Dio), and the numbers and Boudicca’s death.</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Two writers" data-title="Notes — The final battle" data-kind="notes">
+<div class="wrap u4l09-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint</p>
+  <h2>The final battle: ground, weapons, methods, writers</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U4 L9 · The final battle</b></span><span>the battle and its sources</span></div>
+    <div class="row"><div class="cq">Describe the ground Suetonius chose.</div>
+      <div class="nts reveal">narrow defile <span class="sep">·</span> forest at the rear <span class="sep">·</span> open plain in front, no ambush (Ann. 14.34) <span class="sep">·</span> site unknown: probably near Watling Street; Mancetter one suggestion</div></div>
+    <div class="row"><div class="cq">Describe three Roman weapons or tactics.</div>
+      <div class="nts reveal">close order <span class="sep">·</span> javelins (pila) first, then shields and swords (gladii) <span class="sep">·</span> the wedge <span class="sep">·</span> cavalry with lances <span class="sep">·</span> archers against chariots (Dio 62.12)</div></div>
+    <div class="row"><div class="cq">Describe three Celtic fighting methods.</div>
+      <div class="nts reveal">huge masses of infantry and cavalry (Tacitus) <span class="sep">·</span> chariots (Dio) <span class="sep">·</span> shouting and battle-songs (Dio) <span class="sep">·</span> wives brought to watch, in wagons at the edge of the plain (Tacitus)</div></div>
+    <div class="row"><div class="cq">Compare Tacitus and Dio on the battle.</div>
+      <div class="nts reveal">both: small, ordered Roman army beats a huge one <span class="sep">·</span> T: one position, told briefly, “some indeed say” 80,000 v. 400, poison <span class="sep">·</span> D: 230,000, three divisions, archers v. chariots, illness <span class="sep">·</span> numbers = claims</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Writing focus: voice and agency; analyse" data-kind="notes">
+<div class="wrap u4l09-dense">
+  <p class="eyebrow">3 · You do · Writing focus · 7 minutes · I do → We do → apply</p>
+  <h2>Writing focus: who did it? Choose active or passive on purpose</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="card accent"><div class="k">I do · watch</div>
+      <p class="body"><b>Analyse</b>: ‘Identify components and the relationship between them. Draw out and relate implications.’ <span class="small">NESA, <i>Glossary of key words</i></span></p>
+      <p class="body">So an analysis names the parts and shows how they work on each other. To show how, name <b>who did what</b>.</p>
+      <p class="small">Worked examples · written for this lesson</p>
+      <div data-booklet="model">
+        <p class="quote sm model"><b>Hides the agent:</b> Londinium was destroyed.</p>
+        <p class="quote sm model"><b>Names two agents:</b> Boudicca’s forces burned Londinium after Suetonius abandoned it.</p>
+        <p class="quote sm model"><b>A passive with a purpose:</b> Tacitus writes that “the temple where the soldiers had assembled, was stormed after a two days' siege” (<i>Annals</i> 14.32). The passive keeps our eyes on the temple and the people trapped in it.</p>
+      </div>
+      <p class="body"><b>Rule:</b> active when <i>who acted</i> matters to your argument; passive when the place or the people affected should stay in focus, never to hide a cause.</p>
+    </div>
+    <div class="card"><div class="k">We do · together</div>
+      <p class="body">Rewrite 1 and 2 so they name the agent. Keep 3 passive, and say why.</p>
+      <div class="veil-parts" data-veil="Try it first — then show the answers">
+        <p class="u4l09-sent"><span class="n">1</span><span class="nq">The Second Legion was kept away from the battle.</span>
+          <span class="fix vp reveal"><span class="nq">Poenius Postumus, the Second Legion’s camp prefect, disregarded Suetonius’s orders, so his legion missed the battle</span> (<i>Annals</i> 14.37). The agent is the point: someone chose this.</span></p>
+        <p class="u4l09-sent"><span class="n">2</span><span class="nq">About 230,000 Britons are said to have fought.</span>
+          <span class="fix vp reveal"><span class="nq">Dio claims that the Britons numbered about 230,000</span> (62.8). Said by whom? A number needs the name of the writer who claims it.</span></p>
+        <p class="u4l09-sent"><span class="n">3</span><span class="nq">The site of the battle has never been identified.</span>
+          <span class="fix vp reveal">Keep it. The focus is the site; naming the agents (generations of historians and archaeologists) adds nothing to the point.</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="card quiet"><div class="k">Apply · in today’s task</div>
+    <p class="body" style="max-width:none">In your first two sentences, give every action or decision that helped decide the battle an agent and an active verb (who chose, who threw, who charged, who placed). Keep a passive only where you can say why. Frame: <span class="nq">“[Agent] [active verb] …, because …”</span> Your Writing toolkit (booklet pages 3–4): the tense and voice rule.</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: analyse why the Romans won">
+<div class="wrap u4l09-dense">
+  <p class="eyebrow">3 · You do · 14 minutes · deconstruct · check first · write · press K for the timer</p>
+  <h2><b>Analyse</b> why the Romans defeated the Britons in the final battle.</h2>
+  <p class="qprompt">Deconstruct it: what does this question ask you to do?</p>
+  <div data-veil="Deconstruct it first — then show the answer">
+    <dl class="u4l09-dq reveal">
+      <dt>Verb</dt><dd><b>analyse</b>: identify the parts and the relationships between them; draw out what follows (NESA)</dd>
+      <dt>Topic</dt><dd>why the Romans won the final battle</dd>
+      <dt>Limits</dt><dd>the final battle of 60 or 61 CE only, not the whole revolt; Tacitus and Dio, and what the objects show; numbers are claims</dd>
+      <dt>Do</dt><dd>break the victory into its parts (ground, weapons, discipline, numbers); show how they relate; name the agent of every action; end with a judgement</dd>
+    </dl>
+  </div>
+  <div class="split" style="--cols:1.15fr 1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · one paragraph</div>
+        <ol class="body">
+          <li>Open with a judgement: which part mattered most?</li>
+          <li>Take the parts in turn, with evidence from Tacitus and Dio, and show how each one worked on another.</li>
+          <li>Name who did what; keep a passive only on purpose. Underline your agents.</li>
+          <li>Treat the numbers as claims, and end with your judgement, sharpened.</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Tacitus’s figures come with ‘some indeed say’: <b>evaluate</b> what 80,000 and 400 can and cannot tell us, and why historians treat ancient battle figures with caution.</p></div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Check first: what turns a list of reasons into an analysis?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">Relationships. Not four separate reasons (<span class="nq">“ground, weapons, discipline, numbers”</span>), but how one part made another count, and what followed from that.</p></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Frame: <span class="nq">“[Agent] [active verb] …, because …”</span> then <span class="nq">“This mattered because …”</span> Agent bank:</p>
+        <div class="u4l09-bank"><span>Suetonius</span><span>the legion</span><span>the auxiliaries</span><span>the cavalry</span><span>Boudicca’s army</span><span>the Britons</span></div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="A model answer" data-kind="notes">
+<div class="wrap u4l09-dense">
+  <p class="eyebrow">3 · You do · after you write · compare yours with a model</p>
+  <h2>A model answer: why the Romans won the final battle</h2>
+  <div class="split" style="--cols:1.65fr 1fr">
+    <div class="src reveal" data-veil="Write yours first — then show a model answer">
+      <div class="k">A model paragraph · written for this lesson</div>
+      <p class="quote sm model">The Romans defeated a far larger British army mainly because Suetonius chose ground on which his soldiers’ discipline counted for more than the Britons’ numbers. He placed his legion in a narrow defile, ‘closed in at the rear by a forest’ (<i>Annals</i> 14.34), so that the Britons could attack only from the front and could not use their numbers to surround it. In that narrow space, the legionaries turned their weapons into a drill: they held their position, threw their javelins ‘on the closely approaching foe’, and then ‘rushed out in a wedge-like column’ (14.37), while the cavalry broke the strongest resistance with their lances. The size of the British army therefore worked against it, the more so because the Britons had placed the wagons carrying their wives at the edge of the plain, and those wagons ‘blocked retreat’ when the line broke. Yet the British numbers are claims, not counts: Dio’s 230,000 (62.8) and Tacitus’s report that ‘some indeed say’ almost 80,000 Britons died are round figures from Roman writers, and Dio describes a long and even fight in ‘three divisions’, with archers against chariots. Even so, both writers agree that a much smaller, ordered Roman force won, which suggests that discipline, more than weapons alone, decided the battle, and in Tacitus’s account it was the ground Suetonius chose that let that discipline count.</p>
+    </div>
+    <div class="card quiet"><div class="k">Check yours: does it …</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> <span>open with a judgement about which part mattered most?</span></label></li>
+        <li><label><input type="checkbox"> <span>take the parts (ground, weapons, discipline, numbers) with evidence?</span></label></li>
+        <li><label><input type="checkbox"> <span>show how one part made another count?</span></label></li>
+        <li><label><input type="checkbox"> <span>name who did what, with a passive only on purpose?</span></label></li>
+        <li><label><input type="checkbox"> <span>treat the numbers as claims, and use both writers?</span></label></li>
+        <li><label><input type="checkbox"> <span>end with a sharper judgement?</span></label></li>
+      </ul></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Summary" data-kind="notes">
+<div class="wrap u4l09-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>Where, according to Tacitus, did Suetonius set up his army, and how?</li>
+          <li>How did each side fight?</li>
+          <li>How do Tacitus’s and Dio’s accounts differ?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">According to Tacitus, Suetonius placed his army of about 10,000 in a narrow defile with a forest at its rear and an open plain in front, with the legion in close order, light-armed troops round it and cavalry on the wings. In Tacitus, the legionaries threw their javelins and then charged in a wedge against a far larger British army of infantry and cavalry, whose wives watched from wagons at the edge of the plain; Dio adds the Britons’ chariots and battle-songs, and Roman archers. Tacitus tells briefly of a victory won from one position, whereas Dio describes a long fight in three divisions, with archers against chariots, and the two give different numbers and different accounts of how Boudicca died.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> The ground: defile, forest, plain</label></li>
+        <li><label><input type="checkbox"> The Roman lines and the wagons</label></li>
+        <li><label><input type="checkbox"> Javelins, then the wedge</label></li>
+        <li><label><input type="checkbox"> Objects or reconstructions?</label></li>
+        <li><label><input type="checkbox"> Tacitus and Dio compared</label></li>
+        <li><label><input type="checkbox"> Numbers are claims</label></li>
+        <li><label><input type="checkbox"> Analyse; active and passive on purpose</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Hinge: where was the forest?" data-kind="practice">
+<div class="wrap u4l09-dense">
+  <p class="eyebrow">Check for understanding · hinge question · hold up your A, B, C or D card on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2>Where does Tacitus place the forest?</h2>
+  <div class="veil-parts" data-veil="Vote first — then show the answer">
+  <ol class="opts">
+    <li><span class="n">A</span><span>Behind the British wagons, blocking escape</span></li>
+    <li><span class="n">B</span><span>On both flanks, hiding Roman cavalry</span></li>
+    <li id="u4l09-hqC"><span class="n">C</span><span>Behind the Roman line, protecting its rear</span></li>
+    <li><span class="n">D</span><span>In front of the Romans, slowing the charge</span></li>
+  </ol>
+  <i class="reveal" data-mark="#u4l09-hqC" hidden></i>
+  <div class="note vp reveal" data-code="evidence"><div class="k">C: behind the Roman line</div><p class="body">Tacitus: a position “closed in at the rear by a forest” (<i>Annals</i> 14.34). <b>A</b> puts the forest where the wagons were: at the far edge of the plain, behind the Britons. <b>B</b> adds forests on the flanks: Tacitus mentions none, and his cavalry was not hidden but “in dense array on the wings”. <b>D</b> puts the forest where the open plain was: in front, “without any danger from ambuscades”.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 4 minutes · before you leave</p>
+  <h2>Who did it?</h2>
+  <div class="card accent"><div class="k">On your paragraph</div>
+    <ol class="body">
+      <li>Underline every agent: the person or group who did each action.</li>
+      <li>On your ticket, copy one active sentence you are proud of, and one passive you kept, with a few words on why you kept it.</li>
+    </ol></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">An active sentence that names the person or group whose decision or action caused something (Suetonius, the legion, the cavalry, the Britons), with a precise verb (<i>chose</i>, <i>threw</i>, <i>charged</i>, <i>placed</i>). A passive kept for a reason: the agent is unknown, obvious or unimportant, or the people or place affected should stay in focus. Never a passive that hides a cause your analysis needs.</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> the roles of Boudicca and Suetonius Paulinus.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u4l09-dense">
+  <p class="eyebrow">Practice and review · 1 of 4 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Tacitus says there were forests on both sides of the Roman position.</span>
+      <span class="sol no reveal">False <span class="why">— the position was “closed in at the rear by a forest”, with an open plain in front (<i>Annals</i> 14.34).</span></span></li>
+    <li><span class="n">2</span><span>Tacitus says the British army numbered about 230,000.</span>
+      <span class="sol no reveal">False <span class="why">— that is Dio’s figure (62.8); Tacitus gives none, only “a vaster host than ever had assembled”.</span></span></li>
+    <li><span class="n">3</span><span>In Tacitus’s account, the legion threw its javelins first and then charged in a wedge.</span>
+      <span class="sol reveal">True <span class="why">— it “kept its position”, used up its missiles, then “rushed out in a wedge-like column” (14.37).</span></span></li>
+    <li><span class="n">4</span><span>Historians know that the battle was fought at Mancetter.</span>
+      <span class="sol no reveal">False <span class="why">— the site is unknown; it was probably near the road later called Watling Street, and Mancetter is one suggestion.</span></span></li>
+    <li><span class="n">5</span><span>Tacitus and Dio agree about how Boudicca died.</span>
+      <span class="sol no reveal">False <span class="why">— Tacitus says poison (14.37); Dio says she “fell sick and died” (62.12).</span></span></li>
+    <li><span class="n">6</span><span>Dio says that Roman archers fought against the British chariots.</span>
+      <span class="sol reveal">True <span class="why">— “against the chariots of the barbarians the Roman archers contended” (62.12).</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — agency and analysis" data-kind="practice">
+<div class="wrap prac u4l09-dense">
+  <p class="eyebrow">Practice and review · 2 of 4 · writing · deconstruct each question first</p>
+  <h2>Name the agent; analyse two kinds of evidence</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · Active or passive?</div>
+        <p class="body">Rewrite the sentences that hide an agent who matters. Keep any passive you can justify, and say why.</p>
+        <ol class="body">
+          <li><span class="nq">“The Ninth Legion was routed.”</span></li>
+          <li><span class="nq">“The colony was left without walls.”</span></li>
+          <li><span class="nq">“Jewellery was buried in a pit under a house floor in Colchester.”</span></li>
+        </ol></div>
+      <div class="src reveal" data-veil="Show model answers"><div class="k">Model answers · written for this lesson</div>
+        <p class="quote sm model">1 (rewrite): The rebels routed the Ninth Legion as it marched to the rescue of the colony (<i>Annals</i> 14.32).</p>
+        <p class="quote sm model">2 (rewrite): Roman generals had neglected to fortify the colony, Tacitus claims (<i>Annals</i> 14.31).</p>
+        <p class="quote sm model">3 (keep): No one knows who buried it, so the passive is honest: the jewellery, not an unknown owner, is the point.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 2 · Analyse</div><p class="body"><b>Analyse</b> what the Norfolk terret and the chariot reconstruction can tell historians about British chariots. (4 sentences)</p></div>
+      <div class="src reveal" data-veil="Show a model answer"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">The terret and the reconstruction tell historians different things, and each needs the other. The terret is direct evidence: a real enamelled rein guide of about 50 BCE – 100 CE, found in Norfolk, it suggests that people in the Iceni area drove horse-drawn vehicles and decorated their harness. It cannot show, though, whether it came from a war chariot or a cart, or what the vehicle looked like. The reconstruction supplies that whole picture, but because it is a modern museum’s interpretation, it is evidence of what its makers imagined, so historians can use it to picture a chariot, not to prove how British chariots were built.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — extension: numbers are claims" data-kind="practice">
+<div class="wrap prac u4l09-dense">
+  <p class="eyebrow">Practice and review · 3 of 4 · extension · evaluate</p>
+  <h2>80,000 and 400: what can the numbers tell us?</h2>
+  <div class="split" style="--cols:1fr 1.25fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Tacitus on the victory</div>
+        <p class="quote sm">Great glory, equal to that of our old victories, was won on that day. Some indeed say that there fell little less than eighty thousand of the Britons, with a loss to our soldiers of about four hundred, and only as many wounded.</p>
+        <p class="prov">Tacitus, <i>Annals</i> 14.37 · trans. Church and Brodribb</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · a modern view</div>
+        <p class="quote sm">Such disparity of numbers is a common element of ancient writing about battles and once again serves to emphasise Roman strength, bravery and ability against that of the shambolic disorganised Britons.</p>
+        <p class="prov">University of Warwick, Warwick Classics Network, “Boudica’s Defeat” (adapted from C. C. Gillespie, <i>Boudica</i>, 2018) · <b>disparity</b> = a large difference</p>
+      </div>
+      <div class="card quiet"><div class="k">Exercise 3 · one paragraph</div><p class="body"><b>Evaluate</b> what Tacitus’s figures of 80,000 and 400 can and cannot tell us, and why historians treat ancient battle figures with caution.</p></div>
+    </div>
+    <div class="src reveal" data-veil="Write yours first — then show a model paragraph"><div class="k">A model paragraph · written for this lesson</div>
+      <p class="quote sm model">Judged by what a real count would need, Tacitus’s figures of almost 80,000 British and about 400 Roman dead can tell us little about how many died. Tacitus himself does not vouch for them: he introduces them with ‘Some indeed say’ (<i>Annals</i> 14.37), which marks them as other people’s claims, and he gives no hint of how anyone counted the dead. Both are round numbers, written by a Roman senator about 55 years after the battle, and the contrast between them is so great that, as the Warwick Classics Network observes, such a ‘disparity of numbers is a common element of ancient writing about battles’. What the figures can show is how Romans remembered the day: as a crushing victory, ‘equal to that of our old victories’. Ultimately, the figures are better evidence of Roman pride than of British losses, which is why historians treat them as claims, not counts.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u4l09-dense">
+  <p class="eyebrow">Practice and review · 4 of 4 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>Describe the ground Suetonius chose, according to Tacitus.
+      <span class="sol reveal">A position reached by a narrow defile, closed in at the rear by a forest, with an open plain in front that hid no ambush (<i>Annals</i> 14.34).</span></li>
+    <li>Where was the battle fought?
+      <span class="sol reveal">Unknown: probably near the Roman road later called Watling Street; Mancetter, in Warwickshire, is one suggestion.</span></li>
+    <li>Name three Roman weapons or tactics in the battle.
+      <span class="sol reveal">Any three: close order; javelins (pila) thrown first; shields and short swords (gladii); the wedge; cavalry with lances; archers against chariots (Dio).</span></li>
+    <li>Name three Celtic fighting methods described by Tacitus or Dio.
+      <span class="sol reveal">Any three: huge masses of infantry and cavalry; chariots; shouting and battle-songs; light-armed troops throwing missiles; wives brought in wagons to watch (Tacitus).</span></li>
+    <li>Give two differences between Tacitus’s and Dio’s accounts.
+      <span class="sol reveal">Any two: one position in a defile (Tacitus) or three divisions (Dio); archers against chariots only in Dio; Dio’s 230,000 Britons, Tacitus’s “some indeed say” 80,000 dead; poison (Tacitus) or illness (Dio).</span></li>
+    <li>What does <i>analyse</i> ask for, and when should you keep a passive?
+      <span class="sol reveal">Analyse: the parts and the relationships between them, and what follows (NESA). Keep a passive when the agent is unknown or unimportant, or the people or place affected should stay in focus.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u4l09-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u4l09-cite"><div class="k">Written sources</div>
+      <p class="small">Tacitus, <i>Annals</i> 14.31–37: trans. A. J. Church and W. J. Brodribb (1876, public domain), <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0078:book=14:chapter=34">Perseus Digital Library</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 US</a>). Latin of <i>Annals</i> 14.34–37: ed. C. D. Fisher (Oxford, 1906), <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0077:book=14:chapter=34">Perseus</a> (CC BY-SA 3.0 US). Cassius Dio, <i>Roman History</i> 62.2, 62.8 and 62.12 (Epitome of Book 62): trans. E. Cary (Loeb, vol. VIII, 1925), <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/62*.html">LacusCurtius</a> (public domain in the US; quoted briefly). NESA, <a href="https://www.nsw.gov.au/education-and-training/nesa/hsc/student-guide/glossary"><i>Glossary of key words</i></a> (definitions quoted word for word).</p>
+      <p class="small">University of Warwick, Warwick Classics Network, <a href="https://warwick.ac.uk/fac/arts/classics/warwickclassicsnetwork/romancoventry/resources/boudica/defeat">“Boudica’s Defeat”</a> (quoted briefly). Musées de Strasbourg, Musée archéologique, records MAS 18625 A–B (the gladius and scabbard). Portable Antiquities Scheme, record NMS-6599B4 (the terret). London Museum, object 83.411, terret ring (description). <i>Norfolk Archaeology</i> 37, pp. 216–229, <a href="https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-3749-1/dissemination/pdf/vol_37/NorfolkArchaeology37_P216_P229.pdf">Archaeology Data Service</a>. Review: Colchester Heritage Explorer, <a href="https://colchesterheritage.co.uk/the-boudican-revolt">“The Boudican revolt”</a>; Colchester Archaeological Trust (3 September 2014). The model paragraphs, sentences and summary are written for this lesson.</p>
+      <p class="small">The battle diagram is drawn for this lesson from Tacitus’s words; it is not a map, and not to scale.</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet u4l09-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>Re-enactors portraying soldiers of the Twentieth Legion, with replica javelins, shields and swords</b> · Photo: Muzio58 · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:LegXX.vv.jpg">source</a></li><li><b>A Roman short sword (gladius) of the ‘Mainz’ type and its bronze scabbard, 1st century CE, found at Strasbourg</b> · Photo: Lyokoï · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:MBA_Lyon_Exposition_Claude_-_Glaive_de_type_Mayence_et_son_fourreau.jpg">source</a></li><li><b>An enamelled terret (rein guide), about 50 BCE – 100 CE, found in Norfolk (Portable Antiquities Scheme NMS-6599B4)</b> · Photo: Emma Whitcombe, Norfolk County Council (Portable Antiquities Scheme) · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Iron_Age_terret_(FindID_461260).jpg">source</a></li><li><b>A modern reconstruction of a Celtic two-wheeled war chariot, Keltenmuseum Hallein, Austria</b> · Photo: Wolfgang Sauber · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Hallein_Keltenmuseum_-_Streitwagen_1.jpg">source</a></li></ul>
+        <p class="small">All images are openly licensed, and were resized or cropped for the web. Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>

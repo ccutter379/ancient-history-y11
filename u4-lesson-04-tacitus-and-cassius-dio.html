@@ -1,0 +1,1769 @@
+<!doctype html>
+<html lang="en-AU" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 11 Ancient History · U4 L4 · Tacitus and Cassius Dio: Two Writers, Two Purposes</title>
+<meta name="description" content="Year 11 Ancient History, case study Boudicca: who Tacitus and Cassius Dio were, when and why they wrote, how their texts reach us, what each blames for the revolt, and how to compare them with precise attribution verbs and the right tense.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+/* ============================================================ TOKENS ==== */
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --surface-2:#E9EDEF;
+  --ink:#14171C; --slate:#4E5A66; --rule:#D5D9DE;
+  --deep:#0F4F52; --bright:#127E83; --tint:#E2F1F1;
+  --shadow:0 1px 2px rgba(20,23,28,.06),0 8px 30px rgba(20,23,28,.07);
+
+  --c-directive:#2740B8; --w-directive:#E1E6F9;
+  --c-keyterm:#7A4F00;   --w-keyterm:#F9EED2;
+  --c-scope:#A8156F;     --w-scope:#FADCEC;
+  --c-evidence:#1B6236;  --w-evidence:#DCEFE3;
+  --c-judgement:#B02F19; --w-judgement:#FBE0D9;
+  --c-counter:#54299B;   --w-counter:#E7DEF7;
+
+  --disp:Grandview,"Segoe UI Variable Display","Segoe UI",-apple-system,
+         BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --ui:Aptos,"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+       Arial,sans-serif;
+  --serif:"Aptos Serif",Georgia,"Iowan Old Style","Times New Roman",serif;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,"Courier New",monospace;
+
+  /* Content type scale. Minimums are set in rem against a 16px root, so the
+     smallest student-facing text is 24px however short the projector is. */
+  --fs-body:clamp(1.5rem,2.35vh,2.15rem);
+  --fs-lead:clamp(1.6rem,2.9vh,2.5rem);
+  --fs-big:clamp(1.85rem,3.6vh,3rem);
+  --fs-h2:clamp(2.1rem,4.4vh,3.7rem);
+  --fs-h1:clamp(2.5rem,5.8vh,5rem);
+  --fs-mega:clamp(3rem,7.6vh,6.4rem);
+  --fs-chrome:clamp(0.95rem,1.65vh,1.3rem);
+  --fs-eyebrow:clamp(1rem,1.75vh,1.35rem);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+    --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+    --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+    --c-directive:#93AAFF; --w-directive:#1C2557;
+    --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+    --c-scope:#F589C7;     --w-scope:#42102D;
+    --c-evidence:#6FD996;  --w-evidence:#103120;
+    --c-judgement:#FF9376; --w-judgement:#41180E;
+    --c-counter:#BFA5FF;   --w-counter:#291643;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0B1113; --surface:#151F22; --surface-2:#1D292D;
+  --ink:#EDF3F4; --slate:#9BADB4; --rule:#2C3A3E;
+  --deep:#8FDDE1; --bright:#4FCBD1; --tint:#123033;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 34px rgba(0,0,0,.45);
+  --c-directive:#93AAFF; --w-directive:#1C2557;
+  --c-keyterm:#EDBB57;   --w-keyterm:#3D2C08;
+  --c-scope:#F589C7;     --w-scope:#42102D;
+  --c-evidence:#6FD996;  --w-evidence:#103120;
+  --c-judgement:#FF9376; --w-judgement:#41180E;
+  --c-counter:#BFA5FF;   --w-counter:#291643;
+}
+
+/* ============================================================= BASE ===== */
+*,*::before,*::after{box-sizing:border-box;}
+html{font-size:16px;-webkit-text-size-adjust:100%;}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--ui); font-size:var(--fs-body); line-height:1.45;
+  overflow:hidden;
+}
+h1,h2,h3{margin:0; text-wrap:balance; font-family:var(--disp);
+  font-weight:700; line-height:1.06; letter-spacing:-.015em;}
+p{margin:0;}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer;}
+:focus-visible{outline:3px solid var(--bright); outline-offset:3px;
+  border-radius:4px;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;
+    transition-duration:.001ms!important;}
+}
+
+/* ============================================================ CHROME ==== */
+#rail{
+  position:fixed; inset:0 0 auto 0; height:clamp(46px,6.2vh,66px);
+  display:flex; align-items:center; gap:clamp(10px,1.4vw,22px);
+  padding:0 clamp(14px,2vw,32px); z-index:60;
+  background:var(--surface); border-bottom:1px solid var(--rule);
+}
+#rail .sec{
+  font-family:var(--ui); font-size:var(--fs-chrome); font-weight:700;
+  color:var(--deep); letter-spacing:.055em; text-transform:uppercase;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#rail .spacer{flex:1 1 auto;}
+.btn{
+  display:inline-flex; align-items:center; gap:.45em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  padding:.42em .85em; border:1px solid var(--rule); border-radius:999px;
+  background:var(--surface); white-space:nowrap; transition:.15s;
+}
+.btn:hover{color:var(--ink); border-color:var(--bright);}
+.btn[aria-pressed="true"]{
+  background:var(--tint); color:var(--deep); border-color:var(--bright);}
+.btn kbd{
+  font-family:var(--mono); font-size:.82em; opacity:.7;
+  border:1px solid var(--rule); border-radius:3px; padding:0 .3em;}
+#count{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate); font-variant-numeric:tabular-nums; white-space:nowrap;}
+#bar{position:fixed; top:0; left:0; height:3px; background:var(--bright);
+  z-index:70; transition:width .3s ease;}
+
+/* ============================================================ SLIDES ==== */
+#deck{position:fixed; inset:clamp(46px,6.2vh,66px) 0 0 0;}
+.slide{
+  position:absolute; inset:0; display:none;
+  padding:clamp(20px,3.4vh,54px) clamp(24px,4.5vw,80px)
+          clamp(58px,7.5vh,84px);
+  overflow-y:auto; overflow-x:hidden;
+}
+.slide.active{display:flex; flex-direction:column; justify-content:center;}
+.slide.active > *{animation:rise .34s cubic-bezier(.2,.7,.3,1) both;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1;}}
+.wrap{width:100%; max-width:min(1500px,94vw); margin-inline:auto;
+  display:flex; flex-direction:column; gap:clamp(12px,2.1vh,28px);}
+.eyebrow{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; color:var(--bright);}
+h1{font-size:var(--fs-h1);} h2{font-size:var(--fs-h2);}
+.lead{font-size:var(--fs-lead); color:var(--slate); max-width:34em;}
+.body{font-size:var(--fs-body); max-width:38em;}
+.mega{font-size:var(--fs-mega); font-family:var(--disp); font-weight:700;
+  line-height:1.02; letter-spacing:-.02em;}
+.centred{align-items:center; text-align:center;}
+.centred .lead,.centred .body{max-width:30em;}
+
+/* ============================================== the function code ======= */
+.code{
+  position:relative; border-radius:3px; padding:.02em .1em;
+  transition:background-color .32s ease, color .32s ease,
+             text-decoration-color .32s ease;
+  text-decoration:underline transparent;
+  text-underline-offset:.22em; text-decoration-thickness:.09em;
+}
+.code.on{font-weight:700;}
+.code.on::after{
+  content:attr(data-letter); font-family:var(--mono); font-weight:700;
+  font-size:.5em; vertical-align:super; margin-left:.12em;
+  letter-spacing:.02em;
+}
+.code.on[data-code="directive"]{background:var(--w-directive);
+  color:var(--c-directive); text-decoration-color:var(--c-directive);
+  text-decoration-style:solid;}
+.code.on[data-code="keyterm"]{background:var(--w-keyterm);
+  color:var(--c-keyterm); text-decoration-color:var(--c-keyterm);
+  text-decoration-style:dotted;}
+.code.on[data-code="scope"]{background:var(--w-scope);
+  color:var(--c-scope); text-decoration-color:var(--c-scope);
+  text-decoration-style:dashed;}
+.code.on[data-code="evidence"]{background:var(--w-evidence);
+  color:var(--c-evidence); text-decoration-color:var(--c-evidence);
+  text-decoration-style:double;}
+.code.on[data-code="judgement"]{background:var(--w-judgement);
+  color:var(--c-judgement); text-decoration-color:var(--c-judgement);
+  text-decoration-style:wavy;}
+.code.on[data-code="counter"]{background:var(--w-counter);
+  color:var(--c-counter); text-decoration-color:var(--c-counter);
+  text-decoration-style:solid; text-decoration-thickness:.2em;}
+
+/* legend */
+#legend{
+  position:fixed; left:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:55; display:flex; flex-wrap:wrap; gap:.5em;
+  max-width:min(1100px,92vw);
+}
+#legend[hidden]{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; padding:.34em .8em .34em .5em;
+  border-radius:999px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--slate); transition:.16s;
+}
+.chip .dot{
+  width:1.5em; height:1.5em; border-radius:50%; flex:none;
+  display:grid; place-items:center; font-family:var(--mono);
+  font-size:.78em; font-weight:700; color:#fff;
+}
+.chip[data-code="directive"] .dot{background:var(--c-directive);}
+.chip[data-code="keyterm"] .dot{background:var(--c-keyterm);}
+.chip[data-code="scope"] .dot{background:var(--c-scope);}
+.chip[data-code="evidence"] .dot{background:var(--c-evidence);}
+.chip[data-code="judgement"] .dot{background:var(--c-judgement);}
+.chip[data-code="counter"] .dot{background:var(--c-counter);}
+.chip[aria-pressed="true"]{color:var(--ink); border-color:currentColor;
+  box-shadow:inset 0 0 0 1px currentColor;}
+.chip:hover{color:var(--ink);}
+
+/* ============================================================ REVEAL ==== */
+.reveal{
+  opacity:0; transform:translateY(12px); pointer-events:none;
+  transition:opacity .34s ease, transform .34s cubic-bezier(.2,.7,.3,1);
+}
+.reveal.shown{opacity:1; transform:none; pointer-events:auto;}
+.cue{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:var(--fs-chrome); font-weight:600; color:var(--slate);
+  font-style:italic;
+}
+.cue::before{content:"▸"; color:var(--bright); font-style:normal;}
+
+/* ============================================================= CARDS ==== */
+.card{
+  background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  padding:clamp(16px,2.5vh,32px) clamp(18px,2.2vw,38px); box-shadow:var(--shadow);
+}
+.card.accent{border-left:6px solid var(--bright);}
+.card.quiet{background:var(--surface-2); box-shadow:none;}
+.card .k{
+  font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700;
+  letter-spacing:.085em; text-transform:uppercase; color:var(--bright);
+  margin-bottom:.5em;
+}
+.tinted{background:var(--tint); border-color:transparent;}
+.tinted .k{color:var(--deep);}
+.cols{display:grid; gap:clamp(12px,1.6vw,26px);}
+.c2{grid-template-columns:repeat(2,1fr);}
+.c3{grid-template-columns:repeat(3,1fr);}
+.c4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:900px){.c2,.c3,.c4{grid-template-columns:1fr;}}
+
+.quote{
+  font-family:var(--serif); font-style:italic; font-size:var(--fs-big);
+  line-height:1.4; letter-spacing:-.005em;
+}
+.attrib{font-family:var(--ui); font-style:normal; font-size:var(--fs-chrome);
+  font-weight:700; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--slate); margin-top:.7em;}
+.qtext{font-size:var(--fs-big); line-height:1.5; font-weight:600;
+  letter-spacing:-.01em;}
+.para{font-size:var(--fs-body); line-height:1.62;}
+.para.resp{line-height:1.5;}
+
+/* colour-keyed callout */
+.note{border-left:6px solid var(--bright); background:var(--surface-2);
+  border-radius:0 8px 8px 0; padding:clamp(12px,1.8vh,22px) clamp(16px,1.8vw,28px);}
+.note[data-code="directive"]{border-color:var(--c-directive); background:var(--w-directive);}
+.note[data-code="keyterm"]{border-color:var(--c-keyterm); background:var(--w-keyterm);}
+.note[data-code="scope"]{border-color:var(--c-scope); background:var(--w-scope);}
+.note[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.note[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.note[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.note .k{margin-bottom:.35em;}
+.note[data-code="directive"] .k{color:var(--c-directive);}
+.note[data-code="keyterm"] .k{color:var(--c-keyterm);}
+.note[data-code="scope"] .k{color:var(--c-scope);}
+.note[data-code="evidence"] .k{color:var(--c-evidence);}
+.note[data-code="judgement"] .k{color:var(--c-judgement);}
+.note[data-code="counter"] .k{color:var(--c-counter);}
+
+/* tables */
+.tbl{width:100%; border-collapse:collapse; font-size:var(--fs-body);}
+.tbl-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.tbl th{
+  text-align:left; font-family:var(--ui); font-size:var(--fs-eyebrow);
+  font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--surface); background:var(--deep);
+  padding:.6em .8em; white-space:nowrap;
+}
+:root[data-theme="dark"] .tbl th,
+:root:not([data-theme="light"]) .tbl th{color:var(--ground);}
+.tbl td{padding:.62em .8em; border-bottom:1px solid var(--rule);
+  vertical-align:top;}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl .lab{font-weight:700; white-space:nowrap;}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums;}
+
+/* option list */
+.opts{display:flex; flex-direction:column; gap:.6em; list-style:none;
+  padding:0; margin:0;}
+.opts li{
+  display:flex; gap:.75em; align-items:flex-start; padding:.55em .9em;
+  border:1px solid var(--rule); border-radius:8px; background:var(--surface);
+}
+.opts li .n{font-family:var(--mono); font-weight:700; color:var(--slate);
+  flex:none;}
+.opts li.right{border-color:var(--c-evidence); background:var(--w-evidence);
+  color:var(--c-evidence); font-weight:700;}
+.opts li.right .n{color:var(--c-evidence);}
+
+.sectors{display:grid; grid-template-columns:repeat(3,1fr);
+  gap:clamp(8px,1.1vw,16px);}
+@media (max-width:900px){.sectors{grid-template-columns:1fr 1fr;}}
+.sector{
+  border:1px solid var(--rule); border-radius:9px; background:var(--surface);
+  padding:clamp(10px,1.5vh,20px) clamp(12px,1.3vw,22px);
+  display:flex; flex-direction:column; gap:.3em;
+}
+.sector .t{font-weight:700; font-size:var(--fs-body);}
+.sector .d{font-size:var(--fs-chrome); color:var(--slate); line-height:1.4;}
+.sector.hot{border-color:var(--c-evidence); background:var(--w-evidence);}
+
+/* ============================================================= TIMER ==== */
+#timer{
+  position:fixed; right:clamp(14px,2vw,32px); bottom:clamp(12px,2vh,26px);
+  z-index:58; background:var(--surface); border:1px solid var(--rule);
+  border-radius:12px; box-shadow:var(--shadow);
+  padding:clamp(10px,1.4vh,18px) clamp(14px,1.5vw,24px);
+  display:flex; flex-direction:column; gap:.5em; align-items:center;
+}
+#timer[hidden]{display:none;}
+#clock{
+  font-family:var(--mono); font-weight:700; font-variant-numeric:tabular-nums;
+  font-size:clamp(2.4rem,6vh,4.6rem); line-height:1; letter-spacing:-.03em;
+  color:var(--deep);
+}
+#timer.low #clock{color:var(--c-judgement);}
+#timer.done #clock{color:var(--c-judgement); animation:flash 1s steps(2) infinite;}
+@keyframes flash{50%{opacity:.25;}}
+#timer .row{display:flex; gap:.4em; flex-wrap:wrap; justify-content:center;}
+#timer .btn{padding:.3em .7em;}
+
+/* ========================================================== OVERVIEW ==== */
+#overview{
+  position:fixed; inset:0; z-index:80; background:var(--ground);
+  padding:clamp(20px,4vh,54px) clamp(20px,4vw,60px); overflow-y:auto;
+}
+#overview[hidden]{display:none;}
+#ovgrid{
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(10px,1.3vw,20px); margin-top:1.2em;
+}
+.ovcard{
+  text-align:left; border:1px solid var(--rule); border-radius:9px;
+  background:var(--surface); padding:.9em 1em; display:flex;
+  flex-direction:column; gap:.3em; transition:.15s;
+}
+.ovcard:hover{border-color:var(--bright); transform:translateY(-2px);}
+.ovcard.here{border-color:var(--bright); background:var(--tint);}
+.ovcard .n{font-family:var(--mono); font-size:var(--fs-chrome);
+  color:var(--slate);}
+.ovcard .t{font-weight:700; font-size:var(--fs-chrome); line-height:1.3;}
+.ovcard .s{font-size:calc(var(--fs-chrome)*.88); color:var(--slate);
+  text-transform:uppercase; letter-spacing:.06em;}
+#help{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:.5em 1.4em; margin-top:1.4em; font-size:var(--fs-chrome);
+  color:var(--slate);}
+#help div{display:flex; gap:.6em; align-items:baseline;}
+#help kbd{font-family:var(--mono); font-weight:700; color:var(--ink);
+  border:1px solid var(--rule); border-radius:4px; padding:.05em .45em;
+  background:var(--surface); flex:none;}
+
+/* PEEL structural markers — a separate axis from the colour code, so they
+   are deliberately neutral rather than a seventh hue. */
+.peel{
+  display:inline-grid; place-items:center; width:1.55em; height:1.55em;
+  border-radius:5px; background:var(--deep); color:var(--surface);
+  font-family:var(--mono); font-weight:700; font-size:.72em;
+  vertical-align:.12em; margin-right:.15em; flex:none;
+}
+:root[data-theme="dark"] .peel,
+:root:not([data-theme="light"]) .peel{color:var(--ground);}
+.tbl .lab .peel{margin-right:.3em;}
+:root{ --deep:#2D5F2E; --bright:#3F8A40; --tint:#E6F1E4; --statement:#2D5F2E;
+  --solid:#2D5F2E; --soft:#D3EBCF; --on-statement:#FBF8F2; }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){ --deep:#A8D8A2; --bright:#6FBF68; --tint:#16301A; --statement:#244B25; --soft:#D3EBCF; } }
+:root[data-theme="dark"]{ --deep:#A8D8A2; --bright:#6FBF68; --tint:#16301A; --statement:#244B25; --soft:#D3EBCF; }
+
+/* ========================================== Year 11 site additions === */
+/* The unit accent (set above) replaces the suite teal for chrome only (rail, bar,
+   eyebrows, card labels, table heads). --bright stays graphic-only: bars, rules,
+   focus. --solid fills badges in both themes (white text on it). */
+:root{ --c-analysis:#00628F; --w-analysis:#D6ECF7; --paper-rule:#E4E7EA; }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+}
+:root[data-theme="dark"]{ --c-analysis:#7CC9F0; --w-analysis:#0E2C3B; --paper-rule:#2C3A3E; }
+
+.eyebrow{color:var(--deep);}
+.card .k{color:var(--deep);}
+.code.on[data-code="analysis"]{background:var(--w-analysis); color:var(--c-analysis);
+  text-decoration-color:var(--c-analysis); text-decoration-style:solid;}
+.chip[data-code="analysis"] .dot{background:var(--c-analysis);}
+.note[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.note[data-code="analysis"] .k{color:var(--c-analysis);}
+
+/* top-aligned content slides; .mid centres title and statement slides */
+.slide.active{justify-content:flex-start;}
+.slide.active.mid{justify-content:center;}
+.slide.statement{background:var(--statement); color:var(--on-statement);}
+.slide.statement .eyebrow{color:var(--soft);}
+.slide.statement .lead,.slide.statement .small{color:var(--soft);}
+.slide.statement .qtext{font-size:var(--fs-h1); line-height:1.2; font-family:var(--disp);
+  font-weight:700; max-width:22em;}
+
+.notes{display:none;}
+#notesPanel{position:fixed; right:clamp(14px,2vw,32px);
+  top:calc(clamp(46px,6.2vh,66px) + 14px); width:min(560px,42vw); max-height:72vh;
+  overflow:auto; z-index:75; background:var(--surface); border:1px solid var(--rule);
+  border-left:6px solid var(--deep); border-radius:10px; box-shadow:var(--shadow);
+  padding:14px 20px 16px; font-size:1.02rem; line-height:1.5; color:var(--ink);}
+#notesPanel[hidden]{display:none;}
+#notesPanel .k{font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  font-size:.82rem; color:var(--deep); margin-bottom:.4em;}
+#notesPanel p{margin:0 0 .55em;} #notesPanel ul{margin:.2em 0 .6em; padding-left:1.2em;}
+
+.small{font-size:var(--fs-chrome); color:var(--slate);}
+.optional{display:inline-block; margin-left:.7em; padding:.05em .6em; border:1px solid currentColor;
+  border-radius:999px; font-size:.82em; letter-spacing:.06em;}
+.split{display:grid; grid-template-columns:var(--cols,1.15fr 1fr); gap:clamp(14px,2.2vw,40px);
+  align-items:start;}
+.stack{display:flex; flex-direction:column; gap:clamp(10px,1.6vh,20px);}
+@media (max-width:900px){.split{grid-template-columns:1fr;}}
+.lisc ul{margin:.35em 0 0; padding-left:1.15em;} .lisc li{margin:.3em 0;}
+.card ul{margin:.2em 0 0; padding-left:1.15em;} .card li{margin:.25em 0;}
+.card.sm .body{font-size:calc(var(--fs-body)*.86); line-height:1.42;}
+.note .k{font-weight:700;}
+
+.figure{margin:0;} .figure img{display:block; width:100%; height:auto; max-height:52vh;
+  object-fit:cover; border-radius:10px; box-shadow:var(--shadow);}
+.figure.contain img{object-fit:contain; background:var(--surface);}
+.figure.tall img{max-height:64vh;}
+.figure.short img{height:26vh; max-height:none;}
+.figure figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.5em; line-height:1.35;}
+.figure figcaption .cr{white-space:nowrap;}
+
+/* sources */
+.src{background:var(--surface); border:1px solid var(--rule); border-left:6px solid var(--deep);
+  border-radius:10px; padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.src .k{font-family:var(--ui); font-size:var(--fs-eyebrow); font-weight:700; letter-spacing:.085em;
+  text-transform:uppercase; color:var(--deep); margin-bottom:.45em;}
+.src .quote{font-size:var(--fs-lead);}
+.src .quote.sm{font-size:var(--fs-body); line-height:1.5;}
+.src .prov{font-size:var(--fs-chrome); color:var(--slate); margin-top:.7em; line-height:1.4;}
+.src .ed{font-family:var(--ui); font-style:normal; font-size:.8em; color:var(--slate);}
+.quote i, .quote em{font-style:normal;}   /* emphasis inside an italic quotation shows as upright */
+.credits{columns:3 17em; column-gap:2em; margin:.2em 0 .6em; padding-left:1.1em;}
+.credits li{break-inside:avoid; margin:.2em 0;}
+.credits a{color:var(--deep);}
+.credline{margin:0; font-size:calc(var(--fs-chrome)*.85); line-height:1.35;}
+.qprompt{font-weight:700; font-size:var(--fs-body);}
+.qprompt::before{content:"Q "; font-family:var(--mono); color:var(--deep);}
+
+/* numbered key list (steps, OVPRL) */
+.keylist{list-style:none; margin:0; padding:0; display:flex; flex-direction:column;
+  gap:clamp(6px,1.1vh,14px);}
+.keylist li{display:grid; grid-template-columns:2.2em 1fr; column-gap:.7em; align-items:start;
+  font-size:var(--fs-body); line-height:1.32;}
+.keylist .num{grid-row:span 2; width:1.75em; height:1.75em; border-radius:50%; background:var(--solid);
+  color:#fff; display:grid; place-items:center; font-weight:700; font-size:.92em; margin-top:.05em;}
+.keylist .t{font-weight:700;}
+.keylist .d{color:var(--slate); font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.linked{opacity:0; transition:opacity .4s ease;}
+.linked.shown{opacity:1;}
+
+/* Cornell notes page */
+.ckpt{display:inline-flex; align-items:center; gap:.5em;}
+.ckpt svg{width:1.15em; height:1.15em; flex:none;}
+.cornell{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); overflow:hidden;}
+.cornell .ch{display:flex; justify-content:space-between; gap:1em; flex-wrap:wrap;
+  padding:.45em 1em; border-bottom:2px solid var(--deep); font-size:var(--fs-chrome);
+  color:var(--slate); font-weight:600;}
+.cornell .ch b{color:var(--ink);}
+.cornell .row{display:grid; grid-template-columns:minmax(8.5em,28%) 1fr;
+  border-bottom:1px solid var(--paper-rule);}
+.cornell .row:last-child{border-bottom:0;}
+.cornell .cq{padding:.5em 1em; border-right:3px solid var(--bright); font-weight:700;
+  color:var(--deep); font-size:calc(var(--fs-body)*.9); line-height:1.3;}
+.cornell .nts{padding:.5em 1.1em; font-size:calc(var(--fs-body)*.9); line-height:1.42;}
+.cornell .nts .sep{color:var(--slate); padding:0 .25em;}
+.cornell .sum{border-top:2px solid var(--deep); padding:.6em 1em; font-size:calc(var(--fs-body)*.9);}
+.cornell .sum .k{font-weight:700; color:var(--deep); margin-right:.5em;}
+@media (max-width:700px){.cornell .row{grid-template-columns:1fr;}
+  .cornell .cq{border-right:0; border-bottom:1px dashed var(--paper-rule); padding-bottom:.25em;}}
+
+/* annotated model answers (kept for later lessons: OVPRL deconstruction) */
+.annot{display:grid; grid-template-columns:1.3fr 1fr; gap:clamp(14px,2vw,32px); align-items:start;}
+@media (max-width:900px){.annot{grid-template-columns:1fr;}}
+.ans{font-family:var(--serif); font-size:var(--fs-lead); line-height:1.7; background:var(--surface);
+  border:1px solid var(--rule); border-left:6px solid var(--deep); border-radius:10px;
+  padding:clamp(14px,2.2vh,28px) clamp(16px,2vw,32px); box-shadow:var(--shadow);}
+.ans.long{font-size:var(--fs-body); line-height:1.62;}
+.mk{display:inline-grid; place-items:center; min-width:1.45em; height:1.45em; padding:0 .2em;
+  border-radius:999px; background:var(--solid); color:#fff; font-family:var(--ui); font-style:normal;
+  font-size:.52em; font-weight:700; vertical-align:.55em; margin:0 .2em 0 .1em; line-height:1;}
+.margin{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px);}
+.anote{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; padding:.5em .8em;
+  border-radius:0 8px 8px 0; border-left:5px solid var(--slate); background:var(--surface-2);
+  font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.anote .mk{vertical-align:0; font-size:.86em; margin:.12em 0 0; grid-row:span 2;}
+.anote b{display:block;}
+.anote[data-code="evidence"]{border-color:var(--c-evidence); background:var(--w-evidence);}
+.anote[data-code="judgement"]{border-color:var(--c-judgement); background:var(--w-judgement);}
+.anote[data-code="counter"]{border-color:var(--c-counter); background:var(--w-counter);}
+.anote[data-code="analysis"]{border-color:var(--c-analysis); background:var(--w-analysis);}
+.anote .tx{display:block;}
+html:not(.read) .margin.fold .anote:not(.current) .tx{display:none;}
+
+/* criteria, checklists, frames */
+.tbl.compact{font-size:calc(var(--fs-body)*.82);} .tbl.compact td{padding:.42em .7em;}
+.checks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.5em;}
+.checks label{display:grid; grid-template-columns:1.5em 1fr; gap:.55em; align-items:start;
+  cursor:pointer; font-size:calc(var(--fs-body)*.92); line-height:1.38;}
+.checks input{appearance:none; -webkit-appearance:none; width:1.15em; height:1.15em; margin:.15em 0 0;
+  border:2px solid var(--slate); border-radius:4px; background:var(--surface); display:grid;
+  place-items:center; cursor:pointer;}
+.checks input:checked{background:var(--solid); border-color:var(--solid);}
+.checks input:checked::after{content:""; width:.32em; height:.62em; border:solid #fff;
+  border-width:0 .16em .16em 0; transform:translate(0,-.06em) rotate(45deg);}
+.blank{display:inline-block; min-width:5.5em; border-bottom:2px solid var(--slate); margin:0 .15em;
+  height:1em;}
+.vocab{display:grid; grid-template-columns:1fr 1fr; gap:clamp(12px,1.6vw,26px);}
+@media (max-width:900px){.vocab{grid-template-columns:1fr;}}
+.vocab .tbl td:first-child{font-weight:700;}
+
+/* matched phrases: a step with data-hl="[data-step=m1]" lights span.match data-step="m1" */
+.match{border-radius:3px; transition:background .3s ease, box-shadow .3s ease;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;}
+.match.on[data-step="m1"], html.read .match[data-step="m1"]{background:var(--w-scope); box-shadow:inset 0 -3px 0 var(--c-scope);}
+.match.on[data-step="m2"], html.read .match[data-step="m2"]{background:var(--w-keyterm); box-shadow:inset 0 -3px 0 var(--c-keyterm);}
+.match.on[data-step="m3"], html.read .match[data-step="m3"]{background:var(--w-evidence); box-shadow:inset 0 -3px 0 var(--c-evidence);}
+.match.on[data-step="m4"], html.read .match[data-step="m4"]{background:var(--w-judgement); box-shadow:inset 0 -3px 0 var(--c-judgement);}
+.match.on[data-step="m5"], html.read .match[data-step="m5"]{background:var(--w-directive); box-shadow:inset 0 -3px 0 var(--c-directive);}
+.mq{display:grid; grid-template-columns:1.3em 1fr; gap:.5em; align-items:start;}
+.mq .sw{width:1em; height:1em; border-radius:3px; margin-top:.25em;}
+.mq[data-c="m1"] .sw{background:var(--c-scope);} .mq[data-c="m2"] .sw{background:var(--c-keyterm);}
+.mq[data-c="m3"] .sw{background:var(--c-evidence);} .mq[data-c="m4"] .sw{background:var(--c-judgement);}
+.mq[data-c="m5"] .sw{background:var(--c-directive);}
+.tbl td.reveal, .tbl tr.reveal{transition:opacity .35s ease;}
+
+/* ---- Practice and review. Answers (.sol) are reveal steps when presenting;
+   in Read mode a [data-answers] block hides them behind "Show answers". */
+.prac{display:flex; flex-direction:column; gap:clamp(8px,1.3vh,16px);}
+.prac .task{font-size:var(--fs-body); font-weight:600; max-width:46em;}
+.tf{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.4em;}
+.tf li{display:grid; grid-template-columns:1.9em 1fr; column-gap:.55em; background:var(--surface);
+  border:1px solid var(--rule); border-radius:8px; padding:.42em .8em; font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.tf li .n{font-family:var(--mono); font-weight:700; color:var(--slate); grid-row:span 2;}
+.sol{display:block; color:var(--c-evidence); font-weight:600;}
+.sol.no{color:var(--c-judgement);}
+.sol .why{font-weight:400; color:var(--ink);}
+.bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.bank span{border:1px solid var(--rule); border-radius:999px; padding:.15em .75em; background:var(--surface);
+  font-size:calc(var(--fs-body)*.84);}
+.rq{margin:0; padding-left:1.5em; display:flex; flex-direction:column; gap:.5em; font-size:calc(var(--fs-body)*.86); line-height:1.38;}
+.rq .sol{font-weight:400; color:var(--ink); border-left:3px solid var(--c-evidence); padding:.15em 0 .15em .7em; margin-top:.25em;}
+.showans{display:none;}
+html.read .showans{display:inline-flex; margin:.2em 0;}
+html.read [data-answers]:not(.answers-on) .sol{visibility:hidden;}
+html.read [data-answers]:not(.answers-on) .rq .sol, html.read [data-answers]:not(.answers-on) .tf .sol,
+html.read .rq[data-answers]:not(.answers-on) .sol, html.read .tf[data-answers]:not(.answers-on) .sol{display:none;}
+
+/* diagrams (inline SVG) and wide content that scrolls sideways on phones */
+.diagram{margin:0; width:100%;}
+.diagram svg{display:block; width:100%; height:auto; max-height:calc(100vh - 300px);}
+.diagram figcaption{font-size:var(--fs-chrome); color:var(--slate); margin-top:.45em;}
+.swipe{display:none;}
+@media (max-width:700px){
+  html.read .diagram{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  html.read .swipe{display:inline;}
+}
+
+/* ============================================================ READ MODE === */
+.unveil{display:none;}
+html.read{--fs-body:1.06rem; --fs-lead:1.2rem; --fs-big:1.28rem; --fs-h2:clamp(1.5rem,4.2vw,2.15rem);
+  --fs-h1:clamp(1.9rem,6vw,2.9rem); --fs-mega:clamp(2rem,7vw,3.1rem); --fs-chrome:.86rem;
+  --fs-eyebrow:.8rem;}
+html.read body{overflow:auto;}
+html.read #rail{position:sticky; top:0;}
+html.read #deck{position:static;}
+html.read .slide{display:block; position:relative; inset:auto; overflow:visible;
+  padding:clamp(28px,5vw,52px) 16px; border-bottom:1px solid var(--rule); scroll-margin-top:64px;}
+html.read .slide > .wrap{max-width:1040px;}
+html.read .slide.active > *{animation:none;}
+html.read .reveal, html.read .linked{opacity:1; transform:none; pointer-events:auto; transition:none;}
+html.read .figure img{max-height:60vh;}
+html.read .slide.filtered{display:none;}
+html.read [data-veil]:not(.unveiled):not(.veil-parts){display:none;}
+/* a block with data-veil + class veil-parts stays on the page in Read mode, but its answers
+   (.vp, and the notes column of a Cornell page) stay hidden, and its highlights stay off,
+   until the reader presses the button: the questions are visible, the answers are not */
+html.read .veil-parts[data-veil]:not(.unveiled) .vp{display:none;}
+html.read .cornell.veil-parts[data-veil]:not(.unveiled) .nts{visibility:hidden;}
+html.read .veil-parts[data-veil]:not(.unveiled) .match{background:none; box-shadow:none;}
+html.read .unveil{display:inline-flex; margin:.2em 0;}
+html.read .unveil, html.read .showans{max-width:100%; white-space:normal; text-align:left;}
+html.read #legend, html.read #timer, html.read #bar, html.read #notesPanel,
+html.read .present-only{display:none !important;}
+html:not(.read) .read-only{display:none !important;}
+#filter{display:inline-flex; gap:.35em;}
+.btn .short{display:none;}
+@media (max-width:760px){
+  #rail{gap:8px; padding:0 10px; overflow-x:auto;}
+  #rail .sec, #rail kbd, #count{display:none;}
+  .btn .long{display:none;} .btn .short{display:inline;}
+  .btn{padding:.38em .7em;}
+}
+@media (max-width:480px){ #tTheme{display:none;} }
+
+@media print{
+  html{--fs-body:11pt; --fs-lead:12pt; --fs-big:12.5pt; --fs-h2:18pt; --fs-h1:24pt; --fs-mega:24pt;
+    --fs-chrome:9pt; --fs-eyebrow:8.5pt;}
+  body{overflow:visible; background:#fff;}
+  #rail, #bar, #legend, #timer, #overview, #notesPanel, .unveil{display:none !important;}
+  #deck{position:static;}
+  .slide{display:block !important; position:static; overflow:visible; padding:8mm 0;
+    border-bottom:1px solid #ccc; break-inside:avoid-page;}
+  .slide.statement{background:#fff; color:#14171C; border:2px solid var(--solid); padding:6mm;}
+  .slide.statement .eyebrow, .slide.statement .lead, .slide.statement .small{color:var(--solid);}
+  .reveal, .linked{opacity:1 !important; transform:none !important;}
+  [data-veil]:not(.veil-parts){display:block !important;}
+  html.read .veil-parts[data-veil] .vp{display:revert !important;}
+  html.read .cornell.veil-parts[data-veil] .nts{visibility:visible !important;}
+  .figure img{max-height:80mm;}
+  .card, .src, .cornell .row, .anote{break-inside:avoid; box-shadow:none;}
+}
+/* ---- Unit 4 Lesson 4 only (every class starts u4l04-) */
+
+/* title picture; goals slide syllabus line; credits links */
+.u4l04-cover img{max-height:50vh;}
+.u4l04-syl{border-top:1px solid var(--rule); padding-top:.6em; line-height:1.45;}
+.u4l04-cite a{color:var(--deep);}
+
+/* author fact cards */
+.u4l04-facts{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.25em;
+  font-size:calc(var(--fs-body)*.84); line-height:1.36;}
+.u4l04-facts b{color:var(--deep);}
+
+/* the time line (inline SVG): colours from the shared variables, so it follows the theme */
+.u4l04-diagram{margin:0;}
+.u4l04-svg{display:block; width:100%; height:auto;}
+.u4l04-diagram svg{max-height:34vh;}
+.u4l04-svg text{fill:var(--ink); font-family:var(--ui); font-size:21px;}
+.u4l04-svg .u4l04-tb{font-weight:700;}
+.u4l04-svg .u4l04-tname{font-weight:700; fill:var(--deep);}
+.u4l04-svg .u4l04-tsm{font-size:18px;}
+.u4l04-svg .u4l04-tmute{fill:var(--slate);}
+.u4l04-svg .u4l04-tgap{fill:var(--c-judgement); font-weight:600;}
+.u4l04-svg .u4l04-trevolt{fill:var(--c-judgement);}
+.u4l04-tac{fill:var(--surface); stroke:var(--deep); stroke-width:2.5;}
+.u4l04-dio{fill:var(--surface); stroke:var(--c-directive); stroke-width:2.5;}
+.u4l04-link{fill:var(--surface-2); stroke:var(--slate); stroke-width:1.6; stroke-dasharray:7 5;}
+.u4l04-late{fill:var(--surface-2); stroke:var(--slate); stroke-width:1.6;}
+.u4l04-revolt{stroke:var(--c-judgement); stroke-width:3;}
+.u4l04-drop{stroke:var(--slate); stroke-width:1.5; stroke-dasharray:4 4;}
+.u4l04-axis{stroke:var(--ink); stroke-width:3;}
+.u4l04-break{stroke:var(--ink); stroke-width:3;}
+.u4l04-tick{stroke:var(--ink); stroke-width:2;}
+.u4l04-revdot{fill:var(--c-judgement);}
+.u4l04-dot-t{fill:var(--deep);}
+.u4l04-band-d{fill:var(--c-directive);}
+
+/* supported reading: extract + questions; glossary line */
+.u4l04-gloss{margin-top:.55em; padding-top:.45em; border-top:1px dashed var(--rule); font-family:var(--ui);
+  font-size:calc(var(--fs-chrome)*.95); color:var(--slate); line-height:1.38;}
+.u4l04-qs{display:flex; flex-direction:column; gap:clamp(6px,1vh,12px); font-size:calc(var(--fs-body)*.88); line-height:1.36;}
+.u4l04-qs .vp{display:block; color:var(--ink); font-weight:400; margin-top:.15em;}
+
+/* OVPRL as a lettered list */
+.u4l04-ovprl .num{font-family:var(--ui);}
+.u4l04-ovprl .d{color:var(--ink);}
+
+/* the comparison grid */
+.u4l04-grid th:first-child, .u4l04-grid td:first-child{width:22%; font-weight:700;}
+.u4l04-grid td:not(:first-child){width:39%;}
+.u4l04-grid .u4l04-blank{height:2.6em;}
+.u4l04-figsm img{max-height:30vh; object-fit:contain; background:var(--surface);}
+
+/* the deconstruction strip above a question (verb · topic · limits · do) */
+.u4l04-dq{display:grid; grid-template-columns:auto 1fr; gap:.2em .8em; margin:0; padding:.5em .9em;
+  border-left:5px solid var(--c-directive); background:var(--w-directive); border-radius:0 8px 8px 0;
+  font-size:calc(var(--fs-body)*.8); line-height:1.36;}
+.u4l04-dq dt{font-weight:700; color:var(--c-directive);}
+.u4l04-dq dd{margin:0;}
+
+/* a word bank */
+.u4l04-bank{display:flex; flex-wrap:wrap; gap:.4em;}
+.u4l04-bank span{border:1px solid var(--c-keyterm); color:var(--c-keyterm); border-radius:999px; padding:.1em .7em;
+  background:var(--w-keyterm); font-size:calc(var(--fs-body)*.8); font-weight:600;}
+
+/* the Writing focus: evidence snippets in the We do */
+.u4l04-ev{margin:.35em 0 0; padding:.4em .7em; border-left:4px solid var(--rule); background:var(--surface-2);
+  border-radius:0 6px 6px 0; font-size:calc(var(--fs-body)*.82); line-height:1.38;}
+.u4l04-ev .src-n{display:block; font-family:var(--ui); font-size:.86em; color:var(--slate); font-weight:600;}
+
+/* the Writing focus colour key */
+.u4l04-wfkey{display:flex; flex-direction:column; gap:.2em; margin-top:.35em;}
+.u4l04-wfkey .mq{font-size:calc(var(--fs-body)*.8); line-height:1.3;}
+
+/* phones (Read mode) */
+@media (max-width:900px){
+  .u4l04-diagram svg{max-height:none;}
+  .u4l04-figsm img{max-height:none;}
+  .u4l04-grid th:first-child, .u4l04-grid td:first-child{width:auto;}
+}
+
+/* short projectors (e.g. 1366 × 768): the busiest slides tighten up */
+@media (max-height:820px){
+  html:not(.read) .u4l04-dense{gap:9px;}
+  html:not(.read) .u4l04-dense h2{font-size:calc(var(--fs-h2)*.82);}
+  html:not(.read) .u4l04-dense .quote.sm{font-size:calc(var(--fs-body)*.74); line-height:1.38;}
+  html:not(.read) .u4l04-dense .quote{font-size:calc(var(--fs-body)*.88);}
+  html:not(.read) .u4l04-dense .src{padding:9px 15px;}
+  html:not(.read) .u4l04-dense .src .prov{margin-top:.35em;}
+  html:not(.read) .u4l04-dense .note{padding:.4em .8em;}
+  html:not(.read) .u4l04-dense .note .body, html:not(.read) .u4l04-dense .card .body,
+  html:not(.read) .u4l04-dense .qprompt{font-size:calc(var(--fs-body)*.76); line-height:1.34;}
+  html:not(.read) .u4l04-dense .card{padding:9px 15px;}
+  html:not(.read) .u4l04-dense .card .k{margin-bottom:.2em;}
+  html:not(.read) .u4l04-dense .keylist{gap:5px;}
+  html:not(.read) .u4l04-dense .keylist li{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u4l04-dense .keylist .d{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u4l04-dense .tbl.compact{font-size:calc(var(--fs-body)*.7);}
+  html:not(.read) .u4l04-dense .tbl.compact td{padding:.3em .55em;}
+  html:not(.read) .u4l04-dense .tbl th{padding:.38em .6em;}
+  html:not(.read) .u4l04-dense .figure img{max-height:28vh;}
+  html:not(.read) .u4l04-dense .u4l04-facts{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u4l04-dense .u4l04-qs{font-size:calc(var(--fs-body)*.74); gap:5px;}
+  html:not(.read) .u4l04-dense .u4l04-gloss{font-size:calc(var(--fs-chrome)*.85);}
+  html:not(.read) .u4l04-dense .u4l04-dq{font-size:calc(var(--fs-body)*.7); padding:.3em .75em;}
+  html:not(.read) .u4l04-dense .u4l04-ev{font-size:calc(var(--fs-body)*.72); padding:.3em .6em;}
+  html:not(.read) .u4l04-dense .u4l04-bank span{font-size:calc(var(--fs-body)*.72);}
+  html:not(.read) .u4l04-dense .opts li{font-size:calc(var(--fs-body)*.76); padding:.28em .65em;}
+  html:not(.read) .u4l04-dense .tf li, html:not(.read) .u4l04-dense .rq{font-size:calc(var(--fs-body)*.74);}
+  html:not(.read) .u4l04-dense .tf li{padding:.26em .65em;}
+  html:not(.read) .u4l04-dense .prac{gap:6px;}
+  html:not(.read) .u4l04-dense .cornell .cq, html:not(.read) .u4l04-dense .cornell .nts{font-size:calc(var(--fs-body)*.76); padding:.35em .8em;}
+  html:not(.read) .u4l04-dense .u4l04-diagram svg{max-height:30vh;}
+  html:not(.read) .u4l04-dense .u4l04-figsm img{max-height:24vh;}
+  html:not(.read) .u4l04-dense .checks label{font-size:calc(var(--fs-body)*.76);}
+  html:not(.read) .u4l04-dense .u4l04-wfkey .mq{font-size:calc(var(--fs-body)*.72);}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header id="rail">
+  <span class="sec" id="secname"></span>
+  <span class="spacer"></span>
+  <a class="btn" href="./" style="text-decoration:none"><span class="long">All lessons</span><span class="short">Home</span></a>
+  <span id="filter" class="read-only" role="group" aria-label="Show">
+    <button class="btn" type="button" data-f="all" aria-pressed="true">All</button>
+    <button class="btn" type="button" data-f="notes" aria-pressed="false">Notes</button>
+    <button class="btn" type="button" data-f="practice" aria-pressed="false">Practice</button>
+  </span>
+  <span id="count" aria-live="polite"></span>
+  <button class="btn present-only" id="tLegend" aria-pressed="true">Legend <kbd>L</kbd></button>
+  <button class="btn present-only" id="tTimer" aria-pressed="false">Timer <kbd>K</kbd></button>
+  <button class="btn" id="tRead" aria-pressed="false"><span class="lbl">Read</span> <kbd>R</kbd></button>
+  <button class="btn" id="tTheme">Theme <kbd>T</kbd></button>
+  <button class="btn" id="tOver"><span class="long">All slides</span><span class="short">Contents</span> <kbd>O</kbd></button>
+</header>
+
+<main id="deck">
+<section class="slide mid" data-sec="Lesson 4" data-title="Tacitus and Cassius Dio: two writers, two purposes" data-kind="intro">
+<div class="wrap">
+  <div class="split" style="--cols:.95fr 1.05fr; align-items:center">
+    <div class="stack">
+      <p class="eyebrow">Unit 4 · Boudicca · Lesson 4</p>
+      <h1>Tacitus and Cassius Dio: two writers, two purposes</h1>
+      <p class="lead">Almost all that ancient writers tell us about Boudicca comes from two Roman senators who wrote long after her revolt. What did each one write, and why?</p>
+      <p class="small">Year 11 Ancient History · Present with → or space · Read on a phone with <b>R</b></p>
+    </div>
+    <div class="u4l04-cover"><figure class="figure contain"><img src="images/u4l04-tacitus-annals-manuscript.jpg" alt="The end of Book 14 of Tacitus’s Annals and, after the red heading, the start of Book 15: every later copy of Annals 11–16 comes from this one manuscript, written at Monte Cassino in the 11th century (Florence, Biblioteca Medicea Laurenziana, Plut. 68.2)" loading="lazy"><figcaption>The end of Book 14 of Tacitus’s Annals and, after the red heading, the start of Book 15: every later copy of Annals 11–16 comes from this one manuscript, written at Monte Cassino in the 11th century (Florence, Biblioteca Medicea Laurenziana, Plut. 68.2) — <span class="cr">Photo: Sailko · CC BY 3.0</span></figcaption></figure></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 4" data-title="Connect: two officials" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Connect · 3 minutes · books closed · everyone writes · press K for the timer</p>
+  <h2>Two Roman officials in Britain</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="stack">
+      <div class="card accent"><div class="k">Everyone · 1 line</div><p class="body">Name the two Roman officials in Britain and what each controlled.</p></div>
+      <div class="card quiet"><div class="k">Re-teach · 1 minute</div><p class="body">The Lesson 3 review item most of the class missed: listen, then fix your answer in a second colour.</p></div>
+    </div>
+    <div class="stack" data-veil="Write yours first — then show the answer">
+      <div class="note reveal" data-code="evidence"><div class="k">The governor · Suetonius Paulinus</div><p class="body">The emperor’s army commander in the province.</p></div>
+      <div class="note reveal" data-code="evidence"><div class="k">The procurator · Decianus Catus</div><p class="body">The official who ran the province’s finances and taxes.</p></div>
+    </div>
+  </div>
+  <p class="cue reveal">Keep the procurator in mind: today both of our writers have something to say about him.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 4" data-title="Today’s goals" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Learning intentions and success criteria · 2 minutes</p>
+  <h2>Today’s goals</h2>
+  <div class="cols c2 lisc">
+    <div class="card quiet">
+      <div class="k">We are learning to</div>
+      <ul class="body">
+        <li>analyse Tacitus and Cassius Dio as sources for Prasutagus, Boudicca and the revolt</li>
+        <li>compare their accounts, attributing each view precisely</li>
+      </ul>
+    </div>
+    <div class="card accent">
+      <div class="k">I can</div>
+      <ul class="body">
+        <li>apply OVPRL to an extract from each writer</li>
+        <li>compare them (a similarity and a difference) using attribution verbs and the right tense</li>
+        <li>judge what each writer is reliable for</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small u4l04-syl"><b>Syllabus outcomes:</b> AH-11-05 analyses different types of sources for evidence to support a historical account or argument · AH-11-06 explains differing interpretations and representations of the past · AH-11-07 communicates historical understanding, applying historical knowledge, terms and concepts. <b>Life Skills:</b> AH-LS-08 uses sources to form conclusions about the past · AH-LS-11 communicates information about the past using historical terms and concepts.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 4" data-title="How to structure your notes" data-kind="intro notes">
+<div class="wrap">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Note-making · the routine for the whole course</p>
+  <h2>How to structure your notes</h2>
+  <div class="split" style="--cols:1fr 1.1fr">
+    <div class="cornell" aria-label="Layout of a Cornell notes page">
+      <div class="ch"><span><b>U4 L4 · Tacitus and Cassius Dio</b></span><span>date</span></div>
+      <div class="row"><div class="cq">Cue column<br><span class="small">questions and key terms, written after</span></div>
+        <div class="nts">Notes column<br><span class="small">short phrases, arrows (→ leads to), abbreviations (c. = about; T = Tacitus; D = Dio)</span></div></div>
+      <div class="row"><div class="cq">Who wrote about the revolt?</div><div class="nts">T (Latin) · D (Greek) → how long after?</div></div>
+      <div class="row"><div class="cq">&nbsp;</div><div class="nts">&nbsp;</div></div>
+      <div class="sum"><span class="k">Summary</span>three sentences, written at the end</div>
+    </div>
+    <ol class="keylist">
+      <li class="reveal"><span class="num">1</span><span class="t">A new lesson, a new page</span><span class="d">A cue column about a quarter of the page wide; title and date at the top; room for a summary at the bottom.</span></li>
+      <li class="reveal"><span class="num">2</span><span class="t">Listen and look, then write</span><span class="d">Don’t copy while a slide is being explained. Phrases, not sentences; a source for every claim.</span></li>
+      <li class="reveal"><span class="num">3</span><span class="t">Write your own notes at the ✎ checkpoint</span><span class="d">Then compare with the model notes, one row at a time. Add what you missed in a second colour.</span></li>
+      <li class="reveal"><span class="num">4</span><span class="t">Two other places for notes today</span><span class="d">OVPRL notes go in the OVPRL routine on page 2 of your booklet; the comparison grid goes on your notes page.</span></li>
+      <li class="reveal"><span class="num">5</span><span class="t">Finish with a three-sentence summary</span><span class="d">One checkpoint today: the two writers. Write the cue questions afterwards, with exam verbs: explain, compare, assess.</span></li>
+    </ol>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Lesson 4" data-title="Key vocabulary" data-kind="notes">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow">Key vocabulary · add to the unit word wall</p>
+  <h2>Words for reading two writers side by side</h2>
+  <div class="vocab">
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Directive verb (NESA)</th><th>Meaning, then what the answer must do</th></tr>
+      <tr><td>Compare</td><td>‘Show how things are similar or different.’ — Both sources together, point by point.</td></tr>
+      <tr><th>Writing term</th><th>Meaning</th></tr>
+      <tr><td>Attribution verb</td><td>A verb that says who claims what, and how: reports, claims, asserts, attributes, argues.</td></tr>
+      <tr><th>Added for this lesson</th><th>Meaning</th></tr>
+      <tr><td>Omen (portent)</td><td>A strange event taken as a sign of something about to happen.</td></tr>
+    </table></div>
+    <div class="tbl-scroll"><table class="tbl compact">
+      <tr><th>Content terms</th><th>Meaning</th></tr>
+      <tr><td>Governor / procurator</td><td>The emperor’s army commander and chief judge in a province (Suetonius Paulinus) / the official who ran its finances and taxes (Decianus Catus).</td></tr>
+      <tr><td>Epitome</td><td>A later summary of a longer work; Dio’s Book 62 survives mainly in a Byzantine epitome.</td></tr>
+      <tr><td>Composed speech</td><td>A speech written by an ancient historian for a character, showing the historian’s views.</td></tr>
+    </table></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Two writers" data-title="Two writers, far from the revolt" data-kind="notes">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow">1 · Two writers · I do — think aloud: who, when, and how do their words reach us?</p>
+  <h2>Two Roman senators, long after the revolt</h2>
+  <figure class="diagram u4l04-diagram"><svg class="u4l04-svg u4l04-timeline" viewBox="0 0 1100 330" role="img" aria-label="Time line. The revolt in 60 or 61 CE. At the time, Agricola, later Tacitus’s father-in-law, served on the governor Suetonius’s staff. Tacitus, about 55 to 120 CE, published the Annals after about 113 CE, about 55 years after the revolt. Cassius Dio, born between 155 and 164 CE, wrote his Roman History in about 200 to 222 CE, about 150 years after the revolt. Much later, in 1071 to 1078, the monk Xiphilinus made a summary of Dio’s later books, and Book 62 survives mainly in that summary. Every later copy of Annals Books 11 to 16 descends from one manuscript written at Monte Cassino in the 11th century.">
+<line class="u4l04-drop" x1="325.8" y1="140" x2="325.8" y2="280"/>
+<line class="u4l04-drop" x1="615.6" y1="244" x2="615.6" y2="280"/>
+<line class="u4l04-drop" x1="690.6" y1="244" x2="690.6" y2="280"/>
+<line class="u4l04-drop" x1="898.6" y1="140" x2="898.6" y2="280"/>
+<line class="u4l04-drop" x1="970.6" y1="244" x2="970.6" y2="280"/>
+<line class="u4l04-drop" x1="994.6" y1="244" x2="994.6" y2="280"/>
+<line class="u4l04-revolt" x1="141.6" y1="34" x2="141.6" y2="280"/>
+<text class="u4l04-t u4l04-tb u4l04-trevolt" x="133.6" y="24">60 or 61 CE · the revolt</text>
+<rect class="u4l04-link" x="151.6" y="160" width="246" height="84" rx="10"/>
+<text class="u4l04-t u4l04-tsm" x="165.6" y="185">Agricola (Tacitus’s later</text>
+<text class="u4l04-t u4l04-tsm" x="165.6" y="209">father-in-law) serves on</text>
+<text class="u4l04-t u4l04-tsm u4l04-tmute" x="165.6" y="233">Suetonius’s staff · Agricola 5</text>
+<rect class="u4l04-tac" x="300" y="56" width="340" height="84" rx="10"/>
+<text class="u4l04-t " x="314" y="81"><tspan class='u4l04-tname'>Tacitus</tspan> · about 55–120 CE</text>
+<text class="u4l04-t u4l04-tsm" x="314" y="105">Annals: after about 113 CE</text>
+<text class="u4l04-t u4l04-tsm u4l04-tgap" x="314" y="129">about 55 years after the revolt</text>
+<rect class="u4l04-dio" x="412" y="160" width="330" height="84" rx="10"/>
+<text class="u4l04-t " x="426" y="185"><tspan class='u4l04-tname'>Cassius Dio</tspan> · born 155–164 CE</text>
+<text class="u4l04-t u4l04-tsm" x="426" y="209">Roman History: about 200–222 CE</text>
+<text class="u4l04-t u4l04-tsm u4l04-tgap" x="426" y="233">about 150 years after the revolt</text>
+<rect class="u4l04-late" x="800" y="56" width="290" height="84" rx="10"/>
+<text class="u4l04-t u4l04-tsm" x="814" y="81">Every later copy of Annals 11–16</text>
+<text class="u4l04-t u4l04-tsm" x="814" y="105">comes from one manuscript,</text>
+<text class="u4l04-t u4l04-tsm u4l04-tmute" x="814" y="129">Monte Cassino, 11th century</text>
+<rect class="u4l04-late" x="800" y="160" width="290" height="84" rx="10"/>
+<text class="u4l04-t u4l04-tsm" x="814" y="185">1071–78: the monk Xiphilinus</text>
+<text class="u4l04-t u4l04-tsm" x="814" y="209">summarises Dio; Book 62</text>
+<text class="u4l04-t u4l04-tsm u4l04-tmute" x="814" y="233">survives mainly in his summary</text>
+<line class="u4l04-axis" x1="50" y1="280" x2="770" y2="280"/>
+<line class="u4l04-axis" x1="812" y1="280" x2="1084" y2="280"/>
+<line class="u4l04-break" x1="772" y1="292" x2="784" y2="268"/>
+<line class="u4l04-break" x1="786" y1="292" x2="798" y2="268"/>
+<line class="u4l04-tick" x1="104.1" y1="273" x2="104.1" y2="287"/>
+<text class="u4l04-t u4l04-tsm u4l04-tmute" x="104.1" y="312" text-anchor="middle">50 CE</text>
+<line class="u4l04-tick" x1="274.6" y1="273" x2="274.6" y2="287"/>
+<text class="u4l04-t u4l04-tsm u4l04-tmute" x="274.6" y="312" text-anchor="middle">100</text>
+<line class="u4l04-tick" x1="445.1" y1="273" x2="445.1" y2="287"/>
+<text class="u4l04-t u4l04-tsm u4l04-tmute" x="445.1" y="312" text-anchor="middle">150</text>
+<line class="u4l04-tick" x1="615.6" y1="273" x2="615.6" y2="287"/>
+<text class="u4l04-t u4l04-tsm u4l04-tmute" x="615.6" y="312" text-anchor="middle">200</text>
+<line class="u4l04-tick" x1="898.6" y1="273" x2="898.6" y2="287"/>
+<text class="u4l04-t u4l04-tsm u4l04-tmute" x="898.6" y="312" text-anchor="middle">1050</text>
+<line class="u4l04-tick" x1="1070.0" y1="273" x2="1070.0" y2="287"/>
+<text class="u4l04-t u4l04-tsm u4l04-tmute" x="1070.0" y="312" text-anchor="middle">1100 CE</text>
+<circle class="u4l04-revdot" cx="141.6" cy="280" r="8"/>
+<circle class="u4l04-dot-t" cx="325.8" cy="280" r="7"/>
+<rect class="u4l04-band-d" x="615.6" y="274" width="75.0" height="12" rx="6"/>
+<circle class="u4l04-dot-t" cx="898.6" cy="280" r="6"/>
+<rect class="u4l04-band-d" x="970.6" y="274" width="24.0" height="12" rx="6"/>
+</svg></figure>
+  <div class="split" style="--cols:1fr 1fr 1fr">
+    <div class="card accent sm"><div class="k">Tacitus · about 55–120 CE</div>
+      <ul class="u4l04-facts">
+        <li>Roman senator; consul in 97 CE; wrote in <b>Latin</b></li>
+        <li><i>Agricola</i> (98 CE): the life of his father-in-law, who served on Suetonius’s staff during the revolt</li>
+        <li><i>Annals</i> (after about 113 CE): Rome’s emperors from Tiberius to Nero, year by year</li>
+      </ul></div>
+    <div class="card sm"><div class="k">Cassius Dio · born 155–164 CE</div>
+      <ul class="u4l04-facts">
+        <li>Greek-speaking Roman senator from Bithynia (Asia Minor); consul again in 229 CE; wrote in <b>Greek</b></li>
+        <li><i>Roman History</i>, in 80 books, from Aeneas to 229 CE; written about 200–222 CE</li>
+        <li>Book 62 survives mainly in a summary (epitome) by Xiphilinus, a monk, made in 1071–78</li>
+      </ul></div>
+    <div class="stack">
+      <p class="qprompt">Tacitus wrote about 100 years closer to the revolt. Does that make him more reliable?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show a model answer"><p class="body">Not on its own. Closer helps, but so does what each writer knew and why he wrote. Today’s question is always: reliable <i>for what?</i></p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Two writers" data-title="Notes 1 — The two writers" data-kind="notes">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Notes checkpoint 1 of 1</p>
+  <h2>The two writers</h2>
+  <div class="cornell veil-parts" data-veil="Write your own notes first — then show the model notes">
+    <div class="ch"><span><b>U4 L4 · Tacitus and Cassius Dio</b></span><span>1 · The two writers</span></div>
+    <div class="row"><div class="cq">When did each write, and how far from the revolt?</div>
+      <div class="nts reveal">T: <i>Annals</i>, after c. 113 CE (~55 yrs after) <span class="sep">·</span> D: <i>Roman History</i>, c. 200–222 CE (~150 yrs after) <span class="sep">·</span> T a child in 60 or 61 CE → neither saw it</div></div>
+    <div class="row"><div class="cq">How is Tacitus linked to the revolt?</div>
+      <div class="nts reveal">father-in-law Agricola on Suetonius’s staff, 60 or 61 CE (<i>Agricola</i> 5) → a possible informant? <span class="sep">·</span> a reason to favour Suetonius?</div></div>
+    <div class="row"><div class="cq">How does Dio’s Book 62 survive?</div>
+      <div class="nts reveal">mainly in Xiphilinus’s summary (epitome), 1071–78 → not always Dio’s own words</div></div>
+    <div class="row"><div class="cq">Explain why both are Roman sources, and what follows.</div>
+      <div class="nts reveal">both Roman senators, writing for Romans <span class="sep">·</span> no British account survives → Britons’ views only as Romans imagined them</div></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="1 · Two writers" data-title="Think aloud: Tacitus, Annals 14.31" data-kind="notes">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow">1 · Two writers · I do — think aloud: OVPRL on Tacitus</p>
+  <h2>Tacitus on the will of Prasutagus: reliable for what?</h2>
+  <div class="split" style="--cols:1.08fr .92fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Tacitus, <i>Annals</i> 14.31</div>
+        <p class="quote sm">Prasutagus, king of the Iceni, famed for his long prosperity, had made the emperor his heir along with his two daughters, under the impression that this token of submission would put his kingdom and his house out of the reach of wrong. But the reverse was the result, so much so that his kingdom was plundered by centurions, his house by slaves, as if they were the spoils of war. <span class="ed">[One sentence, on what was done to Boudicca and her daughters, is left out here: Lesson 5 reads it.]</span> All the chief men of the Iceni, as if Rome had received the whole country as a gift, were stript of their ancestral possessions, and the king’s relatives were made slaves. Roused by these insults and the dread of worse, reduced as they now were into the condition of a province, they flew to arms and stirred to revolt the Trinobantes and others …</p>
+        <p class="prov">Tacitus, a Roman senator, <i>Annals</i>, published after about 113 CE · trans. A. J. Church and W. J. Brodribb (1876)</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · Tacitus, <i>Agricola</i> 5, on his father-in-law</div>
+        <p class="quote sm">He served his military apprenticeship in Britain to the satisfaction of Suetonius Paullinus, a painstaking and judicious officer, who, to test his merits, selected him to share his tent.</p>
+        <p class="prov">Tacitus, <i>Agricola</i> (98 CE) · trans. Church and Brodribb</p>
+      </div>
+    </div>
+    <div data-veil="Think it through first — then show the model OVPRL" data-booklet="model">
+      <ol class="keylist u4l04-ovprl">
+        <li class="reveal"><span class="num">O</span><span class="t">Origin</span><span class="d">Tacitus, a Roman senator, about 55 years after the revolt (he was a child in 60 or 61 CE). His father-in-law Agricola served on Suetonius’s staff.</span></li>
+        <li class="reveal"><span class="num">V</span><span class="t">Value</span><span class="d">Prasutagus “had made the emperor his heir along with his two daughters”; then the chain of wrongs that, Tacitus says, roused the Iceni and the Trinobantes.</span></li>
+        <li class="reveal"><span class="num">P</span><span class="t">Purpose</span><span class="d">A year-by-year history judging Rome’s rulers. He presents the revolt as provoked by Roman wrongs, “as if Rome had received the whole country as a gift”.</span></li>
+        <li class="reveal"><span class="num">R</span><span class="t">Reliability</span><span class="d">Reliable for the events and for how Romans explained them, but not for the Britons’ own motives, because no British account survives: “roused” is Tacitus’s explanation, not a Briton’s own words.</span></li>
+        <li class="reveal"><span class="num">L</span><span class="t">Limitations</span><span class="d">One side only; written long after; he names no source here; the family link may colour his view of Suetonius.</span></li>
+      </ol>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Reading Dio" data-title="Supported reading: Dio 62.1–2" data-kind="notes">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow">2 · Reading Dio · We do — supported reading · read together, then annotate</p>
+  <h2>Cassius Dio: money, and a woman who led a war</h2>
+  <div class="split veil-parts" style="--cols:1.32fr .68fr" data-veil="Annotate first — then show the answers">
+    <div class="src">
+      <div class="k">Source · Cassius Dio, <i>Roman History</i> 62.1–2</div>
+      <p class="quote sm"><span class="ed">[62.1]</span> <span class="match" data-step="m4">While this sort of child’s play was going on in Rome, a terrible disaster occurred in Britain.</span> Two cities were sacked, eighty thousand of the Romans and of their allies perished, and the island was lost to Rome. <span class="match" data-step="m4">Moreover, all this ruin was brought upon the Romans by a woman, a fact which in itself caused them the greatest shame.</span> … <span class="ed">[62.2]</span> <span class="match" data-step="m1">An excuse for the war was found in the confiscation of the sums of money that Claudius had given to the foremost Britons; for these sums, as Decianus Catus, the procurator of the island, maintained, were to be paid back.</span> <span class="match" data-step="m2">This was one reason for the uprising; another was found in the fact that Seneca, in the hope of receiving a good rate of interest, had lent to the islanders 40,000,000 sesterces that they did not want, and had afterwards called in this loan all at once and had resorted to severe measures in exacting it.</span> <span class="match" data-step="m3">But the person who was chiefly instrumental in rousing the natives and persuading them to fight the Romans, the person who was thought worthy to be their leader and who directed the conduct of the entire war, was Buduica, a Briton woman of the royal family</span> and possessed of greater intelligence than often belongs to women. … <span class="match" data-step="m5">In stature she was very tall, in appearance most terrifying, in the glance of her eye most fierce, and her voice was harsh; a great mass of the tawniest hair fell to her hips</span> …</p>
+      <p class="prov">Cassius Dio, a Greek-speaking Roman senator, <i>Roman History</i>, written about 200–222 CE; Book 62 survives mainly in Xiphilinus’s summary (1071–78) · trans. E. Cary, Loeb Classical Library (1925)</p>
+      <p class="u4l04-gloss"><b>Words:</b> child’s play = Nero’s festivals and stage shows, which Dio has just described · confiscation = taking property away · procurator = the official in charge of the province’s money · sesterces = Roman coins · chiefly instrumental = most active in causing · tawniest = most golden-brown · that they did not want = Cary notes that the Greek here is uncertain: another editor reads “at their request”</p>
+    </div>
+    <div class="u4l04-qs">
+      <p class="mq reveal" data-c="m4" data-hl="[data-step=m4]"><span class="sw"></span><span><b>How does Dio open the story for Roman readers?</b> <span class="vp">As a disaster and a shame: it struck while Rome played at Nero’s games, and it was brought about “by a woman”.</span></span></p>
+      <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>What is the first reason Dio gives?</b> <span class="vp">Money: the procurator, Decianus Catus, said Claudius’s gifts to leading Britons had to be paid back.</span></span></p>
+      <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>And the second?</b> <span class="vp">More money: Seneca had lent the Britons 40 million sesterces (in Cary’s translation), then called the loan in all at once, harshly.</span></span></p>
+      <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span><b>Who, for Dio, did most to start the war?</b> <span class="vp">Buduica (Boudicca) herself: a royal woman who roused the Britons and directed the whole war.</span></span></p>
+      <p class="mq reveal" data-c="m5" data-hl="[data-step=m5]"><span class="sw"></span><span><b>Could Dio have seen her?</b> <span class="vp">No: he was born about a century after her death, and we do not know where his description comes from.</span></span></p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Reading Dio" data-title="Class OVPRL: Dio 62.1–2" data-kind="notes">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow">2 · Reading Dio · We do — the class OVPRL · cold call each letter</p>
+  <h2>Dio as a source: reliable for what?</h2>
+  <div class="split" style="--cols:.62fr 1.38fr">
+    <div class="stack">
+      <figure class="figure u4l04-figsm"><img src="images/u4l04-seneca-portrait-berlin.jpg" alt="Seneca, Nero’s adviser, named on the stone: one side of a marble double portrait with Socrates, carved in the 3rd century CE from a portrait first made in the mid-1st century CE, perhaps in his lifetime (Antikensammlung, Staatliche Museen zu Berlin, SK 391)" loading="lazy"><figcaption>Seneca, Nero’s adviser, named on the stone: one side of a marble double portrait with Socrates, carved in the 3rd century CE from a portrait first made in the mid-1st century CE, perhaps in his lifetime (Antikensammlung, Staatliche Museen zu Berlin, SK 391) — <span class="cr">Photo: Mark Landon / Wikimedia Commons · CC BY 4.0</span></figcaption></figure>
+      <div class="src"><div class="k">Cary on Dio (1914)</div><p class="quote sm">Dio’s point of view is thoroughly Roman.</p><p class="prov">E. Cary, Introduction to his Loeb translation (vol. I, 1914)</p></div>
+    </div>
+    <div data-veil="Do it together first — then show the class OVPRL">
+      <ol class="keylist u4l04-ovprl">
+        <li class="reveal"><span class="num">O</span><span class="t">Origin</span><span class="d">Cassius Dio, a Greek-speaking Roman senator, writing about 200–222 CE: about 150 years after the revolt. Book 62 survives mainly in Xiphilinus’s summary.</span></li>
+        <li class="reveal"><span class="num">V</span><span class="t">Value</span><span class="d">Dio’s explanation (Catus’s demand, Seneca’s loan, Boudicca’s leadership) and the only ancient description of her.</span></li>
+        <li class="reveal"><span class="num">P</span><span class="t">Purpose</span><span class="d">A history of Rome from Aeneas to his own day. He frames the revolt as a disgrace of Nero’s reign, “brought upon the Romans by a woman”.</span></li>
+        <li class="reveal"><span class="num">R</span><span class="t">Reliability</span><span class="d">Reliable for how Romans of Dio’s day explained and imagined the revolt, but not for exact details or her words, because he wrote about 150 years later and names no source.</span></li>
+        <li class="reveal"><span class="num">L</span><span class="t">Limitations</span><span class="d">A summary, so not always Dio’s own words; one Roman view; no British voice; “eighty thousand” is a claim, not a count.</span></li>
+      </ol>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Reading Dio" data-title="The grid: what does each writer blame?" data-kind="notes">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow">2 · Reading Dio · We do — the class fills the grid · cold call each row</p>
+  <h2>Why did the Britons rise? Tacitus and Dio side by side</h2>
+  <div class="tbl-scroll" data-veil="Fill in your grid first — then show the answers"><table class="tbl compact u4l04-grid">
+    <tr><th>Cause</th><th>Tacitus, <i>Annals</i> 14.31–32, 14.35</th><th>Dio, <i>Roman History</i> 62.1–2</th></tr>
+    <tr class="reveal"><td>The procurator, Decianus Catus</td><td>goaded the province “into war by his rapacity” (14.32)</td><td>claimed Claudius’s gifts “were to be paid back” (62.2)</td></tr>
+    <tr class="reveal"><td>Other money</td><td>the chief men “stript of their ancestral possessions”; no loans</td><td>Seneca’s loan of 40,000,000 sesterces (in Cary’s translation), called in “all at once”</td></tr>
+    <tr class="reveal"><td>Prasutagus and his family</td><td>the will ignored; kingdom plundered; Boudicca “scourged” and her daughters “outraged” (14.31)</td><td>not mentioned</td></tr>
+    <tr class="reveal"><td>Veterans, colony and temple</td><td>veterans drove people from their houses and farms; the temple “a citadel, as it seemed, of perpetual tyranny”</td><td>not given as causes</td></tr>
+    <tr class="reveal"><td>Boudicca’s part</td><td>she rallies the Britons (“went up to tribe after tribe”, 14.35), after the wrongs</td><td>“chiefly instrumental in rousing the natives”</td></tr>
+  </table></div>
+  <p class="cue">Keep this grid on your notes page: today’s comparison sentences come from it.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Reading Dio" data-title="Who is speaking in the bracket?" data-kind="notes">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow">2 · Reading Dio · We do — one sentence from the speech Dio gives Boudicca</p>
+  <h2>Who is really speaking in the bracket?</h2>
+  <div class="split" style="--cols:1.1fr .9fr">
+    <div class="src">
+      <div class="k">Source · Cassius Dio, <i>Roman History</i> 62.6: Buduica prays before the war</div>
+      <p class="quote sm">I thank thee, Andraste, and call upon thee as woman speaking to woman; for I rule over no burden-bearing Egyptians as did Nitocris, nor over trafficking Assyrians as did Semiramis <span class="match" data-step="m1">(for we have by now gained thus much learning from the Romans!)</span>, much less over the Romans themselves as did Messalina once and afterwards Agrippina and now Nero …</p>
+      <p class="prov">Cassius Dio, <i>Roman History</i>, about 200–222 CE (Xiphilinus’s summary) · trans. E. Cary (1925)</p>
+      <p class="u4l04-gloss"><b>Words:</b> Andraste = a goddess of the Britons · Nitocris, Semiramis = queens of Egypt and Assyria in Greek histories · Messalina, Agrippina = wives of the emperor Claudius</p>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Who is really speaking in the bracket?</p>
+      <div class="note reveal" data-code="judgement" data-hl="[data-step=m1]" data-veil="Answer first — then show the answer"><p class="body">Dio. A Briton of 60 or 61 CE would hardly compare herself with queens from Greek histories, then joke that she learned of them “from the Romans”. The learning is Dio’s: he composed the speech.</p></div>
+      <p class="qprompt reveal">So what is the speech good evidence for?</p>
+      <div class="note reveal" data-code="evidence" data-veil="Answer first — then show the answer"><p class="body">For Dio’s view of Boudicca, of Britons and of Nero’s Rome (she mocks Nero as a woman), not for her own words.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="2 · Reading Dio" data-title="Hinge: Dio’s speech for Boudicca" data-kind="practice">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow">Check for understanding · hinge question · 3 minutes · hold up your A, B, C or D card on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2>Which statement about Dio’s speech for Boudicca is most accurate?</h2>
+  <div class="veil-parts" data-veil="Vote first — then show the answer">
+    <ol class="opts">
+      <li><span class="n">A</span><span>It records her exact words, as a Roman witness reported them</span></li>
+      <li><span class="n">B</span><span>It copies her words from a British record made at the time</span></li>
+      <li><span class="n">C</span><span>It translates into Greek a speech that Tacitus wrote earlier</span></li>
+      <li id="u4l04-hqD"><span class="n">D</span><span>It gives her words that Dio composed, as ancient historians often did</span></li>
+    </ol>
+    <i class="reveal" data-mark="#u4l04-hqD" hidden></i>
+    <div class="note vp reveal" data-code="evidence"><div class="k">D: Dio composed it</div><p class="body"><b>A</b> is wrong: no witness is named, and Dio wrote about 150 years later. <b>B</b> is wrong: no British written account survives. <b>C</b> is wrong: Tacitus gives Boudicca a different, much shorter speech, in which she fights ‘as one of the people’ (<i>Annals</i> 14.35), and Dio does not use it. <b>D</b>: the bracket in 62.6 shows Dio’s own learning in her mouth.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Writing focus: attribution verbs and tense; compare" data-kind="notes">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow">3 · You do · Writing focus · 7 minutes · I do → We do → apply</p>
+  <h2>Writing focus: say what each writer does, in the right tense</h2>
+  <div class="split" style="--cols:1fr 1fr">
+    <div class="card accent"><div class="k">I do · watch</div>
+      <p class="body"><b>Compare</b>: ‘Show how things are similar or different.’ <span class="small">NESA, <i>Glossary of key words</i></span></p>
+      <p class="body">Give each writer a precise attribution verb (<i>reports, states, claims, presents … as, attributes … to</i>) in the <b>present tense</b>: the book still says it. What happened stays in the <b>past</b>.</p>
+      <p class="small">Not: <span class="nq">“Tacitus said that Boudicca is fighting as one of the people.”</span></p>
+      <p class="small">Worked example · written for this lesson</p>
+      <p class="quote sm model" data-booklet="model"><span class="match" data-step="m1">Both writers</span> <span class="match" data-step="m3">give</span> Boudicca a composed speech, <span class="match" data-step="m2">but whereas</span> Tacitus <span class="match" data-step="m3">presents</span> her as a wronged mother fighting ‘as one of the people’ (<i>Annals</i> 14.35), Dio <span class="match" data-step="m3">presents</span> a queen ‘most terrifying’ in appearance (62.2).</p>
+      <div class="u4l04-wfkey">
+      <p class="mq reveal" data-c="m1" data-hl="[data-step=m1]"><span class="sw"></span><span><b>Both</b> marks the similarity</span></p>
+      <p class="mq reveal" data-c="m2" data-hl="[data-step=m2]"><span class="sw"></span><span><b>but whereas</b> turns to the difference</span></p>
+      <p class="mq reveal" data-c="m3" data-hl="[data-step=m3]"><span class="sw"></span><span>present-tense verbs for what each writer does</span></p>
+      </div>
+    </div>
+    <div class="card"><div class="k">We do · together</div>
+      <p class="body">Both writers report omens before the disaster. Build one sentence that starts with <b>Both</b>: a precise verb for each writer, in the present tense.</p>
+      <p class="u4l04-ev"><span class="src-n">Tacitus, <i>Annals</i> 14.32</span>“… the statue of Victory at Camulodunum fell prostrate and turned its back to the enemy, as though it fled before them.”</p>
+      <p class="u4l04-ev"><span class="src-n">Dio, <i>Roman History</i> 62.1</span>“… houses were seen under the water in the river Thames, and the ocean between the island and Gaul once grew blood-red at flood tide.”</p>
+      <div class="note reveal" data-code="judgement" data-veil="Build it first — then show a model sentence"><div class="k">A model similarity · written for this lesson</div>
+        <p class="quote sm model">Both writers report omens of the disaster: Tacitus records that the statue of Victory at Camulodunum ‘fell prostrate and turned its back to the enemy’ (<i>Annals</i> 14.32), and Dio reports that the sea ‘grew blood-red at flood tide’ (62.1).</p></div>
+    </div>
+  </div>
+  <div class="card quiet"><div class="k">Apply · in today’s task</div>
+    <p class="body">Write your similarity first, with a precise verb for each writer: <span class="nq">“Both writers …: Tacitus reports that …, and Dio states that …”</span> Present tense for each writer; past tense for what happened. <b>Stage 6:</b> add the difference in the same sentence with <b>whereas</b>. Your Writing toolkit (booklet pages 3–4): attribution verbs.</p></div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: OVPRL on two new extracts">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow">3 · You do · 4 minutes · in the OVPRL routine on page 2 of your booklet · press K for the timer</p>
+  <h2>Your turn: OVPRL on two new extracts</h2>
+  <div class="split" style="--cols:1.2fr .8fr">
+    <div class="stack">
+      <div class="src">
+        <div class="k">Source · Tacitus, <i>Agricola</i> 16</div>
+        <p class="quote sm">Rousing each other by this and like language, under the leadership of Boudicea, a woman of kingly descent (for they admit no distinction of sex in their royal successions), they all rose in arms. They fell upon our troops, which were scattered on garrison duty, stormed the forts, and burst into the colony itself, the head-quarters, as they thought, of tyranny. In their rage and their triumph, they spared no variety of a barbarian’s cruelty.</p>
+        <p class="prov">Tacitus, <i>Agricola</i>, the life of his father-in-law (98 CE) · trans. Church and Brodribb</p>
+        <p class="u4l04-gloss"><b>Words:</b> this and like language = the Britons’ complaints against Roman rule, which Tacitus has just reported · kingly descent = a royal family · garrison duty = guarding forts</p>
+      </div>
+      <div class="src">
+        <div class="k">Source · Cassius Dio, <i>Roman History</i> 62.3: from the speech Dio gives Buduica</div>
+        <p class="quote sm">For what treatment is there of the most shameful or grievous sort that we have not suffered ever since these men made their appearance in Britain? Have we not been robbed entirely of most of our possessions, and those the greatest, while for those that remain we pay taxes? Besides pasturing and tilling for them all our other possessions, do we not pay a yearly tribute for our very bodies?</p>
+        <p class="prov">Cassius Dio, <i>Roman History</i>, about 200–222 CE (Xiphilinus’s summary) · trans. E. Cary (1925)</p>
+        <p class="u4l04-gloss"><b>Words:</b> grievous = causing great pain · pasturing and tilling = grazing animals and ploughing · tribute = a tax paid to a ruler</p>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card accent sm"><div class="k">Everyone</div><p class="body">Neither extract was analysed in class: apply the routine yourself. One line for each letter, in your own words. Quote two or three words for Value. For Reliability: <span class="nq">“reliable for … but not for … because …”</span></p></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body">Use the author cards (the two writers) and the first words: <span class="nq">“Written by … in …” · “It shows …” · “He wanted …” · “It cannot tell us …”</span></p></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body">Add one problem to each column that the other writer does not share. What does Tacitus’s word “barbarian” show about his perspective?</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Check: OVPRL on the new extracts" data-kind="notes">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow">3 · You do · check your notes · 1 minute · add what you missed in a second colour</p>
+  <h2>Check your OVPRL notes on the new extracts</h2>
+  <div class="tbl-scroll" data-veil="Write your notes first — then show the answers"><table class="tbl compact u4l04-grid">
+    <tr><th>OVPRL</th><th>Tacitus, <i>Agricola</i> 16</th><th>Dio, <i>Roman History</i> 62.3</th></tr>
+    <tr class="reveal"><td>Origin</td><td>Tacitus’s earlier book (98 CE), the life of his father-in-law: about 37 years after the revolt</td><td>words Dio gives Buduica in a speech, written about 200–222 CE (about 150 years after); read in Xiphilinus’s summary</td></tr>
+    <tr class="reveal"><td>Value</td><td>the outline of the rising: led by “a woman of kingly descent”; troops attacked, forts stormed, the colony entered</td><td>Dio’s idea of the Britons’ grievances: lost possessions, taxes, “a yearly tribute for our very bodies”</td></tr>
+    <tr class="reveal"><td>Purpose</td><td>to honour Agricola: the revolt is the setting for his first service; written for Romans (“our troops”)</td><td>to explain, through her mouth, why the Britons fought, as composed speeches let ancient historians do</td></tr>
+    <tr class="reveal"><td>Reliability</td><td>reliable for the outline and for a Roman senator’s view of the rising, but not for the Britons’ side, because he calls them barbarians and no British account survives</td><td>reliable for what a Roman senator of Dio’s day thought the Britons resented, but not for Buduica’s words, because Dio composed the speech</td></tr>
+    <tr class="reveal"><td>Limitations</td><td>very brief; the causes only hinted at (“this and like language”); a book written in praise of Agricola</td><td>composed, about 150 years later, and read in a summary; general complaints, not the events of 60 or 61 CE</td></tr>
+  </table></div>
+  <p class="cue">Accept other answers that say what each writer is reliable for, with a reason from origin or purpose.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="You do: compare their explanations">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow">3 · You do · 12 minutes · deconstruct first · then write · press K for the timer</p>
+  <h2><b>Compare</b> Tacitus’s and Dio’s explanations of the revolt.</h2>
+  <p class="qprompt">Deconstruct it: what does this question ask you to do?</p>
+  <div data-veil="Deconstruct it first — then show the answer">
+    <dl class="u4l04-dq reveal">
+      <dt>Verb</dt><dd><b>compare</b>: show how they are similar <i>and</i> how they differ, point by point</dd>
+      <dt>Topic</dt><dd>their explanations: why each says the revolt broke out (causes, not the battle)</dd>
+      <dt>Limits</dt><dd>today’s extracts from Tacitus and Dio only; the revolt of 60 or 61 CE</dd>
+      <dt>Do</dt><dd>three sentences: a similarity, a difference, a reason for the difference (from origin or purpose), each writer with a precise verb</dd>
+    </dl>
+  </div>
+  <div class="split" style="--cols:1.1fr 1fr">
+    <div class="stack">
+      <div class="card accent sm"><div class="k">Everyone · three sentences</div>
+        <ol class="body">
+          <li>A similarity, with a precise verb for each writer.</li>
+          <li>A difference, with <b>whereas</b> or <b>however</b>.</li>
+          <li>A reason for the difference, from your OVPRL notes, hedged: <i>may</i>, <i>probably</i>.</li>
+        </ol></div>
+      <div class="card quiet sm"><div class="k">Extension</div><p class="body"><b>Assess</b> two textual problems for the causes of the revolt: Dio’s Book 62 survives mainly in a later summary, and one word in 62.2 is doubtful (‘that they did not want’ or ‘at their request’). Which matters more, and why?</p></div>
+    </div>
+    <div class="stack">
+      <p class="qprompt">Check first: which tense for what Dio does, and which for what Catus did?</p>
+      <div class="note reveal" data-code="judgement" data-veil="Answer first — then show the answer"><p class="body">Present for the writer (<i>Dio states</i>); past for the event (<i>Catus demanded the money back</i>).</p></div>
+      <div class="card quiet sm"><div class="k">Support</div><p class="body nq">“Both writers …: Tacitus reports that …, and Dio states that … However, whereas Tacitus presents …, Dio attributes … to … This difference may be because …”</p>
+        <div class="u4l04-bank"><span>reports</span><span>states</span><span>claims</span><span>presents … as</span><span>attributes … to</span><span>whereas</span><span>may</span></div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="A model comparison" data-kind="notes">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow">3 · You do · after you write · compare yours with a model</p>
+  <h2>A model comparison: Tacitus and Dio on the causes</h2>
+  <div class="split" style="--cols:1.65fr 1fr">
+    <div class="src reveal" data-veil="Write yours first — then show a model answer">
+      <div class="k">Three model sentences · written for this lesson</div>
+      <p class="quote sm model">Both writers blame the procurator, Decianus Catus: Tacitus reports that he goaded the province ‘into war by his rapacity’ (<i>Annals</i> 14.32), and Dio states that Catus demanded back the sums Claudius had given to leading Britons (62.2). However, whereas Tacitus presents the plunder of Prasutagus’s kingdom, the outrages against his family and the seizures by the veterans at Camulodunum as what roused the Britons (14.31), Dio attributes the rising to money, including Seneca’s loan of 40,000,000 sesterces (in Cary’s translation), called in ‘all at once’ (Cary translates a doubtful phrase as ‘that they did not want’; another editor reads ‘at their request’), and to Buduica herself, ‘chiefly instrumental in rousing the natives’ (62.2). This difference may reflect when and why each wrote: Tacitus, about 55 years later, judges Rome’s rule through the wrongs of its officials and soldiers, whereas Dio, writing about 150 years later in an account that survives mainly as a summary, presents the revolt as a disgrace of Nero’s reign, brought about by his adviser’s greed and ‘by a woman’.</p>
+    </div>
+    <div class="card quiet"><div class="k">Check yours: does it …</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> <span>give a similarity, then a difference?</span></label></li>
+        <li><label><input type="checkbox"> <span>give each writer a precise verb (not <i>says</i>)?</span></label></li>
+        <li><label><input type="checkbox"> <span>use the present tense for writers, the past for events?</span></label></li>
+        <li><label><input type="checkbox"> <span>use <i>whereas</i>, <i>however</i> or <i>both</i>?</span></label></li>
+        <li><label><input type="checkbox"> <span>give a reason from origin or purpose?</span></label></li>
+        <li><label><input type="checkbox"> <span>hedge the reason (<i>may</i>, <i>probably</i>)?</span></label></li>
+      </ul></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="3 · You do" data-title="Summary" data-kind="notes">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow ckpt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L18.5 9.5a2.1 2.1 0 0 0-4-4L4 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 6.5l4 4" stroke="currentColor" stroke-width="2"/></svg> Finish your notes <span class="optional">If time · or at home</span></p>
+  <h2>Summary: three sentences</h2>
+  <div class="split" style="--cols:1.4fr 1fr">
+    <div class="stack">
+      <div class="card accent">
+        <div class="k">Write one sentence for each</div>
+        <ol class="body">
+          <li>Who were the two writers, and when did they write?</li>
+          <li>What does each blame for the revolt?</li>
+          <li>What is each writer reliable for?</li>
+        </ol>
+      </div>
+      <div class="src reveal" data-veil="Show a model summary">
+        <div class="k">A model summary · written for this lesson</div>
+        <p class="quote sm model">Our two main written sources for the revolt are Tacitus, a Roman senator who published the <i>Annals</i> about 55 years after it, and Cassius Dio, a Greek-speaking Roman senator who wrote about 150 years after it, in a book that survives mainly as a later summary. Both blame the procurator, Decianus Catus, but Tacitus stresses the outrages against Prasutagus’s family and the veterans, whereas Dio stresses money, including Seneca’s loan, and Boudicca’s own leadership. Each is reliable for how Romans explained the revolt rather than for what the Britons thought, since no British account survives.</p>
+      </div>
+    </div>
+    <div class="card quiet">
+      <div class="k">Your notes should now cover</div>
+      <ul class="checks">
+        <li><label><input type="checkbox"> Governor and procurator</label></li>
+        <li><label><input type="checkbox"> Tacitus: when, and his link to Suetonius</label></li>
+        <li><label><input type="checkbox"> Dio: when, and the summary</label></li>
+        <li><label><input type="checkbox"> OVPRL on both extracts</label></li>
+        <li><label><input type="checkbox"> The causes grid</label></li>
+        <li><label><input type="checkbox"> Composed speeches: the bracket</label></li>
+        <li><label><input type="checkbox"> Your three comparison sentences</label></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Check: is Tacitus more reliable than Dio?" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Check · gesture vote · 3 minutes · thumbs on <span class="nq">“3, 2, 1, show”</span></p>
+  <h2><span class="nq">“Tacitus is more reliable than Dio.”</span></h2>
+  <div class="card accent"><div class="k">Everyone · vote</div><p class="body">Thumbs up: agree · sideways: it depends · down: disagree. Then be ready to answer: <b>reliable for what?</b></p></div>
+  <div class="note reveal" data-code="judgement" data-veil="Vote first — then show the answer"><div class="k">It depends: reliable for what?</div><p class="body">For the events and the causes Romans gave, Tacitus is probably the stronger witness: he wrote about 100 years closer, his father-in-law was on Suetonius’s staff, and his own words survive, not a summary. But neither is reliable for what the Britons themselves thought, because both were Roman senators and no British account survives; and Dio may preserve a detail Tacitus leaves out, such as Seneca’s loan.</p></div>
+</div>
+</section>
+
+<section class="slide mid" data-sec="Close" data-title="Exit ticket" data-kind="intro">
+<div class="wrap">
+  <p class="eyebrow">Exit ticket · 4 minutes · before you leave</p>
+  <h2>Fix the verb and the tense</h2>
+  <div class="card accent"><p class="lead nq">“Dio said that Seneca lends the Britons money they do not want.”</p></div>
+  <div class="note reveal" data-code="evidence" data-veil="Show what a strong answer includes"><div class="k">A strong answer includes</div><p class="body">A precise verb in the present tense for what Dio does (<i>reports</i>, or <i>claims</i>, since no other source confirms it) and the past tense for what Seneca did: Dio claims that Seneca had lent the islanders 40,000,000 sesterces (in Cary’s translation) ‘that they did not want’ (62.2: Cary’s translation of a doubtful phrase; another editor reads ‘at their request’).</p></div>
+  <p class="small">Then check yourself against today’s three “I can” statements. <b>Next lesson:</b> why did the Iceni revolt? Its sources describe violence, including against women: they are read with care, and you can speak to your teacher beforehand.</p>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — true, false, justify" data-kind="practice">
+<div class="wrap prac u4l04-dense">
+  <p class="eyebrow">Practice and review · 1 of 4 · true, false, justify</p>
+  <h2>True or false? Justify your answer</h2>
+  <ol class="tf" data-answers>
+    <li><span class="n">1</span><span>Tacitus saw the revolt himself and wrote about it soon after.</span>
+      <span class="sol no reveal">False <span class="why">— he was a child in 60 or 61 CE, and he published the <i>Annals</i> after about 113 CE, about 55 years later.</span></span></li>
+    <li><span class="n">2</span><span>Both Tacitus and Dio blame the procurator, Decianus Catus.</span>
+      <span class="sol reveal">True <span class="why">— Tacitus for his “rapacity” (14.32); Dio for demanding back Claudius’s gifts (62.2).</span></span></li>
+    <li><span class="n">3</span><span>Tacitus says Seneca’s loan helped to cause the revolt.</span>
+      <span class="sol no reveal">False <span class="why">— only Dio mentions Seneca’s loan (62.2).</span></span></li>
+    <li><span class="n">4</span><span>We can read Dio’s Book 62 exactly as he wrote it.</span>
+      <span class="sol no reveal">False <span class="why">— it survives mainly in a summary made by the monk Xiphilinus in 1071–78.</span></span></li>
+    <li><span class="n">5</span><span>Dio is the only ancient writer to describe what Boudicca looked like.</span>
+      <span class="sol reveal">True <span class="why">— and he was born about a century after her death, so we do not know where his picture of her comes from.</span></span></li>
+    <li><span class="n">6</span><span>Dio’s speech for Boudicca records her exact words.</span>
+      <span class="sol no reveal">False <span class="why">— Dio composed it, as ancient historians often did; the bracket about learning “from the Romans” gives him away.</span></span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — write it as a historian" data-kind="practice">
+<div class="wrap prac u4l04-dense">
+  <p class="eyebrow">Practice and review · 2 of 4 · writing · attribution verbs, tense, compare</p>
+  <h2>Write it as a historian</h2>
+  <div class="cols c2">
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 1 · Fix the verb and the tense</div>
+        <ol class="body">
+          <li><span class="nq">“Tacitus said that the veterans drive people out of their houses.”</span></li>
+          <li><span class="nq">“Dio says that two cities are sacked.”</span></li>
+          <li><span class="nq">“Tacitus wrote that Prasutagus makes the emperor his heir.”</span></li>
+        </ol></div>
+      <div class="src reveal" data-veil="Show model answers"><div class="k">Model answers · written for this lesson</div>
+        <p class="quote sm model">1. Tacitus reports that the veterans ‘drove people out of their houses’ (<i>Annals</i> 14.31). 2. Dio reports that two cities were sacked (62.1). 3. Tacitus records that Prasutagus ‘had made the emperor his heir along with his two daughters’ (<i>Annals</i> 14.31).</p></div>
+    </div>
+    <div class="stack">
+      <div class="card accent"><div class="k">Exercise 2 · <b>Compare</b> how Tacitus and Dio report Boudicca’s death</div>
+        <p class="body">Tacitus, <i>Annals</i> 14.37: “Boudicea put an end to her life by poison.” · Dio, <i>Roman History</i> 62.12: “… Buduica fell sick and died. The Britons mourned her deeply and gave her a costly burial …”</p></div>
+      <div class="src reveal" data-veil="Show a model answer"><div class="k">A model · written for this lesson</div>
+        <p class="quote sm model">Both writers report that Boudicca died after the battle, but whereas Tacitus states that she ‘put an end to her life by poison’ (<i>Annals</i> 14.37), Dio reports that she ‘fell sick and died’ and was mourned with a costly burial (62.12). Since neither names his source, a historian can say only that the ancient accounts disagree about how she died.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Practice — extension: two problems" data-kind="practice">
+<div class="wrap prac u4l04-dense">
+  <p class="eyebrow">Practice and review · 3 of 4 · extension · assess</p>
+  <h2>Two problems with our sources</h2>
+  <div class="split" style="--cols:1fr 1.25fr">
+    <div class="stack">
+      <div class="card quiet"><div class="k">Exercise 3 · one paragraph</div><p class="body"><b>Assess</b> two textual problems for the causes of the revolt: Dio’s Book 62 survives mainly in a later summary, and one word in 62.2 is doubtful (‘that they did not want’ or ‘at their request’). Which matters more, and why?</p></div>
+      <div class="src"><div class="k">Cary on the summaries of Dio (1914)</div><p class="quote sm">The Epitomes, on the other hand, while they often repeat entire sentences of Dio verbatim, or nearly so … must, nevertheless, be regarded as essentially paraphrases.</p><p class="prov">E. Cary, Introduction to his Loeb translation of Dio (vol. I, 1914)</p></div>
+    </div>
+    <div class="note reveal" data-veil="Try it first — then show what a strong answer includes"><div class="k">A strong answer includes</div><ul class="body">
+        <li>A judgement of degree: which problem matters more for the causes, and how much more.</li>
+        <li>What each problem puts in doubt: the summary, whose words and emphasis we read; the doubtful word, whether Seneca’s loan was forced on the Britons or sought by them.</li>
+        <li>A weighing: which cause rests on the doubtful point, and which survive whichever reading is right.</li>
+        <li>Hedges that match the evidence (<i>may</i>, <i>probably</i>).</li></ul></div>
+  </div>
+</div>
+</section>
+
+<section class="slide" data-sec="Practice and review" data-title="Quick checks review" data-kind="practice notes">
+<div class="wrap prac u4l04-dense">
+  <p class="eyebrow">Practice and review · 4 of 4 · cover your notes and answer from memory</p>
+  <h2>Quick checks</h2>
+  <ol class="rq" data-answers>
+    <li>When did Tacitus and Dio write, and how long after the revolt?
+      <span class="sol reveal">Tacitus: the <i>Annals</i>, after about 113 CE, about 55 years after. Dio: the <i>Roman History</i>, about 200–222 CE, about 150 years after.</span></li>
+    <li>What links Tacitus to Suetonius Paulinus?
+      <span class="sol reveal">His father-in-law, Agricola, served on Suetonius’s staff in Britain at the time of the revolt (<i>Agricola</i> 5).</span></li>
+    <li>How does Dio’s Book 62 survive, and why does that matter?
+      <span class="sol reveal">Mainly in Xiphilinus’s summary (1071–78), so we cannot always be sure the words are Dio’s.</span></li>
+    <li>What do both writers blame for the revolt?
+      <span class="sol reveal">The procurator, Decianus Catus: his “rapacity” (Tacitus); his demand that Claudius’s gifts be paid back (Dio).</span></li>
+    <li>What does each writer stress that the other does not?
+      <span class="sol reveal">Tacitus: the outrages against Prasutagus’s family, the veterans and the temple. Dio: Seneca’s loan and Boudicca’s leadership.</span></li>
+    <li>What does compare ask for?
+      <span class="sol reveal">NESA: ‘Show how things are similar or different.’ In History: similarities and differences, point by point, then which matters most.</span></li>
+  </ol>
+</div>
+</section>
+
+<section class="slide" data-sec="Close" data-title="Sources and credits" data-kind="intro">
+<div class="wrap u4l04-dense">
+  <p class="eyebrow">Sources and credits</p>
+  <h2>Where everything comes from</h2>
+  <div class="cols c2">
+    <div class="card quiet u4l04-cite"><div class="k">Written sources</div>
+      <p class="small">Tacitus, <i>Annals</i> 14.31, 14.32, 14.35, 14.37 and <i>Agricola</i> 5: trans. A. J. Church and W. J. Brodribb (public domain), <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0078:book=14:chapter=31">Perseus Digital Library</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 US</a>). Cassius Dio, <i>Roman History</i> 62.1–2, 62.6, 62.12: trans. E. Cary (Loeb, vol. VIII, 1925), <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/62*.html">LacusCurtius</a> (public domain in the US; quoted briefly). E. Cary, Introduction to <i>Dio’s Roman History</i> (Loeb, vol. I, 1914), <a href="https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/Introduction*.html">LacusCurtius</a> (quoted briefly).</p>
+      <p class="small">Facts: J. Lendering, <a href="https://www.livius.org/sources/content/tacitus/">“Tacitus”</a>, Livius.org; University of Warwick, Warwick Classics Network, <a href="https://warwick.ac.uk/fac/arts/classics/warwickclassicsnetwork/romancoventry/resources/boudica/">“Sources for Boudica”</a> and <a href="https://warwick.ac.uk/fac/arts/classics/warwickclassicsnetwork/romancoventry/resources/boudica/revolt/">“Boudica’s Revolt”</a>; R. Pearse, <a href="https://www.tertullian.org/rpearse/tacitus/"><span class="nq">“Tacitus and his manuscripts”</span></a>; Staatliche Museen zu Berlin, <a href="https://id.smb.museum/object/698814/">Sammlungen Online, SK 391</a>. Time line drawn for this lesson. The NESA <i>Glossary of key words</i> (definitions quoted word for word).</p></div>
+    <div class="stack">
+      <div class="card quiet"><div class="k">Syllabus</div>
+        <p class="small">Outcomes and content: NSW Education Standards Authority (NESA), <i>Ancient History 11–12 Syllabus</i> (2024). © NESA.</p></div>
+      <div class="card quiet u4l04-cite"><div class="k">Images</div>
+        <ul class="small credits"><li><b>Tacitus, Annals, the end of Book 14: the 11th-century manuscript in Florence (Biblioteca Medicea Laurenziana, Plut. 68.2)</b> · Photo: Sailko · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Tacito_(annale,_historia)_e_apuleio_(de_magia,_metamorphoseon,_florida),_montecassino_XI_secolo_(pluteo_68.2).jpg">source</a></li><li><b>Seneca, named on the stone: one side of a double portrait with Socrates (Antikensammlung Berlin, SK 391)</b> · Photo: Mark Landon / Wikimedia Commons · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Double_herm_of_Socrates_and_Seneca_(Berlin_Ant_Sk_397)_03.jpg">source</a></li></ul>
+        <p class="small">All images are public domain or openly licensed, and were resized or cropped for the web. Each is shared under the licence shown.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<div id="legend" role="group" aria-label="Function code"></div>
+
+<div id="timer" hidden>
+  <div id="clock">5:00</div>
+  <div class="row">
+    <button class="btn" data-min="3">3</button>
+    <button class="btn" data-min="5">5</button>
+    <button class="btn" data-min="8">8</button>
+    <button class="btn" data-min="12">12</button>
+    <button class="btn" data-min="20">20</button>
+  </div>
+  <div class="row">
+    <button class="btn" id="tGo">Start</button>
+    <button class="btn" id="tReset">Reset</button>
+  </div>
+</div>
+
+<div id="overview" hidden>
+  <h2>All slides</h2>
+  <div id="ovgrid"></div>
+  <div id="help">
+    <div><kbd>→ ␣</kbd><span>Next step or slide</span></div>
+    <div><kbd>←</kbd><span>Back</span></div>
+    <div><kbd>1–7</kbd><span>Toggle a colour</span></div>
+    <div><kbd>R</kbd><span>Read mode (phones, revision)</span></div>
+    <div><kbd>A</kbd><span>All colours on this slide</span></div>
+    <div><kbd>L</kbd><span>Legend</span></div>
+    <div><kbd>K</kbd><span>Timer</span></div>
+    <div><kbd>T</kbd><span>Light / dark</span></div>
+    <div><kbd>O Esc</kbd><span>This overview</span></div>
+    <div><kbd>Home End</kbd><span>First / last slide</span></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+var CODES = [
+  {k:"directive", label:"Directive",       letter:"D", hint:"the thinking demanded"},
+  {k:"keyterm",   label:"Key term",        letter:"K", hint:"words needing definition"},
+  {k:"scope",     label:"Scope",           letter:"S", hint:"which evidence to use"},
+  {k:"evidence",  label:"Evidence",        letter:"E", hint:"named writers, texts, events"},
+  {k:"analysis",  label:"Analysis",        letter:"A", hint:"what the evidence shows or does"},
+  {k:"judgement", label:"Judgement",       letter:"J", hint:"the position taken"},
+  {k:"counter",   label:"Counter-argument",letter:"C", hint:"what pulls the other way"}
+];
+
+var deck    = document.getElementById("deck"),
+    slides  = Array.prototype.slice.call(deck.querySelectorAll(".slide")),
+    bar     = document.getElementById("bar"),
+    secname = document.getElementById("secname"),
+    counter = document.getElementById("count"),
+    legend  = document.getElementById("legend"),
+    overview= document.getElementById("overview"),
+    ovgrid  = document.getElementById("ovgrid");
+
+var cur = 0, steps = slides.map(function(){ return 0; });
+
+/* --------------------------------------------------------------- legend */
+CODES.forEach(function(c){
+  var b = document.createElement("button");
+  b.className = "chip";
+  b.type = "button";
+  b.dataset.code = c.k;
+  b.setAttribute("aria-pressed","false");
+  b.title = c.hint;
+  b.innerHTML = '<span class="dot" aria-hidden="true">' + c.letter +
+                '</span><span>' + c.label + '</span>';
+  b.addEventListener("click", function(){ toggleCode(c.k); });
+  legend.appendChild(b);
+});
+
+function codeSpans(key){
+  return Array.prototype.slice.call(
+    slides[cur].querySelectorAll('.code[data-code="' + key + '"]'));
+}
+function codeIsOn(key){
+  var els = codeSpans(key);
+  return els.length > 0 && els.every(function(e){
+    return e.classList.contains("on"); });
+}
+function setCode(key, on){
+  codeSpans(key).forEach(function(e){ e.classList.toggle("on", on); });
+  syncChips();
+}
+function toggleCode(key){ setCode(key, !codeIsOn(key)); }
+function syncChips(){
+  CODES.forEach(function(c){
+    var chip = legend.querySelector('.chip[data-code="' + c.k + '"]'),
+        n = codeSpans(c.k).length;
+    chip.setAttribute("aria-pressed", codeIsOn(c.k) ? "true" : "false");
+    chip.style.opacity = n ? "1" : ".38";
+  });
+}
+
+/* ---------------------------------------------------------------- steps */
+function stepEls(i){
+  return Array.prototype.slice.call(slides[i].querySelectorAll(".reveal"));
+}
+function applySteps(i){
+  stepEls(i).forEach(function(el, n){
+    var on = n < steps[i];
+    el.classList.toggle("shown", on);
+    el.classList.toggle("current", n === steps[i] - 1);
+    if (el.dataset.paint) setCode(el.dataset.paint, on);
+    if (el.dataset.also) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.also))
+      .forEach(function(t){ t.classList.toggle("shown", on); });
+    if (el.dataset.hl) Array.prototype.slice.call(slides[i].querySelectorAll(el.dataset.hl))
+      .forEach(function(t){ t.classList.toggle("on", on); });
+    if (el.dataset.mark){
+      var t = slides[i].querySelector(el.dataset.mark);
+      if (t) t.classList.toggle("right", on);
+    }
+  });
+  syncChips();
+}
+
+/* ----------------------------------------------------------- navigation */
+function render(){
+  slides.forEach(function(s, i){ s.classList.toggle("active", i === cur); });
+  secname.textContent = slides[cur].dataset.sec || "";
+  counter.textContent = (cur + 1) + " / " + slides.length;
+  bar.style.width = ((cur + 1) / slides.length * 100) + "%";
+  applySteps(cur);
+  if (!overview.hidden) markOverview();
+  var anyCodes = slides[cur].querySelector(".code") !== null;
+  legend.style.visibility = anyCodes ? "visible" : "hidden";
+  var nb = document.getElementById("notesBody"), n = slides[cur].querySelector(".notes");
+  if (nb) nb.innerHTML = n ? n.innerHTML : "<p>No notes for this slide.</p>";
+}
+function toggleNotes(){
+  var np = document.getElementById("notesPanel");
+  if (!np) return;
+  np.hidden = !np.hidden;
+  document.getElementById("tNotes").setAttribute("aria-pressed", np.hidden ? "false" : "true");
+}
+function goTo(i, atEnd){
+  i = Math.max(0, Math.min(slides.length - 1, i));
+  if (i !== cur){
+    cur = i;
+    steps[i] = atEnd ? stepEls(i).length : 0;
+  }
+  render();
+}
+function next(){
+  if (steps[cur] < stepEls(cur).length){ steps[cur]++; applySteps(cur); }
+  else if (cur < slides.length - 1) goTo(cur + 1, false);
+}
+function prev(){
+  if (steps[cur] > 0){ steps[cur]--; applySteps(cur); }
+  else if (cur > 0) goTo(cur - 1, true);
+}
+
+/* -------------------------------------------------------------- overview */
+slides.forEach(function(s, i){
+  var b = document.createElement("button");
+  b.className = "ovcard"; b.type = "button";
+  b.innerHTML = '<span class="n">' + (i + 1) + '</span>' +
+                '<span class="t">' + (s.dataset.title || "") + '</span>' +
+                '<span class="s">' + (s.dataset.sec || "") + '</span>';
+  b.addEventListener("click", function(){
+    overview.hidden = true;
+    document.getElementById("tOver").setAttribute("aria-pressed","false");
+    if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+    goTo(i, false);
+  });
+  ovgrid.appendChild(b);
+});
+function markOverview(){
+  Array.prototype.slice.call(ovgrid.children).forEach(function(c, i){
+    c.classList.toggle("here", i === cur); });
+}
+function toggleOverview(){
+  overview.hidden = !overview.hidden;
+  document.getElementById("tOver")
+    .setAttribute("aria-pressed", overview.hidden ? "false" : "true");
+  if (!overview.hidden) markOverview();
+}
+
+/* ----------------------------------------------------------------- theme */
+var root = document.documentElement;
+try{
+  var saved = localStorage.getItem("ah11-theme");
+  if (saved) root.setAttribute("data-theme", saved);
+}catch(e){}
+function toggleTheme(){
+  var now = root.getAttribute("data-theme");
+  if (!now){
+    now = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark" : "light";
+  }
+  var nextTheme = now === "dark" ? "light" : "dark";
+  root.setAttribute("data-theme", nextTheme);
+  try{ localStorage.setItem("ah11-theme", nextTheme); }catch(e){}
+}
+
+/* ----------------------------------------------------------------- timer */
+var timer   = document.getElementById("timer"),
+    clock   = document.getElementById("clock"),
+    goBtn   = document.getElementById("tGo"),
+    total   = 5 * 60, left = total, tick = null;
+
+function paint(){
+  var m = Math.floor(Math.abs(left) / 60), s = Math.abs(left) % 60;
+  clock.textContent = (left < 0 ? "-" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  timer.classList.toggle("low", left <= 60 && left > 0);
+  timer.classList.toggle("done", left <= 0);
+}
+function start(){
+  if (tick) return;
+  tick = setInterval(function(){ left--; paint(); }, 1000);
+  goBtn.textContent = "Pause";
+}
+function pause(){ clearInterval(tick); tick = null; goBtn.textContent = "Start"; }
+goBtn.addEventListener("click", function(){ tick ? pause() : start(); });
+document.getElementById("tReset").addEventListener("click", function(){
+  pause(); left = total; paint();
+});
+Array.prototype.slice.call(timer.querySelectorAll("[data-min]"))
+  .forEach(function(b){
+    b.addEventListener("click", function(){
+      pause(); total = parseInt(b.dataset.min, 10) * 60; left = total; paint();
+    });
+  });
+function toggleTimer(){
+  timer.hidden = !timer.hidden;
+  document.getElementById("tTimer")
+    .setAttribute("aria-pressed", timer.hidden ? "false" : "true");
+}
+paint();
+
+/* ------------------------------------------------------------- controls */
+document.getElementById("tTheme").addEventListener("click", toggleTheme);
+document.getElementById("tOver").addEventListener("click", toggleOverview);
+document.getElementById("tTimer").addEventListener("click", toggleTimer);
+document.getElementById("tLegend").addEventListener("click", function(){
+  legend.hidden = !legend.hidden;
+  this.setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+});
+
+document.addEventListener("keydown", function(e){
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  var k = e.key;
+  if (reading){
+    if (k === "r" || k === "R"){ setRead(false); }
+    else if (k === "t" || k === "T"){ toggleTheme(); }
+    else if (k === "o" || k === "O" || k === "Escape"){ toggleOverview(); e.preventDefault(); }
+    return;
+  }
+  if (k === "Escape"){ toggleOverview(); e.preventDefault(); return; }
+  if (!overview.hidden && k !== "o" && k !== "O") return;
+  switch (k){
+    case "ArrowRight": case " ": case "PageDown": case "Enter":
+      next(); e.preventDefault(); break;
+    case "ArrowLeft": case "PageUp": case "Backspace":
+      prev(); e.preventDefault(); break;
+    case "ArrowDown": goTo(cur + 1, false); e.preventDefault(); break;
+    case "ArrowUp":   goTo(cur - 1, true);  e.preventDefault(); break;
+    case "Home": goTo(0, false); e.preventDefault(); break;
+    case "End":  goTo(slides.length - 1, true); e.preventDefault(); break;
+    case "t": case "T": toggleTheme(); break;
+    case "o": case "O": toggleOverview(); e.preventDefault(); break;
+    case "k": case "K": toggleTimer(); break;
+    case "n": case "N": toggleNotes(); break;
+    case "r": case "R": setRead(true); break;
+    case "l": case "L":
+      legend.hidden = !legend.hidden;
+      document.getElementById("tLegend")
+        .setAttribute("aria-pressed", legend.hidden ? "false" : "true");
+      break;
+    case "a": case "A":
+      var allOn = CODES.every(function(c){
+        return codeSpans(c.k).length === 0 || codeIsOn(c.k); });
+      CODES.forEach(function(c){ setCode(c.k, !allOn); });
+      break;
+    default:
+      if (k >= "1" && k <= "7"){ toggleCode(CODES[+k - 1].k); }
+  }
+});
+
+/* click to advance, but never when the teacher is using a control */
+deck.addEventListener("click", function(e){
+  if (reading) return;
+  if (e.target.closest("button, a, .chip, .notes, label, input")) return;
+  next();
+});
+
+/* ------------------------------------------------------------ read mode */
+var reading = false,
+    readBtn = document.getElementById("tRead"),
+    filterBtns = Array.prototype.slice.call(document.querySelectorAll("#filter [data-f]"));
+
+/* a hinge question's right option (data-mark) shows only when the reader opens the veil around it */
+function markInside(el, on){
+  var sl = el.closest(".slide"), marks = Array.prototype.slice.call(el.querySelectorAll("[data-mark]"));
+  if (el.dataset.mark) marks.push(el);
+  marks.forEach(function(m){ var t = sl && sl.querySelector(m.dataset.mark); if (t) t.classList.toggle("right", on); });
+}
+
+Array.prototype.slice.call(document.querySelectorAll("[data-veil]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn unveil";
+  b.textContent = el.dataset.veil || "Show the model answer";
+  b.addEventListener("click", function(){
+    var open = el.classList.toggle("unveiled");
+    b.textContent = open ? "Hide it again" : (el.dataset.veil || "Show the model answer");
+    markInside(el, open);
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+Array.prototype.slice.call(document.querySelectorAll("[data-answers]")).forEach(function(el){
+  var b = document.createElement("button");
+  b.type = "button"; b.className = "btn showans";
+  b.textContent = "Show answers";
+  b.addEventListener("click", function(){
+    b.textContent = el.classList.toggle("answers-on") ? "Hide answers" : "Show answers";
+  });
+  el.parentNode.insertBefore(b, el);
+});
+
+function applyFilter(f){
+  slides.forEach(function(s){
+    var kinds = (s.dataset.kind || "").split(" ");
+    s.classList.toggle("filtered", f !== "all" && kinds.indexOf(f) < 0);
+  });
+  filterBtns.forEach(function(b){
+    b.setAttribute("aria-pressed", b.dataset.f === f ? "true" : "false"); });
+  window.scrollTo(0, 0);
+}
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){ applyFilter(b.dataset.f); }); });
+
+function setRead(on, quiet){
+  reading = on;
+  if (on){ slides.forEach(function(s, i){ steps[i] = 0; applySteps(i); }); }
+  root.classList.toggle("read", on);
+  readBtn.setAttribute("aria-pressed", on ? "true" : "false");
+  readBtn.querySelector(".lbl").textContent = on ? "Present" : "Read";
+  slides.forEach(function(s){
+    Array.prototype.slice.call(s.querySelectorAll(".code"))
+      .forEach(function(c){ c.classList.toggle("on", on); });
+  });
+  if (on){
+    if (!quiet) slides[cur].scrollIntoView({block:"start"});
+  } else {
+    applyFilter("all");
+    steps[cur] = 0;
+    render();
+  }
+  try{ localStorage.setItem("ah11-mode", on ? "read" : "present"); }catch(e){}
+}
+readBtn.addEventListener("click", function(){ setRead(!reading); });
+
+if ("IntersectionObserver" in window){
+  var watcher = new IntersectionObserver(function(entries){
+    if (!reading) return;
+    entries.forEach(function(en){
+      if (!en.isIntersecting) return;
+      var i = slides.indexOf(en.target);
+      cur = i;
+      secname.textContent = en.target.dataset.sec || "";
+      counter.textContent = (i + 1) + " / " + slides.length;
+      bar.style.width = ((i + 1) / slides.length * 100) + "%";
+    });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  slides.forEach(function(s){ watcher.observe(s); });
+}
+
+function slideFromHash(){
+  var m = location.hash.match(/^#(\d+)$/);
+  return m ? Math.max(0, Math.min(slides.length - 1, +m[1] - 1)) : -1;
+}
+var hm = slideFromHash();
+if (hm >= 0){ cur = hm; steps[cur] = 0; }   /* a direct link opens the slide with every reveal hidden */
+render();
+window.addEventListener("hashchange", function(){
+  var i = slideFromHash();
+  if (i < 0) return;
+  if (reading){ slides[i].classList.remove("filtered"); slides[i].scrollIntoView({block:"start"}); return; }
+  steps[i] = 0;
+  if (i === cur) render(); else goTo(i, false);
+});
+var savedMode = null;
+try{ savedMode = localStorage.getItem("ah11-mode"); }catch(e){}
+if (/[?&]read\b/.test(location.search) ||
+    (savedMode ? savedMode === "read" : window.matchMedia("(max-width: 900px)").matches)){
+  setRead(true, hm < 0);
+}
+})();
+</script>
+</body>
+</html>
