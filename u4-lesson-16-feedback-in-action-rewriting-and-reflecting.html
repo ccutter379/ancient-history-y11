@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-AU" data-theme="light">
+<html lang="en-AU">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -782,6 +782,13 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u4l16-dense .cornell .cq, html:not(.read) .u4l16-dense .cornell .nts{font-size:calc(var(--fs-body)*.72); padding:.3em .8em;}
   html:not(.read) .u4l16-dense .vocab .tbl.compact{font-size:calc(var(--fs-body)*.7);}
   html:not(.read) .u4l16-dense .figure img{max-height:34vh;}
+}
+
+/* the same dark rules for a dark device (added by build_lesson.device_dark_twins) */
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]) .u4l16-check .num{color:var(--ground);}
+:root:not([data-theme="light"]) .u4l16-pt{color:var(--ground);}
+:root:not([data-theme="light"]) .mk[class*="u4l16-m"], :root:not([data-theme="light"]) [class*="u4l16-m"] .mk{color:var(--ground);}
 }
 </style>
 </head>

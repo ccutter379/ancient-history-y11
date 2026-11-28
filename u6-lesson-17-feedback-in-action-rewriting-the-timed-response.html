@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-AU" data-theme="light">
+<html lang="en-AU">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -776,6 +776,12 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u6l17-tight .checks{gap:.15em;}
   html:not(.read) .u6l17-dense .u6l17-copy{font-size:calc(var(--fs-body)*.66); line-height:1.3;}
   html:not(.read) .u6l17-tight .qprompt{font-size:calc(var(--fs-body)*.66);}
+}
+
+/* the same dark rules for a dark device (added by build_lesson.device_dark_twins) */
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]) .u6l17-check li b{color:var(--ground);}
+:root:not([data-theme="light"]) .u6l17-pt{color:var(--ground);}
 }
 </style>
 </head>

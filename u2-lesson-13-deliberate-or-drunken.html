@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-AU" data-theme="light">
+<html lang="en-AU">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -848,6 +848,11 @@ html:not(.read) .read-only{display:none !important;}
    not the shared .code span, which switches on the colour legend over the foot of the slide) */
 .u2l13-verb{color:var(--c-directive); background:var(--w-directive); box-shadow:inset 0 0 0 2px var(--c-directive);
   border-radius:4px; padding:0 .18em;}
+
+/* the same dark rules for a dark device (added by build_lesson.device_dark_twins) */
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]) .mk[class*="u2l13-m"], :root:not([data-theme="light"]) [class*="u2l13-m"] .mk{color:var(--ground);}
+}
 </style>
 </head>
 <body>

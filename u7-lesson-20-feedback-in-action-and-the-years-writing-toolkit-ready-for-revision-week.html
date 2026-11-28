@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-AU" data-theme="light">
+<html lang="en-AU">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -853,6 +853,14 @@ html:not(.read) .read-only{display:none !important;}
 }
 .u7l20-m.wide{grid-column:1 / -1;}
 .u7l20-m .qs .wl{font-style:italic; color:var(--slate);}
+
+/* the same dark rules for a dark device (added by build_lesson.device_dark_twins) */
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]) .u7l20-check .num{color:var(--ground);}
+:root:not([data-theme="light"]) .u7l20-pt{color:var(--ground);}
+:root:not([data-theme="light"]) .mk[class*="u7l20-m"], :root:not([data-theme="light"]) [class*="u7l20-m"] .mk{color:var(--ground);}
+:root:not([data-theme="light"]) .u7l20-m .ltr{color:var(--ground);}
+}
 </style>
 </head>
 <body>

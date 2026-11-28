@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-AU" data-theme="light">
+<html lang="en-AU">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -795,6 +795,11 @@ html:not(.read) .read-only{display:none !important;}
 
 /* the last slide is short: give it room so a link to the slide before it can scroll to the top (Read mode) */
 html.read .u5l13-credits{min-height:75vh;}
+
+/* the same dark rules for a dark device (added by build_lesson.device_dark_twins) */
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]) .u5l13-pt{color:var(--ground);}
+}
 </style>
 </head>
 <body>

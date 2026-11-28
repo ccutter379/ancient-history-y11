@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-AU" data-theme="light">
+<html lang="en-AU">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -776,6 +776,11 @@ html:not(.read) .read-only{display:none !important;}
   html:not(.read) .u2l15-pw .card .body{font-size:calc(var(--fs-body)*.74);}
   html:not(.read) .u2l15-pw .card{padding:8px 14px;}
   html:not(.read) .u2l15-pw .src{padding:8px 14px;}
+}
+
+/* the same dark rules for a dark device (added by build_lesson.device_dark_twins) */
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]) .mk[class*="u2l15-m"], :root:not([data-theme="light"]) [class*="u2l15-m"] .mk{color:var(--ground);}
 }
 </style>
 </head>
